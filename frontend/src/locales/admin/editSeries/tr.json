@@ -1,0 +1,40 @@
+{
+  "editSeries": {
+    "title": {
+      "editAnime": "Animeyi Düzenle",
+      "editSeries": "Seriyi Düzenle"
+    },
+    "labels": {
+      "seriesTitle": "Dizi Başlığı *",
+      "description": "Tanım",
+      "year": "Yıl",
+      "tmdbId": "TMDB ID",
+      "totalSeasons": "Toplam Sezonlar",
+      "posterUrl": "Poster URL'si",
+      "backdropUrl": "Arka plan URL'si",
+      "active": "Aktif"
+    },
+    "placeholders": {
+      "seriesTitle": "Dizi başlığını girin...",
+      "description": "Seri açıklamasını girin...",
+      "year": "2024",
+      "tmdbId": "123456",
+      "totalSeasons": "1",
+      "posterUrl": "https://example.com/poster.jpg",
+      "backdropUrl": "https://example.com/backdrop.jpg"
+    },
+    "episodes": {
+      "title": "Bölüm Yönetimi:",
+      "description": "Dizinin doğrudan video URL'leri yok. Video içeriği, sezonlar içindeki ayrı bölümler aracılığıyla yönetilir.",
+      "manageButton": "📺 Bölümleri Yönet"
+    },
+    "buttons": {
+      "cancel": "İptal etmek",
+      "updating": "Güncelleniyor...",
+      "update": "Seriyi Güncelle"
+    },
+    "validation": {
+      "titleRequired": "Başlık gerekli"
+    }
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "title": "Bezpečnostné zákazy ({{total}})",
+  "noneFound": "Nenašli sa žiadne zákazy.",
+  "itemsPerPage": "Položiek na stránku",
+  "admin": {
+    "securityBans": {
+      "searchByUsernamePlaceholder": "Hľadať podľa používateľského mena...",
+      "itemsPerPage": "Položiek na stránku",
+      "title": "Bezpečnostné zákazy ({{total}})",
+      "noneFound": "Nenašli sa žiadne zákazy.",
+      "level": "Úroveň",
+      "type": "Typ",
+      "reason": "Dôvod",
+      "timeRemaining": "Zostávajúci čas"
+    }
+  },
+  "unban": {
+    "action": "Odblokovať",
+    "confirm": "Odblokovať používateľa {{user}}?",
+    "promptReason": "Zadajte dôvod odblokovania"
+  },
+  "notifications": {
+    "ban": {
+      "userUnbanned": "Používateľ {{user}} bol odblokovaný"
+    },
+    "security": {
+      "errorLoadingBans": "Chyba pri načítavaní bezpečnostných zákazov",
+      "errorUnbanningUser": "Chyba pri odblokovaní používateľa"
+    }
+  },
+  "common": {
+    "username": "Používateľske meno",
+    "actions": "Akcie",
+    "previous": "Predchádzajúce",
+    "next": "Nasledujúce",
+    "paginationShowing": "Strana {{page}} z {{totalPages}}"
+  }
+}

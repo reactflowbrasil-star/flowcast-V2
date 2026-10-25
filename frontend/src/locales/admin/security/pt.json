@@ -1,0 +1,64 @@
+{
+  "title": "Segurança",
+  "subtitle": "Monitorar incidentes, banimentos e dispositivos na lista negra.",
+  "tabs": {
+    "overview": "Visão Geral",
+    "incidents": "Incidentes",
+    "bans": "Banimentos",
+    "blacklistedDevices": "Dispositivos Bloqueados"
+  },
+  "actions": {
+    "cleanupExpiredBans": "Limpar Banimentos Expirados",
+    "createManualBan": "Criar Banimento Manual"
+  },
+  "searchByUsernamePlaceholder": "Pesquisar por nome de usuário...",
+  "confirmDelete": "Tem certeza de que deseja excluir este item? Esta ação não pode ser desfeita.",
+  "admin": {
+    "createBan": {
+      "title": "Criar Banimento Manuel",
+      "usernameLabel": "Nome de Usuário",
+      "usernamePlaceholder": "Insira o nome de usuário para banir",
+      "banTypeLabel": "Tipo de Banimento",
+      "temporary": "Temporário",
+      "permanent": "Permanente",
+      "banLevelLabel": "Nível de Banimento",
+      "level1": "Nível 1 - Restrição de Login",
+      "level2": "Nível 2 - Suspensão de Conta",
+      "level3": "Nível 3 - Banimento Permanente",
+      "customDurationLabel": "Duração Personalizada",
+      "customDurationPlaceholder": "Insira a duração em dias",
+      "customDurationNote": "Deixe vazio para banimento permanente",
+      "reasonLabel": "Motivo",
+      "reasonPlaceholder": "Insira o motivo do banimento"
+    }
+  },
+  "cards": {
+    "totalIncidents": "Total de Incidentes",
+    "todaysIncidents": "Incidentes de Hoje",
+    "activeBans": "Banimentos Ativos",
+    "permanentBans": "Banimentos Permanentes",
+    "blacklistedDevices": "Dispositivos Bloqueados"
+  },
+  "stats": {
+    "incidentsByType": "Incidentes por Tipo",
+    "recentIncidents": "Incidentes Recentes",
+    "noRecentIncidents": "Nenhum incidente recente",
+    "summary": "Resumo de Segurança",
+    "totalIncidents": "Total de Incidentes",
+    "todaysIncidents": "Incidentes de Hoje",
+    "activeBans": "Banimentos Ativos",
+    "permanentBans": "Banimentos Permanentes"
+  },
+  "pagination": {
+    "previous": "Anterior",
+    "next": "Próximo",
+    "pageOf": "Página {{page}} de {{total_pages}}",
+    "showing": "Mostrando {{from}}–{{to}} de {{total}}"
+  },
+  "notifications": {
+    "security": {
+      "errorLoadingStatistics": "Falha ao carregar estatísticas de segurança",
+      "errorCleaningExpiredBans": "Falha ao limpar banimentos expirados"
+    }
+  }
+}

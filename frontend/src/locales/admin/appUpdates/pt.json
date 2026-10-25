@@ -1,0 +1,150 @@
+{
+  "appUpdates": {
+    "title": "Atualizações de Apps",
+    "description": "Gerenciar e distribuir atualizações para aplicativos de TV, Android e iOS",
+    "tabs": {
+      "overview": "Visão Geral",
+      "create": "Criar Atualização",
+      "history": "Histórico de Atualizações"
+    },
+    "platforms": {
+      "android_tv": "Android TV",
+      "android_mobile": "Android Móvel",
+      "ios": "iOS"
+    },
+    "updateType": {
+      "title": "Tipo de Atualização",
+      "suggested": "Sugerida",
+      "mandatory": "Obrigatória",
+      "suggestedDescription": "Os usuários podem ignorar esta atualização e continuar usando o app",
+      "mandatoryDescription": "Os usuários devem atualizar para continuar usando o app"
+    },
+    "status": {
+      "active": "Ativa",
+      "inactive": "Inativa",
+      "draft": "Rascunho",
+      "archived": "Arquivada"
+    },
+    "form": {
+      "version": "Número da Versão",
+      "versionPlaceholder": "ex., 2.1.0",
+      "versionCode": "Código da Versão",
+      "versionCodePlaceholder": "ex., 21",
+      "versionCodeHelp": "Número de build numérico para comparação (apenas Android)",
+      "platform": "Plataforma",
+      "selectPlatform": "Selecionar plataforma",
+      "updateType": "Tipo de Atualização",
+      "downloadUrl": "URL de Download",
+      "downloadUrlPlaceholder": "https://exemplo.com/app.apk",
+      "downloadUrlHelp": "Link direto para o APK ou URL da loja de apps",
+      "storeUrl": "URL da Loja (opcional)",
+      "storeUrlPlaceholder": "https://play.google.com/store/apps/details?id=...",
+      "storeUrlHelp": "Link para a página da Play Store ou App Store",
+      "releaseNotes": "Notas da Versão",
+      "releaseNotesPlaceholder": "Novidades desta versão...",
+      "releaseNotesHelp": "Descreva as mudanças e novos recursos (suporta Markdown)",
+      "minSdkVersion": "Versão Mínima do SDK",
+      "minSdkVersionPlaceholder": "ex., 21",
+      "fileSize": "Tamanho do Arquivo",
+      "fileSizePlaceholder": "ex., 45 MB",
+      "publishDate": "Data de Publicação",
+      "status": "Estado"
+    },
+    "actions": {
+      "create": "Criar Atualização",
+      "creating": "Criando...",
+      "edit": "Editar",
+      "delete": "Excluir",
+      "archive": "Arquivar",
+      "activate": "Ativar",
+      "deactivate": "Desativar",
+      "duplicate": "Duplicar",
+      "preview": "Visualizar",
+      "save": "Salvar Alterações",
+      "saving": "Salvando...",
+      "cancel": "Cancelar"
+    },
+    "table": {
+      "version": "Versão",
+      "platform": "Plataforma",
+      "type": "Tipo",
+      "status": "Estado",
+      "releaseDate": "Data de Lançamento",
+      "downloads": "Transferências",
+      "actions": "Ações"
+    },
+    "overview": {
+      "title": "Visão Geral de Atualizações",
+      "description": "Atualizações ativas atuais por plataforma",
+      "noActiveUpdates": "Sem atualizações ativas",
+      "latestVersion": "Última Versão",
+      "lastUpdated": "Última Atualização",
+      "totalDownloads": "Downloads Totais",
+      "activeUsers": "Usuários Ativos",
+      "updateRate": "Taxa de Atualização",
+      "pendingUpdates": "Atualizações Pendentes"
+    },
+    "stats": {
+      "totalUpdates": "Total de Atualizações",
+      "activeUpdates": "Atualizações Ativas",
+      "mandatoryUpdates": "Atualizações Obrigatórias",
+      "suggestedUpdates": "Atualizações Sugeridas",
+      "totalDownloads": "Downloads Totais",
+      "updateAdoption": "Adoção de Atualizações"
+    },
+    "confirm": {
+      "delete": "Tem certeza de que deseja excluir esta atualização? Esta ação não pode ser desfeita.",
+      "archive": "Tem certeza de que deseja arquivar esta atualização? Os usuários não a verão mais.",
+      "activate": "Ativar esta atualização? Os usuários começarão a receber notificações de atualização.",
+      "deactivate": "Desativar esta atualização? Os usuários não receberão mais notificações para esta versão."
+    },
+    "empty": {
+      "title": "Nenhuma Atualização Encontrada",
+      "description": "Crie sua primeira atualização de app para começar a distribuir novas versões aos usuários.",
+      "noHistory": "Nenhum histórico de atualizações disponível.",
+      "noUpdatesForPlatform": "Nenhuma atualização configurada para {{platform}}"
+    },
+    "success": {
+      "created": "Atualização criada com sucesso",
+      "updated": "Atualização salva com sucesso",
+      "deleted": "Atualização excluída com sucesso",
+      "activated": "Atualização ativada com sucesso",
+      "deactivated": "Atualização desativada com sucesso",
+      "archived": "Atualização arquivada com sucesso"
+    },
+    "errors": {
+      "loadFailed": "Falha ao carregar atualizações",
+      "createFailed": "Falha ao criar atualização",
+      "updateFailed": "Falha ao salvar atualização",
+      "deleteFailed": "Falha ao excluir atualização",
+      "versionRequired": "O número da versão é obrigatório",
+      "platformRequired": "A plataforma é obrigatória",
+      "downloadUrlRequired": "A URL de download é obrigatória para atualizações fora da loja",
+      "versionExists": "Esta versão já existe para a plataforma selecionada"
+    },
+    "filters": {
+      "allPlatforms": "Todas as Plataformas",
+      "allTypes": "Todos os Tipos",
+      "allStatuses": "Todos os Status",
+      "searchPlaceholder": "Buscar por versão..."
+    },
+    "preview": {
+      "title": "Visualização da Atualização",
+      "description": "É assim que o diálogo de atualização aparecerá para os usuários",
+      "updateAvailable": "Atualização Disponível",
+      "newVersion": "Uma nova versão está disponível!",
+      "currentVersion": "Versão atual:",
+      "newVersionLabel": "Nova versão:",
+      "whatsNew": "Novidades",
+      "downloadNow": "Baixar Agora",
+      "remindLater": "Lembrar Depois",
+      "mandatoryWarning": "Esta atualização é obrigatória para continuar usando o app."
+    },
+    "history": {
+      "title": "Histórico de Atualizações",
+      "description": "Ver todas as atualizações anteriores e seu desempenho",
+      "downloadTrend": "Tendência de Downloads",
+      "adoptionRate": "Taxa de Adoção"
+    }
+  }
+}

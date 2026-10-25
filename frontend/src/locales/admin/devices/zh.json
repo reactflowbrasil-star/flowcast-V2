@@ -1,0 +1,169 @@
+{
+  "activeDevices": "活跃设备",
+  "devices": {
+    "title": "设备管理",
+    "description": "管理已注册设备并添加新设备",
+    "devices": "设备",
+    "addDevice": "添加设备",
+    "limitStatus": "设备限制状态",
+    "atLimit": "已达上限",
+    "available": "可用",
+    "youHaveDevices": "您已注册 {{count}} / {{max}} 台设备。",
+    "toAddRemove": "要添加新设备，您必须先移除一个已有设备。",
+    "yourRegisteredDevices": "您已注册的设备",
+    "table": {
+      "device": "设备",
+      "user": "用户",
+      "deviceLimit": "设备上限",
+      "riskLevel": "风险等级",
+      "status": "状态",
+      "lastActive": "最近活跃",
+      "actions": "操作"
+    },
+    "risk": {
+      "high": "高风险",
+      "safe": "安全"
+    },
+    "remove": "移除",
+    "removeDeviceConfirmation": "您确定要将设备“{{name}}”从用户 {{username}} 永久移除吗？\\n\\n注意：此操作只会移除设备。用户稍后可以重新注册。\\n警告：若要阻止该设备再次连接，请使用“移除并加入黑名单”。",
+    "removeAndBlacklistAction": "移除并加入黑名单",
+    "removeAndBlacklistTitle": "移除并拉黑设备",
+    "removeAndBlacklistDescription": "您确定要将设备“{{name}}”从用户 {{username}} 移除并加入黑名单吗？\\n\\n警告：这将立即断开设备连接，并在从黑名单手动移除前阻止其再次连接。",
+    "blacklistOnly": "仅拉黑",
+    "blacklistTitle": "拉黑设备",
+    "blacklistDescription": "您确定要在不移除的情况下将设备“{{name}}”加入黑名单吗？\\n\\n注意：这将立即断开设备连接，但会在用户尝试重新连接前保留在活跃设备列表中。",
+    "blacklistAction": "拉黑设备",
+    "removeMultipleTitle": "批量移除设备",
+    "removeMultipleDescription": "您确定要移除 {{count}} 个选中的设备吗？",
+    "devicesToBeRemovedLabel": "将被移除的设备：",
+    "moreDevices": "… 以及另外 {{count}} 个设备",
+    "bulkWarning": "此操作不可撤销。",
+    "removeAllSelected": "移除所有选中项",
+    "removeDeviceTitle": "移除设备",
+    "removeDeviceDescription": "您确定要移除“{{name}}”吗？\\n\\n将来若要再次使用此设备，您需要重新注册它。",
+    "removeDevice": "移除设备",
+    "noDevices": "尚未注册设备",
+    "registerFirstDescription": "注册您的第一个设备以开始使用本服务。",
+    "registerFirstButton": "注册第一个设备",
+    "registerNewTitle": "注册新设备",
+    "registerNewDescription": "向您的账户添加新设备",
+    "label": {
+      "deviceId": "设备 ID",
+      "deviceName": "设备名称"
+    },
+    "placeholder": {
+      "id": "输入唯一设备标识",
+      "name": "输入设备名称（例如：客厅电视）",
+      "searchDevices": "搜索设备…"
+    },
+    "removeSelected": "移除已选（{{count}}）",
+    "noDevicesFoundTitle": "未找到设备",
+    "noDevicesFoundFor": "未找到与“{{query}}”匹配的设备",
+    "noDevicesRegistered": "系统当前没有注册的设备。",
+    "deviceIdLabel": "ID：{{id}}",
+    "time": {
+      "justNow": "刚刚",
+      "minutesAgo": "{{count}} 分钟前",
+      "hoursAgo": "{{count}} 小时前",
+      "daysAgo": "{{count}} 天前"
+    },
+    "errors": {
+      "loadFailed": "设备信息加载失败，请稍后重试。"
+    },
+    "registering": "注册中…",
+    "registerDevice": "注册设备",
+    "activeList": {
+      "description": "监控系统中所有活跃的设备连接",
+      "searchPlaceholder": "搜索设备…",
+      "deviceId": "ID：{{id}}",
+      "time": {
+        "justNow": "刚刚",
+        "minutesAgo": "{{count}} 分钟前",
+        "hoursAgo": "{{count}} 小时前",
+        "daysAgo": "{{count}} 天前"
+      },
+      "actions": {
+        "disconnect": "断开连接"
+      },
+      "removeDialog": {
+        "title": "移除设备",
+        "description": "您确定要将设备“{{device}}”（用户 {{user}}）永久移除吗？此操作不可撤销。"
+      },
+      "emptyTitle": "未找到设备",
+      "noDevicesSearch": "未找到与“{{query}}”匹配的设备",
+      "noDevicesDescription": "系统中当前没有注册的设备。"
+    },
+    "limits": {
+      "title": "设备上限预警",
+      "subtitle": "监控接近或超过设备上限的用户",
+      "summary": {
+        "warningTitle": "预警",
+        "warningDescription": "设备使用在 80–99% 上限的用户",
+        "criticalTitle": "临界",
+        "criticalDescription": "达到或超过上限的用户",
+        "exceededTitle": "已超限",
+        "exceededDescription": "超过设备上限的用户"
+      },
+      "attention": {
+        "title": "需要关注的用户"
+      },
+      "table": {
+        "deviceUsage": "设备使用情况",
+        "progress": "进度",
+        "warningLevel": "预警等级"
+      },
+      "actions": {
+        "increaseLimit": "提高上限",
+        "monitor": "监控"
+      },
+      "allSafeTitle": "所有用户均在上限以内",
+      "allSafeDescription": "没有用户接近或超过其设备上限。",
+      "allUsersTitle": "所有用户",
+      "badges": {
+        "safe": "安全",
+        "warning": "预警",
+        "critical": "临界",
+        "exceeded": "超限"
+      }
+    },
+    "overview": {
+      "deviceCount": "{{count}}/{{max}} 台设备"
+    },
+    "activeDevices": "在线设备",
+    "deviceRemoval": "移除设备",
+    "warnings": "警告",
+    "totalDevices": "设备总数",
+    "registeredDevices": "已注册设备",
+    "currentlyConnected": "当前在线设备",
+    "usersWithDevices": "拥有设备的用户",
+    "activeUsers": "活跃用户",
+    "limitWarnings": "超限警告",
+    "deviceStatistics": {
+      "title": "设备统计"
+    },
+    "statsDescription": "按用户划分的设备使用情况明细",
+    "avgDevicesPerUser": "每位用户平均设备数",
+    "usersAtLimit": "已达上限的用户",
+    "totalCapacity": "总容量",
+    "utilization": "利用率",
+    "usageDistribution": "使用分布",
+    "byUsageLevel": "按使用级别",
+    "lowUsage": "低使用",
+    "systemHealth": {
+      "title": "系统健康"
+    },
+    "deviceUsageByUser": {
+      "none": "没有拥有设备的用户"
+    },
+    "usageByUserTitle": "按用户的设备使用情况",
+    "usageByUserDescription": "设备注册后，用户设备统计会显示在这里。",
+    "common": {
+      "active": "在线",
+      "inactive": "离线",
+      "cancel": "取消",
+      "actions": "操作"
+    },
+    "removing": "正在移除…",
+    "overviewTitle": "概览"
+  }
+}

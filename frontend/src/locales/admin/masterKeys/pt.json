@@ -1,0 +1,50 @@
+{
+  "masterKeys": {
+    "createDialogDescription": "Crie uma nova Chave API Mestra para aplicações externas. Esta chave fornece acesso total à API sem autenticação via UI.",
+    "examples": {
+      "appName": "ex: App Editor Externo 2024"
+    },
+    "descriptionPlaceholder": "Descrição da aplicação externa ou integração...",
+    "descriptionHelp": "Opcional: Descreva para que esta chave API será usada",
+    "infoTitle": "Integração API",
+    "infoText": "Chaves API Mestras fornecem acesso total à API para aplicações externas sem exigir autenticação via UI. Perfeito para ferramentas de gestão de conteúdo, scripts automatizados e integrações de terceiros.",
+    "badges": {
+      "externalApps": "Apps Externos",
+      "automationScripts": "Scripts de Automação",
+      "thirdPartyTools": "Ferramentas de Terceiros"
+    },
+    "neverLabel": "Nunca",
+    "keyNameHelp": "Um nome descritivo para identificar esta chave API",
+    "securityNoteTitle": "Nota de Segurança",
+    "securityNoteDescription": "A chave API gerada será exibida apenas uma vez. Certifique-se de copiá-la e armazená-la com segurança.",
+    "empty": {
+      "title": "Nenhuma Chave API Encontrada",
+      "description": "Crie sua primeira Chave API Mestra para permitir a integração de aplicações externas"
+    },
+    "detailsTitle": "Detalhes da Chave API Mestra",
+    "detailsDescription": "Visualize e gerencie esta chave API para integração de aplicações externas",
+    "apiKeyLabel": "Chave API",
+    "activeStatus": "Status Ativo",
+    "regenerateButton": "Regenerar Chave",
+    "deleteButton": "Excluir Chave",
+    "labels": {
+      "created": "Criado",
+      "lastUpdated": "Última Atualização",
+      "lastUsed": "Último Uso"
+    },
+    "noDescription": "Sem descrição",
+    "keyNameRequired": "O nome da chave é obrigatório",
+    "confirmDelete": "Tem certeza de que deseja excluir a chave de API mestra \"{{keyName}}\"? Isso revogará imediatamente o acesso de qualquer aplicação externa que use essa chave.",
+    "confirmRegenerate": "Tem certeza de que deseja regenerar esta chave de API mestra? A chave antiga será invalidada imediatamente e as aplicações externas precisarão ser atualizadas.",
+    "errors": {
+      "createFailed": "Falha ao criar a chave de API mestra",
+      "deleteFailed": "Falha ao excluir a chave de API mestra",
+      "loadFailed": "Falha ao carregar as chaves de API mestras",
+      "loadSingleFailed": "Falha ao carregar a chave de API mestra",
+      "regenerateFailed": "Falha ao regenerar a chave de API mestra",
+      "updateFailed": "Falha ao atualizar a chave de API mestra"
+    },
+    "fullAccessWarning": "⚠️ Armazene esta chave com segurança. Ela fornece acesso total à API sem autenticação.",
+    "loading": "Carregando chaves de API mestras..."
+  }
+}

@@ -1,0 +1,67 @@
+{
+  "title": "Etkinlik Günlükleri",
+  "subtitle": "Sistem genelinde etkinlik, eylemler ve denetimler",
+  "lastUpdated": "Son güncelleme: {{time}}",
+  "autoRefreshOn": "Otomatik yenileme AÇIK",
+  "autoRefreshOff": "Otomatik yenileme KAPALI",
+  "refreshNow": "Şimdi yenile",
+  "refreshLabel": "Yenile",
+  "tabs": {
+    "dashboard": "Panel",
+    "system": "Sistem",
+    "loginHistory": "Giriş Geçmişi",
+    "viewingHistory": "İzleme Geçmişi"
+  },
+  "filters": {
+    "actionType": "Eylem türü",
+    "allActions": "Tüm eylemler",
+    "user": "Kullanıcı",
+    "username": "Kullanıcı adı",
+    "ipAddress": "IP adresi",
+    "startDate": "Başlangıç tarihi (gg/aa/yyyy)",
+    "endDate": "Bitiş tarihi (gg/aa/yyyy)",
+    "perPage": "Sayfa başına",
+    "search": "Ara",
+    "placeholderUsername": "Kullanıcı ara...",
+    "placeholderIp": "ör. 192.168.0.1",
+    "contentType": "İçerik türü",
+    "allTypes": "Tüm türler"
+  },
+  "common": {
+    "failedLogins": "Başarısız girişler",
+    "today": "Bugün",
+    "views": "Görüntülemeler"
+  },
+  "table": {
+    "date": "Tarih",
+    "action": "Eylem",
+    "user": "Kullanıcı",
+    "target": "Hedef",
+    "description": "Açıklama",
+    "credits": "Krediler",
+    "ip": "IP",
+    "device": "Cihaz"
+  },
+  "pagination": {
+    "previous": "Önceki",
+    "next": "Sonraki",
+    "showing": "{{total}} kayıttan {{from}} - {{to}} arası gösteriliyor",
+    "pageOf": "Sayfa {{page}} / {{total_pages}}"
+  },
+  "actionTypes": {
+    "USER_CREATED": "Kullanıcı Oluşturuldu",
+    "USER_DELETED": "Kullanıcı Silindi",
+    "RESELLER_CREATED": "Bayi Oluşturuldu",
+    "RESELLER_DELETED": "Bayi Silindi",
+    "CREDIT_USED": "Kredi Kullanıldı",
+    "CREDIT_ASSIGNED": "Kredi Atandı",
+    "SYSTEM_INIT": "Sistem Başlatıldı",
+    "LOGIN": "Giriş",
+    "LOGOUT": "Çıkış"
+  },
+  "empty": "Etkinlik günlüğü bulunamadı.",
+  "errors": {
+    "failedLoad": "Etkinlik günlükleri yüklenemedi",
+    "invalidDateRange": "Geçersiz tarih aralığı"
+  }
+}

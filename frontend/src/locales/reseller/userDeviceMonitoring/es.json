@@ -1,0 +1,55 @@
+{
+  "title": "Monitoreo de Dispositivos de Usuarios",
+  "description": "Monitorea los dispositivos activos de tus usuarios finales y gestiona los límites de dispositivos",
+  "loading": "Cargando...",
+  "error": {
+    "loadFailed": "Error al cargar usuarios: {{message}}",
+    "removeDevice": "Error al eliminar dispositivo: {{message}}",
+    "noUserSelected": "No se seleccionó ningún usuario"
+  },
+  "time": {
+    "justNow": "Ahora mismo",
+    "minutesAgo": "hace {{count}}m",
+    "hoursAgo": "hace {{count}}h",
+    "daysAgo": "hace {{count}}d"
+  },
+  "deviceStatus": {
+    "online": "En línea",
+    "recent": "Reciente",
+    "offline": "Desconectado"
+  },
+  "userStatus": {
+    "active": "Activo",
+    "suspended": "Suspendido"
+  },
+  "table": {
+    "username": "Nombre de Usuario",
+    "deviceLimit": "Límite de Dispositivos",
+    "activeDevices": "Dispositivos Activos",
+    "status": "Estado",
+    "actions": "Acciones",
+    "device": "Dispositivo",
+    "deviceId": "ID de Dispositivo",
+    "lastSeen": "Última Conexión",
+    "devices": "dispositivos",
+    "active": "activos"
+  },
+  "empty": {
+    "noUsers": "No se encontraron usuarios",
+    "noUsersDescription": "Crea algunos usuarios finales para monitorear sus dispositivos.",
+    "noDevices": "No se encontraron dispositivos",
+    "noDevicesDescription": "Este usuario aún no ha conectado ningún dispositivo."
+  },
+  "actions": {
+    "viewDevices": "Ver Dispositivos",
+    "remove": "Eliminar",
+    "removeDevice": "Eliminar Dispositivo",
+    "cancel": "Cancelar"
+  },
+  "dialog": {
+    "title": "Gestión de Dispositivos - {{username}}",
+    "description": "Ver y gestionar dispositivos activos para este usuario. Límite: {{limit}} dispositivos",
+    "removeTitle": "Eliminar Dispositivo",
+    "removeDescription": "¿Estás seguro de que quieres eliminar \"{{deviceName}}\" de la cuenta de {{username}}? Esto desconectará el dispositivo inmediatamente."
+  }
+}

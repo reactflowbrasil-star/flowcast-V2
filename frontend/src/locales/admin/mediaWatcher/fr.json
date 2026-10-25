@@ -1,0 +1,56 @@
+{
+  "mediaWatcher": {
+    "creating": "Création...",
+    "title": "Configuration du surveillant de médias",
+    "description": "Analyse automatiquement des dossiers pour détecter du nouveau contenu. Fonctionne comme \"ls\" : détection rapide des nouveaux dossiers uniquement.",
+    "addButton": "Ajouter un dossier à surveiller",
+    "empty": "Aucun dossier configuré. Ajoutez-en un pour commencer.",
+    "deleteConfirm": "Êtes-vous sûr de vouloir supprimer ce dossier surveillé ?",
+    "form": {
+      "folderPath": "Chemin du dossier",
+      "folderPathPlaceholder": "/mnt/media/films",
+      "mediaType": "Type de média",
+      "checkInterval": "Intervalle de vérification (minutes)"
+    },
+    "createDialog": {
+      "title": "Ajouter un dossier",
+      "description": "Configurer un dossier pour analyser automatiquement le nouveau contenu"
+    },
+    "editDialog": {
+      "title": "Modifier le dossier",
+      "description": "Mettre à jour la configuration du dossier",
+      "updating": "Mise à jour...",
+      "update": "Mettre à jour"
+    },
+    "mediaTypes": {
+      "movies": "Films",
+      "series": "Séries",
+      "kids": "Enfants",
+      "anime": "Anime"
+    },
+    "table": {
+      "status": "Statut",
+      "folderPath": "Chemin du dossier",
+      "type": "Taper",
+      "interval": "Intervalle",
+      "lastCheck": "Dernière vérification",
+      "actions": "Actes",
+      "lastCheckNever": "Jamais",
+      "lastCheckInvalid": "Date invalide"
+    },
+    "toasts": {
+      "createSuccess": "Dossier créé avec succès",
+      "createFailed": "Échec de la création du dossier",
+      "updateSuccess": "Dossier mis à jour avec succès",
+      "updateFailed": "Échec de la mise à jour du dossier",
+      "deleteSuccess": "Dossier supprimé avec succès",
+      "deleteFailed": "Échec de la suppression du dossier",
+      "checkStarted": "Vérification du dossier démarrée",
+      "checkFailed": "Échec de la vérification du dossier",
+      "enabled": "Dossier activé",
+      "disabled": "Dossier désactivé",
+      "toggleFailed": "Échec du changement de statut du dossier",
+      "folderPathRequired": "Veuillez saisir un chemin de dossier"
+    }
+  }
+}

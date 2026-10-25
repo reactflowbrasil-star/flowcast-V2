@@ -1,0 +1,67 @@
+{
+  "title": "Journaux d'Activité",
+  "subtitle": "Activité du système, actions et audits",
+  "lastUpdated": "Dernière mise à jour : {{time}}",
+  "autoRefreshOn": "Rafraîchissement auto est ON",
+  "autoRefreshOff": "Rafraîchissement auto est OFF",
+  "refreshNow": "Rafraîchir maintenant",
+  "refreshLabel": "Rafraîchir",
+  "tabs": {
+    "dashboard": "Tableau de Bord",
+    "system": "Système",
+    "loginHistory": "Historique Connexion",
+    "viewingHistory": "Historique Visionnage"
+  },
+  "filters": {
+    "actionType": "Type d'action",
+    "allActions": "Toutes les actions",
+    "user": "Utilisateur",
+    "username": "Nom d'utilisateur",
+    "ipAddress": "Adresse IP",
+    "startDate": "Date de début (jj/mm/aaaa)",
+    "endDate": "Date de fin (jj/mm/aaaa)",
+    "perPage": "Par page",
+    "search": "Chercher",
+    "placeholderUsername": "Chercher utilisateur...",
+    "placeholderIp": "ex: 192.168.0.1",
+    "contentType": "Type de contenu",
+    "allTypes": "Tous les types"
+  },
+  "common": {
+    "failedLogins": "Échecs de connexion",
+    "today": "Aujourd'hui",
+    "views": "Vues"
+  },
+  "table": {
+    "date": "Date",
+    "action": "Action",
+    "user": "Utilisateur",
+    "target": "Cible",
+    "description": "Description",
+    "credits": "Crédits",
+    "ip": "IP",
+    "device": "Appareil"
+  },
+  "pagination": {
+    "previous": "Précédent",
+    "next": "Suivant",
+    "showing": "Affichage de {{from}} à {{to}} sur {{total}} journaux",
+    "pageOf": "Page {{page}} sur {{total_pages}}"
+  },
+  "actionTypes": {
+    "USER_CREATED": "Utilisateur Créé",
+    "USER_DELETED": "Utilisateur Supprimé",
+    "RESELLER_CREATED": "Revendeur Créé",
+    "RESELLER_DELETED": "Revendeur Supprimé",
+    "CREDIT_USED": "Crédit Utilisé",
+    "CREDIT_ASSIGNED": "Crédit Attribué",
+    "SYSTEM_INIT": "Système Initialisé",
+    "LOGIN": "Connexion",
+    "LOGOUT": "Déconnexion"
+  },
+  "empty": "Aucun journal d'activité trouvé.",
+  "errors": {
+    "failedLoad": "Échec du chargement des journaux d'activité",
+    "invalidDateRange": "Plage de dates invalide"
+  }
+}

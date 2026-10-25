@@ -1,0 +1,150 @@
+{
+    "appUpdates": {
+        "title": "Aktualizácie Aplikácií",
+        "description": "Spravujte a distribuujte aktualizácie pre TV, Android a iOS aplikácie",
+        "tabs": {
+            "overview": "Prehľad",
+            "create": "Vytvoriť Aktualizáciu",
+            "history": "História Aktualizácií"
+        },
+        "platforms": {
+            "android_tv": "Android TV",
+            "android_mobile": "Android Mobile",
+            "ios": "iOS"
+        },
+        "updateType": {
+            "title": "Typ Aktualizácie",
+            "suggested": "Odporúčaná",
+            "mandatory": "Povinná",
+            "suggestedDescription": "Používatelia môžu túto aktualizáciu preskočiť a pokračovať v používaní aplikácie",
+            "mandatoryDescription": "Používatelia musia aktualizovať, aby mohli pokračovať v používaní aplikácie"
+        },
+        "status": {
+            "active": "Aktívna",
+            "inactive": "Neaktívna",
+            "draft": "Návrh",
+            "archived": "Archivovaná"
+        },
+        "form": {
+            "version": "Číslo Verzie",
+            "versionPlaceholder": "napr., 2.1.0",
+            "versionCode": "Kód Verzie",
+            "versionCodePlaceholder": "napr., 21",
+            "versionCodeHelp": "Číselné číslo zostavy na porovnanie (iba Android)",
+            "platform": "Platforma",
+            "selectPlatform": "Vyberte platformu",
+            "updateType": "Typ Aktualizácie",
+            "downloadUrl": "URL Stiahnutia",
+            "downloadUrlPlaceholder": "https://priklad.com/app.apk",
+            "downloadUrlHelp": "Priamy odkaz na APK alebo URL obchodu",
+            "storeUrl": "URL Obchodu (voliteľné)",
+            "storeUrlPlaceholder": "https://play.google.com/store/apps/details?id=...",
+            "storeUrlHelp": "Odkaz na stránku Play Store alebo App Store",
+            "releaseNotes": "Poznámky k Vydaniu",
+            "releaseNotesPlaceholder": "Čo je nové v tejto verzii...",
+            "releaseNotesHelp": "Popíšte zmeny a nové funkcie (podporuje Markdown)",
+            "minSdkVersion": "Minimálna Verzia SDK",
+            "minSdkVersionPlaceholder": "napr., 21",
+            "fileSize": "Veľkosť Súboru",
+            "fileSizePlaceholder": "napr., 45 MB",
+            "publishDate": "Dátum Publikovania",
+            "status": "Stav"
+        },
+        "actions": {
+            "create": "Vytvoriť Aktualizáciu",
+            "creating": "Vytváranie...",
+            "edit": "Upraviť",
+            "delete": "Vymazať",
+            "archive": "Archivovať",
+            "activate": "Aktivovať",
+            "deactivate": "Deaktivovať",
+            "duplicate": "Duplikovať",
+            "preview": "Náhľad",
+            "save": "Uložiť Zmeny",
+            "saving": "Ukladanie...",
+            "cancel": "Zrušiť"
+        },
+        "table": {
+            "version": "Verzia",
+            "platform": "Platforma",
+            "type": "Typ",
+            "status": "Stav",
+            "releaseDate": "Dátum Vydania",
+            "downloads": "Stiahnutia",
+            "actions": "Akcie"
+        },
+        "overview": {
+            "title": "Prehľad Aktualizácií",
+            "description": "Aktuálne aktívne aktualizácie podľa platformy",
+            "noActiveUpdates": "Žiadne aktívne aktualizácie",
+            "latestVersion": "Najnovšia Verzia",
+            "lastUpdated": "Posledná Aktualizácia",
+            "totalDownloads": "Celkové Stiahnutia",
+            "activeUsers": "Aktívni Používatelia",
+            "updateRate": "Miera Aktualizácie",
+            "pendingUpdates": "Čakajúce Aktualizácie"
+        },
+        "stats": {
+            "totalUpdates": "Celkové Aktualizácie",
+            "activeUpdates": "Aktívne Aktualizácie",
+            "mandatoryUpdates": "Povinné Aktualizácie",
+            "suggestedUpdates": "Odporúčané Aktualizácie",
+            "totalDownloads": "Celkové Stiahnutia",
+            "updateAdoption": "Prijatie Aktualizácií"
+        },
+        "confirm": {
+            "delete": "Naozaj chcete vymazať túto aktualizáciu? Táto akcia sa nedá vrátiť.",
+            "archive": "Naozaj chcete archivovať túto aktualizáciu? Používatelia ju už neuvidia.",
+            "activate": "Aktivovať túto aktualizáciu? Používatelia začnú dostávať upozornenia na aktualizáciu.",
+            "deactivate": "Deaktivovať túto aktualizáciu? Používatelia už nebudú dostávať upozornenia pre túto verziu."
+        },
+        "empty": {
+            "title": "Nenašli Sa Žiadne Aktualizácie",
+            "description": "Vytvorte svoju prvú aktualizáciu aplikácie a začnite distribuovať nové verzie používateľom.",
+            "noHistory": "Žiadna história aktualizácií nie je k dispozícii.",
+            "noUpdatesForPlatform": "Žiadne aktualizácie nakonfigurované pre {{platform}}"
+        },
+        "success": {
+            "created": "Aktualizácia úspešne vytvorená",
+            "updated": "Aktualizácia úspešne uložená",
+            "deleted": "Aktualizácia úspešne vymazaná",
+            "activated": "Aktualizácia úspešne aktivovaná",
+            "deactivated": "Aktualizácia úspešne deaktivovaná",
+            "archived": "Aktualizácia úspešne archivovaná"
+        },
+        "errors": {
+            "loadFailed": "Nepodarilo sa načítať aktualizácie",
+            "createFailed": "Nepodarilo sa vytvoriť aktualizáciu",
+            "updateFailed": "Nepodarilo sa uložiť aktualizáciu",
+            "deleteFailed": "Nepodarilo sa vymazať aktualizáciu",
+            "versionRequired": "Číslo verzie je povinné",
+            "platformRequired": "Platforma je povinná",
+            "downloadUrlRequired": "URL stiahnutia je povinná pre aktualizácie mimo obchodu",
+            "versionExists": "Táto verzia už existuje pre vybranú platformu"
+        },
+        "filters": {
+            "allPlatforms": "Všetky Platformy",
+            "allTypes": "Všetky Typy",
+            "allStatuses": "Všetky Stavy",
+            "searchPlaceholder": "Hľadať podľa verzie..."
+        },
+        "preview": {
+            "title": "Náhľad Aktualizácie",
+            "description": "Takto bude dialóg aktualizácie vyzerať pre používateľov",
+            "updateAvailable": "Dostupná Aktualizácia",
+            "newVersion": "Je dostupná nová verzia!",
+            "currentVersion": "Aktuálna verzia:",
+            "newVersionLabel": "Nová verzia:",
+            "whatsNew": "Čo je Nové",
+            "downloadNow": "Stiahnuť Teraz",
+            "remindLater": "Pripomenúť Neskôr",
+            "mandatoryWarning": "Táto aktualizácia je povinná na pokračovanie v používaní aplikácie."
+        },
+        "history": {
+            "title": "História Aktualizácií",
+            "description": "Zobraziť všetky predchádzajúce aktualizácie a ich výkon",
+            "downloadTrend": "Trend Stiahnutí",
+            "adoptionRate": "Miera Prijatia"
+        }
+    }
+}

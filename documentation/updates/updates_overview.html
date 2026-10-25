@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>StreamCore - Updates Overview</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&family=Unbounded:wght@500;700&family=JetBrains+Mono:wght@400;600&display=swap"
+    rel="stylesheet" />
+  <style>
+    :root {
+      --bg: #f8fafc;
+      --ink: #0f172a;
+      --muted: #475569;
+      --card: #ffffff;
+      --line: #dbe3ee;
+      --brand: #0f766e;
+      --brand-2: #0ea5e9;
+      --accent: #f59e0b;
+      --ok: #15803d;
+      --warn: #b45309;
+      --radius: 18px;
+      --shadow: 0 18px 42px rgba(15, 23, 42, 0.08);
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      background:
+        radial-gradient(1200px 500px at -10% -10%, rgba(14, 165, 233, 0.13), transparent),
+        radial-gradient(900px 420px at 120% 0%, rgba(245, 158, 11, 0.15), transparent),
+        var(--bg);
+      color: var(--ink);
+      font-family: "Manrope", sans-serif;
+      line-height: 1.55;
+    }
+
+    .wrap {
+      max-width: 1160px;
+      margin: 0 auto;
+      padding: 28px 18px 64px;
+    }
+
+    .hero {
+      background: linear-gradient(135deg, #0f172a 0%, #1e293b 60%, #0f766e 100%);
+      color: #f8fafc;
+      border-radius: 28px;
+      padding: 28px;
+      box-shadow: var(--shadow);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero::after {
+      content: "";
+      position: absolute;
+      inset: auto -120px -140px auto;
+      width: 300px;
+      height: 300px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(14, 165, 233, 0.45), transparent 70%);
+    }
+
+    .pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      border: 1px solid rgba(248, 250, 252, 0.25);
+      background: rgba(15, 23, 42, 0.35);
+      border-radius: 999px;
+      padding: 6px 12px;
+      font-size: 13px;
+      font-weight: 700;
+    }
+
+    h1 {
+      margin: 12px 0 10px;
+      font-family: "Unbounded", sans-serif;
+      font-size: clamp(1.55rem, 2.8vw, 2.35rem);
+      line-height: 1.2;
+    }
+
+    .hero p {
+      margin: 0;
+      color: #dbeafe;
+      max-width: 920px;
+      font-size: 1rem;
+    }
+
+    .hero-links {
+      margin-top: 18px;
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      border-radius: 12px;
+      padding: 10px 14px;
+      font-size: 14px;
+      font-weight: 800;
+      border: 1px solid transparent;
+    }
+
+    .btn-main {
+      background: #f8fafc;
+      color: #0f172a;
+    }
+
+    .btn-ghost {
+      border-color: rgba(248, 250, 252, 0.45);
+      color: #f8fafc;
+      background: rgba(248, 250, 252, 0.07);
+    }
+
+    .toolbar {
+      margin: 22px 0 8px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    .filter-btn {
+      border: 1px solid var(--line);
+      background: #fff;
+      color: var(--muted);
+      border-radius: 999px;
+      padding: 8px 12px;
+      font-size: 12px;
+      font-weight: 800;
+      cursor: pointer;
+    }
+
+    .filter-btn.active {
+      background: #0f172a;
+      border-color: #0f172a;
+      color: #fff;
+    }
+
+    .grid {
+      margin-top: 14px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 14px;
+    }
+
+    .card {
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      padding: 16px;
+      box-shadow: var(--shadow);
+      min-height: 280px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .meta {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+
+    .version {
+      font-family: "Unbounded", sans-serif;
+      font-size: 1.08rem;
+      margin: 0;
+      letter-spacing: 0.02em;
+    }
+
+    .date {
+      font-size: 12px;
+      color: var(--muted);
+      font-weight: 700;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      padding: 4px 8px;
+      background: #f8fafc;
+    }
+
+    .tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      margin: 2px 0 0;
+    }
+
+    .tag {
+      font-size: 11px;
+      font-weight: 800;
+      border-radius: 999px;
+      padding: 4px 8px;
+      border: 1px solid var(--line);
+      color: #0f172a;
+      background: #eff6ff;
+    }
+
+    .desc {
+      margin: 0;
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .list {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      display: grid;
+      gap: 7px;
+      font-size: 14px;
+    }
+
+    .list li {
+      border-left: 3px solid #cbd5e1;
+      padding-left: 8px;
+    }
+
+    .list li[data-area="security"] {
+      border-color: #f97316;
+    }
+
+    .list li[data-area="backend"] {
+      border-color: #0ea5e9;
+    }
+
+    .list li[data-area="frontend"] {
+      border-color: #0f766e;
+    }
+
+    .list li[data-area="android"] {
+      border-color: #16a34a;
+    }
+
+    .list li[data-area="devops"] {
+      border-color: #7c3aed;
+    }
+
+    .card-footer {
+      margin-top: auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 10px;
+      border-top: 1px dashed var(--line);
+      padding-top: 10px;
+    }
+
+    .card-footer a {
+      text-decoration: none;
+      color: var(--brand);
+      font-weight: 800;
+      font-size: 13px;
+    }
+
+    .card-footer code {
+      font-family: "JetBrains Mono", monospace;
+      font-size: 11px;
+      color: var(--muted);
+      background: #f8fafc;
+      border: 1px solid var(--line);
+      border-radius: 7px;
+      padding: 4px 6px;
+    }
+
+    .section-title {
+      margin: 28px 0 10px;
+      font-family: "Unbounded", sans-serif;
+      font-size: clamp(1.1rem, 2.2vw, 1.4rem);
+    }
+
+    .roadmap {
+      display: grid;
+      gap: 10px;
+    }
+
+    .step {
+      background: #fff;
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      padding: 12px;
+      display: flex;
+      gap: 12px;
+      align-items: flex-start;
+    }
+
+    .num {
+      width: 28px;
+      height: 28px;
+      border-radius: 8px;
+      background: #0f172a;
+      color: #fff;
+      font-weight: 900;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      font-size: 13px;
+    }
+
+    .step p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    @media (max-width: 720px) {
+      .hero {
+        padding: 20px;
+        border-radius: 20px;
+      }
+
+      .wrap {
+        padding: 16px 12px 40px;
+      }
+
+      .card {
+        min-height: unset;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <main class="wrap">
+    <header class="hero">
+      <span class="pill">StreamCore Release Hub</span>
+      <h1>Updates Visual Overview</h1>
+      <p>
+        Quick summary of the changes in <strong>v1.0.1</strong>, <strong>v1.1.0</strong>, <strong>v1.1.2</strong>, and
+        <strong>v1.2.0</strong>
+        so you can review improvements by area without opening each markdown file.
+      </p>
+      <div class="hero-links">
+        <a class="btn btn-main" href="../guides/how_to_install_update.html">How To Install / Update</a>
+        <a class="btn btn-ghost" href="../guides/HOW_TO_UPDATE.md">Open Markdown Guide</a>
+      </div>
+    </header>
+
+    <section>
+      <h2 class="section-title">Area Filters</h2>
+      <div class="toolbar" id="toolbar">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="backend">Backend</button>
+        <button class="filter-btn" data-filter="frontend">Frontend/UI</button>
+        <button class="filter-btn" data-filter="android">Android</button>
+        <button class="filter-btn" data-filter="security">Security</button>
+        <button class="filter-btn" data-filter="devops">DevOps/Deploy</button>
+      </div>
+
+      <div class="grid">
+        <article class="card" data-version="1.0.1">
+          <div class="meta">
+            <h3 class="version">v1.0.1</h3>
+            <span class="date">Jan 2026</span>
+          </div>
+          <div class="tags">
+            <span class="tag">PostgreSQL Base</span>
+            <span class="tag">Performance</span>
+            <span class="tag">i18n</span>
+          </div>
+          <p class="desc">First major post-launch stabilization update.</p>
+          <ul class="list">
+            <li data-area="backend">Migration from SQLite to PostgreSQL.</li>
+            <li data-area="devops">Backup flow with pg_dump.</li>
+            <li data-area="security">Do not send JWT to external stream URLs.</li>
+            <li data-area="frontend">Performance and i18n improvements.</li>
+          </ul>
+          <footer class="card-footer">
+            <a href="UPDATE_1.0.1.md">Open markdown</a>
+            <code>UPDATE_1.0.1.md</code>
+          </footer>
+        </article>
+
+        <article class="card" data-version="1.1.0">
+          <div class="meta">
+            <h3 class="version">v1.1.0</h3>
+            <span class="date">Jan 2026</span>
+          </div>
+          <div class="tags">
+            <span class="tag">Anti-injection</span>
+            <span class="tag">Android TV</span>
+            <span class="tag">Uploads</span>
+          </div>
+          <p class="desc">Security hardening and major Android TV improvements.</p>
+          <ul class="list">
+            <li data-area="security">Server-side sanitization and validation for endpoints.</li>
+            <li data-area="android">EPG and update-dialog fixes on Android TV.</li>
+            <li data-area="frontend">Fixed app-version upload URL handling.</li>
+            <li data-area="devops">nginx/custom.conf support for upload limits.</li>
+          </ul>
+          <footer class="card-footer">
+            <a href="UPDATE_1.1.0.md">Open markdown</a>
+            <code>UPDATE_1.1.0.md</code>
+          </footer>
+        </article>
+
+        <article class="card" data-version="1.1.2">
+          <div class="meta">
+            <h3 class="version">v1.1.2</h3>
+            <span class="date">Feb 2026</span>
+          </div>
+          <div class="tags">
+            <span class="tag">Android Phone Launch</span>
+            <span class="tag">URL Rules</span>
+            <span class="tag">UI Upgrade</span>
+          </div>
+          <p class="desc">Fix consolidation and multi-platform expansion.</p>
+          <ul class="list">
+            <li data-area="backend">Password reset, SMTP tooling, 2FA, and API keys.</li>
+            <li data-area="security">Stricter URL and streaming proxy/subtitle rules.</li>
+            <li data-area="frontend">Admin/reseller/user panel UX and i18n improvements.</li>
+            <li data-area="android">Android TV improvements and Android Phone launch.</li>
+            <li data-area="devops">Media watcher and automatic TV provider sync.</li>
+          </ul>
+          <footer class="card-footer">
+            <a href="UPDATE_1.1.2.md">Open markdown</a>
+            <code>UPDATE_1.1.2.md</code>
+          </footer>
+        </article>
+
+        <article class="card" data-version="1.2.0">
+          <div class="meta">
+            <h3 class="version">v1.2.0</h3>
+            <span class="date">Mar 2026</span>
+          </div>
+          <div class="tags">
+            <span class="tag">Security Hardening</span>
+            <span class="tag">Subscriptions</span>
+            <span class="tag">DRM Fix</span>
+            <span class="tag">Performance</span>
+          </div>
+          <p class="desc">Major release: 9+ security fixes, subscription system, DRM overhaul, 77K+ RPS.</p>
+          <ul class="list">
+            <li data-area="security">Bcrypt API keys, IP spoofing patched, Stripe idempotency, 2FA hardened, rate
+              limiting.</li>
+            <li data-area="backend">End-user subscriptions, packages, category-based access, billing tracking.</li>
+            <li data-area="frontend">Dynamic sidebar by category, subscription flow, admin Stripe settings, list view
+              fixes.</li>
+            <li data-area="android">ClearKey DRM fixed (DASH rewrite), device persistence, HEVC 10-bit, EPG.</li>
+            <li data-area="devops">Auto v1.1.2→v1.2.0 migration (44 tables), API encryption layer, 82 tests.</li>
+          </ul>
+          <footer class="card-footer">
+            <a href="UPDATE_1.2.0.md">Open markdown</a>
+            <code>UPDATE_1.2.0.md</code>
+          </footer>
+        </article>
+      </div>
+    </section>
+
+    <section>
+      <h2 class="section-title">Recommended Upgrade Path</h2>
+      <div class="roadmap">
+        <div class="step">
+          <span class="num">1</span>
+          <p><strong>If you are on 1.1.x:</strong> upgrade directly to <strong>1.2.0</strong>. Backup your database
+            first, then rebuild backend/frontend with <code>--no-cache</code>, and rebuild Android apps.</p>
+        </div>
+        <div class="step">
+          <span class="num">2</span>
+          <p><strong>Post-upgrade:</strong> Regenerate Master API Keys (old keys are invalidated). Enable
+            <code>public_redeem_enabled</code> and <code>public_demo_enabled</code> in admin settings if needed.</p>
+        </div>
+        <div class="step">
+          <span class="num">3</span>
+          <p><strong>If you are on 1.0.0 SQLite:</strong> migrate data to PostgreSQL using the full guide and validate
+            media mounts, then apply v1.2.0.</p>
+        </div>
+        <div class="step">
+          <span class="num">4</span>
+          <p><strong>If you use proxy mode:</strong> verify <code>nginx/custom.conf</code> and recreate the
+            <code>proxy</code> profile to keep upload limits and clean routes.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script>
+    const buttons = document.querySelectorAll('.filter-btn');
+    const items = document.querySelectorAll('.list li');
+
+    buttons.forEach((btn) => {
+      btn.addEventListener('click', () => {
+        buttons.forEach((b) => b.classList.remove('active'));
+        btn.classList.add('active');
+
+        const target = btn.dataset.filter;
+        items.forEach((li) => {
+          if (target === 'all' || li.dataset.area === target) {
+            li.style.display = 'list-item';
+          } else {
+            li.style.display = 'none';
+          }
+        });
+      });
+    });
+  </script>
+</body>
+
+</html>

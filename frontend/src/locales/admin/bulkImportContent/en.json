@@ -1,0 +1,24 @@
+{
+  "bulkImportContent": {
+    "title": "Bulk Import — {{category}} (M3U/M3U8)",
+    "description": "Paste an M3U/M3U8 playlist below to bulk import {{category}}. Each entry will be created as a new content item. Data will be sanitized automatically (duplicates removed, names cleaned).",
+    "labels": {
+      "playlist": "Playlist (M3U/M3U8)"
+    },
+    "buttons": {
+      "cancel": "Cancel",
+      "chooseFile": "Choose M3U file",
+      "import": "Import {{category}}",
+      "importing": "Importing..."
+    },
+    "result": "Imported {{success}} of {{total}} items.",
+    "resultWithFailed": "Imported {{success}} of {{total}} items ({{failed}} failed).",
+    "validation": {
+      "pasteM3uContent": "Paste the M3U/M3U8 content",
+      "invalidData": "Invalid data",
+      "importFailed": "Bulk import failed",
+      "unknownError": "Unknown error",
+      "fileReadFailed": "Could not read the selected file"
+    }
+  }
+}

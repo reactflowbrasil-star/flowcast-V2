@@ -1,0 +1,790 @@
+{
+  "security": {
+    "tabs": {
+      "overview": "Güvenlik Genel Bakış",
+      "incidents": "Güvenlik Olayları",
+      "bans": "Güvenlik Yasakları",
+      "blacklistedDevices": "Kara Listedeki Cihazlar"
+    },
+    "actions": {
+      "cleanupExpiredBans": "Süresi Dolan Yasakları Temizle",
+      "createManualBan": "Manuel Yasak Oluştur"
+    },
+    "cards": {
+      "totalIncidents": "Toplam Olay",
+      "todaysIncidents": "Bugünkü Olaylar",
+      "activeBans": "Aktif Yasaklar",
+      "permanentBans": "Kalıcı Yasaklar",
+      "blacklistedDevices": "Kara Listeye Alınan Cihazlar"
+    }
+  },
+  "masterKeys": {
+    "createDialogDescription": "Harici uygulamalar için yeni bir Master API Anahtarı oluşturun. Bu anahtar, UI kimlik doğrulaması olmadan tam API erişimi sağlar.",
+    "examples": {
+      "appName": "ör. Harici Düzenleyici Uygulaması 2024"
+    },
+    "keyNameHelp": "Bu API anahtarını tanımlamak için açıklayıcı bir ad",
+    "securityNoteTitle": "Güvenlik Notu",
+    "securityNoteDescription": "Oluşturulan API anahtarı yalnızca bir kez gösterilecektir. Kopyaladığınızdan ve güvenli bir şekilde sakladığınızdan emin olun.",
+    "empty": {
+      "title": "API Anahtarı Bulunamadı",
+      "description": "Harici uygulama entegrasyonunu etkinleştirmek için ilk Master API Anahtarınızı oluşturun"
+    },
+    "detailsTitle": "Master API Anahtarı Detayları",
+    "detailsDescription": "Harici uygulama entegrasyonu için bu API anahtarını görüntüleyin ve yönetin",
+    "apiKeyLabel": "API Anahtarı",
+    "activeStatus": "Aktif Durum",
+    "regenerateButton": "Anahtarı Yeniden Oluştur",
+    "deleteButton": "Anahtarı Sil",
+    "labels": {
+      "created": "Oluşturulma",
+      "lastUpdated": "Son Güncelleme",
+      "lastUsed": "Son Kullanım"
+    }
+  },
+  "loginHistory": {
+    "title": "Giriş Geçmişi",
+    "lastUpdated": "Son güncelleme: {{time}}",
+    "autoRefreshOn": "Otomatik Yenileme: AÇIK",
+    "refreshNow": "Şimdi Yenile",
+    "filters": {
+      "username": "Kullanıcı Adı",
+      "ipAddress": "IP Adresi",
+      "startDate": "Başlangıç Tarihi",
+      "endDate": "Bitiş Tarihi"
+    },
+    "placeholders": {
+      "searchUsername": "Kullanıcı adı ara...",
+      "ipAddress": "IP adresi..."
+    },
+    "loading": "Giriş geçmişi yükleniyor...",
+    "errors": {
+      "loading": "Giriş geçmişi yüklenirken hata: {{message}}",
+      "loadingFallback": "Giriş geçmişi yüklenemedi"
+    },
+    "noHistory": "Giriş denemesi bulunamadı.",
+    "table": {
+      "dateTime": "Tarih ve Saat",
+      "user": "Kullanıcı",
+      "status": "Durum",
+      "ipAddress": "IP Adresi",
+      "device": "Cihaz",
+      "userAgent": "Kullanıcı Aracısı (User Agent)"
+    }
+  },
+  "securityIncidents": {
+    "filterType": "Türe göre filtrele",
+    "allTypes": "Tüm türler",
+    "bruteForce": "Kaba kuvvet (Brute force)",
+    "suspiciousActivity": "Şüpheli etkinlik",
+    "multipleDevices": "Birden fazla cihaz",
+    "tokenManipulation": "Token manipülasyonu",
+    "searchByUsernamePlaceholder": "Kullanıcı adına göre ara...",
+    "itemsPerPage": "Sayfa başına öğe",
+    "title": "Güvenlik Olayları ({{total}})",
+    "noneFound": "Olay bulunamadı.",
+    "deviceId": "Cihaz Kimliği (ID)",
+    "ipAddress": "IP Adresi",
+    "deleteTitle": "Olayı sil",
+    "showingPage": "Sayfa {{page}} / {{totalPages}}",
+    "confirmDelete": "Bu olayı silmek istiyor musunuz?"
+  },
+  "securityBans": {
+    "searchByUsernamePlaceholder": "Kullanıcı adına göre ara...",
+    "itemsPerPage": "Sayfa başına öğe",
+    "title": "Güvenlik Yasakları ({{total}})",
+    "noneFound": "Yasak bulunamadı.",
+    "level": "Seviye",
+    "type": "Tür",
+    "reason": "Sebep",
+    "timeRemaining": "Kalan süre"
+  },
+  "blacklistedDevices": {
+    "title": "Kara Listedeki Cihazlar ({{count}})",
+    "noneTitle": "Kara listede cihaz yok",
+    "noneDescription": "Her şey temiz. Şu anda kara listeye alınmış cihaz bulunmuyor.",
+    "removeButton": "Kara listeden çıkar"
+  },
+  "unban": {
+    "action": "Yasağı Kaldır",
+    "confirm": "{{user}} kullanıcısının yasağı kaldırılsın mı?",
+    "promptReason": "Yasağı kaldırma sebebini girin"
+  },
+  "dashboard": {
+    "notAuthenticated": "Kimlik doğrulanmadı",
+    "accessDenied": "Erişim reddedildi. Yönetici yetkisi gereklidir.",
+    "preparing": "Panel hazırlanıyor..."
+  },
+  "demos": {
+    "title": "Demo Deneyimi",
+    "subtitle": "Kötüye kullanımı kontrol altında tutmak için demo hesaplarını izleyin, oluşturma limitlerini ayarlayın ve erişim geçmişini gözden geçirin.",
+    "settingsTitle": "Oluşturma sınırları",
+    "settingsDescription": "Her IP başına kaç demo oluşturulabileceğini ve ihlal edenlerin ne kadar süre yasaklı kalacağını sınırlayın.",
+    "totalUsers": "Aktif demolar",
+    "thresholdLabel": "Eşik (oluşturma / 24 saat)",
+    "banDurationLabel": "Yasak süresi (gün)",
+    "managementTitle": "Demo izleme",
+    "managementDescription": "Canlı demo hesaplarını inceleyin veya birkaç tıklamayla IP izlerini denetleyin.",
+    "usersTab": "Kullanıcılar",
+    "historyTab": "Geçmiş",
+    "usersSummary": "{{count}} aktif demo kullanıcısı",
+    "refreshing": "Yenileniyor...",
+    "ipLabel": "IP adresi",
+    "expiresLabel": "Sona Erme",
+    "deviceLabel": "Cihaz",
+    "userAgentLabel": "Kullanıcı aracısı",
+    "resultLabel": "Sonuç",
+    "successful": "Başarılı",
+    "failed": "Başarısız",
+    "historySummary": "{{total}} günlük girişi gösteriliyor",
+    "noHistoryResults": "Mevcut filtreler için giriş denemesi bulunamadı.",
+    "noUsers": "Şu anda demo kullanıcısı yok.",
+    "confirmDelete": "Bu demo kullanıcısı silinsin mi? Bu işlem geri alınamaz.",
+    "userDeleted": "Demo kullanıcısı silindi",
+    "usernamePlaceholder": "ali.yilmaz"
+  },
+  "giftcodes": {
+    "title": "Hediye Kodları",
+    "description": "Kullanıcı aboneliklerini oluşturmak veya uzatmak için tek kullanımlık veya çok kullanımlık hediye kodlarını yönetin.",
+    "create": "Kod Oluştur",
+    "bulkCreate": "Toplu Oluştur",
+    "export": "CSV Olarak Dışa Aktar",
+    "noData": "Dışa aktarılacak hediye kodu bulunamadı.",
+    "bulkCreated": "{{count}} adet hediye kodu oluşturuldu",
+    "created": "Hediye kodu oluşturuldu",
+    "deletedSelected": "{{count}} seçili hediye kodu silindi",
+    "generate": "Oluştur",
+    "deleteSelected": "Seçilenleri Sil ({{count}})",
+    "deleteConfirm": "{{count}} seçili hediye kodunu silmek istiyor musunuz? Bu işlem geri alınamaz.",
+    "table": {
+      "code": "Kod",
+      "duration_days": "Süre (gün)",
+      "uses": "Kullanım",
+      "remaining": "Kalan",
+      "expires_at": "Son Kullanma",
+      "created_at": "Oluşturulma"
+    },
+    "form": {
+      "codeOptional": "Kod (isteğe bağlı)",
+      "durationMonths": "Süre (ay)",
+      "uses": "Kullanım",
+      "prefixOptional": "Ön ek (isteğe bağlı)",
+      "count": "Adet",
+      "usesPerCode": "Kod başına kullanım"
+    }
+  },
+  "billing": {
+    "overview": {
+      "title": "Faturalandırma Genel Bakış",
+      "description": "Gelir ve kredi performansına hızlı bir bakış",
+      "metrics": {
+        "onlineRevenue": "Çevrimiçi Gelir",
+        "offlineRevenue": "Çevrimdışı Gelir",
+        "adjustments": "Düzeltmeler",
+        "totalRevenue": "Toplam Gelir",
+        "creditsOnline": "Krediler (Çevrimiçi)",
+        "creditsOffline": "Krediler (Çevrimdışı)",
+        "creditsAdjustments": "Krediler (Düzeltmeler)",
+        "totalCredits": "Toplam Kredi"
+      }
+    },
+    "pricing": {
+      "title": "Kredi Fiyatlandırması",
+      "description": "Sistemde yapılandırılan taban fiyatlandırma ve indirim kademeleri",
+      "basePrice": "Taban fiyat (Kredi başına USD)",
+      "activeTiers": "Aktif kademeler",
+      "effectiveCurrency": "Geçerli para birimi",
+      "tiersNote": "Minimum miktar şartının karşılandığı en yüksek kademe uygulanacaktır.",
+      "table": {
+        "minQuantity": "Min. miktar (dahil)",
+        "discountPercent": "İndirim yüzdesi",
+        "noTiers": "Yapılandırılmış kademe yok. Tüm miktarlar için taban fiyat geçerlidir.",
+        "discountSuffix": "indirim"
+      }
+    },
+    "offline": {
+      "title": "Çevrimdışı Ödeme Ekle",
+      "description": "Manuel ödemeleri kaydedin ve anında kredi tanımlayın",
+      "labels": {
+        "reseller": "Bayi (Reseller)",
+        "amount": "Tutar (USD)",
+        "credits": "Tanımlanacak kredi",
+        "method": "Yöntem",
+        "reference": "Referans",
+        "notes": "Notlar"
+      },
+      "placeholders": {
+        "resellerSearch": "En az 2 harf yazın...",
+        "amount": "ör. 100.00",
+        "credits": "ör. 100",
+        "method": "nakit/banka/diğer",
+        "reference": "fatura numarası veya referans",
+        "notes": "isteğe bağlı notlar"
+      },
+      "chargedCurrency": "Tahsil edilen para birimi:",
+      "success": "Çevrimdışı ödeme kaydedildi ve krediler tanımlandı",
+      "actions": {
+        "saving": "Kaydediliyor...",
+        "save": "Çevrimdışı Ödemeyi Kaydet"
+      },
+      "errors": {
+        "amountPositive": "Tutar (USD) 0'dan büyük olmalıdır",
+        "creditsPositive": "Kredi miktarı pozitif bir tam sayı olmalıdır",
+        "resellerPositive": "Bayi Kimliği (ID) pozitif bir tam sayı olmalıdır",
+        "selectReseller": "Listeden bir bayi seçin"
+      }
+    },
+    "transactions": {
+      "title": "Son İşlemler",
+      "description": "Faturalandırma işlemlerini filtreleyin ve sayfalayın",
+      "filters": {
+        "source": "Kaynak",
+        "status": "Durum",
+        "resellerId": "Bayi ID",
+        "reference": "Referans/Kullanıcı Adı",
+        "perPage": "Sayfa başına"
+      },
+      "sources": {
+        "stripe": "Şerit",
+        "offline": "Çevrimdışı",
+        "adjustment": "Düzeltme"
+      },
+      "statuses": {
+        "completed": "Tamamlandı",
+        "pending": "Beklemede",
+        "refunded": "İade Edildi",
+        "failed": "Başarısız"
+      },
+      "placeholders": {
+        "resellerId": "ör. 42",
+        "reference": "Referans veya kullanıcı adı ara"
+      },
+      "table": {
+        "id": "ID",
+        "reseller": "Bayi",
+        "source": "Kaynak",
+        "amount": "Tutar",
+        "credits": "Kredi",
+        "status": "Durum",
+        "reference": "Referans",
+        "createdAt": "Oluşturulma"
+      },
+      "total": "Toplam: {{count}}",
+      "pagination": {
+        "page": "Sayfa {{page}}"
+      },
+      "empty": "İşlem bulunamadı."
+    },
+    "errors": {
+      "fetchOverview": "Faturalandırma özeti alınamadı",
+      "fetchPricing": "Fiyatlandırma yapılandırması alınamadı",
+      "fetchTransactions": "Faturalandırma işlemleri alınamadı",
+      "createOfflinePayment": "Çevrimdışı ödeme oluşturulamadı"
+    }
+  },
+  "devices": {
+    "errors": {
+      "loadFailed": "Cihaz yönetimi verileri yüklenemedi. Lütfen daha sonra tekrar deneyin."
+    },
+    "overview": {
+      "activeUsers": "Aktif kullanıcılar",
+      "statsDescription": "Kullanıcılar arası cihaz kullanımının ayrıntılı dökümü",
+      "usageByUserTitle": "Kullanıcı Başına Cihaz Kullanımı",
+      "usageByUserDescription": "Kullanıcı cihaz istatistikleri, cihazlar kaydedildikten sonra burada görünecektir.",
+      "deviceCount": "{{count}}/{{max}} cihaz"
+    },
+    "activeList": {
+      "description": "Sistemdeki tüm aktif cihaz bağlantılarını izleyin",
+      "searchPlaceholder": "Cihaz ara...",
+      "deviceId": "Kimlik: {{id}}",
+      "actions": {
+        "disconnect": "Bağlantıyı Kes"
+      },
+      "removeDialog": {
+        "title": "Cihazı Kaldır",
+        "description": "\"{{device}}\" cihazını {{user}} kullanıcısından kalıcı olarak kaldırmak istediğinize emin misiniz? Bu işlem geri alınamaz."
+      },
+      "emptyTitle": "Cihaz bulunamadı",
+      "noDevicesSearch": "\"{{query}}\" için cihaz bulunamadı",
+      "noDevicesDescription": "Sistemde kayıtlı cihaz bulunmuyor.",
+      "time": {
+        "justNow": "Az önce",
+        "minutesAgo": "{{count}}dk önce",
+        "hoursAgo": "{{count}}sa önce",
+        "daysAgo": "{{count}}g önce"
+      }
+    },
+    "limits": {
+      "title": "Cihaz Limiti Uyarıları",
+      "subtitle": "Cihaz limitine yaklaşan veya limiti aşan kullanıcıları izleyin",
+      "summary": {
+        "warningTitle": "Uyarı Verilenler",
+        "warningDescription": "Limitin %80-99'u kullanıldı",
+        "criticalTitle": "Kritik Durumda Olanlar",
+        "criticalDescription": "Cihaz limitinde",
+        "exceededTitle": "Limiti Aşanlar",
+        "exceededDescription": "Cihaz limiti aşıldı"
+      },
+      "badges": {
+        "safe": "Güvenli",
+        "warning": "Uyarı",
+        "critical": "Kritik",
+        "exceeded": "Aşıldı"
+      },
+      "attention": {
+        "title": "Dikkat Gerektiren Kullanıcılar"
+      },
+      "table": {
+        "deviceUsage": "Cihaz Kullanımı",
+        "progress": "İlerleme",
+        "warningLevel": "Uyarı Seviyesi"
+      },
+      "actions": {
+        "increaseLimit": "Limiti Artır",
+        "monitor": "İzle"
+      },
+      "allSafeTitle": "Tüm Kullanıcılar Limitler Dahilinde",
+      "allSafeDescription": "Şu anda cihaz limitine yaklaşan veya limiti aşan kullanıcı bulunmuyor.",
+      "allUsersTitle": "Tüm Kullanıcılara Genel Bakış"
+    },
+    "removal": {
+      "bulkRemoveFailed": "{{count}} adet cihaz kaldırılamadı"
+    }
+  },
+  "overview": {
+    "totalUsers": "Toplam Kullanıcı",
+    "allSystemUsers": "Sistemdeki tüm kullanıcılar",
+    "contentItems": "İçerik Öğeleri",
+    "moviesTvSeries": "Filmler, TV dizileri ve daha fazlası",
+    "activeResellers": "Aktif Bayiler",
+    "currentlyActive": "Şu anda aktif",
+    "systemStatus": "Sistem Durumu",
+    "allSystemsOperational": "Tüm sistemler çalışıyor",
+    "quickActions": "Hızlı İşlemler",
+    "commonTasks": "En yaygın yönetim görevlerine atlayın",
+    "manageResellers": "Bayileri Yönet",
+    "manageContent": "İçeriği Yönet",
+    "systemConfig": "Sistem Yapılandırması",
+    "viewReports": "Raporları Görüntüle",
+    "systemHealth": "Sistem Sağlığı",
+    "systemStatusDescription": "Kritik bileşenler için gerçek zamanlı servis durumu",
+    "apiServices": "API Servisleri",
+    "operational": "Çalışıyor",
+    "database": "Veritabanı",
+    "contentDelivery": "İçerik Dağıtımı"
+  },
+  "content": {
+    "title": "İçerik Yönetimi",
+    "description": "TMDB entegrasyonu ile tüm kategorilerdeki içerikleri yönetin",
+    "confirmDelete": "Bu içeriği silmek istediğinize emin misiniz?",
+    "tmdb": {
+      "confirm": "{{category}} için TMDB meta verileri doldurulsun mu? Bu, TMDB ID'si olmayan öğeleri eşleştirmeye çalışacaktır.",
+      "success": "TMDB meta verileri güncellendi: {{updated}} güncellendi, {{skipped}} atlandı",
+      "warning": "{{count}} öğe eşleştirilemedi. Detaylar için konsolu kontrol edin.",
+      "error": "TMDB meta verileri yenilenemedi",
+      "defaultCategory": "bu kategori"
+    },
+    "errors": {
+      "load": "İçerik yüklenemedi: {{message}}"
+    },
+    "empty": {
+      "title": "İçerik bulunamadı",
+      "description": "İlk {{category}} öğenizi ekleyerek başlayın."
+    },
+    "categories": {
+      "vod": {
+        "label": "Filmler",
+        "description": "Filmler ve bağımsız video içerikleri"
+      },
+      "tv": {
+        "label": "TV Kanalları",
+        "description": "Canlı TV kanalları ve yayınlar"
+      },
+      "series": {
+        "label": "Diziler",
+        "description": "Sezonları ve bölümleri olan TV dizileri"
+      },
+      "events": {
+        "label": "Etkinlikler",
+        "description": "Canlı etkinlikler ve özel programlar"
+      },
+      "kids": {
+        "label": "Çocuklar",
+        "description": "Çocuk ve aile içerikleri"
+      },
+      "anime": {
+        "label": "anime",
+        "description": "Anime ve manga uyarlamaları"
+      }
+    },
+    "actions": {
+      "addManualMovie": "Manuel Film Ekle",
+      "addManualSeries": "Manuel Dizi Ekle",
+      "addManualKids": "Manuel Çocuk İçeriği Ekle",
+      "addManualAnime": "Manuel Anime Ekle",
+      "addTvChannel": "TV Kanalı Ekle",
+      "addEvent": "Etkinlik Ekle",
+      "addContent": "İçerik Ekle",
+      "addFromTmdb": "TMDB'den Ekle",
+      "bulkImport": "Toplu İçe Aktar",
+      "manageCategories": "Kategorileri Yönet",
+      "scanFolders": "Klasörleri Tara",
+      "fillMetadata": "Meta Verileri Doldur",
+      "tvProviders": "TV Sağlayıcıları"
+    },
+    "table": {
+      "columns": {
+        "title": "Başlık",
+        "description": "Açıklama",
+        "type": "Tür",
+        "format": "Biçim",
+        "year": "Yıl",
+        "status": "Durum",
+        "created": "Oluşturulma",
+        "actions": "İşlemler"
+      },
+      "values": {
+        "tmdbId": "Veri Tabanı: {{id}}",
+        "noDescription": "Açıklama mevcut değil",
+        "unknown": "Bilinmiyor",
+        "event": "Etkinlik"
+      }
+    },
+    "pagination": {
+      "range": "{{start}}-{{end}} arası gösteriliyor / Toplam {{total}} öğe",
+      "rowsPerPage": "Sayfa başına satır",
+      "rows": "Satırlar",
+      "updating": "Güncelleniyor...",
+      "pageOf": "Sayfa {{page}} / {{total}}"
+    }
+  },
+  "tickets": {
+    "errors": {
+      "sendMessage": "Mesaj gönderilemedi",
+      "sendMessageRetry": "Mesaj gönderilemedi. Lütfen tekrar deneyin.",
+      "assign": "Bilet (Ticket) atanamadı",
+      "assignRetry": "Bilet atanamadı. Lütfen tekrar deneyin.",
+      "delete": "Bilet silinemedi",
+      "deleteRetry": "Bilet silinemedi. Lütfen tekrar deneyin.",
+      "updateStatus": "Bilet durumu güncellenemedi",
+      "updateStatusRetry": "Bilet durumu güncellenemedi. Lütfen tekrar deneyin.",
+      "create": "Bilet oluşturulamadı",
+      "createRetry": "Bilet oluşturulamadı. Lütfen tekrar deneyin.",
+      "validation": {
+        "titleDescriptionRequired": "Başlık ve açıklama gereklidir",
+        "resellerRequired": "Lütfen bir bayi seçin"
+      }
+    },
+    "confirm": {
+      "delete": "Bu bileti silmek istediğinize emin misiniz? Bu işlem geri alınamaz."
+    },
+    "filters": {
+      "status": {
+        "all": "Tüm Durumlar"
+      },
+      "priority": {
+        "all": "Tüm Öncelikler"
+      },
+      "unread": {
+        "all": "Tüm Mesajlar",
+        "unread": "Okunmamış Mesajlar",
+        "read": "Okunmuş Mesajlar"
+      }
+    },
+    "unreadMessages": "Okunmamış Mesajlar",
+    "stats": {
+      "total": "Toplam"
+    },
+    "actions": {
+      "panelTitle": "Yönetici İşlemleri",
+      "assigning": "Atanıyor...",
+      "assignToMe": "Bana Ata",
+      "changeStatus": "Durumu Değiştir",
+      "internalMessage": "Dahili mesaj olarak gönder",
+      "scheduleFollowUp": "Takip Planla",
+      "reassignTicket": "Bileti Yeniden Ata"
+    },
+    "priority": {
+      "low": "Düşük",
+      "medium": "Orta",
+      "high": "Yüksek",
+      "urgent": "Acil"
+    },
+    "category": {
+      "technical": "Teknik",
+      "billing": "Faturalandırma",
+      "account": "Hesap",
+      "content": "İçerik",
+      "other": "Diğer"
+    },
+    "create": {
+      "title": "Yeni Bilet Oluştur",
+      "description": "Test veya idari amaçlarla yeni bir destek bileti oluşturun.",
+      "labels": {
+        "title": "Başlık",
+        "description": "Açıklama",
+        "reseller": "Bayi",
+        "priority": "Öncelik",
+        "category": "Kategori"
+      },
+      "placeholders": {
+        "title": "Bilet başlığını girin",
+        "description": "Bilet açıklamasını girin",
+        "reseller": "Bir bayi seçin"
+      },
+      "submitting": "Oluşturuluyor...",
+      "submit": "Bilet Oluştur"
+    },
+    "advanced": {
+      "title": "Gelişmiş Filtreler",
+      "description": "Bilet aramanızı daraltmak için ek filtreler uygulayın.",
+      "labels": {
+        "dateFrom": "Başlangıç Tarihi",
+        "dateTo": "Bitiş Tarihi"
+      },
+      "helper": "Biletleri oluşturulma tarih aralığına göre filtreleyin. Tüm tarihleri görmek için alanları boş bırakın.",
+      "clear": "Tümünü Temizle",
+      "apply": "Filtreleri Uygula"
+    },
+    "sort": {
+      "title": "Sıralama Seçenekleri",
+      "description": "Biletlerinizi nasıl sıralayacağınızı seçin.",
+      "labels": {
+        "sortBy": "Sıralama Ölçütü",
+        "direction": "Yön"
+      },
+      "options": {
+        "newestFirst": "Önce En Yeni",
+        "oldestFirst": "Önce En Eski",
+        "priority": "Öncelik",
+        "status": "Durum",
+        "unreadFirst": "Önce Okunmamışlar"
+      },
+      "direction": {
+        "descending": "Azalan",
+        "ascending": "Artan"
+      },
+      "reset": "Varsayılana Sıfırla",
+      "apply": "Sıralamayı Uygula"
+    }
+  },
+  "activityLogs": {
+    "title": "Etkinlik Günlükleri",
+    "subtitle": "Tam sistem etkinliği ve denetim izi",
+    "tabs": {
+      "dashboard": "Panel",
+      "systemLogs": "Sistem Günlükleri",
+      "loginHistory": "Giriş Geçmişi",
+      "viewingHistory": "İzleme Geçmişi"
+    },
+    "filters": {
+      "actionType": "İşlem Türü",
+      "allActions": "Tüm işlemler",
+      "startDate": "Başlangıç Tarihi",
+      "endDate": "Bitiş Tarihi"
+    },
+    "errors": {
+      "loading": "Günlükler yüklenirken hata: {{message}}",
+      "loadingFallback": "Etkinlik günlükleri yüklenemedi"
+    },
+    "noLogs": "Etkinlik günlüğü bulunamadı.",
+    "table": {
+      "date": "Tarih",
+      "action": "İşlem",
+      "user": "Kullanıcı",
+      "target": "Hedef",
+      "description": "Açıklama",
+      "credits": "Krediler"
+    },
+    "pagination": {
+      "showing": "{{total}} günlükten {{from}} ile {{to}} arası gösteriliyor",
+      "pageOf": "Sayfa {{page}} / {{total_pages}}"
+    },
+    "actionTypes": {
+      "USER_CREATED": "Kullanıcı Oluşturuldu",
+      "USER_DELETED": "Kullanıcı Silindi",
+      "RESELLER_CREATED": "Bayi Oluşturuldu",
+      "RESELLER_DELETED": "Bayi Silindi",
+      "CREDIT_USED": "Kredi Kullanıldı",
+      "CREDIT_ASSIGNED": "Kredi Tanımlandı",
+      "SYSTEM_INIT": "Sistem Başlatıldı",
+      "LOGIN": "Giriş",
+      "LOGOUT": "Çıkış"
+    }
+  },
+  "viewingHistory": {
+    "title": "İzleme Geçmişi",
+    "lastUpdated": "Son güncelleme: {{time}}",
+    "autoRefreshOn": "Otomatik yenileme: AÇIK",
+    "refreshNow": "Şimdi Yenile",
+    "filters": {
+      "username": "Kullanıcı Adı",
+      "contentType": "İçerik Türü",
+      "allTypes": "Tüm türler",
+      "ipAddress": "IP Adresi",
+      "startDate": "Başlangıç Tarihi",
+      "endDate": "Bitiş Tarihi"
+    },
+    "placeholders": {
+      "searchUsername": "Kullanıcı adı ara...",
+      "ipAddress": "IP adresi..."
+    },
+    "loading": "İzleme geçmişi yükleniyor...",
+    "errors": {
+      "loading": "İzleme geçmişi yüklenirken hata: {{message}}"
+    },
+    "noHistory": "İzleme geçmişi bulunamadı.",
+    "unknown": "Bilinmiyor",
+    "table": {
+      "dateTime": "Tarih ve Saat",
+      "user": "Kullanıcı",
+      "contentType": "İçerik Türü",
+      "contentTitle": "İçerik Başlığı",
+      "info": "Bilgi",
+      "ipAddress": "IP Adresi",
+      "device": "Cihaz"
+    },
+    "pagination": {
+      "showing": "{{total}} izleme oturumundan {{from}} ile {{to}} arası gösteriliyor",
+      "pageOf": "Sayfa {{page}} / {{total_pages}}"
+    }
+  },
+  "email": {
+    "title": "E-posta Yapılandırması",
+    "description": "Şifre sıfırlama, 2FA bildirimleri ve diğer e-postalar için SMTP ayarlarını yapılandırın",
+    "tabs": {
+      "settings": "SMTP Ayarları",
+      "test": "Test E-postası",
+      "guide": "Sağlayıcı Kılavuzu"
+    },
+    "status": {
+      "title": "E-posta Servis Durumu",
+      "description": "E-posta servisini küresel olarak etkinleştirin veya devre dışı bırakın"
+    },
+    "server": {
+      "title": "SMTP Sunucusu",
+      "description": "SMTP sunucu bağlantınızı yapılandırın",
+      "preset": "Sağlayıcı Ön Ayarı",
+      "host": "SMTP Sunucusu",
+      "port": "Liman",
+      "username": "Kullanıcı Adı / E-posta",
+      "password": "Şifre / Uygulama Şifresi",
+      "enterPassword": "Şifre girin",
+      "tls": "TLS/STARTTLS Etkinleştir (önerilir)",
+      "presets": {
+        "gmail": "Gmail",
+        "outlook": "Görünüm",
+        "sendgrid": "SendGrid",
+        "mailgun": "Posta tabancası",
+        "amazonSes": "Amazon SES'i",
+        "zoho": "Zoho",
+        "custom": "Gelenek"
+      }
+    },
+    "identity": {
+      "title": "E-posta Kimliği",
+      "description": "E-postalarınızın alıcılara nasıl görüneceğini yapılandırın",
+      "fromName": "Gönderen Adı",
+      "fromEmail": "Gönderen E-postası",
+      "appName": "Uygulama Adı",
+      "appNameHint": "E-posta şablonlarında ve konularında kullanılır",
+      "frontendUrl": "Ön uç URL'si",
+      "frontendUrlHint": "Şifre sıfırlama bağlantıları için kullanılır"
+    },
+    "test": {
+      "title": "Test E-postası Gönder",
+      "description": "Bir test e-postası göndererek SMTP yapılandırmanızı doğrulayın",
+      "disabled": "E-posta servisi şu anda devre dışı. Önce SMTP Ayarları sekmesinden etkinleştirin.",
+      "recipient": "Alıcı E-postası",
+      "send": "Test Gönder",
+      "sending": "Gönderiliyor..."
+    },
+    "guide": {
+      "title": "SMTP Sağlayıcı Kurulum Kılavuzu",
+      "description": "Popüler e-posta sağlayıcıları için hızlı kurulum talimatları",
+      "providers": {
+        "gmail": {
+          "title": "Gmail / Google Workspace",
+          "steps": {
+            "1": "Google Hesabı ayarlarınıza gidin",
+            "2": "Güvenlik > 2 Adımlı Doğrulama'ya gidin (etkinleştirilmelidir)",
+            "3": "Güvenlik > Uygulama şifreleri'ne gidin",
+            "4": "\"Posta\" için yeni bir uygulama şifresi oluşturun",
+            "5": "16 karakterlik şifreyi burada kullanın"
+          },
+          "example": "Ana Bilgisayar: smtp.gmail.com | Liman: 587 | TLS: Evet"
+        },
+        "sendgrid": {
+          "title": "SendGrid",
+          "steps": {
+            "1": "SendGrid hesabı oluşturun",
+            "2": "Ayarlar > API Anahtarları'na gidin",
+            "3": "\"Posta Gönderme\" izinlerine sahip bir API anahtarı oluşturun",
+            "4": "Kullanıcı adı: \"apikey\" (gerçek metin)",
+            "5": "Şifre: API anahtarınız"
+          },
+          "example": "Ana Bilgisayar: smtp.sendgrid.net | Liman: 587 | TLS: Evet"
+        },
+        "amazonSes": {
+          "title": "Amazon SES'i",
+          "steps": {
+            "1": "SES konsolunda alan adınızı veya e-posta adresinizi doğrulayın",
+            "2": "SES'te SMTP kimlik bilgileri oluşturun",
+            "3": "Oluşturulan SMTP kullanıcı adını ve şifresini kullanın",
+            "4": "Doğru bölge uç noktasını kullanın"
+          },
+          "example": "Ana Bilgisayar: email-smtp.[bölge].amazonaws.com | Liman: 587 | TLS: Evet"
+        }
+      }
+    },
+    "actions": {
+      "save": "Yapılandırmayı Kaydet"
+    },
+    "success": {
+      "saved": "SMTP yapılandırması başarıyla kaydedildi"
+    },
+    "errors": {
+      "loadFailed": "SMTP yapılandırması yüklenemedi",
+      "saveFailed": "Yapılandırma kaydedilemedi",
+      "testFailed": "Test e-postası gönderilemedi"
+    }
+  },
+  "twoFactor": {
+    "title": "İki Faktörlü Kimlik Doğrulama",
+    "description": "Hesabınıza ekstra bir güvenlik katmanı ekleyin",
+    "status": {
+      "enabled": "2FA etkin",
+      "disabled": "2FA etkin değil",
+      "notAvailable": "İki faktörlü kimlik doğrulama yalnızca yönetici ve bayi hesapları için kullanılabilir"
+    },
+    "setup": {
+      "title": "İki Faktörlü Kimlik Doğrulamayı Kur",
+      "scanQR": "Bu QR kodunu doğrulama uygulamanızla tarayın",
+      "manualEntry": "Veya bu kodu manuel olarak girin:",
+      "verifyCode": "Doğrulamak için uygulamanızdaki 6 haneli kodu girin",
+      "placeholder": "6 haneli kodu girin",
+      "verify": "Doğrula ve Etkinleştir",
+      "verifying": "Doğrulanıyor..."
+    },
+    "backupCodes": {
+      "title": "Yedek Kodlar",
+      "description": "Bu yedek kodları güvenli bir yerde saklayın. Her kod yalnızca bir kez kullanılabilir.",
+      "copy": "Kodları Kopyala",
+      "copied": "Kopyalandı!",
+      "regenerate": "Kodları Yeniden Oluştur",
+      "regenerating": "Yeniden oluşturuluyor..."
+    },
+    "disable": {
+      "title": "2FA'yı Devre Dışı Bırak",
+      "description": "İki faktörlü kimlik doğrulamayı devre dışı bırakmak için 2FA kodunuzu veya bir yedek kodu girin",
+      "button": "2FA'yı Devre Dışı Bırak",
+      "disabling": "Devre dışı bırakılıyor..."
+    },
+    "errors": {
+      "setupFailed": "2FA kurulumu başarısız oldu",
+      "verifyFailed": "Geçersiz kod. Lütfen tekrar deneyin.",
+      "disableFailed": "2FA devre dışı bırakılamadı",
+      "loadFailed": "2FA durumu yüklenemedi"
+    }
+  }
+}

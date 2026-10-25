@@ -1,0 +1,501 @@
+{
+  "layout": {
+    "navigation": {
+      "dashboard": "Панель управления",
+      "subscribers": "Подписчики",
+      "connections": "Подключения",
+      "expirations": "Срок действия",
+      "trialUsers": "Пробные пользователи",
+      "walletCredits": "Кошелек и Кредиты",
+      "apiKeys": "Ключи API",
+      "support": "Поддержка",
+      "activityLogs": "Журналы активности"
+    },
+    "sections": {
+      "main": "Главная",
+      "operations": "Операции",
+      "finance": "Финансы",
+      "developer": "Разработчик",
+      "support": "Поддержка"
+    },
+    "wallet": {
+      "balance": "Баланс",
+      "addCredits": "Добавить кредиты",
+      "currencyUnit": "CR"
+    },
+    "search": {
+      "placeholder": "Поиск пользователей, устройств или тикетов..."
+    },
+    "account": {
+      "reseller": "Реселлер",
+      "myAccount": "Мой аккаунт",
+      "profile": "Профиль",
+      "billing": "Биллинг",
+      "logout": "Выйти"
+    }
+  },
+  "dashboard": {
+    "commandCenter": "Командный центр реселлера",
+    "welcomeBack": "С возвращением, {{name}}",
+    "subscribersCount": "{{count}} подписчиков",
+    "creditsAvailable": "{{credits}} кредитов",
+    "statsDescription": "У вас <subscribers>{{subscribers}} подписчиков</subscribers> и <credits>{{credits}} кредитов</credits> доступно.",
+    "newUser": "Новый пользователь",
+    "newDemo": "Новая демо-версия",
+    "expiringSoon": "Скоро истекает",
+    "viewAll": "Посмотреть все",
+    "quickActions": "Быстрые действия",
+    "profileSettings": "Настройки профиля"
+  },
+  "stats": {
+    "noSubscribersYet": "Подписчиков пока нет",
+    "excellent": "Отлично",
+    "good": "Хорошо",
+    "fair": "Средне",
+    "inactive": "{{count}} неактивно",
+    "totalSubscribers": "Всего подписчиков",
+    "newThisMonth": "+{{count}} в этом месяце",
+    "noNewThisMonth": "В этом месяце нет новых",
+    "networkHealth": "Состояние сети",
+    "deviceSlots": "Слоты устройств",
+    "activeUsers": "{{count}} активных пользователей",
+    "activeDemos": "Активные демо",
+    "trialsInProgress": "Пробные периоды",
+    "noActiveTrials": "Нет активных пробных периодов"
+  },
+  "quickActions": {
+    "createUser": "Создать пользователя",
+    "addNewSubscriber": "Добавить нового подписчика",
+    "issueDemo": "Выдать демо",
+    "generateTrialAccount": "Создать пробный аккаунт",
+    "manageDevices": "Управление устройствами",
+    "resetOrKillSessions": "Сбросить или завершить сессии",
+    "userList": "Список пользователей",
+    "viewAllSubscribers": "Все подписчики",
+    "buyCredits": "Купить кредиты",
+    "topUpWallet": "Пополнить кошелек",
+    "support": "Поддержка",
+    "openTicket": "Открыть тикет"
+  },
+  "endUsers": {
+    "title": "Конечные пользователи",
+    "subtitle": "Создание и управление конечными пользователями для всех реселлеров",
+    "legend": {
+      "demoUser": "Демо-пользователь",
+      "expiredDemo": "Демо истекло",
+      "demoBadge": "Бейдж демо"
+    },
+    "badges": {
+      "demo": "ДЕМО"
+    },
+    "time": {
+      "expired": "Истекло",
+      "never": "Никогда",
+      "left": "осталось",
+      "hoursMinutes": "{{hours}}ч {{minutes}}м",
+      "minutes": "{{minutes}}м",
+      "days": "{{days}} дн.",
+      "daysRemaining": "({{days}} дн. осталось)"
+    },
+    "premium": "Премиум",
+    "suspended": "Приостановлен",
+    "demo": "Демо",
+    "expired": "Истекло",
+    "never": "Никогда",
+    "endLicense": "Конец лицензии",
+    "createDialogDescription": "Создать новую учетную запись конечного пользователя. Кредиты будут списаны с вашего баланса.",
+    "subscriptionDuration": "Длительность подписки",
+    "selectDuration": "Выберите длительность",
+    "deviceLimit": "Лимит устройств",
+    "selectDeviceLimit": "Выберите лимит устройств",
+    "contentCategories": "Категории контента",
+    "categoriesHelp": "Нажмите, чтобы выбрать категории контента, к которым у этого пользователя будет доступ.",
+    "creditCostCalculation": "Расчет стоимости в кредитах:",
+    "availableCredits": "Ваши доступные кредиты",
+    "insufficientCredits": "Недостаточно кредитов!",
+    "insufficientCreditsShort": "Недостаточно кредитов",
+    "selectOptions": "Выберите опции",
+    "needMoreCredits": "Вам нужно еще {{amount}} кредитов.",
+    "deviceOptions": {
+      "3": "3 устройства (1 кредит/мес)",
+      "5": "5 устройств (1.5 кредита/мес)",
+      "6": "6 устройств (1.75 кредита/мес)",
+      "7": "7 устройств (2 кредита/мес)",
+      "8": "8 устройств (2.25 кредита/мес)",
+      "9": "9 устройств (2.5 кредита/мес)",
+      "10": "10 устройств (2.75 кредита/мес)"
+    },
+    "duration": {
+      "month": "{{count}} месяц",
+      "month_plural": "{{count}} мес.",
+      "months": "{{count}} месяцев"
+    },
+    "validation": {
+      "usernameMin": "Имя пользователя должно содержать не менее 3 символов",
+      "passwordMin": "Пароль должен содержать не менее 4 цифр",
+      "passwordMax": "Пароль должен содержать не более 10 цифр",
+      "passwordDigits": "Пароль должен содержать только цифры",
+      "invalidEmail": "Неверный адрес электронной почты",
+      "durationMin": "Минимум 1 месяц",
+      "durationMax": "Максимум 12 месяцев",
+      "selectDeviceLimit": "Пожалуйста, выберите лимит устройств",
+      "selectCategory": "Пожалуйста, выберите хотя бы одну категорию"
+    },
+    "errors": {
+      "failedToLoadUsers": "Не удалось загрузить пользователей"
+    },
+    "selectDurationAndDevices": "Выберите длительность и устройства",
+    "monthPlural": "мес.",
+    "monthsPlural": "мес.",
+    "creditPerMonth": "кредит/мес",
+    "creditsPerMonth": "кредита/мес",
+    "creditBreakdown": "{{duration}} {{durationUnit}} × {{devices}} устр.{{devicePlural}} ({{costPerMonth}} {{costUnit}}) = {{total}} кред.{{creditPlural}}"
+  },
+  "dialogs": {
+    "suspend": {
+      "title": "Отключить пользователя",
+      "description": "Вы уверены, что хотите приостановить работу {{username}}? Это приведет к отключению всех его активных устройств."
+    },
+    "activate": {
+      "title": "Включить пользователя",
+      "description": "Вы уверены, что хотите активировать {{username}}?"
+    },
+    "delete": {
+      "title": "Удалить пользователя",
+      "description": "Вы уверены, что хотите навсегда удалить {{username}}? Это действие нельзя будет отменить."
+    }
+  },
+  "activityLogs": {
+    "title": "Журналы активности",
+    "description": "Просмотр ваших недавних действий",
+    "refresh": "Обновить",
+    "noLogs": "Журналы активности не найдены",
+    "errorLoading": "Ошибка при загрузке журналов: {{message}}",
+    "filters": {
+      "actionType": "Тип действия",
+      "allActions": "Все действия",
+      "startDate": "Дата начала",
+      "endDate": "Дата окончания"
+    },
+    "actionTypes": {
+      "USER_CREATED": "Пользователь создан",
+      "USER_DELETED": "Пользователь удален",
+      "USER_EXTENDED": "Подписка продлена",
+      "CREDIT_USED": "Кредит использован",
+      "DEMO_CREATED": "Демо создано",
+      "LOGIN": "Вход",
+      "LOGOUT": "Выход"
+    },
+    "table": {
+      "date": "Дата",
+      "action": "Действие",
+      "targetUser": "Целевой пользователь",
+      "description": "Описание",
+      "credits": "Кредиты"
+    },
+    "pagination": {
+      "showing": "Показано с {{from}} по {{to}} из {{total}} результатов",
+      "previous": "Назад",
+      "next": "Вперед",
+      "pageOf": "Страница {{page}} из {{totalPages}}"
+    }
+  },
+  "editUser": {
+    "dialogTitle": "Редактировать пользователя: {{username}}",
+    "dialogDescription": "Редактирование данных пользователя, управление подпиской и продление доступа",
+    "editDetailsTitle": "Редактировать данные пользователя",
+    "editDetailsDescription": "Обновление информации о пользователе и пароля",
+    "validation": {
+      "minMonth": "Минимум 1 месяц",
+      "maxExtension": "Максимальное продление — 12 месяцев",
+      "usernameMinLength": "Имя пользователя должно содержать не менее 3 символов",
+      "invalidEmail": "Неверный адрес электронной почты",
+      "passwordMinLength": "Пароль должен содержать не менее 4 цифр",
+      "passwordMaxLength": "Пароль должен содержать не более 10 цифр",
+      "passwordDigitsOnly": "Пароль должен содержать только цифры",
+      "maxDevicesLimit": "Разрешено максимум 10 устройств",
+      "selectCategory": "Пожалуйста, выберите хотя бы одну категорию"
+    },
+    "labels": {
+      "username": "Имя пользователя",
+      "email": "Электронная почта",
+      "newPassword": "Новый пароль (4-10 цифр)",
+      "maxDevices": "Макс. устройств",
+      "categories": "Категории",
+      "deviceLimit": "Лимит устройств",
+      "status": "Статус",
+      "expirationDate": "Дата истечения",
+      "currentCategories": "Текущие категории"
+    },
+    "placeholders": {
+      "enterUsername": "Введите имя пользователя",
+      "enterEmail": "Введите email",
+      "leaveEmptyToKeep": "Оставьте пустым, чтобы сохранить текущий"
+    },
+    "creditWarning": {
+      "title": "Предупреждение о стоимости",
+      "addingDevices": "Добавление {{count}} устройства будет стоить",
+      "addingDevicesPlural": "Добавление {{count}} устройств будет стоить",
+      "credits": "{{amount}} кредитов",
+      "calculation": "({{days}} дн. осталось × 0.25 кредита за устройство в месяц)"
+    },
+    "subscription": {
+      "title": "Текущая подписка",
+      "devices": "{{count}} устройств",
+      "expired": "Истекла",
+      "active": "Активна",
+      "noCategories": "Категории не назначены"
+    },
+    "extend": {
+      "title": "Продлить подписку",
+      "description": "Добавить месяцы к подписке этого пользователя (максимум 12 месяцев)",
+      "periodLabel": "Период продления",
+      "selectPeriod": "Выберите период продления",
+      "costCalculation": "Расчет стоимости продления:",
+      "availableCredits": "Ваши доступные кредиты",
+      "insufficientCredits": "Недостаточно кредитов!",
+      "needMoreCredits": "Вам нужно еще {{amount}} кредитов.",
+      "selectExtension": "Выбрать продление",
+      "breakdown": {
+        "device": "устройство",
+        "devicesPlural": "устройств",
+        "monthsDevices": "{{months}} {{monthLabel}} × {{devices}} {{deviceLabel}}",
+        "oneCredit": "(1 кредит/мес)",
+        "extraDevices": "(1 база + {{extraDevices}} × 0.25 = {{creditsPerMonth}} кредитов/мес)",
+        "credit": "кредит",
+        "creditsPlural": "кредитов",
+        "totalCredits": "= {{cost}} {{creditLabel}}"
+      }
+    },
+    "buttons": {
+      "cancel": "Отмена",
+      "updating": "Обновление...",
+      "updateUser": "Обновить пользователя",
+      "extending": "Продление...",
+      "extendSubscription": "Продлить подписку ({{cost}} кредитов)",
+      "insufficientCredits": "Недостаточно кредитов"
+    },
+    "loading": {
+      "categories": "Загрузка категорий..."
+    },
+    "empty": {
+      "noCategories": "Нет доступных категорий"
+    },
+    "errors": {
+      "extendFailed": "Не удалось продлить подписку",
+      "noUserSelected": "Пользователь не выбран"
+    }
+  },
+  "buyCredits": {
+    "title": "Купить кредиты",
+    "description": "Покупайте кредиты платформы через Stripe Checkout. Кредиты используются для создания и управления конечными пользователями.",
+    "loadingPricing": "Загрузка текущих цен...",
+    "retry": "Повторить",
+    "basePrice": "Базовая цена",
+    "perCredit": "за кредит",
+    "yourDiscount": "Ваша скидка за объем",
+    "applied": "применено",
+    "none": "нет",
+    "effectiveUnitPrice": "Эффективная цена за единицу",
+    "quantityLabel": "Количество (кредиты)",
+    "quantityHint": "Введите количество кредитов, которое вы хотите приобрести",
+    "totalAmount": "Итоговая сумма",
+    "includesDiscount": "Включает скидку за объем {{discount}}%",
+    "noDiscount": "Нет скидки для этого количества",
+    "redirecting": "Перенаправление...",
+    "proceedToCheckout": "Перейти к оплате",
+    "volumeDiscountTiers": "Уровни скидок за объем",
+    "minQuantity": "Мин. кол-во",
+    "discount": "Скидка",
+    "noTiers": "Уровни не настроены. Применяется базовая цена.",
+    "invalidQuantity": "Пожалуйста, введите корректное количество больше 0",
+    "errors": {
+      "failedLoadPricing": "Не удалось загрузить цены",
+      "failedCreateCheckout": "Не удалось создать сессию оплаты"
+    }
+  },
+  "expirationMonitoring": {
+    "title": "Мониторинг истечения срока действия пользователей",
+    "errorLoading": "Не удалось загрузить данные об истечении срока. Пожалуйста, попробуйте еще раз.",
+    "neverExpires": "Никогда не истекает",
+    "noEmail": "Нет email",
+    "status": {
+      "expired": "Истек",
+      "day": "{{count}} день",
+      "days": "{{count}} дн.",
+      "noExpiration": "Нет срока истечения",
+      "active": "Активен",
+      "inactive": "Неактивен"
+    },
+    "summary": {
+      "expired": "Истекли",
+      "critical": "Критично (≤2 дн.)",
+      "warning": "Предупреждение (3-5 дн.)",
+      "good": "Хорошо (>5 дн.)",
+      "noExpiration": "Без срока истечения"
+    },
+    "details": {
+      "criticalTitle": "Критическое истечение срока",
+      "criticalDescription": "Пользователи, требующие немедленного внимания (срок истекает в течение 2 дней)",
+      "fullTitle": "Детали истечения срока пользователей",
+      "fullDescription": "Отслеживайте даты истечения срока и статус учетных записей ваших пользователей"
+    },
+    "table": {
+      "username": "Имя пользователя",
+      "email": "Электронная почта",
+      "expirationDate": "Дата истечения",
+      "status": "Статус",
+      "active": "Активен"
+    },
+    "empty": {
+      "noCritical": "Нет пользователей с критическим сроком",
+      "noCriticalDescription": "У всех ваших пользователей осталось более 2 дней до истечения срока.",
+      "noUsers": "Пользователи не найдены",
+      "noUsersDescription": "Создайте конечных пользователей, чтобы отслеживать даты истечения их срока."
+    }
+  },
+  "analytics": {
+    "active": "Активен",
+    "inactive": "Неактивен",
+    "acquisitionTrend": "Тенденция привлечения",
+    "acquisitionDescription": "Новые подписчики за последние 6 месяцев",
+    "networkStatus": "Статус сети",
+    "networkDescription": "Активные vs Приостановленные пользователи",
+    "totalUsers": "Всего пользователей"
+  },
+  "profile": {
+    "title": "Профиль реселлера",
+    "description": "Управление настройками и предпочтениями вашей учетной записи",
+    "contactInformation": "Контактная информация",
+    "emailPlaceholder": "your@email.com",
+    "contactInfoNote": "Мы будем использовать этот email для важных уведомлений",
+    "saveChanges": "Сохранить изменения",
+    "changePassword": "Сменить пароль",
+    "newPasswordLabel": "Новый пароль",
+    "newPasswordPlaceholder": "Введите новый пароль",
+    "confirmPasswordLabel": "Подтвердите пароль",
+    "confirmPasswordPlaceholder": "Подтвердите новый пароль",
+    "passwordHelp": "Пароль должен содержать не менее 8 символов",
+    "updatePassword": "Обновить пароль",
+    "updated": "Профиль успешно обновлен",
+    "updateFailed": "Не удалось обновить профиль",
+    "passwordUpdated": "Пароль успешно обновлен",
+    "updatePasswordFailed": "Не удалось обновить пароль",
+    "passwordTooShort": "Пароль должен содержать не менее 8 символов",
+    "enterAndConfirmPassword": "Пожалуйста, введите и подтвердите ваш новый пароль",
+    "passwordsDoNotMatch": "Пароли не совпадают"
+  },
+  "creditBalance": {
+    "title": "Баланс кредитов",
+    "availableCredits": "Доступные кредиты",
+    "lowBalance": "Низкий баланс",
+    "available": "Доступно",
+    "creditsAvailableDescription": "Кредиты, доступные для создания новых пользователей",
+    "lowBalanceWarning": "Ваш баланс кредитов низок. Свяжитесь с администратором, чтобы пополнить счет.",
+    "totalUsers": "Всего пользователей",
+    "endUsersCreated": "Создано конечных пользователей",
+    "creditsUsed": "Использовано кредитов",
+    "totalCreditsConsumed": "Всего потреблено кредитов",
+    "creditSummary": {
+      "title": "Сводка по кредитам",
+      "description": "Обзор использования кредитов и баланса",
+      "initialCredits": "Начальные кредиты",
+      "creditsUsed": "Использовано кредитов",
+      "availableCredits": "Доступные кредиты",
+      "usageRate": "Коэффициент использования"
+    },
+    "userBreakdown": {
+      "title": "Расшифровка кредитов по пользователям",
+      "description": "Стоимость кредитов на пользователя в зависимости от конфигурации устройств",
+      "device": "устройство",
+      "devices": "устройств",
+      "credits": "кредитов"
+    },
+    "calculationGuide": {
+      "title": "Руководство по расчету кредитов",
+      "description": "Поймите, как рассчитываются кредиты для различных конфигураций устройств",
+      "standardDevices": "3 устройства (Стандарт)",
+      "standardCredits": "1.0 кредит",
+      "standardDescription": "Самая распространенная конфигурация для конечных пользователей",
+      "premiumDevices": "5 устройств (Премиум)",
+      "premiumCredits": "1.5 кредита",
+      "premiumDescription": "Премиум-пакет с большим количеством устройств",
+      "extraDevices": "Дополнительные устройства",
+      "extraCredits": "+0.25 кредита за каждое",
+      "extraDescription": "Дополнительная стоимость за каждое устройство сверх 3",
+      "examples": "Примеры:",
+      "example1Device": "1 устройство",
+      "example1DeviceCost": "1.0 кредит",
+      "example4Devices": "4 устройства",
+      "example4DevicesCost": "1.25 кредитов",
+      "example6Devices": "6 устройств",
+      "example6DevicesCost": "1.75 кредитов"
+    }
+  },
+  "supportTickets": {
+    "descriptionPlaceholder": "Пожалуйста, предоставьте подробную информацию о вашей проблеме...",
+    "header": {
+      "title": "Билеты в службу поддержки",
+      "description": "Создавайте запросы на поддержку и управляйте ими",
+      "unreadSingle": "У вас есть {{count}} непрочитанное сообщение",
+      "unreadPlural": "У вас есть {{count}} непрочитанных сообщений",
+      "createTicket": "Создать билет"
+    },
+    "createDialog": {
+      "title": "Создать заявку в службу поддержки",
+      "description": "Опишите вашу проблему и мы поможем вам решить ее как можно быстрее.",
+      "titleLabel": "Заголовок",
+      "titlePlaceholder": "Краткое описание вашей проблемы",
+      "categoryLabel": "Категория",
+      "priorityLabel": "Приоритет",
+      "descriptionLabel": "Описание",
+      "descriptionPlaceholder": "Пожалуйста, предоставьте подробную информацию о вашей проблеме...",
+      "cancel": "Отмена",
+      "creating": "Создание...",
+      "create": "Создать билет"
+    },
+    "categories": {
+      "technical": "Техническая проблема",
+      "billing": "Вопрос о выставлении счетов",
+      "account": "Поддержка аккаунта",
+      "content": "Проблема с контентом",
+      "other": "Другой"
+    },
+    "priorities": {
+      "low": "Низкий",
+      "medium": "Середина",
+      "high": "Высокий",
+      "urgent": "Срочный"
+    },
+    "stats": {
+      "total": "Общий",
+      "open": "Открыть",
+      "inProgress": "В ходе выполнения",
+      "resolved": "Решено"
+    },
+    "list": {
+      "title": "Мои билеты в службу поддержки",
+      "empty": "Билеты не найдены. Создайте свой первый запрос в службу поддержки выше.",
+      "countSingle": "{{count}} билет найден",
+      "countPlural": "Билетов найдено {{count}}",
+      "filter": "Фильтр",
+      "sort": "Сортировать",
+      "refresh": "Обновить"
+    },
+    "empty": {
+      "title": "Заявок в службу поддержки пока нет",
+      "description": "Получите помощь от нашей службы поддержки, создав свой первый билет. Мы здесь, чтобы помочь вам!",
+      "createFirst": "Создайте свой первый билет"
+    },
+    "errors": {
+      "createFailed": "Не удалось создать билет",
+      "createFailedRetry": "Не удалось создать билет. Пожалуйста, попробуйте еще раз.",
+      "sendFailed": "Не удалось отправить сообщение",
+      "sendFailedRetry": "Не удалось отправить сообщение. Пожалуйста, попробуйте еще раз."
+    }
+  },
+  "secretKeyCopied": "Секретный ключ скопирован в буфер обмена",
+  "iHaveCopiedMyKey": "Я скопировал свой ключ",
+  "noUsersFound": "Пользователи не найдены",
+  "noCriticalExpirations": "Нет критических истечений"
+}

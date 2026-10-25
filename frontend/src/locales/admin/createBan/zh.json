@@ -1,0 +1,19 @@
+{
+    "createBan": {
+        "title": "创建封禁",
+        "usernameLabel": "用户名",
+        "usernamePlaceholder": "输入要封禁的用户名",
+        "banTypeLabel": "封禁类型",
+        "temporary": "临时",
+        "permanent": "永久",
+        "banLevelLabel": "封禁等级",
+        "level1": "等级 1 - 警告",
+        "level2": "等级 2 - 限制",
+        "level3": "等级 3 - 完全封禁",
+        "reasonLabel": "原因",
+        "reasonPlaceholder": "输入封禁原因...",
+        "customDurationLabel": "自定义时长",
+        "customDurationPlaceholder": "输入时长（小时）",
+        "customDurationNote": "时长单位为小时。留空使用默认值。"
+    }
+}

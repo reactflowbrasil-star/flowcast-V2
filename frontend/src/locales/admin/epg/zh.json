@@ -1,0 +1,18 @@
+{
+  "errors": {
+    "loadingSources": "加载EPG源时出错",
+    "nameUrlRequired": "名称和URL为必填项",
+    "createFailed": "创建源失败",
+    "updateFailed": "更新源失败",
+    "deleteFailed": "删除源失败",
+    "fetchChannelsFailed": "获取频道失败"
+  },
+  "units": {
+    "minutes": "分钟"
+  },
+  "labels": {
+    "timezone": "时区:"
+  },
+  "confirmDelete": "删除EPG源 \"{{name}}\"？",
+  "inactive": "（未激活）"
+}

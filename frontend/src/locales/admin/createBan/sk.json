@@ -1,0 +1,19 @@
+{
+    "createBan": {
+        "title": "Vytvoriť ban",
+        "usernameLabel": "Používateľské meno",
+        "usernamePlaceholder": "Zadajte meno používateľa na zablokovanie",
+        "banTypeLabel": "Typ banu",
+        "temporary": "Dočasný",
+        "permanent": "Trvalý",
+        "banLevelLabel": "Úroveň banu",
+        "level1": "Úroveň 1 - Upozornenie",
+        "level2": "Úroveň 2 - Obmedzený",
+        "level3": "Úroveň 3 - Úplný ban",
+        "reasonLabel": "Dôvod",
+        "reasonPlaceholder": "Zadajte dôvod banu...",
+        "customDurationLabel": "Vlastná doba trvania",
+        "customDurationPlaceholder": "Zadajte dobu trvania v hodinách",
+        "customDurationNote": "Doba trvania v hodinách. Nechajte prázdne pre predvolené."
+    }
+}

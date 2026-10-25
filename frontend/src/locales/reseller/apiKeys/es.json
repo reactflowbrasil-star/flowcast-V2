@@ -1,0 +1,125 @@
+{
+  "title": "Claves API",
+  "description": "Administra las claves API para acceso programático a tu cuenta de revendedor",
+  "createButton": "Crear Clave API",
+  "empty": {
+    "title": "No hay claves API aún",
+    "description": "Crea tu primera clave API para comenzar con la API"
+  },
+  "table": {
+    "name": "Nombre",
+    "key": "Clave",
+    "permissions": "Permisos",
+    "lastUsed": "Último Uso",
+    "requests": "Solicitudes",
+    "status": "Estado",
+    "actions": "Acciones"
+  },
+  "tooltips": {
+    "edit": "Editar permisos",
+    "regenerate": "Regenerar clave",
+    "delete": "Eliminar clave"
+  },
+  "never": "Nunca",
+  "apiUsage": {
+    "title": "Uso de la API",
+    "description": "Cómo usar tus claves API",
+    "authHeader": "Encabezado de Autenticación",
+    "exampleListUsers": "Ejemplo: Listar Usuarios",
+    "exampleCreateUser": "Ejemplo: Crear Usuario",
+    "endpoint": "Punto final"
+  },
+  "createDialog": {
+    "title": "Crear Nueva Clave API",
+    "description": "Crea una nueva clave API con permisos específicos para acceso programático.",
+    "keyName": "Nombre de la Clave",
+    "keyNamePlaceholder": "ej., Mi Integración",
+    "permissions": "Permisos",
+    "allowedOrigins": "Orígenes Permitidos (CORS)",
+    "allowedOriginsPlaceholder": "* para todos, o dominios separados por coma",
+    "allowedOriginsHelp": "Usa * para permitir todos los orígenes, o especifica dominios como https://ejemplo.com",
+    "rateLimitMinute": "Límite de Tasa (por minuto)",
+    "rateLimitDay": "Límite de Tasa (por día)",
+    "cancel": "Cancelar",
+    "creating": "Creando...",
+    "create": "Crear Clave API"
+  },
+  "secretDialog": {
+    "title": "Clave API Creada",
+    "description": "Copia tu clave secreta ahora. ¡No podrás verla de nuevo!",
+    "warning": "¡Esta es la única vez que verás esta clave. Guárdala de forma segura!",
+    "copied": "He Copiado Mi Clave"
+  },
+  "deleteDialog": {
+    "title": "Eliminar Clave API",
+    "description": "¿Estás seguro de que deseas eliminar \"{{keyName}}\"? Esta acción no se puede deshacer y cualquier integración que use esta clave dejará de funcionar.",
+    "cancel": "Cancelar",
+    "deleting": "Eliminando...",
+    "delete": "Eliminar Clave"
+  },
+  "regenerateDialog": {
+    "title": "Regenerar Clave API",
+    "description": "¿Estás seguro de que deseas regenerar \"{{keyName}}\"? La clave actual será invalidada inmediatamente y las integraciones deberán ser actualizadas.",
+    "cancel": "Cancelar",
+    "regenerating": "Regenerando...",
+    "regenerate": "Regenerar Clave"
+  },
+  "editDialog": {
+    "title": "Editar Clave API",
+    "description": "Actualiza el nombre, permisos y configuración de esta clave API.",
+    "keyName": "Nombre de la Clave",
+    "keyNamePlaceholder": "ej., Mi Integración",
+    "permissions": "Permisos",
+    "allowedOrigins": "Orígenes Permitidos (CORS)",
+    "allowedOriginsPlaceholder": "* para todos, o dominios separados por coma",
+    "rateLimitMinute": "Límite de Tasa (por minuto)",
+    "rateLimitDay": "Límite de Tasa (por día)",
+    "cancel": "Cancelar",
+    "saving": "Guardando...",
+    "save": "Guardar Cambios"
+  },
+  "permissions": {
+    "users:read": {
+      "name": "Leer Usuarios",
+      "description": "Lista y visualiza tus usuarios finales"
+    },
+    "users:create": {
+      "name": "Crear Usuarios",
+      "description": "Crear nuevos usuarios finales (deduce créditos)"
+    },
+    "users:update": {
+      "name": "Actualizar Usuarios",
+      "description": "Actualizar detalles de usuarios finales existentes"
+    },
+    "users:extend": {
+      "name": "Extender Suscripciones",
+      "description": "Extender suscripciones de usuarios (deduce créditos)"
+    },
+    "users:delete": {
+      "name": "Eliminar Usuarios",
+      "description": "Eliminar usuarios finales"
+    },
+    "credits:read": {
+      "name": "Leer Créditos",
+      "description": "Ver saldo de créditos y calcular costos"
+    }
+  },
+  "toast": {
+    "created": "Clave API creada exitosamente",
+    "deleted": "Clave API eliminada",
+    "regenerated": "Clave API regenerada",
+    "statusUpdated": "Estado de clave API actualizado",
+    "updated": "Clave API actualizada exitosamente",
+    "secretCopied": "Clave secreta copiada al portapapeles",
+    "errors": {
+      "create": "Error al crear la clave API",
+      "delete": "Error al eliminar la clave API",
+      "regenerate": "Error al regenerar la clave API",
+      "update": "Error al actualizar la clave API"
+    }
+  },
+  "validation": {
+    "keyNameRequired": "Por favor ingresa un nombre de clave",
+    "permissionRequired": "Por favor selecciona al menos un permiso"
+  }
+}

@@ -1,0 +1,123 @@
+{
+  "endUserManagement": {
+    "title": "Son Kullanıcı Yönetimi",
+    "subtitle": "Sistem genelinde son kullanıcılar oluşturun ve yönetin",
+    "createEndUser": "Son Kullanıcı Oluştur",
+    "noEndUsersYet": "Henüz son kullanıcı yok",
+    "searchByUsername": "Kullanıcı adına göre ara...",
+    "searchByEmail": "E-postaya göre ara...",
+    "status": {
+      "active": "Aktif",
+      "banned": "Yasaklı",
+      "inactive": "Pasif"
+    },
+    "actions": {
+      "ban": "Yasakla",
+      "unban": "Yasağı Kaldır",
+      "banUser": "Kullanıcıyı Yasakla",
+      "unbanUser": "Kullanıcı Yasağını Kaldır",
+      "confirmBan": "{{username}} kullanıcısını {{action}} istediğinizden emin misiniz?",
+      "banWarning": "Bu, hizmete erişmelerini engelleyecektir.",
+      "deleteUser": "Kullanıcıyı Sil",
+      "confirmDelete": "{{username}} kullanıcısını kalıcı olarak silmek istediğinizden emin misiniz? Bu işlem geri alınamaz.",
+      "edit": "Düzenle",
+      "create": "Oluştur",
+      "manageCredits": "Kredileri yönet",
+      "resetPassword": "Şifreyi sıfırla"
+    },
+    "labels": {
+      "username": "Kullanıcı Adı",
+      "email": "E-posta",
+      "status": "Durum",
+      "createdAt": "Oluşturulma"
+    },
+    "placeholders": {
+      "searchByUsername": "Kullanıcı adına göre ara..."
+    },
+    "confirmDelete": "Bu son kullanıcıyı sil? Bu işlem geri alınamaz.",
+    "noMatches": "Eşleşen kullanıcı yok",
+    "editDialog": {
+      "title": "Kullanıcıyı Düzenle",
+      "contentCategories": "İçerik Kategorileri",
+      "maxDevices": "Maks. Cihaz",
+      "maxDevicesDesc": "Maksimum eşzamanlı cihaz sayısı (1-10)",
+      "endLicense": "Lisans Bitişi (İsteğe bağlı)",
+      "forcedCategories": "Zorunlu İçerik Kategorileri",
+      "forcedCategoriesDesc": "Bu kullanıcının erişmesi ZORUNLU olan kategoriler (varsayılanları geçersiz kılar)",
+      "password": "Şifre",
+      "passwordDesc": "Mevcut şifreyi korumak için boş bırakın",
+      "save": "Değişiklikleri Kaydet",
+      "cancel": "İptal",
+      "updating": "Güncelleniyor..."
+    },
+    "demoUser": "Demo Kullanıcı",
+    "expiredDemo": "Süresi Dolmuş Demo",
+    "demoBadge": "Demo",
+    "directAdminManagement": "Doğrudan Yönetici Yönetimi",
+    "deleteUser": "Kullanıcıyı Sil",
+    "filters": {
+      "title": "Filtreler",
+      "username": "Kullanıcı Adı",
+      "email": "E-posta",
+      "reseller": "Bayi",
+      "showing": "{{total}} kullanıcının {{count}} tanesi gösteriliyor",
+      "clear": "Filtreleri temizle"
+    },
+    "table": {
+      "username": "Kullanıcı Adı",
+      "email": "E-posta",
+      "type": "Tür",
+      "maxDevices": "Maks. Cihaz",
+      "reseller": "Bayi",
+      "status": "Durum",
+      "created": "Oluşturuldu",
+      "endLicense": "Lisans Bitişi",
+      "actions": "İşlemler",
+      "premium": "prim"
+    },
+    "form": {
+      "username": "Kullanıcı Adı",
+      "password": "Şifre",
+      "email": "E-posta",
+      "maxDevices": "Maks. Cihaz",
+      "expiryDate": "Bitiş Tarihi (İsteğe bağlı)",
+      "expiryDateHelp": "Bitiş tarihi olmaması için boş bırakın. Kullanıcı bu tarihten sonra otomatik olarak devre dışı bırakılacaktır.",
+      "assignReseller": "Bayiye Ata (İsteğe bağlı)",
+      "selectContentCategories": "İçerik Kategorileri",
+      "selectCategoriesHelp": "Bu kullanıcının erişebileceği içerik kategorilerini seçmek için tıklayın.",
+      "loadingCategories": "Kategoriler yükleniyor...",
+      "noCategories": "Mevcut kategori yok"
+    },
+    "neverLabel": "Asla",
+    "expired": "Süresi doldu",
+    "timeLeft": "kaldı",
+    "time": {
+      "hoursMinutes": "{{hours}}s {{minutes}}d",
+      "minutes": "{{minutes}}d"
+    },
+    "daysRemaining": "{{count}} gün",
+    "errors": {
+      "loadEndUsersFailed": "Son kullanicilar yuklenemedi",
+      "loadEndUsersFailedWithMessage": "Son kullanicilar yuklenemedi: {{message}}",
+      "loadResellersFailed": "Bayiler yuklenemedi",
+      "createFailed": "Son kullanici olusturulamadi",
+      "updateStatusFailed": "Kullanici durumu guncellenemedi",
+      "deleteFailed": "Kullanici silinemedi"
+    },
+    "validation": {
+      "usernameMin": "Kullanici adi en az {{count}} karakter olmali",
+      "passwordMinDigits": "Sifre en az {{count}} haneli olmali",
+      "passwordMaxDigits": "Sifre en fazla {{count}} haneli olmali",
+      "passwordDigitsOnly": "Sifre sadece rakamlardan olusmali",
+      "emailInvalid": "Gecersiz e-posta adresi",
+      "maxDevicesMin": "Minimum {{count}} cihaz",
+      "maxDevicesMax": "Maksimum {{count}} cihaz",
+      "categoryMin": "En az {{count}} kategori secin"
+    },
+    "messages": {
+      "noUserSelected": "Kullanıcı seçilmedi",
+      "passwordUpdateFailed": "Kullanıcı parolası güncellenemedi",
+      "updateFailed": "Kullanıcı güncellenemedi"
+    }
+  }
+}

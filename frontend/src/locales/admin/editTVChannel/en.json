@@ -1,0 +1,110 @@
+{
+  "editTVChannel": {
+    "title": "Edit TV Channel",
+    "sections": {
+      "basicInfo": "Basic Info",
+      "currentEpgMapping": "Current EPG Mapping",
+      "editEpgMapping": "Edit EPG Mapping",
+      "streamSettings": "Stream Settings",
+      "artworkStatus": "Artwork & Status",
+      "livetvHeaders": "LiveTV Headers Configuration"
+    },
+    "labels": {
+      "channelName": "Channel Name *",
+      "description": "Description",
+      "channelNumber": "Channel Number",
+      "provider": "Provider",
+      "channelCategory": "Channel Category",
+      "country": "Country",
+      "epgSource": "EPG Source",
+      "epgChannelId": "EPG Channel ID",
+      "timeOffset": "Time Offset",
+      "status": "Status",
+      "epgChannel": "EPG Channel",
+      "offsetMin": "Offset (min)",
+      "format": "Format",
+      "streamUrl": "Stream URL *",
+      "drmType": "DRM Type *",
+      "clearkeyKeys": "ClearKey Keys *",
+      "licenseServerUrl": "License Server URL *",
+      "licenseRequestHeaders": "License Request Headers (optional)",
+      "logoUrl": "Logo URL",
+      "active": "Active",
+      "originHeader": "Origin Header",
+      "userAgent": "User Agent",
+      "refererHeader": "Referer Header",
+      "customHeadersJson": "Custom Headers (JSON)",
+      "httpProxy": "HTTP Proxy (optional)",
+      "dnsOverHttps": "DNS-over-HTTPS (optional)"
+    },
+    "placeholders": {
+      "channelName": "Enter channel name...",
+      "description": "Enter channel description...",
+      "channelNumber": "e.g., 1, 2, 3...",
+      "provider": "e.g., Cable, OTT, etc.",
+      "loadingCategories": "Loading categories...",
+      "selectCategory": "Select category...",
+      "country": "e.g., US, MX, ES...",
+      "selectEpgSource": "Select EPG source...",
+      "filterByNameOrId": "Filter by name or ID...",
+      "selectChannel": "Select channel...",
+      "selectSourceFirst": "Select source first",
+      "selectFormat": "Select format...",
+      "streamUrl": "https://example.com/stream.m3u8",
+      "selectDrmType": "Select DRM type...",
+      "clearkeyKeys": "Enter ClearKey pairs in hexadecimal format:\nkid_hex:key_hex",
+      "licenseServerUrl": "https://license.example.com/widevine",
+      "licenseRequestHeaders": "{\"X-AxDRM-Message\": \"your-token-here\", \"Authorization\": \"Bearer token\"}",
+      "logoUrl": "https://example.com/logo.png",
+      "originHeader": "https://example.com",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)...",
+      "refererHeader": "https://referer-site.com",
+      "customHeaders": "{\"X-Custom-Header\": \"value\", \"Authorization\": \"Bearer token\"}",
+      "httpProxy": "http://user:pass@ip:port",
+      "dohUrl": "https://dns.google/dns-query"
+    },
+    "tooltips": {
+      "copyChannelId": "Copy channel ID",
+      "formatHelp": "M3U8 (no DRM) or DRM (ClearKey). If you choose DRM, keys are enabled.",
+      "help": "Help",
+      "streamUrlHelp": "Full stream URL (m3u8, mpd, etc.)",
+      "copyStreamUrl": "Copy stream URL"
+    },
+    "hints": {
+      "noEpgSourceAssigned": "No EPG source assigned",
+      "noChannelIdAssigned": "No channel ID assigned",
+      "minutes": "minutes",
+      "epgConfigured": "✓ EPG Configured",
+      "epgNotConfigured": "⚠ EPG Not Configured",
+      "loadingEpgMapping": "Loading EPG mapping...",
+      "epgDataNote": "EPG data is not stored in the database; only identifiers are saved for on‑demand lookups.",
+      "loadingEpgControls": "Loading EPG controls...",
+      "drmTypeHelp": "ClearKey: Local keys (hex format) | Widevine/PlayReady: License server required",
+      "clearkeyFormat": "Format: kid_hex:key_hex (one per line or comma-separated)",
+      "widevineLicenseHelp": "Widevine license server URL (e.g., from PallyCon, BuyDRM, Axinom)",
+      "playreadyLicenseHelp": "PlayReady license server URL",
+      "licenseHeadersHelp": "JSON object with custom headers for license requests",
+      "originHeaderHelp": "Origin header for CORS requests (optional)",
+      "userAgentHelp": "User-Agent header to emulate browser/device (optional)",
+      "refererHeaderHelp": "Referer header for request origin (optional)",
+      "customHeadersHelp": "Additional custom headers in JSON format (optional)",
+      "httpProxyHelp": "Only for geoblocked channels. Format: http://user:pass@ip:port",
+      "dohUrlHelp": "Optional DoH resolver to bypass DNS blocking. Must be an http(s) URL."
+    },
+    "toasts": {
+      "epgChannelIdCopied": "EPG Channel ID copied",
+      "streamUrlCopied": "Stream URL copied"
+    },
+    "buttons": {
+      "cancel": "Cancel",
+      "updating": "Updating...",
+      "updateChannel": "Update Channel"
+    },
+    "validation": {
+      "titleRequired": "Title is required",
+      "validVideoUrlRequired": "Valid video URL is required",
+      "proxyUrlFormat": "Format must be http://user:pass@ip:port",
+      "dohUrlFormat": "Format must be http(s)://..."
+    }
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "editUser": {
+    "title": "Upraviť používateľa:",
+    "description": "Aktualizujte informácie o používateľovi a heslo",
+    "labels": {
+      "username": "Používateľské meno",
+      "email": "Email",
+      "password": "Nové heslo (4-10 číslic)",
+      "expiresAt": "Dátum vypršania platnosti",
+      "maxDevices": "Max. zariadení",
+      "status": "Stav",
+      "contentCategories": "Kategórie obsahu"
+    },
+    "placeholders": {
+      "username": "Zadajte používateľské meno",
+      "email": "Zadajte email",
+      "password": "Ak chcete zachovať aktuálnosť, nechajte prázdne"
+    },
+    "hints": {
+      "expiresAtEmpty": "Nechajte prázdne, aby platnosť nevypršala",
+      "categoriesHelp": "Kliknutím vyberte kategórie obsahu, ku ktorým bude mať tento používateľ prístup."
+    },
+    "status": {
+      "active": "Aktívne",
+      "suspended": "Pozastavené"
+    },
+    "categories": {
+      "loading": "Načítavajú sa kategórie...",
+      "noCategories": "Nie sú dostupné žiadne kategórie"
+    },
+    "buttons": {
+      "cancel": "Zrušiť",
+      "update": "Aktualizovať používateľa",
+      "updating": "Aktualizuje sa..."
+    },
+    "errors": {
+      "noUserSelected": "Nie je vybratý žiadny používateľ"
+    },
+    "validation": {
+      "usernameMin": "Používateľské meno musí mať aspoň 3 znaky",
+      "invalidEmail": "Neplatný email",
+      "passwordMin": "Heslo musí mať aspoň 4 číslice",
+      "passwordMax": "Heslo musí mať maximálne 10 číslic",
+      "passwordDigitsOnly": "Heslo môže obsahovať iba čísla",
+      "maxDevicesMax": "Povolených je maximálne 10 zariadení"
+    }
+  }
+}

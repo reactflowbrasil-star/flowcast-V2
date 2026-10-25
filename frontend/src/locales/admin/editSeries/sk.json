@@ -1,0 +1,40 @@
+{
+  "editSeries": {
+    "title": {
+      "editAnime": "Upraviť anime",
+      "editSeries": "Upraviť sériu"
+    },
+    "labels": {
+      "seriesTitle": "Názov série *",
+      "description": "Popis",
+      "year": "rok",
+      "tmdbId": "TMDB ID",
+      "totalSeasons": "Celkový počet sezón",
+      "posterUrl": "Adresa URL plagátu",
+      "backdropUrl": "URL kulisy",
+      "active": "Aktívne"
+    },
+    "placeholders": {
+      "seriesTitle": "Zadajte názov série...",
+      "description": "Zadajte popis série...",
+      "year": "2024",
+      "tmdbId": "123456",
+      "totalSeasons": "1",
+      "posterUrl": "https://example.com/poster.jpg",
+      "backdropUrl": "https://example.com/backdrop.jpg"
+    },
+    "episodes": {
+      "title": "Správa epizód:",
+      "description": "Séria nemá priame adresy URL videí. Video obsah je spravovaný prostredníctvom jednotlivých epizód v rámci sezón.",
+      "manageButton": "📺 Spravovať epizódy"
+    },
+    "buttons": {
+      "cancel": "Zrušiť",
+      "updating": "Aktualizuje sa...",
+      "update": "Aktualizovať sériu"
+    },
+    "validation": {
+      "titleRequired": "Vyžaduje sa názov"
+    }
+  }
+}

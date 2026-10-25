@@ -1,0 +1,24 @@
+{
+  "title": "Dispositivos Banidos ({{count}})",
+  "empty": {
+    "title": "Nenhum dispositivo banido",
+    "description": "Tudo limpo. Nenhum dispositivo está banido no momento."
+  },
+  "table": {
+    "username": "Usuário",
+    "deviceId": "ID do Dispositivo",
+    "blacklistedAt": "Banido Em",
+    "actions": "Ações"
+  },
+  "actions": {
+    "remove": "Remover do banimento"
+  },
+  "notifications": {
+    "blacklist": {
+      "errorLoading": "Erro ao carregar dispositivos banidos",
+      "confirmRemove": "Remover dispositivo \"{{device}}\" do usuário {{user}} da lista negra?",
+      "removed": "Dispositivo removido da lista negra",
+      "removeFailed": "Falha ao remover dispositivo da lista negra"
+    }
+  }
+}

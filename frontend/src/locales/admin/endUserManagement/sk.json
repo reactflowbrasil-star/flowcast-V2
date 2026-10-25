@@ -1,0 +1,123 @@
+{
+  "endUserManagement": {
+    "title": "Správa koncových používateľov",
+    "subtitle": "Vytvárajte a spravujte koncových používateľov v celom systéme",
+    "createEndUser": "Vytvoriť používateľa",
+    "noEndUsersYet": "Zatiaľ žiadni používatelia",
+    "searchByUsername": "Hľadať podľa používateľského mena...",
+    "searchByEmail": "Hľadať podľa emailu...",
+    "status": {
+      "active": "Aktívny",
+      "banned": "Zabanovaný",
+      "inactive": "Neaktívny"
+    },
+    "actions": {
+      "ban": "Zabanovať",
+      "unban": "Odbanovať",
+      "banUser": "Zabanovať používateľa",
+      "unbanUser": "Odbanovať používateľa",
+      "confirmBan": "Ste si istí, že chcete {{action}} {{username}}?",
+      "banWarning": "Zabráni im to v prístupe k službe.",
+      "deleteUser": "Odstrániť používateľa",
+      "confirmDelete": "Ste si istí, že chcete natrvalo odstrániť {{username}}? Túto akciu nemožno vrátiť späť.",
+      "edit": "Upraviť",
+      "create": "Vytvoriť",
+      "manageCredits": "Spravovať kredity",
+      "resetPassword": "Obnoviť heslo"
+    },
+    "labels": {
+      "username": "Používateľské meno",
+      "email": "Email",
+      "status": "Stav",
+      "createdAt": "Vytvorené"
+    },
+    "placeholders": {
+      "searchByUsername": "Hľadať podľa používateľského mena..."
+    },
+    "confirmDelete": "Odstrániť tohto používateľa? Túto akciu nemožno vrátiť späť.",
+    "noMatches": "Žiadni zodpovedajúci používatelia",
+    "editDialog": {
+      "title": "Upraviť používateľa",
+      "contentCategories": "Kategórie obsahu",
+      "maxDevices": "Max. zariadení",
+      "maxDevicesDesc": "Maximálny počet súčasných zariadení (1-10)",
+      "endLicense": "Koniec licencie (Voliteľné)",
+      "forcedCategories": "Vynútené kategórie obsahu",
+      "forcedCategoriesDesc": "Kategórie, ku ktorým MUSÍ mať tento používateľ prístup (nahrádza predvolené)",
+      "password": "Heslo",
+      "passwordDesc": "Nechajte prázdne, ak chcete zachovať aktuálne heslo",
+      "save": "Uložiť zmeny",
+      "cancel": "Zrušiť",
+      "updating": "Aktualizuje sa..."
+    },
+    "demoUser": "Demo používateľ",
+    "expiredDemo": "Vypršané demo",
+    "demoBadge": "Demo",
+    "directAdminManagement": "Priama správa správcu",
+    "deleteUser": "Odstrániť používateľa",
+    "filters": {
+      "title": "Filtre",
+      "username": "Používateľské meno",
+      "email": "Email",
+      "reseller": "Predajca",
+      "showing": "Zobrazuje sa {{count}} z {{total}} používateľov",
+      "clear": "Vymazať filtre"
+    },
+    "table": {
+      "username": "Používateľské meno",
+      "email": "Email",
+      "type": "Typ",
+      "maxDevices": "Max. zar.",
+      "reseller": "Predajca",
+      "status": "Stav",
+      "created": "Vytvorené",
+      "endLicense": "Koniec licencie",
+      "actions": "Akcie",
+      "premium": "Premium"
+    },
+    "form": {
+      "username": "Používateľské meno",
+      "password": "Heslo",
+      "email": "Email",
+      "maxDevices": "Max. zariadení",
+      "expiryDate": "Dátum vypršania (Voliteľné)",
+      "expiryDateHelp": "Nechajte prázdne pre neobmedzenú platnosť. Používateľ bude po tomto dátume automaticky deaktivovaný.",
+      "assignReseller": "Priradiť predajcovi (Voliteľné)",
+      "selectContentCategories": "Kategórie obsahu",
+      "selectCategoriesHelp": "Kliknite pre výber kategórií obsahu, ku ktorým bude mať tento používateľ prístup.",
+      "loadingCategories": "Načítavajú sa kategórie...",
+      "noCategories": "Žiadne dostupné kategórie"
+    },
+    "neverLabel": "Nikdy",
+    "expired": "Vypršalo",
+    "timeLeft": "zostáva",
+    "time": {
+      "hoursMinutes": "{{hours}}h {{minutes}}m",
+      "minutes": "{{minutes}}m"
+    },
+    "daysRemaining": "{{count}} dní",
+    "errors": {
+      "loadEndUsersFailed": "Nepodarilo sa načítať používateľov",
+      "loadEndUsersFailedWithMessage": "Nepodarilo sa načítať používateľov: {{message}}",
+      "loadResellersFailed": "Nepodarilo sa načítať predajcov",
+      "createFailed": "Nepodarilo sa vytvoriť používateľa",
+      "updateStatusFailed": "Nepodarilo sa aktualizovať stav používateľa",
+      "deleteFailed": "Nepodarilo sa odstrániť používateľa"
+    },
+    "validation": {
+      "usernameMin": "Používateľ musí mať aspoň {{count}} znakov",
+      "passwordMinDigits": "Heslo musí mať aspoň {{count}} číslice",
+      "passwordMaxDigits": "Heslo môže mať najviac {{count}} číslic",
+      "passwordDigitsOnly": "Heslo môže obsahovať iba číslice",
+      "emailInvalid": "Neplatná emailová adresa",
+      "maxDevicesMin": "Minimálne {{count}} zariadenie",
+      "maxDevicesMax": "Maximálne {{count}} zariadení",
+      "categoryMin": "Vyberte aspoň {{count}} kategóriu"
+    },
+    "messages": {
+      "noUserSelected": "Nie je vybraný žiadny používateľ",
+      "passwordUpdateFailed": "Nepodarilo sa aktualizovať heslo používateľa",
+      "updateFailed": "Nepodarilo sa aktualizovať používateľa"
+    }
+  }
+}

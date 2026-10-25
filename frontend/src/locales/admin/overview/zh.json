@@ -1,0 +1,24 @@
+{
+  "overview": {
+    "totalUsers": "用户总数",
+    "allSystemUsers": "系统中的全部用户",
+    "contentItems": "内容条目",
+    "moviesTvSeries": "电影、剧集等",
+    "activeResellers": "活跃经销商",
+    "currentlyActive": "当前活跃",
+    "systemStatus": "系统状态",
+    "allSystemsOperational": "所有系统正常运行",
+    "quickActions": "快捷操作",
+    "commonTasks": "快速进入最常见的管理任务",
+    "manageResellers": "管理经销商",
+    "manageContent": "管理内容",
+    "systemConfig": "系统配置",
+    "viewReports": "查看报表",
+    "systemHealth": "系统健康",
+    "systemStatusDescription": "关键服务的实时运行状态",
+    "apiServices": "API 服务",
+    "operational": "正常",
+    "database": "数据库",
+    "contentDelivery": "内容分发"
+  }
+}

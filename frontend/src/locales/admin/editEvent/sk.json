@@ -1,0 +1,43 @@
+{
+  "title": "Upraviť udalosť",
+  "labels": {
+    "eventName": "Názov udalosti *",
+    "description": "Popis",
+    "provider": "Poskytovateľ",
+    "country": "Krajina",
+    "format": "Formátovať",
+    "clearKeyKeys": "Klávesy ClearKey",
+    "streamUrl": "Webová adresa streamu *",
+    "posterUrl": "Adresa URL plagátu",
+    "active": "Aktívne"
+  },
+  "placeholders": {
+    "eventName": "Zadajte názov udalosti...",
+    "description": "Zadajte popis udalosti...",
+    "provider": "napr. Poskytovateľ A, Poskytovateľ B...",
+    "country": "napr. US, MX, ES...",
+    "selectFormat": "Vybrať formát...",
+    "clearKeyKeys": "Zadajte páry ClearKey v hexadecimálnom formáte: kid_hex:key_hex",
+    "streamUrl": "https://example.com/stream.m3u8",
+    "posterUrl": "https://example.com/poster.jpg"
+  },
+  "hints": {
+    "clearKeyFormat": "Formát: kid_hex:key_hex (jeden na riadok alebo oddelené čiarkou)"
+  },
+  "formats": {
+    "m3u8": "M3U8",
+    "drm": "DRM"
+  },
+  "buttons": {
+    "cancel": "Zrušiť",
+    "updating": "Aktualizuje sa...",
+    "updateEvent": "Aktualizovať udalosť"
+  },
+  "validation": {
+    "titleRequired": "Vyžaduje sa názov",
+    "validVideoUrlRequired": "Vyžaduje sa platná adresa URL videa"
+  },
+  "errors": {
+    "failedToUpdate": "Udalosť sa nepodarilo aktualizovať"
+  }
+}

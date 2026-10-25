@@ -1,0 +1,29 @@
+{
+  "updateDemoLimit": {
+    "validation": {
+      "minLimit": "El límite demo debe ser 0 o mayor",
+      "maxLimit": "El límite demo no puede exceder 100"
+    },
+    "title": "Actualizar Límite Demo para {{username}}",
+    "description": "Establece el límite diario de usuarios demo que este revendedor puede crear.",
+    "currentStatus": "Estado Actual",
+    "currentLimit": "Límite Actual:",
+    "demosPerDay": "demos/día",
+    "createdToday": "Creados Hoy:",
+    "dailyDemoLimit": "Límite Diario de Demos",
+    "enterDailyLimit": "Ingresa el límite diario de demos",
+    "helpText": "Número de usuarios demo que este revendedor puede crear por día (0-100)",
+    "demoUserInfo": "Información de Usuario Demo",
+    "duration": "Duración:",
+    "durationValue": "Temporal desde la creación",
+    "access": "Acceso:",
+    "accessValue": "Todas las funciones premium",
+    "devices": "Dispositivos:",
+    "devicesValue": "Hasta 3 dispositivos simultáneos",
+    "autoCleanup": "Limpieza automática:",
+    "autoCleanupValue": "Cuenta eliminada automáticamente después del vencimiento",
+    "cancel": "Cancelar",
+    "updating": "Actualizando...",
+    "updateDemoLimit": "Actualizar Límite Demo"
+  }
+}

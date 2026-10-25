@@ -1,0 +1,39 @@
+{
+  "editContent": {
+    "labels": {
+      "year": "Année",
+      "description": "Description",
+      "videoUrl": "URL de la vidéo",
+      "subtitles": "Sous-titres"
+    },
+    "noSubtitles": "Aucun sous-titre détecté.",
+    "validation": {
+      "titleRequired": "Le titre est requis",
+      "videoUrlRequired": "Une URL de vidéo valide est requise",
+      "subtitleFileRequired": "Sélectionnez d'abord un fichier de sous-titres"
+    },
+    "subtitleLanguagePlaceholder": "en",
+    "drm": {
+      "sectionTitle": "DRM Settings",
+      "optional": "(optional)",
+      "drmType": "DRM Type",
+      "noDrm": "None (no DRM)",
+      "clearkey": "ClearKey",
+      "widevine": "Widevine",
+      "playready": "PlayReady",
+      "clearKeyKeys": "ClearKey Keys",
+      "clearKeyFormat": "Format: kid_hex:key_hex",
+      "licenseServerUrl": "License Server URL",
+      "drmHeadersJson": "DRM Headers (JSON)",
+      "licenseHeadersNote": "Optional headers sent with license requests"
+    },
+    "streamHeaders": {
+      "sectionTitle": "Advanced Stream Settings",
+      "origin": "Origin",
+      "originNote": "Origin header for CORS",
+      "userAgent": "User Agent",
+      "referer": "Referer",
+      "customHeaders": "Custom Headers (JSON)"
+    }
+  }
+}

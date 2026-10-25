@@ -1,0 +1,46 @@
+{
+  "viewingHistory": {
+    "title": "Historique de Visionnage",
+    "subtitle": "Événements de lecture récents et activité de visionnage",
+    "lastUpdated": "Dernière mise à jour : {{time}}",
+    "autoRefreshOn": "Rafraîchissement auto est ON",
+    "autoRefreshOff": "Rafraîchissement auto est OFF",
+    "refreshNow": "Rafraîchir maintenant",
+    "filters": {
+      "username": "Nom d'utilisateur",
+      "contentType": "Type de contenu",
+      "allTypes": "Tous les types",
+      "ipAddress": "Adresse IP",
+      "startDate": "Date de début (jj/mm/aaaa)",
+      "endDate": "Date de fin (jj/mm/aaaa)",
+      "perPage": "Par page",
+      "search": "Chercher",
+      "placeholderUsername": "Chercher utilisateur...",
+      "placeholderIp": "ex: 192.168.0.1"
+    },
+    "table": {
+      "date": "Date",
+      "username": "Nom d'utilisateur",
+      "content": "Contenu",
+      "type": "Taper",
+      "duration": "Durée",
+      "device": "Appareil",
+      "ip": "IP"
+    },
+    "pagination": {
+      "previous": "Précédent",
+      "next": "Suivant",
+      "showing": "Affichage de {{from}} à {{to}} sur {{total}} enregistrements",
+      "pageOf": "Page {{page}} sur {{total_pages}}"
+    },
+    "empty": "Aucun historique de visionnage trouvé.",
+    "errors": {
+      "failedLoad": "Échec du chargement de l'historique de visionnage",
+      "invalidDateRange": "Plage de dates invalide"
+    },
+    "common": {
+      "views": "Vues",
+      "today": "Aujourd'hui"
+    }
+  }
+}

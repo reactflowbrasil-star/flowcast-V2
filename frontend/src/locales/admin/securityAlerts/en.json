@@ -1,0 +1,58 @@
+{
+  "securityAlerts": {
+    "title": "Security Alerts",
+    "subtitle": "Monitor security incidents and manage bans",
+    "noAlerts": "No security alerts. All systems normal.",
+    "viewDetails": "View details",
+    "dismiss": "Dismiss",
+    "severity": {
+      "low": "Low",
+      "medium": "Medium",
+      "high": "High",
+      "critical": "Critical"
+    },
+    "filterBy": {
+      "type": "Filter by type",
+      "dateRange": "Date range",
+      "status": "Status"
+    },
+    "actions": {
+      "investigate": "Investigate",
+      "banUser": "Ban user",
+      "unbanUser": "Unban user",
+      "cleanupExpiredBans": "Cleanup Expired Bans",
+      "createManualBan": "Create Manual Ban"
+    },
+    "cards": {
+      "totalIncidents": "Total Incidents",
+      "todaysIncidents": "Today's Incidents",
+      "activeBans": "Active Bans",
+      "permanentBans": "Permanent Bans",
+      "blacklistedDevices": "Blacklisted Devices"
+    },
+    "confirmDelete": "Delete this alert? This action cannot be undone.",
+    "noPermission": "You do not have permission to perform this action.",
+    "newLabel": "New",
+    "moreAlerts": "... and {{count}} more alerts",
+    "values": {
+      "unknown": "Unknown"
+    },
+    "browserNotification": {
+      "title": "Security Alert: {{title}}"
+    },
+    "alerts": {
+      "multipleFailedLogins": {
+        "title": "Multiple Failed Login Attempts",
+        "description": "{{count}} failed login attempts from IP {{ip}} in the last hour"
+      },
+      "unusualDevices": {
+        "title": "Unusual Device Activity",
+        "description": "User {{username}} has logged in from {{deviceCount}} different devices this week"
+      },
+      "highActivity": {
+        "title": "High Activity Period",
+        "description": "{{viewCount}} content views in the last hour"
+      }
+    }
+  }
+}

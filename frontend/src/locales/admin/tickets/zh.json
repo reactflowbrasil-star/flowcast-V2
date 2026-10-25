@@ -1,0 +1,127 @@
+{
+  "tickets": {
+    "errors": {
+      "sendMessage": "无法发送消息",
+      "sendMessageRetry": "无法发送消息，请稍后重试。",
+      "assign": "无法分配工单",
+      "assignRetry": "无法分配工单，请稍后重试。",
+      "delete": "无法删除工单",
+      "deleteRetry": "无法删除工单，请稍后重试。",
+      "updateStatus": "无法更新工单状态",
+      "updateStatusRetry": "无法更新工单状态，请稍后重试。",
+      "create": "无法创建工单",
+      "createRetry": "无法创建工单，请稍后重试。",
+      "validation": {
+        "titleDescriptionRequired": "必须填写标题和描述",
+        "resellerRequired": "请选择一个代理商"
+      }
+    },
+    "confirm": {
+      "delete": "确定要删除此工单吗？该操作无法撤销。"
+    },
+    "filters": {
+      "status": {
+        "all": "所有状态"
+      },
+      "priority": {
+        "all": "所有优先级"
+      },
+      "unread": {
+        "all": "所有消息",
+        "unread": "未读消息",
+        "read": "已读消息"
+      }
+    },
+    "placeholders": {
+      "filterByStatus": "按状态筛选",
+      "filterByPriority": "按优先级筛选",
+      "filterByReadStatus": "按阅读状态筛选"
+    },
+    "unreadMessages": "未读消息",
+    "stats": {
+      "total": "总计"
+    },
+    "actions": {
+      "panelTitle": "管理员操作",
+      "assigning": "正在分配...",
+      "assignToMe": "分配给我",
+      "changeStatus": "更改状态",
+      "internalMessage": "作为内部消息发送",
+      "scheduleFollowUp": "安排后续跟进",
+      "reassignTicket": "重新指派工单"
+    },
+    "priority": {
+      "low": "低",
+      "medium": "中",
+      "high": "高",
+      "urgent": "紧急"
+    },
+    "status": {
+      "open": "打开",
+      "in_progress": "进行中",
+      "waiting_response": "等待回复",
+      "resolved": "已解决",
+      "closed": "已关闭"
+    },
+    "category": {
+      "technical": "技术",
+      "billing": "账单",
+      "account": "账户",
+      "content": "内容",
+      "other": "其他"
+    },
+    "create": {
+      "title": "创建新工单",
+      "description": "创建新的支持工单，用于测试或管理用途。",
+      "labels": {
+        "title": "标题",
+        "description": "描述",
+        "reseller": "代理商",
+        "priority": "优先级",
+        "category": "类别"
+      },
+      "placeholders": {
+        "title": "输入工单标题",
+        "description": "输入工单描述",
+        "reseller": "选择代理商"
+      },
+      "submitting": "正在创建...",
+      "submit": "创建工单"
+    },
+    "advanced": {
+      "title": "高级筛选",
+      "description": "应用更多筛选条件以缩小工单范围。",
+      "labels": {
+        "dateFrom": "起始日期",
+        "dateTo": "结束日期"
+      },
+      "helper": "按创建日期范围筛选工单。留空表示显示所有日期。",
+      "clear": "清除全部",
+      "apply": "应用筛选"
+    },
+    "sort": {
+      "title": "排序选项",
+      "description": "选择工单的排序方式。",
+      "labels": {
+        "sortBy": "排序依据",
+        "direction": "排序方向"
+      },
+      "options": {
+        "newestFirst": "最新优先",
+        "oldestFirst": "最旧优先",
+        "priority": "优先级",
+        "status": "状态",
+        "unreadFirst": "未读优先"
+      },
+      "direction": {
+        "descending": "降序",
+        "ascending": "升序"
+      },
+      "reset": "恢复默认",
+      "apply": "应用排序"
+    },
+    "common": {
+      "cancel": "取消"
+    }
+  }
+}

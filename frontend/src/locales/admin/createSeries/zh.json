@@ -1,0 +1,42 @@
+{
+  "createSeries": {
+    "dialogTitle": "从 TMDB 添加 {{type}}",
+    "dialogDescription": "在 TMDB 中搜索并自动导入所有季和剧集",
+    "tabSearch": "1. 搜索",
+    "tabReview": "2. 审核",
+    "tabEpisodes": "3. 剧集",
+    "searching": "搜索中...",
+    "search": "搜索",
+    "cancel": "取消",
+    "backToSearch": "返回搜索",
+    "nextAddUrls": "下一步：添加剧集 URL",
+    "back": "返回",
+    "creating": "创建中...",
+    "createButton": "创建 {{type}}",
+    "loadingDetails": "正在加载剧集详情...",
+    "loadingEpisodes": "正在加载剧集信息...",
+    "previewTitle": "季与剧集预览",
+    "addEpisodeUrls": "添加剧集 URL",
+    "completed": "已完成",
+    "episodeLabel": "第 {{number}} 集：{{name}}",
+    "unknownYear": "年份未知",
+    "noDescription": "暂无描述",
+    "na": "无",
+    "errors": {
+      "missingData": "缺少剧集或季的数据",
+      "unsupportedType": "不支持的内容类型：{{type}}",
+      "uploadVideoFailed": "Failed to upload video",
+      "uploadSubtitleFailed": "Failed to upload subtitle",
+      "createFailed": "Failed to create series"
+    },
+    "uploadEpisodeVideoOptional": "Upload Episode Video (optional)",
+    "uploadSubtitleOptional": "Upload Subtitle (optional)",
+    "subtitleLanguagePlaceholder": "en",
+    "messages": {
+      "createdSuccess": "{{type}} created successfully",
+      "uploadsFailedSummary": "{{type}} created, but {{count}} uploads failed. {{preview}}",
+      "episodeNotFoundAfterCreation": "episode not found after creation",
+      "episodeNotFoundForSubtitle": "episode not found for subtitle upload"
+    }
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "masterKeys": {
+    "createDialogDescription": "Harici uygulamalar için yeni bir Ana API Anahtarı oluşturun. Bu anahtar, UI kimlik doğrulaması olmadan tam API erişimi sağlar.",
+    "examples": {
+      "appName": "ör: Harici Düzenleyici Uygulaması 2024"
+    },
+    "descriptionPlaceholder": "Harici uygulama veya entegrasyonun açıklaması...",
+    "descriptionHelp": "İsteğe bağlı: Bu API anahtarının ne için kullanılacağını açıklayın",
+    "infoTitle": "API Entegrasyonu",
+    "infoText": "Ana API Anahtarları, UI kimlik doğrulaması gerektirmeden harici uygulamalar için tam API erişimi sağlar. İçerik yönetim araçları, otomatik komut dosyaları ve üçüncü taraf entegrasyonları için mükemmeldir.",
+    "badges": {
+      "externalApps": "Harici Uygulamalar",
+      "automationScripts": "Otomasyon Komut Dosyaları",
+      "thirdPartyTools": "Üçüncü Taraf Araçlar"
+    },
+    "neverLabel": "Asla",
+    "keyNameHelp": "Bu API anahtarını tanımlamak için açıklayıcı bir isim",
+    "securityNoteTitle": "Güvenlik Notu",
+    "securityNoteDescription": "Oluşturulan API anahtarı sadece bir kez gösterilecektir. Kopyalayıp güvenli bir yerde sakladığınızdan emin olun.",
+    "empty": {
+      "title": "API Anahtarı Bulunamadı",
+      "description": "Harici uygulama entegrasyonunu etkinleştirmek için ilk Ana API Anahtarınızı oluşturun"
+    },
+    "detailsTitle": "Ana API Anahtarı Detayları",
+    "detailsDescription": "Harici uygulama entegrasyonu için bu API anahtarını görüntüleyin ve yönetin",
+    "apiKeyLabel": "API Anahtarı",
+    "activeStatus": "Aktif Durum",
+    "regenerateButton": "Anahtarı Yeniden Oluştur",
+    "deleteButton": "Anahtarı Sil",
+    "labels": {
+      "created": "Oluşturuldu",
+      "lastUpdated": "Son Güncelleme",
+      "lastUsed": "Son Kullanım"
+    },
+    "noDescription": "Açıklama yok",
+    "keyNameRequired": "Anahtar adı gereklidir",
+    "confirmDelete": "\"{{keyName}}\" adlı Ana API Anahtarını silmek istediğinizden emin misiniz? Bu işlem, bu anahtarı kullanan tüm harici uygulamaların erişimini hemen iptal eder.",
+    "confirmRegenerate": "Bu Ana API Anahtarını yeniden oluşturmak istediğinizden emin misiniz? Eski anahtar hemen geçersiz olacak ve harici uygulamaların güncellenmesi gerekecek.",
+    "errors": {
+      "createFailed": "Ana API anahtarı oluşturulamadı",
+      "deleteFailed": "Ana API anahtarı silinemedi",
+      "loadFailed": "Ana API anahtarları yüklenemedi",
+      "loadSingleFailed": "Ana API anahtarı yüklenemedi",
+      "regenerateFailed": "Ana API anahtarı yeniden oluşturulamadı",
+      "updateFailed": "Ana API anahtarı güncellenemedi"
+    },
+    "fullAccessWarning": "⚠️ Bu anahtarı güvenli şekilde saklayın. Kimlik doğrulama olmadan API'ye tam erişim sağlar.",
+    "loading": "Ana API anahtarları yükleniyor..."
+  }
+}

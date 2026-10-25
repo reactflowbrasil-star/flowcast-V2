@@ -1,0 +1,66 @@
+{
+  "title": "Demo Yönetimi",
+  "loading": "Yükleniyor...",
+  "error": {
+    "loadFailed": "Demo istatistikleri yüklenemedi. Lütfen tekrar deneyin.",
+    "fetchConfigFailed": "Demo yapılandırması alınamadı"
+  },
+  "stats": {
+    "dailyLimit": "Günlük Limit",
+    "dailyLimitDesc": "Günlük maksimum demo sayısı",
+    "createdToday": "Bugün Oluşturulan",
+    "createdTodayDesc": "Bugün oluşturulan demolari",
+    "remainingToday": "Bugün Kalan",
+    "remainingTodayDesc": "Hala oluşturabileceğiniz demolar",
+    "activeDemos": "Aktif Demolar",
+    "activeDemosDesc": "Şu anda aktif olan demolar",
+    "demoDuration": "Demo Süresi",
+    "demoDurationDesc": "Her bir demonun süresi"
+  },
+  "createDemo": {
+    "title": "Demo Kullanıcısı Oluştur",
+    "description": "Potansiyel müşteriler için bir demo hesabı oluşturun. Demo kullanıcıları geçici premium erişime sahiptir.",
+    "dialogTitle": "Demo Kullanıcısı Oluştur",
+    "dialogDescription": "Bir demo hesabı oluşturun. Kullanıcı oluşturulduğu andan itibaren geçici premium erişime sahip olacaktır."
+  },
+  "status": {
+    "canCreate": "Bugün {{count}} demo daha oluşturabilirsiniz.",
+    "canCreatePlural": "Bugün {{count}} demo daha oluşturabilirsiniz.",
+    "limitReached": "Günlük demo limitine ulaşıldı ({{created}}/{{limit}}). Yarın tekrar deneyin."
+  },
+  "form": {
+    "username": "Kullanıcı Adı",
+    "usernamePlaceholder": "demo_kullanici_123",
+    "password": "Şifre",
+    "passwordPlaceholder": "Şifre girin",
+    "email": "E-posta (İsteğe Bağlı)",
+    "emailPlaceholder": "kullanici@example.com",
+    "categories": "İçerik Kategorileri",
+    "categoriesHint": "Bu demo kullanıcısının erişebileceği içerik kategorilerini seçmek için tıklayın.",
+    "loadingCategories": "Kategoriler yükleniyor...",
+    "noCategories": "Mevcut kategori yok",
+    "selectCategory": "Lütfen en az bir kategori seçin"
+  },
+  "validation": {
+    "usernameMin": "Kullanıcı adı en az 3 karakter olmalıdır",
+    "passwordMin": "Şifre en az 6 karakter olmalıdır",
+    "invalidEmail": "Geçersiz e-posta",
+    "categoryRequired": "Lütfen en az bir kategori seçin"
+  },
+  "actions": {
+    "cancel": "İptal",
+    "creating": "Oluşturuluyor...",
+    "createDemo": "Demo Oluştur"
+  },
+  "info": {
+    "title": "Demo Kullanıcı Bilgileri",
+    "duration": "Süre:",
+    "durationValue": "Oluşturulduktan sonra {{hours}} saat",
+    "access": "Erişim:",
+    "accessValue": "Tam premium özellikler",
+    "devices": "Cihazlar:",
+    "devicesValue": "Aynı anda 3 cihaza kadar",
+    "autoCleanup": "Otomatik temizleme:",
+    "autoCleanupValue": "Hesap süresi dolduğunda otomatik olarak silinir"
+  }
+}

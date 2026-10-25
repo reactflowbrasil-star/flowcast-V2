@@ -1,0 +1,33 @@
+{
+  "bulkImportTVChannels": {
+    "title": "Массовый Импорт",
+    "description": "Импортируйте несколько ТВ каналов из M3U списка.",
+    "labels": {
+      "format": "Формат",
+      "provider": "Провайдер",
+      "globalDescription": "Глобальное описание",
+      "country": "Страна",
+      "startChannelNumber": "Начальный Номер Канала",
+      "m3uList": "M3U Список"
+    },
+    "placeholders": {
+      "provider": "напр: Провайдер А, Провайдер Б",
+      "description": "Описание для всех каналов",
+      "country": "Напр: US, AR, RU",
+      "startChannelNumber": "Авто-расчет если пусто"
+    },
+    "buttons": {
+      "cancel": "Отмена",
+      "chooseFile": "Выбрать файл M3U",
+      "import": "Импорт"
+    },
+    "validation": {
+      "pasteM3uContent": "Вставьте контент M3U",
+      "mustBePositiveNumber": "Должно быть положительным числом",
+      "invalidData": "Неверные данные",
+      "bulkImportFailed": "Массовый импорт не удался",
+      "unknownError": "Неизвестная ошибка",
+      "fileReadFailed": "Не удалось прочитать выбранный файл"
+    }
+  }
+}

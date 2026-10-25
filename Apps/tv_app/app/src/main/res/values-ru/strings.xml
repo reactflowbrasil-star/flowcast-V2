@@ -1,0 +1,1035 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- App Name (uses branding.name from local.properties) -->
+    <string name="app_name">@string/branding_name</string>
+    <string name="app_name_full">@string/branding_name</string>
+    
+    <!-- Navigation -->
+    <string name="nav_home">Главная</string>
+    <string name="nav_search">Поиск</string>
+    <string name="nav_movies">Фильмы</string>
+    <string name="nav_series">Сериалы</string>
+    <string name="nav_live_tv">Прямой эфир</string>
+    <string name="nav_kids">Детям</string>
+    <string name="nav_anime">Аниме</string>
+    <string name="nav_events">События</string>
+
+    <string name="nav_favorites">Избранное</string>
+    <string name="nav_library">Библиотека</string>
+    <string name="nav_music">Музыка</string>
+    <string name="nav_settings">Настройки</string>
+    <string name="nav_profile">Профиль</string>
+
+    <!-- Events & Views -->
+    <string name="label_view_categories">Категории</string>
+    <string name="label_view_compact">Компактный</string>
+    <string name="label_view_large">Большой</string>
+    <string name="channels_available">Доступно каналов: %1$d</string>
+    <string name="category_no_channels">В этой категории нет доступных каналов</string>
+    
+    <!-- Authentication -->
+    <string name="auth_welcome">Добро пожаловать в IPTV</string>
+    <string name="auth_welcome_subtitle">Зарегистрируйте устройство, чтобы начать</string>
+    <string name="auth_register_device">Регистрация устройства</string>
+    <string name="auth_device_name">Имя устройства</string>
+    <string name="auth_device_name_hint">Мой Android TV</string>
+    <string name="auth_activation_code">Код активации</string>
+    <string name="auth_activation_code_hint">Введите 6-значный код</string>
+    <string name="auth_activate">Активировать</string>
+    <string name="auth_activating">Активация…</string>
+    <string name="auth_registering">Регистрация…</string>
+    <string name="auth_success">Устройство успешно активировано</string>
+    <string name="auth_activate_device">Активировать устройство</string>
+    <string name="auth_activate_subtitle">Введите предоставленный код активации</string>
+    
+    <!-- Content -->
+    <string name="content_play">Смотреть</string>
+    <string name="content_play_now">Смотреть сейчас</string>
+    <string name="content_more_info">Подробнее</string>
+    <string name="content_add_favorite">В избранное</string>
+    <string name="content_remove_favorite">Из избранного</string>
+    <string name="content_download">Скачать</string>
+    <string name="content_share">Поделиться</string>
+    <string name="content_continue_watching">Продолжить просмотр</string>
+    <string name="content_min_remaining">Осталось %d мин</string>
+    <string name="content_popular_movies">Популярные фильмы</string>
+    <string name="content_recommended_series">Рекомендуемые сериалы</string>
+    <string name="content_recently_added">Недавно добавленное</string>
+    <string name="content_see_all">Показать все</string>
+    <string name="content_empty_message">Контент недоступен</string>
+    
+    <!-- Player -->
+    <string name="player_play">Смотреть</string>
+    <string name="player_pause">Пауза</string>
+    <string name="player_stop">Стоп</string>
+    <string name="player_forward">Вперед на 10с</string>
+    <string name="player_backward">Назад на 10с</string>
+    <string name="player_fullscreen">Полный экран</string>
+    <string name="player_exit_fullscreen">Выйти из полноэкранного режима</string>
+    <string name="player_volume">Громкость</string>
+    <string name="player_subtitles">Субтитры</string>
+    <string name="player_quality">Качество</string>
+    <string name="player_loading">Подготовка видео…</string>
+    <string name="player_placeholder_message">Выберите контент для просмотра</string>
+    <string name="player_subtitle_settings">Настройки субтитров</string>
+    <string name="player_no_subtitles">Нет доступных субтитров</string>
+    <string name="player_subtitle_off">Off</string>
+    <string name="player_subtitle_off_desc">Отключить все субтитры</string>
+    
+    <!-- Search -->
+    <string name="search_hint">Поиск фильмов, сериалов, каналов…</string>
+    <string name="search_no_results">Результатов не найдено</string>
+    <string name="search_suggestions">Предложения</string>
+    <string name="search_recent">Последние запросы</string>
+    <string name="search_searching">Поиск…</string>
+    <string name="search_placeholder">Искать контент…</string>
+    <string name="search_no_results_title">Нет результатов</string>
+    <string name="search_no_results_message">Ничего не найдено по вашему запросу</string>
+    <string name="search_no_results_suggestions">Попробуйте изменить поисковый запрос</string>
+    
+    <!-- Settings -->
+    <string name="settings_profile">Профиль</string>
+    <string name="settings_video">Видео</string>
+    <string name="settings_audio">Аудио</string>
+
+    <string name="settings_devices">Устройства</string>
+    <string name="settings_about">О приложении</string>
+    <string name="settings_logout">Выйти</string>
+    <string name="settings_autoplay">Автозапуск</string>
+    <string name="settings_autoplay_subtitle">Автоматически играть следующую серию</string>
+    <string name="settings_subtitles">Субтитры</string>
+    <string name="settings_subtitles_subtitle">Показывать субтитры, если доступны</string>
+
+    <string name="settings_title">Настройки</string>
+    <string name="settings_video_title">Видео</string>
+    <string name="settings_video_quality">Качество видео</string>
+    <string name="settings_video_quality_subtitle">Выберите качество воспроизведения</string>
+    <string name="settings_app_title">Приложение</string>
+    <string name="settings_language">Язык</string>
+    <string name="settings_language_subtitle">Сменить язык приложения</string>
+    <string name="settings_account_title">Аккаунт</string>
+    <string name="settings_logout_subtitle">Выйти из системы</string>
+    <string name="settings_about_title">О приложении</string>
+    <string name="settings_check_updates">Проверьте наличие обновлений</string>
+    <string name="settings_check_updates_subtitle">Проверьте наличие обновлений приложения</string>
+    <string name="settings_app_version">Версия приложения</string>
+    <string name="settings_privacy_policy">Политика конфиденциальности</string>
+    <string name="settings_privacy_policy_subtitle">Посмотреть политику конфиденциальности</string>
+    <string name="settings_terms">Условия использования</string>
+    <string name="settings_terms_subtitle">Посмотреть условия использования</string>
+    <string name="profile_title">Профиль</string>
+    <string name="profile_subscription">Подписка</string>
+
+    <!-- Error Messages -->
+    <string name="error_network">Ошибка сети</string>
+    <string name="error_server">Ошибка сервера</string>
+    <string name="error_unauthorized">Не авторизован</string>
+    <string name="error_not_found">Контент не найден</string>
+    <string name="error_playback">Ошибка воспроизведения</string>
+    <string name="error_unknown">Неизвестная ошибка</string>
+    <string name="error_device_registration">Ошибка регистрации устройства</string>
+    <string name="error_device_activation">Ошибка активации устройства</string>
+    <string name="error_invalid_code">Неверный код активации</string>
+    <string name="error_title">Ошибка</string>
+    <string name="error_retry">Повторить</string>
+    
+    <!-- Loading States -->
+    <string name="loading">Загрузка…</string>
+    <string name="loading_content">Загрузка контента…</string>
+    <string name="loading_video">Подготовка видео…</string>
+    <string name="loading_search">Поиск…</string>
+    
+    <!-- Actions -->
+    <string name="action_retry">Повторить</string>
+    <string name="action_cancel">Отмена</string>
+    <string name="action_ok">ОК</string>
+    <string name="action_save">Сохранить</string>
+    <string name="action_edit">Изменить</string>
+    <string name="action_delete">Удалить</string>
+    <string name="action_share">Поделиться</string>
+    <string name="action_back">Назад</string>
+    
+    <!-- Content Descriptions (Accessibility) -->
+    <string name="cd_play_button">Кнопка воспроизведения</string>
+    <string name="cd_pause_button">Кнопка паузы</string>
+    <string name="cd_favorite_button">Кнопка избранного</string>
+    <string name="cd_search_button">Кнопка поиска</string>
+    <string name="cd_menu_button">Кнопка меню</string>
+    <string name="cd_back_button">Кнопка назад</string>
+    <string name="cd_back">Назад</string>
+    <string name="cd_clear_button">Очистить</string>
+    <string name="cd_content_image">Изображение контента</string>
+    <string name="cd_user_avatar">Аватар пользователя</string>
+    <string name="cd_logo">Логотип IPTV</string>
+    
+    <!-- Live TV -->
+    <string name="live_tv_channels">ТВ-каналы</string>
+    <string name="live_tv_now_playing">Сейчас в эфире</string>
+    <string name="live_tv_next">Далее</string>
+
+    <!-- Channels -->
+    <string name="channels_title">Каналы</string>
+    <string name="channels_count">Каналов: %1$d</string>
+    <string name="channels_close">Закрыть</string>
+    <string name="channels_search_hint">Поиск каналов…</string>
+    <string name="channels_no_epg_available">Нет программы передач</string>
+
+    <!-- EPG -->
+    <string name="epg_live_badge">В ЭФИРЕ</string>
+    <string name="epg_press_right_for_more">Нажмите → для просмотра программы</string>
+    <string name="epg_full_programming">Полная программа</string>
+    <string name="epg_channel">Канал</string>
+    <string name="epg_back">Назад</string>
+    <string name="epg_live_program">Прямой эфир</string>
+    
+    <!-- Time formats -->
+    <string name="time_format_hours_minutes">%1$dч %2$dм</string>
+    <string name="time_format_minutes">%1$dм</string>
+    <string name="time_format_less_minute">&lt; 1м</string>
+
+    <!-- Language Selection -->
+    <string name="language_spanish">Испанский</string>
+    <string name="language_english">Английский</string>
+    <string name="language_portuguese">Португальский</string>
+    <string name="language_chinese">Китайский</string>
+    <string name="language_dialog_title">Выберите язык</string>
+    <string name="language_dialog_message">Выберите предпочитаемый язык</string>
+    <string name="language_changed">Язык успешно изменен</string>
+    <string name="language_restart_required">Перезапустите приложение для применения изменений</string>
+
+    <!-- Hardcoded Strings - UI Components -->
+    <string name="channels_search_hint_alt">Поиск каналов…</string>
+    <string name="channels_select_channel">Выберите канал</string>
+    <string name="channels_no_epg_info">Нет данных EPG</string>
+    <string name="channels_no_programming">Информация о программе недоступна</string>
+    <string name="channels_press_back">Нажмите ← для возврата к каналам</string>
+    <string name="live_indicator">В ЭФИРЕ</string>
+    <string name="now_label">СЕЙЧАС</string>
+    <string name="next_label">ДАЛЕЕ</string>
+    <string name="current_label">ТЕКУЩИЙ</string>
+    <string name="now_playing">Сейчас:</string>
+    <string name="auto_label">Авто</string>
+
+    <!-- Account & Profile -->
+    <string name="account_title">Аккаунт</string>
+    <string name="account_apply_change">Применить изменения</string>
+    <string name="account_close">Закрыть</string>
+    <string name="account_password_mismatch">Не совпадает</string>
+    <string name="account_logout">Выход</string>
+    <string name="user_label">Пользователь</string>
+
+    <!-- Device Management -->
+    <string name="device_limit_title">Лимит устройств</string>
+    <string name="device_limit_reached">Вы достигли лимита в %1$d устройств</string>
+    <string name="device_limit_description">Чтобы продолжить, вам необходимо заменить одно из существующих устройств.</string>
+    <string name="device_limit_replacement_warning">Выбранное устройство будет окончательно отключено, и его место займет новое.</string>
+    <string name="device_limit_disconnect_warning">Выбранное устройство будет отключено немедленно</string>
+    <string name="device_limit_replacing">Замена устройства…</string>
+    <string name="device_limit_wait">Это может занять несколько секунд</string>
+    <string name="device_limit_this_device">Это устройство</string>
+    <string name="device_limit_cancel">Отмена</string>
+    <string name="device_limit_disconnect">Отключить</string>
+    <string name="device_limit_disconnecting">Отключение…</string>
+    <string name="device_limit_confirm_replacement">Подтвердить замену</string>
+    <string name="device_limit_confirm_message">Подтвердить замену устройства?</string>
+    <string name="device_limit_what_happens">Что произойдет:</string>
+    <string name="device_limit_device_disconnected">Выбранное устройство будет окончательно отключено</string>
+    <string name="device_limit_device_replaced">Это устройство займет его место и будет зарегистрировано</string>
+    <string name="device_limit_device_to_disconnect">Устройство для отключения:</string>
+    <string name="device_limit_last_access">Последний доступ: %1$s</string>
+    <string name="device_limit_yes_disconnect">Да, отключить</string>
+
+    <!-- Account Dialog -->
+    <string name="account_data_title">Данные аккаунта</string>
+    <string name="account_change_password">Сменить пароль</string>
+    <string name="account_current_password">Текущий пароль</string>
+    <string name="account_new_password">Новый пароль</string>
+    <string name="account_confirm_password">Подтвердите пароль</string>
+    <string name="account_passwords_no_match">Пароли не совпадают</string>
+    <string name="account_changing">Смена…</string>
+    <string name="account_min_length">Минимум %1$d символов</string>
+    <string name="account_email">Электронная почта</string>
+    <string name="account_active">Активен</string>
+    <string name="account_inactive">Неактивен</string>
+    <string name="account_expires">Истекает:</string>
+
+    <!-- Profile Screen -->
+    <string name="profile_username">Имя пользователя</string>
+    <string name="profile_loading">Загрузка…</string>
+    <string name="profile_change_password">Сменить пароль</string>
+    <string name="profile_update_password">Обновите ваш пароль</string>
+    <string name="profile_subscription_details">Сведения о подписке</string>
+    <string name="profile_expires_at">Истекает: %1$s</string>
+    <string name="profile_features_title">Функции:</string>
+    <string name="profile_date_not_available">Дата недоступна</string>
+    <string name="profile_renew_subscription">Продлить подписку</string>
+    <string name="profile_connected_devices">Подключенные устройства</string>
+    <string name="profile_last_activity">Последняя активность:</string>
+    <string name="profile_rename">Переименовать</string>
+    <string name="profile_delete">Удалить</string>
+    <string name="profile_quick_actions">Быстрые действия</string>
+    <string name="profile_clear_history">Очистить историю</string>
+    <string name="profile_clear_history_desc">Удалить всю историю просмотров</string>
+    <string name="profile_export_data">Экспорт данных</string>
+    <string name="profile_export_data_desc">Скачать копию ваших данных</string>
+    <string name="profile_delete_account">Удалить аккаунт</string>
+    <string name="profile_delete_account_desc">Безвозвратно удалить ваш аккаунт</string>
+    <string name="profile_rename_device">Переименовать устройство</string>
+    <string name="profile_device_name">Имя устройства</string>
+    <string name="profile_save">Сохранить</string>
+    <string name="profile_cancel">Отмена</string>
+    <string name="profile_delete_device">Удалить устройство</string>
+    <string name="profile_delete_device_confirm">Вы уверены, что хотите удалить устройство "%1$s"?</string>
+    <string name="profile_delete_device_action">Удалить</string>
+
+    <!-- Settings -->
+    <string name="settings_customize_experience">Персонализируйте ваш опыт</string>
+    <string name="settings_manage_account">Управляйте аккаунтом и предпочтениями</string>
+    <string name="settings_username">Имя пользователя</string>
+    <string name="settings_loading">Загрузка…</string>
+    <string name="settings_active_account">Активный аккаунт</string>
+    <string name="settings_loading_account">Загрузка аккаунта…</string>
+    <string name="settings_devices_title">Устройства</string>
+    <string name="settings_days_remaining">осталось %1$d дн.</string>
+    <string name="settings_expired">Срок истек</string>
+    <string name="settings_remaining">Осталось</string>
+    <string name="settings_expires">Истекает: %1$s</string>
+    <string name="settings_invalid_date">Неверная дата</string>
+    <string name="settings_no_expiry_date">Нет срока истечения</string>
+    <string name="settings_device_management">Управление устройствами</string>
+    <string name="settings_active_devices">%1$d из %2$d устройств активны</string>
+
+    <!-- Navigation & Actions -->
+    <string name="nav_back">Назад</string>
+    <string name="nav_clear">Очистить</string>
+    <string name="nav_select">Выбрать</string>
+
+    <!-- Player & Video -->
+    <string name="player_unknown_content">Неизвестно</string>
+    <string name="unknown_label">Неизвестно</string>
+    <string name="player_error">Ошибка</string>
+    <string name="player_back">Назад</string>
+    <string name="player_next">Далее</string>
+
+    <!-- EPG -->
+    <string name="epg_now">Сейчас</string>
+    <string name="epg_full_programming_alt">Полная программа</string>
+
+    <!-- Layout -->
+    <string name="layout_channel_number">2</string>
+    <string name="layout_channel_name">Канал</string>
+
+    <!-- Errors -->
+    <string name="error_url_not_available">URL потока недоступен</string>
+
+    <!-- Quality -->
+    <string name="quality_title">Качество видео</string>
+    <string name="quality_no_options">Нет доступных опций качества</string>
+    <string name="quality_auto_description">Автоподстройка под интернет</string>
+    <string name="quality_close">Закрыть</string>
+    <string name="quality_selected">Выбрано</string>
+
+    <!-- Audio -->
+    <string name="audio_title">Язык аудио</string>
+    <string name="audio_no_options">Нет дополнительных звуковых дорожек</string>
+    <string name="audio_auto_description">Автовыбор по предпочтениям</string>
+    <string name="audio_close">Закрыть</string>
+    <string name="audio_selected">Выбрано</string>
+    <string name="audio_language_prefix">Язык:</string>
+
+    <!-- EPG -->
+    <string name="epg_title">Телепрограмма</string>
+    <string name="epg_no_data">Нет данных EPG</string>
+    <string name="epg_loading">Загрузка программы…</string>
+    <string name="epg_error">Ошибка загрузки EPG</string>
+    <string name="epg_no_programs">Программы недоступны</string>
+    <string name="epg_channel_info">Информация о канале</string>
+    <string name="epg_program_details">Детали программы</string>
+    <string name="epg_program_description">Описание программы</string>
+    <string name="epg_next_programs">Следующие программы</string>
+    <string name="epg_all_channels">Все каналы</string>
+    <string name="epg_favorites">Избранное</string>
+    <string name="epg_search">Поиск программ</string>
+    <string name="epg_no_favorites">У вас нет избранных каналов</string>
+    <string name="epg_add_favorite">В избранное</string>
+    <string name="epg_remove_favorite">Из избранного</string>
+    <string name="epg_watch_now">Смотреть сейчас</string>
+    <string name="epg_remind_me">Напомнить</string>
+    <string name="epg_program_started">Программа началась</string>
+    <string name="epg_program_ending">Программа заканчивается</string>
+    <string name="epg_time_remaining">Осталось %1$d мин</string>
+
+    <!-- Live TV Components -->
+    <string name="live_tv_no_epg">EPG недоступен</string>
+    <string name="live_tv_epg_loading">Загрузка EPG…</string>
+    <string name="live_tv_channel_search_hint">Поиск каналов…</string>
+    <string name="live_tv_channel_search_no_results">Каналы не найдены</string>
+    <string name="live_tv_channel_search_no_match">Нет каналов по запросу "%1$s"</string>
+    <string name="live_tv_channel_clear">Очистить</string>
+    <string name="live_tv_channel_count">Каналов: %1$d из %2$d</string>
+    <string name="live_tv_favorites_title">Избранные каналы</string>
+    <string name="live_tv_favorites_count">Избранных каналов: %1$d</string>
+    <string name="live_tv_favorites_empty">У вас нет избранных каналов</string>
+
+    <!-- Device Registration -->
+    <string name="device_registration_title">Регистрация устройства</string>
+    <string name="device_registration_subtitle">Зарегистрируйте устройство, чтобы начать</string>
+    <string name="device_info_title">Информация об устройстве</string>
+    <string name="device_system_info_title">Информация о системе</string>
+    <string name="device_model_label">Модель</string>
+    <string name="device_android_label">Android</string>
+    <string name="device_manufacturer_label">Производитель</string>
+    <string name="device_register_button">Зарегистрировать устройство</string>
+    <string name="device_skip_temp">Контент (временно)</string>
+    <string name="device_unknown">Неизвестно</string>
+    <string name="device_type_label">Тип:</string>
+    <string name="device_model_label_old">Модель:</string>
+    <string name="device_android_label_old">Андроид:</string>
+    <string name="device_type_android_tv">Android TV</string>
+
+    <!-- Content & Media -->
+    <string name="content_hd_label">HD</string>
+    <string name="content_seasons_label">Сезоны</string>
+    <string name="content_episodes_count">Эпизодов: %1$d</string>
+    <string name="content_rating_format">★ %1$s</string>
+
+    <!-- Favorites -->
+    <string name="favorites_hint">Отмечайте каналы как избранные для быстрого доступа</string>
+    <string name="favorites_explore">Искать каналы</string>
+
+    <!-- Live Content -->
+    <string name="live_sports_title">Прямой эфир: Спорт</string>
+
+    <!-- Navigation -->
+    <string name="nav_previous">Назад</string>
+    <string name="nav_episode_info">Эпизод %1$d из %2$d</string>
+
+    <!-- Profile -->
+    <string name="profile_stats_title">Статистика аккаунта</string>
+    <string name="profile_logout_title">Выход</string>
+    <string name="profile_logout_message">Это завершит сеанс на этом устройстве</string>
+    <string name="password_mismatch">Пароли не совпадают</string>
+
+    <!-- Device Management -->
+    <string name="device_management_title">Управление устройствами</string>
+    <string name="device_loading">Загрузка устройств…</string>
+    <string name="device_no_devices">Нет зарегистрированных устройств</string>
+    <string name="devices_registered_count">%1$d из %2$d устройств зарегистрировано</string>
+    <string name="devices_empty_message">Устройства появятся здесь после регистрации</string>
+    <string name="current_device_label">Это устройство</string>
+    <string name="last_access_prefix">Последний доступ:</string>
+    <string name="delete_device_title">Удалить устройство</string>
+    <string name="delete_device_confirm">Вы уверены, что хотите удалить это устройство?</string>
+
+    <!-- Welcome & Activation -->
+    <string name="welcome_to_iptv">Добро пожаловать в IPTV</string>
+    <string name="register_device_to_continue">Зарегистрируйте устройство, чтобы начать</string>
+    <string name="activation_code_title">Код активации</string>
+    <string name="activating_device">Активация…</string>
+    <string name="activate_device_button">Активировать устройство</string>
+    <string name="need_help">Нужна помощь?</string>
+    <string name="activation_code_info">Код активации состоит из 6 цифр</string>
+    <string name="verify_code_correct">Проверьте правильность кода</string>
+    <string name="contact_support_if_issues">Свяжитесь с поддержкой, если возникли проблемы</string>
+    <string name="activating_device_long">Активация устройства…</string>
+    <string name="please_wait">Пожалуйста, подождите</string>
+    <string name="registering_device_long">Регистрация устройства…</string>
+    <string name="replace_device_button">Заменить устройство</string>
+    <string name="devices_label">Устройства</string>
+    <string name="devices_count">%1$d/%2$d</string>
+
+    <!-- Device Selection -->
+    <string name="select_device_to_replace">Выберите устройство, которое будет заменено текущим:</string>
+    <string name="device_type_prefix">Тип:</string>
+    <string name="device_last_used_prefix">Исп. последним:</string>
+
+    <!-- Device Registration Features -->
+    <string name="device_limit_reached_message">Лимит достигнут. Замените существующее устройство.</string>
+    <string name="device_spaces_available">У вас осталось %1$d своб. мест.</string>
+    <string name="device_registration_logo_description">@string/branding_name</string>
+    <string name="device_registration_feature_hd">HD/4K контент</string>
+    <string name="device_registration_feature_devices">Несколько устройств</string>
+    <string name="device_registration_feature_security">Безопасный стриминг</string>
+
+    <!-- Device Selection Screen -->
+    <string name="device_selection_title">Выбор устройства для замены</string>
+    <string name="device_selection_back_description">Назад</string>
+    <string name="device_selection_unknown_date">Неизвестно</string>
+    <string name="device_selection_replace_description">Заменить</string>
+    <string name="device_selection_device_description">Устройство</string>
+
+    <!-- Device Management Screen -->
+    <string name="device_management_back_description">Назад</string>
+    <string name="device_management_refresh_description">Обновить</string>
+    <string name="device_management_delete_description">Удалить устройство</string>
+    <string name="device_management_device_type_android">Android</string>
+    <string name="device_management_device_type_ios">iOS</string>
+    <string name="device_management_device_type_web">Браузер</string>
+    <string name="device_management_device_type_tv">Смарт ТВ</string>
+    <string name="device_management_last_active_prefix">в</string>
+
+    <!-- Device Management Dialog -->
+    <string name="device_management_delete_device_title">Удалить устройство</string>
+    <string name="device_management_delete_device_confirm">Вы уверены, что хотите удалить это устройство?</string>
+    <string name="device_management_delete_device_warning">Это действие нельзя отменить. Устройство придется регистрировать заново для доступа.</string>
+    <string name="device_management_delete_device_action">Удалить</string>
+    <string name="device_management_delete_device_cancel">Отмена</string>
+
+    <!-- Favorites Manager -->
+    <string name="favorites_remove_description">Из избранного</string>
+    <string name="favorites_add_description">В избранное</string>
+    <string name="favorites_category_title">Избранное</string>
+
+    <!-- Channel Search Bar -->
+    <string name="channel_search_placeholder">Поиск каналов…</string>
+    <string name="channel_search_description">Поиск</string>
+    <string name="channel_clear_description">Очистить</string>
+    <string name="channel_category_all">Все</string>
+    <string name="channel_category_news">Новости</string>
+    <string name="channel_category_sports">Спорт</string>
+    <string name="channel_category_entertainment">Развлечения</string>
+    <string name="channel_category_movies">Фильмы</string>
+    <string name="channel_category_kids">Детские</string>
+    <string name="channel_quality_all">Все</string>
+    <string name="channel_quality_hd">HD</string>
+    <string name="channel_quality_4k">4K</string>
+    <string name="channel_quality_sd">SD</string>
+    <string name="channel_category_title">Категория</string>
+    <string name="channel_quality_title">Качество</string>
+    <string name="channel_search_results">Результаты по "%1$s"</string>
+    <string name="channel_search_all_channels">Все каналы</string>
+
+    <!-- Device Limit Dialog -->
+    <string name="device_limit_replacing_message">Замена устройства…</string>
+    <string name="device_limit_waiting_message">Это может занять несколько секунд</string>
+    <string name="device_limit_selected_description">Выбрано</string>
+
+    <!-- Detail Screen -->
+    <string name="detail_back_description">Назад</string>
+    <string name="detail_no_description">Описание недоступно</string>
+    <string name="detail_season_prefix">С</string>
+    <string name="detail_season_content_description">Сезон %1$d</string>
+
+    <!-- Home Screen -->
+    <string name="home_content_type_live">ЭФИР</string>
+    <string name="home_content_type_hd">HD</string>
+    <string name="home_play_description">Смотреть</string>
+
+    <!-- Search Screen -->
+    <string name="search_placeholder_screen">Искать контент…</string>
+
+    <!-- Search Result Card -->
+    <string name="search_watch_live">СМОТРЕТЬ ЭФИР</string>
+    <string name="search_watch_series">СМОТРЕТЬ СЕРИАЛ</string>
+    <string name="search_view_details">ПОДРОБНЕЕ</string>
+    <string name="search_content_type_movie">ФИЛЬМ</string>
+    <string name="search_content_type_series">СЕРИАЛ</string>
+    <string name="search_content_type_live">ЭФИР</string>
+    <string name="search_content_type_episode">ЭПИЗОД</string>
+
+    <!-- Player -->
+    <string name="player_stream_url_not_available">URL потока недоступен</string>
+
+    <!-- Password Management -->
+    <string name="password_current">Текущий пароль</string>
+    <string name="password_show">Показать пароль</string>
+    <string name="password_hide">Скрыть пароль</string>
+    <string name="password_new">Новый пароль</string>
+    <string name="password_confirm">Подтвердите новый пароль</string>
+    <string name="password_empty">Введите текущий пароль</string>
+    <string name="password_new_empty">Введите новый пароль</string>
+    <string name="password_min_length">Пароль должен содержать не менее 6 символов</string>
+    <string name="password_mismatch_validation">Пароли не совпадают</string>
+    <string name="password_changed_success">Пароль успешно изменен</string>
+    <string name="password_empty_error">Пароль не может быть пустым</string>
+
+    <!-- Authentication Errors -->
+    <string name="auth_credentials_invalid">Неверные данные. Проверьте логин и пароль.</string>
+    <string name="auth_enter_credentials">Пожалуйста, введите логин и пароль</string>
+
+    <!-- Content Validation -->
+    <string name="content_id_empty_error">Content ID не может быть пустым</string>
+    <string name="progress_range_error">Прогресс должен быть от 0.0 до 1.0</string>
+    <string name="duration_negative_error">Длительность не может быть отрицательной</string>
+
+    <!-- Request Validation -->
+    <string name="request_invalid_data">Неверный запрос. Проверьте данные.</string>
+
+    <!-- HTTP Error Messages -->
+    <string name="error_http_400">Неверный запрос. Проверьте данные.</string>
+    <string name="error_http_401">Не авторизован. Войдите заново.</string>
+    <string name="error_http_403">Доступ запрещен</string>
+    <string name="error_http_404">Контент не найден</string>
+    <string name="error_http_408">Время ожидания истекло</string>
+    <string name="error_http_429">Слишком много запросов. Повторите позже.</string>
+    <string name="error_http_500">Ошибка сервера. Повторите позже.</string>
+    <string name="error_http_502_503">Сервис недоступен</string>
+    <string name="error_network_generic">Ошибка сети</string>
+
+    <!-- Network Error Messages -->
+    <string name="error_no_internet">Нет интернет-соединения</string>
+    <string name="error_connection_timeout">Время ожидания истекло</string>
+    <string name="error_connection_generic">Ошибка соединения</string>
+
+    <!-- Exception Messages -->
+    <string name="error_empty_response">Пустой ответ сервера</string>
+    <string name="error_failed_user_profile">Ошибка при получении профиля</string>
+    <string name="error_network_message">Ошибка сети</string>
+    <string name="error_failed_update_profile">Ошибка обновления профиля</string>
+    <string name="error_password_change_success">Пароль изменен успешно</string>
+    <string name="error_failed_password_change">Ошибка смены пароля</string>
+
+    <!-- Authentication Repository Errors -->
+    <string name="error_device_activation_not_implemented">Активация устройства еще не реализована</string>
+    <string name="error_no_refresh_token">Refresh token недоступен</string>
+    <string name="error_token_refresh_failed">Ошибка обновления токена</string>
+    <string name="error_token_refresh_failed_with_message">Ошибка обновления токена: %1$s</string>
+
+    <!-- Logout -->
+    <string name="logout_success">Вы вышли из системы</string>
+    <string name="logout_loading">Выход…</string>
+    <string name="logout_button">Выйти</string>
+
+    <!-- Session Management -->
+    <string name="session_expired">Сессия истекла. Войдите снова.</string>
+    <string name="session_unauthorized">Не авторизован. Войдите снова.</string>
+
+    <!-- Input Prompts -->
+    <string name="input_enter">Введите</string>
+    <string name="input_channel_number">Введите номер канала</string>
+    <string name="input_verify_data">Проверьте введенные данные</string>
+
+    <!-- Names and Users -->
+    <string name="name_device">Имя устройства</string>
+    <string name="name_username">Имя пользователя</string>
+    <string name="name_device_empty">Имя устройства не может быть пустым</string>
+    <string name="name_device_min_length">Имя устройства должно быть не менее 3 символов</string>
+    <string name="name_device_updated">Имя устройства обновлено</string>
+    <string name="name_username_empty">Имя пользователя не может быть пустым</string>
+
+    <!-- Platform -->
+    <string name="platform_premium_streaming">Премиум-стриминг платформа</string>
+
+    <!-- Live TV Channel Selector -->
+    <string name="channel_now">СЕЙЧАС</string>
+    <string name="channel_next">ДАЛЕЕ</string>
+
+    <!-- Content Categories -->
+    <string name="category_load_more">Загрузить еще</string>
+    <string name="category_empty_title">Контент отсутствует</string>
+    <string name="category_empty_message">В категории "%1$s" нет доступного контента</string>
+    <string name="sort_title">Название</string>
+    <string name="sort_year">Год</string>
+    <string name="sort_rating">Рейтинг</string>
+    <string name="sort_date_added">Дата добавления</string>
+
+    <!-- Search -->
+    <string name="search_placeholder_generic">Искать…</string>
+    <string name="search_description">Поиск</string>
+    <string name="search_title">Поиск</string>
+
+    <!-- Availability -->
+    <string name="service_unavailable">Сервис недоступен</string>
+    <string name="service_temporarily_unavailable">Сервис временно недоступен</string>
+
+    <!-- Player Navigation -->
+    <string name="player_next_episode">Следующий эпизод</string>
+    <string name="player_next_with_title">Далее: %1$s</string>
+
+    <!-- UI Elements -->
+    <string name="seasons_title">Сезоны</string>
+    <string name="play_button">Смотреть</string>
+    <string name="close_button">Закрыть</string>
+    <string name="pause_button">Пауза</string>
+
+    <!-- Access -->
+    <string name="quick_access">Быстрый доступ</string>
+    <string name="quick_access_description">Отмечайте каналы для быстрого доступа</string>
+    <string name="last_access">Последний доступ: %1$s</string>
+
+    <!-- Device Registration -->
+    <string name="devices_registered_count_alt">%1$d из %2$d устройств зарегистрировано</string>
+
+    <!-- Buttons -->
+    <string name="button_cancel">Отмена</string>
+    <string name="button_change">Изменить</string>
+
+    <!-- Additional translations for hardcoded texts -->
+    <string name="content_no_image">Нет изображения</string>
+    <string name="content_rating_star">★ %1$s</string>
+    <string name="epg_not_available">EPG недоступен</string>
+    <string name="channel_starting">Запуск канала…</string>
+    <string name="programs_count">Программ: %1$d</string>
+    <string name="epg_navigation_hint">↑↓ Навигация • OK Смотреть</string>
+    <string name="program_time_range">%1$s - %2$s</string>
+    <string name="program_position">%1$d/%2$d</string>
+    <string name="press_ok_to_watch">Нажмите OK для просмотра</string>
+    <string name="settings_change_password">Сменить пароль</string>
+    <string name="settings_update_password_subtitle">Обновить пароль для входа</string>
+    <string name="settings_subscription_details">Сведения о подписке</string>
+
+    <!-- Detail Screen -->
+    <string name="detail_watch_now">Смотреть сейчас</string>
+    <string name="detail_trailer">Трейлер</string>
+    <string name="detail_overview">Описание</string>
+    <string name="detail_seasons">Сезоны</string>
+    <string name="detail_season">Сезон</string>
+    <string name="detail_no_description_alt">Описание недоступно</string>
+
+    <!-- Content Details -->
+    <string name="content_synopsis">Синопсис</string>
+    <string name="content_director">Режиссер</string>
+    <string name="content_genres">Жанры</string>
+    <string name="content_episodes">Эпизоды</string>
+    <string name="content_cast">В ролях</string>
+    <string name="content_related">Похожий контент</string>
+    <string name="content_episode_short">Э</string>
+
+    <!-- Live TV (merged section) -->
+    <string name="live_tv_next_program">Далее:</string>
+    <string name="live_tv_current_program">Сейчас:</string>
+
+    <!-- Channel Navigation -->
+    <string name="all">Все</string>
+    <string name="category_entertainment">Развлечения</string>
+    <string name="category_sports">Спорт</string>
+    <string name="category_news">Новости</string>
+    <string name="category_movies">Фильмы</string>
+    <string name="category_series">Сериалы</string>
+    <string name="category_music">Музыка</string>
+    <string name="category_kids">Детские</string>
+
+    <string name="category_documentary">Документалистика</string>
+    <string name="category_lifestyle">Стиль жизни</string>
+    <string name="category_culture_education">Культура и образование</string>
+    <string name="category_international">Интернационально</string>
+    <string name="channel_press_back">Нажмите ← для возврата к каналам</string>
+
+    <!-- Program Info Card -->
+    <string name="program_watch_now">Смотреть сейчас</string>
+    <string name="program_up_next">Далее</string>
+    <string name="program_remind">Напомнить</string>
+    <string name="program_progress">Прогресс программы</string>
+
+    <!-- Authentication -->
+    <string name="auth_sign_in">Войдите</string>
+    <string name="auth_enter_credentials_continue">Введите данные для входа</string>
+    <string name="auth_password">Пароль</string>
+    <string name="auth_sign_in_button">Войти</string>
+    <string name="auth_brand_name">@string/branding_name</string>
+    <string name="auth_brand_description">Премиум-стриминг платформа</string>
+
+    <!-- Player Controls -->
+    <string name="player_select_language">Выберите язык</string>
+    <string name="player_select_quality">Выберите качество</string>
+    <string name="player_previous_episode">Предыдущий эпизод</string>
+    <string name="player_next_episode_alt">Следующий эпизод</string>
+    <string name="player_previous">Назад</string>
+    <string name="player_episode_count">Эпизод %1$d из %2$d</string>
+
+    <!-- Error Messages -->
+    <string name="error_incompatible_content">Этот контент несовместим с плеером сериалов</string>
+    <string name="error_loading_player">Ошибка загрузки плеера: %1$s</string>
+    <string name="error_loading_content">Ошибка загрузки контента: %1$s</string>
+
+    <!-- Splash Screen Messages -->
+    <string name="splash_welcome_back">С возвращением…</string>
+    <string name="splash_redirecting_login">Переход ко входу…</string>
+    <string name="splash_verifying_auth">Проверка авторизации…</string>
+
+    <!-- Dialog Messages -->
+    <string name="dialog_cancel">Отмена</string>
+    <string name="dialog_confirm">Подтвердить</string>
+    <string name="dialog_confirm_replacement">Подтвердить замену</string>
+
+    <!-- Content Categories -->
+    <string name="category_movies_vod">VOD - Фильмы</string>
+
+    <!-- Home Screen Sections -->
+    <string name="section_featured">Рекомендуемое</string>
+    <string name="section_movies">Фильмы</string>
+    <string name="section_series">Сериалы</string>
+    <string name="section_kids">Детям</string>
+
+    <!-- Search Filters -->
+    <string name="search_filters_title">Фильтры поиска</string>
+    <string name="search_clear_filters">Очистить фильтры</string>
+    <string name="search_content_type">Тип контента</string>
+    <string name="search_categories">Категории</string>
+    <string name="search_genres">Жанры</string>
+    <string name="search_year">Год</string>
+    <string name="search_country">Страна</string>
+    <string name="search_all">Все</string>
+    <string name="search_all_female">Все</string>
+
+    <!-- Genres -->
+    <string name="genre_action">Экшн</string>
+    <string name="genre_comedy">Комедия</string>
+    <string name="genre_drama">Драма</string>
+    <string name="genre_horror">Ужасы</string>
+    <string name="genre_sci_fi">Научная фантастика</string>
+    <string name="genre_documentary">Документальный</string>
+    <string name="genre_sports">Спорт</string>
+    <string name="genre_news">Новости</string>
+    <string name="genre_adventure">Приключения</string>
+    <string name="genre_animation">Анимация</string>
+    <string name="genre_biography">Биография</string>
+    <string name="genre_crime">Криминал</string>
+    <string name="genre_family">Семейный</string>
+    <string name="genre_fantasy">Фэнтези</string>
+    <string name="genre_history">История</string>
+    <string name="genre_music">Музыка</string>
+    <string name="genre_mystery">Мистерия</string>
+    <string name="genre_romance">Романтика</string>
+    <string name="genre_thriller">Триллер</string>
+    <string name="genre_war">Военный</string>
+    <string name="genre_western">Вестерн</string>
+
+    <!-- Content Descriptions -->
+    <string name="content_desc_back">Назад</string>
+
+    <!-- Activation -->
+    <string name="activation_code">Код активации</string>
+
+    <!-- Device Input -->
+    <string name="device_name_label">Имя устройства</string>
+    <string name="device_name_placeholder">Напр: Мой Android TV</string>
+
+    <!-- Temporary Content Access -->
+    <string name="temp_content_access">К контенту (временно)</string>
+
+    <!-- Search -->
+    <string name="search_action_movies">Найти боевики</string>
+    <string name="search_year_movies">Найти фильмы 2023 года</string>
+    <string name="search_kids_content">Найти детский контент</string>
+    <string name="search_comedy_series">Показать комедии</string>
+    <string name="search_documentaries">Найти документальные фильмы</string>
+    <string name="search_sports_channels">Смотреть спорт</string>
+    <string name="search_drama_series">Показать драмы</string>
+    <string name="search_horror_movies">Найти фильмы ужасов</string>
+    <string name="search_news_channels">Смотреть новости</string>
+    <string name="search_romantic_movies">Показать романтические фильмы</string>
+    <string name="music_header_subtitle">Откройте плейлисты и личные миксы</string>
+    <string name="music_quick_actions_title">Слушать сейчас</string>
+    <string name="music_quick_actions_subtitle">Выберите быстрое действие, чтобы сразу слушать музыку</string>
+    <string name="music_now_playing_label">Сейчас звучит</string>
+    <string name="music_search_action">Поиск артиста</string>
+    
+    <!-- Music -->
+    <string name="music_title">Музыка</string>
+    <string name="music_recent_tracks">Недавно прослушано</string>
+    <string name="music_albums">Альбомы</string>
+    <string name="music_album">Альбом</string>
+    <string name="music_artists">Артисты</string>
+    <string name="music_artist">Артист</string>
+    <string name="music_play">Играть</string>
+    <string name="music_pause">Пауза</string>
+    <string name="music_player_previous">Назад</string>
+    <string name="music_player_next">Вперед</string>
+    <string name="music_play_all">Играть все</string>
+    <string name="music_favorited">В избранном</string>
+    <string name="music_add_favorite">В избранное</string>
+    <string name="music_track_count">Песен: %1$d</string>
+    <string name="music_top_tracks">Популярные треки</string>
+    <string name="music_artist_album_count">Альбомов: %1$d</string>
+    <string name="music_stats_title">Ваша библиотека</string>
+    <string name="music_stats_tracks">Песни</string>
+    <string name="music_stats_albums">Альбомы</string>
+    <string name="music_stats_artists">Артисты</string>
+    <string name="music_stats_storage">Память</string>
+    <string name="music_hero_subtitle">Ваша музыка всегда с вами.</string>
+    <string name="music_hero_placeholder">Используйте "Играть все" или выберите песню.</string>
+    <string name="common_back">Назад</string>
+    <string name="common_close">Закрыть</string>
+    <string name="common_retry">Повторить</string>
+    <string name="common_refresh">Обновить</string>
+    <string name="music_playing">Проигрывается</string>
+    <string name="music_no_track">Трек не выбран</string>
+    <string name="music_shuffle">Случайно</string>
+    <string name="music_previous">Назад</string>
+    <string name="music_next">Вперед</string>
+    <string name="music_repeat">Повтор</string>
+    <string name="music_queue">Очередь</string>
+    <string name="music_queue_count">В очереди: %1$d</string>
+
+    <!-- Admin Scan -->
+    <string name="scan_folders_title">Админ: Сканирование папок</string>
+    <string name="scan_root_path">Корневой путь (сервер)</string>
+    <string name="scan_completed_items">Сканирование завершено: обработано %1$d элементов</string>
+    <string name="scan_root_path_required">Требуется корневой путь</string>
+    <string name="scan_media_type">Тип (movies|series|mixed)</string>
+    <string name="scan_duplicate_policy">Политика дубликатов (omit|replace|allow)</string>
+    <string name="scan_add_subs">Добавлять внешние субтитры</string>
+    <string name="scan_start_button">Начать сканирование</string>
+    <string name="scan_scanning_button">Сканирую…</string>
+    <string name="scan_results">Результаты:</string>
+    <string name="scan_logs">Логи:</string>
+    <string name="scan_movies_created">Фильмов создано: %1$d</string>
+    <string name="scan_series_created">Сериалов создано: %1$d</string>
+    <string name="scan_episodes_created">Эпизодов создано: %1$d</string>
+    <string name="scan_subtitles_added">Субтитров добавлено: %1$d</string>
+    <string name="scan_skipped">Пропущено: %1$d</string>
+    <string name="scan_replaced">Заменено: %1$d</string>
+
+    <!-- Player Controls Extras -->
+    <string name="player_speed">Скорость</string>
+    <string name="player_select_audio">Выбор аудио</string>
+    <string name="player_select_subtitles">Выбор субтитров</string>
+    <string name="enabled">Включено</string>
+    <string name="disabled">Выключено</string>
+    <string name="open_channel_list">Список каналов</string>
+    <string name="change_date">Сменить дату</string>
+    <string name="epg_auto_update">Телепрограмма обновится автоматически</string>
+    <string name="epg_error_loading">Ошибка загрузки телепрограммы</string>
+
+    <!-- Device Management Errors -->
+    <string name="error_no_credentials">Учетные данные отсутствуют. Пожалуйста, войдите снова.</string>
+    <string name="error_device_management_failed">Ошибка подготовки управления устройствами</string>
+    <string name="error_unexpected_state">Непредвиденное состояние</string>
+    <string name="error_unexpected_during_registration">Непредвиденная ошибка при регистрации</string>
+    <string name="error_unexpected_during_removal">Непредвиденная ошибка при удалении</string>
+    <string name="error_unexpected_try_again">Непредвиденная ошибка. Попробуйте еще раз.</string>
+    <string name="epg_next">ДАЛЕЕ</string>
+    <string name="channel_prefix">Канал: </string>
+    <string name="no_program_info">Нет информации о программе</string>
+    <string name="no_upcoming_info">Нет информации о грядущем</string>
+    <string name="pip_preview">Предпросмотр PiP</string>
+    <string name="categories_all">Все</string>
+    <string name="live_channels_title">Прямые каналы</string>
+    
+    <!-- Updates -->
+    <string name="update_available">Доступно обновление</string>
+    <string name="update_new_version">Доступна новая версия %1$s</string>
+    <string name="update_current_version">Текущая версия: %1$s</string>
+    <string name="update_download">Скачать</string>
+    <string name="update_later">Позже</string>
+    <string name="update_checking">Проверка обновлений…</string>
+    <string name="update_no_updates">У вас установлена последняя версия</string>
+    <string name="update_error">Ошибка при проверке обновлений</string>
+    
+    <!-- Subtitles -->
+    <string name="subtitles_title">Субтитры</string>
+    <string name="subtitles_off">Выключены</string>
+    <string name="subtitles_auto">Авто</string>
+    <string name="subtitles_no_options">Субтитры недоступны</string>
+    <string name="subtitles_close">Закрыть</string>
+    <string name="subtitles_selected">Выбрано</string>
+    <string name="subtitles_language_prefix">Язык:</string>
+    
+    <!-- Profile / Device -->
+    <string name="profile_confirm_delete_device_title">Удалить устройство</string>
+    <string name="profile_confirm_delete_device_message">Вы уверены, что хотите удалить это устройство? Вам потребуется войти заново.</string>
+    <string name="common_delete">Удалить</string>
+    
+    <!-- Missing strings (fallback to English) -->
+    <string name="error_unknown_generic">Неизвестная ошибка</string>
+    <string name="player_autoplay">Автозапуск</string>
+    <string name="profile_id_format">Идентификатор: %1$s</string>
+    <string name="search_popular_searches">Популярные запросы</string>
+    <string name="search_listening">Слушаю…</string>
+    <string name="common_watched">WATCHED</string>
+    <string name="common_in_progress">IN PROGRESS</string>
+    <string name="security_debug_detected">Обнаружены отладочные приложения</string>
+    <string name="security_debug_description">По соображениям безопасности это приложение не может работать, если установлены инструменты отладки или инструменты сетевого перехвата.</string>
+    <string name="security_detected_apps">Обнаруженные приложения:</string>
+    <string name="security_how_to_use">Чтобы использовать это приложение:</string>
+    <string name="security_step_uninstall">1. Удалите обнаруженные приложения.</string>
+    <string name="security_exit_app">Выйти из приложения</string>
+    <string name="security_footer">Эта мера защищает контент и обеспечивает безопасность для всех пользователей.</string>
+    <string name="series_seasons_format">%1$d сезон%2$s</string>
+    <string name="series_season_abbr">S%1$d</string>
+    <string name="series_episode_detail_format">S%1$d:E%2$d • %3$s</string>
+    <string name="series_episode_label">Эпизод %1$d</string>
+    <string name="update_new_available">Доступно новое обновление</string>
+    <string name="common_later">Позже</string>
+    <string name="update_now">Обновить сейчас</string>
+    <string name="common_hd">HD</string>
+    <string name="common_more_options">Больше возможностей</string>
+    <string name="common_episodes_label">Эпизоды</string>
+    <string name="common_no_episodes_available">Нет доступных серий</string>
+    <string name="security_step_restart">2. Перезапустите приложение.</string>
+    <string name="security_step_enjoy">3. Наслаждайтесь контентом безопасно</string>
+    <string name="common_dot_separator">•</string>
+    <string name="common_dot_separator_with_text">• %1$s</string>
+    <string name="profile_devices_count_format">%1$d/5</string>
+    <string name="profile_edit_profile">Редактировать профиль</string>
+    <string name="settings_title_alt">Настройки</string>
+    <string name="profile_quick_settings">Быстрые настройки</string>
+    <string name="profile_logout">Выход из системы</string>
+    <string name="profile_confirm_logout_title">Подтвердить выход</string>
+    <string name="profile_confirm_logout_message">Вы уверены, что хотите выйти?</string>
+    <string name="common_cancel">Отмена</string>
+    <string name="categories_header">Категории</string>
+    <string name="player_position_duration">%1$s / %2$s</string>
+    <string name="update_required">Требуется обновление</string>
+    <string name="update_version_label">Версия:</string>
+    <string name="update_size_label">Размер: %1$s</string>
+    <string name="update_whats_new">Что нового:</string>
+    <string name="update_downloading">Загрузка… %1$d%%</string>
+    <string name="update_install_now">Установить сейчас</string>
+    <string name="update_postpone">Напомнить позже</string>
+    <string name="update_mandatory_message">Это обновление необходимо для продолжения использования приложения.</string>
+    <string name="update_check_title">Проверьте наличие обновлений</string>
+    <string name="update_check_subtitle">Проверьте, доступна ли новая версия</string>
+    <string name="update_up_to_date">Вы в курсе!</string>
+    <string name="update_up_to_date_message">Версия %1$s является последней версией.</string>
+    <string name="update_preparing">Подготовка загрузки…</string>
+    <string name="update_install_prompt">Вскоре появится приглашение на установку</string>
+    <string name="update_downloading_wait">Пожалуйста, подождите…</string>
+
+
+    <!-- Added for locale completeness -->
+    <string name="category_content_play_description">Воспроизвести</string>
+    <string name="category_sort_by">Сортировать по</string>
+    <string name="category_filter_by">Фильтр по</string>
+    <string name="category_filter_all">Все</string>
+    <string name="category_filter_recent">Недавние</string>
+    <string name="category_filter_popular">Популярные</string>
+    <string name="category_filter_top_rated">С высоким рейтингом</string>
+    <string name="category_sort_description">Параметры сортировки</string>
+    <string name="category_sort_ascending">По возрастанию</string>
+    <string name="category_sort_descending">По убыванию</string>
+    <string name="category_grid_size_description">Размер сетки</string>
+    <string name="category_clear_search_description">Очистить поиск</string>
+    <string name="quick_access_favorites">Избранное</string>
+    <string name="quick_access_recently_watched">Недавно просмотренные</string>
+    <string name="quick_access_trending">В тренде</string>
+    <string name="quick_access_see_all">Показать все</string>
+    <string name="quick_access_actions_title">Быстрые действия</string>
+    <string name="quick_access_customize_experience">Настройте свой интерфейс</string>
+    <string name="quick_access_setup_favorites">Настроить избранное</string>
+    <string name="quick_action_guide_tv">ТВ-гид</string>
+    <string name="quick_action_search">Поиск</string>
+    <string name="quick_action_settings">Настройки</string>
+    <string name="quick_action_help">Помощь</string>
+
+
+    <string name="action_mute">Mute</string>
+    <string name="action_unmute">Unmute</string>
+    <string name="profile_history_cleared">Watch history cleared</string>
+    <string name="profile_device_removed_success">Device removed successfully</string>
+    <string name="device_limit_select_device_prompt">Select a device</string>
+    <string name="device_type_android">Android</string>
+    <string name="device_type_ios">iOS</string>
+    <string name="device_type_web_browser">Web Browser</string>
+    <string name="device_type_smart_tv">Smart TV</string>
+    <string name="nav_streaming_tagline">STREAMING</string>
+    <string name="nav_premium_streaming">Premium Streaming</string>
+    <string name="nav_premium_badge">Premium</string>
+    <string name="error_loading_events">Error loading events</string>
+    <string name="splash_premium_content_platform">Premium Content Platform</string>
+    <string name="emulator_status_title">Device Status</string>
+    <string name="emulator_status_device_type_label">Device type:</string>
+    <string name="emulator_status_emulator">Emulator</string>
+    <string name="emulator_status_real_device">Real Device</string>
+    <string name="emulator_status_emulator_type_label">Emulator type:</string>
+    <string name="emulator_type_bluestacks">BlueStacks</string>
+    <string name="emulator_type_genymotion">Genymotion</string>
+    <string name="emulator_type_android_sdk">Android SDK</string>
+    <string name="emulator_type_unknown">Unknown</string>
+    <string name="emulator_status_device_id_label">Device ID:</string>
+    <string name="emulator_status_detected_title">Emulator Detected</string>
+    <string name="emulator_status_detected_message">You are using an emulator. Make sure your account has emulator access enabled.</string>
+    <string name="emulator_status_authentic_device">Authentic Android device detected</string>
+
+</resources>

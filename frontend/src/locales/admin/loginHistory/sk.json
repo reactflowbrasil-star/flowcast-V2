@@ -1,0 +1,45 @@
+{
+  "loginHistory": {
+    "title": "História prihlásení",
+    "subtitle": "Nedávne prihlásenia a udalosti autentifikácie",
+    "lastUpdated": "Posledná aktualizácia: {{time}}",
+    "autoRefreshOn": "Autom. obnovenie je ZAPNUTÉ",
+    "autoRefreshOff": "Autom. obnovenie je VYPNUTÉ",
+    "refreshNow": "Obnoviť teraz",
+    "filters": {
+      "username": "Používateľské meno",
+      "ipAddress": "IP adresa",
+      "startDate": "Dátum od (dd/mm/rrrr)",
+      "endDate": "Dátum do (dd/mm/rrrr)",
+      "result": "Výsledok",
+      "allResults": "Všetky výsledky",
+      "perPage": "Na stránku",
+      "placeholderUsername": "Hľadať používateľa...",
+      "placeholderIp": "napr. 192.168.0.1"
+    },
+    "table": {
+      "date": "Dátum",
+      "username": "Používateľské meno",
+      "email": "Email",
+      "ip": "IP",
+      "device": "Zariadenie",
+      "result": "Výsledok",
+      "method": "Metóda"
+    },
+    "pagination": {
+      "previous": "Predchádzajúca",
+      "next": "Nasledujúca",
+      "showing": "Zobrazuje sa {{from}} až {{to}} z {{total}} záznamov",
+      "pageOf": "Stránka {{page}} z {{total_pages}}"
+    },
+    "empty": "Nenašli sa žiadne záznamy o prihlásení.",
+    "errors": {
+      "failedLoad": "Nepodarilo sa načítať históriu prihlásení",
+      "invalidDateRange": "Neplatný rozsah dátumov"
+    },
+    "common": {
+      "failedLogins": "Neúspešné prihlásenia",
+      "today": "Dnes"
+    }
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "title": "Editar Evento",
+  "labels": {
+    "eventName": "Nombre del Evento *",
+    "description": "Descripción",
+    "provider": "Proveedor",
+    "country": "País",
+    "format": "Formato",
+    "clearKeyKeys": "Claves ClearKey",
+    "streamUrl": "URL del Stream *",
+    "posterUrl": "URL del Póster",
+    "active": "Activo"
+  },
+  "placeholders": {
+    "eventName": "Ingrese el nombre del evento...",
+    "description": "Ingrese la descripción del evento...",
+    "provider": "ej., Proveedor A, Proveedor B...",
+    "country": "ej., US, MX, ES...",
+    "selectFormat": "Seleccionar formato...",
+    "clearKeyKeys": "Ingrese pares ClearKey en formato hexadecimal:\nkid_hex:key_hex",
+    "streamUrl": "https://ejemplo.com/stream.m3u8",
+    "posterUrl": "https://ejemplo.com/poster.jpg"
+  },
+  "hints": {
+    "clearKeyFormat": "Formato: kid_hex:key_hex (uno por línea o separados por coma)"
+  },
+  "formats": {
+    "m3u8": "M3U8",
+    "drm": "DRM"
+  },
+  "buttons": {
+    "cancel": "Cancelar",
+    "updating": "Actualizando...",
+    "updateEvent": "Actualizar Evento"
+  },
+  "validation": {
+    "titleRequired": "El título es requerido",
+    "validVideoUrlRequired": "Se requiere una URL de video válida"
+  },
+  "errors": {
+    "failedToUpdate": "Error al actualizar el evento"
+  }
+}

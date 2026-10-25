@@ -1,0 +1,127 @@
+{
+  "tickets": {
+    "errors": {
+      "sendMessage": "Échec de l'envoi du message",
+      "sendMessageRetry": "Échec de l'envoi du message. Veuillez réessayer.",
+      "assign": "Échec de l'assignation du ticket",
+      "assignRetry": "Échec de l'assignation du ticket. Veuillez réessayer.",
+      "delete": "Échec de la suppression du ticket",
+      "deleteRetry": "Échec de la suppression du ticket. Veuillez réessayer.",
+      "updateStatus": "Échec de la mise à jour du statut",
+      "updateStatusRetry": "Échec de la mise à jour du statut. Veuillez réessayer.",
+      "create": "Échec de la création du ticket",
+      "createRetry": "Échec de la création du ticket. Veuillez réessayer.",
+      "validation": {
+        "titleDescriptionRequired": "Le titre et la description sont requis",
+        "resellerRequired": "Veuillez sélectionner un revendeur"
+      }
+    },
+    "confirm": {
+      "delete": "Êtes-vous sûr de vouloir supprimer ce ticket ? Cette action est irréversible."
+    },
+    "filters": {
+      "status": {
+        "all": "Tous les Status"
+      },
+      "priority": {
+        "all": "Toutes les Priorités"
+      },
+      "unread": {
+        "all": "Tous les Messages",
+        "unread": "Messages Non Lus",
+        "read": "Messages Lus"
+      }
+    },
+    "placeholders": {
+      "filterByStatus": "Filtrer par statut",
+      "filterByPriority": "Filtrer par priorité",
+      "filterByReadStatus": "Filtrer par statut de lecture"
+    },
+    "unreadMessages": "Messages Non Lus",
+    "stats": {
+      "total": "Total"
+    },
+    "actions": {
+      "panelTitle": "Actions Admin",
+      "assigning": "Assignation...",
+      "assignToMe": "M'assigner",
+      "changeStatus": "Changer le Statut",
+      "internalMessage": "Envoyer comme message interne",
+      "scheduleFollowUp": "Planifier un Suivi",
+      "reassignTicket": "Réassigner le Ticket"
+    },
+    "priority": {
+      "low": "Basse",
+      "medium": "Moyenne",
+      "high": "Haute",
+      "urgent": "Urgente"
+    },
+    "status": {
+      "open": "Ouvert",
+      "in_progress": "En Cours",
+      "waiting_response": "Attente Réponse",
+      "resolved": "Résolu",
+      "closed": "Fermé"
+    },
+    "category": {
+      "technical": "Technique",
+      "billing": "Facturation",
+      "account": "Compte",
+      "content": "Contenu",
+      "other": "Autre"
+    },
+    "create": {
+      "title": "Créer un Nouveau Ticket",
+      "description": "Créer un nouveau ticket de support à des fins de test ou administratives.",
+      "labels": {
+        "title": "Titre",
+        "description": "Description",
+        "reseller": "Revendeur",
+        "priority": "Priorité",
+        "category": "Catégorie"
+      },
+      "placeholders": {
+        "title": "Entrez le titre du ticket",
+        "description": "Entrez la description du ticket",
+        "reseller": "Sélectionnez un revendeur"
+      },
+      "submitting": "Création...",
+      "submit": "Créer le Ticket"
+    },
+    "advanced": {
+      "title": "Filtres Avancés",
+      "description": "Appliquez des filtres supplémentaires pour affiner votre recherche.",
+      "labels": {
+        "dateFrom": "Date Du",
+        "dateTo": "Date Au"
+      },
+      "helper": "Filtrer par plage de dates de création. Laisser vide pour tout afficher.",
+      "clear": "Tout Effacer",
+      "apply": "Appliquer Filtres"
+    },
+    "sort": {
+      "title": "Options de Tri",
+      "description": "Choisissez comment trier vos tickets.",
+      "labels": {
+        "sortBy": "Trier Par",
+        "direction": "Direction"
+      },
+      "options": {
+        "newestFirst": "Plus Récents",
+        "oldestFirst": "Plus Anciens",
+        "priority": "Priorité",
+        "status": "Statut",
+        "unreadFirst": "Non Lus d'abord"
+      },
+      "direction": {
+        "descending": "Descendant",
+        "ascending": "Ascendant"
+      },
+      "reset": "Réinitialiser",
+      "apply": "Appliquer Tri"
+    },
+    "common": {
+      "cancel": "Annuler"
+    }
+  }
+}

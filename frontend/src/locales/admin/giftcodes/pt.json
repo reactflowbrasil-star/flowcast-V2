@@ -1,0 +1,30 @@
+{
+  "title": "Códigos de Presente",
+  "description": "Gerencie códigos de presente de uso único ou múltiplo para criar ou estender assinaturas de usuários.",
+  "create": "Criar Código",
+  "bulkCreate": "Criação em Massa",
+  "export": "Exportar CSV",
+  "noData": "Nenhum código de presente disponível para exportar.",
+  "bulkCreated": "Criados {{count}} códigos de presente",
+  "created": "Código de presente criado",
+  "deletedSelected": "Excluídos {{count}} códigos de presente selecionados",
+  "generate": "Gerar",
+  "deleteSelected": "Excluir Selecionados ({{count}})",
+  "deleteConfirm": "Excluir {{count}} códigos de presente selecionados? Esta ação não pode ser desfeita.",
+  "table": {
+    "code": "Código",
+    "duration_days": "Duração (dias)",
+    "uses": "Usos",
+    "remaining": "Restante",
+    "expires_at": "Expira Em",
+    "created_at": "Criado Em"
+  },
+  "form": {
+    "codeOptional": "Código (opcional)",
+    "durationMonths": "Duração (meses)",
+    "uses": "Usos",
+    "prefixOptional": "Prefixo (opcional)",
+    "count": "Quantidade",
+    "usesPerCode": "Usos por código"
+  }
+}

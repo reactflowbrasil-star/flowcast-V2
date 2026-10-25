@@ -1,0 +1,114 @@
+{
+  "billing": {
+    "overview": {
+      "title": "Aperçu de la Facturation",
+      "description": "Revenus et performance des crédits en un coup d'œil",
+      "metrics": {
+        "onlineRevenue": "Revenus en Ligne",
+        "offlineRevenue": "Revenus Hors Ligne",
+        "adjustments": "Ajustements",
+        "totalRevenue": "Revenus Totaux",
+        "creditsOnline": "Crédits (En Ligne)",
+        "creditsOffline": "Crédits (Hors Ligne)",
+        "creditsAdjustments": "Crédits (Ajustements)",
+        "totalCredits": "Crédits Totaux"
+      }
+    },
+    "pricing": {
+      "title": "Tarification des Crédits",
+      "description": "Prix de base et paliers de remise configurés dans le système",
+      "basePrice": "Prix de base (USD par crédit)",
+      "activeTiers": "Paliers actifs",
+      "effectiveCurrency": "Devise effective",
+      "tiersNote": "Le palier le plus élevé où la quantité minimale est atteinte sera appliqué.",
+      "table": {
+        "minQuantity": "Quantité min (inclus)",
+        "discountPercent": "Pourcentage de remise",
+        "noTiers": "Aucun palier configuré. Le prix de base s'applique pour toutes les quantités.",
+        "discountSuffix": "réduc"
+      }
+    },
+    "offline": {
+      "title": "Ajouter un Paiement Hors Ligne",
+      "description": "Enregistrer des paiements manuels et accorder des crédits instantanément",
+      "labels": {
+        "reseller": "Revendeur",
+        "amount": "Montant (USD)",
+        "credits": "Crédits à accorder",
+        "method": "Méthode",
+        "reference": "Référence",
+        "notes": "Remarques"
+      },
+      "placeholders": {
+        "resellerSearch": "Tapez au moins 2 lettres...",
+        "amount": "ex: 100.00",
+        "credits": "ex: 100",
+        "method": "espèces/virement/autre",
+        "reference": "numéro de facture ou référence",
+        "notes": "notes optionnelles"
+      },
+      "chargedCurrency": "Devise facturée :",
+      "success": "Paiement hors ligne enregistré et crédits accordés",
+      "actions": {
+        "saving": "Enregistrement...",
+        "save": "Enregistrer le Paiement Hors Ligne"
+      },
+      "errors": {
+        "amountPositive": "Le montant (USD) doit être supérieur à 0",
+        "creditsPositive": "Les crédits doivent être un entier positif",
+        "resellerPositive": "L'ID revendeur doit être un entier positif",
+        "selectReseller": "Sélectionnez un revendeur dans la liste"
+      }
+    },
+    "transactions": {
+      "title": "Transactions Récentes",
+      "description": "Filtrer et paginer les transactions de facturation",
+      "filters": {
+        "source": "Source",
+        "status": "Statut",
+        "resellerId": "ID Revendeur",
+        "reference": "Référence/Utilisateur",
+        "perPage": "Par page"
+      },
+      "sources": {
+        "stripe": "Bande",
+        "offline": "Hors ligne",
+        "adjustment": "Ajustement"
+      },
+      "statuses": {
+        "completed": "Terminé",
+        "pending": "En attente",
+        "refunded": "Remboursé",
+        "failed": "Échoué"
+      },
+      "placeholders": {
+        "resellerId": "ex: 42",
+        "reference": "Rechercher référence ou utilisateur"
+      },
+      "table": {
+        "id": "ID",
+        "reseller": "Revendeur",
+        "source": "Source",
+        "amount": "Montant",
+        "credits": "Crédits",
+        "status": "Statut",
+        "reference": "Référence",
+        "createdAt": "Créé le"
+      },
+      "total": "Total : {{count}}",
+      "pagination": {
+        "page": "Page {{page}}"
+      },
+      "empty": "Aucune transaction trouvée."
+    },
+    "errors": {
+      "fetchOverview": "Échec de la récupération de l'aperçu de facturation",
+      "fetchPricing": "Échec de la récupération de la configuration tarifaire",
+      "fetchTransactions": "Échec de la récupération des transactions",
+      "createOfflinePayment": "Échec de la création du paiement hors ligne"
+    }
+  },
+  "common": {
+    "refresh": "Actualiser"
+  }
+}

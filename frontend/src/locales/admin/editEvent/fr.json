@@ -1,0 +1,43 @@
+{
+  "title": "Modifier l'événement",
+  "labels": {
+    "eventName": "Nom de l'événement *",
+    "description": "Description",
+    "provider": "Fournisseur",
+    "country": "Pays",
+    "format": "Format",
+    "clearKeyKeys": "Clés ClearKey",
+    "streamUrl": "URL du flux *",
+    "posterUrl": "URL de l'affiche",
+    "active": "Actif"
+  },
+  "placeholders": {
+    "eventName": "Entrez le nom de l'événement...",
+    "description": "Entrez la description de l'événement...",
+    "provider": "par exemple, fournisseur A, fournisseur B...",
+    "country": "par exemple, États-Unis, MX, ES...",
+    "selectFormat": "Sélectionnez le format...",
+    "clearKeyKeys": "Saisissez les paires ClearKey au format hexadécimal : kid_hex:key_hex",
+    "streamUrl": "https://example.com/stream.m3u8",
+    "posterUrl": "https://example.com/poster.jpg"
+  },
+  "hints": {
+    "clearKeyFormat": "Format : kid_hex :key_hex (un par ligne ou séparé par des virgules)"
+  },
+  "formats": {
+    "m3u8": "M3U8",
+    "drm": "DRM"
+  },
+  "buttons": {
+    "cancel": "Annuler",
+    "updating": "Mise à jour...",
+    "updateEvent": "Événement de mise à jour"
+  },
+  "validation": {
+    "titleRequired": "Le titre est requis",
+    "validVideoUrlRequired": "Une URL de vidéo valide est requise"
+  },
+  "errors": {
+    "failedToUpdate": "Échec de la mise à jour de l'événement"
+  }
+}

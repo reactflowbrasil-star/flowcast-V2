@@ -1,0 +1,45 @@
+{
+  "loginHistory": {
+    "title": "Giriş Geçmişi",
+    "subtitle": "Son oturum açma ve kimlik doğrulama olayları",
+    "lastUpdated": "Son güncelleme: {{time}}",
+    "autoRefreshOn": "Otomatik yenileme AÇIK",
+    "autoRefreshOff": "Otomatik yenileme KAPALI",
+    "refreshNow": "Şimdi yenile",
+    "filters": {
+      "username": "Kullanıcı adı",
+      "ipAddress": "IP adresi",
+      "startDate": "Başlangıç tarihi (gg/aa/yyyy)",
+      "endDate": "Bitiş tarihi (gg/aa/yyyy)",
+      "result": "Sonuç",
+      "allResults": "Tüm sonuçlar",
+      "perPage": "Sayfa başına",
+      "placeholderUsername": "Kullanıcı ara...",
+      "placeholderIp": "ör. 192.168.0.1"
+    },
+    "table": {
+      "date": "Tarih",
+      "username": "Kullanıcı adı",
+      "email": "E-posta",
+      "ip": "IP",
+      "device": "Cihaz",
+      "result": "Sonuç",
+      "method": "Yöntem"
+    },
+    "pagination": {
+      "previous": "Önceki",
+      "next": "Sonraki",
+      "showing": "{{total}} kayıttan {{from}} - {{to}} arası gösteriliyor",
+      "pageOf": "Sayfa {{page}} / {{total_pages}}"
+    },
+    "empty": "Giriş kaydı bulunamadı.",
+    "errors": {
+      "failedLoad": "Giriş geçmişi yüklenemedi",
+      "invalidDateRange": "Geçersiz tarih aralığı"
+    },
+    "common": {
+      "failedLogins": "Başarısız girişler",
+      "today": "Bugün"
+    }
+  }
+}

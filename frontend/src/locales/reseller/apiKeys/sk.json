@@ -1,0 +1,125 @@
+{
+  "title": "API kľúče",
+  "description": "Spravujte API kľúče pre programový prístup k vášmu predajcovskému účtu",
+  "createButton": "Vytvoriť API kľúč",
+  "empty": {
+    "title": "Zatiaľ žiadne API kľúče",
+    "description": "Vytvorte si svoj prvý API kľúč a začnite používať API"
+  },
+  "table": {
+    "name": "Názov",
+    "key": "Kľúč",
+    "permissions": "Oprávnenia",
+    "lastUsed": "Posledné použitie",
+    "requests": "Požiadavky",
+    "status": "Stav",
+    "actions": "Akcie"
+  },
+  "tooltips": {
+    "edit": "Upraviť oprávnenia",
+    "regenerate": "Pregenerovať kľúč",
+    "delete": "Odstrániť kľúč"
+  },
+  "never": "Nikdy",
+  "apiUsage": {
+    "title": "Používanie API",
+    "description": "Ako používať vaše API kľúče",
+    "authHeader": "Autentifikačná hlavička",
+    "exampleListUsers": "Príklad: Zoznam používateľov",
+    "exampleCreateUser": "Príklad: Vytvoriť používateľa",
+    "endpoint": "Koncový bod (Endpoint)"
+  },
+  "createDialog": {
+    "title": "Vytvoriť nový API kľúč",
+    "description": "Vytvorte nový API kľúč so špecifickými oprávneniami pre programový prístup.",
+    "keyName": "Názov kľúča",
+    "keyNamePlaceholder": "napr. Moja integrácia",
+    "permissions": "Oprávnenia",
+    "allowedOrigins": "Povolené pôvody (CORS)",
+    "allowedOriginsPlaceholder": "* pre všetky, alebo domény oddelené čiarkou",
+    "allowedOriginsHelp": "Použite * na povolenie všetkých pôvodov, alebo špecifikujte domény ako https://example.com",
+    "rateLimitMinute": "Limit požiadaviek (za minútu)",
+    "rateLimitDay": "Limit požiadaviek (za deň)",
+    "cancel": "Zrušiť",
+    "creating": "Vytváram...",
+    "create": "Vytvoriť API kľúč"
+  },
+  "secretDialog": {
+    "title": "API kľúč vytvorený",
+    "description": "Skopírujte si svoj tajný kľúč teraz. Už ho nebudete môcť znova vidieť!",
+    "warning": "Toto je jediný raz, čo uvidíte tento kľúč. Bezpečne si ho uložte!",
+    "copied": "Skopíroval som si kľúč"
+  },
+  "deleteDialog": {
+    "title": "Odstrániť API kľúč",
+    "description": "Naozaj chcete odstrániť \"{{keyName}}\"? Túto akciu nie je možné vrátiť späť a všetky integrácie používajúce tento kľúč prestanú fungovať.",
+    "cancel": "Zrušiť",
+    "deleting": "Odstraňujem...",
+    "delete": "Odstrániť kľúč"
+  },
+  "regenerateDialog": {
+    "title": "Pregenerovať API kľúč",
+    "description": "Naozaj chcete pregenerovať \"{{keyName}}\"? Aktuálny kľúč bude okamžite zneplatnený a všetky integrácie budú musieť byť aktualizované.",
+    "cancel": "Zrušiť",
+    "regenerating": "Pregenerovávam...",
+    "regenerate": "Pregenerovať kľúč"
+  },
+  "editDialog": {
+    "title": "Upraviť API kľúč",
+    "description": "Aktualizujte názov, oprávnenia a nastavenia pre tento API kľúč.",
+    "keyName": "Názov kľúča",
+    "keyNamePlaceholder": "napr. Moja integrácia",
+    "permissions": "Oprávnenia",
+    "allowedOrigins": "Povolené pôvody (CORS)",
+    "allowedOriginsPlaceholder": "* pre všetky, alebo domény oddelené čiarkou",
+    "rateLimitMinute": "Limit požiadaviek (za minútu)",
+    "rateLimitDay": "Limit požiadaviek (za deň)",
+    "cancel": "Zrušiť",
+    "saving": "Ukladám...",
+    "save": "Uložiť zmeny"
+  },
+  "permissions": {
+    "users:read": {
+      "name": "Čítať používateľov",
+      "description": "Zoznam a zobrazenie vašich koncových používateľov"
+    },
+    "users:create": {
+      "name": "Vytvoriť používateľov",
+      "description": "Vytvárať nových koncových používateľov (odpočíta kredity)"
+    },
+    "users:update": {
+      "name": "Aktualizovať používateľov",
+      "description": "Aktualizovať údaje existujúcich koncových používateľov"
+    },
+    "users:extend": {
+      "name": "Predĺžiť predplatné",
+      "description": "Predĺžiť predplatné používateľov (odpočíta kredity)"
+    },
+    "users:delete": {
+      "name": "Odstrániť používateľov",
+      "description": "Odstrániť koncových používateľov"
+    },
+    "credits:read": {
+      "name": "Čítať kredity",
+      "description": "Zobraziť zostatok kreditov a vypočítať náklady"
+    }
+  },
+  "toast": {
+    "created": "API kľúč bol úspešne vytvorený",
+    "deleted": "API kľúč bol odstránený",
+    "regenerated": "API kľúč bol pregenerovaný",
+    "statusUpdated": "Stav API kľúča bol aktualizovaný",
+    "updated": "API kľúč bol úspešne aktualizovaný",
+    "secretCopied": "Tajný kľúč bol skopírovaný do schránky",
+    "errors": {
+      "create": "Nepodarilo sa vytvoriť API kľúč",
+      "delete": "Nepodarilo sa odstrániť API kľúč",
+      "regenerate": "Nepodarilo sa pregenerovať API kľúč",
+      "update": "Nepodarilo sa aktualizovať API kľúč"
+    }
+  },
+  "validation": {
+    "keyNameRequired": "Prosím, zadajte názov kľúča",
+    "permissionRequired": "Prosím, vyberte aspoň jedno oprávnenie"
+  }
+}

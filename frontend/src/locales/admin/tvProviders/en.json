@@ -1,0 +1,56 @@
+{
+  "title": "Playlist Providers",
+  "description": "Register remote M3U playlists with a refresh interval so live TV channels stay up to date automatically.",
+  "alert": {
+    "title": "Automatic refresh with TTL",
+    "description": "Each provider is re-fetched when its TTL expires. The backend preserves ClearKey DRM, headers, proxies, and DNS-over-HTTPS values announced in the playlist entries."
+  },
+  "form": {
+    "providerName": "Provider name *",
+    "playlistUrl": "Playlist URL *",
+    "refreshInterval": "Refresh interval (minutes)",
+    "enableAutoRefresh": "Enable auto-refresh",
+    "enableAutoRefreshHint": "Disable to keep the playlist but stop scheduled refreshes.",
+    "adding": "Adding…",
+    "addProvider": "Add Provider"
+  },
+  "table": {
+    "name": "Name",
+    "ttl": "TTL",
+    "status": "Status",
+    "lastFetch": "Last Fetch",
+    "nextRefresh": "Next Refresh",
+    "actions": "Actions"
+  },
+  "status": {
+    "enabled": "Enabled",
+    "disabled": "Disabled"
+  },
+  "buttons": {
+    "sync": "Sync",
+    "delete": "Delete",
+    "close": "Close"
+  },
+  "validation": {
+    "nameRequired": "Provider name is required",
+    "urlInvalid": "Valid M3U/M3U8 URL is required",
+    "ttlMinimum": "TTL must be at least 1 minute"
+  },
+  "errors": {
+    "loadFailed": "Unable to load providers",
+    "createFailed": "Unable to create provider",
+    "createUnexpected": "Unexpected error creating provider",
+    "deleteFailed": "Unable to delete provider",
+    "deleteUnexpected": "Unexpected error deleting provider",
+    "syncFailed": "Sync failed",
+    "syncUnexpected": "Unexpected error during sync"
+  },
+  "placeholders": {
+    "providerName": "Sensa",
+    "playlistUrl": "https://example.com/playlist.m3u"
+  },
+  "units": {
+    "minutes": "min"
+  },
+  "deleteConfirm": "Are you sure you want to delete provider {{name}}? This action cannot be undone."
+}

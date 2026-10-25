@@ -1,0 +1,55 @@
+{
+  "title": "Monitorização de Dispositivos de Utilizador",
+  "description": "Monitorize dispositivos ativos para os seus utilizadores finais e gira os limites de dispositivos",
+  "loading": "A carregar...",
+  "error": {
+    "loadFailed": "Falha ao carregar utilizadores: {{message}}",
+    "removeDevice": "Falha ao remover dispositivo: {{message}}",
+    "noUserSelected": "Nenhum usuário selecionado"
+  },
+  "time": {
+    "justNow": "Agora mesmo",
+    "minutesAgo": "há {{count}}m",
+    "hoursAgo": "há {{count}}h",
+    "daysAgo": "há {{count}}d"
+  },
+  "deviceStatus": {
+    "online": "Online",
+    "recent": "Recente",
+    "offline": "Offline"
+  },
+  "userStatus": {
+    "active": "Ativo",
+    "suspended": "Suspenso"
+  },
+  "table": {
+    "username": "Nome de Utilizador",
+    "deviceLimit": "Limite de Dispositivos",
+    "activeDevices": "Dispositivos Ativos",
+    "status": "Estado",
+    "actions": "Ações",
+    "device": "Dispositivo",
+    "deviceId": "ID do Dispositivo",
+    "lastSeen": "Visto pela última vez",
+    "devices": "dispositivos",
+    "active": "ativo"
+  },
+  "empty": {
+    "noUsers": "Nenhum utilizador encontrado",
+    "noUsersDescription": "Crie alguns utilizadores finais para monitorizar os seus dispositivos.",
+    "noDevices": "Nenhum dispositivo encontrado",
+    "noDevicesDescription": "Este utilizador ainda não ligou nenhum dispositivo."
+  },
+  "actions": {
+    "viewDevices": "Ver Dispositivos",
+    "remove": "Remover",
+    "removeDevice": "Remover Dispositivo",
+    "cancel": "Cancelar"
+  },
+  "dialog": {
+    "title": "Gestão de Dispositivos - {{username}}",
+    "description": "Visualize e gira os dispositivos ativos para este utilizador. Limite: {{limit}} dispositivos",
+    "removeTitle": "Remover Dispositivo",
+    "removeDescription": "Tem a certeza de que deseja remover \"{{deviceName}}\" da conta de {{username}}? Isto desligará o dispositivo imediatamente."
+  }
+}

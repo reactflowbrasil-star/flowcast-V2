@@ -1,0 +1,56 @@
+{
+  "mediaWatcher": {
+    "creating": "Vytváram...",
+    "title": "Konfigurácia sledovania médií",
+    "description": "Automaticky skenuje priečinky pre nový obsah. Funguje ako \"ls\": rýchla detekcia iba nových priečinkov.",
+    "addButton": "Pridať sledovaný priečinok",
+    "empty": "Nie sú nakonfigurované žiadne priečinky. Pridajte jeden a začnite.",
+    "deleteConfirm": "Naozaj chcete odstrániť tento sledovaný priečinok?",
+    "form": {
+      "folderPath": "Cesta k priečinku",
+      "folderPathPlaceholder": "/mnt/media/movies",
+      "mediaType": "Typ média",
+      "checkInterval": "Interval kontroly (minúty)"
+    },
+    "createDialog": {
+      "title": "Pridať priečinok",
+      "description": "Nastavte priečinok na automatické skenovanie nového obsahu"
+    },
+    "editDialog": {
+      "title": "Upraviť priečinok",
+      "description": "Aktualizovať konfiguráciu priečinka",
+      "updating": "Aktualizujem...",
+      "update": "Aktualizovať"
+    },
+    "mediaTypes": {
+      "movies": "Filmy",
+      "series": "Seriály",
+      "kids": "Detské",
+      "anime": "Anime"
+    },
+    "table": {
+      "status": "Stav",
+      "folderPath": "Cesta k priečinku",
+      "type": "Typ",
+      "interval": "Interval",
+      "lastCheck": "Posledná kontrola",
+      "actions": "Akcie",
+      "lastCheckNever": "Nikdy",
+      "lastCheckInvalid": "Neplatný dátum"
+    },
+    "toasts": {
+      "createSuccess": "Priečinok bol úspešne vytvorený",
+      "createFailed": "Nepodarilo sa vytvoriť priečinok",
+      "updateSuccess": "Priečinok bol úspešne aktualizovaný",
+      "updateFailed": "Nepodarilo sa aktualizovať priečinok",
+      "deleteSuccess": "Priečinok bol úspešne odstránený",
+      "deleteFailed": "Nepodarilo sa odstrániť priečinok",
+      "checkStarted": "Kontrola priečinka bola spustená",
+      "checkFailed": "Nepodarilo sa skontrolovať priečinok",
+      "enabled": "Priečinok bol povolený",
+      "disabled": "Priečinok bol zakázaný",
+      "toggleFailed": "Nepodarilo sa zmeniť stav priečinka",
+      "folderPathRequired": "Zadajte cestu k priečinku"
+    }
+  }
+}

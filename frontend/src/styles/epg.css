@@ -1,0 +1,293 @@
+/* Enhanced EPG Styling */
+
+/* Critical: Force Horizontal Grid Layout */
+.planby {
+  width: 100% !important;
+  height: 100% !important;
+  display: block !important;
+  position: relative !important;
+  background: linear-gradient(to bottom, #020617, #0f172a);
+  overflow: hidden !important;
+}
+
+/* Main container structure */
+.planby > div {
+  width: 100% !important;
+  height: 100% !important;
+  display: flex !important;
+  flex-direction: column !important;
+}
+
+/* Timeline and content wrapper */
+.planby > div > div {
+  display: flex !important;
+  flex-direction: column !important;
+  width: 100% !important;
+  flex: 1 !important;
+  overflow: hidden !important;
+}
+
+/* Content area with sidebar and programs */
+.planby > div > div > div:last-child {
+  display: flex !important;
+  flex-direction: row !important;
+  flex: 1 !important;
+  overflow: hidden !important;
+  width: 100% !important;
+}
+
+/* Sidebar container */
+.planby > div > div > div:last-child > div:first-child {
+  flex-shrink: 0 !important;
+  overflow-y: auto !important;
+  overflow-x: hidden !important;
+}
+
+/* Programs container - MUST scroll horizontally */
+.planby > div > div > div:last-child > div:last-child {
+  flex: 1 !important;
+  overflow: auto !important;
+  position: relative !important;
+}
+
+/* Each channel's programs row */
+.planby > div > div > div:last-child > div:last-child > div > div {
+  display: flex !important;
+  flex-direction: row !important;
+  position: relative !important;
+  min-width: max-content !important;
+}
+
+/* Individual program blocks */
+.planby > div > div > div:last-child > div:last-child > div > div > div {
+  position: absolute !important;
+  display: inline-block !important;
+}
+
+/* Timeline Customization */
+.planby > div > div > div:first-child,
+.planby-timeline,
+[class*="timeline"] {
+  background: linear-gradient(to bottom, #0f172a, #1e293b) !important;
+  border-bottom: 2px solid #334155 !important;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+  display: flex !important;
+  flex-direction: row !important;
+  overflow-x: hidden !important;
+}
+
+.planby-timeline-time,
+[class*="timeline"] [class*="time"] {
+  color: #cbd5e1 !important;
+  font-weight: 600 !important;
+  font-size: 13px !important;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.planby-timeline-divider,
+[class*="timeline"] [class*="divider"] {
+  background: #334155 !important;
+  opacity: 0.5;
+}
+
+/* Sidebar Styling */
+.planby-sidebar,
+[class*="sidebar"] {
+  background: linear-gradient(to right, #0f172a, #1e293b) !important;
+  border-right: 2px solid #334155 !important;
+  display: flex !important;
+  flex-direction: column !important;
+}
+
+/* Current Time Line */
+.planby-line,
+.planby-current-time-line {
+  background: linear-gradient(to bottom, #ef4444, #dc2626) !important;
+  width: 3px !important;
+  box-shadow: 0 0 10px rgba(239, 68, 68, 0.6), 0 0 20px rgba(239, 68, 68, 0.4) !important;
+  z-index: 100 !important;
+}
+
+.planby-line::before {
+  content: '';
+  position: absolute;
+  top: -8px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 0;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-top: 8px solid #ef4444;
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.3));
+}
+
+/* Scrollbar Styling */
+.planby::-webkit-scrollbar,
+.planby-scrollbar {
+  width: 12px;
+  height: 12px;
+}
+
+.planby::-webkit-scrollbar-track {
+  background: #0f172a;
+  border-radius: 6px;
+}
+
+.planby::-webkit-scrollbar-thumb,
+.planby-scrollbar-thumb {
+  background: linear-gradient(to bottom, #475569, #334155);
+  border-radius: 6px;
+  border: 2px solid #0f172a;
+}
+
+.planby::-webkit-scrollbar-thumb:hover,
+.planby-scrollbar-thumb:hover {
+  background: linear-gradient(to bottom, #64748b, #475569);
+}
+
+.planby::-webkit-scrollbar-corner {
+  background: #0f172a;
+}
+
+/* Channel Sidebar Scrollbar */
+.planby-channels::-webkit-scrollbar {
+  width: 8px;
+}
+
+.planby-channels::-webkit-scrollbar-track {
+  background: #1e293b;
+}
+
+.planby-channels::-webkit-scrollbar-thumb {
+  background: #475569;
+  border-radius: 4px;
+}
+
+/* Program Hover Effects */
+.epg-program {
+  position: relative;
+  overflow: visible !important;
+}
+
+.epg-program::after {
+  content: '';
+  position: absolute;
+  inset: -2px;
+  border-radius: 10px;
+  background: linear-gradient(135deg, rgba(59, 130, 246, 0.4), rgba(147, 197, 253, 0.2));
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+  z-index: -1;
+}
+
+.epg-program:hover::after {
+  opacity: 1;
+}
+
+.epg-program:hover {
+  transform: translateY(-2px);
+  z-index: 10;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4), 0 0 0 1px rgba(59, 130, 246, 0.3) !important;
+}
+
+/* Channel Hover Effects */
+.epg-channel {
+  position: relative;
+  overflow: hidden;
+}
+
+.epg-channel::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 4px;
+  background: linear-gradient(to bottom, #3b82f6, #60a5fa);
+  transform: scaleY(0);
+  transition: transform 0.3s ease;
+}
+
+.epg-channel:hover::before {
+  transform: scaleY(1);
+}
+
+/* Loading Animation */
+@keyframes shimmer {
+  0% {
+    background-position: -1000px 0;
+  }
+  100% {
+    background-position: 1000px 0;
+  }
+}
+
+.epg-loading {
+  background: linear-gradient(
+    90deg,
+    #1e293b 0%,
+    #334155 50%,
+    #1e293b 100%
+  );
+  background-size: 1000px 100%;
+  animation: shimmer 2s infinite;
+}
+
+/* Live Program Pulse Animation */
+@keyframes live-pulse {
+  0%, 100% {
+    box-shadow: 0 0 0 0 rgba(59, 130, 246, 0.7);
+  }
+  50% {
+    box-shadow: 0 0 0 8px rgba(59, 130, 246, 0);
+  }
+}
+
+.live-indicator {
+  animation: live-pulse 2s infinite;
+}
+
+/* Smooth Transitions */
+* {
+  scroll-behavior: smooth;
+}
+
+.planby {
+  scroll-behavior: smooth;
+}
+
+/* Focus States for Accessibility */
+.epg-program:focus,
+.epg-channel:focus {
+  outline: 2px solid #3b82f6;
+  outline-offset: 2px;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .planby-timeline-time {
+    font-size: 11px !important;
+  }
+
+  .epg-program {
+    padding: 6px 8px !important;
+  }
+
+  .epg-channel {
+    padding: 8px !important;
+  }
+
+  .planby-sidebar {
+    width: 140px !important;
+  }
+}
+
+/* Dark Mode Enhancements */
+@media (prefers-color-scheme: dark) {
+  .planby {
+    color-scheme: dark;
+  }
+}
+

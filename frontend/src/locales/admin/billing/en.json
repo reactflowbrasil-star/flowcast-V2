@@ -1,0 +1,114 @@
+{
+  "billing": {
+    "overview": {
+      "title": "Billing",
+      "description": "Revenue and credit performance at a glance",
+      "metrics": {
+        "onlineRevenue": "Online Revenue",
+        "offlineRevenue": "Offline Revenue",
+        "adjustments": "Adjustments",
+        "totalRevenue": "Total Revenue",
+        "creditsOnline": "Credits (Online)",
+        "creditsOffline": "Credits (Offline)",
+        "creditsAdjustments": "Credits (Adjustments)",
+        "totalCredits": "Total Credits"
+      }
+    },
+    "pricing": {
+      "title": "Credit Pricing",
+      "description": "Base pricing and discount tiers configured in the system",
+      "basePrice": "Base price (USD per credit)",
+      "activeTiers": "Active tiers",
+      "effectiveCurrency": "Effective currency",
+      "tiersNote": "The highest tier where the minimum quantity is met will be applied.",
+      "table": {
+        "minQuantity": "Min quantity (inclusive)",
+        "discountPercent": "Discount percent",
+        "noTiers": "No tiers configured. Base price applies for all quantities.",
+        "discountSuffix": "off"
+      }
+    },
+    "offline": {
+      "title": "Add Offline Payment",
+      "description": "Record manual payments and grant credits instantly",
+      "labels": {
+        "reseller": "Reseller",
+        "amount": "Amount (USD)",
+        "credits": "Credits to grant",
+        "method": "Method",
+        "reference": "Reference",
+        "notes": "Notes"
+      },
+      "placeholders": {
+        "resellerSearch": "Type at least 2 letters…",
+        "amount": "e.g. 100.00",
+        "credits": "e.g. 100",
+        "method": "cash/bank/other",
+        "reference": "invoice number or reference",
+        "notes": "optional notes"
+      },
+      "chargedCurrency": "Charged currency:",
+      "success": "Offline payment recorded and credits granted",
+      "actions": {
+        "saving": "Saving...",
+        "save": "Save Offline Payment"
+      },
+      "errors": {
+        "amountPositive": "Amount (USD) must be greater than 0",
+        "creditsPositive": "Credits must be a positive integer",
+        "resellerPositive": "Reseller ID must be a positive integer",
+        "selectReseller": "Select a reseller from the list"
+      }
+    },
+    "transactions": {
+      "title": "Recent Transactions",
+      "description": "Filter and paginate billing transactions",
+      "filters": {
+        "source": "Source",
+        "status": "Status",
+        "resellerId": "Reseller ID",
+        "reference": "Reference/Username",
+        "perPage": "Per page"
+      },
+      "sources": {
+        "stripe": "Stripe",
+        "offline": "Offline",
+        "adjustment": "Adjustment"
+      },
+      "statuses": {
+        "completed": "Completed",
+        "pending": "Pending",
+        "refunded": "Refunded",
+        "failed": "Failed"
+      },
+      "placeholders": {
+        "resellerId": "e.g. 42",
+        "reference": "Search reference or username"
+      },
+      "table": {
+        "id": "ID",
+        "reseller": "Reseller",
+        "source": "Source",
+        "amount": "Amount",
+        "credits": "Credits",
+        "status": "Status",
+        "reference": "Reference",
+        "createdAt": "Created at"
+      },
+      "total": "Total: {{count}}",
+      "pagination": {
+        "page": "Page {{page}}"
+      },
+      "empty": "No transactions found."
+    },
+    "errors": {
+      "fetchOverview": "Failed to fetch billing overview",
+      "fetchPricing": "Failed to fetch pricing configuration",
+      "fetchTransactions": "Failed to fetch billing transactions",
+      "createOfflinePayment": "Failed to create offline payment"
+    }
+  },
+  "common": {
+    "refresh": "Refresh"
+  }
+}

@@ -1,0 +1,65 @@
+{
+  "scanFolder": {
+    "dialog": {
+      "title": "扫描媒体库文件夹",
+      "description": "从文件系统路径递归导入电影和剧集。TMDB元数据和匹配的.srt字幕在可用时会自动导入。"
+    },
+    "alert": {
+      "title": "智能导入与字幕配对",
+      "description": "扫描器会自动检测文件夹名称中的TMDB ID，匹配季/集，并链接与视频文件同名的外部.srt文件。如果您希望电影或剧集放入自定义分区（如儿童或动漫），请使用下方的类别覆盖选项。",
+      "descriptionPrefix": "扫描仪自动检测文件夹名称中的 TMDB ID、匹配季节/剧集并链接外部",
+      "descriptionMiddle": "共享视频基本名称的文件。使用",
+      "descriptionSuffix": "如果您希望电影或连续剧投放到自定义部分（例如儿童或动漫），请覆盖下面的类别。"
+    },
+    "mediaType": {
+      "label": "媒体类型",
+      "placeholder": "选择类型",
+      "mixed": "混合（自动检测电影和剧集）",
+      "movies": "仅电影",
+      "series": "仅剧集",
+      "anime": "仅动漫",
+      "kids": "仅儿童电影"
+    },
+    "duplicatePolicy": {
+      "label": "重复策略",
+      "placeholder": "选择策略",
+      "omit": "跳过现有项目",
+      "replace": "替换现有项目",
+      "allow": "允许重复"
+    },
+    "form": {
+      "rootPath": "根路径 *",
+      "rootPathPlaceholder": "/mnt/媒体/库",
+      "attachSubtitles": "附加外部字幕",
+      "attachSubtitlesHelp": "自动导入视频文件旁边找到的匹配.srt文件。",
+      "overrideMovieCategory": "覆盖电影类别",
+      "overrideMovieCategoryHelp": "如有需要，为检测到的电影选择替代类别类型。",
+      "overrideSeriesCategory": "覆盖剧集类别",
+      "overrideSeriesCategoryHelp": "适用于扫描应绕过标准剧集分区的儿童/动漫媒体库。",
+      "defaultVod": "默认（VOD）",
+      "defaultSeries": "默认（剧集）",
+      "attachSubtitlesHelpPrefix": "自动导入匹配",
+      "attachSubtitlesHelpSuffix": "与视频文件一起找到的文件。"
+    },
+    "results": {
+      "moviesCreated": "已创建电影",
+      "seriesCreated": "已创建剧集",
+      "episodesCreated": "已创建集数",
+      "subtitlesAdded": "已添加字幕",
+      "replaced": "已替换",
+      "skipped": "已跳过",
+      "scanLog": "扫描日志"
+    },
+    "badges": {
+      "tmdbLookup": "TMDB查询",
+      "subtitlePairing": "字幕配对",
+      "recursiveScan": "递归扫描"
+    },
+    "errors": {
+      "rootPathRequired": "根路径是必填项",
+      "unableToLoadCategories": "无法加载类别",
+      "scanFailed": "扫描失败",
+      "unexpectedError": "扫描过程中发生意外错误"
+    }
+  }
+}

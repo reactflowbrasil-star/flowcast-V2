@@ -1,0 +1,110 @@
+{
+  "mediaScanner": {
+    "title": "Medya Tarayıcı",
+    "subtitle": "Medya içeriğini otomatik olarak içe aktarmak için sunucu klasörlerini tarayın",
+    "categorySelector": {
+      "title": "İçerik Kategorisi Seç",
+      "description": "Taramak istediğiniz içerik türünü seçin",
+      "movies": "Filmler",
+      "series": "Diziler",
+      "kids": "Çocuk",
+      "anime": "anime",
+      "music": "Müzik"
+    },
+    "folderExplorer": {
+      "title": "Taranacak Klasörü Seç",
+      "description": "Medya dosyalarınızı içeren sunucu klasörüne göz atın ve seçin",
+      "currentPath": "Mevcut Yol",
+      "selectFolder": "Bu Klasörü Seç",
+      "goUp": "Yukarı Git",
+      "loading": "Klasörler yükleniyor...",
+      "error": "Klasörler yüklenirken hata",
+      "noFolders": "Klasör bulunamadı",
+      "refresh": "Yenile",
+      "selectedFolder": "Seçilen klasör:"
+    },
+    "scanOptions": {
+      "title": "Tarama Seçenekleri",
+      "duplicatePolicy": "Kopya Politikası",
+      "duplicatePolicyOptions": {
+        "omit": "Kopyaları atla",
+        "replace": "Mevcutlar? de?i?tir",
+        "allow": "Kopyalara izin ver"
+      },
+      "addSubtitles": "Altyazıları Dahil Et",
+      "addSubtitlesHelp": "Altyazı dosyalarını otomatik olarak algıla ve ekle"
+    },
+    "scanProgress": {
+      "title": "Tarama İlerlemesi",
+      "status": "Durum",
+      "scanned": "Taranan Dosyalar",
+      "imported": "İçe Aktarılan Dosyalar",
+      "errors": "Hatalar",
+      "currentFile": "Mevcut Dosya",
+      "timeElapsed": "Geçen Süre",
+      "estimatedRemaining": "Tahmini Kalan Süre",
+      "cancel": "İptal",
+      "cancelConfirm": "Taramayı iptal etmek istediğinizden emin misiniz? İlerleme kaybolacak.",
+      "completed": "Tamamlandı",
+      "cancelled": "İptal Edildi",
+      "failed": "Başarısız"
+    },
+    "taskControl": {
+      "title": "Görev Kontrolü",
+      "tasks": "görevler",
+      "path": "Yol",
+      "started": "Başlatıldı",
+      "duration": "Süre",
+      "currentFile": "Mevcut dosya",
+      "stats": {
+        "movies": "Filmler",
+        "series": "Diziler",
+        "episodes": "Bölümler",
+        "subtitles": "Altyazılar",
+        "skipped": "Atlandı",
+        "replaced": "Değiştirildi"
+      },
+      "error": "Hata",
+      "cancel": "İptal",
+      "delete": "Sil",
+      "cancelling": "İptal ediliyor...",
+      "deleting": "Siliniyor...",
+      "idle": "Çalışan görev yok"
+    },
+    "scanStatus": {
+      "title": "Tarama Durumu",
+      "scanId": "Tarama Kimliği",
+      "status": "Durum",
+      "backgroundNote": "Tarama sunucuda çalışıyor. Bu sayfayı kapatabilirsiniz, işlem devam edecektir.",
+      "anotherScanNote": "Zaten devam eden bir tarama var. Gerekirse başka bir tane başlatabilirsiniz."
+    },
+    "actions": {
+      "startScan": "Taramayı Başlat",
+      "selectCategory": "Kategori Seç",
+      "selectFolder": "Klasör Seç",
+      "configureScan": "Taramayı Yapılandır",
+      "delete": "Sil",
+      "deleting": "Siliniyor..."
+    },
+    "status": {
+      "idle": "Taramaya hazır",
+      "scanning": "Tarama devam ediyor...",
+      "completed": "Tarama başarıyla tamamlandı",
+      "cancelled": "Tarama iptal edildi",
+      "failed": "Tarama hatalarla başarısız oldu"
+    },
+    "errors": {
+      "noCategory": "Lütfen bir içerik kategorisi seçin",
+      "noFolder": "Lütfen taranacak bir klasör seçin",
+      "scanFailed": "Tarama başlatılamadı: {{message}}",
+      "cancelFailed": "Tarama iptal edilemedi: {{message}}",
+      "loadFolders": "Klasörler yüklenemedi: {{message}}"
+    },
+    "notifications": {
+      "scanStarted": "Medya taraması başarıyla başlatıldı",
+      "scanCompleted": "Medya taraması tamamlandı: {{imported}} dosya içe aktarıldı",
+      "scanCancelled": "Medya taraması iptal edildi",
+      "scanFailed": "Medya taraması başarısız oldu: {{message}}"
+    }
+  }
+}

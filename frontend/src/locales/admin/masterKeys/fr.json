@@ -1,0 +1,50 @@
+{
+  "masterKeys": {
+    "createDialogDescription": "Créez une nouvelle Clé API Maîtresse pour applications externes. Cette clé fournit un accès complet à l'API sans authentification via UI.",
+    "examples": {
+      "appName": "ex: App Éditeur Externe 2024"
+    },
+    "descriptionPlaceholder": "Description de l'application externe ou intégration...",
+    "descriptionHelp": "Optionnel : Décrivez à quoi servira cette clé API",
+    "infoTitle": "Intégration API",
+    "infoText": "Les Clés API Maîtresses fournissent un accès complet à l'API pour les applications externes sans nécessiter d'authentification via UI. Parfait pour les outils de gestion de contenu, scripts automatisés et intégrations tierces.",
+    "badges": {
+      "externalApps": "Apps Externes",
+      "automationScripts": "Scripts d'Automatisation",
+      "thirdPartyTools": "Outils Tiers"
+    },
+    "neverLabel": "Jamais",
+    "keyNameHelp": "Un nom descriptif pour identifier cette clé API",
+    "securityNoteTitle": "Note de Sécurité",
+    "securityNoteDescription": "La clé API générée ne sera affichée qu'une seule fois. Assurez-vous de la copier et de la stocker en toute sécurité.",
+    "empty": {
+      "title": "Aucune Clé API Trouvée",
+      "description": "Créez votre première Clé API Maîtresse pour permettre l'intégration d'applications externes"
+    },
+    "detailsTitle": "Détails Clé API Maîtresse",
+    "detailsDescription": "Voir et gérer cette clé API pour l'intégration d'applications externes",
+    "apiKeyLabel": "Clé API",
+    "activeStatus": "Statut Actif",
+    "regenerateButton": "Régénérer Clé",
+    "deleteButton": "Supprimer Clé",
+    "labels": {
+      "created": "Créé",
+      "lastUpdated": "Dernière Mise à Jour",
+      "lastUsed": "Dernière Utilisation"
+    },
+    "noDescription": "Aucune description",
+    "keyNameRequired": "Le nom de la clé est obligatoire",
+    "confirmDelete": "Voulez-vous vraiment supprimer la clé API maître \"{{keyName}}\" ? Cela révoquera immédiatement l'accès des applications externes qui utilisent cette clé.",
+    "confirmRegenerate": "Voulez-vous vraiment régénérer cette clé API maître ? L'ancienne clé sera immédiatement invalidée et les applications externes devront être mises à jour.",
+    "errors": {
+      "createFailed": "Échec de la création de la clé API maître",
+      "deleteFailed": "Échec de la suppression de la clé API maître",
+      "loadFailed": "Échec du chargement des clés API maîtres",
+      "loadSingleFailed": "Échec du chargement de la clé API maître",
+      "regenerateFailed": "Échec de la régénération de la clé API maître",
+      "updateFailed": "Échec de la mise à jour de la clé API maître"
+    },
+    "fullAccessWarning": "⚠️ Conservez cette clé en lieu sûr. Elle donne un accès complet à l'API sans authentification.",
+    "loading": "Chargement des clés API maîtres..."
+  }
+}

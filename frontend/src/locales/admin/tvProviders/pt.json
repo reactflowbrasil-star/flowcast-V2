@@ -1,0 +1,56 @@
+{
+  "title": "Provedores de Listas de Reprodução",
+  "description": "Registe listas de reprodução M3U remotas com um intervalo de atualização para que os canais de TV ao vivo permaneçam atualizados automaticamente.",
+  "alert": {
+    "title": "Atualização automática com TTL",
+    "description": "Cada provedor é obtido novamente quando o seu TTL expira. O backend preserva chaves DRM ClearKey, cabeçalhos, proxies e valores DNS-over-HTTPS anunciados nas entradas da lista de reprodução."
+  },
+  "form": {
+    "providerName": "Nome do provedor *",
+    "playlistUrl": "URL da lista de reprodução *",
+    "refreshInterval": "Intervalo de atualização (minutos)",
+    "enableAutoRefresh": "Ativar atualização automática",
+    "enableAutoRefreshHint": "Desative para manter a lista mas parar as atualizações agendadas.",
+    "adding": "Adicionando…",
+    "addProvider": "Adicionar Provedor"
+  },
+  "table": {
+    "name": "Nome",
+    "ttl": "TTL",
+    "status": "Estado",
+    "lastFetch": "Última Busca",
+    "nextRefresh": "Próxima Atualização",
+    "actions": "Ações"
+  },
+  "status": {
+    "enabled": "Ativado",
+    "disabled": "Desativado"
+  },
+  "buttons": {
+    "sync": "Sincronizar",
+    "delete": "Excluir",
+    "close": "Fechar"
+  },
+  "validation": {
+    "nameRequired": "O nome do provedor é obrigatório",
+    "urlInvalid": "É necessária uma URL M3U/M3U8 válida",
+    "ttlMinimum": "O TTL deve ser de pelo menos 1 minuto"
+  },
+  "errors": {
+    "loadFailed": "Não foi possível carregar os provedores",
+    "createFailed": "Não foi possível criar o provedor",
+    "createUnexpected": "Erro inesperado ao criar o provedor",
+    "deleteFailed": "Não foi possível excluir o provedor",
+    "deleteUnexpected": "Erro inesperado ao excluir o provedor",
+    "syncFailed": "Falha na sincronização",
+    "syncUnexpected": "Erro inesperado durante a sincronização"
+  },
+  "placeholders": {
+    "providerName": "Sensa",
+    "playlistUrl": "https://exemplo.com/playlist.m3u"
+  },
+  "units": {
+    "minutes": "min"
+  },
+  "deleteConfirm": "Tem certeza de que deseja excluir o provedor {{name}}? Esta ação não pode ser desfeita."
+}

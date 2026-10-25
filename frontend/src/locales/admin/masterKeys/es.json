@@ -1,0 +1,50 @@
+{
+  "masterKeys": {
+    "createDialogDescription": "Crea una nueva Clave API Maestra para aplicaciones externas. Esta clave provee acceso completo a la API sin autenticación en la UI.",
+    "examples": {
+      "appName": "ej., App Editor Externo 2024"
+    },
+    "descriptionPlaceholder": "Descripción de la aplicación o integración externa...",
+    "descriptionHelp": "Opcional: Describe para qué se usará esta clave API",
+    "infoTitle": "Integración API",
+    "infoText": "Las Claves API Maestras brindan acceso completo a la API para aplicaciones externas sin requerir autenticación en la interfaz. Ideales para herramientas de gestión de contenido, scripts automatizados e integraciones de terceros.",
+    "badges": {
+      "externalApps": "Aplicaciones externas",
+      "automationScripts": "Scripts de automatización",
+      "thirdPartyTools": "Herramientas de terceros"
+    },
+    "neverLabel": "Nunca",
+    "keyNameHelp": "Un nombre descriptivo para identificar esta clave API",
+    "securityNoteTitle": "Nota de seguridad",
+    "securityNoteDescription": "La clave generada se mostrará solo una vez. Asegúrate de copiarla y guardarla de forma segura.",
+    "empty": {
+      "title": "No se encontraron claves API",
+      "description": "Crea tu primera Clave API Maestra para habilitar la integración con aplicaciones externas"
+    },
+    "detailsTitle": "Detalles de la Clave API Maestra",
+    "detailsDescription": "Ver y gestionar esta clave API para integración con aplicaciones externas",
+    "apiKeyLabel": "Clave API",
+    "activeStatus": "Estado activo",
+    "regenerateButton": "Regenerar clave",
+    "deleteButton": "Eliminar clave",
+    "labels": {
+      "created": "Creada",
+      "lastUpdated": "Última actualización",
+      "lastUsed": "Último uso"
+    },
+    "noDescription": "Sin descripción",
+    "keyNameRequired": "El nombre de la clave es obligatorio",
+    "confirmDelete": "¿Seguro que deseas eliminar la clave API maestra \"{{keyName}}\"? Esto revocará inmediatamente el acceso de cualquier aplicación externa que use esta clave.",
+    "confirmRegenerate": "¿Seguro que deseas regenerar esta clave API maestra? La clave anterior se invalidará de inmediato y las aplicaciones externas deberán actualizarse.",
+    "errors": {
+      "createFailed": "No se pudo crear la clave API maestra",
+      "deleteFailed": "No se pudo eliminar la clave API maestra",
+      "loadFailed": "No se pudieron cargar las claves API maestras",
+      "loadSingleFailed": "No se pudo cargar la clave API maestra",
+      "regenerateFailed": "No se pudo regenerar la clave API maestra",
+      "updateFailed": "No se pudo actualizar la clave API maestra"
+    },
+    "fullAccessWarning": "⚠️ Guarda esta clave de forma segura. Proporciona acceso completo a la API sin autenticación.",
+    "loading": "Cargando claves API maestras..."
+  }
+}

@@ -1,0 +1,790 @@
+{
+  "security": {
+    "tabs": {
+      "overview": "Visão Geral de Segurança",
+      "incidents": "Incidentes de Segurança",
+      "bans": "Banimentos de Segurança",
+      "blacklistedDevices": "Dispositivos na Lista Negra"
+    },
+    "actions": {
+      "cleanupExpiredBans": "Limpar Banimentos Expirados",
+      "createManualBan": "Criar Banimento Manual"
+    },
+    "cards": {
+      "totalIncidents": "Total de Incidentes",
+      "todaysIncidents": "Incidentes de Hoje",
+      "activeBans": "Banimentos Ativos",
+      "permanentBans": "Banimentos Permanentes",
+      "blacklistedDevices": "Dispositivos na Lista Negra"
+    }
+  },
+  "masterKeys": {
+    "createDialogDescription": "Crie uma nova Master API Key para aplicações externas. Esta chave fornece acesso total à API sem autenticação de UI.",
+    "examples": {
+      "appName": "ex: App Editor Externo 2024"
+    },
+    "keyNameHelp": "Um nome descritivo para identificar esta chave de API",
+    "securityNoteTitle": "Nota de Segurança",
+    "securityNoteDescription": "A chave de API gerada será mostrada apenas uma vez. Certifique-se de copiá-la e armazená-la com segurança.",
+    "empty": {
+      "title": "Nenhuma Chave de API Encontrada",
+      "description": "Crie sua primeira Master API Key para habilitar a integração com aplicações externas"
+    },
+    "detailsTitle": "Detalhes da Master API Key",
+    "detailsDescription": "Visualizar e gerenciar esta chave de API para integração com aplicações externas",
+    "apiKeyLabel": "Chave de API",
+    "activeStatus": "Status Ativo",
+    "regenerateButton": "Regenerar Chave",
+    "deleteButton": "Excluir Chave",
+    "labels": {
+      "created": "Criada",
+      "lastUpdated": "Última Atualização",
+      "lastUsed": "Última Utilização"
+    }
+  },
+  "loginHistory": {
+    "title": "Histórico de Login",
+    "lastUpdated": "Última atualização: {{time}}",
+    "autoRefreshOn": "Auto-atualização: LIGADA",
+    "refreshNow": "Atualizar Agora",
+    "filters": {
+      "username": "Usuário",
+      "ipAddress": "Endereço IP",
+      "startDate": "Data Inicial",
+      "endDate": "Data Final"
+    },
+    "placeholders": {
+      "searchUsername": "Buscar usuário...",
+      "ipAddress": "Endereço IP..."
+    },
+    "loading": "Carregando histórico de login...",
+    "errors": {
+      "loading": "Erro ao carregar histórico de login: {{message}}",
+      "loadingFallback": "Falha ao carregar histórico de login"
+    },
+    "noHistory": "Nenhuma tentativa de login encontrada.",
+    "table": {
+      "dateTime": "Data e Hora",
+      "user": "Usuário",
+      "status": "Estado",
+      "ipAddress": "Endereço IP",
+      "device": "Dispositivo",
+      "userAgent": "Agente do usuário"
+    }
+  },
+  "securityIncidents": {
+    "filterType": "Filtrar por tipo",
+    "allTypes": "Todos os tipos",
+    "bruteForce": "Força bruta",
+    "suspiciousActivity": "Atividade suspeita",
+    "multipleDevices": "Múltiplos dispositivos",
+    "tokenManipulation": "Manipulação de token",
+    "searchByUsernamePlaceholder": "Buscar por usuário...",
+    "itemsPerPage": "Itens por página",
+    "title": "Incidentes de Segurança ({{total}})",
+    "noneFound": "Nenhum incidente encontrado.",
+    "deviceId": "ID do Dispositivo",
+    "ipAddress": "Endereço IP",
+    "deleteTitle": "Excluir incidente",
+    "showingPage": "Página {{page}} de {{totalPages}}",
+    "confirmDelete": "Excluir este incidente?"
+  },
+  "securityBans": {
+    "searchByUsernamePlaceholder": "Buscar por usuário...",
+    "itemsPerPage": "Itens por página",
+    "title": "Banimentos de Segurança ({{total}})",
+    "noneFound": "Nenhum banimento encontrado.",
+    "level": "Nível",
+    "type": "Tipo",
+    "reason": "Motivo",
+    "timeRemaining": "Tempo restante"
+  },
+  "blacklistedDevices": {
+    "title": "Dispositivos na Lista Negra ({{count}})",
+    "noneTitle": "Nenhum dispositivo na lista negra",
+    "noneDescription": "Tudo limpo. Nenhum dispositivo está na lista negra no momento.",
+    "removeButton": "Remover da lista negra"
+  },
+  "unban": {
+    "action": "Desbanir",
+    "confirm": "Desbanir usuário {{user}}?",
+    "promptReason": "Insira o motivo para desbanir"
+  },
+  "dashboard": {
+    "notAuthenticated": "Não autenticado",
+    "accessDenied": "Acesso negado. Requer papel de administrador.",
+    "preparing": "Preparando painel..."
+  },
+  "demos": {
+    "title": "Experiência de Demonstração",
+    "subtitle": "Monitore contas de demonstração, ajuste limites de criação e revise histórico de acesso para manter o abuso sob controle.",
+    "settingsTitle": "Proteções de criação",
+    "settingsDescription": "Limite quantas demonstrações podem ser criadas por IP e por quanto tempo os infratores ficam banidos.",
+    "totalUsers": "Demos ativos",
+    "thresholdLabel": "Limite (criações / 24h)",
+    "banDurationLabel": "Duração do banimento (dias)",
+    "managementTitle": "Monitoramento de demonstração",
+    "managementDescription": "Revise contas de demonstração ao vivo ou audite o rastro de IP em poucos cliques.",
+    "usersTab": "Usuários",
+    "historyTab": "Histórico",
+    "usersSummary": "{{count}} usuários demo ativos",
+    "refreshing": "Atualizando...",
+    "ipLabel": "Endereço IP",
+    "expiresLabel": "Expira em",
+    "deviceLabel": "Dispositivo",
+    "userAgentLabel": "Agente do usuário",
+    "resultLabel": "Resultado",
+    "successful": "Sucedido",
+    "failed": "Falhou",
+    "historySummary": "Mostrando {{total}} entradas de log",
+    "noHistoryResults": "Nenhuma tentativa de login para os filtros atuais.",
+    "noUsers": "Nenhum usuário demo no momento.",
+    "confirmDelete": "Excluir este usuário demo? Esta ação não pode ser desfeita.",
+    "userDeleted": "Usuário demo excluído",
+    "usernamePlaceholder": "joao.silva"
+  },
+  "giftcodes": {
+    "title": "Cartões-Presente",
+    "description": "Gerencie códigos de presente de uso único ou mútiplo para criar ou estender assinaturas de usuários.",
+    "create": "Criar Código",
+    "bulkCreate": "Criação em Lote",
+    "export": "Exportar CSV",
+    "noData": "Nenhum código disponível para exportação.",
+    "bulkCreated": "Criados {{count}} códigos de presente",
+    "created": "Código de presente criado",
+    "deletedSelected": "Excluídos {{count}} códigos selecionados",
+    "generate": "Gerar",
+    "deleteSelected": "Excluir Selecionados ({{count}})",
+    "deleteConfirm": "Excluir {{count}} códigos selecionados? Esta ação não pode ser desfeita.",
+    "table": {
+      "code": "Código",
+      "duration_days": "Duração (dias)",
+      "uses": "Usos",
+      "remaining": "Restantes",
+      "expires_at": "Expira em",
+      "created_at": "Criado em"
+    },
+    "form": {
+      "codeOptional": "Código (opcional)",
+      "durationMonths": "Duração (meses)",
+      "uses": "Usos",
+      "prefixOptional": "Prefixo (opcional)",
+      "count": "Quantidade",
+      "usesPerCode": "Usos por código"
+    }
+  },
+  "billing": {
+    "overview": {
+      "title": "Visão Geral de Faturamento",
+      "description": "Desempenho de receita e créditos em um relance",
+      "metrics": {
+        "onlineRevenue": "Receita Online",
+        "offlineRevenue": "Receita Offline",
+        "adjustments": "Ajustes",
+        "totalRevenue": "Receita Total",
+        "creditsOnline": "Créditos (Online)",
+        "creditsOffline": "Créditos (Offline)",
+        "creditsAdjustments": "Créditos (Ajustes)",
+        "totalCredits": "Total de Créditos"
+      }
+    },
+    "pricing": {
+      "title": "Preços de Crédito",
+      "description": "Preços base e faixas de desconto configuradas no sistema",
+      "basePrice": "Preço base (USD por crédito)",
+      "activeTiers": "Faixas ativas",
+      "effectiveCurrency": "Moeda efetiva",
+      "tiersNote": "A faixa mais alta onde a quantidade mínima for atingida será aplicada.",
+      "table": {
+        "minQuantity": "Qtd mínima (inclusive)",
+        "discountPercent": "Percentual de desconto",
+        "noTiers": "Nenhuma faixa configurada. O preço base se aplica a todas as quantidades.",
+        "discountSuffix": "desconto"
+      }
+    },
+    "offline": {
+      "title": "Adicionar Pagamento Offline",
+      "description": "Registre pagamentos manuais e conceda créditos instantaneamente",
+      "labels": {
+        "reseller": "Revendedor",
+        "amount": "Valor (USD)",
+        "credits": "Créditos a conceder",
+        "method": "Método",
+        "reference": "Referência",
+        "notes": "Notas"
+      },
+      "placeholders": {
+        "resellerSearch": "Digite pelo menos 2 letras…",
+        "amount": "ex: 100.00",
+        "credits": "ex: 100",
+        "method": "dinheiro/banco/outro",
+        "reference": "número da fatura ou referência",
+        "notes": "notas opcionais"
+      },
+      "chargedCurrency": "Moeda cobrada:",
+      "success": "Pagamento offline registrado e créditos concedidos",
+      "actions": {
+        "saving": "Salvando...",
+        "save": "Salvar Pagamento Offline"
+      },
+      "errors": {
+        "amountPositive": "O valor (USD) deve ser maior que 0",
+        "creditsPositive": "Os créditos devem ser um número inteiro positivo",
+        "resellerPositive": "O ID do revendedor deve ser um número inteiro positivo",
+        "selectReseller": "Selecione um revendedor da lista"
+      }
+    },
+    "transactions": {
+      "title": "Transações Recentes",
+      "description": "Filtrar e paginar transações de faturamento",
+      "filters": {
+        "source": "Fonte",
+        "status": "Estado",
+        "resellerId": "ID do Revendedor",
+        "reference": "Referência/Usuário",
+        "perPage": "Por página"
+      },
+      "sources": {
+        "stripe": "Listra",
+        "offline": "Off-line",
+        "adjustment": "Ajuste"
+      },
+      "statuses": {
+        "completed": "Concluído",
+        "pending": "Pendente",
+        "refunded": "Reembolsado",
+        "failed": "Falhou"
+      },
+      "placeholders": {
+        "resellerId": "ex: 42",
+        "reference": "Buscar referência ou usuário"
+      },
+      "table": {
+        "id": "ID",
+        "reseller": "Revendedor",
+        "source": "Fonte",
+        "amount": "Valor",
+        "credits": "Créditos",
+        "status": "Estado",
+        "reference": "Referência",
+        "createdAt": "Criado em"
+      },
+      "total": "Total: {{count}}",
+      "pagination": {
+        "page": "Página {{page}}"
+      },
+      "empty": "Nenhuma transação encontrada."
+    },
+    "errors": {
+      "fetchOverview": "Falha ao buscar visão geral de faturamento",
+      "fetchPricing": "Falha ao buscar configuração de preços",
+      "fetchTransactions": "Falha ao buscar transações de faturamento",
+      "createOfflinePayment": "Falha ao criar pagamento offline"
+    }
+  },
+  "devices": {
+    "errors": {
+      "loadFailed": "Falha ao carregar dados de gerenciamento de dispositivos. Tente novamente mais tarde."
+    },
+    "overview": {
+      "activeUsers": "Usuários ativos",
+      "statsDescription": "Detalhamento do uso de dispositivos entre os usuários",
+      "usageByUserTitle": "Uso de Dispositivo por Usuário",
+      "usageByUserDescription": "Estatísticas de uso aparecerão aqui assim que dispositivos forem registrados.",
+      "deviceCount": "{{count}}/{{max}} dispositivos"
+    },
+    "activeList": {
+      "description": "Monitore todas as conexões de dispositivos ativos no sistema",
+      "searchPlaceholder": "Buscar dispositivos...",
+      "deviceId": "ID: {{id}}",
+      "actions": {
+        "disconnect": "Desconectar"
+      },
+      "removeDialog": {
+        "title": "Remover Dispositivo",
+        "description": "Tem certeza que deseja remover permanentemente o dispositivo \"{{device}}\" do usuário {{user}}? Esta ação não pode ser desfeita."
+      },
+      "emptyTitle": "Nenhum dispositivo encontrado",
+      "noDevicesSearch": "Nenhum dispositivo encontrado para \"{{query}}\"",
+      "noDevicesDescription": "Nenhum dispositivo está registrado no sistema no momento.",
+      "time": {
+        "justNow": "Agora mesmo",
+        "minutesAgo": "{{count}}m atrás",
+        "hoursAgo": "{{count}}h atrás",
+        "daysAgo": "{{count}}d atrás"
+      }
+    },
+    "limits": {
+      "title": "Avisos de Limite de Dispositivo",
+      "subtitle": "Monitore usuários se aproximando ou excedendo os limites de dispositivo",
+      "summary": {
+        "warningTitle": "Usuários em Alerta",
+        "warningDescription": "80-99% do limite usado",
+        "criticalTitle": "Usuários em Nível Crítico",
+        "criticalDescription": "No limite de dispositivos",
+        "exceededTitle": "Usuários Excederam",
+        "exceededDescription": "Acima do limite de dispositivos"
+      },
+      "badges": {
+        "safe": "Seguro",
+        "warning": "Alerta",
+        "critical": "Crítico",
+        "exceeded": "Excedeu"
+      },
+      "attention": {
+        "title": "Usuários que Requerem Atenção"
+      },
+      "table": {
+        "deviceUsage": "Uso de Dispositivo",
+        "progress": "Progresso",
+        "warningLevel": "Nível de Alerta"
+      },
+      "actions": {
+        "increaseLimit": "Aumentar Limite",
+        "monitor": "Monitorar"
+      },
+      "allSafeTitle": "Todos os Usuários Dentro dos Limites",
+      "allSafeDescription": "Nenhum usuário está se aproximando ou excedendo seus limites de dispositivos no momento.",
+      "allUsersTitle": "Visão Geral de Todos os Usuários"
+    },
+    "removal": {
+      "bulkRemoveFailed": "Falha ao remover {{count}} dispositivos"
+    }
+  },
+  "overview": {
+    "totalUsers": "Total de Usuários",
+    "allSystemUsers": "Todos os usuários no sistema",
+    "contentItems": "Itens de Conteúdo",
+    "moviesTvSeries": "Filmes, séries e muito mais",
+    "activeResellers": "Revendedores Ativos",
+    "currentlyActive": "Ativos no momento",
+    "systemStatus": "Status do Sistema",
+    "allSystemsOperational": "Todos os sistemas operacionais",
+    "quickActions": "Ações Rápidas",
+    "commonTasks": "Ir para as tarefas administrativas mais comuns",
+    "manageResellers": "Gerenciar Revendedores",
+    "manageContent": "Gerenciar Conteúdo",
+    "systemConfig": "Configuração do Sistema",
+    "viewReports": "Ver Relatórios",
+    "systemHealth": "Saúde do Sistema",
+    "systemStatusDescription": "Status do serviço em tempo real para componentes críticos",
+    "apiServices": "Serviços de API",
+    "operational": "Operacional",
+    "database": "Banco de Dados",
+    "contentDelivery": "Entrega de Conteúdo"
+  },
+  "content": {
+    "title": "Gerenciamento de Conteúdo",
+    "description": "Gerencie conteúdo em todas as categorias com integração TMDB",
+    "confirmDelete": "Tem certeza que deseja excluir este conteúdo?",
+    "tmdb": {
+      "confirm": "Preencher metadados TMDB para {{category}}? Isso tentará corresponder itens sem IDs TMDB.",
+      "success": "Metadados TMDB atualizados: {{updated}} atualizados, {{skipped}} ignorados",
+      "warning": "{{count}} itens não puderam ser correspondidos. Verifique o console para detalhes.",
+      "error": "Falha na atualização de metadados TMDB",
+      "defaultCategory": "esta categoria"
+    },
+    "errors": {
+      "load": "Falha ao carregar conteúdo: {{message}}"
+    },
+    "empty": {
+      "title": "Nenhum conteúdo encontrado",
+      "description": "Comece adicionando seu primeiro item de {{category}}."
+    },
+    "categories": {
+      "vod": {
+        "label": "Filmes",
+        "description": "Filmes e conteúdo de vídeo avulso"
+      },
+      "tv": {
+        "label": "Canais de TV",
+        "description": "Canais de TV ao vivo e transmissões"
+      },
+      "series": {
+        "label": "Séries",
+        "description": "Séries de TV com temporadas e episódios"
+      },
+      "events": {
+        "label": "Eventos",
+        "description": "Eventos ao vivo e programação especial"
+      },
+      "kids": {
+        "label": "Infantil",
+        "description": "Conteúdo para crianças e família"
+      },
+      "anime": {
+        "label": "Anime",
+        "description": "Animes e adaptações de mangá"
+      }
+    },
+    "actions": {
+      "addManualMovie": "Adicionar Filme Manual",
+      "addManualSeries": "Adicionar Série Manual",
+      "addManualKids": "Adicionar Infantil Manual",
+      "addManualAnime": "Adicionar Anime Manual",
+      "addTvChannel": "Adicionar Canal de TV",
+      "addEvent": "Adicionar Evento",
+      "addContent": "Adicionar Conteúdo",
+      "addFromTmdb": "Adicionar do TMDB",
+      "bulkImport": "Importação em Lote",
+      "manageCategories": "Gerenciar Categorias",
+      "scanFolders": "Escanear Pastas",
+      "fillMetadata": "Preencher Metadados",
+      "tvProviders": "Provedores de TV"
+    },
+    "table": {
+      "columns": {
+        "title": "Título",
+        "description": "Descrição",
+        "type": "Tipo",
+        "format": "Formato",
+        "year": "Ano",
+        "status": "Estado",
+        "created": "Criado",
+        "actions": "Ações"
+      },
+      "values": {
+        "tmdbId": "TMDB: {{id}}",
+        "noDescription": "Nenhuma descrição disponível",
+        "unknown": "Desconhecido",
+        "event": "Evento"
+      }
+    },
+    "pagination": {
+      "range": "Mostrando {{start}}-{{end}} de {{total}} itens",
+      "rowsPerPage": "Linhas por página",
+      "rows": "Linhas",
+      "updating": "Atualizando…",
+      "pageOf": "Página {{page}} de {{total}}"
+    }
+  },
+  "tickets": {
+    "errors": {
+      "sendMessage": "Falha ao enviar mensagem",
+      "sendMessageRetry": "Falha ao enviar mensagem. Tente novamente.",
+      "assign": "Falha ao atribuir ticket",
+      "assignRetry": "Falha ao atribuir ticket. Tente novamente.",
+      "delete": "Falha ao excluir ticket",
+      "deleteRetry": "Falha ao excluir ticket. Tente novamente.",
+      "updateStatus": "Falha ao atualizar status do ticket",
+      "updateStatusRetry": "Falha ao atualizar status do ticket. Tente novamente.",
+      "create": "Falha ao criar ticket",
+      "createRetry": "Falha ao criar ticket. Tente novamente.",
+      "validation": {
+        "titleDescriptionRequired": "Título e descrição são obrigatórios",
+        "resellerRequired": "Selecione um revendedor"
+      }
+    },
+    "confirm": {
+      "delete": "Tem certeza que deseja excluir este ticket? Esta ação não pode ser desfeita."
+    },
+    "filters": {
+      "status": {
+        "all": "Todos os Status"
+      },
+      "priority": {
+        "all": "Todas as Prioridades"
+      },
+      "unread": {
+        "all": "Todas as Mensagens",
+        "unread": "Mensagens não Lidas",
+        "read": "Mensagens Lidas"
+      }
+    },
+    "unreadMessages": "Mensagens não Lidas",
+    "stats": {
+      "total": "Total"
+    },
+    "actions": {
+      "panelTitle": "Ações de Administrador",
+      "assigning": "Atribuindo...",
+      "assignToMe": "Atribuir a Mim",
+      "changeStatus": "Alterar Status",
+      "internalMessage": "Enviar como mensagem interna",
+      "scheduleFollowUp": "Agendar Acompanhamento",
+      "reassignTicket": "Reatribuir Ticket"
+    },
+    "priority": {
+      "low": "Baixa",
+      "medium": "Média",
+      "high": "Alta",
+      "urgent": "Urgente"
+    },
+    "category": {
+      "technical": "Técnico",
+      "billing": "Faturamento",
+      "account": "Conta",
+      "content": "Conteúdo",
+      "other": "Outros"
+    },
+    "create": {
+      "title": "Criar Novo Ticket",
+      "description": "Crie um novo ticket de suporte para teste ou fins administrativos.",
+      "labels": {
+        "title": "Título",
+        "description": "Descrição",
+        "reseller": "Revendedor",
+        "priority": "Prioridade",
+        "category": "Categoria"
+      },
+      "placeholders": {
+        "title": "Digite o título do ticket",
+        "description": "Digite a descrição do ticket",
+        "reseller": "Selecione um revendedor"
+      },
+      "submitting": "Criando...",
+      "submit": "Criar Ticket"
+    },
+    "advanced": {
+      "title": "Filtros Avançados",
+      "description": "Aplique filtros adicionais para refinar sua busca de tickets.",
+      "labels": {
+        "dateFrom": "De",
+        "dateTo": "Até"
+      },
+      "helper": "Filtrar tickets por intervalo de data de criação. Deixe os campos vazios para mostrar todas as datas.",
+      "clear": "Limpar Tudo",
+      "apply": "Aplicar Filtros"
+    },
+    "sort": {
+      "title": "Opções de Ordenação",
+      "description": "Escolha como ordenar seus tickets.",
+      "labels": {
+        "sortBy": "Ordenar por",
+        "direction": "Direção"
+      },
+      "options": {
+        "newestFirst": "Mais recentes primeiro",
+        "oldestFirst": "Mais antigos primeiro",
+        "priority": "Prioridade",
+        "status": "Estado",
+        "unreadFirst": "Não lidos primeiro"
+      },
+      "direction": {
+        "descending": "Decrescente",
+        "ascending": "Crescente"
+      },
+      "reset": "Resetar para Padrão",
+      "apply": "Aplicar Ordenação"
+    }
+  },
+  "activityLogs": {
+    "title": "Logs de Atividade",
+    "subtitle": "Atividade completa do sistema e trilha de auditoria",
+    "tabs": {
+      "dashboard": "Painel",
+      "systemLogs": "Logs do Sistema",
+      "loginHistory": "Histórico de Login",
+      "viewingHistory": "Histórico de Visualização"
+    },
+    "filters": {
+      "actionType": "Tipo de Ação",
+      "allActions": "Todas as ações",
+      "startDate": "Data Inicial",
+      "endDate": "Data Final"
+    },
+    "errors": {
+      "loading": "Erro ao carregar logs: {{message}}",
+      "loadingFallback": "Falha ao carregar logs de atividade"
+    },
+    "noLogs": "Nenhum log de atividade encontrado.",
+    "table": {
+      "date": "Data",
+      "action": "Ação",
+      "user": "Usuário",
+      "target": "Alvo",
+      "description": "Descrição",
+      "credits": "Créditos"
+    },
+    "pagination": {
+      "showing": "Mostrando {{from}} até {{to}} de {{total}} logs",
+      "pageOf": "Página {{page}} de {{total_pages}}"
+    },
+    "actionTypes": {
+      "USER_CREATED": "Usuário Criado",
+      "USER_DELETED": "Usuário Excluído",
+      "RESELLER_CREATED": "Revendedor Criado",
+      "RESELLER_DELETED": "Revendedor Excluído",
+      "CREDIT_USED": "Crédito Usado",
+      "CREDIT_ASSIGNED": "Crédito Atribuído",
+      "SYSTEM_INIT": "Sistema Inicializado",
+      "LOGIN": "Conecte-se",
+      "LOGOUT": "Sair"
+    }
+  },
+  "viewingHistory": {
+    "title": "Histórico de Visualização",
+    "lastUpdated": "Última atualização: {{time}}",
+    "autoRefreshOn": "Auto-atualização: LIGADA",
+    "refreshNow": "Atualizar Agora",
+    "filters": {
+      "username": "Usuário",
+      "contentType": "Tipo de Conteúdo",
+      "allTypes": "Todos os tipos",
+      "ipAddress": "Endereço IP",
+      "startDate": "Data Inicial",
+      "endDate": "Data Final"
+    },
+    "placeholders": {
+      "searchUsername": "Buscar usuário...",
+      "ipAddress": "Endereço IP..."
+    },
+    "loading": "Carregando histórico de visualização...",
+    "errors": {
+      "loading": "Erro ao carregar histórico de visualização: {{message}}"
+    },
+    "noHistory": "Nenhum histórico de visualização encontrado.",
+    "unknown": "Desconhecido",
+    "table": {
+      "dateTime": "Data e Hora",
+      "user": "Usuário",
+      "contentType": "Tipo de Conteúdo",
+      "contentTitle": "Título do Conteúdo",
+      "info": "Informação",
+      "ipAddress": "Endereço IP",
+      "device": "Dispositivo"
+    },
+    "pagination": {
+      "showing": "Mostrando {{from}} até {{to}} de {{total}} sessões",
+      "pageOf": "Página {{page}} de {{total_pages}}"
+    }
+  },
+  "email": {
+    "title": "Configuração de E-mail",
+    "description": "Configure as definições de SMTP para recuperação de senha, notificações 2FA e outros e-mails",
+    "tabs": {
+      "settings": "Definições SMTP",
+      "test": "E-mail de Teste",
+      "guide": "Guia do Provedor"
+    },
+    "status": {
+      "title": "Status do Serviço de E-mail",
+      "description": "Ativar ou desativar o serviço de e-mail globalmente"
+    },
+    "server": {
+      "title": "Servidor SMTP",
+      "description": "Configure a conexão do seu servidor SMTP",
+      "preset": "Predefinição de Provedor",
+      "host": "Host SMTP",
+      "port": "Porta",
+      "username": "Usuário / E-mail",
+      "password": "Senha / Senha de App",
+      "enterPassword": "Digite a senha",
+      "tls": "Ativar TLS/STARTTLS (recomendado)",
+      "presets": {
+        "gmail": "Gmail",
+        "outlook": "Panorama",
+        "sendgrid": "SendGrid",
+        "mailgun": "Arma postal",
+        "amazonSes": "Amazon SES",
+        "zoho": "Zoho",
+        "custom": "Personalizado"
+      }
+    },
+    "identity": {
+      "title": "Identidade do E-mail",
+      "description": "Configure como seus e-mails aparecem para os destinatários",
+      "fromName": "Nome do Remetente",
+      "fromEmail": "E-mail do Remetente",
+      "appName": "Nome da Aplicação",
+      "appNameHint": "Usado em modelos de e-mail e assuntos",
+      "frontendUrl": "URL do Frontend",
+      "frontendUrlHint": "Usado para links de recuperação de senha"
+    },
+    "test": {
+      "title": "Enviar E-mail de Teste",
+      "description": "Verifique sua configuração SMTP enviando um e-mail de teste",
+      "disabled": "O serviço de e-mail está desativado. Ative-o na aba Definições SMTP primeiro.",
+      "recipient": "E-mail do Destinatário",
+      "send": "Enviar Teste",
+      "sending": "Enviando..."
+    },
+    "guide": {
+      "title": "Guia de Configuração do Provedor SMTP",
+      "description": "Instruções de configuração rápida para provedores de e-mail populares",
+      "providers": {
+        "gmail": {
+          "title": "Gmail/Google Workspace",
+          "steps": {
+            "1": "Vá para as configurações da sua Conta do Google",
+            "2": "Navegue até Segurança > Verificação em duas etapas (deve estar habilitada)",
+            "3": "Vá para Segurança > Senhas de aplicativos",
+            "4": "Gere uma nova senha de aplicativo para \"Mail\"",
+            "5": "Use essa senha de 16 caracteres aqui"
+          },
+          "example": "Anfitrião: smtp.gmail.com | Porto: 587 | TLS: Sim"
+        },
+        "sendgrid": {
+          "title": "SendGrid",
+          "steps": {
+            "1": "Crie uma conta SendGrid",
+            "2": "Vá para Configurações > Chaves de API",
+            "3": "Crie uma chave de API com permissões de \"Envio de e-mail\"",
+            "4": "Nome de usuário: \"apikey\" (texto literal)",
+            "5": "Senha: sua chave API"
+          },
+          "example": "Anfitrião: smtp.sendgrid.net | Porto: 587 | TLS: Sim"
+        },
+        "amazonSes": {
+          "title": "Amazon SES",
+          "steps": {
+            "1": "Verifique seu domínio ou e-mail no console SES",
+            "2": "Crie credenciais SMTP no SES",
+            "3": "Use o nome de usuário e senha SMTP gerados",
+            "4": "Use o endpoint da região correto"
+          },
+          "example": "Host: email-smtp.[região].amazonaws.com | Porto: 587 | TLS: Sim"
+        }
+      }
+    },
+    "actions": {
+      "save": "Salvar Configuração"
+    },
+    "success": {
+      "saved": "Configuração SMTP salva com sucesso"
+    },
+    "errors": {
+      "loadFailed": "Falha ao carregar configuração SMTP",
+      "saveFailed": "Falha ao salvar configuração",
+      "testFailed": "Falha ao enviar e-mail de teste"
+    }
+  },
+  "twoFactor": {
+    "title": "Autenticação de Dois Fatores",
+    "description": "Adicione uma camada extra de segurança à sua conta",
+    "status": {
+      "enabled": "2FA está ativado",
+      "disabled": "2FA não está ativado",
+      "notAvailable": "A autenticação de dois fatores está disponível apenas para contas de administrador e revendedor"
+    },
+    "setup": {
+      "title": "Configurar Autenticação de Dois Fatores",
+      "scanQR": "Escaneie este código QR com seu aplicativo autenticador",
+      "manualEntry": "Ou digite este código manualmente:",
+      "verifyCode": "Digite o código de 6 dígitos do seu aplicativo para verificar",
+      "placeholder": "Digite o código de 6 dígitos",
+      "verify": "Verificar e Ativar",
+      "verifying": "Verificando..."
+    },
+    "backupCodes": {
+      "title": "Códigos de Reserva",
+      "description": "Guarde estes códigos de reserva em um lugar seguro. Cada código só pode ser usado uma vez.",
+      "copy": "Copiar Códigos",
+      "copied": "Copiado!",
+      "regenerate": "Regenerar Códigos",
+      "regenerating": "Regenerando..."
+    },
+    "disable": {
+      "title": "Desativar 2FA",
+      "description": "Digite seu código 2FA ou um código de reserva para desativar a autenticação de dois fatores",
+      "button": "Desativar 2FA",
+      "disabling": "Desativando..."
+    },
+    "errors": {
+      "setupFailed": "Falha ao configurar 2FA",
+      "verifyFailed": "Código inválido. Tente novamente.",
+      "disableFailed": "Falha ao desativar 2FA",
+      "loadFailed": "Falha ao carregar status do 2FA"
+    }
+  }
+}

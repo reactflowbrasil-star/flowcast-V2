@@ -1,0 +1,46 @@
+{
+  "title": "Specialized Content Management",
+  "tabs": {
+    "kids": "Kids",
+    "anime": "Anime",
+    "events": "Events",
+    "tv": "TV",
+    "movies": "Movies",
+    "series": "Series"
+  },
+  "kids": {
+    "addContent": "Add Kids Content",
+    "existingContent": "Existing Kids Content ({{count}})",
+    "year": "Year: {{year}}",
+    "active": "Active: {{status}}"
+  },
+  "anime": {
+    "placeholder": "Anime Content Management - Similar structure to Kids Content"
+  },
+  "events": {
+    "placeholder": "Events Management - With scheduling functionality"
+  },
+  "tvChannels": {
+    "placeholder": "TV Channels Management - Live channel management"
+  },
+  "movies": {
+    "placeholder": "Movies Management - VOD content management"
+  },
+  "seriesTab": {
+    "placeholder": "Series Management - With seasons and episodes"
+  },
+  "form": {
+    "title": "Title",
+    "description": "Description",
+    "streamUrl": "Stream URL",
+    "imageUrl": "Image URL",
+    "tmdbId": "TMDB ID",
+    "year": "Year",
+    "creating": "Creating...",
+    "createContent": "Create Content"
+  },
+  "status": {
+    "yes": "Yes",
+    "no": "No"
+  }
+}

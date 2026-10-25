@@ -1,0 +1,36 @@
+{
+  "tvCategories": {
+    "title": "Manage TV Channel Categories",
+    "description": "Keep the default categories and extend them with your own labels. Categories in use cannot be removed.",
+    "inputPlaceholder": "Create a custom category (e.g. Premium Sports)",
+    "addCategory": "Add Category",
+    "refreshing": "Refreshing…",
+    "loading": "Loading categories…",
+    "none": "You have not created any custom categories yet.",
+    "default": "Default",
+    "removeTitle": "Remove category",
+    "removeDescription": "This action cannot be undone. The category \"{{name}}\" will be removed.",
+    "removeCategory": "Remove Category",
+    "editCategory": "Edit category",
+    "inUseTitle": "Category currently in use",
+    "created": "Category created",
+    "updated": "Category updated",
+    "removed": "Category removed",
+    "nameRequired": "Category name is required",
+    "helpText": "Default categories stay pinned at the top. Custom labels help you organize providers or regions however you need.",
+    "protectionNote": "Categories in use are protected to avoid accidental removal.",
+    "tableHeaders": {
+      "category": "Category",
+      "usage": "Usage",
+      "created": "Created",
+      "actions": "Actions"
+    },
+    "categoryCount_one": "{{count}} category",
+    "categoryCount_other": "{{count}} categories",
+    "usageLabel": {
+      "channel_one": "{{count}} channel",
+      "channel_other": "{{count}} channels",
+      "notInUse": "Not in use"
+    }
+  }
+}

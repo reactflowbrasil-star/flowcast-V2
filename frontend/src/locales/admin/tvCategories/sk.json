@@ -1,0 +1,37 @@
+{
+  "tvCategories": {
+    "title": "Spravovať kategórie TV kanálov",
+    "description": "Ponechajte predvolené kategórie a rozširujte ich o vlastné označenia. Používané kategórie nie je možné odstrániť.",
+    "inputPlaceholder": "Vytvoriť vlastnú kategóriu (napr. Prémiový šport)",
+    "addCategory": "Pridať kategóriu",
+    "refreshing": "Obnovuje sa…",
+    "loading": "Načítavajú sa kategórie…",
+    "none": "Zatiaľ ste nevytvorili žiadne vlastné kategórie.",
+    "default": "Predvolené",
+    "removeTitle": "Odstrániť kategóriu",
+    "removeDescription": "Túto akciu nie je možné vrátiť späť. Kategória \"{{name}}\" bude odstránená.",
+    "removeCategory": "Odstrániť kategóriu",
+    "editCategory": "Upraviť kategóriu",
+    "inUseTitle": "Kategória sa práve používa",
+    "created": "Kategória vytvorená",
+    "updated": "Kategória aktualizovaná",
+    "removed": "Kategória odstránená",
+    "nameRequired": "Názov kategórie je povinný",
+    "helpText": "Predvolené kategórie zostávajú pripnuté navrchu. Vlastné štítky vám pomôžu organizovať poskytovateľov alebo regióny podľa potreby.",
+    "protectionNote": "Používané kategórie sú chránené, aby sa zabránilo náhodnému odstráneniu.",
+    "tableHeaders": {
+      "category": "Kategória",
+      "usage": "Použitie",
+      "created": "Vytvorené",
+      "actions": "Akcie"
+    },
+    "categoryCount_one": "{{count}} kategória",
+    "categoryCount_few": "{{count}} kategórie",
+    "categoryCount_other": "{{count}} kategórií",
+    "usageLabel": {
+      "channel_one": "{{count}} kanál",
+      "channel_other": "{{count}} kanálov",
+      "notInUse": "Nepoužíva sa"
+    }
+  }
+}

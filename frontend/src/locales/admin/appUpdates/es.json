@@ -1,0 +1,150 @@
+{
+    "appUpdates": {
+        "title": "Actualizaciones de Apps",
+        "description": "Gestionar y distribuir actualizaciones para aplicaciones de TV, Android e iOS",
+        "tabs": {
+            "overview": "Resumen",
+            "create": "Crear Actualización",
+            "history": "Historial de Actualizaciones"
+        },
+        "platforms": {
+            "android_tv": "Android TV",
+            "android_mobile": "Android Móvil",
+            "ios": "iOS"
+        },
+        "updateType": {
+            "title": "Tipo de Actualización",
+            "suggested": "Sugerida",
+            "mandatory": "Obligatoria",
+            "suggestedDescription": "Los usuarios pueden omitir esta actualización y seguir usando la app",
+            "mandatoryDescription": "Los usuarios deben actualizar para continuar usando la app"
+        },
+        "status": {
+            "active": "Activa",
+            "inactive": "Inactiva",
+            "draft": "Borrador",
+            "archived": "Archivada"
+        },
+        "form": {
+            "version": "Número de Versión",
+            "versionPlaceholder": "ej., 2.1.0",
+            "versionCode": "Código de Versión",
+            "versionCodePlaceholder": "ej., 21",
+            "versionCodeHelp": "Número de compilación numérico para comparación (solo Android)",
+            "platform": "Plataforma",
+            "selectPlatform": "Seleccionar plataforma",
+            "updateType": "Tipo de Actualización",
+            "downloadUrl": "URL de Descarga",
+            "downloadUrlPlaceholder": "https://ejemplo.com/app.apk",
+            "downloadUrlHelp": "Enlace directo al APK o URL de la tienda de apps",
+            "storeUrl": "URL de Tienda (opcional)",
+            "storeUrlPlaceholder": "https://play.google.com/store/apps/details?id=...",
+            "storeUrlHelp": "Enlace a la página de Play Store o App Store",
+            "releaseNotes": "Notas de la Versión",
+            "releaseNotesPlaceholder": "Novedades de esta versión...",
+            "releaseNotesHelp": "Describe los cambios y nuevas características (soporta Markdown)",
+            "minSdkVersion": "Versión Mínima del SDK",
+            "minSdkVersionPlaceholder": "ej., 21",
+            "fileSize": "Tamaño del Archivo",
+            "fileSizePlaceholder": "ej., 45 MB",
+            "publishDate": "Fecha de Publicación",
+            "status": "Estado"
+        },
+        "actions": {
+            "create": "Crear Actualización",
+            "creating": "Creando...",
+            "edit": "Editar",
+            "delete": "Eliminar",
+            "archive": "Archivar",
+            "activate": "Activar",
+            "deactivate": "Desactivar",
+            "duplicate": "Duplicar",
+            "preview": "Vista Previa",
+            "save": "Guardar Cambios",
+            "saving": "Guardando...",
+            "cancel": "Cancelar"
+        },
+        "table": {
+            "version": "Versión",
+            "platform": "Plataforma",
+            "type": "Tipo",
+            "status": "Estado",
+            "releaseDate": "Fecha de Lanzamiento",
+            "downloads": "Descargas",
+            "actions": "Acciones"
+        },
+        "overview": {
+            "title": "Resumen de Actualizaciones",
+            "description": "Actualizaciones activas actuales por plataforma",
+            "noActiveUpdates": "Sin actualizaciones activas",
+            "latestVersion": "Última Versión",
+            "lastUpdated": "Última Actualización",
+            "totalDownloads": "Descargas Totales",
+            "activeUsers": "Usuarios Activos",
+            "updateRate": "Tasa de Actualización",
+            "pendingUpdates": "Actualizaciones Pendientes"
+        },
+        "stats": {
+            "totalUpdates": "Total de Actualizaciones",
+            "activeUpdates": "Actualizaciones Activas",
+            "mandatoryUpdates": "Actualizaciones Obligatorias",
+            "suggestedUpdates": "Actualizaciones Sugeridas",
+            "totalDownloads": "Descargas Totales",
+            "updateAdoption": "Adopción de Actualizaciones"
+        },
+        "confirm": {
+            "delete": "¿Estás seguro de que deseas eliminar esta actualización? Esta acción no se puede deshacer.",
+            "archive": "¿Estás seguro de que deseas archivar esta actualización? Los usuarios ya no la verán.",
+            "activate": "¿Activar esta actualización? Los usuarios comenzarán a recibir notificaciones de actualización.",
+            "deactivate": "¿Desactivar esta actualización? Los usuarios ya no recibirán notificaciones para esta versión."
+        },
+        "empty": {
+            "title": "No Se Encontraron Actualizaciones",
+            "description": "Crea tu primera actualización de app para comenzar a distribuir nuevas versiones a los usuarios.",
+            "noHistory": "No hay historial de actualizaciones disponible.",
+            "noUpdatesForPlatform": "No hay actualizaciones configuradas para {{platform}}"
+        },
+        "success": {
+            "created": "Actualización creada exitosamente",
+            "updated": "Actualización guardada exitosamente",
+            "deleted": "Actualización eliminada exitosamente",
+            "activated": "Actualización activada exitosamente",
+            "deactivated": "Actualización desactivada exitosamente",
+            "archived": "Actualización archivada exitosamente"
+        },
+        "errors": {
+            "loadFailed": "Error al cargar actualizaciones",
+            "createFailed": "Error al crear actualización",
+            "updateFailed": "Error al guardar actualización",
+            "deleteFailed": "Error al eliminar actualización",
+            "versionRequired": "El número de versión es obligatorio",
+            "platformRequired": "La plataforma es obligatoria",
+            "downloadUrlRequired": "La URL de descarga es obligatoria para actualizaciones que no son de tienda",
+            "versionExists": "Esta versión ya existe para la plataforma seleccionada"
+        },
+        "filters": {
+            "allPlatforms": "Todas las Plataformas",
+            "allTypes": "Todos los Tipos",
+            "allStatuses": "Todos los Estados",
+            "searchPlaceholder": "Buscar por versión..."
+        },
+        "preview": {
+            "title": "Vista Previa de Actualización",
+            "description": "Así es como aparecerá el diálogo de actualización a los usuarios",
+            "updateAvailable": "Actualización Disponible",
+            "newVersion": "¡Una nueva versión está disponible!",
+            "currentVersion": "Versión actual:",
+            "newVersionLabel": "Nueva versión:",
+            "whatsNew": "Novedades",
+            "downloadNow": "Descargar Ahora",
+            "remindLater": "Recordar Después",
+            "mandatoryWarning": "Esta actualización es obligatoria para continuar usando la app."
+        },
+        "history": {
+            "title": "Historial de Actualizaciones",
+            "description": "Ver todas las actualizaciones anteriores y su rendimiento",
+            "downloadTrend": "Tendencia de Descargas",
+            "adoptionRate": "Tasa de Adopción"
+        }
+    }
+}

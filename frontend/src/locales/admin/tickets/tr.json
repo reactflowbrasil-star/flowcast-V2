@@ -1,0 +1,127 @@
+{
+  "tickets": {
+    "errors": {
+      "sendMessage": "Mesaj gönderilemedi",
+      "sendMessageRetry": "Mesaj gönderilemedi. Lütfen tekrar deneyin.",
+      "assign": "Bilet atanamadı",
+      "assignRetry": "Bilet atanamadı. Lütfen tekrar deneyin.",
+      "delete": "Bilet silinemedi",
+      "deleteRetry": "Bilet silinemedi. Lütfen tekrar deneyin.",
+      "updateStatus": "Bilet durumu güncellenemedi",
+      "updateStatusRetry": "Bilet durumu güncellenemedi. Lütfen tekrar deneyin.",
+      "create": "Bilet oluşturulamadı",
+      "createRetry": "Bilet oluşturulamadı. Lütfen tekrar deneyin.",
+      "validation": {
+        "titleDescriptionRequired": "Başlık ve açıklama gereklidir",
+        "resellerRequired": "Lütfen bir bayi seçin"
+      }
+    },
+    "confirm": {
+      "delete": "Bu bileti silmek istediğinizden emin misiniz? Bu işlem geri alınamaz."
+    },
+    "filters": {
+      "status": {
+        "all": "Tüm Durumlar"
+      },
+      "priority": {
+        "all": "Tüm Öncelikler"
+      },
+      "unread": {
+        "all": "Tüm Mesajlar",
+        "unread": "Okunmamış Mesajlar",
+        "read": "Okunmuş Mesajlar"
+      }
+    },
+    "placeholders": {
+      "filterByStatus": "Duruma göre filtrele",
+      "filterByPriority": "Önceliğe göre filtrele",
+      "filterByReadStatus": "Okunma durumuna göre filtrele"
+    },
+    "unreadMessages": "Okunmamış Mesajlar",
+    "stats": {
+      "total": "Toplam"
+    },
+    "actions": {
+      "panelTitle": "Yönetici İşlemleri",
+      "assigning": "Atanıyor...",
+      "assignToMe": "Bana Ata",
+      "changeStatus": "Durumu Değiştir",
+      "internalMessage": "Dahili mesaj olarak gönder",
+      "scheduleFollowUp": "Takip Planla",
+      "reassignTicket": "Bileti Yeniden Ata"
+    },
+    "priority": {
+      "low": "Düşük",
+      "medium": "Orta",
+      "high": "Yüksek",
+      "urgent": "Acil"
+    },
+    "status": {
+      "open": "Açık",
+      "in_progress": "Devam Ediyor",
+      "waiting_response": "Cevap Bekleniyor",
+      "resolved": "Çözüldü",
+      "closed": "Kapalı"
+    },
+    "category": {
+      "technical": "Teknik",
+      "billing": "Fatura",
+      "account": "Hesap",
+      "content": "İçerik",
+      "other": "Diğer"
+    },
+    "create": {
+      "title": "Yeni Bilet Oluştur",
+      "description": "Test veya yönetim amaçlı yeni bir destek bileti oluşturun.",
+      "labels": {
+        "title": "Başlık",
+        "description": "Açıklama",
+        "reseller": "Bayi",
+        "priority": "Öncelik",
+        "category": "Kategori"
+      },
+      "placeholders": {
+        "title": "Bilet başlığını girin",
+        "description": "Bilet açıklamasını girin",
+        "reseller": "Bir bayi seçin"
+      },
+      "submitting": "Oluşturuluyor...",
+      "submit": "Bilet Oluştur"
+    },
+    "advanced": {
+      "title": "Gelişmiş Filtreler",
+      "description": "Aramanızı daraltmak için ek filtreler uygulayın.",
+      "labels": {
+        "dateFrom": "Başlangıç Tarihi",
+        "dateTo": "Bitiş Tarihi"
+      },
+      "helper": "Oluşturulma tarihine göre filtrele. Tümünü görmek için boş bırakın.",
+      "clear": "Tümünü Temizle",
+      "apply": "Filtreleri Uygula"
+    },
+    "sort": {
+      "title": "Sıralama Seçenekleri",
+      "description": "Biletlerinizi nasıl sıralayacağınızı seçin.",
+      "labels": {
+        "sortBy": "Sıralama Ölçütü",
+        "direction": "Yön"
+      },
+      "options": {
+        "newestFirst": "En Yeni",
+        "oldestFirst": "En Eski",
+        "priority": "Öncelik",
+        "status": "Durum",
+        "unreadFirst": "Önce Okunmamış"
+      },
+      "direction": {
+        "descending": "Azalan",
+        "ascending": "Artan"
+      },
+      "reset": "Varsayılana Dön",
+      "apply": "Sıralamayı Uygula"
+    },
+    "common": {
+      "cancel": "İptal"
+    }
+  }
+}

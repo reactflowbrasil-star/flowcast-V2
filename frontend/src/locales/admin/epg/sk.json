@@ -1,0 +1,18 @@
+{
+  "errors": {
+    "loadingSources": "Chyba pri načítaní zdrojov EPG",
+    "nameUrlRequired": "Názov a URL sú povinné",
+    "createFailed": "Nepodarilo sa vytvoriť zdroj",
+    "updateFailed": "Nepodarilo sa aktualizovať zdroj",
+    "deleteFailed": "Nepodarilo sa odstrániť zdroj",
+    "fetchChannelsFailed": "Nepodarilo sa načítať kanály"
+  },
+  "units": {
+    "minutes": "min"
+  },
+  "labels": {
+    "timezone": "TZ:"
+  },
+  "confirmDelete": "Odstrániť zdroj EPG \"{{name}}\"?",
+  "inactive": "(neaktívne)"
+}

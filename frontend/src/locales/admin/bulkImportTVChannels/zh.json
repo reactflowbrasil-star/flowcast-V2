@@ -1,0 +1,33 @@
+{
+  "bulkImportTVChannels": {
+    "title": "批量导入 — 电视频道",
+    "description": "粘贴您的 M3U 列表。全局字段适用于所有频道。",
+    "labels": {
+      "format": "格式",
+      "provider": "提供商（全局）",
+      "globalDescription": "描述（全局）",
+      "country": "国家（可选）",
+      "startChannelNumber": "起始频道号（可选）",
+      "m3uList": "M3U 列表"
+    },
+    "placeholders": {
+      "provider": "例如：提供商A、提供商B",
+      "description": "所有频道的描述",
+      "country": "例如：US、AR、MX",
+      "startChannelNumber": "留空则自动计算"
+    },
+    "buttons": {
+      "cancel": "取消",
+      "chooseFile": "选择 M3U 文件",
+      "import": "导入"
+    },
+    "validation": {
+      "pasteM3uContent": "请粘贴 M3U 内容",
+      "mustBePositiveNumber": "必须是正数",
+      "invalidData": "无效数据",
+      "bulkImportFailed": "批量导入失败",
+      "unknownError": "未知错误",
+      "fileReadFailed": "无法读取所选文件"
+    }
+  }
+}

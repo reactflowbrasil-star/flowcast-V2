@@ -1,0 +1,24 @@
+{
+  "overview": {
+    "totalUsers": "Toplam Kullanıcı",
+    "allSystemUsers": "Sistemdeki tüm kullanıcılar",
+    "contentItems": "İçerik Öğeleri",
+    "moviesTvSeries": "Filmler, TV dizileri ve daha fazlası",
+    "activeResellers": "Aktif Bayiler",
+    "currentlyActive": "Şu anda aktif",
+    "systemStatus": "Sistem Durumu",
+    "allSystemsOperational": "Tüm sistemler çalışıyor",
+    "quickActions": "Hızlı İşlemler",
+    "commonTasks": "En yaygın yönetim görevlerine git",
+    "manageResellers": "Bayileri Yönet",
+    "manageContent": "İçeriği Yönet",
+    "systemConfig": "Sistem Yapılandırması",
+    "viewReports": "Raporları Görüntüle",
+    "systemHealth": "Sistem Sağlığı",
+    "systemStatusDescription": "Kritik bileşenler için gerçek zamanlı hizmet durumu",
+    "apiServices": "API Hizmetleri",
+    "operational": "Çalışıyor",
+    "database": "Veritabanı",
+    "contentDelivery": "İçerik Dağıtımı"
+  }
+}

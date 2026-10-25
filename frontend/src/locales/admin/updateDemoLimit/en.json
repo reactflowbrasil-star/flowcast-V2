@@ -1,0 +1,29 @@
+{
+  "updateDemoLimit": {
+    "validation": {
+      "minLimit": "Demo limit must be 0 or greater",
+      "maxLimit": "Demo limit cannot exceed 100"
+    },
+    "title": "Update Demo Limit for {{username}}",
+    "description": "Set the daily limit for demo users that this reseller can create.",
+    "currentStatus": "Current Status",
+    "currentLimit": "Current Limit:",
+    "demosPerDay": "demos/day",
+    "createdToday": "Created Today:",
+    "dailyDemoLimit": "Daily Demo Limit",
+    "enterDailyLimit": "Enter daily demo limit",
+    "helpText": "Number of demo users this reseller can create per day (0-100)",
+    "demoUserInfo": "Demo User Information",
+    "duration": "Duration:",
+    "durationValue": "Temporary from creation",
+    "access": "Access:",
+    "accessValue": "Full premium features",
+    "devices": "Devices:",
+    "devicesValue": "Up to 3 concurrent devices",
+    "autoCleanup": "Auto-cleanup:",
+    "autoCleanupValue": "Account automatically deleted after expiration",
+    "cancel": "Cancel",
+    "updating": "Updating...",
+    "updateDemoLimit": "Update Demo Limit"
+  }
+}

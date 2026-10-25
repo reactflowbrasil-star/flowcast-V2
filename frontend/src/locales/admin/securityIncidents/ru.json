@@ -1,0 +1,43 @@
+{
+  "title": "Инциденты безопасности ({{total}})",
+  "noneFound": "Инцидентов не найдено",
+  "itemsPerPage": "Элементов на странице",
+  "searchByUsernamePlaceholder": "Поиск по имени пользователя...",
+  "admin": {
+    "securityIncidents": {
+      "confirmDelete": "Удалить этот инцидент безопасности?",
+      "filterType": "Тип инцидента",
+      "allTypes": "Все типы",
+      "bruteForce": "Атака методом подбора",
+      "suspiciousActivity": "Подозрительная активность",
+      "multipleDevices": "Несколько устройств",
+      "tokenManipulation": "Манипуляция с токеном",
+      "searchByUsernamePlaceholder": "Поиск по имени пользователя...",
+      "itemsPerPage": "Элементов на странице",
+      "title": "Инциденты безопасности ({{total}})",
+      "noneFound": "Инцидентов не найдено",
+      "deviceId": "ID устройства",
+      "ipAddress": "IP",
+      "deleteTitle": "Удалить инцидент",
+      "showingPage": "Страница {{page}} из {{totalPages}}"
+    }
+  },
+  "notifications": {
+    "security": {
+      "errorLoadingIncidents": "Ошибка загрузки инцидентов"
+    },
+    "securityIncident": {
+      "deleted": "Инцидент удален",
+      "deleteFailed": "Ошибка удаления инцидента"
+    }
+  },
+  "common": {
+    "username": "Имя пользователя",
+    "type": "Тип",
+    "date": "Дата",
+    "actions": "Действия",
+    "previous": "Назад",
+    "next": "Вперед",
+    "none": "Нет"
+  }
+}

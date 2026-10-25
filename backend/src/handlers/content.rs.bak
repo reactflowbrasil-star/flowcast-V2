@@ -1,0 +1,106 @@
+use axum::{
+    routing::{get, post, put, patch, delete},
+    Router,
+};
+use crate::{AppState, services::ContentService};
+
+pub mod content;
+pub use content::*;
+
+pub fn content_routes() -> Router<crate::AppState> {
+    Router::new()
+        .route("/categories", get(get_categories))
+        .route("/categories/:id", get(get_category_by_id))
+        .route("/", get(get_content))
+        .route("/search", get(search_content))
+        .route("/by-genre", get(get_content_by_genre))
+        .route("/:id", get(get_content_by_id))
+        .route("/:id/category", put(assign_content_to_category))
+        .route("/genres", get(get_all_genres))
+}
+
+pub fn delivery_routes() -> Router<AppState> {
+    Router::new()
+        .route(
+            "/content/category/:id",
+            get(get_enhanced_content_by_category),
+        )
+        .route("/content/search", get(enhanced_search_content))
+}
+
+pub fn movies_routes() -> Router<ContentService> {
+    Router::new().route("/", get(get_movies))
+}
+
+pub fn tv_routes() -> Router<ContentService> {
+    Router::new()
+        .route("/channels", get(get_tv_channels))
+        .route("/categories", get(get_tv_channel_categories))
+}
+
+pub fn admin_content_routes() -> Router<ContentService> {
+    Router::new()
+        .route("/", get(admin_get_content))
+        .route("/categories", post(create_category))
+        .route("/categories/:id", put(update_category))
+        .route("/categories/:id", delete(delete_category))
+        .route("/", post(create_content_manual))
+        .route("/:id/status", put(toggle_content_status))
+        .route("/tmdb", post(create_content_from_tmdb))
+        .route("/tmdb/enrich", post(refresh_tmdb_metadata))
+        .route(
+            "/tmdb/enrich-single",
+            post(enrich_content_tmdb),
+        )
+        .route("/movies", post(create_movie))
+        .route("/content/bulk-import", post(bulk_import_movies))
+        .route("/tv-channels", post(create_tv_channel))
+        .route("/tv-channels/bulk", post(bulk_import_tv_channels))
+        .route("/bulk-delete", post(bulk_delete_content))
+        .route(
+            "/tv-channel-categories",
+            get(list_admin_tv_channel_categories),
+        )
+        .route(
+            "/tv-channel-categories",
+            post(create_admin_tv_channel_category),
+        )
+        .route(
+            "/tv-channel-categories/:id",
+            put(update_admin_tv_channel_category),
+        )
+        .route(
+            "/tv-channel-categories/:id",
+            delete(delete_admin_tv_channel_category),
+        )
+        .route(
+            "/tv-channels/:id/epg",
+            get(get_tv_channel_epg),
+        )
+        .route(
+            "/tv-channels/:id/epg",
+            patch(update_tv_channel_epg),
+        )
+        .route("/tv-channels/:id", put(update_tv_channel))
+        .route("/tv-providers", get(list_tv_providers_admin))
+        .route(
+            "/tv-providers",
+            post(create_tv_provider_admin),
+        )
+        .route(
+            "/tv-providers/:id",
+            delete(delete_tv_provider_admin),
+        )
+        .route(
+            "/tv-providers/:id/sync",
+            post(sync_tv_provider_admin),
+        )
+        .route(
+            "/:id/edit",
+            get(get_content_for_edit),
+        )
+        .route(
+            "/:id/edit-with-seasons",
+            get(get_content_with_seasons_for_edit),
+        )
+}

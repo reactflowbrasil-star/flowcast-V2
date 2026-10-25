@@ -1,0 +1,66 @@
+{
+  "uiBulk": {
+    "reseller": {
+      "form": {
+        "usernamePlaceholder": "Zadajte používateľské meno",
+        "passwordPlaceholder": "Zadajte číselné heslo (4-10 číslic)",
+        "emailPlaceholder": "Zadajte email"
+      }
+    }
+  },
+  "resellerManagement": {
+    "title": "Správa predajcov",
+    "subtitle": "Vytvárajte a spravujte predajcov s kreditným systémom",
+    "createReseller": "Vytvoriť predajcu",
+    "createResellerDescription": "Vytvorte nový účet predajcovi s počiatočnými kreditmi a limitmi pre demo.",
+    "resetAllCounters": "Resetovať všetky počítadlá",
+    "resetAllCountersConfirm": "Ste si istí, že chcete resetovať denné počítadlá demo pre všetkých predajcov? Týmto sa nastavia všetky počítadlá na 0.",
+    "searchByUsernameOrEmail": "Hľadať podľa mena alebo emailu...",
+    "noResellersYet": "Zatiaľ žiadni predajcovia",
+    "createYourFirstReseller": "Vytvorte svojho prvého predajcu a začnite spravovať koncových používateľov.",
+    "endUsersTitle": "Koncoví používatelia",
+    "endUsersSubtitle": "Vytvárajte a spravujte koncových používateľov u všetkých predajcov",
+    "createEndUser": "Vytvoriť používateľa",
+    "filters": "Filtre",
+    "searchByUsername": "Hľadať podľa mena...",
+    "searchByEmail": "Hľadať podľa emailu...",
+    "searchByReseller": "Hľadať podľa predajcu...",
+    "noEndUsersYet": "Zatiaľ žiadni koncoví používatelia",
+    "viewUsersDialog": {
+      "title": "Koncoví Používatelia - {{username}}",
+      "description": "Zobraziť všetkých používateľov vytvorených týmto predajcom. Títo používatelia budú presunutí k správcovi, ak bude predajca odstránený.",
+      "totalUsers": "Celkom Používateľov",
+      "subtitle": "Vytvorených používateľov",
+      "totalDevices": "Celkom Zariadení",
+      "totalDevicesSubtitle": "Pridelených zariadení",
+      "creditCost": "Cena v Kreditoch",
+      "creditCostSubtitle": "Celkom použitých kreditov",
+      "sectionTitle": "Podrobnosti Používateľa",
+      "empty": "Tento predajca zatiaľ nemá žiadnych používateľov.",
+      "active": "Aktívny",
+      "inactive": "Neaktívny",
+      "devices": "zariadení",
+      "credits": "kreditov",
+      "expires": "Vyprší",
+      "never": "Nikdy",
+      "created": "Vytvorené",
+      "transferNotice": {
+        "title": "Oznámenie o prevode",
+        "description": "Ak bude tento predajca odstránený, všetkých {{count}} používateľov bude automaticky presunutých na účet správcu. Používatelia si zachovajú svoje aktuálne nastavenia a stav predplatného."
+      }
+    },
+    "resetPasswordDialog": {
+      "confirmContinue": "Naozaj chcete pokračovať?",
+      "copy": "Kopírovať",
+      "errorTitle": "Chyba pri resetovaní hesla",
+      "generatedLabel": "Vygenerované heslo:",
+      "generatedNotSaved": "Heslo bolo vygenerované, ale nebolo uložené kvôli chybe:",
+      "importantLabel": "Dôležité:",
+      "newPasswordLabel": "Nové heslo:",
+      "resetForUser": "Obnoviť heslo pre {{username}}",
+      "saveImmediately": "Prosím, ihneď si toto heslo uložte. Nebude sa znova zobrazovať a nedá sa obnoviť.",
+      "successForUser": "Heslo pre {{username}} bolo úspešne obnovené.",
+      "tryAgainQuestion": "Chceli by ste to skúsiť znova?"
+    }
+  }
+}

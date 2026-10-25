@@ -1,0 +1,57 @@
+# ===========================================
+# BRANDING CONFIGURATION
+# ===========================================
+# App name displayed throughout the application
+# Default: StreamCore
+# branding.name=Your App Name
+
+# Android applicationId used when installing/running the app.
+# Keep this fixed to StreamCore package to avoid launch mismatches.
+# Required: com.streamcore.tv
+# application.id=com.streamcore.tv
+
+# ===========================================
+# BACKEND URL CONFIGURATION
+# ===========================================
+# Set your backend server URL (without /api suffix)
+# Priority: local.properties > IPTV_BACKEND_URL env var > default
+# Default: https://streamcore.iptv.com.tv
+# backend.url=https://streamcore.iptv.com.tv
+
+# Examples:
+# For development with emulator connecting to host machine:
+# backend.url=http://10.0.2.2:3000
+#
+# For production:
+# backend.url=https://streamcore.iptv.com.tv
+#
+# For local network testing:
+# backend.url=http://192.168.1.100:3000
+
+# ===========================================
+# GENERATED BUILD CONFIG FIELDS
+# ===========================================
+# The following fields are auto-generated from the above:
+# - BuildConfig.BRANDING_NAME = branding.name
+# - BuildConfig.API_BASE_URL = backend.url + "/api/"
+# - BuildConfig.STREAM_BASE_URL = backend.url + "/stream/"
+# - BuildConfig.DEFAULT_LANGUAGE = default.language
+# - R.string.branding_name = branding.name (for XML usage)
+
+# ===========================================
+# DEFAULT LANGUAGE CONFIGURATION
+# ===========================================
+# Set the default app language (used when user hasn't selected a preference)
+# Available values: system, en, es, pt, zh
+# Default: system (uses device language)
+# default.language=en
+
+# ===========================================
+# API RESPONSE ENCRYPTION
+# ===========================================
+# AES-256-GCM key for end-user API response encryption (64 hex chars = 32 bytes)
+# Generate with: openssl rand -hex 32
+# Must match the API_ENCRYPTION_KEY in the backend .env file
+# When set, all API responses for end-users are encrypted.
+# Admin and reseller responses remain in plain JSON.
+# api.encryption_key=

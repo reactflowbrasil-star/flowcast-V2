@@ -1,0 +1,56 @@
+{
+  "mediaWatcher": {
+    "creating": "Создание...",
+    "title": "Настройки мониторинга медиа",
+    "description": "Автоматически сканирует папки на наличие нового контента. Работает как \"ls\": быстрая проверка только новых папок.",
+    "addButton": "Добавить папку",
+    "empty": "Папки не настроены. Добавьте папку, чтобы начать.",
+    "deleteConfirm": "Вы уверены, что хотите удалить эту папку?",
+    "form": {
+      "folderPath": "Путь к папке",
+      "folderPathPlaceholder": "/mnt/media/movies",
+      "mediaType": "Тип медиа",
+      "checkInterval": "Интервал проверки (минуты)"
+    },
+    "createDialog": {
+      "title": "Добавить папку",
+      "description": "Настройте папку для автоматического сканирования нового контента"
+    },
+    "editDialog": {
+      "title": "Редактировать папку",
+      "description": "Обновить настройки папки",
+      "updating": "Обновление...",
+      "update": "Обновить"
+    },
+    "mediaTypes": {
+      "movies": "Фильмы",
+      "series": "Сериалы",
+      "kids": "Детское",
+      "anime": "Аниме"
+    },
+    "table": {
+      "status": "Статус",
+      "folderPath": "Путь к папке",
+      "type": "Тип",
+      "interval": "Интервал",
+      "lastCheck": "Последняя проверка",
+      "actions": "Действия",
+      "lastCheckNever": "Никогда",
+      "lastCheckInvalid": "Некорректная дата"
+    },
+    "toasts": {
+      "createSuccess": "Папка создана",
+      "createFailed": "Не удалось создать папку",
+      "updateSuccess": "Папка обновлена",
+      "updateFailed": "Не удалось обновить папку",
+      "deleteSuccess": "Папка удалена",
+      "deleteFailed": "Не удалось удалить папку",
+      "checkStarted": "Проверка папки запущена",
+      "checkFailed": "Не удалось проверить папку",
+      "enabled": "Папка включена",
+      "disabled": "Папка отключена",
+      "toggleFailed": "Не удалось изменить статус папки",
+      "folderPathRequired": "Введите путь к папке"
+    }
+  }
+}

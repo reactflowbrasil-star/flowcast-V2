@@ -1,0 +1,64 @@
+{
+  "title": "Güvenlik",
+  "subtitle": "Olayları, yasakları ve kara listeye alınmış cihazları izleyin.",
+  "tabs": {
+    "overview": "Genel Bakış",
+    "incidents": "Olaylar",
+    "bans": "Yasaklar",
+    "blacklistedDevices": "Kara Listeye Alınmış Cihazlar"
+  },
+  "actions": {
+    "cleanupExpiredBans": "Süresi Dolan Yasakları Temizle",
+    "createManualBan": "Manuel Yasak Oluştur"
+  },
+  "searchByUsernamePlaceholder": "Kullanıcı adına göre ara...",
+  "confirmDelete": "Bu öğeyi silmek istediğinizden emin misiniz? Bu işlem geri alınamaz.",
+  "admin": {
+    "createBan": {
+      "title": "Manuel Yasak Oluştur",
+      "usernameLabel": "Kullanıcı Adı",
+      "usernamePlaceholder": "Yasaklanacak kullanıcı adını girin",
+      "banTypeLabel": "Yasak Türü",
+      "temporary": "Geçici",
+      "permanent": "Kalıcı",
+      "banLevelLabel": "Yasak Seviyesi",
+      "level1": "Seviye 1 - Giriş Kısıtlaması",
+      "level2": "Seviye 2 - Hesap Askıya Alma",
+      "level3": "Seviye 3 - Kalıcı Yasak",
+      "customDurationLabel": "Özel Süre",
+      "customDurationPlaceholder": "Gün cinsinden süre girin",
+      "customDurationNote": "Kalıcı yasak için boş bırakın",
+      "reasonLabel": "Neden",
+      "reasonPlaceholder": "Yasak nedenini girin"
+    }
+  },
+  "cards": {
+    "totalIncidents": "Toplam Olay",
+    "todaysIncidents": "Bugünkü Olaylar",
+    "activeBans": "Aktif Yasaklar",
+    "permanentBans": "Kalıcı Yasaklar",
+    "blacklistedDevices": "Kara Listeye Alınmış Cihazlar"
+  },
+  "stats": {
+    "incidentsByType": "Türe Göre Olaylar",
+    "recentIncidents": "Son Olaylar",
+    "noRecentIncidents": "Son olay yok",
+    "summary": "Güvenlik Özeti",
+    "totalIncidents": "Toplam Olay",
+    "todaysIncidents": "Bugünkü Olaylar",
+    "activeBans": "Aktif Yasaklar",
+    "permanentBans": "Kalıcı Yasaklar"
+  },
+  "pagination": {
+    "previous": "Önceki",
+    "next": "Sonraki",
+    "pageOf": "Sayfa {{page}} / {{total_pages}}",
+    "showing": "{{total}} üzerinden {{from}}–{{to}} gösteriliyor"
+  },
+  "notifications": {
+    "security": {
+      "errorLoadingStatistics": "Güvenlik istatistikleri yüklenemedi",
+      "errorCleaningExpiredBans": "Süresi dolan yasaklar temizlenemedi"
+    }
+  }
+}

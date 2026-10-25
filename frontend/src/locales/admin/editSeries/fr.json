@@ -1,0 +1,40 @@
+{
+  "editSeries": {
+    "title": {
+      "editAnime": "Modifier l'anime",
+      "editSeries": "Modifier la série"
+    },
+    "labels": {
+      "seriesTitle": "Titre de la série *",
+      "description": "Description",
+      "year": "Année",
+      "tmdbId": "TMDB ID",
+      "totalSeasons": "Saisons totales",
+      "posterUrl": "URL de l'affiche",
+      "backdropUrl": "URL de fond",
+      "active": "Actif"
+    },
+    "placeholders": {
+      "seriesTitle": "Entrez le titre de la série...",
+      "description": "Entrez la description de la série...",
+      "year": "2024",
+      "tmdbId": "123456",
+      "totalSeasons": "1",
+      "posterUrl": "https://example.com/poster.jpg",
+      "backdropUrl": "https://example.com/backdrop.jpg"
+    },
+    "episodes": {
+      "title": "Gestion des épisodes :",
+      "description": "Les séries n'ont pas d'URL de vidéo directe. Le contenu vidéo est géré par épisodes individuels au sein des saisons.",
+      "manageButton": "📺 Gérer les épisodes"
+    },
+    "buttons": {
+      "cancel": "Annuler",
+      "updating": "Mise à jour...",
+      "update": "Série de mises à jour"
+    },
+    "validation": {
+      "titleRequired": "Le titre est requis"
+    }
+  }
+}

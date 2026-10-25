@@ -1,0 +1,39 @@
+{
+  "editContent": {
+    "labels": {
+      "year": "Año",
+      "description": "Descripción",
+      "videoUrl": "URL de video",
+      "subtitles": "Subtítulos"
+    },
+    "noSubtitles": "No se detectaron subtítulos.",
+    "validation": {
+      "titleRequired": "El título es obligatorio",
+      "videoUrlRequired": "Se requiere una URL de video válida",
+      "subtitleFileRequired": "Seleccione un archivo de subtítulos primero"
+    },
+    "subtitleLanguagePlaceholder": "en",
+    "drm": {
+      "sectionTitle": "Configuración DRM",
+      "optional": "(opcional)",
+      "drmType": "Tipo de DRM",
+      "noDrm": "Ninguno (sin DRM)",
+      "clearkey": "ClearKey",
+      "widevine": "Widevine",
+      "playready": "PlayReady",
+      "clearKeyKeys": "Claves ClearKey",
+      "clearKeyFormat": "Formato: kid_hex:key_hex",
+      "licenseServerUrl": "URL del servidor de licencias",
+      "drmHeadersJson": "Encabezados DRM (JSON)",
+      "licenseHeadersNote": "Encabezados opcionales enviados con las solicitudes de licencia"
+    },
+    "streamHeaders": {
+      "sectionTitle": "Configuración avanzada de stream",
+      "origin": "Origen",
+      "originNote": "Encabezado Origin para CORS",
+      "userAgent": "Agente de usuario",
+      "referer": "Referencia",
+      "customHeaders": "Encabezados personalizados (JSON)"
+    }
+  }
+}

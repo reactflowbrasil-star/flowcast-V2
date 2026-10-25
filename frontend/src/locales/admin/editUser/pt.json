@@ -1,0 +1,48 @@
+{
+  "editUser": {
+    "title": "Editar usuário:",
+    "description": "Atualizar informações do usuário e senha",
+    "labels": {
+      "username": "Nome de usuário",
+      "email": "E-mail",
+      "password": "Nova senha (4 a 10 dígitos)",
+      "expiresAt": "Data de validade",
+      "maxDevices": "Máx. dispositivos",
+      "status": "Estado",
+      "contentCategories": "Categorias de conteúdo"
+    },
+    "placeholders": {
+      "username": "Digite o nome de usuário",
+      "email": "Digite o e-mail",
+      "password": "Deixe em branco para se manter atualizado"
+    },
+    "hints": {
+      "expiresAtEmpty": "Deixe vazio para não expirar",
+      "categoriesHelp": "Clique para selecionar as categorias de conteúdo às quais este usuário terá acesso."
+    },
+    "status": {
+      "active": "Ativo",
+      "suspended": "Suspenso"
+    },
+    "categories": {
+      "loading": "Carregando categorias...",
+      "noCategories": "Nenhuma categoria disponível"
+    },
+    "buttons": {
+      "cancel": "Cancelar",
+      "update": "Atualizar usuário",
+      "updating": "Atualizando..."
+    },
+    "errors": {
+      "noUserSelected": "Nenhum usuário selecionado"
+    },
+    "validation": {
+      "usernameMin": "O nome de usuário deve ter pelo menos 3 caracteres",
+      "invalidEmail": "E-mail inválido",
+      "passwordMin": "A senha deve ter pelo menos 4 dígitos",
+      "passwordMax": "A senha deve ter no máximo 10 dígitos",
+      "passwordDigitsOnly": "A senha só pode conter números",
+      "maxDevicesMax": "Máximo de 10 dispositivos permitidos"
+    }
+  }
+}

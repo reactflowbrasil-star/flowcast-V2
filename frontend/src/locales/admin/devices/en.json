@@ -1,0 +1,169 @@
+{
+  "activeDevices": "Active Devices",
+  "devices": {
+    "title": "Devices",
+    "description": "Manage your registered devices and add new ones",
+    "devices": "devices",
+    "addDevice": "Add Device",
+    "limitStatus": "Device Limit Status",
+    "atLimit": "At Limit",
+    "available": "Available",
+    "youHaveDevices": "You have {{count}} of {{max}} allowed devices registered.",
+    "toAddRemove": "To add a new device, you must first remove an existing one.",
+    "yourRegisteredDevices": "Your Registered Devices",
+    "table": {
+      "device": "Device",
+      "user": "User",
+      "deviceLimit": "Device Limit",
+      "riskLevel": "Risk Level",
+      "status": "Status",
+      "lastActive": "Last Active",
+      "actions": "Actions"
+    },
+    "risk": {
+      "high": "High Risk",
+      "safe": "Safe"
+    },
+    "remove": "Remove",
+    "removeDeviceConfirmation": "Are you sure you want to permanently remove device \"{{name}}\" from user {{username}}?\\n\\nNote: This will only remove the device. The user can re-register it later.\\nWarning: If you want to prevent this device from connecting again, use \"Remove & Blacklist\" instead.",
+    "removeAndBlacklistAction": "Remove & Blacklist",
+    "removeAndBlacklistTitle": "Remove & Blacklist Device",
+    "removeAndBlacklistDescription": "Are you sure you want to remove device \"{{name}}\" from user {{username}} and add it to the blacklist?\\n\\nWarning: This will immediately disconnect the device and prevent it from connecting again until manually removed from the blacklist.",
+    "blacklistOnly": "Blacklist Only",
+    "blacklistTitle": "Blacklist Device",
+    "blacklistDescription": "Are you sure you want to add device \"{{name}}\" to the blacklist without removing it?\\n\\nNote: This will disconnect the device immediately but keep it in the active devices list until the user tries to reconnect.",
+    "blacklistAction": "Blacklist Device",
+    "removeMultipleTitle": "Remove Multiple Devices",
+    "removeMultipleDescription": "Are you sure you want to remove {{count}} selected devices?",
+    "devicesToBeRemovedLabel": "Devices to be removed:",
+    "moreDevices": "... and {{count}} more devices",
+    "bulkWarning": "This action cannot be undone.",
+    "removeAllSelected": "Remove All Selected",
+    "removeDeviceTitle": "Remove Device",
+    "removeDeviceDescription": "Are you sure you want to remove \"{{name}}\"?\n\nYou will need to register this device again to use it in the future.",
+    "removeDevice": "Remove Device",
+    "noDevices": "No devices registered",
+    "registerFirstDescription": "Register your first device to start using the service.",
+    "registerFirstButton": "Register First Device",
+    "registerNewTitle": "Register New Device",
+    "registerNewDescription": "Add a new device to your account",
+    "label": {
+      "deviceId": "Device ID",
+      "deviceName": "Device Name"
+    },
+    "placeholder": {
+      "id": "Enter unique device identifier",
+      "name": "Enter device name (e.g., Living Room TV)",
+      "searchDevices": "Search devices..."
+    },
+    "removeSelected": "Remove Selected ({{count}})",
+    "noDevicesFoundTitle": "No devices found",
+    "noDevicesFoundFor": "No devices found for \"{{query}}\"",
+    "noDevicesRegistered": "No devices are currently registered in the system.",
+    "deviceIdLabel": "ID: {{id}}",
+    "time": {
+      "justNow": "Just now",
+      "minutesAgo": "{{count}}m ago",
+      "hoursAgo": "{{count}}h ago",
+      "daysAgo": "{{count}}d ago"
+    },
+    "errors": {
+      "loadFailed": "Failed to load device information. Please try again later."
+    },
+    "registering": "Registering...",
+    "registerDevice": "Register Device",
+    "activeList": {
+      "description": "Monitor all active device connections across the system",
+      "searchPlaceholder": "Search devices...",
+      "deviceId": "ID: {{id}}",
+      "time": {
+        "justNow": "Just now",
+        "minutesAgo": "{{count}}m ago",
+        "hoursAgo": "{{count}}h ago",
+        "daysAgo": "{{count}}d ago"
+      },
+      "actions": {
+        "disconnect": "Disconnect"
+      },
+      "removeDialog": {
+        "title": "Remove Device",
+        "description": "Are you sure you want to permanently remove device \"{{device}}\" from user {{user}}? This action cannot be undone."
+      },
+      "emptyTitle": "No devices found",
+      "noDevicesSearch": "No devices found for \"{{query}}\"",
+      "noDevicesDescription": "No devices are currently registered in the system."
+    },
+    "limits": {
+      "title": "Device Limit Warnings",
+      "subtitle": "Monitor users approaching or exceeding device limits",
+      "summary": {
+        "warningTitle": "Warnings",
+        "warningDescription": "Users at 80–99% of their device limit",
+        "criticalTitle": "Critical",
+        "criticalDescription": "Users at or over their device limit",
+        "exceededTitle": "Exceeded",
+        "exceededDescription": "Users exceeding their device limit"
+      },
+      "attention": {
+        "title": "Users Needing Attention"
+      },
+      "table": {
+        "deviceUsage": "Device Usage",
+        "progress": "Progress",
+        "warningLevel": "Warning Level"
+      },
+      "actions": {
+        "increaseLimit": "Increase Limit",
+        "monitor": "Monitor"
+      },
+      "allSafeTitle": "All Users Within Limits",
+      "allSafeDescription": "No users are near or over their device limits.",
+      "allUsersTitle": "All Users",
+      "badges": {
+        "safe": "Safe",
+        "warning": "Warning",
+        "critical": "Critical",
+        "exceeded": "Exceeded"
+      }
+    },
+    "overview": {
+      "deviceCount": "{{count}}/{{max}} devices"
+    },
+    "activeDevices": "Active Devices",
+    "deviceRemoval": "Device Removal",
+    "warnings": "Warnings",
+    "totalDevices": "Total Devices",
+    "registeredDevices": "Registered devices",
+    "currentlyConnected": "Currently connected",
+    "usersWithDevices": "Users with Devices",
+    "activeUsers": "Active users",
+    "limitWarnings": "Limit Warnings",
+    "deviceStatistics": {
+      "title": "Device Statistics"
+    },
+    "statsDescription": "Detailed breakdown of device usage across users",
+    "avgDevicesPerUser": "Avg Devices/User",
+    "usersAtLimit": "Users at Limit",
+    "totalCapacity": "Total Capacity",
+    "utilization": "Utilization",
+    "usageDistribution": "Usage Distribution",
+    "byUsageLevel": "By Usage Level",
+    "lowUsage": "Low usage",
+    "systemHealth": {
+      "title": "System Health"
+    },
+    "deviceUsageByUser": {
+      "none": "No users with devices"
+    },
+    "usageByUserTitle": "Device Usage by User",
+    "usageByUserDescription": "User device statistics will appear here once devices are registered.",
+    "common": {
+      "active": "Active",
+      "inactive": "Inactive",
+      "cancel": "Cancel",
+      "actions": "Actions"
+    },
+    "removing": "Removing...",
+    "overviewTitle": "Overview"
+  }
+}

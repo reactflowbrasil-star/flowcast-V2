@@ -1,0 +1,58 @@
+{
+  "securityAlerts": {
+    "title": "Alertes de sécurité",
+    "subtitle": "Surveiller les incidents de sécurité et gérer les bannissements",
+    "noAlerts": "Aucune alerte de sécurité. Tout est normal.",
+    "viewDetails": "Voir les détails",
+    "dismiss": "Masquer",
+    "severity": {
+      "low": "Faible",
+      "medium": "Moyenne",
+      "high": "Élevée",
+      "critical": "Critique"
+    },
+    "filterBy": {
+      "type": "Filtrer par type",
+      "dateRange": "Plage de dates",
+      "status": "Statut"
+    },
+    "actions": {
+      "investigate": "Enquêter",
+      "banUser": "Bannir l'utilisateur",
+      "unbanUser": "Débannir l'utilisateur",
+      "cleanupExpiredBans": "Nettoyer les bannissements expirés",
+      "createManualBan": "Créer un bannissement manuel"
+    },
+    "cards": {
+      "totalIncidents": "Total des incidents",
+      "todaysIncidents": "Incidents aujourd'hui",
+      "activeBans": "Bannissements actifs",
+      "permanentBans": "Bannissements permanents",
+      "blacklistedDevices": "Appareils sur liste noire"
+    },
+    "confirmDelete": "Supprimer cette alerte ? Cette action ne peut pas être annulée.",
+    "noPermission": "Vous n'avez pas la permission d'effectuer cette action.",
+    "newLabel": "Nouveau",
+    "moreAlerts": "... et {{count}} alertes de plus",
+    "values": {
+      "unknown": "Inconnu"
+    },
+    "browserNotification": {
+      "title": "Alerte de sécurité : {{title}}"
+    },
+    "alerts": {
+      "multipleFailedLogins": {
+        "title": "Multiples tentatives de connexion échouées",
+        "description": "{{count}} tentatives échouées depuis l'IP {{ip}} au cours de la dernière heure"
+      },
+      "unusualDevices": {
+        "title": "Activité inhabituelle d'appareils",
+        "description": "L'utilisateur {{username}} s'est connecté depuis {{deviceCount}} appareils différents cette semaine"
+      },
+      "highActivity": {
+        "title": "Période de forte activité",
+        "description": "{{viewCount}} lectures de contenu au cours de la dernière heure"
+      }
+    }
+  }
+}

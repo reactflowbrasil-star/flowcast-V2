@@ -1,0 +1,48 @@
+{
+  "editUser": {
+    "title": "编辑用户：",
+    "description": "更新用户信息和密码",
+    "labels": {
+      "username": "用户名",
+      "email": "邮箱",
+      "password": "新密码（4-10位数字）",
+      "expiresAt": "到期日期",
+      "maxDevices": "最大设备数",
+      "status": "状态",
+      "contentCategories": "内容分类"
+    },
+    "placeholders": {
+      "username": "输入用户名",
+      "email": "输入邮箱",
+      "password": "留空保持当前密码"
+    },
+    "hints": {
+      "expiresAtEmpty": "留空表示永不过期",
+      "categoriesHelp": "点击选择此用户可访问的内容分类。"
+    },
+    "status": {
+      "active": "活跃",
+      "suspended": "已暂停"
+    },
+    "categories": {
+      "loading": "加载分类中...",
+      "noCategories": "暂无可用分类"
+    },
+    "buttons": {
+      "cancel": "取消",
+      "update": "更新用户",
+      "updating": "更新中..."
+    },
+    "errors": {
+      "noUserSelected": "未选择用户"
+    },
+    "validation": {
+      "usernameMin": "用户名至少需要3个字符",
+      "invalidEmail": "邮箱格式无效",
+      "passwordMin": "密码至少需要4位数字",
+      "passwordMax": "密码最多10位数字",
+      "passwordDigitsOnly": "密码只能包含数字",
+      "maxDevicesMax": "最多允许10台设备"
+    }
+  }
+}

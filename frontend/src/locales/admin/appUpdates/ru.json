@@ -1,0 +1,150 @@
+{
+    "appUpdates": {
+        "title": "Обновления Приложений",
+        "description": "Управление и распространение обновлений для приложений TV, Android и iOS",
+        "tabs": {
+            "overview": "Обзор",
+            "create": "Создать Обновление",
+            "history": "История Обновлений"
+        },
+        "platforms": {
+            "android_tv": "Android TV",
+            "android_mobile": "Android Mobile",
+            "ios": "iOS"
+        },
+        "updateType": {
+            "title": "Тип Обновления",
+            "suggested": "Рекомендуемое",
+            "mandatory": "Обязательное",
+            "suggestedDescription": "Пользователи могут пропустить это обновление и продолжить использовать приложение",
+            "mandatoryDescription": "Пользователи должны обновить приложение для продолжения работы"
+        },
+        "status": {
+            "active": "Активно",
+            "inactive": "Неактивно",
+            "draft": "Черновик",
+            "archived": "Архивировано"
+        },
+        "form": {
+            "version": "Номер Версии",
+            "versionPlaceholder": "напр., 2.1.0",
+            "versionCode": "Код Версии",
+            "versionCodePlaceholder": "напр., 21",
+            "versionCodeHelp": "Числовой номер сборки для сравнения (только Android)",
+            "platform": "Платформа",
+            "selectPlatform": "Выберите платформу",
+            "updateType": "Тип Обновления",
+            "downloadUrl": "URL Загрузки",
+            "downloadUrlPlaceholder": "https://example.com/app.apk",
+            "downloadUrlHelp": "Прямая ссылка на APK или URL магазина приложений",
+            "storeUrl": "URL Магазина (необязательно)",
+            "storeUrlPlaceholder": "https://play.google.com/store/apps/details?id=...",
+            "storeUrlHelp": "Ссылка на страницу Play Store или App Store",
+            "releaseNotes": "Примечания к Выпуску",
+            "releaseNotesPlaceholder": "Что нового в этой версии...",
+            "releaseNotesHelp": "Опишите изменения и новые функции (поддерживает Markdown)",
+            "minSdkVersion": "Минимальная Версия SDK",
+            "minSdkVersionPlaceholder": "напр., 21",
+            "fileSize": "Размер Файла",
+            "fileSizePlaceholder": "напр., 45 МБ",
+            "publishDate": "Дата Публикации",
+            "status": "Статус"
+        },
+        "actions": {
+            "create": "Создать Обновление",
+            "creating": "Создание...",
+            "edit": "Редактировать",
+            "delete": "Удалить",
+            "archive": "Архивировать",
+            "activate": "Активировать",
+            "deactivate": "Деактивировать",
+            "duplicate": "Дублировать",
+            "preview": "Предпросмотр",
+            "save": "Сохранить Изменения",
+            "saving": "Сохранение...",
+            "cancel": "Отмена"
+        },
+        "table": {
+            "version": "Версия",
+            "platform": "Платформа",
+            "type": "Тип",
+            "status": "Статус",
+            "releaseDate": "Дата Выпуска",
+            "downloads": "Загрузки",
+            "actions": "Действия"
+        },
+        "overview": {
+            "title": "Обзор Обновлений",
+            "description": "Текущие активные обновления по платформам",
+            "noActiveUpdates": "Нет активных обновлений",
+            "latestVersion": "Последняя Версия",
+            "lastUpdated": "Последнее Обновление",
+            "totalDownloads": "Всего Загрузок",
+            "activeUsers": "Активных Пользователей",
+            "updateRate": "Скорость Обновления",
+            "pendingUpdates": "Ожидающие Обновления"
+        },
+        "stats": {
+            "totalUpdates": "Всего Обновлений",
+            "activeUpdates": "Активных Обновлений",
+            "mandatoryUpdates": "Обязательных Обновлений",
+            "suggestedUpdates": "Рекомендуемых Обновлений",
+            "totalDownloads": "Всего Загрузок",
+            "updateAdoption": "Принятие Обновлений"
+        },
+        "confirm": {
+            "delete": "Вы уверены, что хотите удалить это обновление? Это действие нельзя отменить.",
+            "archive": "Вы уверены, что хотите архивировать это обновление? Пользователи больше не увидят его.",
+            "activate": "Активировать это обновление? Пользователи начнут получать уведомления об обновлении.",
+            "deactivate": "Деактивировать это обновление? Пользователи больше не будут получать уведомления для этой версии."
+        },
+        "empty": {
+            "title": "Обновления Не Найдены",
+            "description": "Создайте свое первое обновление приложения, чтобы начать распространение новых версий пользователям.",
+            "noHistory": "История обновлений недоступна.",
+            "noUpdatesForPlatform": "Нет настроенных обновлений для {{platform}}"
+        },
+        "success": {
+            "created": "Обновление успешно создано",
+            "updated": "Обновление успешно сохранено",
+            "deleted": "Обновление успешно удалено",
+            "activated": "Обновление успешно активировано",
+            "deactivated": "Обновление успешно деактивировано",
+            "archived": "Обновление успешно архивировано"
+        },
+        "errors": {
+            "loadFailed": "Не удалось загрузить обновления",
+            "createFailed": "Не удалось создать обновление",
+            "updateFailed": "Не удалось сохранить обновление",
+            "deleteFailed": "Не удалось удалить обновление",
+            "versionRequired": "Номер версии обязателен",
+            "platformRequired": "Платформа обязательна",
+            "downloadUrlRequired": "URL загрузки обязателен для обновлений не из магазина",
+            "versionExists": "Эта версия уже существует для выбранной платформы"
+        },
+        "filters": {
+            "allPlatforms": "Все Платформы",
+            "allTypes": "Все Типы",
+            "allStatuses": "Все Статусы",
+            "searchPlaceholder": "Поиск по версии..."
+        },
+        "preview": {
+            "title": "Предпросмотр Обновления",
+            "description": "Так диалог обновления будет выглядеть для пользователей",
+            "updateAvailable": "Доступно Обновление",
+            "newVersion": "Доступна новая версия!",
+            "currentVersion": "Текущая версия:",
+            "newVersionLabel": "Новая версия:",
+            "whatsNew": "Что Нового",
+            "downloadNow": "Скачать Сейчас",
+            "remindLater": "Напомнить Позже",
+            "mandatoryWarning": "Это обновление обязательно для продолжения использования приложения."
+        },
+        "history": {
+            "title": "История Обновлений",
+            "description": "Просмотр всех предыдущих обновлений и их эффективности",
+            "downloadTrend": "Тренд Загрузок",
+            "adoptionRate": "Показатель Принятия"
+        }
+    }
+}

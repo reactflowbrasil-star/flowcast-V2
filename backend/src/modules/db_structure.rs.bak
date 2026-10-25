@@ -1,0 +1,2127 @@
+// Database structure definitions for IPTV System
+//
+// This module contains all the SQL statements to create the complete
+// IPTV database structure from scratch.
+
+use anyhow::Result;
+use bcrypt::{hash, DEFAULT_COST};
+use sqlx::{Pool, Sqlite};
+
+pub(crate) const DEFAULT_TV_CHANNEL_CATEGORIES: &[&str] = &[
+    "Entertainment",
+    "Sports",
+    "News",
+    "Movies",
+    "Series",
+    "Kids",
+    "Documentary",
+    "Lifestyle",
+    "Culture & Education",
+    "International",
+    "Spain",
+    "USA",
+];
+
+/// Create all database tables in the correct order
+#[allow(dead_code)]
+pub async fn create_all_tables(pool: &Pool<Sqlite>) -> Result<()> {
+    println!("🛠️  Creating database tables...");
+
+    // Create tables in dependency order (no foreign keys first, then with foreign keys)
+
+    // Independent tables (no foreign keys)
+    create_config_table(pool).await?;
+    create_system_config_table(pool).await?;
+    create_system_info_table(pool).await?;
+    create_categories_table(pool).await?;
+    create_tv_channel_categories_table(pool).await?;
+    create_epg_sources_table(pool).await?;
+    // TV Providers (auto-ingest remote M3U with TTL)
+    create_tv_providers_table(pool).await?;
+    // Gift codes table (created here so migrations run on first bootstrap)
+    create_gift_codes_table(pool).await?;
+    create_events_table(pool).await?;
+    create_master_api_keys_table(pool).await?;
+
+    // User management (depends on itself)
+    create_users_table(pool).await?;
+    // Payments and purchases (depends on users)
+    create_credit_purchases_table(pool).await?;
+    // Billing transactions (depends on users)
+    create_billing_transactions_table(pool).await?;
+
+    // Content tables (depend on categories)
+    create_content_table(pool).await?;
+
+    // Series structure (depends on content)
+    create_series_table(pool).await?;
+    create_seasons_table(pool).await?;
+    create_episodes_table(pool).await?;
+
+    // External subtitles tables (movies and episodes)
+    create_content_subtitles_table(pool).await?;
+    create_episode_subtitles_table(pool).await?;
+
+    // Events with schedules (depends on events)
+    create_event_schedules_table(pool).await?;
+
+    // User-related tables (depend on users)
+    create_devices_table(pool).await?;
+    create_user_devices_table(pool).await?;
+    create_user_subscriptions_table(pool).await?;
+    create_user_favorites_table(pool).await?;
+    create_blacklisted_tokens_table(pool).await?;
+    create_rate_limits_table(pool).await?;
+
+    // Activity and logging tables (depend on users)
+    create_activity_logs_table(pool).await?;
+    create_user_login_history_table(pool).await?;
+    create_user_viewing_history_table(pool).await?;
+    create_user_watch_progress_table(pool).await?;
+    create_security_incidents_table(pool).await?;
+    create_security_bans_table(pool).await?;
+
+    // Support system (depends on users)
+    create_tickets_table(pool).await?; // Simple tickets table
+    create_support_tickets_table(pool).await?; // Advanced tickets table
+    create_ticket_messages_table(pool).await?;
+    create_ticket_message_reads_table(pool).await?;
+
+    // Media watcher
+    create_media_watch_folders_table(pool).await?;
+
+    // Reseller API keys for public API access
+    create_reseller_api_keys_table(pool).await?;
+
+    // Ensure new columns exist in existing deployments
+    run_runtime_migrations(pool).await?;
+
+    println!("✅ All tables created successfully");
+    Ok(())
+}
+
+/// State of the schema after running ensure_database_schema
+#[allow(dead_code)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+pub enum SchemaState {
+    FreshInstall,
+    Existing,
+}
+
+macro_rules! ensure_table {
+    ($pool:expr, $name:expr, $create_fn:ident) => {{
+        if !table_exists($pool, $name).await? {
+            $create_fn($pool).await?;
+            true
+        } else {
+            false
+        }
+    }};
+}
+
+#[allow(dead_code)]
+/// Ensure every expected table exists without modifying existing data
+pub async fn ensure_database_schema(pool: &Pool<Sqlite>) -> Result<SchemaState> {
+    let config_created = ensure_table!(pool, "config", create_config_table);
+    let system_config_created = ensure_table!(pool, "system_config", create_system_config_table);
+    let system_info_created = ensure_table!(pool, "system_info", create_system_info_table);
+    let categories_created = ensure_table!(pool, "categories", create_categories_table);
+    let tv_channel_categories_created = ensure_table!(
+        pool,
+        "tv_channel_categories",
+        create_tv_channel_categories_table
+    );
+    let epg_sources_created = ensure_table!(pool, "epg_sources", create_epg_sources_table);
+    let events_created = ensure_table!(pool, "events", create_events_table);
+    let master_api_keys_created =
+        ensure_table!(pool, "master_api_keys", create_master_api_keys_table);
+
+    let users_created = ensure_table!(pool, "users", create_users_table);
+    ensure_table!(pool, "credit_purchases", create_credit_purchases_table);
+    ensure_table!(
+        pool,
+        "billing_transactions",
+        create_billing_transactions_table
+    );
+
+    ensure_table!(pool, "content", create_content_table);
+    ensure_table!(pool, "series", create_series_table);
+    ensure_table!(pool, "seasons", create_seasons_table);
+    ensure_table!(pool, "episodes", create_episodes_table);
+
+    // Ensure external subtitles tables exist on existing databases
+    ensure_table!(pool, "content_subtitles", create_content_subtitles_table);
+    ensure_table!(pool, "episode_subtitles", create_episode_subtitles_table);
+
+    ensure_table!(pool, "event_schedules", create_event_schedules_table);
+    ensure_table!(pool, "tv_providers", create_tv_providers_table);
+    // Ensure gift_codes exists (safe on existing DBs)
+    ensure_table!(pool, "gift_codes", create_gift_codes_table);
+
+    ensure_table!(pool, "devices", create_devices_table);
+    ensure_table!(pool, "user_devices", create_user_devices_table);
+    ensure_table!(pool, "user_subscriptions", create_user_subscriptions_table);
+    ensure_table!(pool, "user_favorites", create_user_favorites_table);
+    ensure_table!(pool, "blacklisted_tokens", create_blacklisted_tokens_table);
+    ensure_table!(pool, "rate_limits", create_rate_limits_table);
+
+    ensure_table!(pool, "activity_logs", create_activity_logs_table);
+    ensure_table!(pool, "user_login_history", create_user_login_history_table);
+    ensure_table!(
+        pool,
+        "user_viewing_history",
+        create_user_viewing_history_table
+    );
+    ensure_table!(
+        pool,
+        "user_watch_progress",
+        create_user_watch_progress_table
+    );
+    ensure_table!(pool, "security_incidents", create_security_incidents_table);
+    ensure_table!(pool, "security_bans", create_security_bans_table);
+
+    ensure_table!(pool, "tickets", create_tickets_table);
+    ensure_table!(pool, "support_tickets", create_support_tickets_table);
+    ensure_table!(pool, "ticket_messages", create_ticket_messages_table);
+    ensure_table!(
+        pool,
+        "ticket_message_reads",
+        create_ticket_message_reads_table
+    );
+
+    ensure_table!(pool, "reseller_logs", create_reseller_logs_table);
+    ensure_table!(
+        pool,
+        "media_watch_folders",
+        create_media_watch_folders_table
+    );
+    ensure_table!(pool, "reseller_api_keys", create_reseller_api_keys_table);
+
+    run_runtime_migrations(pool).await?;
+
+    let core_tables_created = config_created
+        || system_config_created
+        || system_info_created
+        || categories_created
+        || epg_sources_created
+        || events_created
+        || master_api_keys_created
+        || users_created
+        || tv_channel_categories_created;
+
+    let state = if users_created && core_tables_created {
+        SchemaState::FreshInstall
+    } else {
+        SchemaState::Existing
+    };
+
+    Ok(state)
+}
+
+#[allow(dead_code)]
+/// Ensure default admin account exists with predefined credentials
+pub async fn ensure_default_admin_user(pool: &Pool<Sqlite>) -> Result<()> {
+    let existing_admin =
+        sqlx::query_scalar::<_, i64>("SELECT id FROM users WHERE username = ? LIMIT 1")
+            .bind("admin")
+            .fetch_optional(pool)
+            .await?;
+
+    if existing_admin.is_some() {
+        return Ok(());
+    }
+
+    // SECURITY FIX: Use environment variable for admin password
+    // If not provided, use a temporary password that MUST be changed on first login
+    let default_password = std::env::var("ADMIN_DEFAULT_PASSWORD").unwrap_or_else(|_| {
+        // Generate a unique temporary password using timestamp
+        let timestamp = std::time::SystemTime::now()
+            .duration_since(std::time::UNIX_EPOCH)
+            .unwrap_or_default()
+            .as_nanos();
+        let password = format!("tmp_{:x}", timestamp);
+        // Log the generated password so admin can access the system
+        // This will only happen on first install
+        println!(
+            "⚠️  IMPORTANT: Generated temporary admin password: {}",
+            password
+        );
+        println!("⚠️  Please change this password immediately after first login!");
+        println!("⚠️  Or set ADMIN_DEFAULT_PASSWORD environment variable before first run.");
+        password
+    });
+
+    let password_hash = hash(&default_password, DEFAULT_COST)?;
+
+    sqlx::query(
+        "INSERT INTO users (username, password_hash, role, email, active) VALUES (?, ?, 'admin', ?, 1)",
+    )
+    .bind("admin")
+    .bind(password_hash)
+    .bind("admin@admin.com")
+    .execute(pool)
+    .await?;
+
+    println!("👤 Created default admin user 'admin'");
+
+    Ok(())
+}
+
+#[allow(dead_code)]
+pub async fn ensure_default_categories(pool: &Pool<Sqlite>) -> Result<()> {
+    const DEFAULT_CATEGORIES: &[(&str, &str)] = &[
+        ("VOD Movies", "VOD"),
+        ("TV Channels", "TV"),
+        ("TV Series", "Series"),
+        ("Events", "Eventos"),
+        ("Kids Content", "Kids"),
+        ("Anime", "Anime"),
+    ];
+
+    for (name, category_type) in DEFAULT_CATEGORIES {
+        // Check existence by either legacy `type` or new `category_type` column
+        let exists = sqlx::query_scalar::<_, i64>(
+            "SELECT COUNT(*) FROM categories WHERE type = ? OR category_type = ?",
+        )
+        .bind(category_type)
+        .bind(category_type)
+        .fetch_one(pool)
+        .await?;
+
+        if exists == 0 {
+            // Populate both legacy `type` and canonical `category_type` for new installs
+            sqlx::query("INSERT INTO categories (name, type, category_type) VALUES (?, ?, ?)")
+                .bind(name)
+                .bind(category_type)
+                .bind(category_type)
+                .execute(pool)
+                .await?;
+            println!(
+                "📁 Added default category '{}' ({}) to categories table",
+                name, category_type
+            );
+        }
+    }
+
+    Ok(())
+}
+
+#[allow(dead_code)]
+pub async fn ensure_system_info_record(pool: &Pool<Sqlite>) -> Result<()> {
+    let exists = sqlx::query_scalar::<_, i64>("SELECT COUNT(*) FROM system_info WHERE id = 1")
+        .fetch_one(pool)
+        .await?;
+
+    if exists == 0 {
+        sqlx::query("INSERT INTO system_info (id, version) VALUES (1, '1.0.0')")
+            .execute(pool)
+            .await?;
+        println!("ℹ️  Initialized system_info record");
+    }
+
+    Ok(())
+}
+
+#[allow(dead_code)]
+pub async fn ensure_default_tv_channel_categories(pool: &Pool<Sqlite>) -> Result<()> {
+    let existing_count = sqlx::query_scalar::<_, i64>("SELECT COUNT(*) FROM tv_channel_categories")
+        .fetch_one(pool)
+        .await?;
+
+    if existing_count == 0 {
+        for name in DEFAULT_TV_CHANNEL_CATEGORIES {
+            sqlx::query("INSERT OR IGNORE INTO tv_channel_categories (name) VALUES (?)")
+                .bind(name)
+                .execute(pool)
+                .await?;
+        }
+    }
+
+    Ok(())
+}
+
+#[allow(dead_code)]
+async fn table_exists(pool: &Pool<Sqlite>, table_name: &str) -> Result<bool> {
+    let exists = sqlx::query_scalar::<_, i64>(
+        "SELECT COUNT(*) FROM sqlite_master WHERE type = 'table' AND name = ?",
+    )
+    .bind(table_name)
+    .fetch_one(pool)
+    .await?;
+
+    Ok(exists > 0)
+}
+
+/// Create users table - Core user management
+#[allow(dead_code)]
+async fn create_users_table(pool: &Pool<Sqlite>) -> Result<()> {
+    sqlx::query(
+        r#"
+        CREATE TABLE users (
+            id INTEGER PRIMARY KEY AUTOINCREMENT,
+            username TEXT UNIQUE NOT NULL,
+            password_hash TEXT NOT NULL,
+            role TEXT NOT NULL CHECK (role IN ('admin', 'reseller', 'end_user')),
+            created_at DATETIME DEFAULT CURRENT_TIMESTAMP,
+            updated_at DATETIME DEFAULT CURRENT_TIMESTAMP,
+
+            -- Demo account management
+            daily_demo_limit INTEGER DEFAULT NULL,
+            demos_created_today INTEGER DEFAULT NULL,
+            last_demo_reset_date DATE DEFAULT NULL,
+            is_demo BOOLEAN DEFAULT NULL,
+            demo_expires_at DATETIME DEFAULT NULL,
+
+            -- User profile
+            email TEXT,
+            credits REAL DEFAULT 0.0,
+            active BOOLEAN DEFAULT 1,
+
+            -- Account hierarchy
+            created_by INTEGER DEFAULT NULL,
+            max_devices INTEGER DEFAULT 1,
+            expires_at DATETIME DEFAULT NULL,
+
+            FOREIGN KEY (created_by) REFERENCES users(id)
+        )
+        "#,
+    )
+    .execute(pool)
+    .await?;
+
+    Ok(())
+}
+
+/// Create config table - System configuration
+#[allow(dead_code)]
+async fn create_config_table(pool: &Pool<Sqlite>) -> Result<()> {
+    sqlx::query(
+        r#"
+        CREATE TABLE config (
+            id INTEGER PRIMARY KEY AUTOINCREMENT,
+            key TEXT UNIQUE NOT NULL,
+            value TEXT NOT NULL,
+            created_at DATETIME DEFAULT CURRENT_TIMESTAMP,
+            updated_at DATETIME DEFAULT CURRENT_TIMESTAMP
+        )
+        "#,
+    )
+    .execute(pool)
+    .await?;
+    Ok(())
+}
+
+/// Create system_config table - Advanced system settings
+#[allow(dead_code)]
+async fn create_system_config_table(pool: &Pool<Sqlite>) -> Result<()> {
+    sqlx::query(
+        r#"
+        CREATE TABLE system_config (
+            id INTEGER PRIMARY KEY AUTOINCREMENT,
+            key TEXT UNIQUE NOT NULL,
+            value TEXT NOT NULL,
+            created_at DATETIME DEFAULT CURRENT_TIMESTAMP,
+            updated_at DATETIME DEFAULT CURRENT_TIMESTAMP
+        )
+        "#,
+    )
+    .execute(pool)
+    .await?;
+    Ok(())
+}
+
+/// Create system_info table - System status and metadata
+#[allow(dead_code)]
+async fn create_system_info_table(pool: &Pool<Sqlite>) -> Result<()> {
+    sqlx::query(
+        r#"
+        CREATE TABLE system_info (
+            id INTEGER PRIMARY KEY CHECK (id = 1),
+            startup_time DATETIME DEFAULT CURRENT_TIMESTAMP,
+            version TEXT DEFAULT '1.0.0',
+            last_restart DATETIME DEFAULT CURRENT_TIMESTAMP
+        )
+        "#,
+    )
+    .execute(pool)
+    .await?;
+    Ok(())
+}
+
+/// Create categories table - Content categorization
+#[allow(dead_code)]
+async fn create_categories_table(pool: &Pool<Sqlite>) -> Result<()> {
+    sqlx::query(
+        r#"
+        CREATE TABLE categories (
+            id INTEGER PRIMARY KEY AUTOINCREMENT,
+            name TEXT NOT NULL,
+            type TEXT NOT NULL,
+            category_type TEXT DEFAULT NULL,
+            tmdb_id INTEGER DEFAULT NULL,
+            created_at DATETIME DEFAULT CURRENT_TIMESTAMP
+        )
+        "#,
+    )
+    .execute(pool)
+    .await?;
+    Ok(())
+}
+
+/// Create tv_channel_categories table - Custom tags for live TV channels
+#[allow(dead_code)]
+async fn create_tv_channel_categories_table(pool: &Pool<Sqlite>) -> Result<()> {
+    sqlx::query(
+        r#"
+        CREATE TABLE tv_channel_categories (
+            id INTEGER PRIMARY KEY AUTOINCREMENT,
+            name TEXT NOT NULL UNIQUE COLLATE NOCASE,
+            created_at DATETIME DEFAULT CURRENT_TIMESTAMP
+        )
+        "#,
+    )
+    .execute(pool)
+    .await?;
+
+    Ok(())
+}
+
+/// Create content table - Main content storage
+#[allow(dead_code)]
+async fn create_content_table(pool: &Pool<Sqlite>) -> Result<()> {
+    sqlx::query(
+        r#"
+        CREATE TABLE content (
+            id INTEGER PRIMARY KEY AUTOINCREMENT,
+            category_id INTEGER,
+
+            -- Basic content info
+            title TEXT NOT NULL,
+            description TEXT,
+            image_url TEXT,
+            backdrop_url TEXT,
+
+            -- Media info
+            year INTEGER,
+            stream_url TEXT,
+            encrypted_stream_url TEXT,
+            file_path TEXT,
+            duration INTEGER,
+            rating REAL,
+            genre TEXT,
+            tmdb_id INTEGER,
+
+            -- Status and visibility
+            is_active BOOLEAN DEFAULT 1,
+            created_at DATETIME DEFAULT CURRENT_TIMESTAMP,
+            active BOOLEAN DEFAULT 1,
+
+            -- Provider and regional info
+            provider TEXT,
+            country TEXT,
+            format TEXT,
+
+            -- DRM and security
+            drm_keys TEXT,
+            drm_type TEXT,              -- 'clearkey', 'widevine', 'playready', or NULL
+            license_server_url TEXT,    -- URL for Widevine/PlayReady license server
+            drm_headers TEXT,           -- JSON string with custom headers for license requests
+            quality TEXT,
+            language TEXT,
+            subtitle_languages TEXT,
+            audio_languages TEXT,
+
+            -- TV specific
+            channel_number INTEGER,
+            is_live BOOLEAN DEFAULT 0,
+
+            -- EPG integration
+            epg_source_id INTEGER,
+            epg_channel_id TEXT,
+            epg_offset_minutes BIGINT DEFAULT 0,
+
+            -- LiveTV headers (for external streams)
+            origin TEXT,
+            user_agent TEXT,
+            referer TEXT,
+            custom_headers TEXT,
+            proxy_url TEXT,
+            doh_url TEXT,
+
+            FOREIGN KEY (category_id) REFERENCES categories(id)
+        )
+        "#,
+    )
+    .execute(pool)
+    .await?;
+
+    // Create indexes for performance
+    sqlx::query("CREATE INDEX idx_content_epg_source ON content(epg_source_id)")
+        .execute(pool)
+        .await?;
+
+    Ok(())
+}
+
+/// Create series table - TV series management
+#[allow(dead_code)]
+async fn create_series_table(pool: &Pool<Sqlite>) -> Result<()> {
+    sqlx::query(
+        r#"
+        CREATE TABLE series (
+            id INTEGER PRIMARY KEY AUTOINCREMENT,
+            content_id INTEGER,
+            total_seasons INTEGER DEFAULT 0,
+            created_at DATETIME DEFAULT CURRENT_TIMESTAMP,
+            FOREIGN KEY (content_id) REFERENCES content(id)
+        )
+        "#,
+    )
+    .execute(pool)
+    .await?;
+    Ok(())
+}
+
+/// Create seasons table - Series seasons
+#[allow(dead_code)]
+async fn create_seasons_table(pool: &Pool<Sqlite>) -> Result<()> {
+    sqlx::query(
+        r#"
+        CREATE TABLE seasons (
+            id INTEGER PRIMARY KEY AUTOINCREMENT,
+            series_id INTEGER,
+            season_number INTEGER,
+            total_episodes INTEGER DEFAULT 0,
+            created_at DATETIME DEFAULT CURRENT_TIMESTAMP,
+            title TEXT,
+            description TEXT,
+            image_url TEXT,
+            tmdb_id INTEGER,
+            air_date TEXT,
+            backdrop_url TEXT,
+            poster_url TEXT,
+            FOREIGN KEY (series_id) REFERENCES series(id)
+        )
+        "#,
+    )
+    .execute(pool)
+    .await?;
+    Ok(())
+}
+
+/// Create episodes table - Individual episodes
+#[allow(dead_code)]
+async fn create_episodes_table(pool: &Pool<Sqlite>) -> Result<()> {
+    sqlx::query(
+        r#"
+        CREATE TABLE episodes (
+            id INTEGER PRIMARY KEY AUTOINCREMENT,
+            season_id INTEGER,
+            episode_number INTEGER,
+            title TEXT,
+            description TEXT,
+            stream_url TEXT,
+            encrypted_stream_url TEXT,
+            file_path TEXT,
+            duration INTEGER,
+            created_at DATETIME DEFAULT CURRENT_TIMESTAMP,
+            encrypted_url TEXT,
+            image_url TEXT,
+            tmdb_id INTEGER,
+            air_date TEXT,
+            FOREIGN KEY (season_id) REFERENCES seasons(id)
+        )
+        "#,
+    )
+    .execute(pool)
+    .await?;
+    Ok(())
+}
+
+/// Create events table - Live events
+#[allow(dead_code)]
+async fn create_events_table(pool: &Pool<Sqlite>) -> Result<()> {
+    sqlx::query(
+        r#"
+        CREATE TABLE events (
+            id INTEGER PRIMARY KEY AUTOINCREMENT,
+            content_id INTEGER NOT NULL,
+            event_type TEXT NOT NULL,
+            created_at DATETIME DEFAULT CURRENT_TIMESTAMP,
+            FOREIGN KEY (content_id) REFERENCES content(id)
+        )
+        "#,
+    )
+    .execute(pool)
+    .await?;
+    Ok(())
+}
+
+/// Create event_schedules table - Event scheduling
+#[allow(dead_code)]
+async fn create_event_schedules_table(pool: &Pool<Sqlite>) -> Result<()> {
+    sqlx::query(
+        r#"
+        CREATE TABLE event_schedules (
+            id INTEGER PRIMARY KEY AUTOINCREMENT,
+            event_id INTEGER,
+            start_time DATETIME NOT NULL,
+            end_time DATETIME,
+            stream_url TEXT,
+            encrypted_stream_url TEXT,
+            created_at DATETIME DEFAULT CURRENT_TIMESTAMP,
+            FOREIGN KEY (event_id) REFERENCES events(id) ON DELETE CASCADE
+        )
+        "#,
+    )
+    .execute(pool)
+    .await?;
+    Ok(())
+}
+
+/// Fix broken foreign key constraint in existing event_schedules table
+#[allow(dead_code)]
+pub async fn fix_event_schedules_foreign_key(pool: &Pool<Sqlite>) -> Result<()> {
+    println!("🔧 Fixing broken foreign key constraint in event_schedules table...");
+
+    // Check current foreign key constraint
+    let current_fk: Option<String> = sqlx::query_scalar(
+        "SELECT sql FROM sqlite_master WHERE type='table' AND name='event_schedules'",
+    )
+    .fetch_optional(pool)
+    .await?
+    .and_then(|sql: String| {
+        if sql.contains("events_old") {
+            Some("events_old".to_string())
+        } else {
+            None
+        }
+    });
+
+    if current_fk.is_some() {
+        println!("⚠️  Found broken foreign key constraint pointing to 'events_old'");
+
+        // Check if there are any records that would violate the constraint
+        let orphaned_count: i64 = sqlx::query_scalar(
+            "SELECT COUNT(*) FROM event_schedules WHERE event_id IS NOT NULL AND event_id NOT IN (SELECT id FROM events)"
+        )
+        .fetch_one(pool)
+        .await?;
+
+        if orphaned_count > 0 {
+            println!(
+                "⚠️  Found {} orphaned records in event_schedules. These will be deleted.",
+                orphaned_count
+            );
+            // Delete orphaned records
+            sqlx::query("DELETE FROM event_schedules WHERE event_id IS NOT NULL AND event_id NOT IN (SELECT id FROM events)")
+                .execute(pool)
+                .await?;
+        }
+
+        // SQLite doesn't support DROP CONSTRAINT directly, so we need to recreate the table
+        sqlx::query(
+            r#"
+            -- Create new table with correct foreign key
+            CREATE TABLE event_schedules_new (
+                id INTEGER PRIMARY KEY AUTOINCREMENT,
+                event_id INTEGER,
+                start_time DATETIME NOT NULL,
+                end_time DATETIME,
+                stream_url TEXT,
+                encrypted_stream_url TEXT,
+                created_at DATETIME DEFAULT CURRENT_TIMESTAMP,
+                FOREIGN KEY (event_id) REFERENCES events(id)
+            )
+            "#,
+        )
+        .execute(pool)
+        .await?;
+
+        // Copy data from old table to new table
+        sqlx::query(
+            r#"
+            INSERT INTO event_schedules_new (id, event_id, start_time, end_time, stream_url, encrypted_stream_url, created_at)
+            SELECT id, event_id, start_time, end_time, stream_url, encrypted_stream_url, created_at
+            FROM event_schedules
+            "#
+        )
+        .execute(pool)
+        .await?;
+
+        // Replace old table with new table
+        sqlx::query("DROP TABLE event_schedules")
+            .execute(pool)
+            .await?;
+        sqlx::query("ALTER TABLE event_schedules_new RENAME TO event_schedules")
+            .execute(pool)
+            .await?;
+
+        println!("✅ Foreign key constraint in event_schedules table fixed successfully");
+    } else {
+        println!("ℹ️  Foreign key constraint in event_schedules table is already correct");
+    }
+
+    Ok(())
+}
+
+/// Create devices table - User device management
+#[allow(dead_code)]
+async fn create_devices_table(pool: &Pool<Sqlite>) -> Result<()> {
+    sqlx::query(
+        r#"
+        CREATE TABLE devices (
+            id INTEGER PRIMARY KEY AUTOINCREMENT,
+            user_id INTEGER NOT NULL,
+            device_name TEXT NOT NULL,
+            device_id TEXT UNIQUE NOT NULL,
+            last_seen DATETIME DEFAULT CURRENT_TIMESTAMP,
+            created_at DATETIME DEFAULT CURRENT_TIMESTAMP,
+            FOREIGN KEY (user_id) REFERENCES users(id)
+        )
+        "#,
+    )
+    .execute(pool)
+    .await?;
+    Ok(())
+}
+
+/// Create user_devices table - Advanced device tracking
+#[allow(dead_code)]
+async fn create_user_devices_table(pool: &Pool<Sqlite>) -> Result<()> {
+    sqlx::query(
+        r#"
+        CREATE TABLE user_devices (
+            id INTEGER PRIMARY KEY AUTOINCREMENT,
+            user_id INTEGER NOT NULL,
+            device_name TEXT,
+            device_id TEXT NOT NULL,
+            last_seen DATETIME DEFAULT CURRENT_TIMESTAMP,
+            last_active DATETIME DEFAULT CURRENT_TIMESTAMP,
+            created_at DATETIME DEFAULT CURRENT_TIMESTAMP,
+            UNIQUE(user_id, device_id),
+            FOREIGN KEY (user_id) REFERENCES users(id)
+        )
+        "#,
+    )
+    .execute(pool)
+    .await?;
+    Ok(())
+}
+
+/// Create user_subscriptions table - Category subscriptions
+#[allow(dead_code)]
+async fn create_user_subscriptions_table(pool: &Pool<Sqlite>) -> Result<()> {
+    sqlx::query(
+        r#"
+        CREATE TABLE user_subscriptions (
+            id INTEGER PRIMARY KEY AUTOINCREMENT,
+            user_id INTEGER,
+            category_id INTEGER,
+            created_at DATETIME DEFAULT CURRENT_TIMESTAMP,
+            FOREIGN KEY (user_id) REFERENCES users(id),
+            FOREIGN KEY (category_id) REFERENCES categories(id)
+        )
+        "#,
+    )
+    .execute(pool)
+    .await?;
+    Ok(())
+}
+
+/// Create user_favorites table - User favorites tracking
+#[allow(dead_code)]
+async fn create_user_favorites_table(pool: &Pool<Sqlite>) -> Result<()> {
+    sqlx::query(
+        r#"
+        CREATE TABLE user_favorites (
+            id INTEGER PRIMARY KEY AUTOINCREMENT,
+            user_id INTEGER NOT NULL,
+            content_type TEXT NOT NULL,
+            content_id TEXT NOT NULL,
+            created_at DATETIME DEFAULT CURRENT_TIMESTAMP,
+            UNIQUE(user_id, content_type, content_id),
+            FOREIGN KEY (user_id) REFERENCES users(id) ON DELETE CASCADE
+        )
+        "#,
+    )
+    .execute(pool)
+    .await?;
+
+    // Create indexes for performance
+    sqlx::query("CREATE INDEX idx_user_favorites_user_id ON user_favorites(user_id)")
+        .execute(pool)
+        .await?;
+    sqlx::query("CREATE INDEX idx_user_favorites_type ON user_favorites(content_type)")
+        .execute(pool)
+        .await?;
+
+    Ok(())
+}
+
+/// Create blacklisted_tokens table - Token blacklisting
+#[allow(dead_code)]
+async fn create_blacklisted_tokens_table(pool: &Pool<Sqlite>) -> Result<()> {
+    sqlx::query(
+        r#"
+        CREATE TABLE blacklisted_tokens (
+            id INTEGER PRIMARY KEY AUTOINCREMENT,
+            user_id INTEGER NOT NULL,
+            device_id TEXT NOT NULL,
+            blacklisted_at DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
+            UNIQUE(user_id, device_id),
+            FOREIGN KEY (user_id) REFERENCES users(id)
+        )
+        "#,
+    )
+    .execute(pool)
+    .await?;
+    Ok(())
+}
+
+/// Create rate_limits table - API rate limiting
+#[allow(dead_code)]
+async fn create_rate_limits_table(pool: &Pool<Sqlite>) -> Result<()> {
+    sqlx::query(
+        r#"
+        CREATE TABLE rate_limits (
+            id INTEGER PRIMARY KEY AUTOINCREMENT,
+            user_id INTEGER NOT NULL,
+            action TEXT NOT NULL,
+            created_at DATETIME DEFAULT CURRENT_TIMESTAMP,
+            FOREIGN KEY (user_id) REFERENCES users(id) ON DELETE CASCADE
+        )
+        "#,
+    )
+    .execute(pool)
+    .await?;
+
+    sqlx::query(
+        "CREATE INDEX idx_rate_limits_user_action_time ON rate_limits(user_id, action, created_at)",
+    )
+    .execute(pool)
+    .await?;
+    Ok(())
+}
+
+/// Create activity_logs table - User activity tracking
+#[allow(dead_code)]
+async fn create_activity_logs_table(pool: &Pool<Sqlite>) -> Result<()> {
+    sqlx::query(
+        r#"
+        CREATE TABLE activity_logs (
+            id INTEGER PRIMARY KEY AUTOINCREMENT,
+            user_id INTEGER NOT NULL,
+            target_user_id INTEGER,
+            action_type TEXT NOT NULL,
+            description TEXT NOT NULL,
+            credits_amount REAL,
+            metadata TEXT,
+            created_at DATETIME DEFAULT CURRENT_TIMESTAMP,
+            created_by INTEGER NOT NULL,
+            FOREIGN KEY (user_id) REFERENCES users(id),
+            FOREIGN KEY (target_user_id) REFERENCES users(id),
+            FOREIGN KEY (created_by) REFERENCES users(id)
+        )
+        "#,
+    )
+    .execute(pool)
+    .await?;
+    Ok(())
+}
+
+/// Create user_login_history table - Login tracking
+#[allow(dead_code)]
+async fn create_user_login_history_table(pool: &Pool<Sqlite>) -> Result<()> {
+    sqlx::query(
+        r#"
+        CREATE TABLE user_login_history (
+            id INTEGER PRIMARY KEY AUTOINCREMENT,
+            user_id INTEGER NOT NULL,
+            username TEXT NOT NULL,
+            login_timestamp DATETIME DEFAULT CURRENT_TIMESTAMP,
+            ip_address TEXT,
+            device_info TEXT,
+            user_agent TEXT,
+            success BOOLEAN DEFAULT TRUE,
+            FOREIGN KEY (user_id) REFERENCES users(id)
+        )
+        "#,
+    )
+    .execute(pool)
+    .await?;
+
+    // Create indexes for performance
+    sqlx::query("CREATE INDEX idx_user_login_history_user_id ON user_login_history(user_id)")
+        .execute(pool)
+        .await?;
+    sqlx::query(
+        "CREATE INDEX idx_user_login_history_timestamp ON user_login_history(login_timestamp)",
+    )
+    .execute(pool)
+    .await?;
+    sqlx::query("CREATE INDEX idx_user_login_history_ip ON user_login_history(ip_address)")
+        .execute(pool)
+        .await?;
+
+    Ok(())
+}
+
+/// Create user_viewing_history table - Content viewing tracking
+#[allow(dead_code)]
+async fn create_user_viewing_history_table(pool: &Pool<Sqlite>) -> Result<()> {
+    sqlx::query(
+        r#"
+        CREATE TABLE user_viewing_history (
+            id INTEGER PRIMARY KEY AUTOINCREMENT,
+            user_id INTEGER NOT NULL,
+            username TEXT NOT NULL,
+            content_type TEXT NOT NULL,
+            content_id INTEGER,
+            content_title TEXT NOT NULL,
+            episode_title TEXT,
+            season_number INTEGER,
+            episode_number INTEGER,
+            start_timestamp DATETIME DEFAULT CURRENT_TIMESTAMP,
+            ip_address TEXT,
+            device_info TEXT,
+            user_agent TEXT,
+            series_title TEXT,
+            FOREIGN KEY (user_id) REFERENCES users(id)
+        )
+        "#,
+    )
+    .execute(pool)
+    .await?;
+
+    // Create indexes for performance
+    sqlx::query("CREATE INDEX idx_user_viewing_history_user_id ON user_viewing_history(user_id)")
+        .execute(pool)
+        .await?;
+    sqlx::query(
+        "CREATE INDEX idx_user_viewing_history_timestamp ON user_viewing_history(start_timestamp)",
+    )
+    .execute(pool)
+    .await?;
+    sqlx::query(
+        "CREATE INDEX idx_user_viewing_history_content_type ON user_viewing_history(content_type)",
+    )
+    .execute(pool)
+    .await?;
+    sqlx::query(
+        "CREATE INDEX idx_user_viewing_history_content_id ON user_viewing_history(content_id)",
+    )
+    .execute(pool)
+    .await?;
+    sqlx::query("CREATE INDEX idx_user_viewing_history_ip ON user_viewing_history(ip_address)")
+        .execute(pool)
+        .await?;
+
+    Ok(())
+}
+
+/// Create user_watch_progress table - Stores playback position for resume functionality
+#[allow(dead_code)]
+async fn create_user_watch_progress_table(pool: &Pool<Sqlite>) -> Result<()> {
+    sqlx::query(
+        r#"
+        CREATE TABLE user_watch_progress (
+            id INTEGER PRIMARY KEY AUTOINCREMENT,
+            user_id INTEGER NOT NULL,
+            content_id INTEGER NOT NULL,
+            content_type TEXT NOT NULL,
+            episode_id INTEGER,
+            position_seconds INTEGER NOT NULL DEFAULT 0,
+            duration_seconds INTEGER NOT NULL DEFAULT 0,
+            progress_percent REAL NOT NULL DEFAULT 0,
+            completed BOOLEAN NOT NULL DEFAULT 0,
+            updated_at DATETIME DEFAULT CURRENT_TIMESTAMP,
+            FOREIGN KEY (user_id) REFERENCES users(id) ON DELETE CASCADE,
+            UNIQUE(user_id, content_id, episode_id)
+        )
+        "#,
+    )
+    .execute(pool)
+    .await?;
+
+    sqlx::query("CREATE INDEX idx_user_watch_progress_user_id ON user_watch_progress(user_id)")
+        .execute(pool)
+        .await?;
+    sqlx::query("CREATE INDEX idx_user_watch_progress_content ON user_watch_progress(content_id)")
+        .execute(pool)
+        .await?;
+    sqlx::query("CREATE INDEX idx_user_watch_progress_updated ON user_watch_progress(updated_at)")
+        .execute(pool)
+        .await?;
+
+    Ok(())
+}
+
+/// Create security_incidents table - Security event tracking
+#[allow(dead_code)]
+async fn create_security_incidents_table(pool: &Pool<Sqlite>) -> Result<()> {
+    sqlx::query(
+        r#"
+        CREATE TABLE security_incidents (
+            id INTEGER PRIMARY KEY AUTOINCREMENT,
+            user_id INTEGER,
+            username TEXT NOT NULL,
+            incident_type TEXT NOT NULL,
+            ip_address TEXT,
+            user_agent TEXT,
+            device_id TEXT,
+            details TEXT,
+            created_at DATETIME DEFAULT CURRENT_TIMESTAMP,
+            FOREIGN KEY (user_id) REFERENCES users(id)
+        )
+        "#,
+    )
+    .execute(pool)
+    .await?;
+
+    // Create indexes for performance
+    sqlx::query("CREATE INDEX idx_security_incidents_user_id ON security_incidents(user_id)")
+        .execute(pool)
+        .await?;
+    sqlx::query("CREATE INDEX idx_security_incidents_username ON security_incidents(username)")
+        .execute(pool)
+        .await?;
+
+    Ok(())
+}
+
+/// Create security_bans table - User banning system
+#[allow(dead_code)]
+async fn create_security_bans_table(pool: &Pool<Sqlite>) -> Result<()> {
+    sqlx::query(
+        r#"
+        CREATE TABLE security_bans (
+            id INTEGER PRIMARY KEY AUTOINCREMENT,
+            user_id INTEGER,
+            username TEXT NOT NULL,
+            ban_type TEXT NOT NULL,
+            ban_reason TEXT NOT NULL,
+            ban_level INTEGER DEFAULT 1,
+            banned_at DATETIME DEFAULT CURRENT_TIMESTAMP,
+            expires_at DATETIME,
+            is_active BOOLEAN DEFAULT 1,
+            created_by INTEGER,
+            FOREIGN KEY (user_id) REFERENCES users(id),
+            FOREIGN KEY (created_by) REFERENCES users(id)
+        )
+        "#,
+    )
+    .execute(pool)
+    .await?;
+
+    // Create indexes for performance
+    sqlx::query("CREATE INDEX idx_security_bans_user_id ON security_bans(user_id)")
+        .execute(pool)
+        .await?;
+    sqlx::query("CREATE INDEX idx_security_bans_active ON security_bans(is_active)")
+        .execute(pool)
+        .await?;
+
+    Ok(())
+}
+
+/// Create tickets table - Simple ticket system
+#[allow(dead_code)]
+async fn create_tickets_table(pool: &Pool<Sqlite>) -> Result<()> {
+    sqlx::query(
+        r#"
+        CREATE TABLE tickets (
+            id INTEGER PRIMARY KEY AUTOINCREMENT,
+            user_id INTEGER NOT NULL,
+            title TEXT NOT NULL,
+            description TEXT NOT NULL,
+            status TEXT NOT NULL CHECK (status IN ('open', 'in_progress', 'resolved', 'closed')) DEFAULT 'open',
+            priority TEXT NOT NULL CHECK (priority IN ('low', 'medium', 'high', 'urgent')) DEFAULT 'medium',
+            created_at DATETIME DEFAULT CURRENT_TIMESTAMP,
+            updated_at DATETIME DEFAULT CURRENT_TIMESTAMP,
+            resolved_at DATETIME DEFAULT NULL,
+            assigned_to INTEGER DEFAULT NULL,
+            FOREIGN KEY (user_id) REFERENCES users(id),
+            FOREIGN KEY (assigned_to) REFERENCES users(id)
+        )
+        "#
+    )
+    .execute(pool)
+    .await?;
+
+    Ok(())
+}
+
+/// Create support_tickets table - Advanced support ticket system
+#[allow(dead_code)]
+async fn create_support_tickets_table(pool: &Pool<Sqlite>) -> Result<()> {
+    sqlx::query(
+        r#"
+        CREATE TABLE support_tickets (
+            id INTEGER PRIMARY KEY AUTOINCREMENT,
+            ticket_number TEXT UNIQUE NOT NULL,
+            title TEXT NOT NULL,
+            description TEXT NOT NULL,
+            priority TEXT NOT NULL CHECK (priority IN ('low', 'medium', 'high', 'urgent')),
+            status TEXT NOT NULL CHECK (status IN ('open', 'in_progress', 'waiting_response', 'resolved', 'closed')),
+            category TEXT NOT NULL CHECK (category IN ('technical', 'billing', 'account', 'content', 'other')),
+            created_by INTEGER NOT NULL,
+            assigned_to INTEGER,
+            created_at DATETIME DEFAULT CURRENT_TIMESTAMP,
+            updated_at DATETIME DEFAULT CURRENT_TIMESTAMP,
+            resolved_at DATETIME,
+            closed_at DATETIME,
+            FOREIGN KEY (created_by) REFERENCES users(id) ON DELETE CASCADE,
+            FOREIGN KEY (assigned_to) REFERENCES users(id) ON DELETE SET NULL
+        )
+        "#
+    )
+    .execute(pool)
+    .await?;
+
+    // Create indexes for performance
+    sqlx::query("CREATE INDEX idx_support_tickets_created_by ON support_tickets(created_by)")
+        .execute(pool)
+        .await?;
+    sqlx::query("CREATE INDEX idx_support_tickets_assigned_to ON support_tickets(assigned_to)")
+        .execute(pool)
+        .await?;
+    sqlx::query("CREATE INDEX idx_support_tickets_status ON support_tickets(status)")
+        .execute(pool)
+        .await?;
+    sqlx::query("CREATE INDEX idx_support_tickets_priority ON support_tickets(priority)")
+        .execute(pool)
+        .await?;
+    sqlx::query("CREATE INDEX idx_support_tickets_updated_at ON support_tickets(updated_at)")
+        .execute(pool)
+        .await?;
+
+    Ok(())
+}
+
+/// Create ticket_messages table - Support ticket messages
+#[allow(dead_code)]
+async fn create_ticket_messages_table(pool: &Pool<Sqlite>) -> Result<()> {
+    sqlx::query(
+        r#"
+        CREATE TABLE ticket_messages (
+            id INTEGER PRIMARY KEY AUTOINCREMENT,
+            ticket_id INTEGER NOT NULL,
+            message TEXT NOT NULL,
+            is_internal BOOLEAN DEFAULT 0,
+            user_id INTEGER NOT NULL,
+            created_at DATETIME DEFAULT CURRENT_TIMESTAMP,
+            FOREIGN KEY (ticket_id) REFERENCES support_tickets(id) ON DELETE CASCADE,
+            FOREIGN KEY (user_id) REFERENCES users(id) ON DELETE CASCADE
+        )
+        "#,
+    )
+    .execute(pool)
+    .await?;
+
+    // Create indexes for performance
+    sqlx::query("CREATE INDEX idx_ticket_messages_ticket_id ON ticket_messages(ticket_id)")
+        .execute(pool)
+        .await?;
+    sqlx::query("CREATE INDEX idx_ticket_messages_user_id ON ticket_messages(user_id)")
+        .execute(pool)
+        .await?;
+    sqlx::query("CREATE INDEX idx_ticket_messages_created_at ON ticket_messages(created_at)")
+        .execute(pool)
+        .await?;
+
+    Ok(())
+}
+
+/// Create ticket_message_reads table - Message read tracking
+#[allow(dead_code)]
+async fn create_ticket_message_reads_table(pool: &Pool<Sqlite>) -> Result<()> {
+    sqlx::query(
+        r#"
+        CREATE TABLE ticket_message_reads (
+            id INTEGER PRIMARY KEY AUTOINCREMENT,
+            ticket_id INTEGER NOT NULL,
+            user_id INTEGER NOT NULL,
+            last_read_message_id INTEGER NOT NULL,
+            read_at DATETIME DEFAULT CURRENT_TIMESTAMP,
+            UNIQUE(ticket_id, user_id),
+            FOREIGN KEY (ticket_id) REFERENCES support_tickets(id),
+            FOREIGN KEY (user_id) REFERENCES users(id),
+            FOREIGN KEY (last_read_message_id) REFERENCES ticket_messages(id)
+        )
+        "#,
+    )
+    .execute(pool)
+    .await?;
+
+    sqlx::query("CREATE INDEX idx_ticket_message_reads_ticket_user ON ticket_message_reads(ticket_id, user_id)")
+        .execute(pool)
+        .await?;
+    Ok(())
+}
+
+/// Create master_api_keys table - API key management
+#[allow(dead_code)]
+async fn create_master_api_keys_table(pool: &Pool<Sqlite>) -> Result<()> {
+    sqlx::query(
+        r#"
+        CREATE TABLE master_api_keys (
+            id INTEGER PRIMARY KEY AUTOINCREMENT,
+            key_name TEXT NOT NULL UNIQUE,
+            api_key TEXT NOT NULL,
+            enabled BOOLEAN NOT NULL DEFAULT 0,
+            created_by INTEGER NOT NULL,
+            created_at DATETIME DEFAULT CURRENT_TIMESTAMP,
+            updated_at DATETIME DEFAULT CURRENT_TIMESTAMP,
+            last_used_at DATETIME,
+            description TEXT,
+            FOREIGN KEY (created_by) REFERENCES users(id)
+        )
+        "#,
+    )
+    .execute(pool)
+    .await?;
+    Ok(())
+}
+
+/// Create epg_sources table - EPG source management
+#[allow(dead_code)]
+async fn create_epg_sources_table(pool: &Pool<Sqlite>) -> Result<()> {
+    sqlx::query(
+        r#"
+        CREATE TABLE epg_sources (
+            id INTEGER PRIMARY KEY AUTOINCREMENT,
+            name TEXT NOT NULL,
+            url TEXT NOT NULL,
+            timezone TEXT DEFAULT 'UTC',
+            cache_ttl_minutes INTEGER DEFAULT 15,
+            is_active INTEGER DEFAULT 1,
+            created_at DATETIME DEFAULT CURRENT_TIMESTAMP
+        )
+        "#,
+    )
+    .execute(pool)
+    .await?;
+
+    // Create indexes for performance
+    sqlx::query("CREATE INDEX idx_epg_sources_active ON epg_sources(is_active)")
+        .execute(pool)
+        .await?;
+    sqlx::query("CREATE UNIQUE INDEX idx_epg_sources_name ON epg_sources(name)")
+        .execute(pool)
+        .await?;
+
+    // Create reseller_logs table for persistent credit tracking
+    create_reseller_logs_table(pool).await?;
+
+    Ok(())
+}
+
+// Create credit_purchases table - Records reseller credit purchases via Stripe
+#[allow(dead_code)]
+async fn create_credit_purchases_table(pool: &Pool<Sqlite>) -> Result<()> {
+    sqlx::query(
+        r#"
+        CREATE TABLE IF NOT EXISTS credit_purchases (
+            id INTEGER PRIMARY KEY AUTOINCREMENT,
+            reseller_id INTEGER NOT NULL,
+            session_id TEXT NOT NULL UNIQUE,
+            quantity INTEGER NOT NULL,
+            unit_amount_cents INTEGER NOT NULL,
+            discount_percent REAL NOT NULL,
+            amount_total_cents INTEGER NOT NULL,
+            currency TEXT NOT NULL,
+            status TEXT NOT NULL, -- 'created','completed','refunded','failed'
+            created_at DATETIME DEFAULT CURRENT_TIMESTAMP,
+            updated_at DATETIME DEFAULT CURRENT_TIMESTAMP,
+            FOREIGN KEY (reseller_id) REFERENCES users(id)
+        )
+        "#,
+    )
+    .execute(pool)
+    .await?;
+
+    // Indexes
+    sqlx::query("CREATE INDEX IF NOT EXISTS idx_credit_purchases_reseller_id ON credit_purchases(reseller_id)")
+        .execute(pool)
+        .await?;
+    sqlx::query(
+        "CREATE INDEX IF NOT EXISTS idx_credit_purchases_status ON credit_purchases(status)",
+    )
+    .execute(pool)
+    .await?;
+
+    Ok(())
+}
+
+#[allow(dead_code)]
+async fn create_reseller_logs_table(pool: &Pool<Sqlite>) -> Result<()> {
+    tracing::info!("Creating reseller_logs table...");
+
+    sqlx::query(
+        r#"
+        CREATE TABLE IF NOT EXISTS reseller_logs (
+            id INTEGER PRIMARY KEY AUTOINCREMENT,
+            reseller_id INTEGER NOT NULL,
+            reseller_username TEXT NOT NULL,
+            end_user_username TEXT NOT NULL,
+            end_user_email TEXT,
+            end_user_max_devices INTEGER,
+            end_user_expires_at DATETIME,
+            end_user_category_ids TEXT, -- JSON array of category IDs
+            credits_cost REAL NOT NULL,
+            duration_months INTEGER NOT NULL,
+            action TEXT NOT NULL, -- 'CREATE', 'DELETE', etc.
+            created_at DATETIME DEFAULT CURRENT_TIMESTAMP,
+            ip_address TEXT,
+            user_agent TEXT,
+
+            -- Foreign key to resellers (but allow deletion)
+            FOREIGN KEY (reseller_id) REFERENCES users(id) ON DELETE SET NULL
+        )
+        "#,
+    )
+    .execute(pool)
+    .await?;
+
+    // Create indexes for performance and queries
+    sqlx::query("CREATE INDEX idx_reseller_logs_reseller_id ON reseller_logs(reseller_id)")
+        .execute(pool)
+        .await?;
+    sqlx::query("CREATE INDEX idx_reseller_logs_created_at ON reseller_logs(created_at)")
+        .execute(pool)
+        .await?;
+    sqlx::query(
+        "CREATE INDEX idx_reseller_logs_end_user_username ON reseller_logs(end_user_username)",
+    )
+    .execute(pool)
+    .await?;
+    sqlx::query("CREATE INDEX idx_reseller_logs_credits_cost ON reseller_logs(credits_cost)")
+        .execute(pool)
+        .await?;
+
+    tracing::info!("✅ reseller_logs table created successfully");
+    Ok(())
+}
+
+/// Create billing_transactions table - Unified billing (Stripe, offline, adjustments)
+#[allow(dead_code)]
+async fn create_billing_transactions_table(pool: &Pool<Sqlite>) -> Result<()> {
+    sqlx::query(
+        r#"
+        CREATE TABLE IF NOT EXISTS billing_transactions (
+            id INTEGER PRIMARY KEY AUTOINCREMENT,
+            reseller_id INTEGER NOT NULL,
+            source TEXT NOT NULL CHECK (source IN ('stripe','offline','adjustment')),
+            method TEXT,                 -- card/cash/bank/other
+            reference TEXT,              -- stripe session id or invoice number
+            amount_cents INTEGER NOT NULL,
+            currency TEXT NOT NULL,
+            credits_qty INTEGER NOT NULL,
+            status TEXT NOT NULL CHECK (status IN ('completed','pending','refunded','failed')) DEFAULT 'completed',
+            notes TEXT,
+            metadata TEXT,
+            created_at DATETIME DEFAULT CURRENT_TIMESTAMP,
+            created_by INTEGER,
+            FOREIGN KEY (reseller_id) REFERENCES users(id),
+            FOREIGN KEY (created_by) REFERENCES users(id)
+        )
+        "#
+    )
+    .execute(pool)
+    .await?;
+
+    // Indexes
+    sqlx::query(
+        "CREATE INDEX IF NOT EXISTS idx_billing_tx_reseller ON billing_transactions(reseller_id)",
+    )
+    .execute(pool)
+    .await?;
+    sqlx::query(
+        "CREATE INDEX IF NOT EXISTS idx_billing_tx_created_at ON billing_transactions(created_at)",
+    )
+    .execute(pool)
+    .await?;
+    sqlx::query("CREATE INDEX IF NOT EXISTS idx_billing_tx_source ON billing_transactions(source)")
+        .execute(pool)
+        .await?;
+
+    Ok(())
+}
+
+/// Add missing columns to existing databases without destructive migrations
+#[allow(dead_code)]
+/// Lightweight runtime migrations that can safely run against existing databases
+/// without requiring destructive schema rebuilds.
+pub async fn run_runtime_migrations(pool: &Pool<Sqlite>) -> Result<()> {
+    // Add new category-related columns if needed (non-destructive)
+    add_category_type_column_if_missing(pool).await?;
+    add_tmdb_id_column_if_missing(pool).await?;
+
+    // Add proxy / doh columns if needed
+    add_proxy_url_column_if_missing(pool).await?;
+    add_doh_url_column_if_missing(pool).await?;
+
+    // Ensure public endpoint config defaults exist
+    ensure_public_endpoints_config(pool).await?;
+
+    // Ensure new subtitle tables exist (safe on existing DBs)
+    if !table_exists(pool, "content_subtitles").await? {
+        create_content_subtitles_table(pool).await?;
+    }
+    if !table_exists(pool, "episode_subtitles").await? {
+        create_episode_subtitles_table(pool).await?;
+    }
+
+    // Ensure password reset and 2FA tables/columns exist
+    create_password_reset_tokens_table(pool).await?;
+    add_2fa_columns_if_missing(pool).await?;
+
+    // Ensure SMTP config table exists
+    ensure_smtp_config_table(pool).await?;
+
+    // Add Widevine/PlayReady DRM columns if missing
+    add_drm_columns_if_missing(pool).await?;
+
+    Ok(())
+}
+
+pub async fn add_proxy_url_column_if_missing(pool: &Pool<Sqlite>) -> Result<()> {
+    use sqlx::Row;
+
+    // Check if 'proxy_url' column exists on 'content' table
+    let rows = sqlx::query("PRAGMA table_info(content)")
+        .fetch_all(pool)
+        .await?;
+
+    let mut has_proxy_url = false;
+    for row in rows {
+        let name: String = row.get("name");
+        if name.eq_ignore_ascii_case("proxy_url") {
+            has_proxy_url = true;
+            break;
+        }
+    }
+
+    if !has_proxy_url {
+        sqlx::query("ALTER TABLE content ADD COLUMN proxy_url TEXT")
+            .execute(pool)
+            .await?;
+        println!("✅ Added 'proxy_url' column to 'content' table");
+    }
+
+    Ok(())
+}
+
+// --- New tables for external subtitles (movies and episodes) ---
+
+#[allow(dead_code)]
+async fn create_content_subtitles_table(pool: &Pool<Sqlite>) -> Result<()> {
+    sqlx::query(
+        r#"
+        CREATE TABLE content_subtitles (
+            id INTEGER PRIMARY KEY AUTOINCREMENT,
+            content_id INTEGER NOT NULL,
+            language TEXT NOT NULL,         -- ISO 639-1 (e.g., 'en', 'es', 'fr')
+            file_path TEXT NOT NULL,        -- Absolute path to .srt on disk
+            created_at DATETIME DEFAULT CURRENT_TIMESTAMP,
+            FOREIGN KEY (content_id) REFERENCES content(id) ON DELETE CASCADE,
+            UNIQUE(content_id, language, file_path)  -- Prevent duplicate subtitles
+        )
+        "#,
+    )
+    .execute(pool)
+    .await?;
+    // Indexes for fast lookups
+    sqlx::query("CREATE INDEX IF NOT EXISTS idx_content_subtitles_content_id ON content_subtitles(content_id)")
+        .execute(pool)
+        .await?;
+    sqlx::query(
+        "CREATE INDEX IF NOT EXISTS idx_content_subtitles_lang ON content_subtitles(language)",
+    )
+    .execute(pool)
+    .await?;
+    Ok(())
+}
+
+#[allow(dead_code)]
+async fn create_episode_subtitles_table(pool: &Pool<Sqlite>) -> Result<()> {
+    sqlx::query(
+        r#"
+        CREATE TABLE episode_subtitles (
+            id INTEGER PRIMARY KEY AUTOINCREMENT,
+            episode_id INTEGER NOT NULL,
+            language TEXT NOT NULL,         -- ISO 639-1 (e.g., 'en', 'es', 'fr')
+            file_path TEXT NOT NULL,        -- Absolute path to .srt on disk
+            created_at DATETIME DEFAULT CURRENT_TIMESTAMP,
+            FOREIGN KEY (episode_id) REFERENCES episodes(id) ON DELETE CASCADE,
+            UNIQUE(episode_id, language, file_path)  -- Prevent duplicate subtitles
+        )
+        "#,
+    )
+    .execute(pool)
+    .await?;
+    // Indexes for fast lookups
+    sqlx::query("CREATE INDEX IF NOT EXISTS idx_episode_subtitles_episode_id ON episode_subtitles(episode_id)")
+        .execute(pool)
+        .await?;
+    sqlx::query(
+        "CREATE INDEX IF NOT EXISTS idx_episode_subtitles_lang ON episode_subtitles(language)",
+    )
+    .execute(pool)
+    .await?;
+    Ok(())
+}
+
+#[allow(dead_code)]
+async fn create_tv_providers_table(pool: &Pool<Sqlite>) -> Result<()> {
+    sqlx::query(
+        r#"
+        CREATE TABLE IF NOT EXISTS tv_providers (
+            id INTEGER PRIMARY KEY AUTOINCREMENT,
+            name TEXT NOT NULL UNIQUE,
+            url TEXT NOT NULL,
+            ttl_minutes INTEGER NOT NULL DEFAULT 120,
+            enabled INTEGER NOT NULL DEFAULT 1,
+            last_fetched_at DATETIME,
+            next_refresh_at DATETIME,
+            last_status TEXT,
+            created_at DATETIME DEFAULT CURRENT_TIMESTAMP
+        )
+        "#,
+    )
+    .execute(pool)
+    .await?;
+
+    // Indexes to accelerate scheduler lookups
+    sqlx::query("CREATE INDEX IF NOT EXISTS idx_tv_providers_enabled ON tv_providers(enabled)")
+        .execute(pool)
+        .await?;
+    sqlx::query(
+        "CREATE INDEX IF NOT EXISTS idx_tv_providers_next_refresh ON tv_providers(next_refresh_at)",
+    )
+    .execute(pool)
+    .await?;
+
+    Ok(())
+}
+
+// Add DoH column migration helper (DNS-over-HTTPS per channel)
+#[allow(dead_code)]
+pub async fn add_doh_url_column_if_missing(pool: &Pool<Sqlite>) -> Result<()> {
+    use sqlx::Row;
+
+    // Check if 'doh_url' column exists on 'content' table
+    let rows = sqlx::query("PRAGMA table_info(content)")
+        .fetch_all(pool)
+        .await?;
+
+    let mut has_doh_url = false;
+    for row in rows {
+        let name: String = row.get("name");
+        if name.eq_ignore_ascii_case("doh_url") {
+            has_doh_url = true;
+            break;
+        }
+    }
+
+    if !has_doh_url {
+        sqlx::query("ALTER TABLE content ADD COLUMN doh_url TEXT")
+            .execute(pool)
+            .await?;
+        println!("✅ Added 'doh_url' column to 'content' table");
+    }
+
+    Ok(())
+}
+
+/// Add category_type column to categories table if missing (and backfill from legacy `type`)
+pub async fn add_category_type_column_if_missing(pool: &Pool<Sqlite>) -> Result<()> {
+    use sqlx::Row;
+
+    // Check if 'category_type' column exists on 'categories' table
+    let rows = sqlx::query("PRAGMA table_info(categories)")
+        .fetch_all(pool)
+        .await?;
+
+    let mut has_category_type = false;
+    for row in rows {
+        let name: String = row.get("name");
+        if name.eq_ignore_ascii_case("category_type") {
+            has_category_type = true;
+            break;
+        }
+    }
+
+    if !has_category_type {
+        sqlx::query("ALTER TABLE categories ADD COLUMN category_type TEXT")
+            .execute(pool)
+            .await?;
+        println!("✅ Added 'category_type' column to 'categories' table");
+
+        // Backfill category_type from legacy type column for existing rows
+        sqlx::query("UPDATE categories SET category_type = type WHERE category_type IS NULL OR category_type = ''")
+            .execute(pool)
+            .await?;
+        println!("ℹ️  Backfilled 'category_type' from legacy 'type' column");
+    }
+
+    Ok(())
+}
+
+/// Add tmdb_id column to categories table if missing (nullable)
+pub async fn add_tmdb_id_column_if_missing(pool: &Pool<Sqlite>) -> Result<()> {
+    use sqlx::Row;
+
+    // Check if 'tmdb_id' column exists on 'categories' table
+    let rows = sqlx::query("PRAGMA table_info(categories)")
+        .fetch_all(pool)
+        .await?;
+
+    let mut has_tmdb_id = false;
+    for row in rows {
+        let name: String = row.get("name");
+        if name.eq_ignore_ascii_case("tmdb_id") {
+            has_tmdb_id = true;
+            break;
+        }
+    }
+
+    if !has_tmdb_id {
+        sqlx::query("ALTER TABLE categories ADD COLUMN tmdb_id INTEGER")
+            .execute(pool)
+            .await?;
+        println!("✅ Added 'tmdb_id' column to 'categories' table");
+    }
+
+    Ok(())
+}
+
+/// Create gift_codes and gift_code_redemptions tables
+#[allow(dead_code)]
+async fn create_gift_codes_table(pool: &Pool<Sqlite>) -> Result<()> {
+    tracing::info!("Creating gift_codes and gift_code_redemptions tables...");
+    sqlx::query(
+        r#"
+        CREATE TABLE IF NOT EXISTS gift_codes (
+            id INTEGER PRIMARY KEY AUTOINCREMENT,
+            code TEXT NOT NULL UNIQUE,
+            duration_days INTEGER NOT NULL,
+            uses_total INTEGER NOT NULL DEFAULT 1,
+            uses_remaining INTEGER NOT NULL DEFAULT 1,
+            expires_at TEXT NULL,
+            allowed_categories TEXT NULL,
+            max_devices INTEGER NULL,
+            created_by INTEGER NOT NULL,
+            created_at TEXT NOT NULL DEFAULT (datetime('now'))
+        );
+        CREATE INDEX IF NOT EXISTS idx_gift_codes_code ON gift_codes(code);
+        "#,
+    )
+    .execute(pool)
+    .await?;
+
+    sqlx::query(
+        r#"
+        CREATE TABLE IF NOT EXISTS gift_code_redemptions (
+            id INTEGER PRIMARY KEY AUTOINCREMENT,
+            gift_code_id INTEGER NOT NULL,
+            redeemer_user_id INTEGER NULL,
+            redeemer_username TEXT NULL,
+            redeemer_email TEXT NULL,
+            redeemed_at TEXT NOT NULL DEFAULT (datetime('now')),
+            duration_days_granted INTEGER NOT NULL,
+            granted_categories TEXT NULL,
+            granted_max_devices INTEGER NULL,
+            FOREIGN KEY (gift_code_id) REFERENCES gift_codes(id) ON DELETE CASCADE
+        );
+        CREATE INDEX IF NOT EXISTS idx_gcredeem_giftcode_id ON gift_code_redemptions(gift_code_id);
+        "#,
+    )
+    .execute(pool)
+    .await?;
+    tracing::info!("✅ gift_codes tables created");
+    Ok(())
+}
+
+/// Ensure required public endpoint config keys exist with sensible defaults
+/// - public_demo_enabled: "true"
+/// - public_redeem_enabled: "true"
+/// - demo_creation_threshold: "3"
+/// - demo_ban_duration_days: "15"
+pub async fn ensure_public_endpoints_config(pool: &Pool<Sqlite>) -> Result<()> {
+    // Flags to enable/disable public endpoints from Admin UI
+    sqlx::query("INSERT OR IGNORE INTO config (key, value) VALUES ('public_demo_enabled', 'true')")
+        .execute(pool)
+        .await?;
+    sqlx::query(
+        "INSERT OR IGNORE INTO config (key, value) VALUES ('public_redeem_enabled', 'true')",
+    )
+    .execute(pool)
+    .await?;
+
+    // Demo abuse control defaults
+    sqlx::query(
+        "INSERT OR IGNORE INTO config (key, value) VALUES ('demo_creation_threshold', '3')",
+    )
+    .execute(pool)
+    .await?;
+    sqlx::query(
+        "INSERT OR IGNORE INTO config (key, value) VALUES ('demo_ban_duration_days', '15')",
+    )
+    .execute(pool)
+    .await?;
+    sqlx::query("INSERT OR IGNORE INTO config (key, value) VALUES ('demo_duration_hours', '12')")
+        .execute(pool)
+        .await?;
+
+    Ok(())
+}
+
+/// Create media_watch_folders table for automatic folder monitoring
+#[allow(dead_code)]
+async fn create_media_watch_folders_table(pool: &Pool<Sqlite>) -> Result<()> {
+    sqlx::query(
+        r#"
+        CREATE TABLE IF NOT EXISTS media_watch_folders (
+            id INTEGER PRIMARY KEY AUTOINCREMENT,
+            folder_path TEXT NOT NULL UNIQUE,
+            media_type TEXT NOT NULL CHECK(media_type IN ('movies', 'series', 'kids', 'anime')),
+            category_id INTEGER NOT NULL,
+            check_interval_minutes INTEGER DEFAULT 30,
+            last_check DATETIME,
+            enabled BOOLEAN DEFAULT 1,
+            created_at DATETIME DEFAULT CURRENT_TIMESTAMP,
+            FOREIGN KEY (category_id) REFERENCES categories(id) ON DELETE CASCADE
+        )
+        "#,
+    )
+    .execute(pool)
+    .await?;
+
+    // Indexes for fast lookups
+    sqlx::query("CREATE INDEX IF NOT EXISTS idx_media_watch_folders_enabled ON media_watch_folders(enabled)")
+        .execute(pool)
+        .await?;
+    sqlx::query("CREATE INDEX IF NOT EXISTS idx_media_watch_folders_media_type ON media_watch_folders(media_type)")
+        .execute(pool)
+        .await?;
+
+    Ok(())
+}
+
+/// Migration: Remove duplicate subtitles and add UNIQUE constraint
+/// This should be run once to clean up existing databases
+pub async fn migrate_deduplicate_subtitles(pool: &Pool<Sqlite>) -> Result<()> {
+    println!("🔧 Running subtitle deduplication migration...");
+
+    // Step 1: Remove duplicate content_subtitles (keep oldest by id)
+    sqlx::query(
+        r#"
+        DELETE FROM content_subtitles
+        WHERE id NOT IN (
+            SELECT MIN(id)
+            FROM content_subtitles
+            GROUP BY content_id, language, file_path
+        )
+        "#,
+    )
+    .execute(pool)
+    .await?;
+
+    // Step 2: Remove duplicate episode_subtitles (keep oldest by id)
+    sqlx::query(
+        r#"
+        DELETE FROM episode_subtitles
+        WHERE id NOT IN (
+            SELECT MIN(id)
+            FROM episode_subtitles
+            GROUP BY episode_id, language, file_path
+        )
+        "#,
+    )
+    .execute(pool)
+    .await?;
+
+    // Step 3: Create UNIQUE indexes if they don't exist
+    // Note: SQLite doesn't support adding UNIQUE constraints to existing tables directly
+    // So we use UNIQUE indexes instead
+    sqlx::query(
+        "CREATE UNIQUE INDEX IF NOT EXISTS idx_content_subtitles_unique ON content_subtitles(content_id, language, file_path)"
+    )
+    .execute(pool)
+    .await?;
+
+    sqlx::query(
+        "CREATE UNIQUE INDEX IF NOT EXISTS idx_episode_subtitles_unique ON episode_subtitles(episode_id, language, file_path)"
+    )
+    .execute(pool)
+    .await?;
+
+    println!("✅ Subtitle deduplication migration completed");
+    Ok(())
+}
+
+/// Migration: Create media_watch_folders table if it doesn't exist
+pub async fn migrate_create_media_watcher(pool: &Pool<Sqlite>) -> Result<()> {
+    println!("🔧 Creating media_watch_folders table...");
+    create_media_watch_folders_table(pool).await?;
+    println!("✅ Media watcher table created");
+    Ok(())
+}
+
+/// Create password_reset_tokens table for password reset functionality
+#[allow(dead_code)]
+pub async fn create_password_reset_tokens_table(pool: &Pool<Sqlite>) -> Result<()> {
+    sqlx::query(
+        r#"
+        CREATE TABLE IF NOT EXISTS password_reset_tokens (
+            id INTEGER PRIMARY KEY AUTOINCREMENT,
+            user_id INTEGER NOT NULL,
+            token TEXT NOT NULL UNIQUE,
+            expires_at DATETIME NOT NULL,
+            used BOOLEAN DEFAULT 0,
+            created_at DATETIME DEFAULT CURRENT_TIMESTAMP,
+            FOREIGN KEY (user_id) REFERENCES users(id) ON DELETE CASCADE
+        )
+        "#,
+    )
+    .execute(pool)
+    .await?;
+
+    sqlx::query("CREATE INDEX IF NOT EXISTS idx_password_reset_tokens_token ON password_reset_tokens(token)")
+        .execute(pool)
+        .await?;
+    sqlx::query("CREATE INDEX IF NOT EXISTS idx_password_reset_tokens_user_id ON password_reset_tokens(user_id)")
+        .execute(pool)
+        .await?;
+
+    Ok(())
+}
+
+/// Add 2FA columns to users table if they don't exist
+pub async fn add_2fa_columns_if_missing(pool: &Pool<Sqlite>) -> Result<()> {
+    use sqlx::Row;
+
+    let rows = sqlx::query("PRAGMA table_info(users)")
+        .fetch_all(pool)
+        .await?;
+
+    let mut has_totp_secret = false;
+    let mut has_totp_enabled = false;
+    let mut has_totp_backup_codes = false;
+
+    for row in rows {
+        let name: String = row.get("name");
+        match name.as_str() {
+            "totp_secret" => has_totp_secret = true,
+            "totp_enabled" => has_totp_enabled = true,
+            "totp_backup_codes" => has_totp_backup_codes = true,
+            _ => {}
+        }
+    }
+
+    if !has_totp_secret {
+        sqlx::query("ALTER TABLE users ADD COLUMN totp_secret TEXT")
+            .execute(pool)
+            .await?;
+        println!("✅ Added 'totp_secret' column to 'users' table");
+    }
+
+    if !has_totp_enabled {
+        sqlx::query("ALTER TABLE users ADD COLUMN totp_enabled BOOLEAN DEFAULT 0")
+            .execute(pool)
+            .await?;
+        println!("✅ Added 'totp_enabled' column to 'users' table");
+    }
+
+    if !has_totp_backup_codes {
+        sqlx::query("ALTER TABLE users ADD COLUMN totp_backup_codes TEXT")
+            .execute(pool)
+            .await?;
+        println!("✅ Added 'totp_backup_codes' column to 'users' table");
+    }
+
+    Ok(())
+}
+
+/// Migration: Setup password reset and 2FA tables/columns
+pub async fn migrate_auth_security_features(pool: &Pool<Sqlite>) -> Result<()> {
+    // Create password reset tokens table
+    create_password_reset_tokens_table(pool).await?;
+
+    // Add 2FA columns to users
+    add_2fa_columns_if_missing(pool).await?;
+
+    Ok(())
+}
+
+/// Create smtp_config table for storing SMTP settings
+#[allow(dead_code)]
+pub async fn create_smtp_config_table(pool: &Pool<Sqlite>) -> Result<()> {
+    sqlx::query(
+        r#"
+        CREATE TABLE IF NOT EXISTS smtp_config (
+            id INTEGER PRIMARY KEY CHECK (id = 1),
+            enabled BOOLEAN DEFAULT 0,
+            host TEXT,
+            port INTEGER DEFAULT 587,
+            username TEXT,
+            password_encrypted TEXT,
+            from_name TEXT DEFAULT 'StreamCore',
+            from_email TEXT,
+            use_tls BOOLEAN DEFAULT 1,
+            frontend_url TEXT DEFAULT 'http://localhost:5000',
+            app_name TEXT DEFAULT 'StreamCore',
+            updated_at DATETIME DEFAULT CURRENT_TIMESTAMP,
+            updated_by INTEGER,
+            FOREIGN KEY (updated_by) REFERENCES users(id)
+        )
+        "#,
+    )
+    .execute(pool)
+    .await?;
+
+    // Insert default row if not exists
+    sqlx::query("INSERT OR IGNORE INTO smtp_config (id, enabled) VALUES (1, 0)")
+        .execute(pool)
+        .await?;
+
+    Ok(())
+}
+
+/// Ensure smtp_config table exists
+pub async fn ensure_smtp_config_table(pool: &Pool<Sqlite>) -> Result<()> {
+    create_smtp_config_table(pool).await
+}
+
+/// Add Widevine/PlayReady DRM columns to content table if they don't exist
+pub async fn add_drm_columns_if_missing(pool: &Pool<Sqlite>) -> Result<()> {
+    use sqlx::Row;
+
+    let rows = sqlx::query("PRAGMA table_info(content)")
+        .fetch_all(pool)
+        .await?;
+
+    let mut has_drm_type = false;
+    let mut has_license_server_url = false;
+    let mut has_drm_headers = false;
+
+    for row in rows {
+        let name: String = row.get("name");
+        match name.as_str() {
+            "drm_type" => has_drm_type = true,
+            "license_server_url" => has_license_server_url = true,
+            "drm_headers" => has_drm_headers = true,
+            _ => {}
+        }
+    }
+
+    if !has_drm_type {
+        sqlx::query("ALTER TABLE content ADD COLUMN drm_type TEXT")
+            .execute(pool)
+            .await?;
+        println!("✅ Added 'drm_type' column to 'content' table");
+    }
+
+    if !has_license_server_url {
+        sqlx::query("ALTER TABLE content ADD COLUMN license_server_url TEXT")
+            .execute(pool)
+            .await?;
+        println!("✅ Added 'license_server_url' column to 'content' table");
+    }
+
+    if !has_drm_headers {
+        sqlx::query("ALTER TABLE content ADD COLUMN drm_headers TEXT")
+            .execute(pool)
+            .await?;
+        println!("✅ Added 'drm_headers' column to 'content' table");
+    }
+
+    Ok(())
+}
+
+/// Create reseller_api_keys table for reseller public API access
+#[allow(dead_code)]
+async fn create_reseller_api_keys_table(pool: &Pool<Sqlite>) -> Result<()> {
+    sqlx::query(
+        r#"
+        CREATE TABLE IF NOT EXISTS reseller_api_keys (
+            id INTEGER PRIMARY KEY AUTOINCREMENT,
+            reseller_id INTEGER NOT NULL,
+            key_name TEXT NOT NULL,
+            api_key_hash TEXT NOT NULL UNIQUE,
+            api_key_prefix TEXT NOT NULL,
+            
+            -- Granular permissions (JSON array)
+            permissions TEXT NOT NULL DEFAULT '["users:read","credits:read"]',
+            
+            -- CORS and security
+            allowed_origins TEXT DEFAULT '*',
+            ip_whitelist TEXT DEFAULT NULL,
+            
+            -- Rate limiting
+            rate_limit_per_minute INTEGER DEFAULT 60,
+            rate_limit_per_day INTEGER DEFAULT 10000,
+            
+            -- Status and audit
+            is_active BOOLEAN DEFAULT 1,
+            last_used_at DATETIME,
+            total_requests INTEGER DEFAULT 0,
+            created_at DATETIME DEFAULT CURRENT_TIMESTAMP,
+            expires_at DATETIME DEFAULT NULL,
+            
+            FOREIGN KEY (reseller_id) REFERENCES users(id) ON DELETE CASCADE
+        )
+        "#,
+    )
+    .execute(pool)
+    .await?;
+
+    // Indexes for fast lookups
+    sqlx::query(
+        "CREATE INDEX IF NOT EXISTS idx_reseller_api_keys_hash ON reseller_api_keys(api_key_hash)",
+    )
+    .execute(pool)
+    .await?;
+    sqlx::query("CREATE INDEX IF NOT EXISTS idx_reseller_api_keys_reseller ON reseller_api_keys(reseller_id)")
+        .execute(pool)
+        .await?;
+    sqlx::query(
+        "CREATE INDEX IF NOT EXISTS idx_reseller_api_keys_active ON reseller_api_keys(is_active)",
+    )
+    .execute(pool)
+    .await?;
+
+    Ok(())
+}
+
+/// Create reseller_api_key_usage table for rate limiting tracking
+#[allow(dead_code)]
+async fn create_reseller_api_key_usage_table(pool: &Pool<Sqlite>) -> Result<()> {
+    sqlx::query(
+        r#"
+        CREATE TABLE IF NOT EXISTS reseller_api_key_usage (
+            id INTEGER PRIMARY KEY AUTOINCREMENT,
+            api_key_id INTEGER NOT NULL,
+            endpoint TEXT NOT NULL,
+            method TEXT NOT NULL,
+            status_code INTEGER,
+            ip_address TEXT,
+            user_agent TEXT,
+            request_timestamp DATETIME DEFAULT CURRENT_TIMESTAMP,
+            response_time_ms INTEGER,
+            FOREIGN KEY (api_key_id) REFERENCES reseller_api_keys(id) ON DELETE CASCADE
+        )
+        "#,
+    )
+    .execute(pool)
+    .await?;
+
+    // Indexes for rate limiting queries
+    sqlx::query("CREATE INDEX IF NOT EXISTS idx_api_key_usage_key_time ON reseller_api_key_usage(api_key_id, request_timestamp)")
+        .execute(pool)
+        .await?;
+
+    Ok(())
+}

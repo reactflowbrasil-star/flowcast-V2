@@ -1,0 +1,30 @@
+{
+  "title": "Darčekové kódy",
+  "description": "Spravujte jednorazové alebo viacnásobné darčekové kódy na vytvorenie alebo predĺženie predplatného používateľov.",
+  "create": "Vytvoriť kód",
+  "bulkCreate": "Hromadné vytvorenie",
+  "export": "Exportovať CSV",
+  "noData": "Žiadne darčekové kódy na export.",
+  "bulkCreated": "Vytvorených {{count}} darčekových kódov",
+  "created": "Darčekový kód vytvorený",
+  "deletedSelected": "Vymazaných {{count}} vybraných darčekových kódov",
+  "generate": "Vygenerovať",
+  "deleteSelected": "Vymazať vybrané ({{count}})",
+  "deleteConfirm": "Vymazať {{count}} vybraných darčekových kódov? Túto akciu nemožno vrátiť späť.",
+  "table": {
+    "code": "Kód",
+    "duration_days": "Trvanie (dni)",
+    "uses": "Použitia",
+    "remaining": "Zostávajúce",
+    "expires_at": "Vyprší",
+    "created_at": "Vytvorený"
+  },
+  "form": {
+    "codeOptional": "Kód (voliteľné)",
+    "durationMonths": "Trvanie (mesiace)",
+    "uses": "Použitia",
+    "prefixOptional": "Predpona (voliteľné)",
+    "count": "Počet",
+    "usesPerCode": "Použitia na kód"
+  }
+}

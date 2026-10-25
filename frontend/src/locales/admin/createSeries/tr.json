@@ -1,0 +1,42 @@
+{
+  "createSeries": {
+    "dialogTitle": "TMDB'den {{type}} ekle",
+    "dialogDescription": "TMDB'de arama yapın ve tüm sezonları ve bölümleri otomatik olarak içe aktarın",
+    "tabSearch": "1. Ara",
+    "tabReview": "2. İnceleme",
+    "tabEpisodes": "3. Bölümler",
+    "searching": "Arama...",
+    "search": "Aramak",
+    "cancel": "İptal etmek",
+    "backToSearch": "Aramaya geri dön",
+    "nextAddUrls": "Sonraki: Bölüm URL'lerini ekleme",
+    "back": "Geri",
+    "creating": "Oluşturuluyor...",
+    "createButton": "{{type}} oluştur",
+    "loadingDetails": "Seri ayrıntıları yükleniyor...",
+    "loadingEpisodes": "Bölüm bilgileri yükleniyor...",
+    "previewTitle": "Sezonları ve bölümleri önizleyin",
+    "addEpisodeUrls": "Bölüm URL'leri ekleyin",
+    "completed": "tamamlanmış",
+    "episodeLabel": "Bölüm {{number}}: {{name}}",
+    "unknownYear": "Bilinmiyor",
+    "noDescription": "Açıklama mevcut değil",
+    "na": "N/A",
+    "errors": {
+      "missingData": "Eksik seri veya sezon verileri",
+      "unsupportedType": "Desteklenmeyen içerik türü: {{type}}",
+      "uploadVideoFailed": "Failed to upload video",
+      "uploadSubtitleFailed": "Failed to upload subtitle",
+      "createFailed": "Failed to create series"
+    },
+    "uploadEpisodeVideoOptional": "Upload Episode Video (optional)",
+    "uploadSubtitleOptional": "Upload Subtitle (optional)",
+    "subtitleLanguagePlaceholder": "en",
+    "messages": {
+      "createdSuccess": "{{type}} created successfully",
+      "uploadsFailedSummary": "{{type}} created, but {{count}} uploads failed. {{preview}}",
+      "episodeNotFoundAfterCreation": "episode not found after creation",
+      "episodeNotFoundForSubtitle": "episode not found for subtitle upload"
+    }
+  }
+}

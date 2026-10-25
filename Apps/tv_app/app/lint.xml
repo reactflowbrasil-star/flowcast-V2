@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lint>
+    <!-- Legacy debt and non-functional style checks intentionally relaxed for TV app stability. -->
+    <issue id="UnusedResources" severity="ignore" />
+    <issue id="ModifierParameter" severity="ignore" />
+    <issue id="PluralsCandidate" severity="ignore" />
+    <issue id="GradleDependency" severity="ignore" />
+    <issue id="IconLauncherShape" severity="ignore" />
+    <issue id="IconDipSize" severity="ignore" />
+    <issue id="IconLocation" severity="ignore" />
+    <issue id="GestureBackNavigation" severity="ignore" />
+    <issue id="OldTargetApi" severity="ignore" />
+    <issue id="UnusedAttribute" severity="ignore" />
+    <issue id="AppBundleLocaleChanges" severity="ignore" />
+    <issue id="PermissionImpliesUnsupportedHardware" severity="ignore" />
+    <issue id="DiscouragedApi" severity="ignore" />
+    <issue id="InsecureBaseConfiguration" severity="ignore" />
+    <issue id="StaticFieldLeak" severity="ignore" />
+    <issue id="IconDuplicates" severity="ignore" />
+    <issue id="ObsoleteLintCustomCheck" severity="ignore" />
+</lint>

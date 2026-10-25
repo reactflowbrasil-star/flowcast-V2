@@ -1,0 +1,67 @@
+{
+  "title": "Záznamy aktivít",
+  "subtitle": "Aktivita celého systému, akcie a audity",
+  "lastUpdated": "Posledná aktualizácia: {{time}}",
+  "autoRefreshOn": "Autom. obnovenie je ZAPNUTÉ",
+  "autoRefreshOff": "Autom. obnovenie je VYPNUTÉ",
+  "refreshNow": "Obnoviť teraz",
+  "refreshLabel": "Obnoviť",
+  "tabs": {
+    "dashboard": "Nástenka",
+    "system": "Systém",
+    "loginHistory": "História prihlásení",
+    "viewingHistory": "História sledovania"
+  },
+  "filters": {
+    "actionType": "Typ akcie",
+    "allActions": "Všetky akcie",
+    "user": "Používateľ",
+    "username": "Používateľské meno",
+    "ipAddress": "IP adresa",
+    "startDate": "Dátum od (dd/mm/rrrr)",
+    "endDate": "Dátum do (dd/mm/rrrr)",
+    "perPage": "Na stránku",
+    "search": "Hľadať",
+    "placeholderUsername": "Hľadať používateľa...",
+    "placeholderIp": "napr. 192.168.0.1",
+    "contentType": "Typ obsahu",
+    "allTypes": "Všetky typy"
+  },
+  "common": {
+    "failedLogins": "Neúspešné prihlásenia",
+    "today": "Dnes",
+    "views": "Zobrazenia"
+  },
+  "table": {
+    "date": "Dátum",
+    "action": "Akcia",
+    "user": "Používateľ",
+    "target": "Cieľ",
+    "description": "Popis",
+    "credits": "Kredity",
+    "ip": "IP",
+    "device": "Zariadenie"
+  },
+  "pagination": {
+    "previous": "Predchádzajúca",
+    "next": "Nasledujúca",
+    "showing": "Zobrazuje sa {{from}} až {{to}} z {{total}} záznamov",
+    "pageOf": "Stránka {{page}} z {{total_pages}}"
+  },
+  "actionTypes": {
+    "USER_CREATED": "Používateľ vytvorený",
+    "USER_DELETED": "Používateľ zmazaný",
+    "RESELLER_CREATED": "Predajca vytvorený",
+    "RESELLER_DELETED": "Predajca zmazaný",
+    "CREDIT_USED": "Kredit použitý",
+    "CREDIT_ASSIGNED": "Kredit priradený",
+    "SYSTEM_INIT": "Systém inicializovaný",
+    "LOGIN": "Prihlásenie",
+    "LOGOUT": "Odhlásenie"
+  },
+  "empty": "Nenašli sa žiadne záznamy aktivít.",
+  "errors": {
+    "failedLoad": "Nepodarilo sa načítať záznamy aktivít",
+    "invalidDateRange": "Neplatný rozsah dátumov"
+  }
+}

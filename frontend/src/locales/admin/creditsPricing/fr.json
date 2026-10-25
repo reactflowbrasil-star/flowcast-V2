@@ -1,0 +1,44 @@
+{
+  "creditsPricing": {
+    "title": "Prix des Crédits (Stripe)",
+    "description": "Configurez le prix de base en USD par crédit et les paliers de réduction sur volume utilisés pour les achats Stripe Checkout.",
+    "loading": "Chargement configuration prix...",
+    "updated": "Configuration de prix mise à jour avec succès",
+    "tiersSorted": "Paliers normalisés et triés",
+    "savePricingConfig": "Sauvegarder Configuration Prix",
+    "error": {
+      "loadFailed": "Échec chargement config prix :",
+      "updateFailed": "Échec mise à jour config prix",
+      "fetchFailed": "Échec récupération config prix",
+      "invalidTierConfig": "Configuration de palier invalide"
+    },
+    "validation": {
+      "tooLarge": "Trop grand",
+      "minPercent": "Min 0%",
+      "maxPercent": "Maximum 100 %",
+      "basePricePositive": "Prix de base doit être supérieur à 0",
+      "maxTiers": "Maximum 50 paliers",
+      "tiersAscendingOrder": "Paliers doivent être strictement en ordre croissant par quantité min"
+    },
+    "retry": "Réessayer",
+    "basePrice": {
+      "label": "Prix de Base (USD par crédit)",
+      "help": "Prix de base avant remises. Les remises s'appliquent par quantité."
+    },
+    "currentBasePrice": "Prix de base actuel",
+    "activeTiers": "Paliers actifs",
+    "tiersDescription": "Définissez les paliers de réduction. Le palier le plus élevé où quantité min ≤ quantité achetée sera appliqué.",
+    "actions": {
+      "normalizeSort": "Normaliser/Trier",
+      "addTier": "Ajout Palier"
+    },
+    "table": {
+      "minQuantity": "Qté Minimale (inclus)",
+      "discountPercent": "Pourcentage de Remise",
+      "noTiers": "Aucun palier configuré. Le prix de base s'applique pour toutes les quantités."
+    }
+  },
+  "common": {
+    "saving": "Enregistrement..."
+  }
+}

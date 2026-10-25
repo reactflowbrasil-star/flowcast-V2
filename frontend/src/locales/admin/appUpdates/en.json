@@ -1,0 +1,150 @@
+{
+    "appUpdates": {
+        "title": "App Updates",
+        "description": "Manage and distribute updates for TV, Android, and iOS applications",
+        "tabs": {
+            "overview": "Overview",
+            "create": "Create Update",
+            "history": "Update History"
+        },
+        "platforms": {
+            "android_tv": "Android TV",
+            "android_mobile": "Android Mobile",
+            "ios": "iOS"
+        },
+        "updateType": {
+            "title": "Update Type",
+            "suggested": "Suggested",
+            "mandatory": "Mandatory",
+            "suggestedDescription": "Users can skip this update and continue using the app",
+            "mandatoryDescription": "Users must update to continue using the app"
+        },
+        "status": {
+            "active": "Active",
+            "inactive": "Inactive",
+            "draft": "Draft",
+            "archived": "Archived"
+        },
+        "form": {
+            "version": "Version Number",
+            "versionPlaceholder": "e.g., 2.1.0",
+            "versionCode": "Version Code",
+            "versionCodePlaceholder": "e.g., 21",
+            "versionCodeHelp": "Numeric build number for comparison (Android only)",
+            "platform": "Platform",
+            "selectPlatform": "Select platform",
+            "updateType": "Update Type",
+            "downloadUrl": "Download URL",
+            "downloadUrlPlaceholder": "https://example.com/app.apk",
+            "downloadUrlHelp": "Direct link to the APK or app store URL",
+            "storeUrl": "Store URL (optional)",
+            "storeUrlPlaceholder": "https://play.google.com/store/apps/details?id=...",
+            "storeUrlHelp": "Link to Play Store or App Store listing",
+            "releaseNotes": "Release Notes",
+            "releaseNotesPlaceholder": "What's new in this version...",
+            "releaseNotesHelp": "Describe the changes and new features (supports Markdown)",
+            "minSdkVersion": "Minimum SDK Version",
+            "minSdkVersionPlaceholder": "e.g., 21",
+            "fileSize": "File Size",
+            "fileSizePlaceholder": "e.g., 45 MB",
+            "publishDate": "Publish Date",
+            "status": "Status"
+        },
+        "actions": {
+            "create": "Create Update",
+            "creating": "Creating...",
+            "edit": "Edit",
+            "delete": "Delete",
+            "archive": "Archive",
+            "activate": "Activate",
+            "deactivate": "Deactivate",
+            "duplicate": "Duplicate",
+            "preview": "Preview",
+            "save": "Save Changes",
+            "saving": "Saving...",
+            "cancel": "Cancel"
+        },
+        "table": {
+            "version": "Version",
+            "platform": "Platform",
+            "type": "Type",
+            "status": "Status",
+            "releaseDate": "Release Date",
+            "downloads": "Downloads",
+            "actions": "Actions"
+        },
+        "overview": {
+            "title": "Update Overview",
+            "description": "Current active updates by platform",
+            "noActiveUpdates": "No active updates",
+            "latestVersion": "Latest Version",
+            "lastUpdated": "Last Updated",
+            "totalDownloads": "Total Downloads",
+            "activeUsers": "Active Users",
+            "updateRate": "Update Rate",
+            "pendingUpdates": "Pending Updates"
+        },
+        "stats": {
+            "totalUpdates": "Total Updates",
+            "activeUpdates": "Active Updates",
+            "mandatoryUpdates": "Mandatory Updates",
+            "suggestedUpdates": "Suggested Updates",
+            "totalDownloads": "Total Downloads",
+            "updateAdoption": "Update Adoption"
+        },
+        "confirm": {
+            "delete": "Are you sure you want to delete this update? This cannot be undone.",
+            "archive": "Are you sure you want to archive this update? Users will no longer see it.",
+            "activate": "Activate this update? Users will start receiving update notifications.",
+            "deactivate": "Deactivate this update? Users will no longer receive notifications for this version."
+        },
+        "empty": {
+            "title": "No Updates Found",
+            "description": "Create your first app update to start distributing new versions to users.",
+            "noHistory": "No update history available.",
+            "noUpdatesForPlatform": "No updates configured for {{platform}}"
+        },
+        "success": {
+            "created": "Update created successfully",
+            "updated": "Update saved successfully",
+            "deleted": "Update deleted successfully",
+            "activated": "Update activated successfully",
+            "deactivated": "Update deactivated successfully",
+            "archived": "Update archived successfully"
+        },
+        "errors": {
+            "loadFailed": "Failed to load updates",
+            "createFailed": "Failed to create update",
+            "updateFailed": "Failed to save update",
+            "deleteFailed": "Failed to delete update",
+            "versionRequired": "Version number is required",
+            "platformRequired": "Platform is required",
+            "downloadUrlRequired": "Download URL is required for non-store updates",
+            "versionExists": "This version already exists for the selected platform"
+        },
+        "filters": {
+            "allPlatforms": "All Platforms",
+            "allTypes": "All Types",
+            "allStatuses": "All Statuses",
+            "searchPlaceholder": "Search by version..."
+        },
+        "preview": {
+            "title": "Update Preview",
+            "description": "This is how the update dialog will appear to users",
+            "updateAvailable": "Update Available",
+            "newVersion": "A new version is available!",
+            "currentVersion": "Current version:",
+            "newVersionLabel": "New version:",
+            "whatsNew": "What's New",
+            "downloadNow": "Download Now",
+            "remindLater": "Remind Later",
+            "mandatoryWarning": "This update is required to continue using the app."
+        },
+        "history": {
+            "title": "Update History",
+            "description": "View all previous updates and their performance",
+            "downloadTrend": "Download Trend",
+            "adoptionRate": "Adoption Rate"
+        }
+    }
+}

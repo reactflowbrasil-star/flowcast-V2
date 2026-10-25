@@ -1,0 +1,64 @@
+{
+  "title": "Sécurité",
+  "subtitle": "Surveiller les incidents, les bannissements et les appareils sur liste noire.",
+  "tabs": {
+    "overview": "Aperçu",
+    "incidents": "Incidents",
+    "bans": "Bannissements",
+    "blacklistedDevices": "Appareils sur liste noire"
+  },
+  "actions": {
+    "cleanupExpiredBans": "Nettoyer les bannissements expirés",
+    "createManualBan": "Créer un bannissement manuel"
+  },
+  "searchByUsernamePlaceholder": "Rechercher par nom d'utilisateur...",
+  "confirmDelete": "Êtes-vous sûr de vouloir supprimer cet élément ? Cette action ne peut pas être annulée.",
+  "admin": {
+    "createBan": {
+      "title": "Créer un bannissement manuel",
+      "usernameLabel": "Nom d'utilisateur",
+      "usernamePlaceholder": "Entrez le nom d'utilisateur à bannir",
+      "banTypeLabel": "Type de bannissement",
+      "temporary": "Temporaire",
+      "permanent": "Permanent",
+      "banLevelLabel": "Niveau de bannissement",
+      "level1": "Niveau 1 - Restriction de connexion",
+      "level2": "Niveau 2 - Suspension de compte",
+      "level3": "Niveau 3 - Bannissement permanent",
+      "customDurationLabel": "Durée personnalisée",
+      "customDurationPlaceholder": "Entrez la durée en jours",
+      "customDurationNote": "Laisser vide pour un bannissement permanent",
+      "reasonLabel": "Raison",
+      "reasonPlaceholder": "Entrez la raison du bannissement"
+    }
+  },
+  "cards": {
+    "totalIncidents": "Total des incidents",
+    "todaysIncidents": "Incidents aujourd'hui",
+    "activeBans": "Bannissements actifs",
+    "permanentBans": "Bannissements permanents",
+    "blacklistedDevices": "Appareils sur liste noire"
+  },
+  "stats": {
+    "incidentsByType": "Incidents par type",
+    "recentIncidents": "Incidents récents",
+    "noRecentIncidents": "Pas d'incidents récents",
+    "summary": "Résumé de la sécurité",
+    "totalIncidents": "Total des incidents",
+    "todaysIncidents": "Incidents aujourd'hui",
+    "activeBans": "Bannissements actifs",
+    "permanentBans": "Bannissements permanents"
+  },
+  "pagination": {
+    "previous": "Précédent",
+    "next": "Suivant",
+    "pageOf": "Page {{page}} sur {{total_pages}}",
+    "showing": "Affichage de {{from}} à {{to}} sur {{total}}"
+  },
+  "notifications": {
+    "security": {
+      "errorLoadingStatistics": "Échec du chargement des statistiques de sécurité",
+      "errorCleaningExpiredBans": "Échec du nettoyage des bannissements expirés"
+    }
+  }
+}

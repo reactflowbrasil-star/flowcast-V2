@@ -1,0 +1,190 @@
+{
+  "content": {
+    "title": "Gestion du Contenu",
+    "description": "Gérez le contenu de toutes les catégories avec l'intégration TMDB",
+    "confirmDelete": "Êtes-vous sûr de vouloir supprimer ce contenu ?",
+    "confirmDeleteDescription": "Cette action est irréversible.",
+    "confirmBulkDelete": "Supprimer {{count}} éléments sélectionnés ?",
+    "confirmBulkDeleteDescription": "Cela supprimera définitivement {{count}} éléments. Cette action est irréversible.",
+    "tmdb": {
+      "confirm": "Remplir les métadonnées TMDB pour {{category}} ? Cela tentera de faire correspondre les éléments sans ID TMDB.",
+      "success": "Métadonnées TMDB mises à jour : {{updated}} mis à jour, {{skipped}} ignorés",
+      "warning": "{{count}} éléments n'ont pas pu être correspondus. Vérifiez la console pour plus de détails.",
+      "error": "Échec de l'actualisation des métadonnées TMDB",
+      "defaultCategory": "cette catégorie",
+      "mediaTypeMovie": "Film",
+      "mediaTypeTvSeries": "TV / Séries"
+    },
+    "errors": {
+      "load": "Échec du chargement du contenu : {{message}}"
+    },
+    "empty": {
+      "title": "Aucun contenu trouvé",
+      "description": "Commencez par ajouter votre premier élément dans {{category}}."
+    },
+    "categories": {
+      "vod": {
+        "label": "Films",
+        "description": "Films et contenu vidéo autonome"
+      },
+      "tv": {
+        "label": "Chaînes TV",
+        "description": "Chaînes TV en direct et flux"
+      },
+      "series": {
+        "label": "Séries",
+        "description": "Séries TV avec saisons et épisodes"
+      },
+      "events": {
+        "label": "Événements",
+        "description": "Événements en direct et diffusions spéciales"
+      },
+      "kids": {
+        "label": "Enfants",
+        "description": "Films pour la famille et les enfants"
+      },
+      "anime": {
+        "label": "Animés",
+        "description": "Séries et films d'animation"
+      }
+    },
+    "actions": {
+      "addManualMovie": "Ajouter un Film Manuellement",
+      "addManualSeries": "Ajouter une Série Manuellement",
+      "addTvChannel": "Ajouter une Chaîne TV",
+      "addEvent": "Ajouter un Événement",
+      "addFromTmdb": "Ajouter depuis TMDB",
+      "bulkImport": "Importation en Masse",
+      "importFromM3U8": "Importer depuis M3U/M3U8",
+      "manageCategories": "Gérer les Catégories",
+      "scanFolders": "Scanner les Dossiers",
+      "fillMetadata": "Remplir les Métadonnées",
+      "deleteSelected": "Supprimer la selection ({{count}})",
+      "preview": "Aperçu",
+      "addManualKids": "Ajouter Enfants Manuellement",
+      "addManualAnime": "Ajouter Animé Manuellement",
+      "addContent": "Ajouter du Contenu",
+      "tvProviders": "Fournisseurs TV"
+    },
+    "pagination": {
+      "range": "{{start}}-{{end}} sur {{total}}",
+      "rowsPerPage": "Lignes par page",
+      "rows": "Lignes",
+      "updating": "Mise à jour...",
+      "pageOf": "Page {{page}} sur {{total}}"
+    },
+    "preview": {
+      "title": "Aperçu",
+      "error": "Impossible de charger l'aperçu.",
+      "unsupported": "Votre navigateur ne supporte pas la lecture vidéo.",
+      "notAvailable": "Aucun aperçu disponible pour ce contenu.",
+      "playerLabel": "Lecteur : {{player}}"
+    },
+    "dialogs": {
+      "scanLibraryFolderDescription": "Sélectionnez un dossier pour scanner les fichiers multimédias"
+    },
+    "table": {
+      "columns": {
+        "title": "Titre",
+        "description": "Description",
+        "type": "Taper",
+        "format": "Format",
+        "year": "Année",
+        "status": "Statut",
+        "created": "Créé le",
+        "actions": "Actes"
+      },
+      "values": {
+        "tmdbId": "TMDB : {{id}}",
+        "noDescription": "Aucune description disponible",
+        "unknown": "Inconnu",
+        "event": "Événement"
+      }
+    },
+    "editDialogs": {
+      "channel": {
+        "title": "Modifier la Chaîne TV",
+        "basicInfo": "Informations de Base",
+        "name": "Nom de la Chaîne",
+        "description": "Description",
+        "channelNumber": "Numéro de la Chaîne",
+        "provider": "Fournisseur",
+        "channelCategory": "Catégorie de la Chaîne",
+        "country": "Pays",
+        "epgMapping": {
+          "currentTitle": "Mappage EPG Actuel",
+          "editTitle": "Modifier le Mappage EPG",
+          "source": "Source EPG",
+          "channel": "Chaîne EPG",
+          "channelId": "ID de la Chaîne EPG",
+          "timeOffset": "Décalage Temporel (min)",
+          "status": "Statut",
+          "configured": "✓ EPG Configuré",
+          "notConfigured": "⚠ EPG Non Configuré",
+          "loading": "Chargement du mappage EPG...",
+          "loadingControls": "Chargement des contrôles EPG...",
+          "noSource": "Aucune source EPG assignée",
+          "noChannel": "Aucun ID de chaîne assigné",
+          "help": "Les données EPG ne sont pas stockées dans la base de données ; seuls les identifiants sont enregistrés pour les recherches à la demande."
+        },
+        "streamSettings": "Paramètres de Flux",
+        "format": "Format",
+        "streamUrl": "URL du Flux",
+        "drmType": "Type de DRM",
+        "clearkeyKeys": "Clés ClearKey",
+        "clearkeyHelp": "Format : kid_hex:key_hex (une par ligne ou séparées par des virgules)",
+        "licenseServerUrl": "URL du Serveur de Licence",
+        "licenseHeaders": "En-têtes de Requête de Licence (optionnel)",
+        "licenseHeadersHelp": "Objet JSON avec des en-têtes personnalisés pour les requêtes de licence",
+        "artworkStatus": "Illustration et Statut",
+        "logoUrl": "URL du Logo",
+        "active": "Actif",
+        "liveTvHeaders": {
+          "title": "Configuration des En-têtes LiveTV",
+          "origin": "En-tête Origin",
+          "userAgent": "Agent utilisateur",
+          "referer": "En-tête Referer",
+          "custom": "En-têtes Personnalisés",
+          "proxy": "Proxy HTTP",
+          "doh": "DNS sur HTTPS"
+        },
+        "save": "Enregistrer",
+        "cancel": "Annuler"
+      },
+      "series": {
+        "title": "Modifier la Série",
+        "titleAnime": "Modifier l'Animé",
+        "name": "Titre de la Série",
+        "description": "Description",
+        "year": "Année",
+        "tmdbId": "ID TMDB",
+        "totalSeasons": "Saisons Totales",
+        "episodesManagement": "Gestion des Épisodes",
+        "episodesHelp": "Les séries n'ont pas d'URL vidéo directe. Le contenu vidéo est géré via des épisodes individuels au sein des saisons.",
+        "manageEpisodes": "📺 Gérer les Épisodes",
+        "posterUrl": "URL de l'Affiche",
+        "backdropUrl": "URL de l'Arrière-plan",
+        "active": "Actif",
+        "cancel": "Annuler",
+        "save": "Mettre à jour la Série",
+        "updating": "Mise à jour..."
+      },
+      "event": {
+        "title": "Modifier l'Événement",
+        "name": "Nom de l'Événement",
+        "description": "Description",
+        "provider": "Fournisseur",
+        "country": "Pays",
+        "format": "Format",
+        "clearkeyKeys": "Clés ClearKey",
+        "clearkeyHelp": "Format : kid_hex:key_hex (une par ligne ou séparées par des virgules)",
+        "streamUrl": "URL du Flux",
+        "posterUrl": "URL de l'Affiche",
+        "active": "Actif",
+        "cancel": "Annuler",
+        "save": "Mettre à jour l'Événement",
+        "updating": "Mise à jour..."
+      }
+    }
+  }
+}

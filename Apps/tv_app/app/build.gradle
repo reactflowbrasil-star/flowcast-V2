@@ -1,0 +1,315 @@
+plugins {
+    id 'com.android.application'
+    id 'org.jetbrains.kotlin.android'
+    id 'org.jetbrains.kotlin.plugin.compose'
+    id 'com.google.devtools.ksp'
+    id 'kotlin-kapt'
+    id 'dagger.hilt.android.plugin'
+    id 'kotlin-parcelize'
+}
+
+// Load backend URL from local.properties or use default
+def localProperties = new Properties()
+def localPropertiesFile = rootProject.file('local.properties')
+if (localPropertiesFile.exists()) {
+    localProperties.load(new FileInputStream(localPropertiesFile))
+}
+
+// Branding Name
+def brandingName = localProperties.getProperty('branding.name') ?: "StreamCore"
+
+// Application ID is fixed for this app to avoid mismatched launch package errors.
+def appApplicationId = "com.streamcore.tv"
+def configuredAppId = localProperties.getProperty('application.id')
+if (configuredAppId != null && configuredAppId != appApplicationId) {
+    throw new GradleException(
+        "Invalid application.id '${configuredAppId}'. This project must use '${appApplicationId}'. " +
+        "Update local.properties and sync again."
+    )
+}
+
+// Default Language (en, es, pt, zh, or system)
+def defaultLanguage = localProperties.getProperty('default.language') ?: "system"
+
+// Environment-based configuration
+// Priority: local.properties > environment variable > default
+def backendBaseUrl = localProperties.getProperty('backend.url') 
+    ?: System.getenv('IPTV_BACKEND_URL') 
+    ?: "https://streamcore.iptv.com.tv"
+
+def apiBaseUrl = "${backendBaseUrl}/api/"
+def streamBaseUrl = "${backendBaseUrl}/stream/"
+
+// API response encryption key (optional, 64 hex chars = 32 bytes)
+def apiEncryptionKey = localProperties.getProperty('api.encryption_key')
+    ?: System.getenv('API_ENCRYPTION_KEY')
+    ?: ""
+
+// Signing config from local.properties
+def keystoreFile = localProperties.getProperty('keystore.file')
+def keystorePassword = localProperties.getProperty('keystore.password')
+def releaseKeyAlias = localProperties.getProperty('keystore.alias')
+def releaseKeyPassword = localProperties.getProperty('keystore.key_password')
+
+android {
+    namespace 'com.streamcore.tv'
+    compileSdk 35
+
+    defaultConfig {
+        applicationId appApplicationId
+        minSdk 24
+        targetSdk 35
+        versionCode 120
+        versionName "1.2.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        vectorDrawables {
+            useSupportLibrary true
+        }
+        
+            // =============================================
+        // ANDROID BUILD CONFIGURATION
+        // =============================================
+        // These BuildConfig fields are generated at compile time
+        // They are accessible in code as: BuildConfig.API_BASE_URL
+
+        // BRANDING_NAME: Configurable app name
+        buildConfigField "String", "BRANDING_NAME", "\"${brandingName}\""
+        resValue "string", "branding_name", "${brandingName}"
+
+        // DEFAULT_LANGUAGE: Default app language (en, es, pt, zh, or system)
+        buildConfigField "String", "DEFAULT_LANGUAGE", "\"${defaultLanguage}\""
+
+        // API_BASE_URL: Backend API endpoint for REST API calls
+        // Backend runs on port 3000, Frontend runs on port 5000
+        // Change IP/domain according to your backend server
+        buildConfigField "String", "API_BASE_URL", "\"${apiBaseUrl}\""
+
+        // STREAM_BASE_URL: Video streaming server endpoint
+        // Used for HLS/DASH stream URLs
+        buildConfigField "String", "STREAM_BASE_URL", "\"${streamBaseUrl}\""
+
+        // DEBUG_MODE: Enable/disable debug features
+        buildConfigField "boolean", "DEBUG_MODE", "true"
+
+        // API_ENCRYPTION_KEY: AES-256-GCM encryption key for end-user API responses
+        buildConfigField "String", "API_ENCRYPTION_KEY", "\"${apiEncryptionKey}\""
+    }
+
+    // =============================================
+    // BUILD TYPES CONFIGURATION
+    // =============================================
+    // Simplified build configuration - only 2 buildTypes for easier maintenance
+    // This replaces the complex dev/staging/prod + debug/release combinations
+
+    signingConfigs {
+        release {
+            if (keystoreFile != null && rootProject.file(keystoreFile).exists()) {
+                storeFile rootProject.file(keystoreFile)
+                storePassword keystorePassword
+                keyAlias releaseKeyAlias
+                keyPassword releaseKeyPassword
+            }
+        }
+    }
+
+    buildTypes {
+        // DEBUG BUILD TYPE
+        // Used for development and testing
+        // Features: Debuggable, no code minification, detailed logging
+        debug {
+            // Enable debugging capabilities
+            debuggable true
+
+            // Disable code minification for easier debugging
+            minifyEnabled false
+
+            // API endpoint for development (backend on port 3000)
+            buildConfigField "String", "API_BASE_URL", "\"${apiBaseUrl}\""
+
+            // Streaming endpoint for development
+            buildConfigField "String", "STREAM_BASE_URL", "\"${streamBaseUrl}\""
+
+            // Enable debug features in the app
+            buildConfigField "boolean", "DEBUG_MODE", "true"
+
+            buildConfigField "String", "API_ENCRYPTION_KEY", "\"${apiEncryptionKey}\""
+        }
+
+        // RELEASE BUILD TYPE
+        // Used for production deployment
+        // Features: Code minification, optimizations, signing required
+        release {
+            // Enable code minification and optimization
+            minifyEnabled true
+
+            // ProGuard configuration for code obfuscation
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+
+            // Use signing config - release if available, otherwise debug for testing
+            if (keystoreFile != null && rootProject.file(keystoreFile).exists()) {
+                signingConfig signingConfigs.release
+            } else {
+                // Fallback to debug signing for testing release builds
+                signingConfig signingConfigs.debug
+            }
+
+            // Production API endpoint (change IP/domain for production)
+            buildConfigField "String", "API_BASE_URL", "\"${apiBaseUrl}\""
+
+            // Production streaming endpoint
+            buildConfigField "String", "STREAM_BASE_URL", "\"${streamBaseUrl}\""
+
+            // Disable debug features in production
+            buildConfigField "boolean", "DEBUG_MODE", "false"
+
+            buildConfigField "String", "API_ENCRYPTION_KEY", "\"${apiEncryptionKey}\""
+        }
+    }
+    
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+        coreLibraryDesugaringEnabled true
+    }
+    
+    kotlinOptions {
+        jvmTarget = '17'
+        freeCompilerArgs += [
+            "-opt-in=androidx.compose.material3.ExperimentalMaterial3Api"
+        ]
+    }
+    
+    buildFeatures {
+        compose true
+        buildConfig true
+        resValues true
+    }
+
+    kapt {
+        correctErrorTypes true
+    }
+    
+    packagingOptions {
+        jniLibs {
+            // Safety net: block legacy RTMP JNI library (fails 16KB page-size requirement).
+            excludes += ['**/librtmp-jni.so']
+        }
+        resources {
+            // Keep one copy of common license texts inside the APK/AAB for compliance.
+            pickFirsts += [
+                '/META-INF/AL2.0',
+                '/META-INF/LGPL2.1'
+            ]
+        }
+    }
+}
+
+configurations.configureEach {
+    // Prevent accidental reintroduction of RTMP extension via transitive dependencies.
+    exclude group: "androidx.media3", module: "media3-datasource-rtmp"
+    exclude group: "com.google.android.exoplayer", module: "extension-rtmp"
+}
+
+dependencies {
+    // Core Android
+    implementation 'androidx.core:core-ktx:1.12.0'
+    coreLibraryDesugaring 'com.android.tools:desugar_jdk_libs:2.1.5'
+    implementation "androidx.lifecycle:lifecycle-runtime-ktx:$lifecycle_version"
+    implementation "androidx.activity:activity-compose:$activity_compose_version"
+    
+    // Compose BOM
+    implementation platform("androidx.compose:compose-bom:$compose_bom_version")
+    implementation 'androidx.compose.ui:ui'
+    implementation 'androidx.compose.ui:ui-graphics'
+    implementation 'androidx.compose.ui:ui-tooling-preview'
+    implementation 'androidx.compose.foundation:foundation'
+    implementation 'androidx.compose.material3:material3'
+    implementation 'androidx.compose.material:material-icons-extended'
+
+    // Material Components for compatibility
+    implementation 'com.google.android.material:material:1.11.0'
+    implementation 'androidx.appcompat:appcompat:1.6.1'
+
+    // Navigation
+    implementation "androidx.navigation:navigation-compose:$navigation_version"
+    
+    // ViewModel
+    implementation "androidx.lifecycle:lifecycle-viewmodel-compose:$lifecycle_version"
+    implementation "androidx.lifecycle:lifecycle-runtime-compose:$lifecycle_version"
+    
+    // Hilt
+    implementation "com.google.dagger:hilt-android:$hilt_version"
+    implementation "androidx.hilt:hilt-navigation-compose:$hilt_nav_version"
+    kapt "com.google.dagger:hilt-compiler:$hilt_version"
+    
+    // Networking
+    implementation "com.squareup.retrofit2:retrofit:$retrofit_version"
+    implementation "com.squareup.retrofit2:converter-gson:$retrofit_version"
+    implementation "com.squareup.okhttp3:logging-interceptor:$okhttp_version"
+    
+    // Coroutines
+    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-android:$coroutines_version"
+    
+    // Room
+    implementation "androidx.room:room-runtime:$room_version"
+    implementation "androidx.room:room-ktx:$room_version"
+    ksp "androidx.room:room-compiler:$room_version"
+    
+    // DataStore
+    implementation "androidx.datastore:datastore-preferences:$datastore_version"
+    
+    // Media3 (replaces deprecated ExoPlayer 2.x)
+    implementation "androidx.media3:media3-exoplayer:$media3_version"
+    implementation "androidx.media3:media3-exoplayer-dash:$media3_version"
+    implementation "androidx.media3:media3-exoplayer-hls:$media3_version"
+    implementation "androidx.media3:media3-exoplayer-rtsp:$media3_version"
+    // Disabled due to 16 KB page-size incompatibility in transitive native lib (librtmp-jni.so).
+    // Re-enable when dependency ships 16 KB-compatible binaries.
+    // implementation "androidx.media3:media3-datasource-rtmp:$media3_version"
+    implementation "androidx.media3:media3-ui:$media3_version"
+    // OkHttp extension for per-channel HTTP proxy support (Live TV)
+    implementation "androidx.media3:media3-datasource-okhttp:$media3_version"
+    // Common utilities and session
+    implementation "androidx.media3:media3-common:$media3_version"
+    implementation "androidx.media3:media3-session:$media3_version"
+    
+    // Jellyfin FFmpeg decoder for software video decoding (emulator compatibility)
+    implementation "org.jellyfin.media3:media3-ffmpeg-decoder:1.5.0+1"
+    // MPV engine for VOD non-DRM playback
+    implementation "dev.jdtech.mpv:libmpv:0.5.1"
+    // Image Loading
+    implementation "io.coil-kt:coil-compose:$coil_version"
+    implementation "io.coil-kt:coil-svg:$coil_version"
+    
+    // Splash Screen
+    implementation "androidx.core:core-splashscreen:$splashscreen_version"
+    
+    // Gson
+    implementation "com.google.code.gson:gson:$gson_version"
+
+    // Logging
+    implementation "com.jakewharton.timber:timber:5.0.1"
+    
+    // Testing
+    testImplementation 'junit:junit:4.13.2'
+    testImplementation 'org.mockito:mockito-core:5.6.0'
+    testImplementation 'org.mockito.kotlin:mockito-kotlin:5.1.0'
+    testImplementation "org.jetbrains.kotlinx:kotlinx-coroutines-test:$coroutines_version"
+    testImplementation "androidx.arch.core:core-testing:2.2.0"
+    testImplementation "com.squareup.okhttp3:mockwebserver:$okhttp_version"
+    testImplementation "androidx.room:room-testing:$room_version"
+    
+    androidTestImplementation 'androidx.test.ext:junit:1.1.5'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
+    androidTestImplementation platform("androidx.compose:compose-bom:$compose_bom_version")
+    androidTestImplementation 'androidx.compose.ui:ui-test-junit4'
+    androidTestImplementation "androidx.navigation:navigation-testing:$navigation_version"
+    androidTestImplementation "com.google.dagger:hilt-android-testing:$hilt_version"
+    kaptAndroidTest "com.google.dagger:hilt-android-compiler:$hilt_version"
+    
+    debugImplementation 'androidx.compose.ui:ui-tooling'
+    debugImplementation 'androidx.compose.ui:ui-test-manifest'
+}
+
+// Hilt/KSP Workarounds removed - switched to KAPT which handles this automatically

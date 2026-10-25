@@ -1,0 +1,114 @@
+{
+  "billing": {
+    "overview": {
+      "title": "Обзор Биллинга",
+      "description": "Доходы и использование кредитов",
+      "metrics": {
+        "onlineRevenue": "Онлайн Доход",
+        "offlineRevenue": "Офлайн Доход",
+        "adjustments": "Корректировки",
+        "totalRevenue": "Общий Доход",
+        "creditsOnline": "Кредиты (Онлайн)",
+        "creditsOffline": "Кредиты (Офлайн)",
+        "creditsAdjustments": "Кредиты (Корректировки)",
+        "totalCredits": "Всего Кредитов"
+      }
+    },
+    "pricing": {
+      "title": "Стоимость Кредитов",
+      "description": "Базовая цена и уровни скидок, настроенные в системе",
+      "basePrice": "Базовая цена (USD за кредит)",
+      "activeTiers": "Активные уровни",
+      "effectiveCurrency": "Валюта",
+      "tiersNote": "Применяется наивысший уровень, где достигнуто минимальное количество.",
+      "table": {
+        "minQuantity": "Мин. количество (включительно)",
+        "discountPercent": "Процент скидки",
+        "noTiers": "Уровни не настроены. Базовая цена применяется для любого количества.",
+        "discountSuffix": "скидка"
+      }
+    },
+    "offline": {
+      "title": "Добавить Офлайн Платеж",
+      "description": "Запись ручных платежей и мгновенное начисление кредитов",
+      "labels": {
+        "reseller": "Реселлер",
+        "amount": "Сумма (USD)",
+        "credits": "Начислить кредитов",
+        "method": "Метод",
+        "reference": "Ссылка/Номер",
+        "notes": "Примечания"
+      },
+      "placeholders": {
+        "resellerSearch": "Введите минимум 2 буквы...",
+        "amount": "например 100.00",
+        "credits": "например 100",
+        "method": "наличные/банк/другое",
+        "reference": "номер счета или ссылка",
+        "notes": "дополнительные примечания"
+      },
+      "chargedCurrency": "Валюта списания:",
+      "success": "Офлайн платеж записан и кредиты начислены",
+      "actions": {
+        "saving": "Сохранение...",
+        "save": "Сохранить Офлайн Платеж"
+      },
+      "errors": {
+        "amountPositive": "Сумма (USD) должна быть больше 0",
+        "creditsPositive": "Кредиты должны быть положительным целым числом",
+        "resellerPositive": "ID реселлера должен быть положительным целым числом",
+        "selectReseller": "Выберите реселлера из списка"
+      }
+    },
+    "transactions": {
+      "title": "Недавние Транзакции",
+      "description": "Фильтрация и пагинация транзакций биллинга",
+      "filters": {
+        "source": "Источник",
+        "status": "Статус",
+        "resellerId": "ID Реселлера",
+        "reference": "Ссылка/Пользователь",
+        "perPage": "На странице"
+      },
+      "sources": {
+        "stripe": "Stripe",
+        "offline": "Офлайн",
+        "adjustment": "Корректировка"
+      },
+      "statuses": {
+        "completed": "Завершено",
+        "pending": "В ожидании",
+        "refunded": "Возвращено",
+        "failed": "Ошибка"
+      },
+      "placeholders": {
+        "resellerId": "например 42",
+        "reference": "Поиск ссылки или пользователя"
+      },
+      "table": {
+        "id": "ID",
+        "reseller": "Реселлер",
+        "source": "Источник",
+        "amount": "Сумма",
+        "credits": "Кредиты",
+        "status": "Статус",
+        "reference": "Ссылка",
+        "createdAt": "Создано"
+      },
+      "total": "Всего: {{count}}",
+      "pagination": {
+        "page": "Страница {{page}}"
+      },
+      "empty": "Транзакции не найдены."
+    },
+    "errors": {
+      "fetchOverview": "Ошибка загрузки обзора биллинга",
+      "fetchPricing": "Ошибка загрузки конфигурации цен",
+      "fetchTransactions": "Ошибка загрузки транзакций",
+      "createOfflinePayment": "Ошибка создания офлайн платежа"
+    }
+  },
+  "common": {
+    "refresh": "Обновить"
+  }
+}

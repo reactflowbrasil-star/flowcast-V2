@@ -1,0 +1,32 @@
+{
+  "title": "Kontrol Paneli",
+  "welcome": "Tekrar hoş geldiniz",
+  "guest": "Misafir",
+  "navigation": {
+    "home": "Ana Sayfa",
+    "movies": "Filmler",
+    "tv": "Canlı TV",
+    "series": "TV Dizileri",
+    "kids": "Çocuklar",
+    "anime": "anime",
+    "events": "Etkinlikler",
+    "music": "Müzik",
+    "content": "İçerik",
+    "devices": "Cihazlar",
+    "profile": "Profil",
+    "products": "Ürünler"
+  },
+  "sidebar": {
+    "viewProfile": "Profilinizi görüntüleyin ve düzenleyin",
+    "secureSession": "Güvenli oturum",
+    "logout": "Oturumu kapat"
+  },
+  "stats": {
+    "activeDevices": "Aktif Cihazlar",
+    "subscription": "Abonelik",
+    "expiresAt": "Bitiş Tarihi",
+    "unlimited": "Sınırsız",
+    "active": "Aktif",
+    "expired": "Süresi Doldu"
+  }
+}

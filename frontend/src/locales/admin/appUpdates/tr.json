@@ -1,0 +1,150 @@
+{
+  "appUpdates": {
+    "title": "Uygulama Güncellemeleri",
+    "description": "TV, Android ve iOS uygulamaları için güncellemeleri yönetin ve dağıtın",
+    "tabs": {
+      "overview": "Genel Bakış",
+      "create": "Güncelleme Oluştur",
+      "history": "Güncelleme Geçmişi"
+    },
+    "platforms": {
+      "android_tv": "Android TV",
+      "android_mobile": "Android Mobil",
+      "ios": "iOS"
+    },
+    "updateType": {
+      "title": "Güncelleme Türü",
+      "suggested": "Önerilen",
+      "mandatory": "Zorunlu",
+      "suggestedDescription": "Kullanıcılar bu güncellemeyi atlayabilir ve uygulamayı kullanmaya devam edebilir",
+      "mandatoryDescription": "Kullanıcıların uygulamayı kullanmaya devam etmek için güncellemesi gerekir"
+    },
+    "status": {
+      "active": "Aktif",
+      "inactive": "Pasif",
+      "draft": "Taslak",
+      "archived": "Arşivlenmiş"
+    },
+    "form": {
+      "version": "Sürüm Numarası",
+      "versionPlaceholder": "örn., 2.1.0",
+      "versionCode": "Sürüm Kodu",
+      "versionCodePlaceholder": "örn., 21",
+      "versionCodeHelp": "Karşılaştırma için sayısal yapı numarası (sadece Android)",
+      "platform": "platformu",
+      "selectPlatform": "Platform seçin",
+      "updateType": "Güncelleme Türü",
+      "downloadUrl": "İndirme URL'si",
+      "downloadUrlPlaceholder": "https://örnek.com/app.apk",
+      "downloadUrlHelp": "APK'ya doğrudan bağlantı veya mağaza URL'si",
+      "storeUrl": "Mağaza URL'si (isteğe bağlı)",
+      "storeUrlPlaceholder": "https://play.google.com/store/apps/details?id=...",
+      "storeUrlHelp": "Play Store veya App Store sayfasına bağlantı",
+      "releaseNotes": "Sürüm Notları",
+      "releaseNotesPlaceholder": "Bu sürümdeki yenilikler...",
+      "releaseNotesHelp": "Değişiklikleri ve yeni özellikleri açıklayın (Markdown destekler)",
+      "minSdkVersion": "Minimum SDK Sürümü",
+      "minSdkVersionPlaceholder": "örn., 21",
+      "fileSize": "Dosya Boyutu",
+      "fileSizePlaceholder": "örn., 45 MB",
+      "publishDate": "Yayın Tarihi",
+      "status": "Durum"
+    },
+    "actions": {
+      "create": "Güncelleme Oluştur",
+      "creating": "Oluşturuluyor...",
+      "edit": "Düzenle",
+      "delete": "Sil",
+      "archive": "Arşivle",
+      "activate": "Etkinleştir",
+      "deactivate": "Devre Dışı Bırak",
+      "duplicate": "Çoğalt",
+      "preview": "Önizle",
+      "save": "Değişiklikleri Kaydet",
+      "saving": "Kaydediliyor...",
+      "cancel": "İptal"
+    },
+    "table": {
+      "version": "Sürüm",
+      "platform": "platformu",
+      "type": "Tür",
+      "status": "Durum",
+      "releaseDate": "Yayın Tarihi",
+      "downloads": "İndirmeler",
+      "actions": "İşlemler"
+    },
+    "overview": {
+      "title": "Güncelleme Genel Bakışı",
+      "description": "Platforma göre mevcut aktif güncellemeler",
+      "noActiveUpdates": "Aktif güncelleme yok",
+      "latestVersion": "Son Sürüm",
+      "lastUpdated": "Son Güncelleme",
+      "totalDownloads": "Toplam İndirme",
+      "activeUsers": "Aktif Kullanıcılar",
+      "updateRate": "Güncelleme Oranı",
+      "pendingUpdates": "Bekleyen Güncellemeler"
+    },
+    "stats": {
+      "totalUpdates": "Toplam Güncelleme",
+      "activeUpdates": "Aktif Güncellemeler",
+      "mandatoryUpdates": "Zorunlu Güncellemeler",
+      "suggestedUpdates": "Önerilen Güncellemeler",
+      "totalDownloads": "Toplam İndirme",
+      "updateAdoption": "Güncelleme Benimseme"
+    },
+    "confirm": {
+      "delete": "Bu güncellemeyi silmek istediğinizden emin misiniz? Bu işlem geri alınamaz.",
+      "archive": "Bu güncellemeyi arşivlemek istediğinizden emin misiniz? Kullanıcılar artık görmeyecek.",
+      "activate": "Bu güncelleme etkinleştirilsin mi? Kullanıcılar güncelleme bildirimleri almaya başlayacak.",
+      "deactivate": "Bu güncelleme devre dışı bırakılsın mı? Kullanıcılar bu sürüm için artık bildirim almayacak."
+    },
+    "empty": {
+      "title": "Güncelleme Bulunamadı",
+      "description": "Kullanıcılara yeni sürümler dağıtmaya başlamak için ilk uygulama güncellemenizi oluşturun.",
+      "noHistory": "Güncelleme geçmişi mevcut değil.",
+      "noUpdatesForPlatform": "{{platform}} için yapılandırılmış güncelleme yok"
+    },
+    "success": {
+      "created": "Güncelleme başarıyla oluşturuldu",
+      "updated": "Güncelleme başarıyla kaydedildi",
+      "deleted": "Güncelleme başarıyla silindi",
+      "activated": "Güncelleme başarıyla etkinleştirildi",
+      "deactivated": "Güncelleme başarıyla devre dışı bırakıldı",
+      "archived": "Güncelleme başarıyla arşivlendi"
+    },
+    "errors": {
+      "loadFailed": "Güncellemeler yüklenemedi",
+      "createFailed": "Güncelleme oluşturulamadı",
+      "updateFailed": "Güncelleme kaydedilemedi",
+      "deleteFailed": "Güncelleme silinemedi",
+      "versionRequired": "Sürüm numarası gereklidir",
+      "platformRequired": "Platform gereklidir",
+      "downloadUrlRequired": "Mağaza dışı güncellemeler için indirme URL'si gereklidir",
+      "versionExists": "Bu sürüm seçilen platform için zaten mevcut"
+    },
+    "filters": {
+      "allPlatforms": "Tüm Platformlar",
+      "allTypes": "Tüm Türler",
+      "allStatuses": "Tüm Durumlar",
+      "searchPlaceholder": "Sürüme göre ara..."
+    },
+    "preview": {
+      "title": "Güncelleme Önizlemesi",
+      "description": "Güncelleme diyaloğu kullanıcılara böyle görünecek",
+      "updateAvailable": "Güncelleme Mevcut",
+      "newVersion": "Yeni bir sürüm mevcut!",
+      "currentVersion": "Mevcut sürüm:",
+      "newVersionLabel": "Yeni sürüm:",
+      "whatsNew": "Yenilikler",
+      "downloadNow": "Şimdi İndir",
+      "remindLater": "Daha Sonra Hatırlat",
+      "mandatoryWarning": "Bu güncelleme uygulamayı kullanmaya devam etmek için zorunludur."
+    },
+    "history": {
+      "title": "Güncelleme Geçmişi",
+      "description": "Önceki tüm güncellemeleri ve performanslarını görüntüleyin",
+      "downloadTrend": "İndirme Trendi",
+      "adoptionRate": "Benimseme Oranı"
+    }
+  }
+}

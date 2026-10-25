@@ -1,0 +1,45 @@
+{
+  "loginHistory": {
+    "title": "Historique de Connexion",
+    "subtitle": "Connexions récentes et événements d'authentification",
+    "lastUpdated": "Dernière mise à jour : {{time}}",
+    "autoRefreshOn": "Rafraîchissement auto est ON",
+    "autoRefreshOff": "Rafraîchissement auto est OFF",
+    "refreshNow": "Rafraîchir maintenant",
+    "filters": {
+      "username": "Nom d'utilisateur",
+      "ipAddress": "Adresse IP",
+      "startDate": "Date de début (jj/mm/aaaa)",
+      "endDate": "Date de fin (jj/mm/aaaa)",
+      "result": "Résultat",
+      "allResults": "Tous les résultats",
+      "perPage": "Par page",
+      "placeholderUsername": "Chercher utilisateur...",
+      "placeholderIp": "ex: 192.168.0.1"
+    },
+    "table": {
+      "date": "Date",
+      "username": "Nom d'utilisateur",
+      "email": "E-mail",
+      "ip": "IP",
+      "device": "Appareil",
+      "result": "Résultat",
+      "method": "Méthode"
+    },
+    "pagination": {
+      "previous": "Précédent",
+      "next": "Suivant",
+      "showing": "Affichage de {{from}} à {{to}} sur {{total}} enregistrements",
+      "pageOf": "Page {{page}} sur {{total_pages}}"
+    },
+    "empty": "Aucun historique de connexion trouvé.",
+    "errors": {
+      "failedLoad": "Échec du chargement de l'historique de connexion",
+      "invalidDateRange": "Plage de dates invalide"
+    },
+    "common": {
+      "failedLogins": "Échecs de connexion",
+      "today": "Aujourd'hui"
+    }
+  }
+}

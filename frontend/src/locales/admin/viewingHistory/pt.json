@@ -1,0 +1,46 @@
+{
+  "viewingHistory": {
+    "title": "Histórico de Visualização",
+    "subtitle": "Eventos de reprodução recentes e atividade de visualização",
+    "lastUpdated": "Última atualização: {{time}}",
+    "autoRefreshOn": "Atualização auto está LIGADA",
+    "autoRefreshOff": "Atualização auto está DESLIGADA",
+    "refreshNow": "Atualizar agora",
+    "filters": {
+      "username": "Usuário",
+      "contentType": "Tipo de conteúdo",
+      "allTypes": "Todos os tipos",
+      "ipAddress": "Endereço IP",
+      "startDate": "Data inicial (dd/mm/aaaa)",
+      "endDate": "Data final (dd/mm/aaaa)",
+      "perPage": "Por página",
+      "search": "Buscar",
+      "placeholderUsername": "Buscar usuário...",
+      "placeholderIp": "ex: 192.168.0.1"
+    },
+    "table": {
+      "date": "Data",
+      "username": "Usuário",
+      "content": "Conteúdo",
+      "type": "Tipo",
+      "duration": "Duração",
+      "device": "Dispositivo",
+      "ip": "IP"
+    },
+    "pagination": {
+      "previous": "Anterior",
+      "next": "Próximo",
+      "showing": "Mostrando {{from}} a {{to}} de {{total}} registros",
+      "pageOf": "Página {{page}} de {{total_pages}}"
+    },
+    "empty": "Nenhum histórico de visualização encontrado.",
+    "errors": {
+      "failedLoad": "Falha ao carregar histórico de visualização",
+      "invalidDateRange": "Intervalo de data inválido"
+    },
+    "common": {
+      "views": "Visitas",
+      "today": "Hoje"
+    }
+  }
+}

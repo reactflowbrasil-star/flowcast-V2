@@ -1,0 +1,43 @@
+{
+  "title": "安全事件（{{total}}）",
+  "noneFound": "未找到事件",
+  "itemsPerPage": "每页条数",
+  "searchByUsernamePlaceholder": "按用户名搜索...",
+  "admin": {
+    "securityIncidents": {
+      "confirmDelete": "删除此安全事件？",
+      "filterType": "事件类型",
+      "allTypes": "所有类型",
+      "bruteForce": "暴力破解",
+      "suspiciousActivity": "可疑活动",
+      "multipleDevices": "多设备登录",
+      "tokenManipulation": "令牌篡改",
+      "searchByUsernamePlaceholder": "按用户名搜索…",
+      "itemsPerPage": "每页条数",
+      "title": "安全事件（{{total}}）",
+      "noneFound": "未找到事件",
+      "deviceId": "设备 ID",
+      "ipAddress": "IP",
+      "deleteTitle": "删除事件",
+      "showingPage": "第 {{page}} / {{totalPages}} 页"
+    }
+  },
+  "notifications": {
+    "security": {
+      "errorLoadingIncidents": "加载安全事件失败"
+    },
+    "securityIncident": {
+      "deleted": "事件已删除",
+      "deleteFailed": "删除事件失败"
+    }
+  },
+  "common": {
+    "username": "用户名",
+    "type": "类型",
+    "date": "日期",
+    "actions": "操作",
+    "previous": "上一页",
+    "next": "下一页",
+    "none": "无"
+  }
+}

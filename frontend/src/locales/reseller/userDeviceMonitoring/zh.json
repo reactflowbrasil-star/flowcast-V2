@@ -1,0 +1,55 @@
+{
+  "title": "用户设备监控",
+  "description": "监控您终端用户的活跃设备并管理设备限制",
+  "loading": "加载中...",
+  "error": {
+    "loadFailed": "加载用户失败：{{message}}",
+    "removeDevice": "移除设备失败：{{message}}",
+    "noUserSelected": "未选择用户"
+  },
+  "time": {
+    "justNow": "刚刚",
+    "minutesAgo": "{{count}}分钟前",
+    "hoursAgo": "{{count}}小时前",
+    "daysAgo": "{{count}}天前"
+  },
+  "deviceStatus": {
+    "online": "在线",
+    "recent": "最近",
+    "offline": "离线"
+  },
+  "userStatus": {
+    "active": "活跃",
+    "suspended": "已暂停"
+  },
+  "table": {
+    "username": "用户名",
+    "deviceLimit": "设备限制",
+    "activeDevices": "活跃设备",
+    "status": "状态",
+    "actions": "操作",
+    "device": "设备",
+    "deviceId": "设备ID",
+    "lastSeen": "最后在线",
+    "devices": "台设备",
+    "active": "活跃"
+  },
+  "empty": {
+    "noUsers": "未找到用户",
+    "noUsersDescription": "创建一些终端用户以监控他们的设备。",
+    "noDevices": "未找到设备",
+    "noDevicesDescription": "该用户尚未连接任何设备。"
+  },
+  "actions": {
+    "viewDevices": "查看设备",
+    "remove": "移除",
+    "removeDevice": "移除设备",
+    "cancel": "取消"
+  },
+  "dialog": {
+    "title": "设备管理 - {{username}}",
+    "description": "查看和管理此用户的活跃设备。限制：{{limit}} 台设备",
+    "removeTitle": "移除设备",
+    "removeDescription": "您确定要从 {{username}} 的账户中移除 \"{{deviceName}}\" 吗？这将立即断开该设备的连接。"
+  }
+}

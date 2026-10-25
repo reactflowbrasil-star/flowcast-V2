@@ -1,0 +1,37 @@
+{
+  "tvCategories": {
+    "title": "TV Kanal Kategorilerini Yönet",
+    "description": "Varsayılan kategorileri koruyun ve kendi etiketlerinizle genişletin. Kullanımdaki kategoriler kaldırılamaz.",
+    "inputPlaceholder": "Özel bir kategori oluşturun (örn. Premium Spor)",
+    "addCategory": "Kategori Ekle",
+    "refreshing": "Yenileniyor…",
+    "loading": "Kategoriler yükleniyor…",
+    "none": "Henüz özel bir kategori oluşturmadınız.",
+    "default": "Varsayılan",
+    "removeTitle": "Kategoriyi kaldır",
+    "removeDescription": "Bu işlem geri alınamaz. \"{{name}}\" kategorisi kaldırılacak.",
+    "removeCategory": "Kategoriyi Kaldır",
+    "editCategory": "Kategoriyi düzenle",
+    "inUseTitle": "Kategori şu anda kullanımda",
+    "created": "Kategori oluşturuldu",
+    "updated": "Kategori güncellendi",
+    "removed": "Kategori kaldırıldı",
+    "nameRequired": "Kategori adı gerekli",
+    "helpText": "Varsayılan kategoriler en üstte sabit kalır. Özel etiketler, sağlayıcıları veya bölgeleri istediğiniz gibi düzenlemenize yardımcı olur.",
+    "protectionNote": "Kullanımdaki kategoriler, yanlışlıkla kaldırılmaması için korunur.",
+    "tableHeaders": {
+      "category": "Kategori",
+      "usage": "Kullanım",
+      "created": "Oluşturulma",
+      "actions": "İşlemler"
+    },
+    "categoryCount": "{{count}} kategori",
+    "usageLabel": {
+      "channel_one": "{{count}} kanal",
+      "channel_other": "{{count}} kanal",
+      "notInUse": "Kullanımda değil"
+    },
+    "categoryCount_one": "{{count}} kategori",
+    "categoryCount_other": "{{count}} kategori"
+  }
+}

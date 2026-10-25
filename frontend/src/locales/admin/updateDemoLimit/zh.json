@@ -1,0 +1,29 @@
+{
+  "updateDemoLimit": {
+    "validation": {
+      "minLimit": "演示限制必须为0或更大",
+      "maxLimit": "演示限制不能超过100"
+    },
+    "title": "更新 {{username}} 的演示限制",
+    "description": "设置此经销商可以创建的演示用户每日限制。",
+    "currentStatus": "当前状态",
+    "currentLimit": "当前限制：",
+    "demosPerDay": "演示/天",
+    "createdToday": "今日已创建：",
+    "dailyDemoLimit": "每日演示限制",
+    "enterDailyLimit": "输入每日演示限制",
+    "helpText": "此经销商每天可以创建的演示用户数量 (0-100)",
+    "demoUserInfo": "演示用户信息",
+    "duration": "时长：",
+    "durationValue": "从创建时起临时有效",
+    "access": "访问权限：",
+    "accessValue": "全部高级功能",
+    "devices": "设备：",
+    "devicesValue": "最多3台同时在线设备",
+    "autoCleanup": "自动清理：",
+    "autoCleanupValue": "账户到期后自动删除",
+    "cancel": "取消",
+    "updating": "更新中...",
+    "updateDemoLimit": "更新演示限制"
+  }
+}

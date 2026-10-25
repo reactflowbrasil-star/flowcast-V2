@@ -1,0 +1,43 @@
+{
+  "title": "编辑活动",
+  "labels": {
+    "eventName": "活动名称 *",
+    "description": "描述",
+    "provider": "提供商",
+    "country": "国家",
+    "format": "格式",
+    "clearKeyKeys": "ClearKey 密钥",
+    "streamUrl": "流媒体 URL *",
+    "posterUrl": "海报 URL",
+    "active": "激活"
+  },
+  "placeholders": {
+    "eventName": "输入活动名称...",
+    "description": "输入活动描述...",
+    "provider": "例如：提供商A、提供商B...",
+    "country": "例如：US, MX, ES...",
+    "selectFormat": "选择格式...",
+    "clearKeyKeys": "以十六进制格式输入 ClearKey 密钥对：\nkid_hex:key_hex",
+    "streamUrl": "https://example.com/stream.m3u8",
+    "posterUrl": "https://example.com/poster.jpg"
+  },
+  "hints": {
+    "clearKeyFormat": "格式：kid_hex:key_hex（每行一个或用逗号分隔）"
+  },
+  "formats": {
+    "m3u8": "M3U8",
+    "drm": "DRM"
+  },
+  "buttons": {
+    "cancel": "取消",
+    "updating": "更新中...",
+    "updateEvent": "更新活动"
+  },
+  "validation": {
+    "titleRequired": "标题是必填项",
+    "validVideoUrlRequired": "需要有效的视频 URL"
+  },
+  "errors": {
+    "failedToUpdate": "更新活动失败"
+  }
+}

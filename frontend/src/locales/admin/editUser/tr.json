@@ -1,0 +1,48 @@
+{
+  "editUser": {
+    "title": "Kullanıcıyı düzenle:",
+    "description": "Kullanıcı bilgilerini ve şifreyi güncelleyin",
+    "labels": {
+      "username": "Kullanıcı adı",
+      "email": "E-posta",
+      "password": "Yeni şifre (4-10 haneli)",
+      "expiresAt": "Son kullanma tarihi",
+      "maxDevices": "Maks. cihazlar",
+      "status": "Durum",
+      "contentCategories": "İçerik Kategorileri"
+    },
+    "placeholders": {
+      "username": "Kullanıcı adını girin",
+      "email": "E-posta girin",
+      "password": "Güncel tutmak için boş bırakın"
+    },
+    "hints": {
+      "expiresAtEmpty": "Süre sonu olmadan boş bırakın",
+      "categoriesHelp": "Bu kullanıcının erişebileceği içerik kategorilerini seçmek için tıklayın."
+    },
+    "status": {
+      "active": "Aktif",
+      "suspended": "Askıya alınmış"
+    },
+    "categories": {
+      "loading": "Kategoriler yükleniyor...",
+      "noCategories": "Kategori yok"
+    },
+    "buttons": {
+      "cancel": "İptal etmek",
+      "update": "Kullanıcıyı Güncelle",
+      "updating": "Güncelleniyor..."
+    },
+    "errors": {
+      "noUserSelected": "Kullanıcı seçilmedi"
+    },
+    "validation": {
+      "usernameMin": "Kullanıcı adı en az 3 karakterden oluşmalıdır",
+      "invalidEmail": "Geçersiz e-posta",
+      "passwordMin": "Şifre en az 4 haneli olmalıdır",
+      "passwordMax": "Şifre en fazla 10 haneli olmalıdır",
+      "passwordDigitsOnly": "Şifre yalnızca rakam içerebilir",
+      "maxDevicesMax": "Maksimum 10 cihaza izin verilir"
+    }
+  }
+}

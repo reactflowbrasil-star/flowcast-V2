@@ -1,0 +1,24 @@
+{
+  "overview": {
+    "totalUsers": "Total de Usuários",
+    "allSystemUsers": "Todos os usuários do sistema",
+    "contentItems": "Itens de Conteúdo",
+    "moviesTvSeries": "Filmes, séries de TV e mais",
+    "activeResellers": "Revendedores Ativos",
+    "currentlyActive": "Atualmente ativos",
+    "systemStatus": "Status do Sistema",
+    "allSystemsOperational": "Todos os systèmes operacionais",
+    "quickActions": "Ações Rápidas",
+    "commonTasks": "Ir para as tarefas administrativas mais comuns",
+    "manageResellers": "Gerenciar Revendedores",
+    "manageContent": "Gerenciar Conteúdo",
+    "systemConfig": "Configuração do Sistema",
+    "viewReports": "Ver Relatórios",
+    "systemHealth": "Saúde do Sistema",
+    "systemStatusDescription": "Status do serviço em tempo real para componentes críticos",
+    "apiServices": "Serviços de API",
+    "operational": "Operacional",
+    "database": "Banco de Dados",
+    "contentDelivery": "Entrega de Conteúdo"
+  }
+}

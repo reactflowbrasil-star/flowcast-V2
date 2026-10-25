@@ -1,0 +1,33 @@
+{
+  "bulkImportTVChannels": {
+    "title": "Bulk Import — TV Channels",
+    "description": "Paste your M3U list. Global fields apply to all channels.",
+    "labels": {
+      "format": "Format",
+      "provider": "Provider (global)",
+      "globalDescription": "Description (global)",
+      "country": "Country (optional)",
+      "startChannelNumber": "Start channel number (optional)",
+      "m3uList": "M3U List"
+    },
+    "placeholders": {
+      "provider": "e.g., Provider A, Provider B",
+      "description": "Description for all channels",
+      "country": "E.g: US, AR, MX",
+      "startChannelNumber": "Auto-calculated if left empty"
+    },
+    "buttons": {
+      "cancel": "Cancel",
+      "chooseFile": "Choose M3U file",
+      "import": "Import"
+    },
+    "validation": {
+      "pasteM3uContent": "Paste the M3U content",
+      "mustBePositiveNumber": "Must be a positive number",
+      "invalidData": "Invalid data",
+      "bulkImportFailed": "Bulk import failed",
+      "unknownError": "Unknown error",
+      "fileReadFailed": "Could not read the selected file"
+    }
+  }
+}

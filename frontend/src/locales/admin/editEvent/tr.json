@@ -1,0 +1,43 @@
+{
+  "title": "Etkinliği Düzenle",
+  "labels": {
+    "eventName": "Etkinlik Adı *",
+    "description": "Tanım",
+    "provider": "sağlayıcı",
+    "country": "Ülke",
+    "format": "Biçim",
+    "clearKeyKeys": "ClearKey Tuşları",
+    "streamUrl": "Akış URL'si *",
+    "posterUrl": "Poster URL'si",
+    "active": "Aktif"
+  },
+  "placeholders": {
+    "eventName": "Etkinlik adını girin...",
+    "description": "Etkinlik açıklamasını girin...",
+    "provider": "ör. Sağlayıcı A, Sağlayıcı B...",
+    "country": "örneğin ABD, MX, ES...",
+    "selectFormat": "Biçimi seç...",
+    "clearKeyKeys": "ClearKey çiftlerini onaltılık formatta girin: kid_hex:key_hex",
+    "streamUrl": "https://example.com/stream.m3u8",
+    "posterUrl": "https://example.com/poster.jpg"
+  },
+  "hints": {
+    "clearKeyFormat": "Biçim: kid_hex:key_hex (satır başına bir tane veya virgülle ayrılmış)"
+  },
+  "formats": {
+    "m3u8": "M3U8",
+    "drm": "DRM"
+  },
+  "buttons": {
+    "cancel": "İptal etmek",
+    "updating": "Güncelleniyor...",
+    "updateEvent": "Etkinliği Güncelle"
+  },
+  "validation": {
+    "titleRequired": "Başlık gerekli",
+    "validVideoUrlRequired": "Geçerli video URL'si gerekli"
+  },
+  "errors": {
+    "failedToUpdate": "Etkinlik güncellenemedi"
+  }
+}

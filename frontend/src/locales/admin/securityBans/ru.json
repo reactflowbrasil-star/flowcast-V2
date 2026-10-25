@@ -1,0 +1,38 @@
+{
+  "title": "Блокировки безопасности ({{total}})",
+  "noneFound": "Блокировок не найдено.",
+  "itemsPerPage": "Элементов на странице",
+  "admin": {
+    "securityBans": {
+      "searchByUsernamePlaceholder": "Поиск по имени пользователя...",
+      "itemsPerPage": "Элементов на странице",
+      "title": "Блокировки безопасности ({{total}})",
+      "noneFound": "Блокировок не найдено.",
+      "level": "Уровень",
+      "type": "Тип",
+      "reason": "Причина",
+      "timeRemaining": "Оставшееся время"
+    }
+  },
+  "unban": {
+    "action": "Разблокировать",
+    "confirm": "Разблокировать пользователя {{user}}?",
+    "promptReason": "Введите причину разблокировки"
+  },
+  "notifications": {
+    "ban": {
+      "userUnbanned": "Пользователь {{user}} был разблокирован"
+    },
+    "security": {
+      "errorLoadingBans": "Ошибка загрузки блокировок безопасности",
+      "errorUnbanningUser": "Ошибка разблокировки пользователя"
+    }
+  },
+  "common": {
+    "username": "Имя пользователя",
+    "actions": "Действия",
+    "previous": "Назад",
+    "next": "Вперед",
+    "paginationShowing": "Страница {{page}} из {{totalPages}}"
+  }
+}

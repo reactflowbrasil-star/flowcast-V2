@@ -1,0 +1,66 @@
+{
+  "title": "演示管理",
+  "loading": "加载中...",
+  "error": {
+    "loadFailed": "加载演示统计失败。请重试。",
+    "fetchConfigFailed": "获取演示配置失败"
+  },
+  "stats": {
+    "dailyLimit": "每日限额",
+    "dailyLimitDesc": "每天最多可创建的演示数量",
+    "createdToday": "今日已创建",
+    "createdTodayDesc": "今天创建的演示数量",
+    "remainingToday": "今日剩余",
+    "remainingTodayDesc": "您还可以创建的演示数量",
+    "activeDemos": "活跃演示",
+    "activeDemosDesc": "当前活跃的演示数量",
+    "demoDuration": "演示时长",
+    "demoDurationDesc": "每个演示的持续时间"
+  },
+  "createDemo": {
+    "title": "创建演示用户",
+    "description": "为潜在客户创建演示账户。演示用户拥有临时高级访问权限。",
+    "dialogTitle": "创建演示用户",
+    "dialogDescription": "创建演示账户。用户将从创建时起获得临时高级访问权限。"
+  },
+  "status": {
+    "canCreate": "您今天还可以创建 {{count}} 个演示。",
+    "canCreatePlural": "您今天还可以创建 {{count}} 个演示。",
+    "limitReached": "已达到每日演示限额 ({{created}}/{{limit}})。请明天再试。"
+  },
+  "form": {
+    "username": "用户名",
+    "usernamePlaceholder": "demo_user_123",
+    "password": "密码",
+    "passwordPlaceholder": "输入密码",
+    "email": "邮箱（可选）",
+    "emailPlaceholder": "user@example.com",
+    "categories": "内容分类",
+    "categoriesHint": "点击选择此演示用户可以访问的内容分类。",
+    "loadingCategories": "加载分类中...",
+    "noCategories": "没有可用的分类",
+    "selectCategory": "请至少选择一个分类"
+  },
+  "validation": {
+    "usernameMin": "用户名必须至少3个字符",
+    "passwordMin": "密码必须至少6个字符",
+    "invalidEmail": "无效的邮箱地址",
+    "categoryRequired": "请至少选择一个分类"
+  },
+  "actions": {
+    "cancel": "取消",
+    "creating": "创建中...",
+    "createDemo": "创建演示"
+  },
+  "info": {
+    "title": "演示用户信息",
+    "duration": "时长：",
+    "durationValue": "从创建起 {{hours}} 小时",
+    "access": "访问权限：",
+    "accessValue": "完整高级功能",
+    "devices": "设备：",
+    "devicesValue": "最多3个并发设备",
+    "autoCleanup": "自动清理：",
+    "autoCleanupValue": "账户过期后自动删除"
+  }
+}

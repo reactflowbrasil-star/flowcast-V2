@@ -1,0 +1,110 @@
+{
+  "mediaScanner": {
+    "title": "媒体扫描器",
+    "subtitle": "扫描服务器文件夹以自动导入媒体内容",
+    "categorySelector": {
+      "title": "选择内容分类",
+      "description": "选择要扫描的内容类型",
+      "movies": "电影",
+      "series": "剧集",
+      "kids": "少儿",
+      "anime": "动漫",
+      "music": "音乐"
+    },
+    "folderExplorer": {
+      "title": "选择扫描文件夹",
+      "description": "浏览并选择包含媒体文件的服务器文件夹",
+      "currentPath": "当前路径",
+      "selectFolder": "选择此文件夹",
+      "goUp": "返回上级",
+      "loading": "正在加载文件夹...",
+      "error": "加载文件夹出错",
+      "noFolders": "未找到文件夹",
+      "refresh": "刷新",
+      "selectedFolder": "已选择文件夹："
+    },
+    "scanOptions": {
+      "title": "扫描选项",
+      "duplicatePolicy": "重复处理策略",
+      "duplicatePolicyOptions": {
+        "omit": "跳过重复项",
+        "replace": "??????",
+        "allow": "????"
+      },
+      "addSubtitles": "包含字幕",
+      "addSubtitlesHelp": "自动检测并添加字幕文件"
+    },
+    "scanProgress": {
+      "title": "扫描进度",
+      "status": "状态",
+      "scanned": "已扫描文件",
+      "imported": "已导入文件",
+      "errors": "错误",
+      "currentFile": "当前文件",
+      "timeElapsed": "已用时间",
+      "estimatedRemaining": "预计剩余时间",
+      "cancel": "取消扫描",
+      "cancelConfirm": "确定要取消扫描吗? 进度将丢失。",
+      "completed": "扫描完成",
+      "cancelled": "扫描已取消",
+      "failed": "扫描失败"
+    },
+    "taskControl": {
+      "title": "任务控制",
+      "tasks": "项任务",
+      "path": "路径",
+      "started": "已开始",
+      "duration": "持续时间",
+      "currentFile": "当前文件",
+      "stats": {
+        "movies": "电影",
+        "series": "剧集",
+        "episodes": "剧集集数",
+        "subtitles": "字幕",
+        "skipped": "已跳过",
+        "replaced": "已替换"
+      },
+      "error": "错误",
+      "cancel": "取消",
+      "delete": "删除",
+      "cancelling": "正在取消...",
+      "deleting": "正在删除...",
+      "idle": "无运行中的任务"
+    },
+    "scanStatus": {
+      "title": "扫描状态",
+      "scanId": "扫描 ID",
+      "status": "状态",
+      "backgroundNote": "扫描正在服务器上运行。您可以关闭此页面, 进程将继续进行。",
+      "anotherScanNote": "已有扫描正在进行中。如果需要, 您可以启动另一个扫描。"
+    },
+    "actions": {
+      "startScan": "开始扫描",
+      "selectCategory": "选择分类",
+      "selectFolder": "选择文件夹",
+      "configureScan": "配置扫描",
+      "delete": "删除",
+      "deleting": "正在删除..."
+    },
+    "status": {
+      "idle": "准备就绪",
+      "scanning": "正在扫描...",
+      "completed": "扫描成功完成",
+      "cancelled": "扫描已取消",
+      "failed": "扫描失败并出现错误"
+    },
+    "errors": {
+      "noCategory": "请选择一个内容分类",
+      "noFolder": "请选择一个要扫描的文件夹",
+      "scanFailed": "无法启动扫描: {{message}}",
+      "cancelFailed": "无法取消扫描: {{message}}",
+      "loadFolders": "加载文件夹失败: {{message}}"
+    },
+    "notifications": {
+      "scanStarted": "媒体扫描已成功开始",
+      "scanCompleted": "媒体扫描完成: 已导入 {{imported}} 个文件",
+      "scanCancelled": "媒体扫描已取消",
+      "scanFailed": "媒体扫描失败: {{message}}"
+    }
+  }
+}

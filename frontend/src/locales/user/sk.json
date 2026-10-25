@@ -1,0 +1,453 @@
+{
+  "user": {
+    "menu": {
+      "home": "Domov",
+      "liveTv": "Živé TV",
+      "movies": "Filmy",
+      "series": "Seriály",
+      "kids": "Pre deti",
+      "anime": "Anime",
+      "events": "Udalosti",
+      "music": "Hudba",
+      "favorites": "Obľúbené",
+      "search": "Hľadať",
+      "custom": "Menu",
+      "descriptions": {
+        "home": "Hlavný panel",
+        "liveTv": "Živé kanály",
+        "movies": "Katalóg filmov",
+        "series": "TV seriály a relácie",
+        "kids": "Obsah pre deti",
+        "anime": "Katalóg anime",
+        "events": "Špeciálne udalosti",
+        "music": "Hudobná knižnica",
+        "favorites": "Vaše obľúbené",
+        "search": "Hľadať obsah",
+        "profile": "Spravovať účet",
+        "devices": "Spravovať zariadenia"
+      }
+    },
+    "languages": {
+      "es": "Španielčina",
+      "es_native": "Španielčina",
+      "en": "Angličtina",
+      "en_native": "angličtina",
+      "zh": "Čínština",
+      "zh_native": "中文",
+      "pt": "Portugalčina",
+      "pt_native": "Português",
+      "fr": "Francúzština",
+      "fr_native": "Français",
+      "ru": "Ruština",
+      "ru_native": "Русский",
+      "tr": "Turečtina",
+      "tr_native": "Türkçe",
+      "sk": "Slovenčina",
+      "sk_native": "slovenčina"
+    },
+    "badges": {
+      "continue": "Pokračovať"
+    },
+    "language": {
+      "placeholder": "Vybrať jazyk"
+    },
+    "categoryCopy": {
+      "vod": "Filmy na vyžiadanie zahrnuté vo vašom programe.",
+      "series": "Kompletné seriály pripravené na sledovanie.",
+      "tv": "Živé kanály a 24/7 programovanie.",
+      "kids": "Bezpečný, kurátorovaný obsah pre deti.",
+      "events": "Špeciálne udalosti a jedinečné vysielania.",
+      "anime": "Katalóg anime s dabingom a titulkami."
+    },
+    "dashboard": {
+      "welcome": "Vitajte späť",
+      "guest": "Používateľ",
+      "greeting": "Ahoj {{name}}",
+      "continueWatching": "Pokračovať v sledovaní",
+      "progressSync": "Synchronizujeme váš postup medzi zariadeniami.",
+      "noHistory": "Ešte ste nezačali sledovať žiadny titul",
+      "series": "Seriály",
+      "kids": "Pre deti",
+      "anime": "Anime",
+      "events": "Udalosti",
+      "liveTv": "Živé TV",
+      "liveChannels": "Kanály",
+      "liveGuide": "Sprievodca",
+      "nowPlaying": "Práve sa prehráva",
+      "noEpg": "Žiadne údaje EPG",
+      "channel": "Kanál",
+      "searchChannels": "Hľadať kanály...",
+      "viewProducts": "Moje produkty",
+      "manageDevices": "Spravovať zariadenia",
+      "statusActive": "Účet aktívny",
+      "connectedDevices": "Pripojené zariadenia",
+      "devicesUsage": "Svoje aktívne zariadenia môžete kedykoľvek spravovať.",
+      "aiStatus": "Odporúčací engine",
+      "aiOnline": "Aktívny",
+      "aiOffline": "Konfiguruje sa",
+      "aiSubtitle": "Návrhy aktualizujeme každých pár hodín",
+      "genreSpotlight": "Preskúmať podľa žánru",
+      "genreSpotlightHint": "Vyberte filmové kategórie na spresnenie kolekcií.",
+      "noAiRecommendations": "Čoskoro vám prispôsobíme odporúčania",
+      "noTmdbData": "Nakonfigurujte TMDB na povolenie týchto kolekcií",
+      "programGuide": "Programový sprievodca",
+      "profile": "Profil",
+      "secureSession": "Šifrovaná a chránená relácia",
+      "badgeFeatured": "Odporúčané",
+      "welcomeTitle": "Vaša knižnica, vždy s vami",
+      "welcomeDescription": "Preskúmajte filmy a seriály vybrané špeciálne pre vás.",
+      "watchNow": "Sledovať teraz",
+      "filters": {
+        "movies": "Filmy",
+        "sports": "Šport",
+        "kids": "Pre deti"
+      },
+      "liveStreamError": "Nepodarilo sa získať URL kanála.",
+      "liveLoadError": "Chyba pri načítavaní kanála.",
+      "browseGenres": "Prehľadávať žánre",
+      "popularMovies": "Populárne filmy",
+      "bingeWorthy": "Seriály na maratón",
+      "browse": "Prehľadávať kategórie",
+      "contentLibrary": "Knižnica obsahu",
+      "contentSubtitle": "Preskúmajte našu kolekciu",
+      "encryptedSession": "Šifrovaná relácia",
+      "liveChannel": "Živý kanál",
+      "noContent": "Žiadny obsah nie je k dispozícii",
+      "noContentDescription": "Obsah sa tu zobrazí, keď administrátor pridá filmy, seriály alebo iné médiá."
+    },
+    "live": {
+      "liveNow": "Práve naživo",
+      "loadingGuide": "Načítava sa sprievodca...",
+      "minutesLeft": "zostáva {{count}} min",
+      "showingChannels": "Zobrazuje sa {{count}} kanálov",
+      "channelsLive": "{{count}} kanálov naživo",
+      "upNext": "Nasleduje",
+      "nowPlaying": "Práve hrá",
+      "loadingStream": "Pripája sa...",
+      "streamFailed": "Nepodarilo sa načítať stream",
+      "streamError": "Chyba pri načítaní streamu",
+      "streamUnavailableTitle": "Stream nedostupný",
+      "streamUnavailableDescription": "Pri načítaní tohto streamu sa vyskytla chyba.",
+      "selectPrompt": "Vyberte kanál a začnite pozerať",
+      "liveBadge": "NAŽIVO",
+      "unknownChannel": "Neznámy kanál",
+      "providerFallback": "Poskytovateľ {{appName}}",
+      "toastCurrentlyViewing": "Práve sledujete: {{title}}",
+      "noProgramInfo": "Nie sú dostupné informácie o programe",
+      "channelGuide": "Sprievodca kanálmi",
+      "noChannelsFound": "Nenašli sa žiadne kanály",
+      "categories": {
+        "sports": "Šport",
+        "entertainment": "Zábava",
+        "news": "Správy",
+        "movies": "Filmy"
+      },
+      "title": "Živé TV",
+      "toggleChannels": "Kanály",
+      "toggleGuide": "Sprievodca",
+      "playbackError": "Chyba prehrávania",
+      "epg": {
+        "errors": {
+          "loadFailed": "Nepodarilo sa načítať programového sprievodcu"
+        },
+        "loading": "Načítavanie programového sprievodcu...",
+        "liveProgramming": "Živé vysielanie",
+        "noProgramInfo": "Nie sú dostupné informácie o programe",
+        "previous24h": "Predchádzajúcich 24h",
+        "next24h": "Nasledujúcich 24h",
+        "liveNow": "Práve naživo",
+        "live": "Naživo",
+        "upcoming": "Nasleduje",
+        "liveBadge": "NAŽIVO",
+        "clickToWatch": "Kliknutím sledovať",
+        "watchChannel": "Sledovať kanál"
+      }
+    },
+    "filters": {
+      "clear": "Vymazať filter",
+      "searchChannels": "Hľadať kanály...",
+      "searchMovies": "Hľadať filmy...",
+      "searchShows": "Hľadať seriály...",
+      "searchKids": "Hľadať detský obsah...",
+      "searchAnime": "Hľadať anime...",
+      "searchEvents": "Hľadať udalosti...",
+      "allGenres": "Všetky žánre",
+      "allTypes": "Všetky typy",
+      "allStatus": "Všetky stavy",
+      "sortTitle": "Zoradiť podľa názvu",
+      "sortYear": "Zoradiť podľa roka",
+      "sortRating": "Zoradiť podľa hodnotenia"
+    },
+    "kids": {
+      "errorTitle": "Chyba pri načítavaní detského obsahu",
+      "searchPlaceholder": "Hľadať detský obsah...",
+      "emptyTitle": "Žiadny detský obsah nie je k dispozícii",
+      "emptySearchTitle": "Žiadne výsledky",
+      "emptySearchDescription": "Skúste iné kľúčové slová"
+    },
+    "anime": {
+      "errorTitle": "Chyba pri načítavaní anime",
+      "searchPlaceholder": "Hľadať anime...",
+      "emptyTitle": "Žiadne anime nie je k dispozícii",
+      "emptySearchTitle": "Žiadne výsledky",
+      "emptySearchDescription": "Skúste iné kľúčové slová"
+    },
+    "events": {
+      "errorTitle": "Chyba pri načítavaní udalostí",
+      "searchPlaceholder": "Hľadať udalosti...",
+      "emptyTitle": "Žiadne udalosti nie sú k dispozícii",
+      "emptySearchTitle": "Žiadne výsledky",
+      "emptySearchDescription": "Skúste iné kľúčové slová"
+    },
+    "favorites": {
+      "title": "Obľúbené",
+      "description": "Všetok obľúbený obsah na jednom mieste",
+      "emptyTitle": "Zatiaľ nemáte obľúbené položky",
+      "emptyDescription": "Začnite pridávať obsah medzi obľúbené",
+      "emptyMoviesTitle": "Nemáte obľúbené filmy",
+      "emptyMoviesDescription": "Pridajte filmy medzi obľúbené v sekcii Filmy",
+      "emptySeriesTitle": "Nemáte obľúbené seriály",
+      "emptySeriesDescription": "Pridajte seriály medzi obľúbené v sekcii Seriály",
+      "emptyChannelsTitle": "Nemáte obľúbené kanály",
+      "emptyChannelsDescription": "Pridajte kanály medzi obľúbené v sekcii Živé TV"
+    },
+    "movies": {
+      "loading": "Načítavajú sa filmy...",
+      "emptyTitle": "Nenašli sa žiadne filmy",
+      "emptyDescription": "Skúste upraviť vyhľadávanie alebo filtre"
+    },
+    "shows": {
+      "loading": "Načítavajú sa seriály...",
+      "emptyTitle": "Nenašli sa žiadne seriály",
+      "emptyDescription": "Skúste upraviť vyhľadávanie alebo filtre",
+      "season": "Séria",
+      "seasons": "Série",
+      "status": {
+        "ongoing": "Prebieha",
+        "completed": "Ukončené",
+        "cancelled": "Zrušené",
+        "unknown": "Neznáme"
+      }
+    },
+    "pagination": {
+      "pageLabel": "Strana",
+      "moviesLabel": "Filmy",
+      "seriesLabel": "Seriály",
+      "kidsLabel": "Pre deti",
+      "animeLabel": "Anime"
+    },
+    "profile": {
+      "badge": "Môj účet",
+      "title": "Profil a bezpečnosť",
+      "subtitle": "Spravujte osobné údaje, kontaktný email a prihlasovacie údaje.",
+      "info": {
+        "title": "Základné informácie",
+        "username": "Používateľské meno",
+        "role": "Role v systéme",
+        "createdAt": "Registrovaný",
+        "expiresAt": "Vyprší",
+        "unknown": "Neznáme",
+        "noExpiry": "Žiadny dátum vypršania"
+      },
+      "contact": {
+        "title": "Kontakt a upozornenia",
+        "emailLabel": "Priradený email",
+        "emailPlaceholder": "Zadajte email pre upozornenia",
+        "hint": "Tento email použijeme na bezpečnostné upozornenia a obnovenia.",
+        "save": "Aktualizovať email",
+        "saving": "Ukladá sa..."
+      },
+      "password": {
+        "title": "Zmeniť heslo",
+        "current": "Aktuálne heslo",
+        "currentPlaceholder": "Zadajte svoje aktuálne heslo",
+        "new": "Nové heslo",
+        "newPlaceholder": "Minimálne 6 znakov",
+        "save": "Aktualizovať heslo",
+        "saving": "Aktualizuje sa...",
+        "success": "Heslo aktualizované",
+        "error": "Nepodarilo sa aktualizovať heslo",
+        "hint": "Aktívne relácie na iných zariadeniach budú po zmene odhlásené."
+      },
+      "plan": {
+        "title": "Stav plánu",
+        "devices": "Používané zariadenia: {{count}} z {{max}}",
+        "role": "Typ prístupu: {{role}}",
+        "expires": "Platné do {{date}}",
+        "withoutExpiry": "Plano sem expiração"
+      },
+      "categories": {
+        "title": "Povolené kategórie",
+        "empty": "Váš administrátor ešte nepriradil obsah k vášmu účtu."
+      },
+      "actions": {
+        "title": "Skratky",
+        "manageDevices": "Spravovať zariadenia",
+        "exploreContent": "Preskúmať obsah",
+        "extendMembership": "Predĺžiť členstvo"
+      },
+      "update": {
+        "success": "Profil aktualizovaný",
+        "error": "Nepodarilo sa aktualizovať profil"
+      },
+      "noDataTitle": "Nepodarilo sa nám načítať váš profil",
+      "noDataDescription": "Skúste obnoviť stránku alebo kontaktujte podporu, ak problém pretrváva.",
+      "status": {
+        "unknown": "Neznámy stav",
+        "banned": "Účet pozastavený",
+        "noExpiry": "Žiadny dátum vypršania",
+        "expired": "Predplatné vypršalo",
+        "active": "Predplatné aktívne"
+      }
+    },
+    "devices": {
+      "badge": "Správa zariadení",
+      "title": "Vaše prepojené zariadenia",
+      "subtitle": "Ovládajte, ktoré zariadenia majú prístup a uvoľnite sloty v prípade potreby.",
+      "onboarding": {
+        "title": "Zaregistrovať tento prehliadač",
+        "body": "Prepojte tento prehliadač ako zariadenie pre pokračovanie na panel.",
+        "limitTitle": "Dosiahnutý limit zariadení",
+        "limitBody": "Odstráňte zariadenie na uvoľnenie slotu a zaregistrovanie tohto prehliadača.",
+        "cta": "Zaregistrovať toto zariadenie",
+        "fill": "Automaticky vyplniť podrobnosti",
+        "already": "Tento prehliadač je už zaregistrovaný",
+        "quickRegister": "Zaregistrovať tento prehliadač teraz",
+        "deviceInfo": "Aktuálne zariadenie",
+        "slots": "{{available}} voľných slotov z {{max}}"
+      },
+      "register": {
+        "title": "Zaregistrovať nové zariadenie",
+        "deviceId": "ID Zariadenia",
+        "deviceIdPlaceholder": "Napr. MAC, UUID alebo kód zariadenia",
+        "deviceName": "Názov zariadenia",
+        "deviceNamePlaceholder": "Napr. TV v obývačke, Android Box...",
+        "generate": "Vygenerovať náhodné ID",
+        "cta": "Zaregistrovať zariadenie",
+        "working": "Registruje sa...",
+        "validation": "Musíte zadať ID aj názov",
+        "help": "Použite jedinečný identifikátor pre každé zariadenie. Odporúčame rovnaký názov ako vaša aplikácia pre Android."
+      },
+      "status": {
+        "title": "Stav používania",
+        "progressLabel": "Obsadenosť",
+        "tipTitle": "Rýchly tip",
+        "tipBody": "Ak dosiahnete limit, odstráňte zariadenie, ktoré už nepoužívate, pred pridaním nového.",
+        "syncTitle": "Okamžitá synchronizácia",
+        "syncBody": "Zmeny sa prejavia v aplikácii pre Android po reštarte alebo obnovení relácie."
+      },
+      "list": {
+        "title": "Zaregistrované zariadenia",
+        "loading": "Načítavanie zoznamu prepojených zariadení.",
+        "emptyTitle": "Zatiaľ nemáte žiadne zariadenia",
+        "emptyDescription": "Zaregistrujte svoje prvé zariadenie, aby ste mohli začať prehrávať obsah.",
+        "lastActive": "Posledný prístup: {{date}}",
+        "statusActive": "Aktívne",
+        "remove": "Odstrániť zariadenie",
+        "removeSuccess": "Zariadenie odstránené",
+        "removeError": "Nepodarilo sa odstrániť zariadenie"
+      }
+    },
+    "products": {
+      "badge": "Moje produkty",
+      "title": "Prístup povolený vo vašom pláne",
+      "subtitle": "Preskúmajte všetok dostupný obsah podľa vašich aktívnych produktov.",
+      "search": "Hľadať obsah",
+      "devices": "Moje zariadenia",
+      "list": {
+        "title": "Dostupné produkty"
+      },
+      "empty": {
+        "title": "Zatiaľ nemáte priradené produkty",
+        "description": "Keď váš administrátor povolí kategórie, zobrazia sa tu."
+      },
+      "badgeIncluded": "Zahrnuté vo vašom pláne",
+      "cta": {
+        "explore": "Preskúmať"
+      }
+    },
+    "watch": {
+      "title": "Prehrávač",
+      "invalidId": "Neplatné ID obsahu",
+      "notFound": "Obsah sa nenašiel",
+      "noStreamAvailable": "Pre tento obsah nie je k dispozícii žiadny stream",
+      "streamError": "Chyba pri získavaní streamu",
+      "backToDashboard": "Späť na panel",
+      "playNow": "Prehrať teraz",
+      "synopsis": "Synopsa",
+      "seasons": "Série",
+      "seasonShort": "S{{n}}",
+      "episodeLabel": "E{{n}}",
+      "noEpisodes": "Nie sú k dispozícii žiadne epizódy.",
+      "drmNotice": "Tento obsah má nakonfigurované DRM — môže vyžadovať kompatibilný prehrávač.",
+      "related": "Odporúčané",
+      "noRelated": "Momentálne nie sú k dispozícii žiadne odporúčania",
+      "goBack": "Vrátiť sa"
+    },
+    "content": {
+      "browse": {
+        "badge": "Dostupná knižnica",
+        "title": "Preskúmajte svoj obsah",
+        "subtitle": "Filmy, seriály a živé TV v jednotnom zobrazení.",
+        "totalCategories": "{{count}} kategórií k dispozícii",
+        "goToSearch": "Prejsť na vyhľadávanie",
+        "itemCount": "{{count}} výsledkov",
+        "loadingDescription": "Príprava vášho personalizovaného katalógu.",
+        "emptyTitle": "Táto kategória zatiaľ nemá obsah",
+        "emptyDescription": "Čoskoro sem pridáme ďalšie tituly.",
+        "noCategoriesTitle": "Žiadne priradené kategórie",
+        "noCategoriesDescription": "Požiadajte svojho administrátora, aby povolil obsah pre váš účet.",
+        "watch": "Sledovať",
+        "noDescription": "Popis čaká",
+        "loadMore": "Zobraziť viac titulov",
+        "loadingMore": "Načítavanie..."
+      },
+      "search": {
+        "title": "Hľadať obsah",
+        "placeholder": "Filmy, seriály, kanály...",
+        "emptyTitle": "Hľadajte niečo pre začiatok",
+        "emptyDesc": "Zadajte názov, kategóriu alebo kľúčové slovo na nájdenie obsahu.",
+        "loading": "Hľadanie zhôd",
+        "error": "Vyhľadávanie zlyhalo",
+        "noResults": "Žiadne výsledky",
+        "tryAgain": "Skúste iné kľúčové slová alebo skontrolujte pravopis."
+      }
+    },
+    "common": {
+      "continue": "Pokračovať",
+      "all": "Všetko",
+      "loading": "Načítavanie...",
+      "search": "Hľadať",
+      "watch": "Pozerať",
+      "viewAll": "Zobraziť všetko",
+      "noItems": "Žiadne položky",
+      "comeBackSoon": "Vráťte sa čoskoro a objavte nový obsah.",
+      "noResults": "Žiadne výsledky",
+      "adjustSearch": "Skúste upraviť vyhľadávanie alebo filtre",
+      "tryDifferent": "Skúste iné kľúčové slová",
+      "reload": "Prosím skúste obnoviť stránku",
+      "verified": "Overené",
+      "titleCount": "{{count}} titul",
+      "titleCount_plural": "{{count}} titulov",
+      "seriesCount": "{{count}} seriál",
+      "seriesCount_plural": "{{count}} seriálov",
+      "animeCount": "{{count}} anime",
+      "animeCount_plural": "{{count}} anime",
+      "eventCount": "{{count}} udalosť",
+      "eventCount_plural": "{{count}} udalostí",
+      "channelCount": "{{count}} kanál",
+      "channelCount_plural": "{{count}} kanálov"
+    },
+    "player": {
+      "audioInfo": "Informácie o zvuku",
+      "audioTracksTitle": "Zvukové stopy",
+      "audioTracksTitleWithCount": "Zvukové stopy ({{count}})",
+      "noAudioTracks": "Neboli zistené žiadne zvukové stopy",
+      "noAudioTracksHelpLine1": "Toto video môže mať integrovaný zvuk bez oddelenvých stôp,",
+      "noAudioTracksHelpLine2": "alebo váš prehliadač nepodporuje API AudioTracks.",
+      "subtitlesTitle": "Titulky",
+      "noSubtitles": "Žiadne titulky",
+      "playbackSpeed": "Rýchlosť"
+    }
+  }
+}

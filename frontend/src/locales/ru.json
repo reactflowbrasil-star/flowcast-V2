@@ -1,0 +1,2575 @@
+{
+  "common": {
+    "create": "Создать",
+    "edit": "Редактировать",
+    "delete": "Удалить",
+    "save": "Сохранить",
+    "cancel": "Отмена",
+    "submit": "Отправить",
+    "close": "Закрыть",
+    "copy": "Копировать",
+    "open": "Открыть",
+    "dismiss": "Закрыть",
+    "back": "Назад",
+    "next": "Далее",
+    "previous": "Назад",
+    "loading": "Загрузка...",
+    "error": "Ошибка",
+    "success": "Успех",
+    "warning": "Предупреждение",
+    "info": "Инфо",
+    "confirm": "Подтвердить",
+    "yes": "Да",
+    "no": "Нет",
+    "ok": "OK",
+    "notAvailable": "N/A",
+    "unknown": "Неизвестно",
+    "search": "Поиск",
+    "filter": "Фильтр",
+    "sort": "Сортировка",
+    "export": "Экспорт",
+    "import": "Импорт",
+    "upload": "Загрузить",
+    "download": "Скачать",
+    "select": "Выбрать",
+    "selected": "Выбрано",
+    "all": "Все",
+    "none": "Ничего",
+    "enabled": "Включено",
+    "disabled": "Выключено",
+    "active": "Активно",
+    "inactive": "Неактивно",
+    "pending": "В ожидании",
+    "completed": "Завершено",
+    "failed": "Ошибка",
+    "title": "Заголовок",
+    "description": "Описание",
+    "name": "Имя",
+    "email": "Электронная почта",
+    "optional": "необязательно",
+    "password": "Пароль",
+    "username": "Имя пользователя",
+    "status": "Статус",
+    "date": "Дата",
+    "time": "Время",
+    "type": "Тип",
+    "category": "Категория",
+    "action": "Действие",
+    "actions": "Действия",
+    "settings": "Настройки",
+    "configuration": "Конфигурация",
+    "management": "Управление",
+    "manage": "и управление",
+    "endUsers": "Конечные пользователи",
+    "across": "через",
+    "saved": "Изменения сохранены",
+    "provider": "Провайдер",
+    "country": "Страна",
+    "columns": "Столбцы",
+    "dashboard": "Панель управления",
+    "overview": "Обзор",
+    "details": "Детали",
+    "summary": "Итог",
+    "statistics": "Статистика",
+    "failedLogins": "Ошибки входа",
+    "today": "Сегодня",
+    "views": "просмотров",
+    "analytics": "Аналитика",
+    "reports": "Отчеты",
+    "logs": "Логи",
+    "history": "История",
+    "activity": "Активность",
+    "notifications": "Уведомления",
+    "messages": "Сообщения",
+    "tickets": "Тикеты",
+    "support": "Поддержка",
+    "help": "Помощь",
+    "about": "О программе",
+    "version": "Версия",
+    "language": "Язык",
+    "theme": "Тема",
+    "somethingWentWrong": "Что-то пошло не так",
+    "saving": "Сохранение...",
+    "tryAgain": "Попробовать еще раз",
+    "logout": "Выход",
+    "loggingOut": "Выход из системы...",
+    "confirmLogoutTitle": "Подтверждение выхода",
+    "confirmLogoutDescription": "Вы уверены, что хотите выйти, {{user}}? Вам нужно будет войти снова, чтобы получить доступ к аккаунту.",
+    "justNow": "Только что",
+    "refresh": "Обновить",
+    "activityDashboard": "Панель активности",
+    "activitySubtitle": "Активность системы и метрики вовлеченности",
+    "autoRefreshState": "Автообновление: {{state}}",
+    "on": "ВКЛ",
+    "off": "ВЫКЛ",
+    "enable": "Включить",
+    "disable": "Выключить",
+    "loginsToday": "Входов сегодня",
+    "activeUsers": "Активных пользователей",
+    "last7Days": "Последние 7 дней",
+    "contentViews": "Просмотры контента",
+    "deviceDistribution": "Распределение устройств",
+    "mostViewedContent": "Самый просматриваемый контент",
+    "noViewingData": "Нет данных о просмотрах",
+    "multiDeviceUsers": "Пользователи с несколькими устройствами",
+    "noMultiDeviceUsers": "Нет пользователей с несколькими устройствами",
+    "activity24h": "Активность (24ч)",
+    "removing": "Удаление...",
+    "sessionExpiredTitle": "Сессия истекла",
+    "sessionExpiredDescription": "Вы вышли из системы. Пожалуйста, войдите снова.",
+    "noPermission": "У вас нет прав для выполнения этого действия.",
+    "notFound": "Запрошенный ресурс не найден.",
+    "pageNotFoundTitle": "Страница не найдена",
+    "goToLogin": "Перейти к входу",
+    "invalidData": "Предоставлены неверные данные.",
+    "tooManyRequests": "Слишком много запросов. Пожалуйста, попробуйте позже.",
+    "serverError": "Ошибка сервера. Пожалуйста, попробуйте позже.",
+    "serviceUnavailable": "Сервис временно недоступен. Пожалуйста, попробуйте позже.",
+    "networkErrorTitle": "Ошибка сети",
+    "networkErrorDescription": "Не удалось подключиться к серверу. Пожалуйста, проверьте интернет-соединение.",
+    "operationFailedTitle": "Операция не выполнена",
+    "operationFailedWithContext": "{{context}}: ошибка",
+    "validationErrorTitle": "Ошибка валидации",
+    "authErrorTitle": "Ошибка аутентификации",
+    "permissionDeniedTitle": "Доступ запрещен",
+    "deviceDisconnectedTitle": "Устройство отключено",
+    "deviceDisconnectedDescription": "Ваше устройство было отключено. Переадресация на вход...",
+    "unexpectedErrorDescription": "Произошла непредвиденная ошибка. Приносим извинения за неудобства.",
+    "unknownError": "Произошла неизвестная ошибка",
+    "technicalDetails": "Технические подробности",
+    "reload": "Перезагрузить",
+    "reloadPage": "Перезагрузить страницу",
+    "goHome": "На главную",
+    "paginationShowing": "Страница {{page}} из {{totalPages}}",
+    "contactSupport": "Если проблема сохраняется, свяжитесь с поддержкой, указав ID ошибки выше.",
+    "tmdbAttribution": "Этот продукт использует TMDB API, но не одобрен и не сертифицирован TMDB.",
+    "processing": "Обработка...",
+    "retry": "Повторить",
+    "add": "Добавить",
+    "remove": "Удалить",
+    "noData": "Нет данных",
+    "noDescription": "Описание отсутствует",
+    "copied": "Скопировано",
+    "expired": "Истекло",
+    "change": "Изменить",
+    "continue": "Продолжить",
+    "createDescription": "Заполните данные для создания новой записи.",
+    "editDescription": "Измените данные этой записи.",
+    "minVersion": "Минимальная версия",
+    "selectApk": "Выбрать APK-файл",
+    "size": "Размер",
+    "suspended": "Приостановлено",
+    "timestamp": "Временная метка",
+    "versionCodeRequired": "Код версии обязателен",
+    "year": "Год",
+    "total": "Итого",
+    "apply": "Применить",
+    "reset": "Сбросить",
+    "uploading": "Загрузка...",
+    "updating": "Обновление...",
+    "creating": "Создание...",
+    "componentStack": "Стек компонентов:",
+    "errorDetails": "Подробности ошибки",
+    "errorId": "Идентификатор ошибки"
+  },
+  "createContent": {
+    "addNew": "Добавить новый {{type}}",
+    "add": "Добавить {{type}}",
+    "dialogDescription": "Поиск в TMDB для автоматического получения метаданных или ручной ввод",
+    "description": "Укажите детали для создания {{type}} или импортируйте из TMDB",
+    "tmdbSearch": "Поиск в TMDB",
+    "manualEntry": "Ручной ввод",
+    "searchLabel": "Поиск {{type}}",
+    "searchPlaceholder": "Поиск {{type}} в TMDB...",
+    "searching": "Поиск...",
+    "searchTmdb": "Поиск в TMDB",
+    "searchingTmdb": "Поиск в TMDB...",
+    "findingMatches": "Поиск лучших совпадений для \"{{query}}\"",
+    "searchResults": "Результаты поиска",
+    "resultsFound": "Найдено результатов: {{count}}",
+    "noDescription": "Описание отсутствует",
+    "noResultsFound": "Результатов не найдено",
+    "noResultsDescription": "Мы не смогли найти {{type}}, соответствующих запросу \"{{query}}\"",
+    "suggestions": {
+      "tryKeywords": "Попробуйте другие ключевые слова",
+      "checkSpelling": "Проверьте орфографию",
+      "useOriginalTitle": "Используйте оригинальное название"
+    },
+    "switchToManual": "Перейти к ручному вводу",
+    "manualAlert": "Заполните детали контента вручную. Все поля, кроме ссылки на видео, необязательны.",
+    "idLabel": "Идентификатор: {{id}}",
+    "createButton": "Создать {{type}}",
+    "creating": "Создание...",
+    "metadataLoaded": "Метаданные загружены из TMDB: {{title}} (ID: {{id}})",
+    "searchFailed": "Поиск не удался",
+    "unknownYear": "Неизвестно",
+    "labels": {
+      "title": "Заголовок",
+      "year": "Год",
+      "description": "Описание",
+      "videoUrl": "Ссылка на видео",
+      "posterUrl": "Ссылка на постер",
+      "backdropUrl": "Ссылка на фон",
+      "channelNumber": "Номер канала",
+      "provider": "Провайдер",
+      "country": "Страна",
+      "format": "Формат",
+      "drmKeys": "DRM ключи",
+      "origin": "Заголовок Origin",
+      "userAgent": "Пользовательский агент",
+      "referer": "Заголовок Referer",
+      "customHeaders": "Пользовательские заголовки (JSON)",
+      "channelCategory": "Категория канала",
+      "drmType": "Тип DRM",
+      "licenseServerUrl": "URL-адрес сервера лицензий",
+      "licenseRequestHeadersOptional": "Заголовки запроса лицензии (необязательно)",
+      "httpProxyOptional": "HTTP-прокси (необязательно)",
+      "dohOptional": "DNS-over-HTTPS (необязательно)",
+      "liveChannel": "Прямой эфир",
+      "airDate": "Дата выхода в эфир",
+      "videoUrlOptional": "URL-адрес видео (необязательно)",
+      "chapterPosterUrl": "URL постера главы",
+      "externalSubtitleOptional": "Внешние субтитры (необязательно)",
+      "subtitleFile": "Файл субтитров"
+    },
+    "form": {
+      "titlePlaceholder": "Введите заголовок",
+      "yearPlaceholder": "2024",
+      "descriptionPlaceholder": "Введите описание",
+      "videoUrlPlaceholder": "https://example.com/video.m3u8",
+      "posterUrlPlaceholder": "https://example.com/poster.jpg",
+      "backdropUrlPlaceholder": "https://example.com/backdrop.jpg",
+      "channelNumberPlaceholder": "например, 1, 2, 3...",
+      "providerPlaceholder": "например, Cable, OTT и т.д.",
+      "countryPlaceholder": "например, RU, US, UA...",
+      "formatSelectPlaceholder": "Выберите формат...",
+      "formatOption": {
+        "m3u8": "M3U8",
+        "drm": "DRM"
+      },
+      "drmPlaceholder": "Введите пары ClearKey в hex формате: c50f8758b7fb4bf886dd561a7cda6e84:0541856bd180caf65d26a9eaf33e0f24",
+      "originPlaceholder": "https://example.com",
+      "userAgentPlaceholder": "Mozilla/5.0...",
+      "refererPlaceholder": "https://referer-site.com",
+      "customHeadersPlaceholder": "{\"X-Custom-Header\": \"value\"}",
+      "channelCategoryPlaceholder": "Выберите категорию...",
+      "drmTypePlaceholder": "Выберите тип DRM...",
+      "drmType": {
+        "clearkey": "ClearKey",
+        "widevine": "Широкая лоза",
+        "playready": "PlayReady"
+      },
+      "licenseServerUrlPlaceholder": "https://license.example.com/widevine",
+      "licenseHeadersPlaceholder": "{\"X-AxDRM-Message\": \"ваш-токен-здесь\", \"Авторизация\": \"Токен на предъявителя\"}",
+      "customHeadersLinesPlaceholder": "X-Custom-Header: value1 X-Another-Header: value2",
+      "proxyUrlPlaceholder": "http://user:pass@ip:port",
+      "dohUrlPlaceholder": "https://dns.google/dns-query",
+      "chapterTitlePlaceholder": "Название главы",
+      "episodeTitlePlaceholder": "Название серии",
+      "chapterDescriptionPlaceholder": "Описание главы...",
+      "chapterVideoUrlPlaceholder": "URL-адрес видео (необязательно)",
+      "chapterPosterUrlPlaceholder": "https://example.com/chapter-poster.jpg",
+      "subtitleLanguagePlaceholder": "напр. ru, en, es"
+    },
+    "tv": {
+      "tvSettingsTitle": "Настройки ТВ канала",
+      "liveTvTitle": "Настройки заголовков LiveTV",
+      "drmFormatNote": "Формат: kid_hex:key_hex (один на строку или через запятую)",
+      "originNote": "Заголовок Origin для кросс-доменных запросов (необязательно)",
+      "userAgentNote": "User-Agent для эмуляции браузера/устройства (необязательно)",
+      "refererNote": "Заголовок Referer для источника запроса (необязательно)",
+      "customHeadersNote": "Дополнительные заголовки в формате JSON (необязательно)",
+      "drmTypeHelp": "ClearKey: Локальные ключи (шестнадцатеричный формат) | Widevine/PlayReady: требуется сервер лицензий.",
+      "widevineLicenseHelp": "URL-адрес сервера лицензий Widevine (например, от PallyCon, BuyDRM, Axinom)",
+      "playreadyLicenseHelp": "URL-адрес сервера лицензий PlayReady",
+      "licenseHeadersHelp": "Объект JSON с настраиваемыми заголовками для запросов лицензий (токены аутентификации и т. д.)",
+      "proxyHelp": "Only for geoblocked channels. Format: http://user:pass@ip:port",
+      "dohHelp": "Дополнительный преобразователь DoH для обхода блокировки DNS. Должен быть URL-адрес http(s)."
+    },
+    "createdSuccess": "{{type}} создан успешно",
+    "loadingCategories": "Загрузка категорий...",
+    "untitled": "Без названия",
+    "urlSet": "Набор URL-адресов",
+    "noUrl": "Нет URL-адреса",
+    "addEpisode": "Добавить эпизод",
+    "removeChapter": "Удалить главу",
+    "chapterLabel": "Глава {{number}}: {{title}}",
+    "chapterDescriptionLabel": "Описание главы",
+    "chapterTitle": "Название главы",
+    "episodeTitle": "Название серии",
+    "episodesTitle": "Эпизоды",
+    "episodesDescription": "Управление выпусками для этого контента"
+  },
+  "theme": {
+    "light": "Светлая",
+    "dark": "Темная",
+    "midnight": "Полночь",
+    "darkBlue": "Темно-синяя",
+    "system": "Системная",
+    "placeholder": "Тема"
+  },
+  "language": {
+    "english": "Английский",
+    "spanish": "Испанский",
+    "french": "Французский",
+    "portuguese": "Португальский",
+    "russian": "Русский",
+    "turkish": "Турецкий",
+    "slovak": "Словацкий",
+    "chinese": "Китайский",
+    "placeholder": "Язык"
+  },
+  "user": {
+    "common": {
+      "verified": "Верифицировано",
+      "watch": "Смотреть",
+      "titleCount": "{{count}} заголовок",
+      "titleCount_plural": "{{count}} заголовков",
+      "seriesCount": "{{count}} сериал",
+      "seriesCount_plural": "{{count}} сериалов",
+      "animeCount": "{{count}} аниме",
+      "animeCount_plural": "{{count}} аниме",
+      "eventCount": "{{count}} событие",
+      "eventCount_plural": "{{count}} событий",
+      "channelCount": "{{count}} канал",
+      "channelCount_plural": "{{count}} каналов",
+      "noResults": "Результатов не найдено",
+      "adjustSearch": "Попробуйте изменить поиск или фильтры",
+      "tryDifferent": "Попробуйте использовать другие условия поиска",
+      "reload": "Пожалуйста, попробуйте перезагрузить страницу"
+    },
+    "filters": {
+      "clear": "Сбросить фильтр",
+      "allGenres": "Все жанры",
+      "allTypes": "Все типы",
+      "allStatus": "Все статусы",
+      "sortTitle": "Сортировать по названию",
+      "sortYear": "Сортировать по году",
+      "sortRating": "Сортировать по рейтингу",
+      "searchMovies": "Поиск фильмов...",
+      "searchShows": "Поиск сериалов...",
+      "searchKids": "Поиск детского контента...",
+      "searchAnime": "Поиск аниме...",
+      "searchEvents": "Поиск событий...",
+      "searchChannels": "Поиск каналов..."
+    },
+    "live": {
+      "toggleChannels": "Каналы",
+      "toggleGuide": "Телепрограмма",
+      "categoryCount": "{{count}} категория",
+      "categoryCount_plural": "{{count}} категорий",
+      "channelsLive": "{{count}} каналов в эфире",
+      "nowPlaying": "Сейчас играет",
+      "minutesLeft": "{{count}} мин осталось",
+      "upNext": "Далее",
+      "unknownChannel": "Неизвестный канал",
+      "providerFallback": "{{appName}}",
+      "channelGuide": "Программа передач",
+      "noChannelsFound": "Каналы не найдены",
+      "streamUnavailableTitle": "Поток недоступен",
+      "streamUnavailableDescription": "Этот канал сейчас недоступен. Попробуйте позже.",
+      "toastCurrentlyViewing": "Сейчас смотрите {{title}}",
+      "noProgramInfo": "Информация о программе отсутствует",
+      "liveBadge": "LIVE",
+      "loadingCategories": "Загрузка категорий...",
+      "noCategories": "Категории недоступны",
+      "loadingChannels": "Загрузка каналов...",
+      "loadingStream": "Загрузка потока...",
+      "streamFailed": "Не удалось загрузить поток",
+      "streamError": "Ошибка при загрузке потока",
+      "selectPrompt": "Выберите канал, чтобы начать просмотр",
+      "playbackError": "Ошибка воспроизведения",
+      "title": "Прямой эфир",
+      "categories": {
+        "sports": "Спорт",
+        "entertainment": "Развлечения",
+        "news": "Новости",
+        "movies": "Фильмы"
+      },
+      "epg": {
+        "clickToWatch": "Нажмите, чтобы посмотреть",
+        "errors": {
+          "loadFailed": "Не удалось загрузить программу передач"
+        },
+        "live": "Прямой эфир",
+        "liveBadge": "LIVE",
+        "liveNow": "Сейчас в эфире",
+        "liveProgramming": "Прямое вещание",
+        "loading": "Загрузка программы передач...",
+        "next24h": "Следующие 24 часа",
+        "noProgramInfo": "Информация о программе отсутствует",
+        "previous24h": "Предыдущие 24 часа",
+        "upcoming": "Предстоящие",
+        "watchChannel": "Смотреть канал"
+      }
+    },
+    "menu": {
+      "liveTv": "Прямой эфир"
+    },
+    "movies": {
+      "emptyTitle": "Фильмы не найдены",
+      "emptyDescription": "Попробуйте изменить поиск или фильтры"
+    },
+    "shows": {
+      "status": {
+        "ongoing": "В процессе",
+        "completed": "Завершено",
+        "cancelled": "Отменено",
+        "unknown": "Неизвестно"
+      },
+      "loading": "Загрузка сериалов...",
+      "emptyTitle": "Сериалы не найдены",
+      "emptyDescription": "Попробуйте изменить поиск или фильтры"
+    },
+    "kids": {
+      "errorTitle": "Ошибка при загрузке детского контента",
+      "searchPlaceholder": "Поиск детского контента...",
+      "emptyTitle": "Детский контент недоступен",
+      "emptySearchTitle": "Результатов не найдено",
+      "emptySearchDescription": "Попробуйте использовать другие условия поиска"
+    },
+    "anime": {
+      "errorTitle": "Ошибка при загрузке аниме",
+      "searchPlaceholder": "Поиск аниме...",
+      "emptyTitle": "Аниме недоступно",
+      "emptySearchTitle": "Результатов не найдено",
+      "emptySearchDescription": "Попробуйте использовать другие условия поиска"
+    },
+    "events": {
+      "errorTitle": "Ошибка при загрузке событий",
+      "searchPlaceholder": "Поиск событий...",
+      "emptyTitle": "События недоступны",
+      "emptySearchTitle": "Результатов не найдено",
+      "emptySearchDescription": "Попробуйте использовать другие условия поиска"
+    },
+    "favorites": {
+      "title": "Мое избранное",
+      "description": "Весь ваш любимый контент в одном месте",
+      "all": "Все",
+      "movies": "Фильмы",
+      "series": "Сериалы",
+      "channels": "Каналы",
+      "emptyTitle": "У вас пока нет избранного",
+      "emptyDescription": "Начните добавлять контент в избранное",
+      "emptyMoviesTitle": "У вас нет любимых фильмов",
+      "emptyMoviesDescription": "Добавляйте фильмы в избранное из раздела фильмов",
+      "emptySeriesTitle": "У вас нет любимых сериалов",
+      "emptySeriesDescription": "Добавляйте сериалы в избранное из раздела сериалов",
+      "emptyChannelsTitle": "У вас нет любимых каналов",
+      "emptyChannelsDescription": "Добавляйте каналы в избранное из раздела ТВ"
+    },
+    "music": {
+      "unknownTrack": "Неизвестный трек",
+      "unknownArtist": "Неизвестный исполнитель",
+      "unknownAlbum": "Неизвестный альбом",
+      "unknownYear": "Неизвестный год",
+      "searchingFor": "Поиск"
+    },
+    "player": {
+      "audioInfo": "Аудиоинформация",
+      "audioTracksTitle": "Аудио треки",
+      "audioTracksTitleWithCount": "Аудиодорожки ({{count}})",
+      "noAudioTracks": "Звуковые дорожки не обнаружены",
+      "noAudioTracksHelpLine1": "В этом видео может быть встроенный звук без отдельных дорожек.",
+      "noAudioTracksHelpLine2": "или ваш браузер не поддерживает API AudioTracks.",
+      "noSubtitles": "Нет субтитров",
+      "playbackSpeed": "Скорость",
+      "subtitlesTitle": "Субтитры"
+    }
+  },
+  "auth": {
+    "accessDenied": "Доступ Запрещен",
+    "noPermissionTitle": "Недостаточно Прав",
+    "noPermissionDescription": "У вас нет прав для доступа к этой странице",
+    "permissionDetail": "Ваша текущая роль ({{role}}) не имеет доступа к этому ресурсу. Требуемые роли: {{required}}.",
+    "goToDashboard": "Перейти в Панель Управления",
+    "errors": {
+      "usernameNotFound": "Имя пользователя не найдено. Пожалуйста, проверьте имя пользователя и попробуйте снова.",
+      "incorrectPassword": "Неверный пароль. Пожалуйста, проверьте пароль и попробуйте снова.",
+      "accountDeactivated": "Ваш аккаунт деактивирован. Пожалуйста, свяжитесь с поддержкой.",
+      "invalidCredentials": "Неверное имя пользователя или пароль. Пожалуйста, проверьте свои учетные данные.",
+      "accessDeniedAdminUI": "Доступ запрещен. Этот веб-интерфейс доступен только администраторам и реселлерам."
+    },
+    "session": {
+      "notAuthenticated": "Не аутентифицирован",
+      "sessionExpired": "Сессия истекла",
+      "sessionExpiringSoon": "Сессия скоро истекает",
+      "sessionActive": "Сессия активна",
+      "title": "Статус Сессии",
+      "description": "Информация о текущей сессии аутентификации",
+      "status": "Статус:",
+      "user": "Пользователь:",
+      "role": "Роль:",
+      "expiresIn": "Сессия истекает через:",
+      "validating": "Проверка...",
+      "validateSession": "Проверить Сессию",
+      "willExpireIn": "Ваша сессия истекает через",
+      "refreshSession": "Обновить сессию",
+      "sessionExpiringCompact": "Сессия истекает",
+      "sessionActiveCompact": "Сессия активна"
+    },
+    "forgotPasswordFlow": {
+      "backToLogin": "Вернуться к входу",
+      "checkYourEmailDescription": "Если учетная запись с таким адресом электронной почты существует, мы отправили вам ссылку для сброса пароля. Пожалуйста, проверьте свой почтовый ящик и папку «Спам».",
+      "checkYourEmailTitle": "Проверьте свою электронную почту",
+      "emailAddressLabel": "Адрес электронной почты",
+      "failedToSendResetEmail": "Не удалось отправить электронное письмо для сброса.",
+      "forgotPasswordDescription": "Введите свой адрес электронной почты, и мы вышлем вам ссылку для сброса пароля.",
+      "forgotPasswordTitle": "Забыли пароль?",
+      "genericError": "Произошла ошибка",
+      "sendResetLink": "Отправить ссылку для сброса",
+      "sending": "Отправка..."
+    },
+    "resetPasswordFlow": {
+      "backToLogin": "Вернуться к входу",
+      "confirmPasswordLabel": "Подтвердите пароль",
+      "confirmPasswordPlaceholder": "Подтвердите новый пароль",
+      "createNewPasswordFor": "Создайте новый пароль для",
+      "genericError": "Произошла ошибка",
+      "goToLogin": "Перейти к входу",
+      "invalidOrExpiredDescription": "Эта ссылка для сброса пароля недействительна или срок ее действия истек. Пожалуйста, запросите новый.",
+      "invalidOrExpiredTitle": "Недействительная или устаревшая ссылка",
+      "newPasswordLabel": "Новый пароль",
+      "newPasswordPlaceholder": "Введите новый пароль",
+      "passwordMinLength": "Пароль должен быть не менее 6 символов",
+      "passwordsDoNotMatch": "Пароли не совпадают",
+      "requestNewLink": "Запросить новую ссылку",
+      "resetFailed": "Не удалось сбросить пароль",
+      "resetPasswordButton": "Сбросить пароль",
+      "resetYourPassword": "Сбросить пароль",
+      "resetting": "Сброс...",
+      "successDescription": "Ваш пароль был обновлен. Теперь вы можете войти в систему с новым паролем.",
+      "successTitle": "Пароль сброшен успешно",
+      "verifyingLink": "Проверка ссылки для сброса..."
+    },
+    "twoFactorModal": {
+      "title": "Двухфакторная аутентификация",
+      "totpDescription": "Введите 6-значный код из приложения для аутентификации.",
+      "backupDescription": "Введите один из ваших 8-значных резервных кодов.",
+      "authenticationCode": "Код аутентификации",
+      "totpPlaceholder": "000000",
+      "backupCode": "Резервный код",
+      "backupPlaceholder": "XXXXXXXX",
+      "backupHint": "Резервные коды являются одноразовыми и становятся недействительными после использования.",
+      "verifying": "Проверка...",
+      "verifyAndSignIn": "Подтвердить и войти",
+      "useBackupCode": "Вместо этого используйте резервный код",
+      "lostAccessHelp": "Потеряли доступ к вашему аутентификатору? Обратитесь к своему администратору, чтобы сбросить 2FA."
+    }
+  },
+  "login": {
+    "title": "{{appName}}",
+    "subtitle": "Корпоративная Медиа Платформа",
+    "secureAccess": "Портал Безопасного Доступа",
+    "systemAccess": "Доступ к Системе",
+    "enterCredentials": "Введите свои учетные данные, чтобы продолжить",
+    "username": "Имя пользователя",
+    "password": "Пароль",
+    "usernamePlaceholder": "Введите имя пользователя",
+    "passwordPlaceholder": "Введите пароль",
+    "usernameDescription": "Введите имя пользователя вашего аккаунта",
+    "authenticating": "Аутентификация...",
+    "accessSystem": "Войти в Систему",
+    "hidePassword": "Скрыть пароль",
+    "showPassword": "Показать пароль",
+    "signIn": "Войти",
+    "rememberMeLabel": "Запомнить меня на 30 дней",
+    "rememberMeDescription": "Оставаться в системе на этом устройстве",
+    "loginSuccess": "Вход выполнен успешно! Перенаправление...",
+    "forgotPassword": "Забыли пароль?",
+    "noAccountPrompt": "Нет аккаунта?",
+    "contactAdmin": "Свяжитесь с администратором",
+    "loginFailed": "Ошибка входа",
+    "unexpectedError": "Произошла непредвиденная ошибка",
+    "footer": "© 2026 {{appName}} ENTERPRISE • БЕЗОПАСНЫЙ ДОСТУП",
+    "trialAccountCta": "Попробовать демо-аккаунт",
+    "trialAccountDescription": "Создайте временный аккаунт, чтобы изучить платформу.",
+    "redeemPrompt": "Есть код?",
+    "redeemCta": "Активируйте его здесь",
+    "examples": {
+      "title": "Улучшенные Формы Входа",
+      "basic": "Базовый Вход",
+      "withStrength": "С Проверкой Сложности Пароля",
+      "minimal": "Минималистичный Вход"
+    },
+    "hero": {
+      "encrypted": "Зашифрованный",
+      "mainLogoAlt": "Логотип {{appName}}",
+      "mobileLogoAlt": "Логотип приложения",
+      "secure": "Безопасный",
+      "ultraHd": "Ультра HD"
+    }
+  },
+  "validation": {
+    "usernameRequired": "Имя пользователя обязательно",
+    "usernameTooLong": "Имя пользователя слишком длинное",
+    "passwordRequired": "Пароль обязателен",
+    "passwordMinLength": "Пароль должен быть не менее 8 символов",
+    "passwordTooLong": "Пароль слишком длинный"
+  },
+  "layout": {
+    "adminDashboard": "Панель Администратора",
+    "online": "В сети"
+  },
+  "breadcrumb": {
+    "admin": "Админ"
+  },
+  "sidebar": {
+    "brand": "{{appName}}",
+    "adminDashboard": "Панель Администратора",
+    "expand": "Развернуть боковую панель",
+    "collapse": "Свернуть боковую панель",
+    "overview": "Обзор",
+    "gift-codes": "Подарочные коды",
+    "giftCodes": "Подарочные коды",
+    "content": "Управление контентом",
+    "media-scanner": "Сканер медиа",
+    "epg": "EPG",
+    "music": "Музыкальная библиотека",
+    "resellers": "Реселлеры",
+    "users": "Конечные пользователи",
+    "demos": "Демо",
+    "devices": "Устройства",
+    "tickets": "Тикеты поддержки",
+    "logs": "Логи активности",
+    "security": "Центр безопасности",
+    "master-keys": "Мастер-ключи API",
+    "billing": "Биллинг",
+    "email": "Электронная почта",
+    "app-versions": "Версии приложения",
+    "settings": "Настройки",
+    "systemStatus": "Статус системы",
+    "systemOperational": "Все системы работают нормально",
+    "profile": "Профиль",
+    "logout": "Выход",
+    "badge": {
+      "new": "НОВЫЙ"
+    },
+    "description": {
+      "security": "Мониторинг инцидентов безопасности и управление банами",
+      "master-keys": "Управление ключами API для внешних приложений",
+      "billing": "Обзор доходов и офлайн-платежей",
+      "packages": "Управление пакетами подписок",
+      "direct-subscriptions": "Просмотр и управление подписками"
+    },
+    "packages": "Пакеты",
+    "direct-subscriptions": "Прямые Подписки"
+  },
+  "device": {
+    "title": "Регистрация устройства",
+    "description": "Управляйте своими зарегистрированными устройствами и добавляйте новые",
+    "devices": "устройства",
+    "addDevice": "Добавить устройство",
+    "limitStatus": "Статус лимита устройств",
+    "atLimit": "Лимит исчерпан",
+    "available": "Доступно",
+    "youHaveDevices": "У вас зарегистрировано {{count}} из {{max}} разрешенных устройств.",
+    "toAddRemove": "Чтобы добавить новое устройство, вы должны сначала удалить существующее.",
+    "yourRegisteredDevices": "Ваши зарегистрированные устройства",
+    "table": {
+      "device": "Устройство",
+      "user": "Пользователь",
+      "deviceLimit": "Лимит устройств",
+      "riskLevel": "Уровень риска",
+      "status": "Статус",
+      "lastActive": "Последняя активность",
+      "actions": "Действия"
+    },
+    "risk": {
+      "high": "Высокий риск",
+      "safe": "Безопасно"
+    },
+    "remove": "Удалить",
+    "removeDeviceConfirmation": "Вы уверены, что хотите навсегда удалить устройство «{{name}}» у пользователя {{username}}?\\n\\nПримечание: это приведет только к удалению устройства. Пользователь сможет перерегистрировать его позже.\\nПредупреждение: если вы хотите запретить этому устройству повторное подключение, используйте «Удалить и в черный список».",
+    "removeAndBlacklistAction": "Удалить и в черный список",
+    "removeAndBlacklistTitle": "Удалить устройство и занести в черный список",
+    "removeAndBlacklistDescription": "Вы уверены, что хотите удалить устройство «{{name}}» у пользователя {{username}} и добавить его в черный список?\\n\\nПредупреждение: это немедленно отключит устройство и предотвратит его повторное подключение до тех пор, пока оно не будет удалено из черного списка вручную.",
+    "blacklistOnly": "Только в черный список",
+    "blacklistTitle": "Занести устройство в черный список",
+    "blacklistDescription": "Вы уверены, что хотите добавить устройство «{{name}}» в черный список без его удаления?\\n\\nПримечание: это немедленно отключит устройство, но сохранит его в списке активных устройств до тех пор, пока пользователь не попытается переподключиться.",
+    "blacklistAction": "В черный список",
+    "removeMultipleTitle": "Удалить несколько устройств",
+    "removeMultipleDescription": "Вы уверены, что хотите удалить {{count}} выбранных устройств?",
+    "devicesToBeRemovedLabel": "Устройства для удаления:",
+    "moreDevices": "... и еще {{count}} устройств",
+    "bulkWarning": "Это действие нельзя отменить.",
+    "removeAllSelected": "Удалить все выбранные",
+    "removeDeviceTitle": "Удалить устройство",
+    "removeDeviceDescription": "Вы уверены, что хотите удалить «{{name}}»?\n\nВам потребуется снова зарегистрировать это устройство, чтобы использовать его в будущем.",
+    "removeDevice": "Удалить устройство",
+    "noDevices": "Нет зарегистрированных устройств",
+    "registerFirstDescription": "Зарегистрируйте свое первое устройство, чтобы начать пользоваться сервисом.",
+    "registerFirstButton": "Зарегистрировать первое устройство",
+    "registerNewTitle": "Регистрация нового устройства",
+    "registerNewDescription": "Добавьте новое устройство в свой аккаунт",
+    "label": {
+      "deviceId": "ID устройства",
+      "deviceName": "Название устройства"
+    },
+    "placeholder": {
+      "id": "Введите уникальный идентификатор устройства",
+      "name": "Введите название устройства (например, ТВ в гостиной)",
+      "searchDevices": "Поиск устройств..."
+    },
+    "removeSelected": "Удалить выбранные ({{count}})",
+    "noDevicesFoundTitle": "Устройства не найдены",
+    "noDevicesFoundFor": "Устройства не найдены по запросу «{{query}}»",
+    "noDevicesRegistered": "В системе в данный момент нет зарегистрированных устройств.",
+    "deviceIdLabel": "Идентификатор: {{id}}",
+    "time": {
+      "justNow": "Только что",
+      "minutesAgo": "{{count}} м. назад",
+      "hoursAgo": "{{count}} ч. назад",
+      "daysAgo": "{{count}} дн. назад"
+    },
+    "errors": {
+      "loadFailed": "Не удалось загрузить информацию об устройстве. Пожалуйста, попробуйте позже."
+    },
+    "registering": "Регистрация...",
+    "registerDevice": "Зарегистрировать устройство"
+  },
+  "tvCategories": {
+    "title": "Управление категориями ТВ-каналов",
+    "description": "Сохраняйте категории по умолчанию и расширяйте их своими собственными метками. Категории, которые используются, нельзя удалить.",
+    "inputPlaceholder": "Создать пользовательскую категорию (например, Премиум Спорт)",
+    "addCategory": "Добавить категорию",
+    "refreshing": "Обновление...",
+    "loading": "Загрузка категорий...",
+    "none": "Вы еще не создали ни одной пользовательской категории.",
+    "default": "По умолчанию",
+    "removeTitle": "Удалить категорию",
+    "removeDescription": "Это действие нельзя отменить. Категория «{{name}}» будет удалена.",
+    "removeCategory": "Удалить категорию",
+    "editCategory": "Редактировать категорию",
+    "inUseTitle": "Категория в данный момент используется",
+    "created": "Категория создана",
+    "updated": "Категория обновлена",
+    "removed": "Категория удалена",
+    "nameRequired": "Название категории обязательно",
+    "helpText": "Категории по умолчанию остаются закрепленными сверху. Пользовательские метки помогают вам организовывать провайдеров или регионы так, как вам нужно.",
+    "protectionNote": "Используемые категории защищены во избежание случайного удаления.",
+    "tableHeaders": {
+      "category": "Категория",
+      "usage": "Использование",
+      "created": "Создано",
+      "actions": "Действия"
+    },
+    "categoryCount": "{{count}} категор{{count, plural, one{ия} few{ии} many{ий} other{ии}}}",
+    "usageLabel": {
+      "channel_one": "{{count}} канал",
+      "channel_other": "{{count}} каналов",
+      "notInUse": "Не используется"
+    }
+  },
+  "systemConfiguration": {
+    "title": "Конфигурация системы",
+    "creditTitle": "Конфигурация кредитной системы",
+    "creditDescription": "Настройте лимиты устройств по умолчанию и кредитные ставки для создания пользователей",
+    "saveCreditConfig": "Сохранить кредитную конфигурацию",
+    "saveTMDBConfig": "Сохранить конфигурацию TMDB",
+    "testing": "Тестирование...",
+    "test": "Тест",
+    "tmdbKeyValid": "API-ключ TMDB действителен!",
+    "tmdbKeyInvalid": "API-ключ TMDB недействителен: {{message}}",
+    "failedToLoad": "Не удалось загрузить конфигурацию: {{message}}",
+    "creditConfigUpdated": "Кредитная конфигурация успешно обновлена!",
+    "tmdbConfigUpdated": "Конфигурация TMDB успешно обновлена!",
+    "currentConfigTitle": "Текущая конфигурация",
+    "currentConfigDescription": "Сводка текущих настроек системы",
+    "defaultDevicesLabel": "Устройства по умолчанию",
+    "credits3DevicesLabel": "Кредиты (3 устройства)",
+    "credits5DevicesLabel": "Кредиты (5 устройств)",
+    "tmdbApiLabel": "TMDB API",
+    "configured": "Настроено",
+    "notSet": "Не установлено",
+    "forms": {
+      "defaultDevicesLabel": "Устройств на пользователя по умолчанию",
+      "defaultDevicesHelp": "Количество устройств по умолчанию для новых пользователей",
+      "creditPerExtraDeviceLabel": "Кредиты за дополнительное устройство",
+      "creditPerExtraDeviceHelp": "Кредиты, взимаемые за каждое устройство сверх лимита по умолчанию",
+      "credit3DevicesLabel": "Кредиты для пользователя с 3 устройствами",
+      "credit3DevicesHelp": "Кредиты, списываемые при создании пользователя с 3 устройствами",
+      "credit5DevicesLabel": "Кредиты для пользователя с 5 устройствами",
+      "credit5DevicesHelp": "Кредиты, списываемые при создании пользователя с 5 устройствами",
+      "tmdbTitle": "Конфигурация TMDB API",
+      "tmdbDescription": "Настройте интеграцию с TMDB API для автоматического получения метаданных контента",
+      "tmdbApiKeyLabel": "API-ключ TMDB",
+      "tmdbApiKeyPlaceholder": "Введите ваш API-ключ TMDB",
+      "tmdbApiKeyHelp": "Получите API-ключ в настройках API на сайте TMDB",
+      "tmdbEnabledLabel": "Интеграция с TMDB",
+      "tmdbEnabledDescription": "Включить/выключить получение метаданных TMDB для панели управления.",
+      "tmdbLanguageLabel": "Язык TMDB",
+      "tmdbLanguagePlaceholder": "Выберите язык TMDB",
+      "tmdbLanguageHelp": "Язык для названий фильмов, описаний и метаданных из TMDB",
+      "tmdbPreferredFormatLabel": "Предпочтительный формат изображений",
+      "tmdbPreferredFormatPlaceholder": "Выберите предпочтительный формат изображений",
+      "tmdbPreferredFormatHelp": "Выберите предпочтительный формат для оформления TMDB в автономном режиме",
+      "tmdbModeLabel": "Источник метаданных",
+      "tmdbModePlaceholder": "Выберите источник метаданных",
+      "tmdbModeOnline": "Онлайн (TMDB API)",
+      "tmdbModeOffline": "Оффлайн (локальные метаданные)",
+      "tmdbModeDescription": "Выберите, следует ли получать метаданные напрямую из TMDB или из локального кэша метаданных.",
+      "tmdbMetadataPathLabel": "Папка метаданных",
+      "tmdbMetadataPathHelp": "Относительный путь на сервере, где хранятся автономные метаданные и изображения TMDB (по умолчанию: metadata).",
+      "tmdbOfflineHint": "В автономном режиме описания и изображения будут браться из папки метаданных. Убедитесь, что папка синхронизирована с актуальными данными экспорта TMDB."
+    }
+  },
+  "profile": {
+    "title": "Настройки профиля",
+    "description": "Обновите свои контактные данные или измените пароль администратора.",
+    "contactInformation": "Контактная информация",
+    "emailPlaceholder": "you@example.com",
+    "contactInfoNote": "Мы используем этот адрес электронной почты для сброса пароля и важных уведомлений.",
+    "saveChanges": "Сохранить изменения",
+    "changePassword": "Изменить пароль",
+    "newPasswordPlaceholder": "Введите новый пароль",
+    "confirmPasswordPlaceholder": "Повторите новый пароль",
+    "passwordHelp": "Используйте не менее 8 символов. Надежный пароль включает цифры и символы.",
+    "updatePassword": "Обновить пароль",
+    "updated": "Профиль обновлен",
+    "passwordUpdated": "Пароль обновлен",
+    "enterAndConfirmPassword": "Пожалуйста, введите и подтвердите новый пароль",
+    "passwordsDoNotMatch": "Пароли не совпадают",
+    "updateFailed": "Не удалось обновить профиль",
+    "passwordTooShort": "Пароль должен состоять не менее чем из 8 символов",
+    "updatePasswordFailed": "Не удалось обновить пароль",
+    "currentPasswordLabel": "Текущий пароль",
+    "currentPasswordPlaceholder": "Введите текущий пароль",
+    "currentPasswordRequired": "Текущий пароль обязателен",
+    "newPasswordLabel": "Новый пароль",
+    "confirmPasswordLabel": "Подтвердите пароль",
+    "twoFactor": {
+      "title": "Двухфакторная аутентификация",
+      "description": "Добавьте дополнительный уровень безопасности вашему аккаунту",
+      "enabled": "Двухфакторная аутентификация включена",
+      "disabled": "Двухфакторная аутентификация выключена",
+      "enable": "Включить 2FA",
+      "disable": "Выключить 2FA",
+      "disableDescription": "Введите код 2FA или резервный код, чтобы отключить двухфакторную аутентификацию.",
+      "setupTitle": "Настройка двухфакторной аутентификации",
+      "scanQR": "Отсканируйте этот QR-код вашим приложением для аутентификации (Google Authenticator, Authy и т. д.)",
+      "manualEntry": "Или введите этот код вручную:",
+      "verifyCode": "Введите 6-значный код из вашего приложения для аутентификации для проверки:",
+      "verify": "Проверить и включить",
+      "verifying": "Проверка...",
+      "placeholder": "000000",
+      "backupCodes": {
+        "title": "Сохраните ваши резервные коды",
+        "description": "Эти коды можно использовать для доступа к вашему аккаунту, если вы потеряете свой аутентификатор. Каждый код можно использовать только один раз. Сохраните их в надежном месте.",
+        "copy": "Копировать все и закрыть"
+      },
+      "errors": {
+        "setupFailed": "Не удалось начать настройку 2FA",
+        "verifyFailed": "Проверка не удалась",
+        "disableFailed": "Не удалось отключить 2FA",
+        "invalidCode": "Пожалуйста, введите действительный 6-значный код"
+      },
+      "cancel": "Отмена",
+      "code": "Code",
+      "qrAlt": "QR-код 2FA"
+    }
+  },
+  "creditsPricing": {
+    "savePricingConfig": "Сохранить конфигурацию ценообразования",
+    "updated": "Конфигурация ценообразования успешно обновлена",
+    "tiersSorted": "Уровни отсортированы и нормализованы"
+  },
+  "notifications": {
+    "content": {
+      "createFailed": "Не удалось создать контент: {{message}}"
+    },
+    "security": {
+      "errorLoadingBans": "Ошибка при загрузке бан-листа безопасности",
+      "errorUnbanningUser": "Ошибка при разбане пользователя",
+      "errorLoadingStatistics": "Ошибка при загрузке статистики безопасности",
+      "errorCleaningExpiredBans": "Ошибка при очистке просроченных банов",
+      "errorLoadingIncidents": "Ошибка при загрузке инцидентов безопасности"
+    },
+    "ban": {
+      "usernameAndReasonRequired": "Имя пользователя и причина обязательны",
+      "invalidDuration": "Недопустимая длительность",
+      "errorCreatingBan": "Ошибка при создании бана"
+    },
+    "scan": {
+      "folderCompleted": "Сканирование папки завершено",
+      "error": "Ошибка сканирования: {{message}}"
+    },
+    "blacklist": {
+      "errorLoading": "Ошибка при загрузке черного списка устройств",
+      "errorRemoving": "Ошибка при удалении устройства из черного списка",
+      "removed": "Устройство успешно удалено из черного списка",
+      "removeFailed": "Не удалось удалить устройство из черного списка",
+      "confirmRemove": "Вы уверены, что хотите удалить устройство «{{device}}» для пользователя {{user}} из черного списка?"
+    },
+    "credits": {
+      "updated": "Цены на кредиты успешно обновлены",
+      "tiersSorted": "Уровни отсортированы и нормализованы"
+    },
+    "securityIncident": {
+      "deleted": "Инцидент безопасности успешно удален",
+      "deleteFailed": "Не удалось удалить инцидент безопасности"
+    },
+    "provider": {
+      "removed": "Провайдер удален",
+      "added": "Провайдер «{{name}}» добавлен",
+      "error": "Ошибка провайдера: {{message}}",
+      "syncCompleted": "Синхронизация завершена (создано {{created}}, обновлено {{updated}})"
+    },
+    "edit": {
+      "epgCopied": "EPG Channel ID скопирован",
+      "streamUrlCopied": "Stream URL скопирована"
+    },
+    "banUser": {
+      "userUnbanned": "Пользователь {{user}} был разбанен"
+    }
+  },
+  "admin": {
+    "search": {
+      "placeholder": "Поиск... (Ctrl+K)",
+      "shortcuts": {
+        "enterKey": "Входить",
+        "escapeKey": "Клавиша Esc",
+        "navigate": "Навигация"
+      },
+      "types": {
+        "content": "Содержание",
+        "music": "Музыка",
+        "reseller": "Реселлер",
+        "user": "Пользователь"
+      }
+    },
+    "security": {
+      "tabs": {
+        "overview": "Обзор безопасности",
+        "incidents": "Инциденты безопасности",
+        "bans": "Блокировки безопасности",
+        "blacklistedDevices": "Устройства в черном списке"
+      },
+      "actions": {
+        "cleanupExpiredBans": "Очистить истекшие блокировки",
+        "createManualBan": "Создать блокировку вручную"
+      },
+      "cards": {
+        "totalIncidents": "Всего инцидентов",
+        "todaysIncidents": "Инциденты за сегодня",
+        "activeBans": "Активные блокировки",
+        "permanentBans": "Постоянные блокировки",
+        "blacklistedDevices": "Устройства в черном списке"
+      }
+    },
+    "masterKeys": {
+      "createDialogDescription": "Создайте новый Мастер-ключ API для внешних приложений. Этот ключ обеспечивает полный доступ к API без аутентификации через интерфейс.",
+      "examples": {
+        "appName": "например, External Editor App 2024"
+      },
+      "keyNameHelp": "Описательное имя для идентификации этого ключа API",
+      "securityNoteTitle": "Примечание по безопасности",
+      "securityNoteDescription": "Сгенерированный ключ API будет показан только один раз. Обязательно скопируйте и сохраните его в надежном месте.",
+      "empty": {
+        "title": "Ключи API не найдены",
+        "description": "Создайте свой первый Мастер-ключ API для интеграции внешних приложений"
+      },
+      "detailsTitle": "Детали Мастер-ключа API",
+      "detailsDescription": "Просмотр и управление этим ключом API для интеграции внешних приложений",
+      "apiKeyLabel": "Ключ API",
+      "activeStatus": "Активный статус",
+      "regenerateButton": "Перегенерировать ключ",
+      "deleteButton": "Удалить ключ",
+      "labels": {
+        "created": "Создан",
+        "lastUpdated": "Последнее обновление",
+        "lastUsed": "Последнее использование"
+      }
+    },
+    "loginHistory": {
+      "title": "История входов",
+      "lastUpdated": "Последнее обновление: {{time}}",
+      "autoRefreshOn": "Автообновление: ВКЛ",
+      "refreshNow": "Обновить сейчас",
+      "filters": {
+        "username": "Имя пользователя",
+        "ipAddress": "IP-адрес",
+        "startDate": "Дата начала",
+        "endDate": "Дата окончания"
+      },
+      "placeholders": {
+        "searchUsername": "Поиск пользователя...",
+        "ipAddress": "IP-адрес..."
+      },
+      "loading": "Загрузка истории входов...",
+      "errors": {
+        "loading": "Ошибка при загрузке истории входов: {{message}}",
+        "loadingFallback": "Не удалось загрузить историю входов"
+      },
+      "noHistory": "Попыток входа не найдено.",
+      "table": {
+        "dateTime": "Дата и время",
+        "user": "Пользователь",
+        "status": "Статус",
+        "ipAddress": "IP-адрес",
+        "device": "Устройство",
+        "userAgent": "Пользовательский агент"
+      }
+    },
+    "securityIncidents": {
+      "filterType": "Фильтр по типу",
+      "allTypes": "Все типы",
+      "bruteForce": "Брутфорс",
+      "suspiciousActivity": "Подозрительная активность",
+      "multipleDevices": "Несколько устройств",
+      "tokenManipulation": "Манипуляция токеном",
+      "searchByUsernamePlaceholder": "Поиск по имени пользователя...",
+      "itemsPerPage": "Элементов на странице",
+      "title": "Инциденты безопасности ({{total}})",
+      "noneFound": "Инцидентов не найдено.",
+      "deviceId": "ID устройства",
+      "ipAddress": "IP-адрес",
+      "deleteTitle": "Удалить инцидент",
+      "showingPage": "Страница {{page}} из {{totalPages}}",
+      "confirmDelete": "Удалить этот инцидент?"
+    },
+    "securityBans": {
+      "searchByUsernamePlaceholder": "Поиск по имени пользователя...",
+      "itemsPerPage": "Элементов на странице",
+      "title": "Блокировки безопасности ({{total}})",
+      "noneFound": "Блокировок не найдено.",
+      "level": "Уровень",
+      "type": "Тип",
+      "reason": "Причина",
+      "timeRemaining": "Оставшееся время"
+    },
+    "blacklistedDevices": {
+      "title": "Устройства в черном списке ({{count}})",
+      "noneTitle": "Нет устройств в черном списке",
+      "noneDescription": "Все чисто. В настоящее время нет устройств в черном списке.",
+      "removeButton": "Удалить из черного списка"
+    },
+    "unban": {
+      "action": "Разбанить",
+      "confirm": "Разбанить пользователя {{user}}?",
+      "promptReason": "Введите причину разбана"
+    },
+    "dashboard": {
+      "notAuthenticated": "Не аутентифицирован",
+      "accessDenied": "Доступ запрещен. Требуется роль администратора.",
+      "preparing": "Подготовка панели управления..."
+    },
+    "demos": {
+      "title": "Демо-доступ",
+      "subtitle": "Мониторинг демо-аккаунтов, настройка лимитов создания и просмотр истории доступа для предотвращения злоупотреблений.",
+      "settingsTitle": "Ограничения создания",
+      "settingsDescription": "Ограничьте количество демо-версий, создаваемых с одного IP, и укажите длительность блокировки нарушителей.",
+      "totalUsers": "Активные демо",
+      "thresholdLabel": "Порог (созданий / 24ч)",
+      "banDurationLabel": "Длительность бана (дней)",
+      "managementTitle": "Мониторинг демо",
+      "managementDescription": "Просматривайте активные демо-аккаунты или проверяйте историю IP в пару кликов.",
+      "usersTab": "Пользователи",
+      "historyTab": "История",
+      "usersSummary": "Активно демо-пользователей: {{count}}",
+      "refreshing": "Обновление...",
+      "ipLabel": "IP-адрес",
+      "expiresLabel": "Истекает",
+      "deviceLabel": "Устройство",
+      "userAgentLabel": "Пользовательский агент",
+      "resultLabel": "Результат",
+      "successful": "Успешно",
+      "failed": "Ошибка",
+      "historySummary": "Показано записей лога: {{total}}",
+      "noHistoryResults": "Попыток входа с текущими фильтрами не найдено.",
+      "noUsers": "В данный момент демо-пользователей нет.",
+      "confirmDelete": "Удалить этого демо-пользователя? Это действие нельзя отменить.",
+      "userDeleted": "Демо-пользователь удален",
+      "usernamePlaceholder": "ivan.ivanov"
+    },
+    "giftcodes": {
+      "title": "Подарочные коды",
+      "description": "Управление одноразовыми или многоразовыми подарочными кодами для создания или продления подписок пользователей.",
+      "create": "Создать код",
+      "bulkCreate": "Массовое создание",
+      "export": "Экспорт в CSV",
+      "noData": "Нет подарочных кодов доступных для экспорта.",
+      "bulkCreated": "Создано подарочных кодов: {{count}}",
+      "created": "Подарочный код создан",
+      "deletedSelected": "Удалено выбранных подарочных кодов: {{count}}",
+      "generate": "Сгенерировать",
+      "deleteSelected": "Удалить выбранные ({{count}})",
+      "deleteConfirm": "Удалить {{count}} выбранных подарочных кодов? Это действие нельзя отменить.",
+      "table": {
+        "code": "Код",
+        "duration_days": "Длительность (дней)",
+        "uses": "Использований",
+        "remaining": "Осталось",
+        "expires_at": "Истекает",
+        "created_at": "Создан"
+      },
+      "form": {
+        "codeOptional": "Код (опционально)",
+        "durationMonths": "Длительность (месяцев)",
+        "uses": "Использований",
+        "prefixOptional": "Префикс (опционально)",
+        "count": "Количество",
+        "usesPerCode": "Использований на код"
+      }
+    },
+    "billing": {
+      "overview": {
+        "title": "Обзор счетов",
+        "description": "Выручка и показатели кредитов в наглядном виде",
+        "metrics": {
+          "onlineRevenue": "Онлайн выручка",
+          "offlineRevenue": "Оффлайн выручка",
+          "adjustments": "Корректировки",
+          "totalRevenue": "Общая выручка",
+          "creditsOnline": "Кредиты (Онлайн)",
+          "creditsOffline": "Кредиты (Оффлайн)",
+          "creditsAdjustments": "Кредиты (Корректировки)",
+          "totalCredits": "Всего кредитов"
+        }
+      },
+      "pricing": {
+        "title": "Цены на кредиты",
+        "description": "Базовые цены и уровни скидок, настроенные в системе",
+        "basePrice": "Базовая цена (USD за кредит)",
+        "activeTiers": "Активные уровни",
+        "effectiveCurrency": "Действующая валюта",
+        "tiersNote": "Будет применен самый высокий уровень, для которого достигнуто минимальное количество.",
+        "table": {
+          "minQuantity": "Мин. кол-во (включительно)",
+          "discountPercent": "Процент скидки",
+          "noTiers": "Уровни не настроены. Базовая цена применяется для любого количества.",
+          "discountSuffix": "скидка"
+        }
+      },
+      "offline": {
+        "title": "Добавить оффлайн платеж",
+        "description": "Записывайте платежи вручную и мгновенно начисляйте кредиты",
+        "labels": {
+          "reseller": "Реселлер",
+          "amount": "Сумма (USD)",
+          "credits": "Кредитов к начислению",
+          "method": "Метод",
+          "reference": "Ссылка",
+          "notes": "Заметки"
+        },
+        "placeholders": {
+          "resellerSearch": "Введите минимум 2 буквы…",
+          "amount": "например, 100.00",
+          "credits": "например, 100",
+          "method": "наличные/банк/другое",
+          "reference": "номер счета или ссылка",
+          "notes": "дополнительные заметки"
+        },
+        "chargedCurrency": "Валюта списания:",
+        "success": "Оффлайн платеж записан, кредиты начислены",
+        "actions": {
+          "saving": "Сохранение...",
+          "save": "Сохранить оффлайн платеж"
+        },
+        "errors": {
+          "amountPositive": "Сумма (USD) должна быть больше 0",
+          "creditsPositive": "Количество кредитов должно быть положительным целым числом",
+          "resellerPositive": "ID реселлера должен быть положительным целым числом",
+          "selectReseller": "Выберите реселлера из списка"
+        }
+      },
+      "transactions": {
+        "title": "Последние транзакции",
+        "description": "Фильтрация и пагинация платежных транзакций",
+        "filters": {
+          "source": "Источник",
+          "status": "Статус",
+          "resellerId": "ID реселлера",
+          "reference": "Ссылка/Имя пользователя",
+          "perPage": "На странице"
+        },
+        "sources": {
+          "stripe": "Полоса",
+          "offline": "Оффлайн",
+          "adjustment": "Корректировка"
+        },
+        "statuses": {
+          "completed": "Завершено",
+          "pending": "В ожидании",
+          "refunded": "Возвращено",
+          "failed": "Ошибка"
+        },
+        "placeholders": {
+          "resellerId": "например, 42",
+          "reference": "Поиск ссылки или имени пользователя"
+        },
+        "table": {
+          "id": "ID",
+          "reseller": "Реселлер",
+          "source": "Источник",
+          "amount": "Сумма",
+          "credits": "Кредиты",
+          "status": "Статус",
+          "reference": "Ссылка",
+          "createdAt": "Создано"
+        },
+        "total": "Всего: {{count}}",
+        "pagination": {
+          "page": "Страница {{page}}"
+        },
+        "empty": "Транзакций не найдено."
+      },
+      "errors": {
+        "fetchOverview": "Не удалось загрузить обзор счетов",
+        "fetchPricing": "Не удалось загрузить конфигурацию цен",
+        "fetchTransactions": "Не удалось загрузить транзакции",
+        "createOfflinePayment": "Не удалось создать оффлайн платеж"
+      }
+    },
+    "devices": {
+      "errors": {
+        "loadFailed": "Не удалось загрузить данные управления устройствами. Пожалуйста, попробуйте позже."
+      },
+      "overview": {
+        "activeUsers": "Активные пользователи",
+        "statsDescription": "Детальная статистика использования устройств пользователями",
+        "usageByUserTitle": "Использование устройств по пользователям",
+        "usageByUserDescription": "Статистика пользовательских устройств появится здесь после завершения регистрации устройств.",
+        "deviceCount": "{{count}}/{{max}} устройств"
+      },
+      "activeList": {
+        "description": "Мониторинг всех активных подключений устройств в системе",
+        "searchPlaceholder": "Поиск устройств...",
+        "deviceId": "Идентификатор: {{id}}",
+        "actions": {
+          "disconnect": "Отключить"
+        },
+        "removeDialog": {
+          "title": "Удалить устройство",
+          "description": "Вы уверены, что хотите навсегда удалить устройство «{{device}}» у пользователя {{user}}? Это действие нельзя отменить."
+        },
+        "emptyTitle": "Устройства не найдены",
+        "noDevicesSearch": "Не найдено устройств по запросу «{{query}}»",
+        "noDevicesDescription": "В настоящее время в системе нет зарегистрированных устройств.",
+        "time": {
+          "justNow": "Только что",
+          "minutesAgo": "{{count}} мин. назад",
+          "hoursAgo": "{{count}} ч. назад",
+          "daysAgo": "{{count}} дн. назад"
+        }
+      },
+      "limits": {
+        "title": "Предупреждения о лимите устройств",
+        "subtitle": "Мониторинг пользователей, приближающихся к лимиту устройств или превышающих его",
+        "summary": {
+          "warningTitle": "Предупреждение",
+          "warningDescription": "Использовано 80–99% лимита",
+          "criticalTitle": "Критично",
+          "criticalDescription": "Лимит устройств достигнут",
+          "exceededTitle": "Лимит превышен",
+          "exceededDescription": "Лимит устройств превышен"
+        },
+        "badges": {
+          "safe": "Безопасно",
+          "warning": "Предупреждение",
+          "critical": "Критично",
+          "exceeded": "Превышено"
+        },
+        "attention": {
+          "title": "Требуют внимания"
+        },
+        "table": {
+          "deviceUsage": "Использование устройств",
+          "progress": "Прогресс",
+          "warningLevel": "Уровень риска"
+        },
+        "actions": {
+          "increaseLimit": "Увеличить лимит",
+          "monitor": "Наблюдать"
+        },
+        "allSafeTitle": "Все пользователи в пределах лимитов",
+        "allSafeDescription": "В данный момент нет пользователей, приближающихся к лимитам или превышающих их.",
+        "allUsersTitle": "Обзор всех пользователей"
+      },
+      "removal": {
+        "bulkRemoveFailed": "Не удалось удалить устройства ({{count}})"
+      }
+    },
+    "overview": {
+      "totalUsers": "Всего пользователей",
+      "allSystemUsers": "Все пользователи в системе",
+      "contentItems": "Единиц контента",
+      "moviesTvSeries": "Фильмы, сериалы и прочее",
+      "activeResellers": "Активные реселлеры",
+      "currentlyActive": "В данный момент активны",
+      "systemStatus": "Статус системы",
+      "allSystemsOperational": "Все системы работают",
+      "quickActions": "Быстрые действия",
+      "commonTasks": "Переход к наиболее частым задачам администратора",
+      "manageResellers": "Управление реселлерами",
+      "manageContent": "Управление контентом",
+      "systemConfig": "Конфигурация системы",
+      "viewReports": "Отчеты",
+      "systemHealth": "Состояние системы",
+      "systemStatusDescription": "Статус критических компонентов в реальном времени",
+      "apiServices": "Сервисы API",
+      "operational": "Работает",
+      "database": "База данных",
+      "contentDelivery": "Доставка контента"
+    },
+    "content": {
+      "title": "Управление контентом",
+      "description": "Управление контентом всех категорий с интеграцией TMDB",
+      "confirmDelete": "Вы уверены, что хотите удалить этот контент?",
+      "tmdb": {
+        "searchPlaceholder": "Search on TMDB...",
+        "confirm": "Заполнить метаданные TMDB для категории «{{category}}»? Система попытается найти совпадения для элементов без ID TMDB.",
+        "success": "Метаданные TMDB обновлены: {{updated}} обновлено, {{skipped}} пропущено",
+        "warning": "Не удалось найти совпадения для {{count}} элементов. Проверьте консоль для подробностей.",
+        "error": "Ошибка обновления метаданных TMDB",
+        "defaultCategory": "этой категории",
+        "selectedId": "Selected TMDB ID: {{id}}",
+        "enrichTitle": "Enrich Content with TMDB",
+        "enrichDescription": "Search TMDB to add metadata like poster, description, and more.",
+        "enrichSuccess": "Content enriched successfully from TMDB",
+        "contentTitle": "Content Title",
+        "mediaType": "Media Type",
+        "mediaTypeTvSeries": "TV Series",
+        "mediaTypeMovie": "Movie",
+        "byId": "By TMDB ID",
+        "byName": "By Name / Title",
+        "tmdbId": "TMDB ID",
+        "enrich": "Enrich Content",
+        "selectedResult": "Selected: {{title}} (ID: {{id}})"
+      },
+      "errors": {
+        "load": "Ошибка загрузки контента: {{message}}"
+      },
+      "empty": {
+        "title": "Контент не найден",
+        "description": "Начните с добавления первого элемента в категорию «{{category}}»."
+      },
+      "categories": {
+        "vod": {
+          "label": "Фильмы",
+          "description": "Фильмы и отдельный видеоконтент"
+        },
+        "tv": {
+          "label": "ТВ-каналы",
+          "description": "Прямые эфиры и стримы"
+        },
+        "series": {
+          "label": "Сериалы",
+          "description": "Телесериалы с сезонами и сериями"
+        },
+        "events": {
+          "label": "События",
+          "description": "Прямые трансляции и спецпроекты"
+        },
+        "kids": {
+          "label": "Детям",
+          "description": "Контент для детей и семейного просмотра"
+        },
+        "anime": {
+          "label": "Аниме",
+          "description": "Аниме и адаптации манги"
+        }
+      },
+      "actions": {
+        "addManualMovie": "Добавить фильм вручную",
+        "addManualSeries": "Добавить сериал вручную",
+        "addManualKids": "Добавить детский контент вручную",
+        "addManualAnime": "Добавить аниме вручную",
+        "addTvChannel": "Добавить ТВ-канал",
+        "addEvent": "Добавить событие",
+        "addContent": "Добавить контент",
+        "addFromTmdb": "Добавить из TMDB",
+        "bulkImport": "Массовый импорт",
+        "manageCategories": "Категории",
+        "scanFolders": "Сканировать папки",
+        "fillMetadata": "Заполнить метаданные",
+        "tvProviders": "ТВ-провайдеры"
+      },
+      "table": {
+        "columns": {
+          "title": "Название",
+          "description": "Описание",
+          "type": "Тип",
+          "format": "Формат",
+          "year": "Год",
+          "status": "Статус",
+          "created": "Создан",
+          "actions": "Действия"
+        },
+        "values": {
+          "tmdbId": "TMDB: {{id}}",
+          "noDescription": "Описание отсутствует",
+          "unknown": "Неизвестно",
+          "event": "Событие"
+        }
+      },
+      "pagination": {
+        "range": "Показано {{start}}–{{end}} из {{total}}",
+        "rowsPerPage": "Строк на странице",
+        "rows": "Строки",
+        "updating": "Обновление...",
+        "pageOf": "Страница {{page}} из {{total}}"
+      }
+    },
+    "tickets": {
+      "errors": {
+        "sendMessage": "Ошибка отправки сообщения",
+        "sendMessageRetry": "Не удалось отправить сообщение. Пожалуйста, попробуйте снова.",
+        "assign": "Ошибка назначения тикета",
+        "assignRetry": "Не удалось назначить тикет. Пожалуйста, попробуйте снова.",
+        "delete": "Ошибка удаления тикета",
+        "deleteRetry": "Не удалось удалить тикет. Пожалуйста, попробуйте снова.",
+        "updateStatus": "Ошибка обновления статуса",
+        "updateStatusRetry": "Не удалось обновить статус. Пожалуйста, попробуйте снова.",
+        "create": "Ошибка создания тикета",
+        "createRetry": "Не удалось создать тикет. Пожалуйста, попробуйте снова.",
+        "validation": {
+          "titleDescriptionRequired": "Название и описание обязательны",
+          "resellerRequired": "Пожалуйста, выберите реселлера"
+        }
+      },
+      "confirm": {
+        "delete": "Вы уверены, что хотите удалить этот тикет? Это действие нельзя отменить."
+      },
+      "filters": {
+        "status": {
+          "all": "Все статусы"
+        },
+        "priority": {
+          "all": "Все приоритеты"
+        },
+        "unread": {
+          "all": "Все сообщения",
+          "unread": "Непрочитанные",
+          "read": "Прочитанные"
+        }
+      },
+      "actions": {
+        "panelTitle": "Действия администратора",
+        "assigning": "Назначение...",
+        "assignToMe": "Назначить мне",
+        "changeStatus": "Изменить статус",
+        "internalMessage": "Внутреннее сообщение",
+        "scheduleFollowUp": "Запланировать контроль",
+        "reassignTicket": "Переназначить тикет"
+      },
+      "priority": {
+        "low": "Низкий",
+        "medium": "Средний",
+        "high": "Высокий",
+        "urgent": "Срочно"
+      },
+      "category": {
+        "technical": "Техподдержка",
+        "billing": "Биллинг",
+        "account": "Аккаунт",
+        "content": "Контент",
+        "other": "Прочее"
+      },
+      "create": {
+        "title": "Создать тикет",
+        "description": "Создание нового тикета для тестирования или административных целей.",
+        "labels": {
+          "title": "Тема",
+          "description": "Описание",
+          "reseller": "Реселлер",
+          "priority": "Приоритет",
+          "category": "Категория"
+        },
+        "placeholders": {
+          "title": "Введите тему тикета",
+          "description": "Введите описание проблемы",
+          "reseller": "Выберите реселлера"
+        },
+        "submitting": "Создание...",
+        "submit": "Создать тикет"
+      },
+      "advanced": {
+        "title": "Расширенные фильтры",
+        "description": "Примените дополнительные фильтры для поиска тикетов.",
+        "labels": {
+          "dateFrom": "Дата с",
+          "dateTo": "Дата по"
+        },
+        "helper": "Фильтр по дате создания. Оставьте пустым, чтобы показать все даты.",
+        "clear": "Очистить",
+        "apply": "Применить"
+      },
+      "sort": {
+        "title": "Сортировка",
+        "description": "Выберите способ сортировки тикетов.",
+        "labels": {
+          "sortBy": "Сортировать по",
+          "direction": "Порядок"
+        },
+        "options": {
+          "newestFirst": "Сначала новые",
+          "oldestFirst": "Сначала старые",
+          "priority": "Приоритет",
+          "status": "Статус",
+          "unreadFirst": "Сначала непрочитанные"
+        },
+        "direction": {
+          "descending": "По убыванию",
+          "ascending": "По возрастанию"
+        },
+        "reset": "Сбросить",
+        "apply": "Применить"
+      }
+    },
+    "activityLogs": {
+      "title": "Журналы активности",
+      "subtitle": "Полная история действий в системе",
+      "tabs": {
+        "dashboard": "Панель",
+        "systemLogs": "Системные логи",
+        "loginHistory": "История входов",
+        "viewingHistory": "История просмотров"
+      },
+      "filters": {
+        "actionType": "Тип действия",
+        "allActions": "Все действия",
+        "startDate": "Дата начала",
+        "endDate": "Дата окончания"
+      },
+      "errors": {
+        "loading": "Ошибка загрузки логов: {{message}}",
+        "loadingFallback": "Не удалось загрузить журналы активности"
+      },
+      "noLogs": "Журналы не найдены.",
+      "table": {
+        "date": "Дата",
+        "action": "Действие",
+        "user": "Пользователь",
+        "target": "Объект",
+        "description": "Описание",
+        "credits": "Кредиты"
+      },
+      "pagination": {
+        "showing": "Показано с {{from}} по {{to}} из {{total}}",
+        "pageOf": "Страница {{page}} из {{total_pages}}"
+      },
+      "actionTypes": {
+        "USER_CREATED": "Создание пользователя",
+        "USER_DELETED": "Пользователь удален",
+        "RESELLER_CREATED": "Реселлер создан",
+        "RESELLER_DELETED": "Реселлер удален",
+        "CREDIT_USED": "Кредит использован",
+        "CREDIT_ASSIGNED": "Кредит назначен",
+        "SYSTEM_INIT": "Система инициализирована",
+        "LOGIN": "Вход",
+        "LOGOUT": "Выход"
+      }
+    },
+    "viewingHistory": {
+      "title": "История просмотров",
+      "lastUpdated": "Последнее обновление: {{time}}",
+      "autoRefreshOn": "Автообновление: ВКЛ",
+      "refreshNow": "Обновить сейчас",
+      "filters": {
+        "username": "Имя пользователя",
+        "contentType": "Тип контента",
+        "allTypes": "Все типы",
+        "ipAddress": "IP-адрес",
+        "startDate": "Дата начала",
+        "endDate": "Дата окончания"
+      },
+      "placeholders": {
+        "searchUsername": "Поиск пользователя...",
+        "ipAddress": "IP-адрес..."
+      },
+      "loading": "Загрузка истории просмотров...",
+      "errors": {
+        "loading": "Ошибка при загрузке истории просмотров: {{message}}"
+      },
+      "noHistory": "История просмотров не найдена.",
+      "unknown": "Неизвестно",
+      "table": {
+        "dateTime": "Дата и время",
+        "user": "Пользователь",
+        "contentType": "Тип контента",
+        "contentTitle": "Название контента",
+        "info": "Информация",
+        "ipAddress": "IP-адрес",
+        "device": "Устройство"
+      },
+      "pagination": {
+        "showing": "Отображение с {{from}} по {{to}} из {{total}} сеансов просмотра",
+        "pageOf": "Страница {{page}} из {{total_pages}}"
+      }
+    }
+  },
+  "contentType": {
+    "movie": "Фильм",
+    "tvShow": "ТВ-шоу",
+    "kids": "Детское",
+    "tvChannel": "Телеканал"
+  },
+  "contentTypeExtended": {
+    "tvChannel": "ТВ-канал",
+    "tvSeries": "ТВ-сериал",
+    "event": "Событие",
+    "kidsContent": "Детский контент",
+    "anime": "Аниме",
+    "content": "Контент"
+  },
+  "providers": {
+    "loading": "Загрузка провайдеров...",
+    "none": "Провайдеры еще не зарегистрированы."
+  },
+  "scan": {
+    "scanning": "Сканирование...",
+    "start": "Начать сканирование"
+  },
+  "epg": {
+    "title": "Источники EPG",
+    "editSource": "Редактировать источник",
+    "createSource": "Создать источник",
+    "inputPlaceholder": "Мой XMLTV",
+    "xmltvUrl": "URL XMLTV",
+    "urlPlaceholder": "https://.../guide.xml",
+    "ttl": "TTL (мин)",
+    "sources": "Источники",
+    "noSourcesYet": "Источников пока нет",
+    "fetchChannels": "Получить каналы",
+    "discoveredChannels": "Обнаруженные каналы",
+    "loadingChannels": "Загрузка каналов..."
+  },
+  "tickets": {
+    "loadingConversation": "Загрузка беседы...",
+    "loadingConversationDescription": "Пожалуйста, подождите, пока мы получаем сообщения",
+    "noTicketSelected": "Тикет не выбран",
+    "selectTicketPrompt": "Пожалуйста, выберите тикет для просмотра беседы",
+    "sending": "Отправка...",
+    "status": {
+      "open": "Открыт",
+      "in_progress": "В процессе",
+      "waiting_response": "Ожидание ответа",
+      "resolved": "Решен",
+      "closed": "Закрыт",
+      "on_hold": "На удержании"
+    },
+    "placeholders": {
+      "filterByStatus": "Фильтровать по статусу",
+      "filterByPriority": "Фильтровать по приоритету",
+      "filterByReadStatus": "Фильтровать по статусу прочтения"
+    },
+    "unreadMessages": "Непрочитанные сообщения",
+    "stats": {
+      "total": "Всего"
+    }
+  },
+  "banned": {
+    "title": "Аккаунт заблокирован",
+    "description": "Ваш аккаунт реселлера был заблокирован",
+    "message1": "Ваш аккаунт реселлера заблокирован и больше не активен.",
+    "message2": "Пожалуйста, свяжитесь с администратором для получения дополнительной информации о статусе вашего аккаунта.",
+    "contactSupport": "Если вы считаете это ошибкой, пожалуйста, свяжитесь с поддержкой."
+  },
+  "uiBulk": {
+    "contentManagement.title": "Управление контентом",
+    "contentManagement.subtitle": "Управляйте контентом во всех категориях с интеграцией TMDB",
+    "scanFolders": "Сканировать папки",
+    "addManualMovie": "Добавить фильм вручную",
+    "addFromTMDB": "Добавить из TMDB",
+    "movies": "Фильмы",
+    "tvChannels": "ТВ-каналы",
+    "series": "Сериалы",
+    "events": "События",
+    "kids": "Детское",
+    "anime": "Аниме",
+    "moviesDescription": "Фильмы и отдельный видеоконтент",
+    "noContentFound": "Контент не найден",
+    "getStartedAddFirstMovies": "Начните с добавления первого фильма.",
+    "addManualMovieButton": "Добавить фильм вручную",
+    "addFromTMDBButton": "Добавить из TMDB",
+    "adminDashboard": "Панель администратора",
+    "resellerManagement.title": "Управление реселлерами",
+    "resellerManagement.subtitle": "Создавайте реселлеров и управляйте ими с помощью кредитной системы",
+    "resetAllCounters": "Сбросить все счетчики",
+    "resetAllCountersConfirm": "Вы уверены, что хотите сбросить ежедневные счетчики демо для всех реселлеров? Это установит все счетчики на 0.",
+    "createReseller": "Создать реселлера",
+    "createResellerDescription": "Создать новый аккаунт реселлера с начальными кредитами и лимитами демо.",
+    "creditsLabel": "Кредиты",
+    "dailyDemoLimit": "Ежедневный лимит демо",
+    "reseller": {
+      "form": {
+        "usernamePlaceholder": "Введите имя пользователя",
+        "passwordPlaceholder": "Введите пароль",
+        "emailPlaceholder": "Введите email (необязательно)"
+      }
+    },
+    "searchByUsernameOrEmail": "Поиск по имени пользователя или email...",
+    "noResellersYet": "Реселлеров пока нет",
+    "createYourFirstReseller": "Создайте своего первого реселлера, чтобы начать управлять конечными пользователями.",
+    "endUsers.title": "Конечные пользователи",
+    "endUsers.subtitle": "Создавайте конечных пользователей и управляйте ими у всех реселлеров",
+    "createEndUser": "Создать конечного пользователя",
+    "filters": "Фильтры",
+    "searchByUsername": "Поиск по имени пользователя...",
+    "searchByEmail": "Поиск по email...",
+    "searchByReseller": "Поиск по реселлеру...",
+    "noEndUsersYet": "Конечных пользователей пока нет",
+    "getStartedCreateFirstEndUser": "Начните с создания первого конечного пользователя.",
+    "deviceManagement.title": "Управление устройствами",
+    "deviceManagement.subtitle": "Мониторинг подключений устройств и управление ими во всей системе",
+    "deviceManagement.overview": "Обзор",
+    "deviceManagement.activeDevices": "Активные устройства",
+    "deviceManagement.deviceRemoval": "Удаление устройства",
+    "deviceManagement.warnings": "Предупреждения",
+    "deviceManagement.totalDevices": "Всего устройств",
+    "deviceManagement.registeredDevices": "Зарегистрированные устройства",
+    "deviceManagement.currentlyConnected": "Сейчас подключено",
+    "deviceManagement.usersWithDevices": "Пользователи с устройствами",
+    "deviceManagement.limitWarnings": "Предупреждения о лимитах",
+    "deviceManagement.deviceStatistics.title": "Статистика устройств",
+    "deviceManagement.avgDevicesPerUser": "Ср. устройств на пол-ля",
+    "deviceManagement.usersAtLimit": "Пользователи на пределе",
+    "deviceManagement.totalCapacity": "Общая мощность",
+    "deviceManagement.utilization": "Использование",
+    "deviceManagement.deviceUsageByUser.none": "Нет пользователей с устройствами",
+    "deviceManagement.usageDistribution": "Распределение использования",
+    "deviceManagement.byUsageLevel": "По уровню использования",
+    "deviceManagement.lowUsage": "Низкое исп-ие (0-49%)",
+    "deviceManagement.systemHealth.title": "Здоровье системы",
+    "overview": "Обзор",
+    "activeDevices": "Активные устройства",
+    "deviceRemoval": "Удаление устройства",
+    "warnings": "Предупреждения",
+    "totalDevices": "Всего устройств",
+    "registeredDevices": "Зарегистрированные устройства",
+    "currentlyConnected": "Сейчас подключено",
+    "usersWithDevices": "Пользователи с устройствами",
+    "limitWarnings": "Предупреждения о лимитах",
+    "deviceStatistics.title": "Статистика устройств",
+    "avgDevicesPerUser": "Ср. устройств на пол-ля",
+    "usersAtLimit": "Пользователи на пределе",
+    "totalCapacity": "Общая мощность",
+    "utilization": "Использование",
+    "deviceUsageByUser.none": "Нет пользователей с устройствами",
+    "usageDistribution": "Распределение использования",
+    "byUsageLevel": "По уровню использования",
+    "lowUsage": "Низкое исп-ие (0-49%)",
+    "systemHealth.title": "Здоровье системы",
+    "supportTickets.title": "Тикеты поддержки",
+    "supportTickets.subtitle": "Управляйте тикетами и запросами клиентов",
+    "createTicket": "Создать тикет",
+    "tickets.total": "Всего",
+    "tickets.open": "Открыто",
+    "tickets.inProgress": "В процессе",
+    "tickets.resolved": "Решено",
+    "tickets.closed": "Закрыто",
+    "tickets.unreadMessages": "Непрочитанные сообщения",
+    "searchTicketsPlaceholder": "Поиск тикетов...",
+    "noTicketsFound": "Тикеты, соответствующие вашим критериям, не найдены",
+    "noTicketsFoundTitle": "Тикеты не найдены",
+    "noTicketsDescription": "Попробуйте изменить фильтры или создайте новый тикет для начала.",
+    "ticketsFound": "Отображение {{count}} тикетов",
+    "advancedFilter": "Расширенный фильтр",
+    "sortOptions": "Варианты сортировки",
+    "refresh": "Обновить",
+    "createTicketButton": "Создать тикет",
+    "noTicketsMatch": "Тикеты не найдены",
+    "clearFilters": "Очистить фильтры",
+    "createNewTicket": "Создать новый тикет",
+    "tools": "Инструменты",
+    "viewUsers": "Просмотреть пользователей",
+    "editReseller": "Редактировать реселлера",
+    "resetPassword": "Сбросить пароль",
+    "manageCredits": "Управление кредитами",
+    "demoSettings": "Настройки демо",
+    "noMatches": "Соответствующие реселлеры не найдены",
+    "tryAdjustingFilters": "Попробуйте изменить фильтры или условия поиска"
+  },
+  "reseller": {
+    "failedToLoad": "Не удалось загрузить реселлеров: {{message}}",
+    "activeLabel": "Активен",
+    "bannedLabel": "Заблокирован",
+    "editCreditsTitle": "Редактировать кредиты",
+    "editCreditsDescription": "Обновить кредиты для {{username}}",
+    "updateCredits": "Обновить кредиты",
+    "editResellerTitle": "Редактировать реселлера",
+    "editResellerDescription": "Обновить информацию о реселлере для {{username}}",
+    "updateReseller": "Обновить реселлера",
+    "resetPasswordTitle": "Сброс пароля",
+    "processingReset": "Сброс пароля...",
+    "resetPasswordAction": "Сбросить пароль",
+    "ban": "Заблокировать",
+    "unban": "Разблокировать",
+    "banTitle": "Заблокировать реселлера",
+    "banDescription": "Вы уверены, что хотите заблокировать реселлера «{{username}}»? Это закроет ему доступ к аккаунту.",
+    "unbanTitle": "Разблокировать реселлера",
+    "unbanDescription": "Вы уверены, что хотите разблокировать реселлера «{{username}}»?",
+    "banAction": "Заблокировать",
+    "unbanAction": "Разблокировать"
+  },
+  "redeem": {
+    "badge": "Портал подарков",
+    "title": "Активировать подарок",
+    "description": "Мгновенно разблокируйте свой аккаунт или продлите подписку.",
+    "step1": {
+      "title": "Проверить код",
+      "subtitle": "Подтвердите свой подарочный код.",
+      "cta": "Введите ваш подарочный код",
+      "helper": "Мы проверим код и покажем информацию о нем."
+    },
+    "step2": {
+      "title": "Завершить запрос",
+      "subtitle": "Проверьте и завершите настройку."
+    },
+    "detail": {
+      "code": "Код",
+      "duration_days": "Длительность",
+      "uses_remaining": "Осталось использований",
+      "expires_at": "Истекает"
+    },
+    "action": {
+      "title": "Выберите действие",
+      "create": "Создать нового пользователя",
+      "create_description": "Создать совершенно новый аккаунт.",
+      "extend": "Продлить существующий",
+      "extend_description": "Добавить время к аккаунту."
+    },
+    "form": {
+      "codeLabel": "Подарочный код",
+      "codePlaceholder": "XXXX-XXXX-XXXX-XXXX",
+      "codeHelp": "Коды чувствительны к регистру и могут содержать буквы и цифры.",
+      "username": "Имя пользователя",
+      "usernamePlaceholder": "Выберите имя пользователя",
+      "password": "Пароль",
+      "passwordPlaceholder": "Надежный пароль",
+      "emailOptional": "Email (необязательно)",
+      "emailPlaceholder": "Для восстановления аккаунта",
+      "emailHint": "Мы используем этот адрес электронной почты только для восстановления аккаунта и важных уведомлений.",
+      "existingUsername": "Существующее имя пользователя",
+      "extendHint": "Убедитесь, что вы ввели его точно так, как он указан в настройках вашего аккаунта.",
+      "emptyCode": "Сначала введите код.",
+      "createMissing": "Имя пользователя и пароль обязательны для создания аккаунта.",
+      "extendMissing": "Имя пользователя обязательно для продления существующего аккаунта.",
+      "categories": "Категории"
+    },
+    "verify": "Проверить код",
+    "checking": "Проверка...",
+    "validCode": "Код успешно проверен.",
+    "invalidCode": "Неверный код.",
+    "success": "Активация прошла успешно.",
+    "error": {
+      "generic": "Непредвиденная ошибка при проверке кода.",
+      "submit": "Ошибка активации."
+    },
+    "result": {
+      "errorTitle": "Ошибка",
+      "successTitle": "Успех"
+    },
+    "submitting": "Обработка...",
+    "extend_hint": "Продление существующего пользователя сохраняет все ваши плейлисты, избранное и устройства в целости."
+  },
+  "demo": {
+    "badge": "Мгновенный демо-доступ",
+    "signupTitle": "Попробуйте {{appName}} за считанные минуты",
+    "signupSubtitle": "Создайте временный аккаунт, который будет активен {{hours}} ч. Изучите каталог {{appName}}, протестируйте на своих устройствах и пригласите коллег попробовать вместе с вами.",
+    "formTitle": "Создайте данные для демо-доступа",
+    "formSubtitle": "Поделитесь логином со своей командой и изучите все функции без риска.",
+    "durationLabel": "Длительность",
+    "durationValue": "{{hours}} ч.",
+    "durationExplanation": "Каждое демо активно в течение {{hours}} ч. и дает полный доступ к выбранным категориям контента.",
+    "clearCategories": "Очистить категории",
+    "categoriesLabel": "Доступные категории (необязательно)",
+    "categoriesAll": "Будут доступны все категории.",
+    "categoriesSelected": "Выбрано категорий: {{count}}",
+    "noCategories": "Нет доступных категорий",
+    "categoriesHelp": "Оставьте пустым для доступа ко всем категориям.",
+    "restrictedBadge": "Недоступно",
+    "emailPlaceholder": "Мы свяжемся с вами только по важным вопросам.",
+    "creating": "Создание...",
+    "createButton": "Создать демо",
+    "successMessage": "Демо-аккаунт создан. Теперь вы можете войти.",
+    "successTitle": "Ваше демо готово!",
+    "errorTitle": "Не удалось создать демо-аккаунт",
+    "durationNote": "Демо-аккаунты действуют {{hours}} ч. и дают временный доступ к выбранным категориям.",
+    "failedCreate": "Ошибка создания демо:",
+    "footerNote": "Данные демо-аккаунта аннулируются автоматически. Готовы к полноценной работе? Спросите нашу команду о расширенных триалах или вариантах для реселлеров."
+  },
+  "metadata": {
+    "title": "{{appName}} - Система управления IPTV",
+    "description": "{{appName}} - Профессиональная платформа для управления и доставки IPTV контента"
+  },
+  "accessibility": {
+    "breadcrumb": "Навигационная цепочка",
+    "selectAll": "Выбрать все",
+    "tabs": "Вкладки",
+    "dashboard": "Панель управления",
+    "notifications": "Уведомления"
+  },
+  "format": {
+    "m3u8": "M3U8",
+    "drm": "DRM"
+  },
+  "languages": {
+    "english": "Английский",
+    "spanish": "Испанский",
+    "chinese": "Китайский",
+    "portuguese": "Португальский",
+    "french": "Французский",
+    "russian": "Русский",
+    "turkish": "Турецкий",
+    "slovak": "Словацкий"
+  },
+  "favorites": {
+    "title": "Мое избранное",
+    "description": "Весь ваш любимый контент в одном месте",
+    "music": "Музыка",
+    "content": "Контент",
+    "allFavorites": "Все избранное",
+    "tracks": "Треки",
+    "albums": "Альбомы",
+    "artists": "Исполнители",
+    "track": "Трек",
+    "album": "Альбом",
+    "artist": "Исполнитель",
+    "noMusicFavorites": "В избранном пока нет музыки",
+    "addMusicFavorites": "Начните добавлять любимые треки, альбомы и исполнителей",
+    "browseMusic": "Просмотреть музыку",
+    "contentComingSoon": "Избранный контент скоро появится",
+    "contentDescription": "Скоро вы сможете добавлять фильмы, сериалы и многое другое в избранное",
+    "add": "Добавить в избранное",
+    "remove": "Удалить из избранного",
+    "added": "Добавлено в избранное",
+    "removed": "Удалено из избранного",
+    "inFavorites": "В избранном",
+    "removeFailed": "Не удалось удалить из избранного",
+    "error": "Ошибка при обновлении избранного"
+  },
+  "history": {
+    "title": "История просмотров",
+    "description": "Просмотрите все, что вы смотрели недавно",
+    "filterByCategory": "Фильтр по категориям",
+    "allCategories": "Все категории",
+    "items": "объектов",
+    "clearHistory": "Очистить историю",
+    "confirmClear": "Вы уверены, что хотите очистить всю историю просмотров?",
+    "cleared": "История успешно очищена",
+    "clearFailed": "Не удалось очистить историю",
+    "error": "Ошибка при очистке истории",
+    "noHistory": "Нет истории просмотров",
+    "noHistoryDescription": "Начните смотреть контент, чтобы он появился здесь",
+    "browseContent": "Просмотреть контент",
+    "page": "Страница",
+    "of": "из",
+    "categories": {
+      "movie": "Фильм",
+      "series": "Сериал",
+      "live": "Прямой эфир"
+    }
+  },
+  "search": {
+    "title": "Глобальный поиск",
+    "description": "Поиск по всем категориям контента",
+    "placeholder": "Поиск фильмов, сериалов, музыки, каналов...",
+    "filters": "Фильтры",
+    "category": "Категория",
+    "allCategories": "Все категории",
+    "movies": "Фильмы",
+    "series": "Сериалы",
+    "live": "Прямой эфир",
+    "kids": "Детям",
+    "anime": "Аниме",
+    "events": "События",
+    "year": "Год",
+    "allYears": "Все годы",
+    "sortBy": "Сортировать по",
+    "relevance": "Релевантность",
+    "titleAZ": "Название (А-Я)",
+    "yearDesc": "Год (сначала новые)",
+    "ratingDesc": "Рейтинг",
+    "clearFilters": "Сбросить фильтры",
+    "startSearching": "Начать поиск",
+    "startSearchingDescription": "Введите что-нибудь в поле поиска, чтобы найти контент",
+    "noResults": "Ничего не найдено",
+    "noResultsDescription": "Попробуйте другие условия поиска или измените фильтры",
+    "resultsFound": "результатов найдено",
+    "virtualizedMode": "Оптимизированный режим"
+  },
+  "music": {
+    "title": "Музыкальная библиотека",
+    "description": "Просматривайте и слушайте вашу коллекцию музыки",
+    "favorites": "Избранное",
+    "addToFavorites": "Добавить в избранное",
+    "removeFromFavorites": "Удалить из избранного",
+    "favoriteAdded": "Добавлено в избранное",
+    "favoriteRemoved": "Удалено из избранного",
+    "player": "Плеер",
+    "errorGettingStream": "Ошибка получения потока",
+    "goBack": "Назад",
+    "errors": {
+      "favoriteError": "Ошибка при обновлении избранного",
+      "loadError": "Ошибка загрузки музыки",
+      "streamError": "Ошибка стриминга музыки"
+    }
+  },
+  "watch": {
+    "title": "Плеер",
+    "subtitle": "Видеоплеер",
+    "invalidId": "Неверный ID контента",
+    "notFound": "Контент не найден",
+    "noStreamAvailable": "Для этого контента нет доступного потока",
+    "streamError": "Ошибка получения потока",
+    "backToDashboard": "Назад в панель",
+    "synopsis": "Синопсис",
+    "playNow": "Смотреть сейчас",
+    "seasons": "Сезоны",
+    "seasonShort": "С{{n}}",
+    "episodeLabel": "С{{n}}",
+    "noEpisodes": "Нет доступных серий",
+    "related": "Рекомендуемое",
+    "noRelated": "Пока нет доступных рекомендаций",
+    "drmNotice": "У этого контента настроен DRM — может потребоваться совместимый плеер",
+    "goBack": "Назад",
+    "subtitles": "Субтитры",
+    "subtitlesOff": "Выкл",
+    "downloadSubtitle": "Скачать",
+    "settings": "Настройки",
+    "captionSize": "Размер субтитров",
+    "small": "Маленький",
+    "medium": "Средний",
+    "large": "Большой"
+  },
+  "chat": {
+    "ticket": {
+      "createdBy": "Создал {{username}}",
+      "initialRequest": "Первоначальный запрос",
+      "supportRole": "Поддерживать",
+      "customerRole": "Клиент",
+      "internal": "Внутренний",
+      "supportTyping": "Поддержка пишет...",
+      "messagePlaceholder": "Введите сообщение...",
+      "sendHint": "Нажмите Enter, чтобы отправить, Shift+Enter для новой строки."
+    },
+    "admin": {
+      "internalNotes": "Внутренние примечания",
+      "sendAsInternalNote": "Отправить как внутреннюю заметку (не видна клиенту)",
+      "internalMessagePlaceholder": "Введите внутреннюю заметку...",
+      "adminResponsePlaceholder": "Введите ответ от имени администратора...",
+      "internalVisibilityHint": "Внутреннее примечание - видно только администраторам"
+    }
+  },
+  "contentList": {
+    "listTitle": "{{type}} Список",
+    "library": "Библиотека",
+    "manageAndViewAll": "Управлять и просматривать все {{type}}",
+    "searchPlaceholder": "Поиск контента...",
+    "confirmBulkDelete": "Удалить {{count}} выбранных элементов? Это действие невозможно отменить.",
+    "deleteSelected": "Удалить ({{count}})",
+    "created": "Созданный",
+    "viewEditContent": "Просмотр/редактирование контента",
+    "deleteContentTitle": "Удалить контент",
+    "deleteContentDescription": "Вы уверены, что хотите удалить \"{{title}}\"? Это действие невозможно отменить.",
+    "deleteContentAction": "Удалить контент",
+    "noTypeFound": "{{type}} не найдено",
+    "noContentMatching": "Контент, соответствующий \"{{query}}\", не найден. Попробуйте другой поисковый запрос.",
+    "getStartedByAddingFirst": "Начните с добавления своего первого {{type}} в библиотеку.",
+    "addContent": "Добавить контент",
+    "failedToLoad": "Не удалось загрузить контент: {{message}}.",
+    "bulkDeleteFailed": "Массовое удаление не удалось",
+    "runtimeMinutes": "{{minutes}}мин",
+    "channelNumber": "Ч. {{number}}",
+    "live": "Прямой эфир",
+    "tmdb": "TMDB"
+  },
+  "feedback": {
+    "operation": {
+      "saving": "Сохранение",
+      "deleting": "Удаление",
+      "uploading": "Загрузка",
+      "downloading": "Загрузка",
+      "syncing": "Синхронизация",
+      "processing": "Обработка"
+    },
+    "operationStatus": {
+      "loading": "{{operation}}...",
+      "success": "{{operation}} успешно",
+      "error": "Не удалось {{operation}}"
+    },
+    "time": {
+      "minutesAgo": "{{count}}м назад",
+      "hoursAgo": "{{count}}ч назад",
+      "daysAgo": "{{count}}дн назад"
+    },
+    "connection": {
+      "online": "Онлайн",
+      "offline": "Офлайн",
+      "lastSync": "Последняя синхронизация"
+    },
+    "form": {
+      "submitting": "Отправка формы...",
+      "submissionFailed": "Отправка не удалась",
+      "readyToSubmit": "Форма готова к отправке",
+      "fixErrors": "Пожалуйста, исправьте ошибки выше"
+    },
+    "bulk": {
+      "title": "Массовая партия {{operation}}",
+      "inProgress": "Операция в разгаре...",
+      "completed": "Операция завершена",
+      "total": "Общий",
+      "completedCount": "Завершенный",
+      "failedCount": "Неуспешный",
+      "remaining": "Оставшийся",
+      "completedWithErrors": "Выполнено с ошибками {{count}}.",
+      "allProcessed": "Все элементы успешно обработаны"
+    }
+  },
+  "manualSeries": {
+    "addManual": "Добавить руководство {{type}}",
+    "dialogDescription": "Создайте {{type}} вручную с собственными сезонами и сериями.",
+    "stepBasicInfo": "1. Основная информация",
+    "stepSeasonsEpisodes": "2. Сезоны и эпизоды",
+    "detailsTitle": "{{type}} Подробности",
+    "detailsDescription": "Введите основную информацию о вашем {{type}}",
+    "titleRequired": "Заголовок *",
+    "titlePlaceholder": "Введите {{type}} заголовок...",
+    "descriptionPlaceholder": "Введите описание {{type}}...",
+    "activeType": "Активен {{type}}",
+    "nextAddSeasons": "Далее: Добавить времена года",
+    "validEpisodes": "Допустимые выпуски: {{count}} (будут сохранены только выпуски с URL-адресами видео)",
+    "episodeShort": "Эп. {{number}}",
+    "videoUrlOptionalPlaceholder": "URL-адрес видео (необязательно)",
+    "createType": "Создать {{type}}"
+  },
+  "seriesManagement": {
+    "addSeriesContent": "Добавить контент серии",
+    "dialogDescription": "Найдите в TMDB информацию о сериях или создайте структуру серий вручную.",
+    "seriesStructure": "Структура серии",
+    "searchTvSeries": "Поиск телесериалов",
+    "enterSeriesTitleEllipsis": "Введите название серии...",
+    "tmdbSearchFailed": "Поиск в TMDB не удался. Пожалуйста, попробуйте ввести вручную.",
+    "notAvailable": "N/A",
+    "noSeriesFound": "Серий по запросу \"{{query}}\" не найдено. Вместо этого попробуйте ввести вручную.",
+    "selectedFromTmdb": "Выбрано из TMDB",
+    "tmdbId": "Идентификатор TMDB: {{id}}",
+    "seasonsCount": "{{count}} Времена года",
+    "seriesInformation": "Информация о серии",
+    "seriesTitleRequired": "Название серии *",
+    "enterSeriesTitle": "Введите название серии",
+    "firstAirDateYear": "Дата первого выхода в эфир, год",
+    "seriesDescriptionPlaceholder": "Описание серии...",
+    "activeSeries": "Активная серия",
+    "seasonsAndEpisodes": "Сезоны и эпизоды",
+    "manageSeasonsAndEpisodes": "Управление сезонами и сериями этого сериала",
+    "addSeason": "Добавить сезон",
+    "seasonTab": "Сезон {{number}}",
+    "seasonTitle": "Название сезона",
+    "seasonTitlePlaceholder": "Название сезона",
+    "seasonPosterUrl": "URL плаката сезона",
+    "seasonPosterPlaceholder": "https://example.com/season-poster.jpg",
+    "seasonDescription": "Описание сезона",
+    "seasonDescriptionPlaceholder": "Описание сезона...",
+    "episodes": "Эпизоды",
+    "addEpisode": "Добавить эпизод",
+    "removeSeason": "Удалить сезон",
+    "createSeries": "Создать серию",
+    "defaultSeasonTitle": "Сезон {{number}}",
+    "defaultEpisodeTitle": "Эпизод {{number}}",
+    "episodeHeader": "Эпизод {{number}}: {{title}}",
+    "untitled": "Без названия",
+    "urlSet": "Набор URL-адресов",
+    "noUrl": "Нет URL-адреса",
+    "episodeTitle": "Название серии",
+    "episodeTitlePlaceholder": "Название серии",
+    "runtimeMinutes": "Время работы (минуты)",
+    "runtimePlaceholder": "45",
+    "episodeDescription": "Описание серии",
+    "episodeDescriptionPlaceholder": "Описание серии...",
+    "videoUrlRequired": "URL-адрес видео *",
+    "episodeVideoPlaceholder": "https://example.com/episode.m3u8",
+    "episodePosterUrl": "URL постера эпизода",
+    "episodePosterPlaceholder": "https://example.com/episode-poster.jpg",
+    "removeEpisode": "Удалить эпизод"
+  },
+  "ticketCard": {
+    "justNow": "Прямо сейчас",
+    "updatedAt": "Обновлен {{time}}",
+    "newCount": "{{count}} Новое",
+    "chat": "Чат",
+    "unreadMessageSingle": "{{count}} непрочитанное сообщение",
+    "unreadMessagePlural": "{{count}} непрочитанных сообщений",
+    "priority": {
+      "low": "LOW",
+      "medium": "MEDIUM",
+      "high": "HIGH",
+      "urgent": "URGENT"
+    }
+  },
+  "errorHandlingDemo": {
+    "title": "Демонстрация обработки ошибок и проверки",
+    "subtitle": "Комплексная демонстрация систем обработки ошибок, проверки и обратной связи с пользователем.",
+    "tabs": {
+      "notifications": "Уведомления",
+      "loading": "Загрузка состояний",
+      "operations": "Операции",
+      "connection": "Связь",
+      "boundaries": "Границы ошибок",
+      "skeletons": "Скелеты"
+    },
+    "notifications": {
+      "error": {
+        "title": "Уведомления об ошибках",
+        "description": "Тестируйте различные типы уведомлений об ошибках и всплывающих сообщений.",
+        "buttons": {
+          "generic": "Общая ошибка",
+          "api": "Ошибка API",
+          "validation": "Ошибка проверки",
+          "network": "Ошибка сети"
+        }
+      },
+      "success": {
+        "title": "Уведомления об успехах",
+        "description": "Тестируйте различные типы успешных и информационных сообщений.",
+        "buttons": {
+          "basic": "Базовый успех",
+          "detailed": "Подробный успех",
+          "info": "Информационное сообщение",
+          "warning": "Предупреждающее сообщение"
+        }
+      }
+    },
+    "inline": {
+      "title": "Встроенные сообщения обратной связи",
+      "successMessage": "Ваши изменения успешно сохранены.",
+      "viewChanges": "Посмотреть изменения",
+      "errorMessage": "Не удалось сохранить изменения. Пожалуйста, попробуйте еще раз.",
+      "retry": "Повторить попытку",
+      "warningMessage": "Ваша сессия истечет через 5 минут.",
+      "infoMessage": "Доступны новые функции. Ознакомьтесь с последними обновлениями!"
+    },
+    "loading": {
+      "spinners": {
+        "title": "Загрузка спиннеров",
+        "sizes": {
+          "small": "Маленький",
+          "medium": "Середина",
+          "large": "Большой",
+          "extraLarge": "Очень большой"
+        },
+        "variants": {
+          "dots": "Точки",
+          "pulse": "Пульс",
+          "bounce": "Подпрыгивать"
+        }
+      },
+      "overlay": {
+        "title": "Загрузка наложения",
+        "content": "Контент, который накладывается",
+        "toggle": "Переключить наложение загрузки"
+      },
+      "toast": {
+        "title": "Загрузка с тостом",
+        "trigger": "Триггер загрузки всплывающего уведомления"
+      }
+    },
+    "operations": {
+      "async": {
+        "title": "Асинхронные операции",
+        "successOperation": "Успешная операция",
+        "failingOperation": "Неудачная операция"
+      },
+      "batch": {
+        "title": "Пакетные операции",
+        "start": "Запустить пакетную операцию"
+      }
+    },
+    "connection": {
+      "title": "Статус подключения",
+      "quality": "Качество соединения",
+      "retryCount": "Количество повторов",
+      "testing": "Тестирование...",
+      "testConnection": "Тестовое соединение"
+    },
+    "boundaries": {
+      "title": "Границы ошибок",
+      "fixError": "Исправить ошибку",
+      "triggerError": "Ошибка триггера",
+      "noErrorThrown": "Ошибка не выдается"
+    },
+    "skeletons": {
+      "title": "Состояния загрузки скелета",
+      "text": "Текстовые скелеты",
+      "card": "Карточный скелет"
+    },
+    "messages": {
+      "demoOperationFailed": "Демо-операция не удалась",
+      "operationCompletedSuccessfully": "Операция завершена успешно",
+      "asyncOperationCompleted": "Асинхронная операция завершена!",
+      "processingAsyncOperation": "Обработка асинхронной операции...",
+      "batchOperationCompleted": "Пакетная операция завершена!",
+      "genericErrorMessage": "Это общее сообщение об ошибке",
+      "genericErrorTitle": "Общая ошибка",
+      "apiValidationDetails": "Предоставленные данные недействительны",
+      "apiDemo": "Демо-версия API",
+      "invalidEmailFormat": "Формат электронной почты недействителен.",
+      "networkConnectionFailed": "Не удалось подключиться к сети",
+      "networkErrorTitle": "Ошибка сети",
+      "unableToConnectServer": "Невозможно подключиться к серверу",
+      "userProfileUpdated": "Профиль пользователя успешно обновлен",
+      "profileUpdated": "Профиль обновлен",
+      "viewProfile": "Посмотреть профиль",
+      "newFeaturesAvailable": "Новые функции доступны в последнем обновлении",
+      "sessionExpiresSoon": "Ваша сессия истечет через 5 минут",
+      "processingRequest": "Обработка вашего запроса...",
+      "loadingCompleted": "Загрузка завершена!",
+      "errorBoundaryTestError": "Это ошибка теста для ErrorBoundary.",
+      "operationCompleted": "Операция завершена!"
+    }
+  },
+  "products": {
+    "badge": "Мои продукты",
+    "title": "Доступ в вашем плане",
+    "subtitle": "Изучите весь контент, доступный в соответствии с вашими активными продуктами.",
+    "search": "Поиск контента",
+    "devices": "Мои устройства",
+    "list": {
+      "title": "Доступные продукты"
+    },
+    "loading": "Получаем ваши доступные продукты",
+    "empty": {
+      "title": "Вам еще не назначены продукты",
+      "description": "Когда администратор включит категории, они появятся здесь."
+    },
+    "badgeIncluded": "Включено в ваш план",
+    "cta": {
+      "explore": "Изучить"
+    },
+    "errors": {
+      "loadCategoriesFailed": "Не удалось загрузить категории",
+      "loadProfileFailed": "Не удалось загрузить профиль"
+    }
+  },
+  "pagination": {
+    "previous": "Назад",
+    "next": "Далее",
+    "pageOf": "Страница {{page}} из {{totalPages}}",
+    "showing": "Показаны {{from}} — {{to}} из {{total}} результатов"
+  },
+  "placeholders": {
+    "currentPassword": "Введите текущий пароль",
+    "enterCountry": "Напр.: US, MX, ES...",
+    "enterDescription": "Введите описание...",
+    "enterName": "Введите имя...",
+    "enterPosterUrl": "Напр.: https://example.com/poster.jpg",
+    "enterProvider": "Напр.: Кабель, OTT и т.д.",
+    "enterStreamUrl": "Напр.: https://example.com/video.m3u8",
+    "enterTitle": "Введите название...",
+    "enterUsername": "Введите имя пользователя...",
+    "expiryDateTime": "Выберите дату и время истечения",
+    "maximumDevices": "Максимальное количество устройств",
+    "playlistUrl": "Введите URL плейлиста...",
+    "providerName": "Введите имя провайдера...",
+    "selectCategory": "Выберите категорию...",
+    "selectChannel": "Выберите канал...",
+    "selectDrmType": "Выберите тип DRM...",
+    "selectFormat": "Выберите формат...",
+    "selectReseller": "Выберите реселлера...",
+    "selectSource": "Выберите источник...",
+    "selectSourceFirst": "Сначала выберите источник",
+    "userEmail": "user@example.com"
+  },
+  "creditsCheckout": {
+    "cancel": {
+      "contactSupport": "Нужна помощь? Обратиться в службу поддержки",
+      "description": "Процесс оформления заказа был отменен. С вашего счета не было списано никаких комиссий.",
+      "retryHint": "Вы можете попробовать еще раз в любое время. Если вы столкнулись с проблемой во время оформления заказа, пожалуйста, проверьте свои платежные данные или обратитесь в службу поддержки.",
+      "returnToDashboard": "Вернуться в панель управления",
+      "title": "Платеж отменен",
+      "tryAgain": "Попробуйте еще раз"
+    },
+    "success": {
+      "backToDashboard": "Вернуться к панели управления",
+      "description": "Благодарим вас за покупку. Ваши кредиты обрабатываются и будут доступны через мгновение.",
+      "processingTimeDescription": "Кредиты назначаются автоматически через безопасный веб-перехватчик. Обычно это занимает менее 10 секунд.",
+      "processingTimeTitle": "Время обработки",
+      "title": "Платеж успешен",
+      "transactionIdPlaceholder": "Идентификатор транзакции: Сеанс завершен.",
+      "viewTransactionHistory": "Просмотр истории транзакций"
+    }
+  },
+  "formValidation": {
+    "password": {
+      "levels": {
+        "fair": "Справедливый",
+        "good": "Хороший",
+        "strong": "Сильный",
+        "weak": "Слабый"
+      },
+      "requirements": {
+        "lowercase": "Содержит строчную букву",
+        "minLength": "Не менее {{count}} символов",
+        "number": "Содержит номер",
+        "special": "Содержит специальный символ",
+        "title": "Требования",
+        "uppercase": "Содержит заглавную букву"
+      },
+      "title": "Надежность пароля"
+    },
+    "summary": {
+      "completion": "Заполнение формы",
+      "invalidValue": "Недопустимое значение",
+      "issuesToResolve": "Проблемы, которые необходимо решить:",
+      "manyErrors": "Есть {{count}} ошибок, которые необходимо исправить.",
+      "oneError": "Есть 1 ошибка, которую нужно исправить.",
+      "valid": "Все поля действительны. Вы можете отправить форму."
+    }
+  },
+  "subscription": {
+    "register": {
+      "title": "Создать Аккаунт",
+      "subtitle": "Заполните данные",
+      "brandTitle": "Начните Смотреть Сегодня",
+      "brandSubtitle": "Создайте аккаунт и выберите план.",
+      "username": "Имя пользователя",
+      "usernamePlaceholder": "Выберите имя",
+      "email": "Эл. почта",
+      "emailPlaceholder": "ваш@email.com",
+      "password": "Пароль",
+      "passwordPlaceholder": "Создайте пароль",
+      "confirmPassword": "Подтвердить Пароль",
+      "confirmPasswordPlaceholder": "Подтвердите пароль",
+      "submit": "Создать Аккаунт",
+      "creating": "Создание аккаунта...",
+      "alreadyHaveAccount": "Уже есть аккаунт?",
+      "signIn": "Войти",
+      "disabled": "Регистрация Отключена",
+      "disabledMessage": "Самостоятельная регистрация недоступна.",
+      "backToLogin": "Назад к Входу",
+      "emailUnavailable": "Этот email уже зарегистрирован",
+      "passwordsMismatch": "Пароли не совпадают",
+      "passwordTooShort": "Пароль минимум 6 символов",
+      "usernameTooShort": "Имя минимум 3 символа",
+      "verifyEmail": {
+        "title": "Проверьте Почту",
+        "message": "Мы отправили ссылку для подтверждения.",
+        "spam": "Проверьте папку спам.",
+        "success": "Аккаунт создан! Проверьте почту."
+      }
+    },
+    "plans": {
+      "badge": "Выберите План",
+      "title": "Найдите Идеальный План",
+      "subtitle": "Выберите подписку по потребностям.",
+      "noPlans": "Нет доступных планов.",
+      "subscribe": "Подписаться",
+      "redirecting": "Перенаправление на оплату...",
+      "devices": "До {{count}} устройства",
+      "devices_plural": "До {{count}} устройств",
+      "categories": "{{count}} категория",
+      "categories_plural": "{{count}} категорий",
+      "cancelAnytime": "Отмена в любое время",
+      "perMonth": "/мес",
+      "perYear": "/год",
+      "perWeek": "/нед",
+      "daysAccess": "{{count}} дней доступа",
+      "securePayment": "Безопасная оплата через Stripe",
+      "alreadyHaveAccount": "Уже есть аккаунт?",
+      "signIn": "Войти"
+    },
+    "success": {
+      "title": "Подписка Активирована!",
+      "message": "Ваша подписка активирована. Добро пожаловать!",
+      "allSet": "Всё готово!",
+      "allSetMessage": "Ваш доступ к контенту активирован.",
+      "manage": "Управление подпиской",
+      "manageMessage": "Просматривайте детали и управляйте устройствами.",
+      "goToDashboard": "К Панели",
+      "viewPlans": "Смотреть Планы"
+    },
+    "cancel": {
+      "title": "Оплата Отменена",
+      "message": "Ваша оплата отменена.",
+      "noWorries": "Не волнуйтесь!",
+      "noWorriesMessage": "Вы можете вернуться к планам.",
+      "tryAgain": "Повторить",
+      "backToLogin": "Назад к Входу"
+    },
+    "management": {
+      "title": "Подписка",
+      "managedByReseller": "Управляется реселлером",
+      "managedByResellerMessage": "Ваша подписка управляется реселлером.",
+      "noSubscription": "Нет активной подписки",
+      "noSubscriptionMessage": "У вас нет активной подписки.",
+      "choosePlan": "Выбрать План",
+      "currentPlan": "Текущий План",
+      "status": "Статус",
+      "periodStart": "Начало Периода",
+      "periodEnd": "Продление",
+      "cancelSubscription": "Отменить Подписку",
+      "cancelConfirm": "Вы уверены? Доступ сохранится до конца периода.",
+      "canceling": "Отмена...",
+      "cancelAtPeriodEnd": "Подписка завершится {{date}}",
+      "resubscribe": "Переподписаться",
+      "changePlan": "Сменить План"
+    },
+    "admin": {
+      "packages": {
+        "title": "Пакеты Подписок",
+        "subtitle": "{{count}} пакетов",
+        "create": "Создать Пакет",
+        "edit": "Редактировать",
+        "deactivate": "Деактивировать",
+        "deactivateConfirm": "Деактивировать пакет?",
+        "name": "Название",
+        "description": "Описание",
+        "price": "Цена",
+        "priceCents": "Цена (центы)",
+        "currency": "Валюта",
+        "billingMode": "Режим Оплаты",
+        "recurring": "Повторяющийся",
+        "oneTime": "Разовый",
+        "interval": "Интервал",
+        "month": "Месяц",
+        "year": "Год",
+        "week": "Неделя",
+        "durationDays": "Длительность (дни)",
+        "maxDevices": "Макс. Устройств",
+        "categoryIds": "ID Категорий (запятая)",
+        "stripePriceId": "Stripe ID Цены",
+        "badgeText": "Текст Значка",
+        "badgeColor": "Цвет Значка",
+        "sortOrder": "Порядок",
+        "status": "Статус",
+        "active": "Активен",
+        "inactive": "Неактивен",
+        "actions": "Действия",
+        "billing": "Оплата",
+        "devices": "Устройства",
+        "noPackages": "Пакетов нет. Нажмите \"Создать\".",
+        "updated": "Пакет обновлён",
+        "created": "Пакет создан",
+        "deactivated": "Пакет деактивирован"
+      },
+      "subscriptions": {
+        "title": "Прямые Подписки",
+        "subtitle": "Пользователи через Stripe",
+        "userId": "ID Пользователя",
+        "packageId": "ID Пакета",
+        "status": "Статус",
+        "period": "Период",
+        "cancelStatus": "Отмена",
+        "canceling": "Отменяется",
+        "created": "Создано",
+        "noSubscriptions": "Подписок нет.",
+        "stats": {
+          "active": "Активные",
+          "canceled": "Отменённые",
+          "expired": "Истёкшие",
+          "mrr": "MRR",
+          "newThisMonth": "Новые за Месяц"
+        },
+        "statusBadge": {
+          "active": "Активна",
+          "past_due": "Просрочена",
+          "canceled": "Отменена",
+          "expired": "Истекла",
+          "pending": "Ожидание"
+        }
+      }
+    }
+  }
+}

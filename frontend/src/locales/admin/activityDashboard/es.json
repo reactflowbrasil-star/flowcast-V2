@@ -1,0 +1,34 @@
+{
+  "activity": {
+    "errorLoadingDashboard": "Error al cargar el panel: {{message}}",
+    "errorLoadingDashboardFallback": "Error al cargar datos de actividad"
+  },
+  "activityDashboard": {
+    "title": "Panel de actividad",
+    "activitySubtitle": "Actividad del sistema y métricas de interacción",
+    "autoRefreshState": "Auto-refresco: {{state}}",
+    "on": "ACTIVADO",
+    "off": "DESACTIVADO",
+    "enable": "Activar",
+    "disable": "Desactivar",
+    "loginsToday": "Inicios de sesión hoy",
+    "activeUsers": "Usuarios activos",
+    "last7Days": "Últimos 7 días",
+    "contentViews": "Visualizaciones de contenido",
+    "deviceDistribution": "Distribución por dispositivo",
+    "mostViewedContent": "Contenido más visto",
+    "noViewingData": "Sin datos de visualización",
+    "multiDeviceUsers": "Usuarios con múltiples dispositivos",
+    "noMultiDeviceUsers": "No hay usuarios con múltiples dispositivos",
+    "activity24h": "Actividad (24h)",
+    "logins": "Inicios de sesión",
+    "views": "Visualizaciones",
+    "noDeviceData": "No hay datos de distribución de dispositivos",
+    "devicesLabel": "dispositivos",
+    "devices": "dispositivos",
+    "failedLogins": "Inicios de sesión fallidos",
+    "today": "Hoy",
+    "refresh": "Actualizar",
+    "tryAgain": "Intentar de nuevo"
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "title": "Appareils Blacklistés ({{count}})",
+  "empty": {
+    "title": "Aucun appareil blacklisté",
+    "description": "Tout est clair. Aucun appareil n'est actuellement blacklisté."
+  },
+  "table": {
+    "username": "Utilisateur",
+    "deviceId": "ID Appareil",
+    "blacklistedAt": "Blacklisté Le",
+    "actions": "Actes"
+  },
+  "actions": {
+    "remove": "Retirer de la blacklist"
+  },
+  "notifications": {
+    "blacklist": {
+      "errorLoading": "Erreur chargement appareils blacklistés",
+      "confirmRemove": "Retirer l'appareil \"{{device}}\" de l'utilisateur {{user}} de la blacklist ?",
+      "removed": "Appareil retiré de la blacklist",
+      "removeFailed": "Échec du retrait de la blacklist"
+    }
+  }
+}

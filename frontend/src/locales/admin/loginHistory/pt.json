@@ -1,0 +1,45 @@
+{
+  "loginHistory": {
+    "title": "Histórico de Login",
+    "subtitle": "Entradas recentes e eventos de autenticação",
+    "lastUpdated": "Última atualização: {{time}}",
+    "autoRefreshOn": "Atualização auto está LIGADA",
+    "autoRefreshOff": "Atualização auto está DESLIGADA",
+    "refreshNow": "Atualizar agora",
+    "filters": {
+      "username": "Usuário",
+      "ipAddress": "Endereço IP",
+      "startDate": "Data inicial (dd/mm/aaaa)",
+      "endDate": "Data final (dd/mm/aaaa)",
+      "result": "Resultado",
+      "allResults": "Todos os resultados",
+      "perPage": "Por página",
+      "placeholderUsername": "Buscar usuário...",
+      "placeholderIp": "ex: 192.168.0.1"
+    },
+    "table": {
+      "date": "Data",
+      "username": "Usuário",
+      "email": "E-mail",
+      "ip": "IP",
+      "device": "Dispositivo",
+      "result": "Resultado",
+      "method": "Método"
+    },
+    "pagination": {
+      "previous": "Anterior",
+      "next": "Próximo",
+      "showing": "Mostrando {{from}} a {{to}} de {{total}} registros",
+      "pageOf": "Página {{page}} de {{total_pages}}"
+    },
+    "empty": "Nenhum registro de login encontrado.",
+    "errors": {
+      "failedLoad": "Falha ao carregar histórico de login",
+      "invalidDateRange": "Intervalo de data inválido"
+    },
+    "common": {
+      "failedLogins": "Logins falhos",
+      "today": "Hoje"
+    }
+  }
+}

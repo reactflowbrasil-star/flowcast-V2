@@ -1,0 +1,66 @@
+{
+  "title": "Správa Demoverzií",
+  "loading": "Načítavam...",
+  "error": {
+    "loadFailed": "Nepodarilo sa načítať štatistiky demoverzií. Skúste to prosím znova.",
+    "fetchConfigFailed": "Nepodarilo sa načítať konfiguráciu demo"
+  },
+  "stats": {
+    "dailyLimit": "Denný Limit",
+    "dailyLimitDesc": "Maximálny počet demoverzií za deň",
+    "createdToday": "Vytvorené Dnes",
+    "createdTodayDesc": "Demoverzie vytvorené dnes",
+    "remainingToday": "Zostáva na Dnes",
+    "remainingTodayDesc": "Počet demoverzií, ktoré ešte môžete vytvoriť",
+    "activeDemos": "Aktívne Demoverzie",
+    "activeDemosDesc": "Aktuálne aktívne demoverzie",
+    "demoDuration": "Trvanie Demoverzie",
+    "demoDurationDesc": "Každá demoverzia trvá takto dlho"
+  },
+  "createDemo": {
+    "title": "Vytvoriť Demo Používateľa",
+    "description": "Vytvorte demo účet pre potenciálnych zákazníkov. Demo používatelia majú dočasný prémiový prístup.",
+    "dialogTitle": "Vytvoriť Demo Používateľa",
+    "dialogDescription": "Vytvorte demo účet. Používateľ bude mať dočasný prémiový prístup od momentu vytvorenia."
+  },
+  "status": {
+    "canCreate": "Dnes môžete vytvoriť ešte {{count}} demoverziu.",
+    "canCreatePlural": "Dnes môžete vytvoriť ešte {{count}} demoverzie/í.",
+    "limitReached": "Denný limit demoverzií bol dosiahnutý ({{created}}/{{limit}}). Skúste to znova zajtra."
+  },
+  "form": {
+    "username": "Používateľské meno",
+    "usernamePlaceholder": "demo_pouzivatel_123",
+    "password": "Heslo",
+    "passwordPlaceholder": "Zadajte heslo",
+    "email": "E-mail (Voliteľné)",
+    "emailPlaceholder": "pouzivatel@priklad.com",
+    "categories": "Kategórie Obsahu",
+    "categoriesHint": "Kliknutím vyberte kategórie obsahu, ku ktorým bude mať tento demo používateľ prístup.",
+    "loadingCategories": "Načítavam kategórie...",
+    "noCategories": "Žiadne kategórie nie sú k dispozícii",
+    "selectCategory": "Prosím, vyberte aspoň jednu kategóriu"
+  },
+  "validation": {
+    "usernameMin": "Používateľské meno musí mať aspoň 3 znaky",
+    "passwordMin": "Heslo musí mať aspoň 6 znakov",
+    "invalidEmail": "Neplatný e-mail",
+    "categoryRequired": "Prosím, vyberte aspoň jednu kategóriu"
+  },
+  "actions": {
+    "cancel": "Zrušiť",
+    "creating": "Vytváram...",
+    "createDemo": "Vytvoriť Demo"
+  },
+  "info": {
+    "title": "Informácie o Demo Používateľovi",
+    "duration": "Trvanie:",
+    "durationValue": "{{hours}} hodín od vytvorenia",
+    "access": "Prístup:",
+    "accessValue": "Plné prémiové funkcie",
+    "devices": "Zariadenia:",
+    "devicesValue": "Až 3 súčasne pripojené zariadenia",
+    "autoCleanup": "Automatické čistenie:",
+    "autoCleanupValue": "Účet bude po vypršaní platnosti automaticky odstránený"
+  }
+}

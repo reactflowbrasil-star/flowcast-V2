@@ -1,0 +1,18 @@
+{
+  "errors": {
+    "loadingSources": "EPG kaynakları yüklenirken hata",
+    "nameUrlRequired": "İsim ve URL gerekli",
+    "createFailed": "Kaynak oluşturulamadı",
+    "updateFailed": "Kaynak güncellenemedi",
+    "deleteFailed": "Kaynak silinemedi",
+    "fetchChannelsFailed": "Kanallar getirilemedi"
+  },
+  "units": {
+    "minutes": "dk"
+  },
+  "labels": {
+    "timezone": "TZ:"
+  },
+  "confirmDelete": "EPG kaynağı \"{{name}}\" silinsin mi?",
+  "inactive": "(aktif değil)"
+}

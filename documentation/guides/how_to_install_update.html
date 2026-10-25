@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>StreamCore - How to Install and Update</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --bg: #f6f8fb;
+      --ink: #0f172a;
+      --muted: #475569;
+      --line: #d6deea;
+      --card: #ffffff;
+      --primary: #0f766e;
+      --primary-2: #0284c7;
+      --warning: #b45309;
+      --shadow: 0 14px 36px rgba(15, 23, 42, 0.09);
+      --radius: 18px;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: "Sora", sans-serif;
+      color: var(--ink);
+      background:
+        radial-gradient(900px 460px at 0% -10%, rgba(2, 132, 199, 0.16), transparent 70%),
+        radial-gradient(920px 420px at 100% 0%, rgba(15, 118, 110, 0.16), transparent 70%),
+        var(--bg);
+      line-height: 1.55;
+    }
+
+    .wrap {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 24px 16px 56px;
+    }
+
+    .hero {
+      background: linear-gradient(140deg, #0f172a 0%, #1e293b 55%, #0f766e 100%);
+      color: #f8fafc;
+      border-radius: 24px;
+      padding: 26px;
+      box-shadow: var(--shadow);
+    }
+
+    .eyebrow {
+      display: inline-block;
+      border: 1px solid rgba(248, 250, 252, 0.35);
+      border-radius: 999px;
+      padding: 6px 11px;
+      font-size: 12px;
+      letter-spacing: 0.02em;
+      font-weight: 800;
+    }
+
+    h1 {
+      margin: 12px 0 8px;
+      font-size: clamp(1.4rem, 2.8vw, 2.2rem);
+      line-height: 1.2;
+    }
+
+    .hero p {
+      margin: 0;
+      color: #dbeafe;
+      max-width: 900px;
+    }
+
+    .hero-links {
+      margin-top: 16px;
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      text-decoration: none;
+      border-radius: 11px;
+      padding: 10px 14px;
+      font-size: 13px;
+      font-weight: 800;
+      display: inline-flex;
+      align-items: center;
+    }
+
+    .btn-main {
+      color: #0f172a;
+      background: #f8fafc;
+    }
+
+    .btn-alt {
+      color: #f8fafc;
+      border: 1px solid rgba(248, 250, 252, 0.35);
+      background: rgba(248, 250, 252, 0.08);
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 12px;
+      margin-top: 16px;
+    }
+
+    .card {
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      padding: 15px;
+      box-shadow: var(--shadow);
+    }
+
+    h2 {
+      margin: 26px 0 10px;
+      font-size: 1.15rem;
+    }
+
+    h3 {
+      margin: 4px 0 8px;
+      font-size: 1rem;
+    }
+
+    .list {
+      margin: 0;
+      padding-left: 18px;
+      color: var(--muted);
+      display: grid;
+      gap: 6px;
+      font-size: 14px;
+    }
+
+    p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .note {
+      margin-top: 10px;
+      border-left: 4px solid var(--warning);
+      background: #fff7ed;
+      border-radius: 10px;
+      padding: 10px;
+      font-size: 13px;
+      color: #9a3412;
+      border: 1px solid #fed7aa;
+    }
+
+    .step {
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      background: #fff;
+      padding: 12px;
+      margin-bottom: 10px;
+    }
+
+    .step strong {
+      color: #0f172a;
+    }
+
+    pre {
+      margin: 8px 0 0;
+      background: #0b1220;
+      color: #cbd5e1;
+      border-radius: 12px;
+      border: 1px solid #1f2a3f;
+      padding: 12px;
+      font-family: "IBM Plex Mono", monospace;
+      font-size: 12px;
+      overflow-x: auto;
+    }
+
+    code {
+      font-family: "IBM Plex Mono", monospace;
+      font-size: 12px;
+    }
+
+    .table-wrap {
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      overflow: hidden;
+      background: #fff;
+      margin-top: 10px;
+    }
+
+    table {
+      border-collapse: collapse;
+      width: 100%;
+      font-size: 13px;
+    }
+
+    th, td {
+      border-bottom: 1px solid var(--line);
+      text-align: left;
+      vertical-align: top;
+      padding: 10px;
+    }
+
+    th {
+      background: #eef6ff;
+      color: #0f172a;
+      font-weight: 800;
+    }
+
+    tr:last-child td { border-bottom: none; }
+
+    @media (max-width: 700px) {
+      .wrap { padding: 14px 10px 40px; }
+      .hero { padding: 18px; border-radius: 18px; }
+    }
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <header class="hero">
+      <span class="eyebrow">StreamCore v1.1.2</span>
+      <h1>How to Install and Update</h1>
+      <p>
+        Recommended path: use the root <code>install.sh</code> script for fast Docker deployment.
+        It installs Docker if needed, asks for your configuration, updates <code>docker-compose.yml</code>,
+        and starts the full stack.
+      </p>
+      <div class="hero-links">
+        <a class="btn btn-main" href="../updates/updates_overview.html">Open Updates Overview</a>
+        <a class="btn btn-alt" href="HOW_TO_UPDATE.md">Open Markdown Guide</a>
+      </div>
+    </header>
+
+    <section>
+      <h2>Quick Start (install.sh)</h2>
+      <div class="step">
+        <strong>1) Run from project root</strong>
+        <pre><code>chmod +x install.sh
+sudo bash install.sh</code></pre>
+      </div>
+      <div class="step">
+        <strong>2) Choose mode in the menu</strong>
+        <ul class="list">
+          <li><code>1) New Installation</code>: full setup and deployment.</li>
+          <li><code>2) Update</code>: rebuild backend/frontend only, keep DB and compose config.</li>
+        </ul>
+      </div>
+      <div class="step">
+        <strong>3) Access the app</strong>
+        <ul class="list">
+          <li>Frontend URL and API URL are printed by the script at the end.</li>
+          <li>Default admin user: <code>admin</code>.</li>
+          <li>Admin password: the one you entered during the script prompts.</li>
+        </ul>
+      </div>
+      <p class="note">
+        The script requires root privileges and edits <code>docker-compose.yml</code> in place.
+        It creates an automatic backup file like <code>docker-compose.yml.bak.YYYYMMDD_HHMMSS</code>.
+      </p>
+    </section>
+
+    <section>
+      <h2>What install.sh configures</h2>
+      <div class="grid">
+        <article class="card">
+          <h3>Deployment mode</h3>
+          <ul class="list">
+            <li>localhost</li>
+            <li>LAN IP</li>
+            <li>Domain setup (manual proxy or auto Nginx + Let's Encrypt)</li>
+          </ul>
+        </article>
+
+        <article class="card">
+          <h3>Core settings</h3>
+          <ul class="list">
+            <li>App name</li>
+            <li>PostgreSQL user/password/database</li>
+            <li><code>JWT_SECRET</code></li>
+            <li><code>ADMIN_DEFAULT_PASSWORD</code></li>
+          </ul>
+        </article>
+
+        <article class="card">
+          <h3>Optional + security</h3>
+          <ul class="list">
+            <li>Stripe keys and currency</li>
+            <li>Proxy allowlist and auth requirements</li>
+            <li>Proxy private-IP policy</li>
+            <li>Automatic backup retention/interval</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section>
+      <h2>Compose commands used by the script</h2>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>Mode</th>
+              <th>Command</th>
+              <th>When used</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>New install (no proxy)</td>
+              <td><code>docker compose up -d --build</code></td>
+              <td>localhost / IP / manual reverse proxy mode</td>
+            </tr>
+            <tr>
+              <td>New install (auto proxy + SSL)</td>
+              <td><code>docker compose --profile proxy up -d --build</code></td>
+              <td>domain mode with automatic Nginx + Let's Encrypt</td>
+            </tr>
+            <tr>
+              <td>Update mode</td>
+              <td><code>docker compose build --no-cache backend frontend</code><br /><code>docker compose up -d</code></td>
+              <td>rebuild web/API services without resetting DB</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section>
+      <h2>Daily operations</h2>
+      <div class="grid">
+        <article class="card">
+          <h3>Logs</h3>
+          <pre><code>docker compose logs -f
+docker compose logs -f backend
+docker compose logs -f frontend
+docker compose logs -f postgres</code></pre>
+        </article>
+
+        <article class="card">
+          <h3>Restart / stop</h3>
+          <pre><code>docker compose up -d
+docker compose down</code></pre>
+        </article>
+
+        <article class="card">
+          <h3>Full reset (destructive)</h3>
+          <pre><code>docker compose down -v</code></pre>
+          <p class="note" style="margin-top: 8px;">This removes volumes and deletes database data.</p>
+        </article>
+      </div>
+    </section>
+
+    <section>
+      <h2>Legacy migration path (v1.0.0 SQLite -> v1.1.2 PostgreSQL)</h2>
+      <p>
+        If you are upgrading from old SQLite deployments, use the full migration workflow in
+        <a href="HOW_TO_UPDATE.md">HOW_TO_UPDATE.md</a> (backup SQLite, start PostgreSQL stack, and run admin import APIs).
+      </p>
+    </section>
+  </main>
+</body>
+</html>

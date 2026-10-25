@@ -1,0 +1,42 @@
+{
+  "createSeries": {
+    "dialogTitle": "Add {{type}} from TMDB",
+    "dialogDescription": "Search TMDB and automatically import all seasons and episodes",
+    "tabSearch": "1. Search",
+    "tabReview": "2. Review",
+    "tabEpisodes": "3. Episodes",
+    "searching": "Searching...",
+    "search": "Search",
+    "cancel": "Cancel",
+    "backToSearch": "Back to search",
+    "nextAddUrls": "Next: Add episode URLs",
+    "back": "Back",
+    "creating": "Creating...",
+    "createButton": "Create {{type}}",
+    "loadingDetails": "Loading series details...",
+    "loadingEpisodes": "Loading episode information...",
+    "previewTitle": "Preview seasons and episodes",
+    "addEpisodeUrls": "Add episode URLs",
+    "completed": "completed",
+    "episodeLabel": "Episode {{number}}: {{name}}",
+    "uploadEpisodeVideoOptional": "Upload Episode Video (optional)",
+    "uploadSubtitleOptional": "Upload Subtitle (optional)",
+    "subtitleLanguagePlaceholder": "en",
+    "unknownYear": "Unknown",
+    "noDescription": "No description available",
+    "na": "N/A",
+    "errors": {
+      "missingData": "Missing series or season data",
+      "unsupportedType": "Unsupported content type: {{type}}",
+      "uploadVideoFailed": "Failed to upload video",
+      "uploadSubtitleFailed": "Failed to upload subtitle",
+      "createFailed": "Failed to create series"
+    },
+    "messages": {
+      "createdSuccess": "{{type}} created successfully",
+      "uploadsFailedSummary": "{{type}} created, but {{count}} uploads failed. {{preview}}",
+      "episodeNotFoundAfterCreation": "episode not found after creation",
+      "episodeNotFoundForSubtitle": "episode not found for subtitle upload"
+    }
+  }
+}

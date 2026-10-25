@@ -1,0 +1,38 @@
+{
+  "title": "安全封禁（{{total}}）",
+  "noneFound": "未找到封禁记录。",
+  "itemsPerPage": "每页条数",
+  "admin": {
+    "securityBans": {
+      "searchByUsernamePlaceholder": "搜索用户名…",
+      "itemsPerPage": "每页条数",
+      "title": "安全封禁（{{total}}）",
+      "noneFound": "未找到封禁记录。",
+      "level": "等级",
+      "type": "类型",
+      "reason": "原因",
+      "timeRemaining": "剩余时间"
+    }
+  },
+  "unban": {
+    "action": "解除封禁",
+    "confirm": "解除对用户 {{user}} 的封禁？",
+    "promptReason": "输入解除封禁的原因"
+  },
+  "notifications": {
+    "ban": {
+      "userUnbanned": "已解除对用户 {{user}} 的封禁"
+    },
+    "security": {
+      "errorLoadingBans": "加载封禁列表失败",
+      "errorUnbanningUser": "解除封禁失败"
+    }
+  },
+  "common": {
+    "username": "用户名",
+    "actions": "操作",
+    "previous": "上一页",
+    "next": "下一页",
+    "paginationShowing": "第 {{page}} / {{totalPages}} 页"
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "viewingHistory": {
+    "title": "İzleme Geçmişi",
+    "subtitle": "Son oynatma olayları ve izleme etkinliği",
+    "lastUpdated": "Son güncelleme: {{time}}",
+    "autoRefreshOn": "Otomatik yenileme AÇIK",
+    "autoRefreshOff": "Otomatik yenileme KAPALI",
+    "refreshNow": "Şimdi yenile",
+    "filters": {
+      "username": "Kullanıcı adı",
+      "contentType": "İçerik türü",
+      "allTypes": "Tüm türler",
+      "ipAddress": "IP adresi",
+      "startDate": "Başlangıç tarihi (gg/aa/yyyy)",
+      "endDate": "Bitiş tarihi (gg/aa/yyyy)",
+      "perPage": "Sayfa başına",
+      "search": "Ara",
+      "placeholderUsername": "Kullanıcı ara...",
+      "placeholderIp": "ör. 192.168.0.1"
+    },
+    "table": {
+      "date": "Tarih",
+      "username": "Kullanıcı adı",
+      "content": "İçerik",
+      "type": "Tür",
+      "duration": "Süre",
+      "device": "Cihaz",
+      "ip": "IP"
+    },
+    "pagination": {
+      "previous": "Önceki",
+      "next": "Sonraki",
+      "showing": "{{total}} kayıttan {{from}} - {{to}} arası gösteriliyor",
+      "pageOf": "Sayfa {{page}} / {{total_pages}}"
+    },
+    "empty": "İzleme geçmişi bulunamadı.",
+    "errors": {
+      "failedLoad": "İzleme geçmişi yüklenemedi",
+      "invalidDateRange": "Geçersiz tarih aralığı"
+    },
+    "common": {
+      "views": "Görüntülemeler",
+      "today": "Bugün"
+    }
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "editUser": {
+    "title": "Edit user:",
+    "description": "Update user information and password",
+    "labels": {
+      "username": "Username",
+      "email": "Email",
+      "password": "New password (4-10 digits)",
+      "expiresAt": "Expiry date",
+      "maxDevices": "Max. devices",
+      "status": "Status",
+      "contentCategories": "Content Categories"
+    },
+    "placeholders": {
+      "username": "Enter username",
+      "email": "Enter email",
+      "password": "Leave empty to keep current"
+    },
+    "hints": {
+      "expiresAtEmpty": "Leave empty for no expiration",
+      "categoriesHelp": "Click to select the content categories this user will have access to."
+    },
+    "status": {
+      "active": "Active",
+      "suspended": "Suspended"
+    },
+    "categories": {
+      "loading": "Loading categories...",
+      "noCategories": "No categories available"
+    },
+    "buttons": {
+      "cancel": "Cancel",
+      "update": "Update User",
+      "updating": "Updating..."
+    },
+    "errors": {
+      "noUserSelected": "No user selected"
+    },
+    "validation": {
+      "usernameMin": "Username must be at least 3 characters",
+      "invalidEmail": "Invalid email",
+      "passwordMin": "Password must be at least 4 digits",
+      "passwordMax": "Password must be at most 10 digits",
+      "passwordDigitsOnly": "Password can only contain numbers",
+      "maxDevicesMax": "Maximum 10 devices allowed"
+    }
+  }
+}

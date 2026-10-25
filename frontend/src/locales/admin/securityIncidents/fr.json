@@ -1,0 +1,43 @@
+{
+  "title": "Incidents de sécurité ({{total}})",
+  "noneFound": "Aucun incident trouvé",
+  "itemsPerPage": "Éléments par page",
+  "searchByUsernamePlaceholder": "Rechercher par nom d'utilisateur...",
+  "admin": {
+    "securityIncidents": {
+      "confirmDelete": "Supprimer cet incident de sécurité ?",
+      "filterType": "Type d'incident",
+      "allTypes": "Tous les types",
+      "bruteForce": "Attaque par force brute",
+      "suspiciousActivity": "Activité suspecte",
+      "multipleDevices": "Appareils multiples",
+      "tokenManipulation": "Manipulation de jeton",
+      "searchByUsernamePlaceholder": "Rechercher par nom d'utilisateur...",
+      "itemsPerPage": "Éléments par page",
+      "title": "Incidents de sécurité ({{total}})",
+      "noneFound": "Aucun incident trouvé",
+      "deviceId": "ID de l'appareil",
+      "ipAddress": "IP",
+      "deleteTitle": "Supprimer l'incident",
+      "showingPage": "Page {{page}} sur {{totalPages}}"
+    }
+  },
+  "notifications": {
+    "security": {
+      "errorLoadingIncidents": "Erreur lors du chargement des incidents"
+    },
+    "securityIncident": {
+      "deleted": "Incident supprimé",
+      "deleteFailed": "Échec de la suppression de l'incident"
+    }
+  },
+  "common": {
+    "username": "Nom d'utilisateur",
+    "type": "Taper",
+    "date": "Date",
+    "actions": "Actes",
+    "previous": "Précédent",
+    "next": "Suivant",
+    "none": "Aucun"
+  }
+}

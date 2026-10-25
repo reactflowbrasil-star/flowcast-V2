@@ -1,0 +1,11 @@
+# Local IDE and build caches
+.idea/
+.gradle/
+
+# Test/build outputs
+frontend/coverage/
+
+# Local crash logs and Kotlin/Gradle state
+*.log
+Apps/tv_app/.kotlin/
+

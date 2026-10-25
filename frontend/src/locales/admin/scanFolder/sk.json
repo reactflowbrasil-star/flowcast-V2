@@ -1,0 +1,65 @@
+{
+  "scanFolder": {
+    "dialog": {
+      "title": "Skenovať priečinok knižnice",
+      "description": "Rekurzívny import filmov a seriálov z cesty súborového systému. Metadáta TMDB a zodpovedajúce .srt titulky sa importujú automaticky, ak sú k dispozícii."
+    },
+    "alert": {
+      "title": "Inteligentný import s párovaním titulkov",
+      "description": "Skener automaticky deteguje ID TMDB v názvoch priečinkov, spáruje série/epizódy a prepojí externé .srt súbory, ktoré majú rovnaký základný názov videa. Použite prepísania kategórie nižšie, ak chcete, aby filmy alebo seriály smerovali do vlastnej sekcie, napríklad Deti alebo Anime.",
+      "descriptionPrefix": "Skener automaticky zisťuje ID TMDB v názvoch priečinkov, zhoduje sa s ročnými obdobiami/epizódami a externými odkazmi",
+      "descriptionMiddle": "súbory, ktoré zdieľajú základný názov videa. Použite",
+      "descriptionSuffix": "kategória prepíše nižšie, ak chcete, aby sa filmy alebo seriály dostali do vlastnej sekcie, ako sú Deti alebo Anime."
+    },
+    "mediaType": {
+      "label": "Typ média",
+      "placeholder": "Vyberte typ",
+      "mixed": "Zmiešané (auto-detekcia filmov a seriálov)",
+      "movies": "Iba filmy",
+      "series": "Iba seriály",
+      "anime": "Iba anime",
+      "kids": "Iba detské filmy"
+    },
+    "duplicatePolicy": {
+      "label": "Politika duplikátov",
+      "placeholder": "Vyberte politiku",
+      "omit": "Preskočiť existujúce položky",
+      "replace": "Nahradiť existujúce položky",
+      "allow": "Povoliť duplikáty"
+    },
+    "form": {
+      "rootPath": "Koreňová cesta *",
+      "rootPathPlaceholder": "/mnt/media/knižnica",
+      "attachSubtitles": "Pripojiť externé titulky",
+      "attachSubtitlesHelp": "Automaticky importovať zodpovedajúce .srt súbory nájdené vedľa video súborov.",
+      "overrideMovieCategory": "Prepísať kategóriu filmov",
+      "overrideMovieCategoryHelp": "V prípade potreby vyberte alternatívny typ kategórie pre detegované filmy.",
+      "overrideSeriesCategory": "Prepísať kategóriu seriálov",
+      "overrideSeriesCategoryHelp": "Užitočné pri skenovaní knižníc Deti/Anime, ktoré by mali obísť štandardnú sekciu Seriály.",
+      "defaultVod": "Predvolené (VOD)",
+      "defaultSeries": "Predvolené (Seriály)",
+      "attachSubtitlesHelpPrefix": "Automaticky importovať zhody",
+      "attachSubtitlesHelpSuffix": "súbory nájdené vedľa video súborov."
+    },
+    "results": {
+      "moviesCreated": "Vytvorené filmy",
+      "seriesCreated": "Vytvorené seriály",
+      "episodesCreated": "Vytvorené epizódy",
+      "subtitlesAdded": "Pridané titulky",
+      "replaced": "Nahradené",
+      "skipped": "Preskočené",
+      "scanLog": "Záznam skenovania"
+    },
+    "badges": {
+      "tmdbLookup": "TMDB vyhľadávanie",
+      "subtitlePairing": "Párovanie titulkov",
+      "recursiveScan": "Rekurzívne skenovanie"
+    },
+    "errors": {
+      "rootPathRequired": "Koreňová cesta je povinná",
+      "unableToLoadCategories": "Nepodarilo sa načítať kategórie",
+      "scanFailed": "Skenovanie zlyhalo",
+      "unexpectedError": "Nečakaná chyba počas skenovania"
+    }
+  }
+}

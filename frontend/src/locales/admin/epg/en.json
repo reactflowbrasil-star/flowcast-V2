@@ -1,0 +1,18 @@
+{
+  "errors": {
+    "loadingSources": "Error loading EPG sources",
+    "nameUrlRequired": "Name and URL are required",
+    "createFailed": "Failed to create source",
+    "updateFailed": "Failed to update source",
+    "deleteFailed": "Failed to delete source",
+    "fetchChannelsFailed": "Failed to fetch channels"
+  },
+  "units": {
+    "minutes": "min"
+  },
+  "labels": {
+    "timezone": "TZ:"
+  },
+  "confirmDelete": "Delete EPG source \"{{name}}\"?",
+  "inactive": "(inactive)"
+}

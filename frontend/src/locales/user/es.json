@@ -1,0 +1,453 @@
+{
+  "user": {
+    "dashboard": {
+      "welcome": "Bienvenido de nuevo",
+      "guest": "Usuario",
+      "greeting": "Hola {{name}}",
+      "continueWatching": "Seguir viendo",
+      "progressSync": "Sincronizamos tu progreso entre dispositivos.",
+      "noHistory": "Aún no has comenzado ningún título",
+      "series": "Series",
+      "kids": "Niños",
+      "anime": "animado",
+      "events": "Eventos",
+      "liveTv": "TV",
+      "liveChannels": "Canales",
+      "liveGuide": "Guía",
+      "nowPlaying": "En emisión",
+      "noEpg": "Sin datos EPG",
+      "channel": "Canal",
+      "searchChannels": "Buscar canales...",
+      "viewProducts": "Mis productos",
+      "manageDevices": "Gestionar dispositivos",
+      "statusActive": "Cuenta activa",
+      "connectedDevices": "Dispositivos conectados",
+      "devicesUsage": "Puedes administrar tus dispositivos activos siempre que lo desees.",
+      "aiStatus": "Motor de recomendaciones",
+      "aiOnline": "Activo",
+      "aiOffline": "Configurando",
+      "aiSubtitle": "Actualizamos tus sugerencias cada pocas horas",
+      "genreSpotlight": "Explora por género",
+      "genreSpotlightHint": "Selecciona categorías cinematográficas para refinar las colecciones que ves.",
+      "noAiRecommendations": "Ajustaremos tus recomendaciones en breve",
+      "noTmdbData": "Configura TMDB para habilitar estas colecciones",
+      "secureSession": "Sesión cifrada y protegida",
+      "liveStreamError": "No se pudo obtener la URL del canal.",
+      "liveLoadError": "Error cargando el canal.",
+      "browseGenres": "Explorar géneros",
+      "popularMovies": "Películas populares",
+      "bingeWorthy": "Series imperdibles",
+      "browse": "Explorar categorías",
+      "contentLibrary": "Biblioteca de contenido",
+      "contentSubtitle": "Explora nuestra colección",
+      "noContent": "No hay contenido disponible",
+      "noContentDescription": "El contenido aparecerá aquí cuando el administrador agregue películas, series u otros medios.",
+      "encryptedSession": "Sesión cifrada",
+      "liveChannel": "Canal en vivo",
+      "programGuide": "Guía de Programación",
+      "welcomeTitle": "Tu biblioteca, siempre contigo",
+      "welcomeDescription": "Explora películas y series curadas para ti.",
+      "watchNow": "Ver ahora",
+      "filters": {
+        "movies": "Películas",
+        "sports": "Deportes",
+        "kids": "Niños"
+      },
+      "profile": "Perfil",
+      "badgeFeatured": "Destacado"
+    },
+    "live": {
+      "title": "TV en Vivo",
+      "toggleChannels": "Canales",
+      "toggleGuide": "Guía",
+      "liveNow": "En vivo",
+      "loadingGuide": "Cargando guía...",
+      "minutesLeft": "{{count}} min restantes",
+      "showingChannels": "Mostrando {{count}} canales",
+      "channelsLive": "{{count}} canales en vivo",
+      "upNext": "A continuación",
+      "nowPlaying": "Reproduciendo ahora",
+      "loadingStream": "Conectando...",
+      "streamFailed": "No se pudo cargar el stream",
+      "streamError": "Error al cargar el stream",
+      "playbackError": "Error de reproducción",
+      "streamUnavailableTitle": "Stream no disponible",
+      "streamUnavailableDescription": "Ocurrió un error al cargar este stream.",
+      "selectPrompt": "Selecciona un canal para comenzar a ver",
+      "liveBadge": "EN VIVO",
+      "unknownChannel": "Canal desconocido",
+      "providerFallback": "Proveedor de {{appName}}",
+      "toastCurrentlyViewing": "Viendo ahora: {{title}}",
+      "noProgramInfo": "No hay información del programa disponible",
+      "channelGuide": "Guía de canales",
+      "noChannelsFound": "No se encontraron canales",
+      "categories": {
+        "sports": "Deportes",
+        "entertainment": "Entretenimiento",
+        "news": "Noticias",
+        "movies": "Películas"
+      },
+      "epg": {
+        "errors": {
+          "loadFailed": "No se pudo cargar la guía de programación"
+        },
+        "loading": "Cargando guía de programación...",
+        "liveProgramming": "Programación en vivo",
+        "noProgramInfo": "No hay información de programa disponible",
+        "previous24h": "24h anteriores",
+        "next24h": "Próximas 24h",
+        "liveNow": "En vivo ahora",
+        "live": "En vivo",
+        "upcoming": "Próximo",
+        "liveBadge": "EN VIVO",
+        "clickToWatch": "Haz clic para ver",
+        "watchChannel": "Ver canal"
+      }
+    },
+    "filters": {
+      "clear": "Limpiar filtro",
+      "searchChannels": "Buscar canales...",
+      "searchMovies": "Buscar películas...",
+      "searchShows": "Buscar series...",
+      "searchKids": "Buscar contenido infantil...",
+      "searchAnime": "Buscar anime...",
+      "searchEvents": "Buscar eventos...",
+      "allGenres": "Todos los géneros",
+      "allTypes": "Todos los tipos",
+      "allStatus": "Todos los estados",
+      "sortTitle": "Ordenar por título",
+      "sortYear": "Ordenar por año",
+      "sortRating": "Ordenar por puntuación"
+    },
+    "kids": {
+      "errorTitle": "Error al cargar contenido infantil",
+      "searchPlaceholder": "Buscar contenido infantil...",
+      "emptyTitle": "No hay contenido infantil disponible",
+      "emptySearchTitle": "No se encontraron resultados",
+      "emptySearchDescription": "Intenta usar otros términos de búsqueda"
+    },
+    "anime": {
+      "errorTitle": "Error al cargar anime",
+      "searchPlaceholder": "Buscar anime...",
+      "emptyTitle": "No hay anime disponible",
+      "emptySearchTitle": "No se encontraron resultados",
+      "emptySearchDescription": "Intenta usar otros términos de búsqueda"
+    },
+    "events": {
+      "errorTitle": "Error al cargar eventos",
+      "searchPlaceholder": "Buscar eventos...",
+      "emptyTitle": "No hay eventos disponibles",
+      "emptySearchTitle": "No se encontraron resultados",
+      "emptySearchDescription": "Intenta usar otros términos de búsqueda"
+    },
+    "favorites": {
+      "title": "Favoritos",
+      "description": "Todo tu contenido favorito en un solo lugar",
+      "emptyTitle": "Aún no tienes favoritos",
+      "emptyDescription": "Empieza a agregar contenido a tus favoritos",
+      "emptyMoviesTitle": "No tienes películas favoritas",
+      "emptyMoviesDescription": "Agrega películas a favoritos desde la sección de películas",
+      "emptySeriesTitle": "No tienes series favoritas",
+      "emptySeriesDescription": "Agrega series a favoritos desde la sección de series",
+      "emptyChannelsTitle": "No tienes canales favoritos",
+      "emptyChannelsDescription": "Agrega canales a favoritos desde la sección de TV en vivo"
+    },
+    "movies": {
+      "loading": "Cargando películas...",
+      "emptyTitle": "No se encontraron películas",
+      "emptyDescription": "Intenta ajustar tu búsqueda o filtros"
+    },
+    "shows": {
+      "loading": "Cargando series...",
+      "emptyTitle": "No se encontraron series",
+      "emptyDescription": "Intenta ajustar tu búsqueda o filtros",
+      "season": "Temporada",
+      "seasons": "Temporadas",
+      "status": {
+        "ongoing": "En emisión",
+        "completed": "Finalizada",
+        "cancelled": "Cancelada",
+        "unknown": "Desconocido"
+      }
+    },
+    "pagination": {
+      "pageLabel": "Página",
+      "moviesLabel": "Películas",
+      "seriesLabel": "Serie",
+      "kidsLabel": "Niños",
+      "animeLabel": "animado"
+    },
+    "profile": {
+      "badge": "Mi cuenta",
+      "title": "Perfil y seguridad",
+      "subtitle": "Gestiona tus datos personales, correo de contacto y credenciales de acceso.",
+      "info": {
+        "title": "Información básica",
+        "username": "Usuario",
+        "role": "Rol en el sistema",
+        "createdAt": "Alta en la plataforma",
+        "expiresAt": "Vence el",
+        "unknown": "Desconocido",
+        "noExpiry": "Sin fecha de expiración"
+      },
+      "contact": {
+        "title": "Contacto y notificaciones",
+        "emailLabel": "Correo asociado",
+        "emailPlaceholder": "Ingresa un correo para recibir notificaciones",
+        "hint": "Usaremos este correo para alertas de seguridad y recuperaciones de acceso.",
+        "save": "Actualizar correo",
+        "saving": "Guardando..."
+      },
+      "password": {
+        "title": "Cambiar contraseña",
+        "current": "Contraseña actual",
+        "currentPlaceholder": "Introduce tu contraseña actual",
+        "new": "Nueva contraseña",
+        "newPlaceholder": "Mínimo 6 caracteres",
+        "save": "Actualizar contraseña",
+        "saving": "Actualizando...",
+        "success": "Contraseña actualizada",
+        "error": "No se pudo actualizar la contraseña",
+        "hint": "Se cerrarán las sesiones activas en otros dispositivos después del cambio."
+      },
+      "plan": {
+        "title": "Estado del plan",
+        "devices": "Dispositivos en uso: {{count}} de {{max}}",
+        "role": "Tipo de acceso: {{role}}",
+        "expires": "Vigente hasta {{date}}",
+        "withoutExpiry": "Plan sin fecha de expiración"
+      },
+      "categories": {
+        "title": "Categorías habilitadas",
+        "empty": "Tu administrador aún no asignó contenido a tu cuenta."
+      },
+      "actions": {
+        "title": "Accesos directos",
+        "manageDevices": "Gestionar dispositivos",
+        "exploreContent": "Explorar contenido",
+        "extendMembership": "Extender membresía"
+      },
+      "update": {
+        "success": "Perfil actualizado",
+        "error": "No se pudo actualizar el perfil"
+      },
+      "noDataTitle": "No pudimos obtener tu perfil",
+      "noDataDescription": "Intenta recargar la página o contacta soporte si el problema persiste.",
+      "status": {
+        "unknown": "Estado desconocido",
+        "banned": "Cuenta suspendida",
+        "noExpiry": "Sin fecha de expiración",
+        "expired": "Suscripción expirada",
+        "active": "Suscripción activa"
+      }
+    },
+    "devices": {
+      "badge": "Gestión de dispositivos",
+      "title": "Tus dispositivos vinculados",
+      "subtitle": "Controla qué equipos tienen acceso a tu cuenta y libera espacios cuando lo necesites.",
+      "onboarding": {
+        "title": "Registrar este navegador",
+        "body": "Vincula este navegador como dispositivo para continuar al panel.",
+        "deviceInfo": "Dispositivo actual",
+        "slots": "{{available}} espacios disponibles de {{max}}",
+        "limitTitle": "Límite de dispositivos alcanzado",
+        "limitBody": "Elimina un dispositivo para liberar un espacio y poder registrar este navegador.",
+        "cta": "Registrar este dispositivo",
+        "fill": "Completar datos automáticamente",
+        "already": "Este navegador ya está registrado",
+        "quickRegister": "Registrar este navegador ahora"
+      },
+      "register": {
+        "title": "Registrar nuevo dispositivo",
+        "deviceId": "ID del dispositivo",
+        "deviceIdPlaceholder": "Ej. MAC, UUID o código del equipo",
+        "deviceName": "Nombre del dispositivo",
+        "deviceNamePlaceholder": "Ej. Smart TV Sala, Android Box...",
+        "generate": "Generar ID aleatorio",
+        "cta": "Registrar dispositivo",
+        "working": "Registrando...",
+        "validation": "Necesitas completar el ID y nombre del dispositivo",
+        "help": "Utiliza un identificador único para cada dispositivo. Se recomienda usar el mismo nombre que empleas en tu app Android."
+      },
+      "status": {
+        "title": "Estado de uso",
+        "progressLabel": "Ocupación",
+        "tipTitle": "Consejo rápido",
+        "tipBody": "Si alcanzas el límite, elimina un dispositivo que ya no utilices antes de agregar uno nuevo.",
+        "syncTitle": "Sincronización instantánea",
+        "syncBody": "Los cambios se reflejan en la app Android al reiniciar o refrescar la sesión."
+      },
+      "list": {
+        "title": "Dispositivos registrados",
+        "loading": "Recuperando la lista de dispositivos vinculados.",
+        "emptyTitle": "No tienes dispositivos aún",
+        "emptyDescription": "Registra tu primer dispositivo para comenzar a reproducir contenido.",
+        "lastActive": "Último acceso: {{date}}",
+        "statusActive": "Activo",
+        "remove": "Eliminar dispositivo",
+        "removeSuccess": "Dispositivo eliminado",
+        "removeError": "No se pudo eliminar el dispositivo"
+      }
+    },
+    "common": {
+      "continue": "Continuar",
+      "all": "Todos",
+      "loading": "Cargando...",
+      "search": "Buscar",
+      "watch": "Ver",
+      "viewAll": "Ver todo",
+      "noItems": "No hay elementos",
+      "comeBackSoon": "Vuelve pronto para descubrir nuevo contenido.",
+      "noResults": "No se encontraron resultados",
+      "adjustSearch": "Intenta ajustar tu búsqueda o filtros",
+      "tryDifferent": "Intenta usar otros términos de búsqueda",
+      "reload": "Por favor intenta recargar la página",
+      "verified": "Verificado",
+      "titleCount": "{{count}} título",
+      "titleCount_plural": "{{count}} títulos",
+      "seriesCount": "{{count}} serie",
+      "seriesCount_plural": "{{count}} series",
+      "animeCount": "{{count}} anime",
+      "animeCount_plural": "{{count}} anime",
+      "eventCount": "{{count}} evento",
+      "eventCount_plural": "{{count}} eventos",
+      "channelCount": "{{count}} canal",
+      "channelCount_plural": "{{count}} canales"
+    },
+    "player": {
+      "audioInfo": "Información de audio",
+      "audioTracksTitle": "Pistas de Audio",
+      "audioTracksTitleWithCount": "Pistas de Audio ({{count}})",
+      "noAudioTracks": "No se detectaron pistas de audio",
+      "noAudioTracksHelpLine1": "Este video puede tener audio integrado sin pistas separadas,",
+      "noAudioTracksHelpLine2": "o tu navegador no soporta la API de AudioTracks.",
+      "subtitlesTitle": "Subtítulos",
+      "noSubtitles": "Sin subtítulos",
+      "playbackSpeed": "Velocidad"
+    },
+    "menu": {
+      "home": "Inicio",
+      "liveTv": "TV en vivo",
+      "movies": "Películas",
+      "series": "Series",
+      "kids": "Niños",
+      "anime": "animado",
+      "events": "Eventos",
+      "music": "Música",
+      "favorites": "Favoritos",
+      "search": "Buscar",
+      "custom": "Menú",
+      "descriptions": {
+        "home": "Dashboard principal",
+        "liveTv": "Canales en vivo",
+        "movies": "Catálogo de películas",
+        "series": "Series y programas",
+        "kids": "Contenido para niños",
+        "anime": "Catálogo de anime",
+        "events": "Eventos especiales",
+        "music": "Biblioteca musical",
+        "favorites": "Tus favoritos",
+        "search": "Buscar contenido",
+        "profile": "Gestionar cuenta",
+        "devices": "Gestionar dispositivos"
+      }
+    },
+    "language": {
+      "placeholder": "Selecciona idioma"
+    },
+    "badges": {
+      "continue": "Continuar"
+    },
+    "languages": {
+      "es": "Español",
+      "es_native": "Español",
+      "en": "Inglés",
+      "en_native": "Inglés",
+      "zh": "Chino",
+      "zh_native": "中文",
+      "pt": "Portugués",
+      "pt_native": "portugués",
+      "fr": "Francés",
+      "fr_native": "francés",
+      "ru": "Ruso",
+      "ru_native": "ruso",
+      "tr": "Turco",
+      "tr_native": "turco",
+      "sk": "Eslovaco",
+      "sk_native": "Eslovenia"
+    },
+    "categoryCopy": {
+      "vod": "Películas bajo demanda incluidas en tu plan.",
+      "series": "Series completas listas para maratonear.",
+      "tv": "Canales en vivo y programación 24/7.",
+      "kids": "Contenido seguro y curado para niños.",
+      "events": "Eventos especiales y transmisiones únicas.",
+      "anime": "Catálogo de anime con doblaje y subtítulos."
+    },
+    "products": {
+      "badge": "Mis productos",
+      "title": "Acceso habilitado en tu plan",
+      "subtitle": "Explora todo el contenido disponible según tus productos activos.",
+      "search": "Buscar contenido",
+      "devices": "Mis dispositivos",
+      "list": {
+        "title": "Productos disponibles"
+      },
+      "empty": {
+        "title": "Aún no tienes productos asignados",
+        "description": "Cuando tu administrador habilite categorías, aparecerán aquí."
+      },
+      "badgeIncluded": "Incluido en tu plan",
+      "cta": {
+        "explore": "Explorar"
+      }
+    },
+    "watch": {
+      "title": "Reproductor",
+      "invalidId": "ID de contenido inválido",
+      "notFound": "Contenido no encontrado",
+      "noStreamAvailable": "No hay stream disponible para este contenido",
+      "streamError": "Error obteniendo el stream",
+      "backToDashboard": "Volver al panel",
+      "synopsis": "Sinopsis",
+      "seasons": "Temporadas",
+      "seasonShort": "T{{n}}",
+      "episodeLabel": "E{{n}}",
+      "noEpisodes": "No hay episodios disponibles.",
+      "drmNotice": "Este contenido tiene DRM configurado — puede requerir un reproductor compatible.",
+      "related": "Recomendados",
+      "noRelated": "No hay recomendaciones disponibles por ahora",
+      "goBack": "Volver",
+      "playNow": "Reproducir ahora"
+    },
+    "content": {
+      "browse": {
+        "badge": "Biblioteca disponible",
+        "title": "Explora tu contenido",
+        "subtitle": "Películas, series y TV en vivo en una vista unificada.",
+        "totalCategories": "{{count}} categorías disponibles",
+        "goToSearch": "Ir al buscador",
+        "itemCount": "{{count}} resultados",
+        "loadingDescription": "Preparando tu catálogo personalizado.",
+        "emptyTitle": "Esta categoría aún no tiene contenido",
+        "emptyDescription": "Pronto agregaremos más títulos aquí.",
+        "noCategoriesTitle": "Sin categorías asignadas",
+        "noCategoriesDescription": "Solicita a tu administrador que habilite contenido para tu cuenta.",
+        "watch": "Reproducir",
+        "noDescription": "Descripción pendiente",
+        "loadMore": "Ver más títulos",
+        "loadingMore": "Cargando..."
+      },
+      "search": {
+        "title": "Buscar contenido",
+        "placeholder": "Películas, series, canales...",
+        "emptyTitle": "Busca algo para comenzar",
+        "emptyDesc": "Escribe un título, categoría o palabra clave para encontrar contenido.",
+        "loading": "Buscando coincidencias",
+        "error": "No se pudo realizar la búsqueda",
+        "noResults": "Sin resultados",
+        "tryAgain": "Prueba con otras palabras clave o revisa tu ortografía."
+      }
+    }
+  }
+}

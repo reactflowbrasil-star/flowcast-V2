@@ -1,0 +1,42 @@
+{
+  "createSeries": {
+    "dialogTitle": "Pridať {{type}} z TMDB",
+    "dialogDescription": "Vyhľadajte TMDB a automaticky importujte všetky sezóny a epizódy",
+    "tabSearch": "1. Hľadaj",
+    "tabReview": "2. Preskúmanie",
+    "tabEpisodes": "3. Epizódy",
+    "searching": "Hľadá sa...",
+    "search": "Hľadať",
+    "cancel": "Zrušiť",
+    "backToSearch": "Späť na vyhľadávanie",
+    "nextAddUrls": "Ďalej: Pridajte adresy URL epizód",
+    "back": "Späť",
+    "creating": "Vytvára sa...",
+    "createButton": "Vytvoriť {{type}}",
+    "loadingDetails": "Načítavajú sa podrobnosti série...",
+    "loadingEpisodes": "Načítavajú sa informácie o epizóde...",
+    "previewTitle": "Ukážka sérií a epizód",
+    "addEpisodeUrls": "Pridajte adresy URL epizód",
+    "completed": "dokončené",
+    "episodeLabel": "Epizóda {{number}}: {{name}}",
+    "unknownYear": "Neznámy",
+    "noDescription": "Nie je k dispozícii žiadny popis",
+    "na": "N/A",
+    "errors": {
+      "missingData": "Chýbajúce údaje o sérii alebo sezóne",
+      "unsupportedType": "Nepodporovaný typ obsahu: {{type}}",
+      "uploadVideoFailed": "Failed to upload video",
+      "uploadSubtitleFailed": "Failed to upload subtitle",
+      "createFailed": "Failed to create series"
+    },
+    "uploadEpisodeVideoOptional": "Upload Episode Video (optional)",
+    "uploadSubtitleOptional": "Upload Subtitle (optional)",
+    "subtitleLanguagePlaceholder": "en",
+    "messages": {
+      "createdSuccess": "{{type}} created successfully",
+      "uploadsFailedSummary": "{{type}} created, but {{count}} uploads failed. {{preview}}",
+      "episodeNotFoundAfterCreation": "episode not found after creation",
+      "episodeNotFoundForSubtitle": "episode not found for subtitle upload"
+    }
+  }
+}

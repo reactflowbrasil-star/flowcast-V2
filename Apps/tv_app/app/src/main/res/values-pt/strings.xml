@@ -1,0 +1,1027 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- App Name (uses branding.name from local.properties) -->
+    <string name="app_name">@string/branding_name</string>
+    <string name="app_name_full">@string/branding_name</string>
+
+    <!-- Navigation -->
+    <string name="nav_home">Início</string>
+    <string name="nav_search">Buscar</string>
+    <string name="nav_movies">Filmes</string>
+    <string name="nav_series">Séries</string>
+    <string name="nav_live_tv">TV ao Vivo</string>
+    <string name="nav_kids">Infantil</string>
+    <string name="nav_anime">Anime</string>
+    <string name="nav_events">Eventos</string>
+    <string name="nav_favorites">Favoritos</string>
+    <string name="nav_library">Biblioteca</string>
+    <string name="nav_music">Música</string>
+    <string name="nav_settings">Configurações</string>
+    <string name="nav_profile">Perfil</string>
+
+    <!-- Events & Views -->
+    <string name="label_view_categories">Categorias</string>
+    <string name="label_view_compact">Compacto</string>
+    <string name="label_view_large">Grande</string>
+    <string name="channels_available">%1$d canais disponíveis</string>
+    <string name="category_no_channels">Não há canais disponíveis nesta categoria</string>
+
+    <!-- Authentication -->
+    <string name="auth_welcome">Bem-vindo ao IPTV</string>
+    <string name="auth_welcome_subtitle">Registre seu dispositivo para começar</string>
+    <string name="auth_register_device">Registrar Dispositivo</string>
+    <string name="auth_device_name">Nome do Dispositivo</string>
+    <string name="auth_device_name_hint">Minha Android TV</string>
+    <string name="auth_activation_code">Código de Ativação</string>
+    <string name="auth_activation_code_hint">Digite o código de 6 dígitos</string>
+    <string name="auth_activate">Ativar</string>
+    <string name="auth_activating">Ativando…</string>
+    <string name="auth_registering">Registrando…</string>
+    <string name="auth_success">Dispositivo ativado com sucesso</string>
+    <string name="auth_activate_device">Ativar Dispositivo</string>
+    <string name="auth_activate_subtitle">Digite o código de ativação fornecido</string>
+
+    <!-- Content -->
+    <string name="content_play">Reproduzir</string>
+    <string name="content_play_now">Reproduzir Agora</string>
+    <string name="content_more_info">Mais informações</string>
+    <string name="content_add_favorite">Adicionar aos favoritos</string>
+    <string name="content_remove_favorite">Remover dos favoritos</string>
+    <string name="content_download">Baixar</string>
+    <string name="content_share">Compartilhar</string>
+    <string name="content_continue_watching">Continuar assistindo</string>
+    <string name="content_min_remaining">%d min restantes</string>
+    <string name="content_popular_movies">Filmes populares</string>
+    <string name="content_recommended_series">Séries recomendadas</string>
+    <string name="content_recently_added">Adicionado recentemente</string>
+    <string name="content_see_all">Ver tudo</string>
+    <string name="content_empty_message">Nenhum conteúdo disponível</string>
+
+    <!-- Player -->
+    <string name="player_play">Reproduzir</string>
+    <string name="player_pause">Pausar</string>
+    <string name="player_stop">Parar</string>
+    <string name="player_forward">Avançar 10s</string>
+    <string name="player_backward">Retroceder 10s</string>
+    <string name="player_fullscreen">Tela cheia</string>
+    <string name="player_exit_fullscreen">Sair da tela cheia</string>
+    <string name="player_volume">Volume</string>
+    <string name="player_subtitles">Legendas</string>
+    <string name="player_quality">Qualidade</string>
+    <string name="player_loading">Preparando vídeo…</string>
+    <string name="player_placeholder_message">Selecione um conteúdo para reproduzir</string>
+    <string name="player_subtitle_settings">Configurações de legenda</string>
+    <string name="player_no_subtitles">Nenhuma legenda disponível</string>
+    <string name="player_subtitle_off">Off</string>
+    <string name="player_subtitle_off_desc">Desative todas as legendas</string>
+
+    <!-- Search -->
+    <string name="search_hint">Buscar filmes, séries, canais…</string>
+    <string name="search_no_results">Nenhum resultado encontrado</string>
+    <string name="search_suggestions">Sugestões</string>
+    <string name="search_recent">Buscas recentes</string>
+    <string name="search_searching">Buscando…</string>
+    <string name="search_placeholder">Buscar conteúdo…</string>
+    <string name="search_no_results_title">Sem resultados</string>
+    <string name="search_no_results_message">Nenhum resultado encontrado para sua busca</string>
+    <string name="search_no_results_suggestions">Tente outros termos de busca</string>
+
+    <!-- Settings -->
+    <string name="settings_profile">Perfil</string>
+    <string name="settings_video">Vídeo</string>
+    <string name="settings_audio">Áudio</string>
+    <string name="settings_devices">Dispositivos</string>
+    <string name="settings_about">Sobre</string>
+    <string name="settings_logout">Sair</string>
+    <string name="settings_autoplay">Reprodução automática</string>
+    <string name="settings_autoplay_subtitle">Reproduzir automaticamente o próximo episódio</string>
+    <string name="settings_subtitles">Legendas</string>
+    <string name="settings_subtitles_subtitle">Mostrar legendas quando disponíveis</string>
+    <string name="settings_title">Configurações</string>
+    <string name="settings_video_title">Vídeo</string>
+    <string name="settings_video_quality">Qualidade de vídeo</string>
+    <string name="settings_video_quality_subtitle">Selecione a qualidade de reprodução</string>
+    <string name="settings_app_title">Aplicativo</string>
+    <string name="settings_language">Idioma</string>
+    <string name="settings_language_subtitle">Alterar idioma do aplicativo</string>
+    <string name="settings_account_title">Conta</string>
+    <string name="settings_logout_subtitle">Sair</string>
+    <string name="settings_about_title">Sobre</string>
+    <string name="settings_check_updates">Verifique se há atualizações</string>
+    <string name="settings_check_updates_subtitle">Verifique se há atualizações de aplicativos</string>
+    <string name="settings_app_version">Versão do aplicativo</string>
+    <string name="settings_privacy_policy">Política de privacidade</string>
+    <string name="settings_privacy_policy_subtitle">Ver política de privacidade</string>
+    <string name="settings_terms">Termos e condições</string>
+    <string name="settings_terms_subtitle">Ver termos e condições</string>
+    <string name="profile_title">Perfil</string>
+
+    <!-- Error Messages -->
+    <string name="error_network">Erro de conexão</string>
+    <string name="error_server">Erro do servidor</string>
+    <string name="error_unauthorized">Não autorizado</string>
+    <string name="error_not_found">Conteúdo não encontrado</string>
+    <string name="error_playback">Erro de reprodução</string>
+    <string name="error_invalid_code">Código de ativação inválido</string>
+    <string name="error_title">Erro</string>
+    <string name="error_retry">Tentar novamente</string>
+
+    <!-- Loading States -->
+    <string name="loading">Carregando…</string>
+    <string name="loading_content">Carregando conteúdo…</string>
+    <string name="loading_video">Preparando vídeo…</string>
+    <string name="loading_search">Buscando…</string>
+
+    <!-- Actions -->
+    <string name="action_retry">Tentar novamente</string>
+    <string name="action_cancel">Cancelar</string>
+    <string name="action_ok">OK</string>
+    <string name="action_save">Salvar</string>
+    <string name="action_edit">Editar</string>
+    <string name="action_delete">Excluir</string>
+    <string name="action_share">Compartilhar</string>
+    <string name="action_back">Voltar</string>
+
+    <!-- Content Descriptions (Accessibility) -->
+    <string name="cd_play_button">Botão reproduzir</string>
+    <string name="cd_pause_button">Botão pausar</string>
+    <string name="cd_favorite_button">Botão favoritos</string>
+    <string name="cd_search_button">Botão busca</string>
+    <string name="cd_menu_button">Botão menu</string>
+    <string name="cd_back_button">Botão voltar</string>
+    <string name="cd_back">Voltar</string>
+    <string name="cd_clear_button">Botão limpar</string>
+    <string name="cd_content_image">Imagem do conteúdo</string>
+    <string name="cd_user_avatar">Avatar do usuário</string>
+    <string name="cd_logo">Logo IPTV</string>
+
+    <!-- Live TV -->
+    <string name="live_tv_channels">Canais ao Vivo</string>
+    <string name="live_tv_now_playing">Reproduzindo agora</string>
+    <string name="live_tv_next">Próximo</string>
+
+    <!-- Channels -->
+    <string name="channels_count">%1$d canais</string>
+    <string name="channels_close">Fechar</string>
+
+    <!-- EPG -->
+    <string name="epg_live_badge">AO VIVO</string>
+    <string name="epg_press_right_for_more">Pressione → para ver mais programação</string>
+    <string name="epg_channel">Canal</string>
+    <string name="epg_back">Voltar</string>
+    <string name="epg_live_program">Programa ao vivo</string>
+
+    <!-- Time formats -->
+    <string name="time_format_hours_minutes">%1$dh %2$dm</string>
+    <string name="time_format_minutes">%1$dm</string>
+    <string name="time_format_less_minute">&lt; 1m</string>
+
+    <!-- Language Selection -->
+    <string name="language_spanish">Espanhol</string>
+    <string name="language_english">Inglês</string>
+    <string name="language_portuguese">Português</string>
+    <string name="language_chinese">Chinês</string>
+    <string name="language_dialog_title">Selecionar Idioma</string>
+    <string name="language_dialog_message">Escolha seu idioma preferido</string>
+    <string name="language_changed">Idioma alterado com sucesso</string>
+    <string name="language_restart_required">Reinicie o app para aplicar as mudanças</string>
+
+    <!-- Hardcoded Strings - UI Components -->
+    <string name="channels_title">Canais</string>
+    <string name="channels_search_hint">Buscar canais…</string>
+    <string name="channels_search_hint_alt">Buscar canais…</string>
+    <string name="channels_select_channel">Selecione um canal</string>
+    <string name="channels_no_epg_info">Sem informação EPG</string>
+    <string name="channels_no_programming">Não há informação de programação disponível</string>
+    <string name="channels_press_back">Pressione ← para voltar aos canais</string>
+    <string name="live_indicator">AO VIVO</string>
+    <string name="now_label">AGORA</string>
+    <string name="next_label">PRÓXIMO</string>
+    <string name="current_label">ATUAL</string>
+    <string name="now_playing">Agora:</string>
+    <string name="auto_label">Automático</string>
+    <string name="unknown_label">Desconhecido</string>
+
+    <!-- Account & Profile -->
+    <string name="account_title">Conta</string>
+    <string name="account_apply_change">Aplicar alteração</string>
+    <string name="account_close">Fechar</string>
+    <string name="account_password_mismatch">Não corresponde</string>
+    <string name="user_label">Usuário</string>
+
+    <!-- Device Management -->
+    <string name="device_limit_title">Limite de Dispositivos</string>
+    <string name="device_limit_reached">Você atingiu o limite de %1$d dispositivos</string>
+    <string name="device_limit_description">Para continuar, você precisa substituir um dos seus dispositivos existentes.</string>
+    <string name="device_limit_replacement_warning">O dispositivo selecionado será desconectado permanentemente e este novo dispositivo ocupará seu lugar.</string>
+    <string name="device_limit_disconnect_warning">O dispositivo selecionado será desconectado imediatamente</string>
+    <string name="device_limit_replacing">Substituindo dispositivo…</string>
+    <string name="device_limit_wait">Isso pode levar alguns segundos</string>
+    <string name="device_limit_this_device">Este dispositivo</string>
+    <string name="device_limit_cancel">Cancelar</string>
+    <string name="device_limit_disconnect">Desconectar</string>
+    <string name="device_limit_disconnecting">Desconectando…</string>
+    <string name="device_limit_confirm_replacement">Confirmar Substituição</string>
+    <string name="device_limit_confirm_message">Confirmar substituição de dispositivo?</string>
+    <string name="device_limit_what_happens">O que acontecerá:</string>
+    <string name="device_limit_device_disconnected">O dispositivo selecionado será desconectado permanentemente</string>
+    <string name="device_limit_device_replaced">Este dispositivo ocupará seu lugar e será registrado</string>
+    <string name="device_limit_device_to_disconnect">Dispositivo a desconectar:</string>
+    <string name="device_limit_last_access">Último acesso: %1$s</string>
+    <string name="device_limit_yes_disconnect">Sim, Desconectar</string>
+
+    <!-- Account Dialog -->
+    <string name="account_data_title">Dados da Conta</string>
+    <string name="account_change_password">Alterar Senha</string>
+    <string name="account_current_password">Senha Atual</string>
+    <string name="account_new_password">Nova Senha</string>
+    <string name="account_confirm_password">Confirmar Senha</string>
+    <string name="account_passwords_no_match">As senhas não coincidem</string>
+    <string name="account_changing">Alterando…</string>
+    <string name="account_min_length">Mínimo %1$d caracteres</string>
+    <string name="account_email">E-mail</string>
+    <string name="account_active">Ativa</string>
+    <string name="account_inactive">Inativa</string>
+    <string name="account_expires">Expira:</string>
+
+    <!-- Profile Screen -->
+    <string name="profile_username">Nome de usuário</string>
+    <string name="profile_loading">Carregando…</string>
+    <string name="profile_change_password">Alterar senha</string>
+    <string name="profile_update_password">Atualizar sua senha de acesso</string>
+    <string name="profile_subscription_details">Detalhes da assinatura</string>
+    <string name="profile_expires_at">Expira: %1$s</string>
+    <string name="profile_features_title">Recursos:</string>
+    <string name="profile_date_not_available">Data não disponível</string>
+    <string name="profile_renew_subscription">Renovar Assinatura</string>
+    <string name="profile_connected_devices">Dispositivos conectados</string>
+    <string name="profile_last_activity">Última atividade:</string>
+    <string name="profile_rename">Renomear</string>
+    <string name="profile_delete">Excluir</string>
+    <string name="profile_quick_actions">Ações rápidas</string>
+    <string name="profile_clear_history">Limpar histórico</string>
+    <string name="profile_clear_history_desc">Excluir todo o histórico de visualização</string>
+    <string name="profile_export_data">Exportar dados</string>
+    <string name="profile_export_data_desc">Baixar uma cópia dos seus dados</string>
+    <string name="profile_delete_account">Excluir conta</string>
+    <string name="profile_delete_account_desc">Excluir permanentemente sua conta</string>
+    <string name="profile_rename_device">Renomear dispositivo</string>
+    <string name="profile_device_name">Nome do dispositivo</string>
+    <string name="profile_save">Salvar</string>
+    <string name="profile_cancel">Cancelar</string>
+    <string name="profile_delete_device">Excluir dispositivo</string>
+    <string name="profile_delete_device_confirm">Tem certeza de que deseja excluir o dispositivo "%1$s"?</string>
+    <string name="profile_delete_device_action">Excluir</string>
+
+    <!-- Settings -->
+    <string name="settings_customize_experience">Personalize sua experiência</string>
+    <string name="settings_manage_account">Gerencie sua conta e preferências</string>
+    <string name="settings_active_account">Conta ativa</string>
+    <string name="settings_loading_account">Carregando conta…</string>
+    <string name="settings_devices_title">Dispositivos</string>
+    <string name="settings_days_remaining">%1$dd</string>
+    <string name="settings_expired">Expirado</string>
+    <string name="settings_remaining">Restantes</string>
+    <string name="settings_expires">Expira: %1$s</string>
+    <string name="settings_invalid_date">Data inválida</string>
+    <string name="settings_no_expiry_date">Sem data de expiração</string>
+    <string name="settings_device_management">Gerenciamento de dispositivos</string>
+    <string name="settings_active_devices">%1$d de %2$d dispositivos ativos</string>
+
+    <!-- Navigation & Actions -->
+    <string name="nav_clear">Limpar</string>
+    <string name="nav_select">Buscar</string>
+
+    <!-- Player & Video -->
+    <string name="player_unknown_content">Desconhecido</string>
+    <string name="player_error">Erro</string>
+    <string name="player_back">Voltar</string>
+    <string name="player_next">Próximo</string>
+
+    <!-- EPG -->
+    <string name="epg_now">Agora</string>
+    <string name="epg_full_programming_alt">Programação Completa</string>
+
+    <!-- Layout -->
+    <string name="layout_channel_number">2</string>
+    <string name="layout_channel_name">Canal</string>
+
+    <!-- Errors -->
+    <string name="error_url_not_available">URL de transmissão não disponível</string>
+
+
+    <!-- Quality -->
+    <string name="quality_title">Qualidade de Vídeo</string>
+    <string name="quality_no_options">Nenhuma opção de qualidade disponível</string>
+    <string name="quality_auto_description">Ajuste automático baseado na conexão</string>
+    <string name="quality_close">Fechar</string>
+    <string name="quality_selected">Selecionado</string>
+
+    <!-- Audio -->
+    <string name="audio_title">Idioma de Áudio</string>
+    <string name="audio_no_options">Nenhuma faixa de áudio adicional disponível</string>
+    <string name="audio_auto_description">Seleção automática baseada em preferências</string>
+    <string name="audio_close">Fechar</string>
+    <string name="audio_selected">Selecionado</string>
+    <string name="audio_language_prefix">Idioma:</string>
+
+    <!-- EPG -->
+    <string name="epg_title">Guia de Programação</string>
+    <string name="epg_no_data">Sem informação EPG</string>
+    <string name="epg_loading">Carregando programação…</string>
+    <string name="epg_error">Erro ao carregar EPG</string>
+    <string name="epg_no_programs">Nenhum programa disponível</string>
+    <string name="epg_channel_info">Informação do canal</string>
+    <string name="epg_program_details">Detalhes do programa</string>
+    <string name="epg_program_description">Descrição do programa</string>
+    <string name="epg_next_programs">Próximos programas</string>
+    <string name="epg_all_channels">Todos os canais</string>
+    <string name="epg_favorites">Favoritos</string>
+    <string name="epg_search">Buscar programas</string>
+    <string name="epg_no_favorites">Você não tem canais favoritos</string>
+    <string name="epg_add_favorite">Adicionar aos favoritos</string>
+    <string name="epg_remove_favorite">Remover dos favoritos</string>
+    <string name="epg_watch_now">Assistir agora</string>
+    <string name="epg_remind_me">Lembrar-me</string>
+    <string name="epg_program_started">Programa iniciado</string>
+    <string name="epg_program_ending">Programa terminando</string>
+    <string name="epg_time_remaining">%1$d min restantes</string>
+
+    <!-- Live TV Components -->
+    <string name="live_tv_no_epg">EPG não disponível</string>
+    <string name="live_tv_epg_loading">Carregando EPG…</string>
+    <string name="live_tv_channel_search_hint">Buscar canais…</string>
+    <string name="live_tv_channel_search_no_results">Nenhum canal encontrado</string>
+    <string name="live_tv_channel_search_no_match">Nenhum canal corresponde a "%1$s"</string>
+    <string name="live_tv_channel_clear">Limpar</string>
+    <string name="live_tv_channel_count">%1$d de %2$d canais</string>
+    <string name="live_tv_favorites_title">Canais Favoritos</string>
+    <string name="live_tv_favorites_count">%1$d canais salvos</string>
+    <string name="live_tv_favorites_empty">Você não tem canais favoritos</string>
+
+    <!-- Device Registration -->
+    <string name="device_registration_title">Registro de Dispositivo</string>
+    <string name="device_registration_subtitle">Registre seu dispositivo para começar</string>
+    <string name="device_info_title">Informação do Dispositivo</string>
+    <string name="device_system_info_title">Informação do Sistema</string>
+    <string name="device_model_label">Modelo</string>
+    <string name="device_android_label">Android</string>
+    <string name="device_manufacturer_label">Fabricante</string>
+    <string name="device_register_button">Registrar Dispositivo</string>
+    <string name="device_skip_temp">Ir para Conteúdo (Temporário)</string>
+    <string name="device_unknown">Desconhecido</string>
+    <string name="device_type_label">Tipo:</string>
+    <string name="device_model_label_old">Modelo:</string>
+    <string name="device_android_label_old">Android:</string>
+    <string name="device_type_android_tv">Android TV</string>
+
+    <!-- Content & Media -->
+    <string name="content_hd_label">HD</string>
+    <string name="content_seasons_label">Temporadas</string>
+    <string name="content_episodes_count">%1$d episódios</string>
+    <string name="content_rating_format">★ %1$s</string>
+
+    <!-- Favorites -->
+    <string name="favorites_hint">Marque seus canais favoritos para acesso rápido</string>
+    <string name="favorites_explore">Explorar canais</string>
+
+    <!-- Live Content -->
+    <string name="live_sports_title">Esportes Ao Vivo</string>
+
+    <!-- Navigation -->
+    <string name="nav_previous">Anterior</string>
+    <string name="nav_episode_info">Episódio %1$d de %2$d</string>
+
+    <!-- Search -->
+
+    <!-- Profile -->
+    <string name="profile_stats_title">Estatísticas da conta</string>
+    <string name="profile_logout_title">Sair</string>
+    <string name="profile_logout_message">Isso fará logout neste dispositivo</string>
+    <string name="password_mismatch">As senhas não coincidem</string>
+
+    <!-- Device Management -->
+    <string name="device_management_title">Gerenciamento de Dispositivos</string>
+    <string name="device_loading">Carregando dispositivos…</string>
+    <string name="device_no_devices">Nenhum dispositivo registrado</string>
+    <string name="devices_registered_count">%1$d de %2$d dispositivos registrados</string>
+    <string name="devices_empty_message">Os dispositivos aparecerão aqui quando forem registrados</string>
+    <string name="current_device_label">Este dispositivo</string>
+    <string name="last_access_prefix">Último acesso:</string>
+    <string name="delete_device_title">Excluir Dispositivo</string>
+    <string name="delete_device_confirm">Tem certeza de que deseja excluir este dispositivo?</string>
+
+    <!-- Welcome & Activation -->
+    <string name="welcome_to_iptv">Bem-vindo ao IPTV</string>
+    <string name="register_device_to_continue">Registre seu dispositivo para começar</string>
+    <string name="activation_code_title">Código de Ativação</string>
+    <string name="activating_device">Ativando…</string>
+    <string name="activate_device_button">Ativar Dispositivo</string>
+    <string name="need_help">Precisa de ajuda?</string>
+    <string name="activation_code_info">O código de ativação tem 6 dígitos</string>
+    <string name="verify_code_correct">Verifique se o código está correto</string>
+    <string name="contact_support_if_issues">Se tiver problemas, entre em contato com o suporte</string>
+    <string name="activating_device_long">Ativando dispositivo…</string>
+    <string name="please_wait">Por favor aguarde</string>
+    <string name="registering_device_long">Registrando dispositivo…</string>
+    <string name="replace_device_button">Substituir Dispositivo</string>
+    <string name="devices_label">Dispositivos</string>
+    <string name="devices_count">%1$d/%2$d</string>
+
+    <!-- Device Selection -->
+    <string name="select_device_to_replace">Selecione o dispositivo que deseja substituir com este novo dispositivo:</string>
+    <string name="device_type_prefix">Tipo:</string>
+    <string name="device_last_used_prefix">Último uso:</string>
+
+    <!-- Device Registration Features -->
+    <string name="device_limit_reached_message">Limite atingido. Substitua um dispositivo existente.</string>
+    <string name="device_spaces_available">Você tem %1$d espaços disponíveis.</string>
+    <string name="device_registration_logo_description">@string/branding_name</string>
+    <string name="device_registration_feature_hd">Conteúdo em HD/4K</string>
+    <string name="device_registration_feature_devices">Múltiplos Dispositivos</string>
+    <string name="device_registration_feature_security">Streaming Seguro</string>
+
+    <!-- Device Selection Screen -->
+    <string name="device_selection_title">Selecionar Dispositivo para Substituir</string>
+    <string name="device_selection_back_description">Voltar</string>
+    <string name="device_selection_unknown_date">Desconhecido</string>
+    <string name="device_selection_replace_description">Substituir</string>
+    <string name="device_selection_device_description">Dispositivo</string>
+
+    <!-- Device Management Screen -->
+    <string name="device_management_back_description">Voltar</string>
+    <string name="device_management_refresh_description">Atualizar</string>
+    <string name="device_management_delete_description">Eliminar dispositivo</string>
+    <string name="device_management_device_type_android">Android</string>
+    <string name="device_management_device_type_ios">iOS</string>
+    <string name="device_management_device_type_web">Navegador Web</string>
+    <string name="device_management_device_type_tv">Smart TV</string>
+    <string name="device_management_last_active_prefix">em</string>
+
+    <!-- Device Management Dialog -->
+    <string name="device_management_delete_device_title">Excluir Dispositivo</string>
+    <string name="device_management_delete_device_confirm">Tem certeza de que deseja excluir este dispositivo?</string>
+    <string name="device_management_delete_device_warning">Esta ação não pode ser desfeita. O dispositivo precisará ser registrado novamente para acessar a aplicação.</string>
+    <string name="device_management_delete_device_action">Excluir</string>
+    <string name="device_management_delete_device_cancel">Cancelar</string>
+
+    <!-- Favorites Manager -->
+    <string name="favorites_remove_description">Remover dos favoritos</string>
+    <string name="favorites_add_description">Adicionar aos favoritos</string>
+    <string name="favorites_category_title">Favoritos</string>
+
+    <!-- Channel Search Bar -->
+    <string name="channel_search_placeholder">Buscar canais…</string>
+    <string name="channel_search_description">Buscar</string>
+    <string name="channel_clear_description">Limpar</string>
+    <string name="channel_category_all">Todos</string>
+    <string name="channel_category_news">Notícias</string>
+    <string name="channel_category_sports">Esportes</string>
+    <string name="channel_category_entertainment">Entretenimento</string>
+    <string name="channel_category_movies">Filmes</string>
+    <string name="channel_category_kids">Infantil</string>
+    <string name="channel_quality_all">Todas</string>
+    <string name="channel_quality_hd">HD</string>
+    <string name="channel_quality_4k">4K</string>
+    <string name="channel_quality_sd">SD</string>
+    <string name="channel_category_title">Categoria</string>
+    <string name="channel_quality_title">Qualidade</string>
+    <string name="channel_search_results">Resultados para "%1$s"</string>
+    <string name="channel_search_all_channels">Todos os canais</string>
+
+    <!-- Device Limit Dialog -->
+    <string name="device_limit_replacing_message">Substituindo dispositivo…</string>
+    <string name="device_limit_waiting_message">Isso pode levar alguns segundos</string>
+    <string name="device_limit_selected_description">Selecionado</string>
+
+    <!-- Detail Screen -->
+    <string name="detail_back_description">Voltar</string>
+    <string name="detail_no_description">Sem descrição disponível</string>
+    <string name="detail_season_prefix">T</string>
+    <string name="detail_season_content_description">Temporada %1$d</string>
+
+    <!-- Home Screen -->
+    <string name="home_content_type_live">AO VIVO</string>
+    <string name="home_content_type_hd">HD</string>
+    <string name="home_play_description">Reproduzir</string>
+
+    <!-- Search Screen -->
+    <string name="search_placeholder_screen">Buscar conteúdo…</string>
+
+    <!-- Search Result Card -->
+    <string name="search_watch_live">VER AO VIVO</string>
+    <string name="search_watch_series">VER SÉRIE</string>
+    <string name="search_view_details">VER DETALHES</string>
+    <string name="search_content_type_movie">FILME</string>
+    <string name="search_content_type_series">SÉRIE</string>
+    <string name="search_content_type_live">AO VIVO</string>
+    <string name="search_content_type_episode">EPISÓDIO</string>
+
+    <!-- Player -->
+    <string name="player_stream_url_not_available">URL de transmissão não disponível</string>
+
+    <!-- Password Management -->
+    <string name="password_current">Senha atual</string>
+    <string name="password_show">Mostrar senha</string>
+    <string name="password_hide">Ocultar senha</string>
+    <string name="password_new">Nova senha</string>
+    <string name="password_confirm">Confirmar nova senha</string>
+    <string name="password_empty">Digite sua senha atual</string>
+    <string name="password_new_empty">Digite uma nova senha</string>
+    <string name="password_min_length">A nova senha deve ter pelo menos 6 caracteres</string>
+    <string name="password_mismatch_validation">As senhas não coincidem</string>
+    <string name="password_changed_success">Senha alterada com sucesso</string>
+    <string name="password_empty_error">A senha não pode estar vazia</string>
+
+    <!-- Authentication Errors -->
+    <string name="auth_credentials_invalid">Credenciais incorretas. Verifique seu usuário e senha.</string>
+    <string name="auth_enter_credentials">Por favor digite usuário e senha</string>
+
+
+    <!-- Content Validation -->
+    <string name="content_id_empty_error">ID do conteúdo não pode estar vazio</string>
+    <string name="progress_range_error">Progresso deve estar entre 0.0 e 1.0</string>
+    <string name="duration_negative_error">Duração não pode ser negativa</string>
+
+    <!-- Request Validation -->
+    <string name="request_invalid_data">Solicitação inválida. Verifique os dados inseridos.</string>
+
+    <!-- Generic Errors -->
+    <string name="error_unknown_generic">Erro desconhecido</string>
+
+    <!-- HTTP Error Messages -->
+    <string name="error_http_400">Solicitação inválida. Verifique os dados inseridos.</string>
+    <string name="error_http_401">Não autorizado. Faça login novamente.</string>
+    <string name="error_http_403">Acesso negado</string>
+    <string name="error_http_404">Conteúdo não encontrado</string>
+    <string name="error_http_408">Tempo de espera esgotado</string>
+    <string name="error_http_429">Demasiadas solicitações. Tente novamente mais tarde.</string>
+    <string name="error_http_500">Erro do servidor. Tente novamente mais tarde.</string>
+    <string name="error_http_502_503">Serviço indisponível</string>
+    <string name="error_network_generic">Erro de rede</string>
+
+    <!-- Network Error Messages -->
+    <string name="error_no_internet">Sem conexão com a internet</string>
+    <string name="error_connection_timeout">Tempo de espera esgotado</string>
+    <string name="error_connection_generic">Erro de conexão</string>
+
+    <!-- Exception Messages -->
+    <string name="error_empty_response">Resposta vazia do servidor</string>
+    <string name="error_failed_user_profile">Falha ao obter perfil do usuário</string>
+    <string name="error_network_message">Erro de rede</string>
+    <string name="error_failed_update_profile">Falha ao atualizar perfil</string>
+    <string name="error_password_change_success">Senha alterada com sucesso</string>
+    <string name="error_failed_password_change">Falha ao alterar senha</string>
+
+    <!-- Authentication Repository Errors -->
+    <string name="error_device_activation_not_implemented">Ativação do dispositivo ainda não implementada</string>
+    <string name="error_no_refresh_token">Nenhum token de atualização disponível</string>
+    <string name="error_token_refresh_failed">Falha na atualização do token</string>
+    <string name="error_token_refresh_failed_with_message">Falha na atualização do token: %1$s</string>
+
+    <!-- Logout -->
+    <string name="logout_success">Sessão encerrada com sucesso</string>
+    <string name="logout_loading">Encerrando sessão…</string>
+    <string name="logout_button">Sair</string>
+
+    <!-- Additional Missing Translations -->
+    <string name="account_logout">Sair</string>
+    <string name="auth_brand_description">Plataforma Premium de Streaming</string>
+    <string name="auth_brand_name">@string/branding_name</string>
+    <string name="auth_enter_credentials_continue">Por favor digite usuário e senha</string>
+    <string name="auth_password">Senha</string>
+    <string name="auth_sign_in">Entrar</string>
+    <string name="auth_sign_in_button">Entrar</string>
+    <string name="channel_press_back">Pressione ← para voltar aos canais</string>
+    <string name="channels_no_epg_available">Sem informações de programação</string>
+    <string name="channel_starting">Iniciando canal…</string>
+    <string name="content_cast">Elenco</string>
+    <string name="content_director">Diretor</string>
+    <string name="content_episodes">Episódios</string>
+    <string name="content_episode_short">E</string>
+    <string name="content_genres">Gêneros</string>
+    <string name="content_no_image">Sem imagem</string>
+    <string name="content_rating_star">★ %1$s</string>
+    <string name="content_related">Conteúdo relacionado</string>
+    <string name="content_synopsis">Sinopse</string>
+    <string name="detail_no_description_alt">Sem descrição disponível</string>
+    <string name="detail_season">Temporada</string>
+    <string name="detail_seasons">Temporadas</string>
+    <string name="detail_trailer">Reboque</string>
+    <string name="detail_watch_now">Assistir agora</string>
+    <string name="epg_full_programming">Programação Completa</string>
+    <string name="epg_navigation_hint">↑↓ Navegar • OK Ver</string>
+    <string name="epg_not_available">EPG não disponível</string>
+    <string name="error_device_activation">Erro ao ativar dispositivo</string>
+    <string name="error_device_registration">Erro ao registrar dispositivo</string>
+    <string name="error_incompatible_content">Este conteúdo não é compatível com o reprodutor de episódios</string>
+    <string name="error_loading_content">Erro ao carregar conteúdo: %1$s</string>
+    <string name="error_loading_player">Erro ao carregar reprodutor: %1$s</string>
+    <string name="live_tv_current_program">Agora:</string>
+    <string name="live_tv_next_program">Próximo:</string>
+    <string name="nav_back">Voltar</string>
+    <string name="player_episode_count">Episódio %1$d de %2$d</string>
+    <string name="player_next_episode_alt">Próximo episódio</string>
+    <string name="player_previous">Anterior</string>
+    <string name="player_previous_episode">Episódio anterior</string>
+    <string name="player_select_language">Selecionar idioma</string>
+    <string name="player_select_quality">Selecionar qualidade</string>
+    <string name="press_ok_to_watch">Pressione OK para assistir</string>
+    <string name="profile_subscription">Assinatura</string>
+    <string name="program_position">%1$d/%2$d</string>
+    <string name="program_progress">Progresso do programa</string>
+    <string name="program_remind">Lembrar</string>
+    <string name="programs_count">%1$d programa(s)</string>
+    <string name="program_time_range">%1$s - %2$s</string>
+    <string name="program_up_next">A seguir</string>
+    <string name="program_watch_now">Assistir agora</string>
+    <string name="settings_change_password">Alterar senha</string>
+    <string name="settings_loading">Carregando…</string>
+    <string name="settings_subscription_details">Detalhes da assinatura</string>
+    <string name="settings_update_password_subtitle">Atualize sua senha de acesso</string>
+    <string name="settings_username">Nome de usuário</string>
+
+    <!-- Session Management -->
+    <string name="session_expired">Sessão expirada. Faça login novamente.</string>
+    <string name="session_unauthorized">Não autorizado. Faça login novamente.</string>
+
+    <!-- Input Prompts -->
+    <string name="input_enter">Digite</string>
+    <string name="input_channel_number">Digite o número do canal</string>
+    <string name="input_verify_data">Verifique os dados inseridos</string>
+
+    <!-- Names and Users -->
+    <string name="name_device">Nome do dispositivo</string>
+    <string name="name_username">Nome de usuário</string>
+    <string name="name_device_empty">O nome do dispositivo não pode estar vazio</string>
+    <string name="name_device_min_length">O nome do dispositivo deve ter pelo menos 3 caracteres</string>
+    <string name="name_device_updated">Nome do dispositivo atualizado</string>
+    <string name="name_username_empty">O nome de usuário não pode estar vazio</string>
+
+    <!-- Platform -->
+    <string name="platform_premium_streaming">Plataforma Premium de Streaming</string>
+
+    <!-- Live TV Channel Selector -->
+    <string name="all">Todos</string>
+    <string name="category_entertainment">Entretenimento</string>
+    <string name="category_sports">Esportes</string>
+    <string name="category_news">Notícias</string>
+    <string name="category_movies">Filmes</string>
+    <string name="category_series">Séries</string>
+    <string name="category_music">Música</string>
+    <string name="category_kids">Infantil</string>
+    <string name="category_documentary">Documentários</string>
+    <string name="category_lifestyle">Estilo de vida</string>
+    <string name="category_culture_education">Cultura e Educação</string>
+    <string name="category_international">Internacional</string>
+    <string name="channel_now">AGORA</string>
+    <string name="channel_next">PRÓXIMO</string>
+
+    <!-- Content Categories -->
+    <string name="category_load_more">Carregar mais conteúdo</string>
+    <string name="category_empty_title">Sem conteúdo</string>
+    <string name="category_empty_message">Nenhum conteúdo disponível na categoria "%1$s"</string>
+    <string name="sort_title">Título</string>
+    <string name="sort_year">Ano</string>
+    <string name="sort_rating">Avaliação</string>
+    <string name="sort_date_added">Data adicionada</string>
+
+    <!-- Search -->
+    <string name="search_placeholder_generic">Buscar…</string>
+    <string name="search_description">Buscar</string>
+    <string name="search_title">Buscar</string>
+
+    <!-- Availability -->
+    <string name="service_unavailable">Serviço indisponível</string>
+    <string name="service_temporarily_unavailable">Serviço temporariamente indisponível</string>
+
+    <!-- Player Navigation -->
+    <string name="player_next_episode">Próximo episódio</string>
+    <string name="player_next_with_title">Próximo: %1$s</string>
+
+    <!-- UI Elements -->
+    <string name="seasons_title">Temporadas</string>
+    <string name="play_button">Reproduzir</string>
+    <string name="close_button">Fechar</string>
+    <string name="pause_button">Pausar</string>
+
+    <!-- Access -->
+    <string name="quick_access">Acesso Rápido</string>
+    <string name="quick_access_description">Marque seus canais favoritos para acesso rápido</string>
+    <string name="last_access">Último acesso: %1$s</string>
+
+    <!-- Device Registration -->
+    <string name="devices_registered_count_alt">%1$d de %2$d dispositivos registrados</string>
+
+    <!-- Buttons -->
+    <string name="button_cancel">Cancelar</string>
+    <string name="button_change">Alterar</string>
+
+    <!-- Splash Screen Messages -->
+    <string name="splash_welcome_back">Bem-vindo de volta…</string>
+    <string name="splash_redirecting_login">Redirecionando para o login…</string>
+    <string name="splash_verifying_auth">Verificando autenticação…</string>
+
+    <!-- Dialog Messages -->
+    <string name="dialog_cancel">Cancelar</string>
+    <string name="dialog_confirm">Confirmar</string>
+    <string name="dialog_confirm_replacement">Confirmar Substituição</string>
+
+    <!-- Content Categories -->
+    <string name="category_movies_vod">VOD - Filmes</string>
+
+    <!-- Home Screen Sections -->
+    <string name="section_featured">Destaque</string>
+    <string name="section_movies">Filmes</string>
+    <string name="section_series">Séries</string>
+    <string name="section_kids">Crianças</string>
+
+    <!-- Search Filters -->
+    <string name="search_filters_title">Filtros de Pesquisa</string>
+    <string name="search_clear_filters">Limpar filtros</string>
+    <string name="search_content_type">Tipo de Conteúdo</string>
+    <string name="search_categories">Categorias</string>
+    <string name="search_genres">Gêneros</string>
+    <string name="search_year">Ano</string>
+    <string name="search_country">País</string>
+    <string name="search_all">Todos</string>
+    <string name="search_all_female">Todas</string>
+
+    <!-- Genres -->
+    <string name="genre_action">Ação</string>
+    <string name="genre_comedy">Comédia</string>
+    <string name="genre_drama">Drama</string>
+    <string name="genre_horror">Terror</string>
+    <string name="genre_sci_fi">Ficção Científica</string>
+    <string name="genre_documentary">Documentários</string>
+    <string name="genre_sports">Esportes</string>
+    <string name="genre_news">Notícias</string>
+    <string name="genre_adventure">Aventura</string>
+    <string name="genre_animation">Animação</string>
+    <string name="genre_biography">Biografia</string>
+    <string name="genre_crime">Crime</string>
+    <string name="genre_family">Família</string>
+    <string name="genre_fantasy">Fantasia</string>
+    <string name="genre_history">História</string>
+    <string name="genre_music">Música</string>
+    <string name="genre_mystery">Mistério</string>
+    <string name="genre_romance">Romance</string>
+    <string name="genre_thriller">Suspense</string>
+    <string name="genre_war">Guerra</string>
+    <string name="genre_western">Faroeste</string>
+
+    <!-- Content Descriptions -->
+    <string name="content_desc_back">Voltar</string>
+
+
+
+    <!-- Activation -->
+    <string name="activation_code">Código de Ativação</string>
+
+    <!-- Device Input -->
+    <string name="device_name_label">Nome do Dispositivo</string>
+    <string name="device_name_placeholder">Ex: Minha Android TV</string>
+
+    <!-- Temporary Content Access -->
+    <string name="temp_content_access">Ir ao Conteúdo (Temporário)</string>
+
+    <!-- Search -->
+    <string name="search_action_movies">Buscar filmes de ação</string>
+    <string name="search_year_movies">Buscar filmes de 2023</string>
+    <string name="search_kids_content">Buscar conteúdo infantil</string>
+    <string name="search_comedy_series">Mostrar séries de comédia</string>
+    <string name="search_documentaries">Encontrar documentários</string>
+    <string name="search_sports_channels">Ver canais de esportes</string>
+    <string name="search_drama_series">Mostrar séries de drama</string>
+    <string name="search_horror_movies">Encontrar filmes de terror</string>
+    <string name="search_news_channels">Ver canais de notícias</string>
+    <string name="search_romantic_movies">Mostrar filmes românticos</string>
+    <string name="music_header_subtitle">Descubra playlists e mixes personalizados</string>
+    <string name="music_quick_actions_title">Comece a tocar</string>
+    <string name="music_quick_actions_subtitle">Escolha uma ação rápida para ouvir sua música agora</string>
+    <string name="music_now_playing_label">Reproduzindo agora</string>
+    <string name="music_search_action">Pesquisar artista</string>
+    
+    <!-- Música -->
+    <string name="music_title">Música</string>
+    <string name="music_recent_tracks">Reproduzido recentemente</string>
+    <string name="music_albums">Álbuns</string>
+    <string name="music_album">Álbum</string>
+    <string name="music_artists">Artistas</string>
+    <string name="music_artist">Artista</string>
+    <string name="music_play">Reproduzir</string>
+    <string name="music_pause">Pausar</string>
+    <string name="music_player_previous">Anterior</string>
+    <string name="music_player_next">Próxima</string>
+    <string name="music_play_all">Reproduzir tudo</string>
+    <string name="music_favorited">Nos favoritos</string>
+    <string name="music_add_favorite">Adicionar aos favoritos</string>
+    <string name="music_track_count">%1$d músicas</string>
+    <string name="music_top_tracks">Faixas em destaque</string>
+    <string name="music_artist_album_count">%1$d álbuns</string>
+    <string name="music_stats_title">Resumo da sua biblioteca</string>
+    <string name="music_stats_tracks">Músicas</string>
+    <string name="music_stats_albums">Álbuns</string>
+    <string name="music_stats_artists">Artistas</string>
+    <string name="music_stats_storage">Armazenamento</string>
+    <string name="music_hero_subtitle">Sua biblioteca musical sempre pronta.</string>
+    <string name="music_hero_placeholder">Use "Reproduzir tudo" ou escolha uma faixa para começar.</string>
+    <string name="common_back">Voltar</string>
+    <string name="common_close">Fechar</string>
+    <string name="common_retry">Tentar novamente</string>
+    <string name="common_refresh">Atualizar</string>
+    <string name="music_playing">Reproduzindo</string>
+    <string name="music_no_track">Nenhuma faixa selecionada</string>
+    <string name="music_shuffle">Aleatório</string>
+    <string name="music_previous">Anterior</string>
+    <string name="music_next">Próxima</string>
+    <string name="music_repeat">Repetir</string>
+    <string name="music_queue">Fila</string>
+    <string name="music_queue_count">%1$d na fila</string>
+
+    <!-- Device Management Errors -->
+    <string name="error_no_credentials">Nenhuma credencial disponível. Faça login novamente.</string>
+    <string name="error_device_management_failed">Falha ao preparar gerenciamento de dispositivos</string>
+    <string name="error_unexpected_state">Estado inesperado</string>
+    <string name="error_unexpected_during_registration">Estado inesperado durante o registro</string>
+    <string name="error_unexpected_during_removal">Estado inesperado durante a remoção</string>
+    <string name="error_unexpected_try_again">Erro inesperado. Por favor, tente novamente.</string>
+
+    <!-- Missing strings - Player -->
+    <string name="player_select_audio">Selecionar áudio</string>
+    <string name="player_select_subtitles">Selecionar legendas</string>
+    <string name="player_speed">Velocidade</string>
+
+    <!-- Missing strings - Common -->
+    <string name="change_date">Alterar data</string>
+    <string name="detail_overview">Visão geral</string>
+    <string name="disabled">Desativado</string>
+    <string name="enabled">Ativado</string>
+    <string name="error_unknown">Erro desconhecido</string>
+    <string name="open_channel_list">Abrir lista de canais</string>
+
+    <!-- Missing strings - EPG -->
+    <string name="epg_auto_update">O guia de programação será atualizado automaticamente</string>
+    <string name="epg_error_loading">Erro ao carregar o guia de programação</string>
+
+    <!-- Missing strings - Scanner (Admin) -->
+    <string name="scan_add_subs">Adicionar legendas externas se encontradas</string>
+    <string name="scan_duplicate_policy">Política de duplicados (omit|replace|allow)</string>
+    <string name="scan_episodes_created">Episódios criados: %1$d</string>
+    <string name="scan_folders_title">Admin: Escanear pastas</string>
+    <string name="scan_logs">Registros:</string>
+    <string name="scan_media_type">Mídia (movies|series|mixed)</string>
+    <string name="scan_movies_created">Filmes criados: %1$d</string>
+    <string name="scan_replaced">Substituídos: %1$d</string>
+    <string name="scan_results">Resultados:</string>
+    <string name="scan_root_path">Caminho raiz (servidor)</string>
+    <string name="scan_completed_items">Varredura concluída: %1$d itens processados</string>
+    <string name="scan_root_path_required">O caminho raiz é obrigatório</string>
+    <string name="scan_scanning_button">Escaneando…</string>
+    <string name="scan_series_created">Séries criadas: %1$d</string>
+    <string name="scan_skipped">Ignorados: %1$d</string>
+    <string name="scan_start_button">Iniciar Escaneamento</string>
+    <string name="scan_subtitles_added">Legendas adicionadas: %1$d</string>
+    <string name="epg_next">PRÓXIMO</string>
+    <string name="channel_prefix">Canais: </string>
+    <string name="no_program_info">Sem informações do programa</string>
+    <string name="no_upcoming_info">Sem informações futuras</string>
+    <string name="pip_preview">Prévia PiP</string>
+    <string name="categories_all">Todos</string>
+    <string name="live_channels_title">Canais ao Vivo</string>
+    
+    <!-- Updates -->
+    <string name="update_available">Atualização Disponível</string>
+    <string name="update_new_version">Nova versão %1$s disponível</string>
+    <string name="update_current_version">Versão atual: %1$s</string>
+    <string name="update_download">Baixar</string>
+    <string name="update_later">Depois</string>
+    <string name="update_checking">Verificando atualizações…</string>
+    <string name="update_no_updates">Você tem a versão mais recente</string>
+    <string name="update_error">Erro ao verificar atualizações</string>
+    
+    <!-- Subtitles -->
+    <string name="subtitles_title">Legendas</string>
+    <string name="subtitles_off">Desativadas</string>
+    <string name="subtitles_auto">Automático</string>
+    <string name="subtitles_no_options">Nenhuma legenda disponível</string>
+    <string name="subtitles_close">Fechar</string>
+    <string name="subtitles_selected">Selecionado</string>
+    <string name="subtitles_language_prefix">Idioma:</string>
+    
+    <!-- Profile / Device -->
+    <string name="profile_confirm_delete_device_title">Remover Dispositivo</string>
+    <string name="profile_confirm_delete_device_message">Tem certeza de que deseja remover este dispositivo? Você precisará fazer login novamente.</string>
+    <string name="common_delete">Excluir</string>
+    
+    <!-- Missing strings (fallback to English) -->
+    <string name="player_autoplay">Reprodução automática</string>
+    <string name="profile_id_format">ID: %1$s</string>
+    <string name="search_popular_searches">Pesquisas populares</string>
+    <string name="search_listening">Audição…</string>
+    <string name="common_watched">WATCHED</string>
+    <string name="common_in_progress">IN PROGRESS</string>
+    <string name="security_debug_detected">Depuração de aplicativos detectados</string>
+    <string name="security_debug_description">Por motivos de segurança, este aplicativo não pode ser executado quando ferramentas de depuração ou ferramentas de interceptação de rede estão instaladas.</string>
+    <string name="security_detected_apps">Aplicativos detectados:</string>
+    <string name="security_how_to_use">Para usar este aplicativo:</string>
+    <string name="security_step_uninstall">1. Desinstale os aplicativos detectados</string>
+    <string name="security_exit_app">Sair do aplicativo</string>
+    <string name="security_footer">Esta medida protege o conteúdo e garante uma experiência segura para todos os usuários.</string>
+    <string name="series_seasons_format">%1$d temporada%2$s</string>
+    <string name="series_season_abbr">S%1$d</string>
+    <string name="series_episode_detail_format">S%1$d:E%2$d • %3$s</string>
+    <string name="series_episode_label">Episódio %1$d</string>
+    <string name="update_new_available">Nova atualização disponível</string>
+    <string name="common_later">Mais tarde</string>
+    <string name="update_now">Atualizar agora</string>
+    <string name="common_hd">HD</string>
+    <string name="common_more_options">Mais opções</string>
+    <string name="common_episodes_label">Episódios</string>
+    <string name="common_no_episodes_available">Nenhum episódio disponível</string>
+    <string name="security_step_restart">2. Reinicie o aplicativo</string>
+    <string name="security_step_enjoy">3. Aproveite o conteúdo com segurança</string>
+    <string name="common_dot_separator">•</string>
+    <string name="common_dot_separator_with_text">• %1$s</string>
+    <string name="profile_devices_count_format">%1$d/5</string>
+    <string name="profile_edit_profile">Editar perfil</string>
+    <string name="settings_title_alt">Configurações</string>
+    <string name="profile_quick_settings">Configurações rápidas</string>
+    <string name="profile_logout">Sair</string>
+    <string name="profile_confirm_logout_title">Confirmar logout</string>
+    <string name="profile_confirm_logout_message">Tem certeza de que deseja sair?</string>
+    <string name="common_cancel">Cancelar</string>
+    <string name="categories_header">Categorias</string>
+    <string name="player_position_duration">%1$s / %2$s</string>
+    <string name="update_required">Atualização necessária</string>
+    <string name="update_version_label">Versão:</string>
+    <string name="update_size_label">Tamanho: %1$s</string>
+    <string name="update_whats_new">O que há de novo:</string>
+    <string name="update_downloading">Baixando… %1$d%%</string>
+    <string name="update_install_now">Instale agora</string>
+    <string name="update_postpone">Lembrar mais tarde</string>
+    <string name="update_mandatory_message">Esta atualização é necessária para continuar usando o aplicativo.</string>
+    <string name="update_check_title">Verifique se há atualizações</string>
+    <string name="update_check_subtitle">Verifique se uma nova versão está disponível</string>
+    <string name="update_up_to_date">Você está atualizado!</string>
+    <string name="update_up_to_date_message">A versão %1$s é a versão mais recente.</string>
+    <string name="update_preparing">Preparando download…</string>
+    <string name="update_install_prompt">O prompt de instalação aparecerá em breve</string>
+    <string name="update_downloading_wait">Por favor, aguarde…</string>
+
+
+    <!-- Added for locale completeness -->
+    <string name="category_content_play_description">Reproduzir</string>
+    <string name="category_sort_by">Ordenar por</string>
+    <string name="category_filter_by">Filtrar por</string>
+    <string name="category_filter_all">Todos</string>
+    <string name="category_filter_recent">Recentes</string>
+    <string name="category_filter_popular">Populares</string>
+    <string name="category_filter_top_rated">Mais bem avaliados</string>
+    <string name="category_sort_description">Opções de ordenação</string>
+    <string name="category_sort_ascending">Ordem crescente</string>
+    <string name="category_sort_descending">Ordem decrescente</string>
+    <string name="category_grid_size_description">Tamanho da grade</string>
+    <string name="category_clear_search_description">Limpar pesquisa</string>
+    <string name="quick_access_favorites">Favoritos</string>
+    <string name="quick_access_recently_watched">Assistidos recentemente</string>
+    <string name="quick_access_trending">Em alta</string>
+    <string name="quick_access_see_all">Ver tudo</string>
+    <string name="quick_access_actions_title">Ações rápidas</string>
+    <string name="quick_access_customize_experience">Personalize sua experiência</string>
+    <string name="quick_access_setup_favorites">Configurar favoritos</string>
+    <string name="quick_action_guide_tv">Guia de TV</string>
+    <string name="quick_action_search">Pesquisar</string>
+    <string name="quick_action_settings">Configurações</string>
+    <string name="quick_action_help">Ajuda</string>
+
+
+    <string name="action_mute">Mute</string>
+    <string name="action_unmute">Unmute</string>
+    <string name="profile_history_cleared">Watch history cleared</string>
+    <string name="profile_device_removed_success">Device removed successfully</string>
+    <string name="device_limit_select_device_prompt">Select a device</string>
+    <string name="device_type_android">Android</string>
+    <string name="device_type_ios">iOS</string>
+    <string name="device_type_web_browser">Web Browser</string>
+    <string name="device_type_smart_tv">Smart TV</string>
+    <string name="nav_streaming_tagline">STREAMING</string>
+    <string name="nav_premium_streaming">Premium Streaming</string>
+    <string name="nav_premium_badge">Premium</string>
+    <string name="error_loading_events">Error loading events</string>
+    <string name="splash_premium_content_platform">Premium Content Platform</string>
+    <string name="emulator_status_title">Device Status</string>
+    <string name="emulator_status_device_type_label">Device type:</string>
+    <string name="emulator_status_emulator">Emulator</string>
+    <string name="emulator_status_real_device">Real Device</string>
+    <string name="emulator_status_emulator_type_label">Emulator type:</string>
+    <string name="emulator_type_bluestacks">BlueStacks</string>
+    <string name="emulator_type_genymotion">Genymotion</string>
+    <string name="emulator_type_android_sdk">Android SDK</string>
+    <string name="emulator_type_unknown">Unknown</string>
+    <string name="emulator_status_device_id_label">Device ID:</string>
+    <string name="emulator_status_detected_title">Emulator Detected</string>
+    <string name="emulator_status_detected_message">You are using an emulator. Make sure your account has emulator access enabled.</string>
+    <string name="emulator_status_authentic_device">Authentic Android device detected</string>
+
+</resources>

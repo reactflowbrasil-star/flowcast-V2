@@ -1,0 +1,24 @@
+{
+  "title": "Zakázané zariadenia ({{count}})",
+  "empty": {
+    "title": "Žiadne zakázané zariadenia",
+    "description": "Všetko čisté. Momentálne nie sú žiadne zariadenia zakázané."
+  },
+  "table": {
+    "username": "Používateľ",
+    "deviceId": "ID zariadenia",
+    "blacklistedAt": "Zakázané dňa",
+    "actions": "Akcie"
+  },
+  "actions": {
+    "remove": "Odstrániť zo zákazu"
+  },
+  "notifications": {
+    "blacklist": {
+      "errorLoading": "Chyba pri načítaní zakázaných zariadení",
+      "confirmRemove": "Odstrániť zariadenie \"{{device}}\" používateľa {{user}} z čiernej listiny?",
+      "removed": "Zariadenie odstránené z čiernej listiny",
+      "removeFailed": "Nepodarilo sa odstrániť zariadenie z čiernej listiny"
+    }
+  }
+}

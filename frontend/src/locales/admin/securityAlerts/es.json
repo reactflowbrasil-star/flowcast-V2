@@ -1,0 +1,58 @@
+{
+  "securityAlerts": {
+    "title": "Alertas de seguridad",
+    "subtitle": "Monitorea incidentes de seguridad y gestiona baneos",
+    "noAlerts": "No hay alertas de seguridad. Todo funciona con normalidad.",
+    "viewDetails": "Ver detalles",
+    "dismiss": "Descartar",
+    "severity": {
+      "low": "Baja",
+      "medium": "Media",
+      "high": "Alta",
+      "critical": "Crítica"
+    },
+    "filterBy": {
+      "type": "Filtrar por tipo",
+      "dateRange": "Rango de fechas",
+      "status": "Estado"
+    },
+    "actions": {
+      "investigate": "Investigar",
+      "banUser": "Bloquear usuario",
+      "unbanUser": "Desbloquear usuario",
+      "cleanupExpiredBans": "Limpiar bloqueos expirados",
+      "createManualBan": "Crear bloqueo manual"
+    },
+    "cards": {
+      "totalIncidents": "Incidentes totales",
+      "todaysIncidents": "Incidentes de hoy",
+      "activeBans": "Bloqueos activos",
+      "permanentBans": "Bloqueos permanentes",
+      "blacklistedDevices": "Dispositivos en lista negra"
+    },
+    "confirmDelete": "¿Eliminar esta alerta? Esta acción no se puede deshacer.",
+    "noPermission": "No tienes permiso para realizar esta acción.",
+    "newLabel": "Nuevo",
+    "moreAlerts": "... y {{count}} alertas mas",
+    "values": {
+      "unknown": "Desconocido"
+    },
+    "browserNotification": {
+      "title": "Alerta de seguridad: {{title}}"
+    },
+    "alerts": {
+      "multipleFailedLogins": {
+        "title": "Multiples intentos de inicio de sesion fallidos",
+        "description": "{{count}} intentos fallidos desde la IP {{ip}} en la ultima hora"
+      },
+      "unusualDevices": {
+        "title": "Actividad inusual de dispositivos",
+        "description": "El usuario {{username}} inicio sesion desde {{deviceCount}} dispositivos diferentes esta semana"
+      },
+      "highActivity": {
+        "title": "Periodo de alta actividad",
+        "description": "{{viewCount}} reproducciones de contenido en la ultima hora"
+      }
+    }
+  }
+}

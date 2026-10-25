@@ -1,0 +1,66 @@
+{
+  "title": "Demo Management",
+  "loading": "Loading...",
+  "error": {
+    "loadFailed": "Failed to load demo statistics. Please try again.",
+    "fetchConfigFailed": "Failed to fetch demo config"
+  },
+  "stats": {
+    "dailyLimit": "Daily Limit",
+    "dailyLimitDesc": "Maximum demos per day",
+    "createdToday": "Created Today",
+    "createdTodayDesc": "Demos created today",
+    "remainingToday": "Remaining Today",
+    "remainingTodayDesc": "Demos you can still create",
+    "activeDemos": "Active Demos",
+    "activeDemosDesc": "Currently active demos",
+    "demoDuration": "Demo Duration",
+    "demoDurationDesc": "Each demo lasts this long"
+  },
+  "createDemo": {
+    "title": "Create Demo User",
+    "description": "Create a demo account for potential customers. Demo users have temporary premium access.",
+    "dialogTitle": "Create Demo User",
+    "dialogDescription": "Create a demo account. The user will have temporary premium access from creation."
+  },
+  "status": {
+    "canCreate": "You can create {{count}} more demo today.",
+    "canCreatePlural": "You can create {{count}} more demos today.",
+    "limitReached": "Daily demo limit reached ({{created}}/{{limit}}). Try again tomorrow."
+  },
+  "form": {
+    "username": "Username",
+    "usernamePlaceholder": "demo_user_123",
+    "password": "Password",
+    "passwordPlaceholder": "Enter password",
+    "email": "Email (Optional)",
+    "emailPlaceholder": "user@example.com",
+    "categories": "Content Categories",
+    "categoriesHint": "Click to select the content categories this demo user will have access to.",
+    "loadingCategories": "Loading categories...",
+    "noCategories": "No categories available",
+    "selectCategory": "Please select at least one category"
+  },
+  "validation": {
+    "usernameMin": "Username must be at least 3 characters",
+    "passwordMin": "Password must be at least 6 characters",
+    "invalidEmail": "Invalid email",
+    "categoryRequired": "Please select at least one category"
+  },
+  "actions": {
+    "cancel": "Cancel",
+    "creating": "Creating...",
+    "createDemo": "Create Demo"
+  },
+  "info": {
+    "title": "Demo User Information",
+    "duration": "Duration:",
+    "durationValue": "{{hours}} hours from creation",
+    "access": "Access:",
+    "accessValue": "Full premium features",
+    "devices": "Devices:",
+    "devicesValue": "Up to 3 concurrent devices",
+    "autoCleanup": "Auto-cleanup:",
+    "autoCleanupValue": "Account automatically deleted after expiration"
+  }
+}

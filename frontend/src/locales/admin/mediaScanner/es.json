@@ -1,0 +1,110 @@
+{
+  "mediaScanner": {
+    "title": "Escáner de Medios",
+    "subtitle": "Escanea carpetas del servidor para importar contenido multimedia automáticamente",
+    "categorySelector": {
+      "title": "Seleccionar Categoría de Contenido",
+      "description": "Elige el tipo de contenido que quieres escanear",
+      "movies": "Películas",
+      "series": "Serie",
+      "kids": "Niños",
+      "anime": "animado",
+      "music": "Música"
+    },
+    "folderExplorer": {
+      "title": "Seleccionar Carpeta a Escanear",
+      "description": "Navega y selecciona la carpeta del servidor que contiene tus archivos multimedia",
+      "currentPath": "Ruta Actual",
+      "selectFolder": "Seleccionar Esta Carpeta",
+      "goUp": "Subir",
+      "loading": "Cargando carpetas...",
+      "error": "Error al cargar carpetas",
+      "noFolders": "No se encontraron carpetas",
+      "refresh": "Actualizar",
+      "selectedFolder": "Carpeta seleccionada:"
+    },
+    "scanOptions": {
+      "title": "Opciones de Escaneo",
+      "duplicatePolicy": "Política de Duplicados",
+      "duplicatePolicyOptions": {
+        "omit": "Omitir duplicados",
+        "replace": "Reemplazar existentes",
+        "allow": "Permitir duplicados"
+      },
+      "addSubtitles": "Incluir Subtítulos",
+      "addSubtitlesHelp": "Detectar y agregar archivos de subtítulos automáticamente"
+    },
+    "scanProgress": {
+      "title": "Progreso del Escaneo",
+      "status": "Estado",
+      "scanned": "Archivos Escaneados",
+      "imported": "Archivos Importados",
+      "errors": "Errores",
+      "currentFile": "Archivo Actual",
+      "timeElapsed": "Tiempo Transcurrido",
+      "estimatedRemaining": "Tiempo Estimado Restante",
+      "cancel": "Cancelar",
+      "cancelConfirm": "¿Estás seguro de que quieres cancelar el escaneo? Se perderá el progreso.",
+      "completed": "Escaneo Completado",
+      "cancelled": "Escaneo Cancelado",
+      "failed": "Escaneo Fallido"
+    },
+    "taskControl": {
+      "title": "Control de Tareas",
+      "tasks": "tareas",
+      "path": "Ruta",
+      "started": "Iniciado",
+      "duration": "Duración",
+      "currentFile": "Archivo actual",
+      "stats": {
+        "movies": "Películas",
+        "series": "Serie",
+        "episodes": "Episodios",
+        "subtitles": "Subtítulos",
+        "skipped": "Omitidos",
+        "replaced": "Reemplazados"
+      },
+      "error": "Error",
+      "cancel": "Cancelar",
+      "delete": "Eliminar",
+      "cancelling": "Cancelando...",
+      "deleting": "Eliminando...",
+      "idle": "No hay tareas en ejecución"
+    },
+    "scanStatus": {
+      "title": "Estado del Escaneo",
+      "scanId": "ID del Escaneo",
+      "status": "Estado",
+      "backgroundNote": "El escaneo se está ejecutando en el servidor. Puedes cerrar esta página y el proceso continuará.",
+      "anotherScanNote": "Ya hay un escaneo en progreso. Puedes iniciar otro si es necesario."
+    },
+    "actions": {
+      "startScan": "Iniciar Escaneo",
+      "selectCategory": "Seleccionar Categoría",
+      "selectFolder": "Seleccionar Carpeta",
+      "configureScan": "Configurar Escaneo",
+      "delete": "Eliminar",
+      "deleting": "Eliminando..."
+    },
+    "status": {
+      "idle": "Listo para escanear",
+      "scanning": "Escaneo en progreso...",
+      "completed": "Escaneo completado exitosamente",
+      "cancelled": "El escaneo fue cancelado",
+      "failed": "El escaneo falló con errores"
+    },
+    "errors": {
+      "noCategory": "Por favor selecciona una categoría de contenido",
+      "noFolder": "Por favor selecciona una carpeta para escanear",
+      "scanFailed": "Error al iniciar el escaneo: {{message}}",
+      "cancelFailed": "Error al cancelar el escaneo: {{message}}",
+      "loadFolders": "Error al cargar carpetas: {{message}}"
+    },
+    "notifications": {
+      "scanStarted": "Escaneo de medios iniciado exitosamente",
+      "scanCompleted": "Escaneo de medios completado: {{imported}} archivos importados",
+      "scanCancelled": "El escaneo de medios fue cancelado",
+      "scanFailed": "El escaneo de medios falló: {{message}}"
+    }
+  }
+}

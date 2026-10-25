@@ -1,0 +1,1027 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- App Name (uses branding.name from local.properties) -->
+    <string name="app_name">@string/branding_name</string>
+    <string name="app_name_full">@string/branding_name</string>
+
+    <!-- Navigation -->
+    <string name="nav_home">首页</string>
+    <string name="nav_search">搜索</string>
+    <string name="nav_movies">电影</string>
+    <string name="nav_series">剧集</string>
+    <string name="nav_live_tv">直播电视</string>
+    <string name="nav_kids">儿童</string>
+    <string name="nav_anime">动漫</string>
+    <string name="nav_events">活动</string>
+    <string name="nav_favorites">收藏</string>
+    <string name="nav_library">库</string>
+    <string name="nav_music">音乐</string>
+    <string name="nav_settings">设置</string>
+    <string name="nav_profile">个人资料</string>
+
+    <!-- Authentication -->
+    <string name="auth_welcome">欢迎使用 IPTV</string>
+    <string name="auth_welcome_subtitle">注册您的设备开始使用</string>
+    <string name="auth_register_device">注册设备</string>
+    <string name="auth_device_name">设备名称</string>
+    <string name="auth_device_name_hint">我的 Android TV</string>
+    <string name="auth_activation_code">激活码</string>
+    <string name="auth_activation_code_hint">输入6位激活码</string>
+    <string name="auth_activate">激活</string>
+    <string name="auth_activating">正在激活…</string>
+    <string name="auth_registering">正在注册…</string>
+    <string name="auth_success">设备激活成功</string>
+    <string name="auth_activate_device">激活设备</string>
+    <string name="auth_activate_subtitle">输入提供的激活码</string>
+
+    <!-- Content -->
+    <string name="content_play">播放</string>
+    <string name="content_play_now">立即播放</string>
+    <string name="content_more_info">更多信息</string>
+    <string name="content_add_favorite">添加到收藏</string>
+    <string name="content_remove_favorite">从收藏中移除</string>
+    <string name="content_download">下载</string>
+    <string name="content_share">分享</string>
+    <string name="content_continue_watching">继续观看</string>
+    <string name="content_min_remaining">剩余 %d 分钟</string>
+    <string name="content_popular_movies">热门电影</string>
+    <string name="content_recommended_series">推荐剧集</string>
+    <string name="content_recently_added">最近添加</string>
+    <string name="content_see_all">查看全部</string>
+    <string name="content_empty_message">暂无内容可用</string>
+
+    <!-- Player -->
+    <string name="player_play">播放</string>
+    <string name="player_pause">暂停</string>
+    <string name="player_stop">停止</string>
+    <string name="player_forward">前进10秒</string>
+    <string name="player_backward">后退10秒</string>
+    <string name="player_fullscreen">全屏</string>
+    <string name="player_exit_fullscreen">退出全屏</string>
+    <string name="player_volume">音量</string>
+    <string name="player_subtitles">字幕</string>
+    <string name="player_quality">质量</string>
+    <string name="player_loading">正在准备视频…</string>
+    <string name="player_placeholder_message">选择要播放的内容</string>
+    <string name="player_subtitle_settings">字幕设置</string>
+    <string name="player_no_subtitles">没有可用字幕</string>
+    <string name="player_subtitle_off">Off</string>
+    <string name="player_subtitle_off_desc">禁用所有字幕</string>
+
+    <!-- Search -->
+    <string name="search_hint">搜索电影、剧集、频道…</string>
+    <string name="search_no_results">未找到结果</string>
+    <string name="search_suggestions">建议</string>
+    <string name="search_recent">最近搜索</string>
+    <string name="search_searching">搜索中…</string>
+    <string name="search_placeholder">搜索内容…</string>
+    <string name="search_no_results_title">无结果</string>
+    <string name="search_no_results_message">未找到您搜索的结果</string>
+    <string name="search_no_results_suggestions">尝试其他搜索词</string>
+
+    <!-- Settings -->
+    <string name="settings_profile">个人资料</string>
+    <string name="settings_video">视频</string>
+    <string name="settings_audio">音频</string>
+    <string name="settings_devices">设备</string>
+    <string name="settings_about">关于</string>
+    <string name="settings_logout">退出登录</string>
+    <string name="settings_autoplay">自动播放</string>
+    <string name="settings_autoplay_subtitle">自动播放下一集</string>
+    <string name="settings_subtitles">字幕</string>
+    <string name="settings_subtitles_subtitle">有字幕时显示字幕</string>
+    <string name="settings_title">设置</string>
+    <string name="settings_video_title">视频</string>
+    <string name="settings_video_quality">视频质量</string>
+    <string name="settings_video_quality_subtitle">选择播放质量</string>
+    <string name="settings_app_title">应用程序</string>
+    <string name="settings_language">语言</string>
+    <string name="settings_language_subtitle">更改应用语言</string>
+    <string name="settings_account_title">账户</string>
+    <string name="settings_logout_subtitle">退出登录</string>
+    <string name="settings_about_title">关于</string>
+    <string name="settings_check_updates">检查更新</string>
+    <string name="settings_check_updates_subtitle">检查应用程序更新</string>
+    <string name="settings_app_version">应用版本</string>
+    <string name="settings_privacy_policy">隐私政策</string>
+    <string name="settings_privacy_policy_subtitle">查看隐私政策</string>
+    <string name="settings_terms">条款和条件</string>
+    <string name="settings_terms_subtitle">查看条款和条件</string>
+    <string name="profile_title">个人资料</string>
+
+    <!-- Error Messages -->
+    <string name="error_network">网络连接错误</string>
+    <string name="error_server">服务器错误</string>
+    <string name="error_unauthorized">未授权</string>
+    <string name="error_not_found">未找到内容</string>
+    <string name="error_playback">播放错误</string>
+    <string name="error_invalid_code">激活码无效</string>
+    <string name="error_title">错误</string>
+    <string name="error_retry">重试</string>
+
+    <!-- Loading States -->
+    <string name="loading">加载中…</string>
+    <string name="loading_content">正在加载内容…</string>
+    <string name="loading_video">正在准备视频…</string>
+    <string name="loading_search">搜索中…</string>
+
+    <!-- Actions -->
+    <string name="action_retry">重试</string>
+    <string name="action_cancel">取消</string>
+    <string name="action_ok">确定</string>
+    <string name="action_save">保存</string>
+    <string name="action_edit">编辑</string>
+    <string name="action_delete">删除</string>
+    <string name="action_share">分享</string>
+    <string name="action_back">返回</string>
+
+    <!-- Content Descriptions (Accessibility) -->
+    <string name="cd_play_button">播放按钮</string>
+    <string name="cd_pause_button">暂停按钮</string>
+    <string name="cd_favorite_button">收藏按钮</string>
+    <string name="cd_search_button">搜索按钮</string>
+    <string name="cd_menu_button">菜单按钮</string>
+    
+    <!-- Events & Views -->
+    <string name="label_view_categories">分类</string>
+    <string name="label_view_compact">紧凑</string>
+    <string name="label_view_large">大</string>
+    <string name="channels_available">可用频道：%1$d</string>
+    <string name="category_no_channels">该分类暂无可用频道</string>
+    <string name="cd_back_button">返回按钮</string>
+    <string name="cd_back">返回</string>
+    <string name="cd_clear_button">清除按钮</string>
+    <string name="cd_content_image">内容图片</string>
+    <string name="cd_user_avatar">用户头像</string>
+    <string name="cd_logo">IPTV 标志</string>
+
+    <!-- Live TV -->
+    <string name="live_tv_channels">直播频道</string>
+    <string name="live_tv_now_playing">正在播放</string>
+    <string name="live_tv_next">下一个</string>
+
+    <!-- Channels -->
+    <string name="channels_count">%1$d 个频道</string>
+    <string name="channels_close">关闭</string>
+
+    <!-- EPG -->
+    <string name="epg_live_badge">直播</string>
+    <string name="epg_press_right_for_more">按 → 查看更多节目</string>
+    <string name="epg_channel">频道</string>
+    <string name="epg_back">返回</string>
+    <string name="epg_live_program">直播节目</string>
+
+    <!-- Time formats -->
+    <string name="time_format_hours_minutes">%1$d时 %2$d分</string>
+    <string name="time_format_minutes">%1$d分</string>
+    <string name="time_format_less_minute">&lt; 1分</string>
+
+    <!-- Language Selection -->
+    <string name="language_spanish">西班牙语</string>
+    <string name="language_english">英语</string>
+    <string name="language_portuguese">葡萄牙语</string>
+    <string name="language_chinese">中文</string>
+    <string name="language_dialog_title">选择语言</string>
+    <string name="language_dialog_message">选择您偏好的语言</string>
+    <string name="language_changed">语言更改成功</string>
+    <string name="language_restart_required">重新启动应用以应用更改</string>
+
+    <!-- Hardcoded Strings - UI Components -->
+    <string name="channels_title">频道</string>
+    <string name="channels_search_hint">搜索频道…</string>
+    <string name="channels_search_hint_alt">搜索频道…</string>
+    <string name="channels_select_channel">选择一个频道</string>
+    <string name="channels_no_epg_info">无 EPG 信息</string>
+    <string name="channels_no_programming">无可用节目信息</string>
+    <string name="channels_press_back">按 ← 返回频道</string>
+    <string name="live_indicator">直播</string>
+    <string name="now_label">现在</string>
+    <string name="next_label">下一个</string>
+    <string name="current_label">当前</string>
+    <string name="now_playing">现在播放:</string>
+    <string name="auto_label">自动</string>
+    <string name="unknown_label">未知</string>
+
+    <!-- Account & Profile -->
+    <string name="account_title">账户</string>
+    <string name="account_apply_change">应用更改</string>
+    <string name="account_close">关闭</string>
+    <string name="account_password_mismatch">不匹配</string>
+    <string name="user_label">用户</string>
+
+    <!-- Device Management -->
+    <string name="device_limit_title">设备限制</string>
+    <string name="device_limit_reached">您已达到 %1$d 个设备的限制</string>
+    <string name="device_limit_description">要继续，您需要替换现有设备之一。</string>
+    <string name="device_limit_replacement_warning">选定的设备将被永久断开，此新设备将取代其位置。</string>
+    <string name="device_limit_disconnect_warning">选定的设备将立即断开</string>
+    <string name="device_limit_replacing">正在替换设备…</string>
+    <string name="device_limit_wait">这可能需要几秒钟</string>
+    <string name="device_limit_this_device">此设备</string>
+    <string name="device_limit_cancel">取消</string>
+    <string name="device_limit_disconnect">断开</string>
+    <string name="device_limit_disconnecting">正在断开…</string>
+    <string name="device_limit_confirm_replacement">确认替换</string>
+    <string name="device_limit_confirm_message">确认设备替换？</string>
+    <string name="device_limit_what_happens">将发生什么：</string>
+    <string name="device_limit_device_disconnected">选定的设备将被永久断开</string>
+    <string name="device_limit_device_replaced">此设备将取代其位置并将被注册</string>
+    <string name="device_limit_device_to_disconnect">要断开的设备：</string>
+    <string name="device_limit_last_access">上次访问：%1$s</string>
+    <string name="device_limit_yes_disconnect">是，断开</string>
+
+    <!-- Account Dialog -->
+    <string name="account_data_title">账户数据</string>
+    <string name="account_change_password">更改密码</string>
+    <string name="account_current_password">当前密码</string>
+    <string name="account_new_password">新密码</string>
+    <string name="account_confirm_password">确认密码</string>
+    <string name="account_passwords_no_match">密码不匹配</string>
+    <string name="account_changing">正在更改…</string>
+    <string name="account_min_length">最少 %1$d 个字符</string>
+    <string name="account_email">电子邮件</string>
+    <string name="account_active">活跃</string>
+    <string name="account_inactive">不活跃</string>
+    <string name="account_expires">到期：</string>
+
+    <!-- Profile Screen -->
+    <string name="profile_username">用户名</string>
+    <string name="profile_loading">加载中…</string>
+    <string name="profile_change_password">更改密码</string>
+    <string name="profile_update_password">更新您的访问密码</string>
+    <string name="profile_subscription_details">订阅详情</string>
+    <string name="profile_expires_at">到期：%1$s</string>
+    <string name="profile_features_title">功能：</string>
+    <string name="profile_date_not_available">日期不可用</string>
+    <string name="profile_renew_subscription">续订订阅</string>
+    <string name="profile_connected_devices">连接的设备</string>
+    <string name="profile_last_activity">最后活动：</string>
+    <string name="profile_rename">重命名</string>
+    <string name="profile_delete">删除</string>
+    <string name="profile_quick_actions">快速操作</string>
+    <string name="profile_clear_history">清除历史</string>
+    <string name="profile_clear_history_desc">删除所有观看历史</string>
+    <string name="profile_export_data">导出数据</string>
+    <string name="profile_export_data_desc">下载您的数据副本</string>
+    <string name="profile_delete_account">删除账户</string>
+    <string name="profile_delete_account_desc">永久删除您的账户</string>
+    <string name="profile_rename_device">重命名设备</string>
+    <string name="profile_device_name">设备名称</string>
+    <string name="profile_save">保存</string>
+    <string name="profile_cancel">取消</string>
+    <string name="profile_delete_device">删除设备</string>
+    <string name="profile_delete_device_confirm">您确定要删除设备"%1$s"吗？</string>
+    <string name="profile_delete_device_action">删除</string>
+
+    <!-- Settings -->
+    <string name="settings_customize_experience">自定义您的体验</string>
+    <string name="settings_manage_account">管理您的账户和偏好</string>
+    <string name="settings_active_account">活跃账户</string>
+    <string name="settings_loading_account">正在加载账户…</string>
+    <string name="settings_devices_title">设备</string>
+    <string name="settings_days_remaining">%1$dd</string>
+    <string name="settings_expired">已过期</string>
+    <string name="settings_remaining">剩余</string>
+    <string name="settings_expires">到期：%1$s</string>
+    <string name="settings_invalid_date">无效日期</string>
+    <string name="settings_no_expiry_date">无到期日期</string>
+    <string name="settings_device_management">设备管理</string>
+    <string name="settings_active_devices">%1$d/%2$d 个设备活跃</string>
+
+    <!-- Navigation & Actions -->
+    <string name="nav_clear">清除</string>
+    <string name="nav_select">搜索</string>
+
+    <!-- Player & Video -->
+    <string name="player_unknown_content">未知</string>
+    <string name="player_error">错误</string>
+    <string name="player_back">返回</string>
+    <string name="player_next">下一个</string>
+
+    <!-- EPG -->
+    <string name="epg_now">现在</string>
+    <string name="epg_full_programming_alt">完整节目表</string>
+
+    <!-- Layout -->
+    <string name="layout_channel_number">2</string>
+    <string name="layout_channel_name">频道</string>
+
+    <!-- Errors -->
+    <string name="error_url_not_available">流媒体 URL 不可用</string>
+
+
+    <!-- Quality -->
+    <string name="quality_title">视频质量</string>
+    <string name="quality_no_options">没有可用的质量选项</string>
+    <string name="quality_auto_description">根据连接自动调整</string>
+    <string name="quality_close">关闭</string>
+    <string name="quality_selected">已选择</string>
+
+    <!-- Audio -->
+    <string name="audio_title">音频语言</string>
+    <string name="audio_no_options">没有额外的音频轨道可用</string>
+    <string name="audio_auto_description">根据偏好自动选择</string>
+    <string name="audio_close">关闭</string>
+    <string name="audio_selected">已选择</string>
+    <string name="audio_language_prefix">语言：</string>
+
+    <!-- EPG -->
+    <string name="epg_title">节目指南</string>
+    <string name="epg_no_data">没有 EPG 信息</string>
+    <string name="epg_loading">正在加载节目指南…</string>
+    <string name="epg_error">加载 EPG 时出错</string>
+    <string name="epg_no_programs">没有可用的节目</string>
+    <string name="epg_channel_info">频道信息</string>
+    <string name="epg_program_details">节目详情</string>
+    <string name="epg_program_description">节目描述</string>
+    <string name="epg_next_programs">下一个节目</string>
+    <string name="epg_all_channels">所有频道</string>
+    <string name="epg_favorites">收藏夹</string>
+    <string name="epg_search">搜索节目</string>
+    <string name="epg_no_favorites">您没有收藏的频道</string>
+    <string name="epg_add_favorite">添加到收藏夹</string>
+    <string name="epg_remove_favorite">从收藏夹中移除</string>
+    <string name="epg_watch_now">立即观看</string>
+    <string name="epg_remind_me">提醒我</string>
+    <string name="epg_program_started">节目已开始</string>
+    <string name="epg_program_ending">节目即将结束</string>
+    <string name="epg_time_remaining">剩余 %1$d 分钟</string>
+
+    <!-- Live TV Components -->
+    <string name="live_tv_no_epg">EPG 不可用</string>
+    <string name="live_tv_epg_loading">正在加载 EPG…</string>
+    <string name="live_tv_channel_search_hint">搜索频道…</string>
+    <string name="live_tv_channel_search_no_results">未找到频道</string>
+    <string name="live_tv_channel_search_no_match">没有频道匹配 "%1$s"</string>
+    <string name="live_tv_channel_clear">清除</string>
+    <string name="live_tv_channel_count">%1$d/%2$d 个频道</string>
+    <string name="live_tv_favorites_title">收藏频道</string>
+    <string name="live_tv_favorites_count">已保存 %1$d 个频道</string>
+    <string name="live_tv_favorites_empty">您没有收藏的频道</string>
+
+    <!-- Device Registration -->
+    <string name="device_registration_title">设备注册</string>
+    <string name="device_registration_subtitle">注册您的设备以开始使用</string>
+    <string name="device_info_title">设备信息</string>
+    <string name="device_system_info_title">系统信息</string>
+    <string name="device_model_label">型号</string>
+    <string name="device_android_label">Android</string>
+    <string name="device_manufacturer_label">制造商</string>
+    <string name="device_register_button">注册设备</string>
+    <string name="device_skip_temp">转到内容 (临时)</string>
+    <string name="device_unknown">未知</string>
+    <string name="device_type_label">类型：</string>
+    <string name="device_model_label_old">型号：</string>
+    <string name="device_android_label_old">Android：</string>
+    <string name="device_type_android_tv">Android TV</string>
+
+    <!-- Content & Media -->
+    <string name="content_hd_label">高清</string>
+    <string name="content_seasons_label">季数</string>
+    <string name="content_episodes_count">%1$d 集</string>
+    <string name="content_rating_format">★ %1$s</string>
+
+    <!-- Favorites -->
+    <string name="favorites_hint">标记您喜爱的频道以便快速访问</string>
+    <string name="favorites_explore">浏览频道</string>
+
+    <!-- Live Content -->
+    <string name="live_sports_title">体育直播</string>
+
+    <!-- Navigation -->
+    <string name="nav_previous">上一页</string>
+    <string name="nav_episode_info">第 %1$d 集，共 %2$d 集</string>
+
+    <!-- Search -->
+
+    <!-- Profile -->
+    <string name="profile_stats_title">账户统计</string>
+    <string name="profile_logout_title">退出登录</string>
+    <string name="profile_logout_message">这将退出此设备的登录</string>
+    <string name="password_mismatch">密码不匹配</string>
+
+    <!-- Device Management -->
+    <string name="device_management_title">设备管理</string>
+    <string name="device_loading">正在加载设备…</string>
+    <string name="device_no_devices">没有注册的设备</string>
+    <string name="devices_registered_count">已注册 %1$d/%2$d 个设备</string>
+    <string name="devices_empty_message">注册设备后，它们将显示在这里</string>
+    <string name="current_device_label">此设备</string>
+    <string name="last_access_prefix">最后访问：</string>
+
+    <!-- Welcome & Activation -->
+    <string name="welcome_to_iptv">欢迎使用 IPTV</string>
+    <string name="register_device_to_continue">注册您的设备以开始使用</string>
+    <string name="activation_code_title">激活码</string>
+    <string name="activating_device">激活中…</string>
+    <string name="activate_device_button">激活设备</string>
+    <string name="need_help">需要帮助？</string>
+    <string name="activation_code_info">激活码为 6 位数字</string>
+    <string name="verify_code_correct">请验证代码是否正确</string>
+    <string name="contact_support_if_issues">如果您遇到问题，请联系支持</string>
+    <string name="activating_device_long">正在激活设备…</string>
+    <string name="please_wait">请稍候</string>
+    <string name="registering_device_long">正在注册设备…</string>
+    <string name="replace_device_button">替换设备</string>
+    <string name="devices_label">设备</string>
+    <string name="devices_count">%1$d/%2$d</string>
+
+    <!-- Device Selection -->
+    <string name="select_device_to_replace">选择要用此新设备替换的设备：</string>
+    <string name="device_type_prefix">类型：</string>
+    <string name="device_last_used_prefix">最后使用：</string>
+
+    <!-- Device Registration Features -->
+    <string name="device_limit_reached_message">达到限制。替换现有设备。</string>
+    <string name="device_spaces_available">您有 %1$d 个可用空间。</string>
+    <string name="device_registration_logo_description">@string/branding_name</string>
+    <string name="device_registration_feature_hd">高清/4K 内容</string>
+    <string name="device_registration_feature_devices">多设备支持</string>
+    <string name="device_registration_feature_security">安全流媒体</string>
+
+    <!-- Device Selection Screen -->
+    <string name="device_selection_title">选择要替换的设备</string>
+    <string name="device_selection_back_description">返回</string>
+    <string name="device_selection_unknown_date">未知</string>
+    <string name="device_selection_replace_description">替换</string>
+    <string name="device_selection_device_description">设备</string>
+
+    <!-- Device Management Screen -->
+    <string name="device_management_back_description">返回</string>
+    <string name="device_management_refresh_description">刷新</string>
+    <string name="device_management_delete_description">删除设备</string>
+    <string name="device_management_device_type_android">Android</string>
+    <string name="device_management_device_type_ios">iOS</string>
+    <string name="device_management_device_type_web">网页浏览器</string>
+    <string name="device_management_device_type_tv">智能电视</string>
+    <string name="device_management_last_active_prefix">于</string>
+
+    <!-- Device Management Dialog -->
+    <string name="device_management_delete_device_title">删除设备</string>
+    <string name="device_management_delete_device_confirm">您确定要删除此设备吗？</string>
+    <string name="device_management_delete_device_warning">此操作无法撤销。该设备需要重新注册才能访问应用程序。</string>
+    <string name="device_management_delete_device_action">删除</string>
+    <string name="device_management_delete_device_cancel">取消</string>
+
+    <!-- Favorites Manager -->
+    <string name="favorites_remove_description">从收藏中移除</string>
+    <string name="favorites_add_description">添加到收藏</string>
+    <string name="favorites_category_title">收藏</string>
+
+    <!-- Channel Search Bar -->
+    <string name="channel_search_placeholder">搜索频道…</string>
+    <string name="channel_search_description">搜索</string>
+    <string name="channel_clear_description">清除</string>
+    <string name="channel_category_all">全部</string>
+    <string name="channel_category_news">新闻</string>
+    <string name="channel_category_sports">体育</string>
+    <string name="channel_category_entertainment">娱乐</string>
+    <string name="channel_category_movies">电影</string>
+    <string name="channel_category_kids">儿童</string>
+    <string name="channel_quality_all">全部</string>
+    <string name="channel_quality_hd">高清</string>
+    <string name="channel_quality_4k">4K</string>
+    <string name="channel_quality_sd">标清</string>
+    <string name="channel_category_title">类别</string>
+    <string name="channel_quality_title">质量</string>
+    <string name="channel_search_results">"%1$s" 的搜索结果</string>
+    <string name="channel_search_all_channels">所有频道</string>
+
+    <!-- Device Limit Dialog -->
+    <string name="device_limit_replacing_message">正在替换设备…</string>
+    <string name="device_limit_waiting_message">这可能需要几秒钟</string>
+    <string name="device_limit_selected_description">已选择</string>
+
+    <!-- Detail Screen -->
+    <string name="detail_back_description">返回</string>
+    <string name="detail_no_description">无可用描述</string>
+    <string name="detail_season_prefix">第</string>
+    <string name="detail_season_content_description">第 %1$d 季</string>
+
+    <!-- Home Screen -->
+    <string name="home_content_type_live">直播</string>
+    <string name="home_content_type_hd">高清</string>
+    <string name="home_play_description">播放</string>
+
+    <!-- Search Screen -->
+    <string name="search_placeholder_screen">搜索内容…</string>
+
+    <!-- Search Result Card -->
+    <string name="search_watch_live">观看直播</string>
+    <string name="search_watch_series">观看剧集</string>
+    <string name="search_view_details">查看详情</string>
+    <string name="search_content_type_movie">电影</string>
+    <string name="search_content_type_series">剧集</string>
+    <string name="search_content_type_live">直播</string>
+    <string name="search_content_type_episode">集</string>
+
+    <!-- Player -->
+    <string name="player_stream_url_not_available">流媒体 URL 不可用</string>
+
+    <!-- Password Management -->
+    <string name="password_current">当前密码</string>
+    <string name="password_show">显示密码</string>
+    <string name="password_hide">隐藏密码</string>
+    <string name="password_new">新密码</string>
+    <string name="password_confirm">确认新密码</string>
+    <string name="password_empty">请输入当前密码</string>
+    <string name="password_new_empty">请输入新密码</string>
+    <string name="password_min_length">新密码至少需要6个字符</string>
+    <string name="password_mismatch_validation">密码不匹配</string>
+    <string name="password_changed_success">密码修改成功</string>
+    <string name="password_empty_error">密码不能为空</string>
+
+    <!-- Authentication Errors -->
+    <string name="auth_credentials_invalid">凭据无效。请检查您的用户名和密码。</string>
+    <string name="auth_enter_credentials">请输入用户名和密码</string>
+
+
+    <!-- Content Validation -->
+    <string name="content_id_empty_error">内容ID不能为空</string>
+    <string name="progress_range_error">进度必须在0.0到1.0之间</string>
+    <string name="duration_negative_error">持续时间不能为负数</string>
+
+    <!-- Request Validation -->
+    <string name="request_invalid_data">请求无效。请检查输入的数据。</string>
+
+    <!-- Generic Errors -->
+    <string name="error_unknown_generic">未知错误</string>
+
+    <!-- HTTP Error Messages -->
+    <string name="error_http_400">请求无效。请检查输入的数据。</string>
+    <string name="error_http_401">未授权。请重新登录。</string>
+    <string name="error_http_403">访问被拒绝</string>
+    <string name="error_http_404">内容未找到</string>
+    <string name="error_http_408">请求超时</string>
+    <string name="error_http_429">请求过于频繁。请稍后再试。</string>
+    <string name="error_http_500">服务器错误。请稍后再试。</string>
+    <string name="error_http_502_503">服务不可用</string>
+    <string name="error_network_generic">网络错误</string>
+
+    <!-- Network Error Messages -->
+    <string name="error_no_internet">无网络连接</string>
+    <string name="error_connection_timeout">连接超时</string>
+    <string name="error_connection_generic">连接错误</string>
+
+    <!-- Exception Messages -->
+    <string name="error_empty_response">服务器响应为空</string>
+    <string name="error_failed_user_profile">获取用户资料失败</string>
+    <string name="error_network_message">网络错误</string>
+    <string name="error_failed_update_profile">更新资料失败</string>
+    <string name="error_password_change_success">密码修改成功</string>
+    <string name="error_failed_password_change">修改密码失败</string>
+
+    <!-- Authentication Repository Errors -->
+    <string name="error_device_activation_not_implemented">设备激活功能尚未实现</string>
+    <string name="error_no_refresh_token">无刷新令牌可用</string>
+    <string name="error_token_refresh_failed">令牌刷新失败</string>
+    <string name="error_token_refresh_failed_with_message">令牌刷新失败：%1$s</string>
+
+    <!-- Logout -->
+    <string name="logout_success">会话已成功关闭</string>
+    <string name="logout_loading">正在退出登录…</string>
+    <string name="logout_button">退出登录</string>
+
+    <!-- Additional Missing Translations -->
+    <string name="account_logout">退出</string>
+    <string name="auth_brand_description">高级流媒体平台</string>
+    <string name="auth_brand_name">@string/branding_name</string>
+    <string name="auth_enter_credentials_continue">请输入用户名和密码</string>
+    <string name="auth_password">密码</string>
+    <string name="auth_sign_in">登录</string>
+    <string name="auth_sign_in_button">登录</string>
+    <string name="channel_press_back">按 ← 返回频道</string>
+    <string name="channels_no_epg_available">无节目信息</string>
+    <string name="channel_starting">正在启动频道…</string>
+    <string name="content_cast">演员阵容</string>
+    <string name="content_director">导演</string>
+    <string name="content_episodes">集数</string>
+    <string name="content_episode_short">第</string>
+    <string name="content_genres">类型</string>
+    <string name="content_no_image">无图片</string>
+    <string name="content_rating_star">★ %1$s</string>
+    <string name="content_related">相关内容</string>
+    <string name="content_synopsis">简介</string>
+    <string name="delete_device_confirm">您确定要删除此设备吗？</string>
+    <string name="delete_device_title">删除设备</string>
+    <string name="detail_no_description_alt">暂无描述</string>
+    <string name="detail_season">季</string>
+    <string name="detail_seasons">季数</string>
+    <string name="detail_trailer">预告片</string>
+    <string name="detail_watch_now">立即观看</string>
+    <string name="epg_full_programming">完整节目表</string>
+    <string name="epg_navigation_hint">↑↓ 导航 • OK 观看</string>
+    <string name="epg_not_available">EPG不可用</string>
+    <string name="error_device_activation">激活设备时出错</string>
+    <string name="error_device_registration">注册设备时出错</string>
+    <string name="error_incompatible_content">此内容与剧集播放器不兼容</string>
+    <string name="error_loading_content">加载内容时出错：%1$s</string>
+    <string name="error_loading_player">加载播放器时出错：%1$s</string>
+    <string name="live_tv_current_program">现在：</string>
+    <string name="live_tv_next_program">下一个：</string>
+    <string name="nav_back">返回</string>
+    <string name="player_episode_count">第%1$d集，共%2$d集</string>
+    <string name="player_next_episode">下一集</string>
+    <string name="player_previous">上一个</string>
+    <string name="player_previous_episode">上一集</string>
+    <string name="player_select_language">选择语言</string>
+    <string name="player_select_quality">选择质量</string>
+    <string name="press_ok_to_watch">按OK观看</string>
+    <string name="profile_subscription">订阅</string>
+    <string name="program_position">%1$d/%2$d</string>
+    <string name="program_progress">节目进度</string>
+    <string name="program_remind">提醒</string>
+    <string name="programs_count">%1$d个节目</string>
+    <string name="program_time_range">%1$s - %2$s</string>
+    <string name="program_up_next">即将播放</string>
+    <string name="program_watch_now">立即观看</string>
+    <string name="settings_change_password">修改密码</string>
+    <string name="settings_loading">正在加载…</string>
+    <string name="settings_subscription_details">订阅详情</string>
+    <string name="settings_update_password_subtitle">更新您的访问密码</string>
+    <string name="settings_username">用户名</string>
+
+    <!-- Session Management -->
+    <string name="session_expired">会话已过期。请重新登录。</string>
+    <string name="session_unauthorized">未授权。请重新登录。</string>
+
+    <!-- Input Prompts -->
+    <string name="input_enter">输入</string>
+    <string name="input_channel_number">输入频道号码</string>
+    <string name="input_verify_data">验证输入的数据</string>
+
+    <!-- Names and Users -->
+    <string name="name_device">设备名称</string>
+    <string name="name_username">用户名</string>
+    <string name="name_device_empty">设备名称不能为空</string>
+    <string name="name_device_min_length">设备名称至少需要3个字符</string>
+    <string name="name_device_updated">设备名称已更新</string>
+    <string name="name_username_empty">用户名不能为空</string>
+
+    <!-- Platform -->
+    <string name="platform_premium_streaming">高级流媒体平台</string>
+
+    <!-- Live TV Channel Selector -->
+    <string name="all">全部</string>
+    <string name="category_entertainment">娱乐</string>
+    <string name="category_sports">体育</string>
+    <string name="category_news">新闻</string>
+    <string name="category_movies">电影</string>
+    <string name="category_series">剧集</string>
+    <string name="category_music">音乐</string>
+    <string name="category_kids">儿童</string>
+    <string name="category_documentary">纪录片</string>
+    <string name="category_lifestyle">生活方式</string>
+    <string name="category_culture_education">文化与教育</string>
+    <string name="category_international">国际</string>
+    <string name="channel_now">现在</string>
+    <string name="channel_next">下一个</string>
+
+    <!-- Content Categories -->
+    <string name="category_load_more">加载更多内容</string>
+    <string name="category_empty_title">无内容</string>
+    <string name="category_empty_message">类别 "%1$s" 中没有可用内容</string>
+    <string name="sort_title">标题</string>
+    <string name="sort_year">年份</string>
+    <string name="sort_rating">评分</string>
+    <string name="sort_date_added">添加日期</string>
+
+    <!-- Search -->
+    <string name="search_placeholder_generic">搜索…</string>
+    <string name="search_description">搜索</string>
+    <string name="search_title">搜索</string>
+
+    <!-- Availability -->
+    <string name="service_unavailable">服务不可用</string>
+    <string name="service_temporarily_unavailable">服务暂时不可用</string>
+
+    <!-- Player Navigation -->
+    <string name="player_next_episode_alt">下一集</string>
+    <string name="player_next_with_title">下一集: %1$s</string>
+
+    <!-- UI Elements -->
+    <string name="seasons_title">季数</string>
+    <string name="play_button">播放</string>
+    <string name="close_button">关闭</string>
+    <string name="pause_button">暂停</string>
+
+    <!-- Access -->
+    <string name="quick_access">快速访问</string>
+    <string name="quick_access_description">标记您喜爱的频道以便快速访问</string>
+    <string name="last_access">最后访问: %1$s</string>
+
+    <!-- Device Registration -->
+    <string name="devices_registered_count_alt">已注册 %1$d/%2$d 个设备</string>
+
+    <!-- Buttons -->
+    <string name="button_cancel">取消</string>
+    <string name="button_change">更改</string>
+
+    <!-- Splash Screen Messages -->
+    <string name="splash_welcome_back">欢迎回来…</string>
+    <string name="splash_redirecting_login">正在跳转到登录…</string>
+    <string name="splash_verifying_auth">正在验证身份…</string>
+
+    <!-- Dialog Messages -->
+    <string name="dialog_cancel">取消</string>
+    <string name="dialog_confirm">确认</string>
+    <string name="dialog_confirm_replacement">确认替换</string>
+
+    <!-- Content Categories -->
+    <string name="category_movies_vod">点播 - 电影</string>
+
+    <!-- Home Screen Sections -->
+    <string name="section_featured">精选</string>
+    <string name="section_movies">电影</string>
+    <string name="section_series">剧集</string>
+    <string name="section_kids">儿童</string>
+
+    <!-- Search Filters -->
+    <string name="search_filters_title">搜索筛选</string>
+    <string name="search_clear_filters">清除筛选</string>
+    <string name="search_content_type">内容类型</string>
+    <string name="search_categories">分类</string>
+    <string name="search_genres">类型</string>
+    <string name="search_year">年份</string>
+    <string name="search_country">国家</string>
+    <string name="search_all">全部</string>
+    <string name="search_all_female">全部</string>
+
+    <!-- Genres -->
+    <string name="genre_action">动作</string>
+    <string name="genre_comedy">喜剧</string>
+    <string name="genre_drama">剧情</string>
+    <string name="genre_horror">恐怖</string>
+    <string name="genre_sci_fi">科幻</string>
+    <string name="genre_documentary">纪录片</string>
+    <string name="genre_sports">体育</string>
+    <string name="genre_news">新闻</string>
+    <string name="genre_adventure">冒险</string>
+    <string name="genre_animation">动画</string>
+    <string name="genre_biography">传记</string>
+    <string name="genre_crime">犯罪</string>
+    <string name="genre_family">家庭</string>
+    <string name="genre_fantasy">奇幻</string>
+    <string name="genre_history">历史</string>
+    <string name="genre_music">音乐</string>
+    <string name="genre_mystery">悬疑</string>
+    <string name="genre_romance">爱情</string>
+    <string name="genre_thriller">惊悚</string>
+    <string name="genre_war">战争</string>
+    <string name="genre_western">西部</string>
+
+    <!-- Content Descriptions -->
+    <string name="content_desc_back">返回</string>
+
+
+
+    <!-- Activation -->
+    <string name="activation_code">激活码</string>
+
+    <!-- Device Input -->
+    <string name="device_name_label">设备名称</string>
+    <string name="device_name_placeholder">例: 我的Android TV</string>
+
+    <!-- Temporary Content Access -->
+    <string name="temp_content_access">转到内容 (临时)</string>
+
+    <!-- Search -->
+    <string name="search_action_movies">搜索动作电影</string>
+    <string name="search_year_movies">搜索2023年电影</string>
+    <string name="search_kids_content">搜索儿童内容</string>
+    <string name="search_comedy_series">显示喜剧剧集</string>
+    <string name="search_documentaries">查找纪录片</string>
+    <string name="search_sports_channels">观看体育频道</string>
+    <string name="search_drama_series">显示剧情剧集</string>
+    <string name="search_horror_movies">查找恐怖电影</string>
+    <string name="search_news_channels">观看新闻频道</string>
+    <string name="search_romantic_movies">显示浪漫电影</string>
+    <string name="music_header_subtitle">发现精选播放列表和混音</string>
+    <string name="music_quick_actions_title">开始播放</string>
+    <string name="music_quick_actions_subtitle">选择一个快捷操作立即聆听音乐</string>
+    <string name="music_now_playing_label">正在播放</string>
+    <string name="music_search_action">搜索艺术家</string>
+    
+    <!-- 音乐 -->
+    <string name="music_title">音乐</string>
+    <string name="music_recent_tracks">最近播放</string>
+    <string name="music_albums">专辑</string>
+    <string name="music_album">专辑</string>
+    <string name="music_artists">艺术家</string>
+    <string name="music_artist">艺术家</string>
+    <string name="music_play">播放</string>
+    <string name="music_pause">暂停</string>
+    <string name="music_player_previous">上一首</string>
+    <string name="music_player_next">下一首</string>
+    <string name="music_play_all">播放全部</string>
+    <string name="music_favorited">已收藏</string>
+    <string name="music_add_favorite">加入收藏</string>
+    <string name="music_track_count">%1$d 首歌曲</string>
+    <string name="music_top_tracks">精选歌曲</string>
+    <string name="music_artist_album_count">%1$d 张专辑</string>
+    <string name="music_stats_title">你的音乐库概览</string>
+    <string name="music_stats_tracks">歌曲</string>
+    <string name="music_stats_albums">专辑</string>
+    <string name="music_stats_artists">艺术家</string>
+    <string name="music_stats_storage">存储</string>
+    <string name="music_hero_subtitle">你的音乐库随时待命。</string>
+    <string name="music_hero_placeholder">使用“播放全部”或选择一首歌曲开始。</string>
+    <string name="common_back">返回</string>
+    <string name="common_close">关闭</string>
+    <string name="common_retry">重试</string>
+    <string name="common_refresh">刷新</string>
+    <string name="music_playing">播放中</string>
+    <string name="music_no_track">未选择歌曲</string>
+    <string name="music_shuffle">随机播放</string>
+    <string name="music_previous">上一首</string>
+    <string name="music_next">下一首</string>
+    <string name="music_repeat">重复</string>
+    <string name="music_queue">播放队列</string>
+    <string name="music_queue_count">%1$d 项在队列中</string>
+
+    <!-- Device Management Errors -->
+    <string name="error_no_credentials">无可用凭据。请重新登录。</string>
+    <string name="error_device_management_failed">准备设备管理失败</string>
+    <string name="error_unexpected_state">意外状态</string>
+    <string name="error_unexpected_during_registration">注册过程中出现意外状态</string>
+    <string name="error_unexpected_during_removal">移除过程中出现意外状态</string>
+    <string name="error_unexpected_try_again">意外错误。请重试。</string>
+
+    <!-- Missing strings - Player -->
+    <string name="player_select_audio">选择音轨</string>
+    <string name="player_select_subtitles">选择字幕</string>
+    <string name="player_speed">速度</string>
+
+    <!-- Missing strings - Common -->
+    <string name="change_date">更改日期</string>
+    <string name="detail_overview">概览</string>
+    <string name="disabled">已禁用</string>
+    <string name="enabled">已启用</string>
+    <string name="error_unknown">未知错误</string>
+    <string name="open_channel_list">打开频道列表</string>
+
+    <!-- Missing strings - EPG -->
+    <string name="epg_auto_update">节目指南将自动更新</string>
+    <string name="epg_error_loading">加载节目指南时出错</string>
+
+    <!-- Missing strings - Scanner (Admin) -->
+    <string name="scan_add_subs">找到时添加外部字幕</string>
+    <string name="scan_duplicate_policy">重复策略 (omit|replace|allow)</string>
+    <string name="scan_episodes_created">已创建剧集: %1$d</string>
+    <string name="scan_folders_title">管理员: 扫描文件夹</string>
+    <string name="scan_logs">日志:</string>
+    <string name="scan_media_type">媒体类型 (movies|series|mixed)</string>
+    <string name="scan_movies_created">已创建电影: %1$d</string>
+    <string name="scan_replaced">已替换: %1$d</string>
+    <string name="scan_results">结果:</string>
+    <string name="scan_root_path">根路径（服务器）</string>
+    <string name="scan_completed_items">扫描完成：已处理 %1$d 个项目</string>
+    <string name="scan_root_path_required">必须填写根路径</string>
+    <string name="scan_scanning_button">扫描中…</string>
+    <string name="scan_series_created">已创建剧集: %1$d</string>
+    <string name="scan_skipped">已跳过: %1$d</string>
+    <string name="scan_start_button">开始扫描</string>
+    <string name="scan_subtitles_added">已添加字幕: %1$d</string>
+    <string name="epg_next">下一个</string>
+    <string name="channel_prefix">频道: </string>
+    <string name="no_program_info">无节目信息</string>
+    <string name="no_upcoming_info">无预告信息</string>
+    <string name="pip_preview">画中画预览</string>
+    <string name="categories_all">全部</string>
+    <string name="live_channels_title">直播频道</string>
+    
+    <!-- Updates -->
+    <string name="update_available">有可用更新</string>
+    <string name="update_new_version">新版本 %1$s 可用</string>
+    <string name="update_current_version">当前版本：%1$s</string>
+    <string name="update_download">下载</string>
+    <string name="update_later">稍后</string>
+    <string name="update_checking">正在检查更新…</string>
+    <string name="update_no_updates">您已是最新版本</string>
+    <string name="update_error">检查更新时出错</string>
+    
+    <!-- Subtitles -->
+    <string name="subtitles_title">字幕</string>
+    <string name="subtitles_off">关闭</string>
+    <string name="subtitles_auto">自动</string>
+    <string name="subtitles_no_options">无可用字幕</string>
+    <string name="subtitles_close">关闭</string>
+    <string name="subtitles_selected">已选择</string>
+    <string name="subtitles_language_prefix">语言：</string>
+    
+    <!-- Profile / Device -->
+    <string name="profile_confirm_delete_device_title">移除设备</string>
+    <string name="profile_confirm_delete_device_message">确定要移除此设备吗？您需要重新登录。</string>
+    <string name="common_delete">删除</string>
+    
+    <!-- Missing strings (fallback to English) -->
+    <string name="player_autoplay">自动播放</string>
+    <string name="profile_id_format">ID：%1$s</string>
+    <string name="search_popular_searches">热门搜索</string>
+    <string name="search_listening">正在听……</string>
+    <string name="common_watched">WATCHED</string>
+    <string name="common_in_progress">IN PROGRESS</string>
+    <string name="security_debug_detected">检测到调试应用程序</string>
+    <string name="security_debug_description">出于安全原因，当安装了调试工具或网络拦截工具时，该应用程序无法运行。</string>
+    <string name="security_detected_apps">检测到的应用程序：</string>
+    <string name="security_how_to_use">要使用此应用程序：</string>
+    <string name="security_step_uninstall">1.卸载检测到的应用程序</string>
+    <string name="security_exit_app">退出申请</string>
+    <string name="security_footer">此措施可以保护内容并确保所有用户获得安全的体验。</string>
+    <string name="series_seasons_format">%1$d 季节%2$s</string>
+    <string name="series_season_abbr">S%1$d</string>
+    <string name="series_episode_detail_format">S%1$d:E%2$d • %3$s</string>
+    <string name="series_episode_label">第 %1$d 集</string>
+    <string name="update_new_available">有新更新</string>
+    <string name="common_later">之后</string>
+    <string name="update_now">立即更新</string>
+    <string name="common_hd">HD</string>
+    <string name="common_more_options">更多选择</string>
+    <string name="common_episodes_label">剧集数</string>
+    <string name="common_no_episodes_available">没有可用的剧集</string>
+    <string name="security_step_restart">2. 重新启动应用程序</string>
+    <string name="security_step_enjoy">3.安全地享受内容</string>
+    <string name="common_dot_separator">•</string>
+    <string name="common_dot_separator_with_text">• %1$s</string>
+    <string name="profile_devices_count_format">%1$d/5</string>
+    <string name="profile_edit_profile">编辑个人资料</string>
+    <string name="settings_title_alt">设置</string>
+    <string name="profile_quick_settings">快速设置</string>
+    <string name="profile_logout">退出</string>
+    <string name="profile_confirm_logout_title">确认退出</string>
+    <string name="profile_confirm_logout_message">您确定要退出吗？</string>
+    <string name="common_cancel">取消</string>
+    <string name="categories_header">类别</string>
+    <string name="player_position_duration">%1$s / %2$s</string>
+    <string name="update_required">需要更新</string>
+    <string name="update_version_label">版本：</string>
+    <string name="update_size_label">尺寸：%1$s</string>
+    <string name="update_whats_new">什么是新的：</string>
+    <string name="update_downloading">正在下载... %1$d%%</string>
+    <string name="update_install_now">立即安装</string>
+    <string name="update_postpone">稍后提醒</string>
+    <string name="update_mandatory_message">需要此更新才能继续使用该应用程序。</string>
+    <string name="update_check_title">检查更新</string>
+    <string name="update_check_subtitle">检查是否有新版本可用</string>
+    <string name="update_up_to_date">您已掌握最新信息！</string>
+    <string name="update_up_to_date_message">版本 %1$s 是最新版本。</string>
+    <string name="update_preparing">正在准备下载...</string>
+    <string name="update_install_prompt">很快就会出现安装提示</string>
+    <string name="update_downloading_wait">请稍等…</string>
+
+
+    <!-- Added for locale completeness -->
+    <string name="category_content_play_description">播放</string>
+    <string name="category_sort_by">排序方式</string>
+    <string name="category_filter_by">筛选方式</string>
+    <string name="category_filter_all">全部</string>
+    <string name="category_filter_recent">最近</string>
+    <string name="category_filter_popular">热门</string>
+    <string name="category_filter_top_rated">评分最高</string>
+    <string name="category_sort_description">排序选项</string>
+    <string name="category_sort_ascending">升序</string>
+    <string name="category_sort_descending">降序</string>
+    <string name="category_grid_size_description">网格大小</string>
+    <string name="category_clear_search_description">清除搜索</string>
+    <string name="quick_access_favorites">收藏</string>
+    <string name="quick_access_recently_watched">最近观看</string>
+    <string name="quick_access_trending">趋势</string>
+    <string name="quick_access_see_all">查看全部</string>
+    <string name="quick_access_actions_title">快捷操作</string>
+    <string name="quick_access_customize_experience">自定义你的体验</string>
+    <string name="quick_access_setup_favorites">设置收藏</string>
+    <string name="quick_action_guide_tv">电视指南</string>
+    <string name="quick_action_search">搜索</string>
+    <string name="quick_action_settings">设置</string>
+    <string name="quick_action_help">帮助</string>
+
+
+    <string name="action_mute">Mute</string>
+    <string name="action_unmute">Unmute</string>
+    <string name="profile_history_cleared">Watch history cleared</string>
+    <string name="profile_device_removed_success">Device removed successfully</string>
+    <string name="device_limit_select_device_prompt">Select a device</string>
+    <string name="device_type_android">Android</string>
+    <string name="device_type_ios">iOS</string>
+    <string name="device_type_web_browser">Web Browser</string>
+    <string name="device_type_smart_tv">Smart TV</string>
+    <string name="nav_streaming_tagline">STREAMING</string>
+    <string name="nav_premium_streaming">Premium Streaming</string>
+    <string name="nav_premium_badge">Premium</string>
+    <string name="error_loading_events">Error loading events</string>
+    <string name="splash_premium_content_platform">Premium Content Platform</string>
+    <string name="emulator_status_title">Device Status</string>
+    <string name="emulator_status_device_type_label">Device type:</string>
+    <string name="emulator_status_emulator">Emulator</string>
+    <string name="emulator_status_real_device">Real Device</string>
+    <string name="emulator_status_emulator_type_label">Emulator type:</string>
+    <string name="emulator_type_bluestacks">BlueStacks</string>
+    <string name="emulator_type_genymotion">Genymotion</string>
+    <string name="emulator_type_android_sdk">Android SDK</string>
+    <string name="emulator_type_unknown">Unknown</string>
+    <string name="emulator_status_device_id_label">Device ID:</string>
+    <string name="emulator_status_detected_title">Emulator Detected</string>
+    <string name="emulator_status_detected_message">You are using an emulator. Make sure your account has emulator access enabled.</string>
+    <string name="emulator_status_authentic_device">Authentic Android device detected</string>
+
+</resources>

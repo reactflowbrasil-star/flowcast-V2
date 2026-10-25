@@ -1,0 +1,58 @@
+{
+  "securityAlerts": {
+    "title": "Bezpečnostné upozornenia",
+    "subtitle": "Sledovanie bezpečnostných incidentov a správa zákazov",
+    "noAlerts": "Žiadne bezpečnostné upozornenia. Všetko je v poriadku.",
+    "viewDetails": "Zobraziť podrobnosti",
+    "dismiss": "Zrušiť",
+    "severity": {
+      "low": "Nízka",
+      "medium": "Stredná",
+      "high": "Vysoká",
+      "critical": "Kritická"
+    },
+    "filterBy": {
+      "type": "Filtrovať podľa typu",
+      "dateRange": "Časový rozsah",
+      "status": "Stav"
+    },
+    "actions": {
+      "investigate": "Preskúmať",
+      "banUser": "Zablokovať používateľa",
+      "unbanUser": "Odblokovať používateľa",
+      "cleanupExpiredBans": "Vyčistiť expirované zákazy",
+      "createManualBan": "Vytvoriť manuálny zákaz"
+    },
+    "cards": {
+      "totalIncidents": "Celkom incidentov",
+      "todaysIncidents": "Dnešné incidenty",
+      "activeBans": "Aktívne zákazy",
+      "permanentBans": "Trvalé zákazy",
+      "blacklistedDevices": "Zariadenia na čiernej listine"
+    },
+    "confirmDelete": "Odstrániť toto upozornenie? Túto akciu nie je možné vrátiť späť.",
+    "noPermission": "Nemáte povolenie na vykonanie tejto akcie.",
+    "newLabel": "Nové",
+    "moreAlerts": "... a ďalších {{count}} upozornení",
+    "values": {
+      "unknown": "Neznáme"
+    },
+    "browserNotification": {
+      "title": "Bezpečnostné upozornenie: {{title}}"
+    },
+    "alerts": {
+      "multipleFailedLogins": {
+        "title": "Viacnásobné neúspešné prihlásenia",
+        "description": "{{count}} neúspešných prihlásení z IP {{ip}} za poslednú hodinu"
+      },
+      "unusualDevices": {
+        "title": "Nezvyčajná aktivita zariadení",
+        "description": "Používateľ {{username}} sa tento týždeň prihlásil z {{deviceCount}} rôznych zariadení"
+      },
+      "highActivity": {
+        "title": "Obdobie vysokej aktivity",
+        "description": "{{viewCount}} prehratí obsahu za poslednú hodinu"
+      }
+    }
+  }
+}

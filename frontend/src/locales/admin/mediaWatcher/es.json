@@ -1,0 +1,56 @@
+{
+  "mediaWatcher": {
+    "creating": "Creando...",
+    "title": "Configuración del monitor de medios",
+    "description": "Escanea automáticamente carpetas en busca de nuevo contenido. Funciona como \"ls\": detección rápida solo de nuevas carpetas.",
+    "addButton": "Agregar carpeta a vigilar",
+    "empty": "No hay carpetas configuradas. Agrega una para comenzar.",
+    "deleteConfirm": "¿Seguro que deseas eliminar esta carpeta vigilada?",
+    "form": {
+      "folderPath": "Ruta de carpeta",
+      "folderPathPlaceholder": "/mnt/medios/películas",
+      "mediaType": "Tipo de medio",
+      "checkInterval": "Intervalo de comprobación (minutos)"
+    },
+    "createDialog": {
+      "title": "Agregar carpeta",
+      "description": "Configura una carpeta para escanear automáticamente nuevo contenido"
+    },
+    "editDialog": {
+      "title": "Editar carpeta",
+      "description": "Actualizar configuración de la carpeta",
+      "updating": "Actualizando...",
+      "update": "Actualizar"
+    },
+    "mediaTypes": {
+      "movies": "Películas",
+      "series": "Serie",
+      "kids": "Infantil",
+      "anime": "animado"
+    },
+    "table": {
+      "status": "Estado",
+      "folderPath": "Ruta de carpeta",
+      "type": "Tipo",
+      "interval": "Intervalo",
+      "lastCheck": "Última comprobación",
+      "actions": "Acciones",
+      "lastCheckNever": "Nunca",
+      "lastCheckInvalid": "Fecha inválida"
+    },
+    "toasts": {
+      "createSuccess": "Carpeta creada correctamente",
+      "createFailed": "No se pudo crear la carpeta",
+      "updateSuccess": "Carpeta actualizada correctamente",
+      "updateFailed": "No se pudo actualizar la carpeta",
+      "deleteSuccess": "Carpeta eliminada correctamente",
+      "deleteFailed": "No se pudo eliminar la carpeta",
+      "checkStarted": "Comprobación de carpeta iniciada",
+      "checkFailed": "No se pudo comprobar la carpeta",
+      "enabled": "Carpeta habilitada",
+      "disabled": "Carpeta deshabilitada",
+      "toggleFailed": "No se pudo cambiar el estado de la carpeta",
+      "folderPathRequired": "Ingresa una ruta de carpeta"
+    }
+  }
+}

@@ -1,0 +1,501 @@
+{
+  "layout": {
+    "navigation": {
+      "dashboard": "Nástenka",
+      "subscribers": "Odberatelia",
+      "connections": "Pripojenia",
+      "expirations": "Exspirácie",
+      "trialUsers": "Testovací používatelia",
+      "walletCredits": "Peňaženka a kredity",
+      "apiKeys": "API kľúče",
+      "support": "Podpora",
+      "activityLogs": "Záznamy o aktivitách"
+    },
+    "sections": {
+      "main": "Hlavné",
+      "operations": "Operácie",
+      "finance": "Financie",
+      "developer": "Vývojár",
+      "support": "Podpora"
+    },
+    "wallet": {
+      "balance": "Zostatok",
+      "addCredits": "Pridať kredity",
+      "currencyUnit": "CR"
+    },
+    "search": {
+      "placeholder": "Hľadať používateľov, zariadenia alebo tikety..."
+    },
+    "account": {
+      "reseller": "Predajca",
+      "myAccount": "Môj účet",
+      "profile": "Profil",
+      "billing": "Fakturácia",
+      "logout": "Odhlásiť sa"
+    }
+  },
+  "dashboard": {
+    "commandCenter": "Riadiace centrum predajcu",
+    "welcomeBack": "Vitajte späť, {{name}}",
+    "subscribersCount": "{{count}} odberateľov",
+    "creditsAvailable": "{{credits}} kreditov",
+    "statsDescription": "Máte k dispozícii <subscribers>{{subscribers}} odberateľov</subscribers> a <credits>{{credits}} kreditov</credits>.",
+    "newUser": "Nový používateľ",
+    "newDemo": "Nové demo",
+    "expiringSoon": "Čoskoro vyprší",
+    "viewAll": "Zobraziť všetko",
+    "quickActions": "Rýchle akcie",
+    "profileSettings": "Nastavenia profilu"
+  },
+  "stats": {
+    "noSubscribersYet": "Zatiaľ žiadni odberatelia",
+    "excellent": "Vynikajúce",
+    "good": "Dobré",
+    "fair": "Priemerné",
+    "inactive": "{{count}} neaktívnych",
+    "totalSubscribers": "Celkový počet odberateľov",
+    "newThisMonth": "+{{count}} tento mesiac",
+    "noNewThisMonth": "Tento mesiac žiadni noví",
+    "networkHealth": "Zdravie siete",
+    "deviceSlots": "Sloty pre zariadenia",
+    "activeUsers": "{{count}} aktívnych používateľov",
+    "activeDemos": "Aktívne demá",
+    "trialsInProgress": "Prebiehajúce skúšobné verzie",
+    "noActiveTrials": "Žiadne aktívne skúšobné verzie"
+  },
+  "quickActions": {
+    "createUser": "Vytvoriť používateľa",
+    "addNewSubscriber": "Pridať nového odberateľa",
+    "issueDemo": "Vystaviť demo",
+    "generateTrialAccount": "Generovať skúšobný účet",
+    "manageDevices": "Spravovať zariadenia",
+    "resetOrKillSessions": "Resetovať alebo ukončiť relácie",
+    "userList": "Zoznam používateľov",
+    "viewAllSubscribers": "Zobraziť všetkých odberateľov",
+    "buyCredits": "Kúpiť kredity",
+    "topUpWallet": "Dobiť peňaženku",
+    "support": "Podpora",
+    "openTicket": "Otvoriť tiket"
+  },
+  "endUsers": {
+    "title": "Koncoví používatelia",
+    "subtitle": "Vytvárajte a spravujte koncových používateľov naprieč všetkými predajcami",
+    "legend": {
+      "demoUser": "Demo používateľ",
+      "expiredDemo": "Expirované demo",
+      "demoBadge": "Demo odznak"
+    },
+    "badges": {
+      "demo": "DEMO"
+    },
+    "time": {
+      "expired": "Expirované",
+      "never": "Nikdy",
+      "left": "zostáva",
+      "hoursMinutes": "{{hours}}h {{minutes}}m",
+      "minutes": "{{minutes}}m",
+      "days": "{{days}} dní",
+      "daysRemaining": "({{days}} dní zostáva)"
+    },
+    "premium": "Premium",
+    "suspended": "Pozastavené",
+    "demo": "Demo",
+    "expired": "Expirované",
+    "never": "Nikdy",
+    "endLicense": "Koniec licencie",
+    "createDialogDescription": "Vytvorte nový účet koncového používateľa. Kredity budú odpočítané z vášho zostatku.",
+    "subscriptionDuration": "Trvanie predplatného",
+    "selectDuration": "Vyberte trvanie",
+    "deviceLimit": "Limit zariadení",
+    "selectDeviceLimit": "Vyberte limit zariadení",
+    "contentCategories": "Kategórie obsahu",
+    "categoriesHelp": "Kliknutím vyberte kategórie obsahu, ku ktorým bude mať tento používateľ prístup.",
+    "creditCostCalculation": "Výpočet ceny v kreditoch:",
+    "availableCredits": "Vaše dostupné kredity",
+    "insufficientCredits": "Nedostatok kreditov!",
+    "insufficientCreditsShort": "Nedostatok kreditov",
+    "selectOptions": "Vyberte možnosti",
+    "needMoreCredits": "Potrebujete o {{amount}} kreditov viac.",
+    "deviceOptions": {
+      "3": "3 zariadenia (1 kredit/mesiac)",
+      "5": "5 zariadení (1,5 kreditu/mesiac)",
+      "6": "6 zariadení (1,75 kreditu/mesiac)",
+      "7": "7 zariadení (2 kredity/mesiac)",
+      "8": "8 zariadení (2,25 kreditu/mesiac)",
+      "9": "9 zariadení (2,5 kreditu/mesiac)",
+      "10": "10 zariadení (2,75 kreditu/mesiac)"
+    },
+    "duration": {
+      "month": "{{count}} mesiac",
+      "month_plural": "{{count}} mesiace",
+      "months": "{{count}} mesiacov"
+    },
+    "validation": {
+      "usernameMin": "Používateľské meno musí mať aspoň 3 znaky",
+      "passwordMin": "Heslo musí mať aspoň 4 číslice",
+      "passwordMax": "Heslo môže mať maximálne 10 číslic",
+      "passwordDigits": "Heslo musí obsahovať iba číslice",
+      "invalidEmail": "Neplatná e-mailová adresa",
+      "durationMin": "Minimum je 1 mesiac",
+      "durationMax": "Maximum je 12 mesiacov",
+      "selectDeviceLimit": "Prosím, vyberte limit zariadení",
+      "selectCategory": "Prosím, vyberte aspoň jednu kategóriu"
+    },
+    "errors": {
+      "failedToLoadUsers": "Nepodarilo sa načítať používateľov"
+    },
+    "selectDurationAndDevices": "Vyberte trvanie a zariadenia",
+    "monthPlural": "mesiac",
+    "monthsPlural": "mesiace",
+    "creditPerMonth": "kredit/mesiac",
+    "creditsPerMonth": "kredity/mesiac",
+    "creditBreakdown": "{{duration}} {{durationUnit}} × {{devices}} zariadenie{{devicePlural}} ({{costPerMonth}} {{costUnit}}) = {{total}} kredit{{creditPlural}}"
+  },
+  "dialogs": {
+    "suspend": {
+      "title": "Pozastaviť používateľa",
+      "description": "Ste si istí, že chcete pozastaviť používateľa {{username}}? Týmto sa odpoja všetky jeho aktívne zariadenia."
+    },
+    "activate": {
+      "title": "Aktivovať používateľa",
+      "description": "Ste si istí, že chcete aktivovať používateľa {{username}}?"
+    },
+    "delete": {
+      "title": "Vymazať používateľa",
+      "description": "Ste si istí, že chcete natrvalo vymazať používateľa {{username}}? Túto akciu nie je možné vrátiť späť."
+    }
+  },
+  "activityLogs": {
+    "title": "Záznamy o aktivitách",
+    "description": "Zobrazenie vašich nedávnych aktivít a akcií",
+    "refresh": "Obnoviť",
+    "noLogs": "Nenašli sa žiadne záznamy o aktivitách",
+    "errorLoading": "Chyba pri načítavaní záznamov: {{message}}",
+    "filters": {
+      "actionType": "Typ akcie",
+      "allActions": "Všetky akcie",
+      "startDate": "Dátum začiatku",
+      "endDate": "Dátum ukončenia"
+    },
+    "actionTypes": {
+      "USER_CREATED": "Používateľ vytvorený",
+      "USER_DELETED": "Používateľ vymazaný",
+      "USER_EXTENDED": "Predplatné predĺžené",
+      "CREDIT_USED": "Kredit použitý",
+      "DEMO_CREATED": "Demo vytvorené",
+      "LOGIN": "Prihlásenie",
+      "LOGOUT": "Odhlásenie"
+    },
+    "table": {
+      "date": "Dátum",
+      "action": "Akcia",
+      "targetUser": "Cieľový používateľ",
+      "description": "Popis",
+      "credits": "Kredity"
+    },
+    "pagination": {
+      "showing": "Zobrazuje sa {{from}} až {{to}} z {{total}} výsledkov",
+      "previous": "Predchádzajúce",
+      "next": "Nasledujúce",
+      "pageOf": "Strana {{page}} z {{totalPages}}"
+    }
+  },
+  "editUser": {
+    "dialogTitle": "Upraviť používateľa: {{username}}",
+    "dialogDescription": "Upravte podrobnosti o používateľovi, spravujte predplatné a predĺžte prístup",
+    "editDetailsTitle": "Upraviť podrobnosti o používateľovi",
+    "editDetailsDescription": "Aktualizujte informácie o používateľovi a heslo",
+    "validation": {
+      "minMonth": "Minimum je 1 mesiac",
+      "maxExtension": "Maximálne predĺženie o 12 mesiacov",
+      "usernameMinLength": "Používateľské meno musí mať aspoň 3 znaky",
+      "invalidEmail": "Neplatná e-mailová adresa",
+      "passwordMinLength": "Heslo musí mať aspoň 4 číslice",
+      "passwordMaxLength": "Heslo môže mať maximálne 10 číslic",
+      "passwordDigitsOnly": "Heslo musí obsahovať iba číslice",
+      "maxDevicesLimit": "Povolených je maximálne 10 zariadení",
+      "selectCategory": "Prosím, vyberte aspoň jednu kategóriu"
+    },
+    "labels": {
+      "username": "Používateľské meno",
+      "email": "E-mail",
+      "newPassword": "Nové heslo (4-10 číslic)",
+      "maxDevices": "Max. zariadení",
+      "categories": "Kategórie",
+      "deviceLimit": "Limit zariadení",
+      "status": "Stav",
+      "expirationDate": "Dátum exspirácie",
+      "currentCategories": "Aktuálne kategórie"
+    },
+    "placeholders": {
+      "enterUsername": "Zadajte používateľské meno",
+      "enterEmail": "Zadajte e-mail",
+      "leaveEmptyToKeep": "Ponechajte prázdne pre zachovanie aktuálneho"
+    },
+    "creditWarning": {
+      "title": "Upozornenie na cenu v kreditoch",
+      "addingDevices": "Pridanie {{count}} zariadenia bude stáť",
+      "addingDevicesPlural": "Pridanie {{count}} zariadení bude stáť",
+      "credits": "{{amount}} kreditov",
+      "calculation": "({{days}} zostávajúcich dní × 0,25 kreditu za zariadenie mesačne)"
+    },
+    "subscription": {
+      "title": "Aktuálne predplatné",
+      "devices": "{{count}} zariadení",
+      "expired": "Expirované",
+      "active": "Aktívne",
+      "noCategories": "Nepriradené žiadne kategórie"
+    },
+    "extend": {
+      "title": "Predĺžiť predplatné",
+      "description": "Pridajte ďalšie mesiace k predplatnému tohto používateľa (maximálne 12 mesiacov)",
+      "periodLabel": "Obdobie predĺženia",
+      "selectPeriod": "Vyberte obdobie predĺženia",
+      "costCalculation": "Výpočet ceny za predĺženie:",
+      "availableCredits": "Vaše dostupné kredity",
+      "insufficientCredits": "Nedostatok kreditov!",
+      "needMoreCredits": "Potrebujete o {{amount}} kreditov viac.",
+      "selectExtension": "Vybrať predĺženie",
+      "breakdown": {
+        "device": "zariadenie",
+        "devicesPlural": "zariadenia",
+        "monthsDevices": "{{months}} {{monthLabel}} × {{devices}} {{deviceLabel}}",
+        "oneCredit": "(1 kredit/mesiac)",
+        "extraDevices": "(1 základ + {{extraDevices}} × 0,25 = {{creditsPerMonth}} kredity/mesiac)",
+        "credit": "kredit",
+        "creditsPlural": "kredity",
+        "totalCredits": "= {{cost}} {{creditLabel}}"
+      }
+    },
+    "buttons": {
+      "cancel": "Zrušiť",
+      "updating": "Aktualizujem...",
+      "updateUser": "Aktualizovať používateľa",
+      "extending": "Predlžujem...",
+      "extendSubscription": "Predĺžiť predplatné ({{cost}} kreditov)",
+      "insufficientCredits": "Nedostatok kreditov"
+    },
+    "loading": {
+      "categories": "Načítavam kategórie..."
+    },
+    "empty": {
+      "noCategories": "Nie sú k dispozícii žiadne kategórie"
+    },
+    "errors": {
+      "extendFailed": "Nepodarilo sa predĺžiť predplatné",
+      "noUserSelected": "Nie je vybraný žiadny používateľ"
+    }
+  },
+  "buyCredits": {
+    "title": "Kúpiť kredity",
+    "description": "Kúpte si kredity platformy cez Stripe Checkout. Kredity sa používajú na vytváranie a správu koncových používateľov.",
+    "loadingPricing": "Načítavam aktuálne ceny...",
+    "retry": "Skúsiť znova",
+    "basePrice": "Základná cena",
+    "perCredit": "za kredit",
+    "yourDiscount": "Vaša zľava za množstvo",
+    "applied": "uplatnené",
+    "none": "žiadna",
+    "effectiveUnitPrice": "Efektívna jednotková cena",
+    "quantityLabel": "Množstvo (kredity)",
+    "quantityHint": "Zadajte, koľko kreditov si chcete kúpiť",
+    "totalAmount": "Celková suma",
+    "includesDiscount": "Zahŕňa {{discount}}% množstevnú zľavu",
+    "noDiscount": "Pre toto množstvo nie je zľava",
+    "redirecting": "Presmerovávam...",
+    "proceedToCheckout": "Prejsť k platbe",
+    "volumeDiscountTiers": "Úrovne množstevných zliav",
+    "minQuantity": "Min. množstvo",
+    "discount": "Zľava",
+    "noTiers": "Nie sú nakonfigurované žiadne úrovne. Platí základná cena.",
+    "invalidQuantity": "Prosím, zadajte platné množstvo väčšie ako 0",
+    "errors": {
+      "failedLoadPricing": "Nepodarilo sa načítať ceny",
+      "failedCreateCheckout": "Nepodarilo sa vytvoriť platobnú reláciu"
+    }
+  },
+  "expirationMonitoring": {
+    "title": "Monitorovanie exspirácie používateľov",
+    "errorLoading": "Nepodarilo sa načítať údaje o exspirácii používateľov. Skúste to prosím znova.",
+    "neverExpires": "Nikdy neexspiruje",
+    "noEmail": "Žiadny e-mail",
+    "status": {
+      "expired": "Expirované",
+      "day": "{{count}} deň",
+      "days": "{{count}} dní",
+      "noExpiration": "Žiadna exspirácia",
+      "active": "Aktívny",
+      "inactive": "Neaktívny"
+    },
+    "summary": {
+      "expired": "Expirované",
+      "critical": "Kritické (≤2 dni)",
+      "warning": "Upozornenie (3-5 dní)",
+      "good": "Dobré (>5 dní)",
+      "noExpiration": "Bez exspirácie"
+    },
+    "details": {
+      "criticalTitle": "Kritické exspirácie",
+      "criticalDescription": "Používatelia vyžadujúci okamžitú pozornosť (exspirujú do 2 dní)",
+      "fullTitle": "Podrobnosti o exspirácii používateľov",
+      "fullDescription": "Sledujte dátumy exspirácie a stav účtov vašich používateľov"
+    },
+    "table": {
+      "username": "Používateľské meno",
+      "email": "E-mail",
+      "expirationDate": "Dátum exspirácie",
+      "status": "Stav",
+      "active": "Aktívny"
+    },
+    "empty": {
+      "noCritical": "Žiadne kritické exspirácie",
+      "noCriticalDescription": "Všetci vaši používatelia majú viac ako 2 dni do exspirácie.",
+      "noUsers": "Nenašli sa žiadni používatelia",
+      "noUsersDescription": "Vytvorte koncových používateľov, aby ste mohli sledovať ich dátumy exspirácie."
+    }
+  },
+  "analytics": {
+    "active": "Aktívni",
+    "inactive": "Neaktívni",
+    "acquisitionTrend": "Trend získavania",
+    "acquisitionDescription": "Noví odberatelia za posledných 6 mesiacov",
+    "networkStatus": "Stav siete",
+    "networkDescription": "Aktívni vs Pozastavení používatelia",
+    "totalUsers": "Celkový počet používateľov"
+  },
+  "profile": {
+    "title": "Profil predajcu",
+    "description": "Spravujte nastavenia a preferencie svojho účtu",
+    "contactInformation": "Kontaktné informácie",
+    "emailPlaceholder": "vas@email.sk",
+    "contactInfoNote": "Tento e-mail budeme používať na dôležité upozornenia",
+    "saveChanges": "Uložiť zmeny",
+    "changePassword": "Zmeniť heslo",
+    "newPasswordLabel": "Nové heslo",
+    "newPasswordPlaceholder": "Zadajte nové heslo",
+    "confirmPasswordLabel": "Potvrdiť heslo",
+    "confirmPasswordPlaceholder": "Potvrďte nové heslo",
+    "passwordHelp": "Heslo musí mať aspoň 8 znakov",
+    "updatePassword": "Aktualizovať heslo",
+    "updated": "Profil bol úspešne aktualizovaný",
+    "updateFailed": "Nepodarilo sa aktualizovať profil",
+    "passwordUpdated": "Heslo bolo úspešne aktualizované",
+    "updatePasswordFailed": "Nepodarilo sa aktualizovať heslo",
+    "passwordTooShort": "Heslo musí mať aspoň 8 znakov",
+    "enterAndConfirmPassword": "Prosím, zadajte a potvrďte svoje nové heslo",
+    "passwordsDoNotMatch": "Heslá sa nezhodujú"
+  },
+  "creditBalance": {
+    "title": "Zostatok kreditov",
+    "availableCredits": "Dostupné kredity",
+    "lowBalance": "Nízky zostatok",
+    "available": "Dostupné",
+    "creditsAvailableDescription": "Kredity dostupné na vytváranie nových používateľov",
+    "lowBalanceWarning": "Váš zostatok kreditov je nízky. Kontaktujte svojho administrátora pre pridanie ďalších kreditov.",
+    "totalUsers": "Celkový počet používateľov",
+    "endUsersCreated": "Vytvorení koncoví používatelia",
+    "creditsUsed": "Použité kredity",
+    "totalCreditsConsumed": "Celkový počet spotrebovaných kreditov",
+    "creditSummary": {
+      "title": "Prehľad kreditov",
+      "description": "Prehľad o vašom využívaní a zostatku kreditov",
+      "initialCredits": "Počiatočné kredity",
+      "creditsUsed": "Použité kredity",
+      "availableCredits": "Dostupné kredity",
+      "usageRate": "Miera využívania"
+    },
+    "userBreakdown": {
+      "title": "Rozpis kreditov podľa používateľa",
+      "description": "Cena v kreditoch na používateľa na základe konfigurácie zariadení",
+      "device": "zariadenie",
+      "devices": "zariadenia",
+      "credits": "kredity"
+    },
+    "calculationGuide": {
+      "title": "Sprievodca výpočtom kreditov",
+      "description": "Pochopte, ako sa vypočítavajú kredity pre rôzne konfigurácie zariadení",
+      "standardDevices": "3 Zariadenia (Štandard)",
+      "standardCredits": "1.0 kreditu",
+      "standardDescription": "Najbežnejšia konfigurácia pre koncových používateľov",
+      "premiumDevices": "5 Zariadení (Premium)",
+      "premiumCredits": "1.5 kreditu",
+      "premiumDescription": "Premium balík s viacerými zariadeniami",
+      "extraDevices": "Extra zariadenia",
+      "extraCredits": "+0.25 kreditu za každé",
+      "extraDescription": "Dodatočné náklady na každé ďalšie zariadenie nad 3",
+      "examples": "Príklady:",
+      "example1Device": "1 zariadenie",
+      "example1DeviceCost": "1.0 kreditu",
+      "example4Devices": "4 zariadenia",
+      "example4DevicesCost": "1.25 kreditu",
+      "example6Devices": "6 zariadení",
+      "example6DevicesCost": "1.75 kreditu"
+    }
+  },
+  "supportTickets": {
+    "descriptionPlaceholder": "Poskytnite podrobné informácie o vašom probléme...",
+    "header": {
+      "title": "Podporné vstupenky",
+      "description": "Vytvárajte a spravujte svoje žiadosti o podporu",
+      "unreadSingle": "Máte {{count}} neprečítanú správu",
+      "unreadPlural": "Máte {{count}} neprečítaných správ",
+      "createTicket": "Vytvoriť lístok"
+    },
+    "createDialog": {
+      "title": "Vytvorte podporný lístok",
+      "description": "Popíšte svoj problém a my vám ho pomôžeme čo najrýchlejšie vyriešiť.",
+      "titleLabel": "Názov",
+      "titlePlaceholder": "Stručné zhrnutie vášho problému",
+      "categoryLabel": "Kategória",
+      "priorityLabel": "Priorita",
+      "descriptionLabel": "Popis",
+      "descriptionPlaceholder": "Uveďte podrobné informácie o svojom probléme...",
+      "cancel": "Zrušiť",
+      "creating": "Vytvára sa...",
+      "create": "Vytvoriť lístok"
+    },
+    "categories": {
+      "technical": "Technický problém",
+      "billing": "Fakturačná otázka",
+      "account": "Podpora účtu",
+      "content": "Problém s obsahom",
+      "other": "Iné"
+    },
+    "priorities": {
+      "low": "Nízka",
+      "medium": "Stredná",
+      "high": "Vysoká",
+      "urgent": "Naliehavé"
+    },
+    "stats": {
+      "total": "Celkom",
+      "open": "OTVORENÉ",
+      "inProgress": "Prebieha",
+      "resolved": "Vyriešené"
+    },
+    "list": {
+      "title": "Moje lístky na podporu",
+      "empty": "Nenašli sa žiadne lístky. Vytvorte si svoj prvý tiket podpory vyššie.",
+      "countSingle": "Našiel sa {{count}} lístok",
+      "countPlural": "Počet nájdených lístkov: {{count}}",
+      "filter": "Filter",
+      "sort": "Triediť",
+      "refresh": "Obnoviť"
+    },
+    "empty": {
+      "title": "Zatiaľ žiadne lístky na podporu",
+      "description": "Získajte pomoc od nášho tímu podpory vytvorením svojho prvého tiketu. Sme tu, aby sme vám pomohli!",
+      "createFirst": "Vytvorte si svoj prvý lístok"
+    },
+    "errors": {
+      "createFailed": "Nepodarilo sa vytvoriť lístok",
+      "createFailedRetry": "Nepodarilo sa vytvoriť lístok. Skúste to znova.",
+      "sendFailed": "Odoslanie správy zlyhalo",
+      "sendFailedRetry": "Odoslanie správy zlyhalo. Skúste to znova."
+    }
+  },
+  "secretKeyCopied": "Tajný kľúč bol skopírovaný do schránky",
+  "iHaveCopiedMyKey": "Skopíroval som svoj kľúč",
+  "noUsersFound": "Nenašli sa žiadni používatelia",
+  "noCriticalExpirations": "Žiadne kritické expirácie"
+}

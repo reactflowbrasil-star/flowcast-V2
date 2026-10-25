@@ -1,0 +1,66 @@
+{
+  "uiBulk": {
+    "reseller": {
+      "form": {
+        "usernamePlaceholder": "Kullanıcı adı girin",
+        "passwordPlaceholder": "Sayısal şifre girin (4-10 hane)",
+        "emailPlaceholder": "E-posta girin"
+      }
+    }
+  },
+  "resellerManagement": {
+    "title": "Bayi Yönetimi",
+    "subtitle": "Kredi sistemiyle bayiler oluşturun ve yönetin",
+    "createReseller": "Bayi Oluştur",
+    "createResellerDescription": "Başlangıç kredileri ve demo limitleri ile yeni bir bayi hesabı oluşturun.",
+    "resetAllCounters": "Tüm Sayaçları Sıfırla",
+    "resetAllCountersConfirm": "Tüm bayilerin günlük demo sayaçlarını sıfırlamak istediğinizden emin misiniz? Bu işlem tüm sayaçları 0 yapar.",
+    "searchByUsernameOrEmail": "Kullanıcı adı veya e-posta ile ara...",
+    "noResellersYet": "Henüz bayi yok",
+    "createYourFirstReseller": "Son kullanıcıları yönetmeye başlamak için ilk bayinizi oluşturun.",
+    "endUsersTitle": "Son Kullanıcılar",
+    "endUsersSubtitle": "Tüm bayiler genelinde son kullanıcılar oluşturun ve yönetin",
+    "createEndUser": "Son Kullanıcı Oluştur",
+    "filters": "Filtreler",
+    "searchByUsername": "Kullanıcı adına göre ara...",
+    "searchByEmail": "E-postaya göre ara...",
+    "searchByReseller": "Bayiye göre ara...",
+    "noEndUsersYet": "Henüz son kullanıcı yok",
+    "viewUsersDialog": {
+      "title": "Son Kullanıcılar - {{username}}",
+      "description": "Bu bayi tarafından oluşturulan tüm son kullanıcıları görüntüleyin. Bayi silinirse bu kullanıcılar yöneticiye aktarılacaktır.",
+      "totalUsers": "Toplam Kullanıcı",
+      "subtitle": "Oluşturulan son kullanıcılar",
+      "totalDevices": "Toplam Cihaz",
+      "totalDevicesSubtitle": "Tahsis edilen cihazlar",
+      "creditCost": "Kredi Maliyeti",
+      "creditCostSubtitle": "Kullanılan toplam kredi",
+      "sectionTitle": "Kullanıcı Detayları",
+      "empty": "Bu bayinin henüz son kullanıcısı yok.",
+      "active": "Aktif",
+      "inactive": "Pasif",
+      "devices": "cihaz",
+      "credits": "kredi",
+      "expires": "Bitiş",
+      "never": "Asla",
+      "created": "Oluşturuldu",
+      "transferNotice": {
+        "title": "Transfer Bildirimi",
+        "description": "Bu bayi silinirse, tüm {{count}} son kullanıcı(lar) otomatik olarak yönetici hesabına aktarılacaktır. Kullanıcılar mevcut ayarlarını ve abonelik durumlarını koruyacaktır."
+      }
+    },
+    "resetPasswordDialog": {
+      "confirmContinue": "Devam etmek istediğinizden emin misiniz?",
+      "copy": "Kopyala",
+      "errorTitle": "Şifre sıfırlanırken hata oluştu",
+      "generatedLabel": "Şifre oluşturuldu:",
+      "generatedNotSaved": "Şifre oluşturuldu ancak hata nedeniyle kaydedilmedi:",
+      "importantLabel": "Önemli:",
+      "newPasswordLabel": "Yeni Şifre:",
+      "resetForUser": "{{username}} için Şifreyi Sıfırla",
+      "saveImmediately": "Lütfen bu şifreyi hemen kaydedin. Bir daha gösterilmeyecek ve kurtarılamaz.",
+      "successForUser": "{{username}} için şifre başarıyla sıfırlandı.",
+      "tryAgainQuestion": "Tekrar denemek ister misin?"
+    }
+  }
+}

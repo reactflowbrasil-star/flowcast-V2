@@ -1,0 +1,55 @@
+{
+  "title": "Kullanıcı Cihaz İzleme",
+  "description": "Son kullanıcılarınız için aktif cihazları izleyin ve cihaz limitlerini yönetin",
+  "loading": "Yükleniyor...",
+  "error": {
+    "loadFailed": "Kullanıcılar yüklenemedi: {{message}}",
+    "removeDevice": "Cihaz kaldırılamadı: {{message}}",
+    "noUserSelected": "Kullanıcı seçilmedi"
+  },
+  "time": {
+    "justNow": "Az önce",
+    "minutesAgo": "{{count}}dk önce",
+    "hoursAgo": "{{count}}sa önce",
+    "daysAgo": "{{count}}g önce"
+  },
+  "deviceStatus": {
+    "online": "Çevrimiçi",
+    "recent": "Yakın zamanda",
+    "offline": "Çevrimdışı"
+  },
+  "userStatus": {
+    "active": "Aktif",
+    "suspended": "Askıya alındı"
+  },
+  "table": {
+    "username": "Kullanıcı Adı",
+    "deviceLimit": "Cihaz Limiti",
+    "activeDevices": "Aktif Cihazlar",
+    "status": "Durum",
+    "actions": "İşlemler",
+    "device": "Cihaz",
+    "deviceId": "Cihaz Kimliği",
+    "lastSeen": "Son Görülme",
+    "devices": "cihaz",
+    "active": "aktif"
+  },
+  "empty": {
+    "noUsers": "Kullanıcı bulunamadı",
+    "noUsersDescription": "Cihazlarını izlemek için bazı son kullanıcılar oluşturun.",
+    "noDevices": "Cihaz bulunamadı",
+    "noDevicesDescription": "Bu kullanıcı henüz herhangi bir cihaz bağlamadı."
+  },
+  "actions": {
+    "viewDevices": "Cihazları Görüntüle",
+    "remove": "Kaldır",
+    "removeDevice": "Cihazı Kaldır",
+    "cancel": "İptal"
+  },
+  "dialog": {
+    "title": "Cihaz Yönetimi - {{username}}",
+    "description": "Bu kullanıcı için aktif cihazları görüntüleyin ve yönetin. Limit: {{limit}} cihaz",
+    "removeTitle": "Cihazı Kaldır",
+    "removeDescription": "\"{{deviceName}}\" cihazını {{username}} hesabından kaldırmak istediğinizden emin misiniz? Bu, cihazın bağlantısını derhal kesecektir."
+  }
+}

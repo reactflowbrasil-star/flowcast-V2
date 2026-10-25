@@ -1,0 +1,2575 @@
+{
+  "common": {
+    "create": "Oluştur",
+    "edit": "Düzenle",
+    "delete": "Sil",
+    "save": "Kaydet",
+    "cancel": "İptal",
+    "submit": "Gönder",
+    "close": "Kapat",
+    "copy": "Kopyala",
+    "open": "Aç",
+    "dismiss": "Kapat",
+    "back": "Geri",
+    "next": "İleri",
+    "previous": "Geri",
+    "loading": "Yükleniyor...",
+    "error": "Hata",
+    "success": "Başarılı",
+    "warning": "Uyarı",
+    "info": "Bilgi",
+    "confirm": "Onayla",
+    "yes": "Evet",
+    "no": "Hayır",
+    "ok": "Tamam",
+    "notAvailable": "N/A",
+    "unknown": "Bilinmiyor",
+    "search": "Ara",
+    "filter": "Filtrele",
+    "sort": "Sırala",
+    "export": "Dışa Aktar",
+    "import": "İçe Aktar",
+    "upload": "Yükle",
+    "download": "İndir",
+    "select": "Seç",
+    "selected": "Seçildi",
+    "all": "Hepsi",
+    "none": "Hiçbiri",
+    "enabled": "Etkin",
+    "disabled": "Devre Dışı",
+    "active": "Aktif",
+    "inactive": "Pasif",
+    "pending": "Beklemede",
+    "completed": "Tamamlandı",
+    "failed": "Hata",
+    "title": "Başlık",
+    "description": "Açıklama",
+    "name": "İsim",
+    "email": "E-posta",
+    "optional": "isteğe bağlı",
+    "password": "Şifre",
+    "username": "Kullanıcı Adı",
+    "status": "Durum",
+    "date": "Tarih",
+    "time": "Saat",
+    "type": "Tür",
+    "category": "Kategori",
+    "action": "İşlem",
+    "actions": "İşlemler",
+    "settings": "Ayarlar",
+    "configuration": "Yapılandırma",
+    "management": "Yönetim",
+    "manage": "ve yönet",
+    "endUsers": "Son Kullanıcılar",
+    "across": "genelinde",
+    "saved": "Değişiklikler kaydedildi",
+    "provider": "Sağlayıcı",
+    "country": "Ülke",
+    "columns": "Sütunlar",
+    "dashboard": "Kontrol Paneli",
+    "overview": "Genel Bakış",
+    "details": "Detaylar",
+    "summary": "Özet",
+    "statistics": "İstatistikler",
+    "failedLogins": "Başarısız Girişler",
+    "today": "Bugün",
+    "views": "izlenme",
+    "analytics": "Analitik",
+    "reports": "Raporlar",
+    "logs": "Günlükler",
+    "history": "Geçmiş",
+    "activity": "Etkinlik",
+    "notifications": "Bildirimler",
+    "messages": "Mesajlar",
+    "tickets": "Destek Kayıtları",
+    "support": "Destek",
+    "help": "Yardım",
+    "about": "Hakkında",
+    "version": "Sürüm",
+    "language": "Dil",
+    "theme": "Tema",
+    "somethingWentWrong": "Bir şeyler yanlış gitti",
+    "saving": "Kaydediliyor...",
+    "tryAgain": "Tekrar Dene",
+    "logout": "Çıkış Yap",
+    "loggingOut": "Çıkış yapılıyor...",
+    "confirmLogoutTitle": "Çıkışı Onayla",
+    "confirmLogoutDescription": "Çıkış yapmak istediğinize emin misiniz, {{user}}? Hesabınıza erişmek için tekrar giriş yapmanız gerekecek.",
+    "justNow": "Az önce",
+    "refresh": "Yenile",
+    "activityDashboard": "Etkinlik Paneli",
+    "activitySubtitle": "Sistem etkinlikleri ve etkileşim metrikleri",
+    "autoRefreshState": "Otomatik yenileme: {{state}}",
+    "on": "AÇIK",
+    "off": "KAPALI",
+    "enable": "Etkinleştir",
+    "disable": "Devre Dışı Bırak",
+    "loginsToday": "Bugünkü girişler",
+    "activeUsers": "Aktif kullanıcılar",
+    "last7Days": "Son 7 gün",
+    "contentViews": "İçerik izlenmeleri",
+    "deviceDistribution": "Cihaz dağılımı",
+    "mostViewedContent": "En çok izlenen içerik",
+    "noViewingData": "İzleme verisi yok",
+    "multiDeviceUsers": "Çoklu cihaz kullananlar",
+    "noMultiDeviceUsers": "Birden fazla cihazı olan kullanıcı yok",
+    "activity24h": "Etkinlik (24s)",
+    "removing": "Kaldırılıyor...",
+    "sessionExpiredTitle": "Oturum Süresi Doldu",
+    "sessionExpiredDescription": "Oturumunuz kapatıldı. Lütfen tekrar giriş yapın.",
+    "noPermission": "Bu işlemi yapma izniniz yok.",
+    "notFound": "İstenen kaynak bulunamadı.",
+    "pageNotFoundTitle": "Sayfa Bulunamadı",
+    "goToLogin": "Giriş Sayfasına Git",
+    "invalidData": "Geçersiz veri sağlandı.",
+    "tooManyRequests": "Çok fazla istek. Lütfen daha sonra tekrar deneyin.",
+    "serverError": "Sunucu hatası. Lütfen daha sonra tekrar deneyin.",
+    "serviceUnavailable": "Hizmet geçici olarak kullanım dışı. Lütfen daha sonra tekrar deneyin.",
+    "networkErrorTitle": "Ağ Hatası",
+    "networkErrorDescription": "Sunucuya bağlanılamadı. Lütfen internet bağlantınızı kontrol edin.",
+    "operationFailedTitle": "İşlem başarısız",
+    "operationFailedWithContext": "{{context}} başarısız",
+    "validationErrorTitle": "Doğrulama hatası",
+    "authErrorTitle": "Kimlik doğrulama hatası",
+    "permissionDeniedTitle": "İzin reddedildi",
+    "deviceDisconnectedTitle": "Cihaz bağlantısı kesildi",
+    "deviceDisconnectedDescription": "Cihazınızın bağlantısı kesildi. Giriş sayfasına yönlendiriliyor...",
+    "unexpectedErrorDescription": "Beklenmedik bir hata oluştu. Verdiğimiz rahatsızlıktan dolayı özür dileriz.",
+    "unknownError": "Bilinmeyen bir hata oluştu",
+    "technicalDetails": "Teknik Detaylar",
+    "reload": "Yeniden Yükle",
+    "reloadPage": "Sayfayı Yeniden Yükle",
+    "goHome": "Ana Sayfaya Git",
+    "paginationShowing": "Sayfa {{page}} / {{totalPages}}",
+    "contactSupport": "Bu sorun devam ederse, lütfen yukarıdaki hata kimliği ile destek birimine başvurun.",
+    "tmdbAttribution": "Bu ürün TMDB API kullanmaktadır ancak TMDB tarafından onaylanmamış veya sertifikalandırılmamıştır.",
+    "processing": "İşleniyor...",
+    "retry": "Tekrar Dene",
+    "add": "Ekle",
+    "remove": "Kaldır",
+    "noData": "Veri yok",
+    "noDescription": "Açıklama yok",
+    "copied": "Kopyalandı",
+    "expired": "Süresi doldu",
+    "change": "Değiştir",
+    "continue": "Devam Et",
+    "createDescription": "Yeni giriş oluşturmak için ayrıntıları doldurun.",
+    "editDescription": "Bu girişin ayrıntılarını değiştirin.",
+    "minVersion": "Minimum Sürüm",
+    "selectApk": "APK dosyası seç",
+    "size": "Boyut",
+    "suspended": "Askıya Alındı",
+    "timestamp": "Zaman damgası",
+    "versionCodeRequired": "Sürüm kodu gereklidir",
+    "year": "Yıl",
+    "total": "Toplam",
+    "apply": "Uygula",
+    "reset": "Sıfırla",
+    "uploading": "Yükleniyor...",
+    "updating": "Güncelleniyor...",
+    "creating": "Oluşturuluyor...",
+    "componentStack": "Bileşen Yığını:",
+    "errorDetails": "Hata Ayrıntıları",
+    "errorId": "Hata Kimliği"
+  },
+  "createContent": {
+    "addNew": "Yeni {{type}} ekle",
+    "add": "{{type}} Ekle",
+    "dialogDescription": "Otomatik metaveri için TMDB'de ara veya manuel içerik ekle",
+    "description": "{{type}} oluşturmak için detayları sağlayın veya TMDB'den içe aktarın",
+    "tmdbSearch": "TMDB'de Ara",
+    "manualEntry": "Manuel giriş",
+    "searchLabel": "{{type}} Ara",
+    "searchPlaceholder": "TMDB'de {{type}} ara...",
+    "searching": "Aranıyor...",
+    "searchTmdb": "TMDB'de Ara",
+    "searchingTmdb": "TMDB'de aranıyor...",
+    "findingMatches": "\"{{query}}\" için en iyi eşleşmeler bulunuyor",
+    "searchResults": "Arama sonuçları",
+    "resultsFound": "{{count}} sonuç bulundu",
+    "noDescription": "Açıklama mevcut değil",
+    "noResultsFound": "Sonuç bulunamadı",
+    "noResultsDescription": "\"{{query}}\" ile eşleşen herhangi bir {{type}} bulamadık",
+    "suggestions": {
+      "tryKeywords": "Farklı anahtar kelimeler deneyin",
+      "checkSpelling": "Yazımı kontrol edin",
+      "useOriginalTitle": "Orijinal başlığı kullanın"
+    },
+    "switchToManual": "Manuel girişe geç",
+    "manualAlert": "İçerik detaylarını manuel olarak doldurun. Video URL'si dışındaki tüm alanlar isteğe bağlıdır.",
+    "idLabel": "Kimlik: {{id}}",
+    "createButton": "{{type}} Oluştur",
+    "creating": "Oluşturuluyor...",
+    "metadataLoaded": "TMDB'den metaveri yüklendi: {{title}} (ID: {{id}})",
+    "searchFailed": "Arama başarısız oldu",
+    "unknownYear": "Bilinmiyor",
+    "labels": {
+      "title": "Başlık",
+      "year": "Yıl",
+      "description": "Açıklama",
+      "videoUrl": "Video URL'si",
+      "posterUrl": "Poster URL'si",
+      "backdropUrl": "Arka Plan URL'si",
+      "channelNumber": "Kanal Numarası",
+      "provider": "Sağlayıcı",
+      "country": "Ülke",
+      "format": "Biçim",
+      "drmKeys": "DRM Anahtarları",
+      "origin": "Origin başlığı",
+      "userAgent": "Kullanıcı Aracısı",
+      "referer": "Referer başlığı",
+      "customHeaders": "Özel başlıklar (JSON)",
+      "channelCategory": "Kanal Kategorisi",
+      "drmType": "DRM Türü",
+      "licenseServerUrl": "Lisans Sunucusu URL'si",
+      "licenseRequestHeadersOptional": "Lisans İsteği Başlıkları (isteğe bağlı)",
+      "httpProxyOptional": "HTTP Proxy'si (isteğe bağlı)",
+      "dohOptional": "HTTPS üzerinden DNS (isteğe bağlı)",
+      "liveChannel": "Canlı Kanal",
+      "airDate": "Yayın Tarihi",
+      "videoUrlOptional": "Video URL'si (İsteğe bağlı)",
+      "chapterPosterUrl": "Bölüm Posteri URL'si",
+      "externalSubtitleOptional": "Harici altyazı (isteğe bağlı)",
+      "subtitleFile": "Altyazı dosyası"
+    },
+    "form": {
+      "titlePlaceholder": "Başlığı girin",
+      "yearPlaceholder": "2024",
+      "descriptionPlaceholder": "Açıklamayı girin",
+      "videoUrlPlaceholder": "https://ornek.com/video.m3u8",
+      "posterUrlPlaceholder": "https://ornek.com/poster.jpg",
+      "backdropUrlPlaceholder": "https://ornek.com/backdrop.jpg",
+      "channelNumberPlaceholder": "örn: 1, 2, 3...",
+      "providerPlaceholder": "örn: Kablo, OTT, vb.",
+      "countryPlaceholder": "örn: TR, US, DE...",
+      "formatSelectPlaceholder": "Format seçin...",
+      "formatOption": {
+        "m3u8": "M3U8",
+        "drm": "DRM"
+      },
+      "drmPlaceholder": "ClearKey çiftlerini hex formatında girin: c50f8758b7fb4bf886dd561a7cda6e84:0541856bd180caf65d26a9eaf33e0f24",
+      "originPlaceholder": "https://ornek.com",
+      "userAgentPlaceholder": "Mozilla/5.0...",
+      "refererPlaceholder": "https://referer-site.com",
+      "customHeadersPlaceholder": "{\"X-Custom-Header\": \"deger\"}",
+      "channelCategoryPlaceholder": "Kategori seç...",
+      "drmTypePlaceholder": "DRM türünü seçin...",
+      "drmType": {
+        "clearkey": "ClearKey",
+        "widevine": "geniş şarap",
+        "playready": "Oynamaya Hazır"
+      },
+      "licenseServerUrlPlaceholder": "https://license.example.com/widevine",
+      "licenseHeadersPlaceholder": "{\"X-AxDRM-Message\": \"belirteçiniz-burada\", \"Yetkilendirme\": \"Hamiline ait belirteç\"}",
+      "customHeadersLinesPlaceholder": "X-Özel-Başlık: değer1 X-Başka-Başlık: değer2",
+      "proxyUrlPlaceholder": "http://user:pass@ip:port",
+      "dohUrlPlaceholder": "https://dns.google/dns-query",
+      "chapterTitlePlaceholder": "Bölüm başlığı",
+      "episodeTitlePlaceholder": "Bölüm başlığı",
+      "chapterDescriptionPlaceholder": "Bölüm açıklaması...",
+      "chapterVideoUrlPlaceholder": "Video URL'si (isteğe bağlı)",
+      "chapterPosterUrlPlaceholder": "https://example.com/chapter-poster.jpg",
+      "subtitleLanguagePlaceholder": "örn. tr, en, de"
+    },
+    "tv": {
+      "tvSettingsTitle": "TV kanalı ayarları",
+      "liveTvTitle": "LiveTV başlık ayarları",
+      "drmFormatNote": "Format: kid_hex:key_hex (her satıra bir adet veya virgülle ayrılmış)",
+      "originNote": "Çapraz kökenli istekler için Origin başlığı (isteğe bağlı)",
+      "userAgentNote": "Tarayıcıyı/cihazı taklit etmek için User-Agent (isteğe bağlı)",
+      "refererNote": "İstek kaynağı için Referer başlığı (isteğe bağlı)",
+      "customHeadersNote": "JSON formatında ek başlıklar (isteğe bağlı)",
+      "drmTypeHelp": "ClearKey: Yerel anahtarlar (onaltılı format) | Widevine/PlayReady: Lisans sunucusu gerekli",
+      "widevineLicenseHelp": "Widevine lisans sunucusu URL'si (ör. PallyCon, BuyDRM, Axinom'dan)",
+      "playreadyLicenseHelp": "PlayReady lisans sunucusu URL'si",
+      "licenseHeadersHelp": "Lisans istekleri için özel başlıklara sahip JSON nesnesi (kimlik doğrulama belirteçleri vb.)",
+      "proxyHelp": "Only for geoblocked channels. Format: http://user:pass@ip:port",
+      "dohHelp": "DNS engellemesini atlamak için isteğe bağlı DoH çözümleyici. Bir http(s) URL'si olmalıdır."
+    },
+    "createdSuccess": "{{type}} başarıyla oluşturuldu",
+    "loadingCategories": "Kategoriler yükleniyor...",
+    "untitled": "İsimsiz",
+    "urlSet": "URL Seti",
+    "noUrl": "URL yok",
+    "addEpisode": "Bölüm Ekle",
+    "removeChapter": "Bölümü Kaldır",
+    "chapterLabel": "Bölüm {{number}}: {{title}}",
+    "chapterDescriptionLabel": "Bölüm Açıklaması",
+    "chapterTitle": "Bölüm Başlığı",
+    "episodeTitle": "Bölüm Başlığı",
+    "episodesTitle": "Bölümler",
+    "episodesDescription": "Bu içeriğe ilişkin bölümleri yönetin"
+  },
+  "theme": {
+    "light": "Açık",
+    "dark": "Koyu",
+    "midnight": "Gece Yarısı",
+    "darkBlue": "Koyu Mavi",
+    "system": "Sistem",
+    "placeholder": "Tema"
+  },
+  "language": {
+    "english": "İngilizce",
+    "spanish": "İspanyolca",
+    "french": "Fransızca",
+    "portuguese": "Portekizce",
+    "russian": "Rusça",
+    "turkish": "Türkçe",
+    "slovak": "Slovakça",
+    "chinese": "Çince",
+    "placeholder": "Dil"
+  },
+  "user": {
+    "common": {
+      "verified": "Doğrulanmış",
+      "watch": "İzle",
+      "titleCount": "{{count}} başlık",
+      "titleCount_plural": "{{count}} başlık",
+      "seriesCount": "{{count}} dizi",
+      "seriesCount_plural": "{{count}} dizi",
+      "animeCount": "{{count}} anime",
+      "animeCount_plural": "{{count}} anime",
+      "eventCount": "{{count}} etkinlik",
+      "eventCount_plural": "{{count}} etkinlik",
+      "channelCount": "{{count}} kanal",
+      "channelCount_plural": "{{count}} kanal",
+      "noResults": "Sonuç bulunamadı",
+      "adjustSearch": "Aramanızı veya filtrelerinizi ayarlamayı deneyin",
+      "tryDifferent": "Farklı arama terimleri kullanmayı deneyin",
+      "reload": "Lütfen sayfayı yenilemeyi deneyin"
+    },
+    "filters": {
+      "clear": "Filtreyi temizle",
+      "allGenres": "Tüm türler",
+      "allTypes": "Tüm tipler",
+      "allStatus": "Tüm durumlar",
+      "sortTitle": "Başlığa göre sırala",
+      "sortYear": "Yıla göre sırala",
+      "sortRating": "Puana göre sırala",
+      "searchMovies": "Film ara...",
+      "searchShows": "Dizi ara...",
+      "searchKids": "Çocuk içeriği ara...",
+      "searchAnime": "Anime ara...",
+      "searchEvents": "Etkinlik ara...",
+      "searchChannels": "Kanal ara..."
+    },
+    "live": {
+      "toggleChannels": "Kanallar",
+      "toggleGuide": "Rehber",
+      "categoryCount": "{{count}} kategori",
+      "categoryCount_plural": "{{count}} kategori",
+      "channelsLive": "{{count}} kanal canlı",
+      "nowPlaying": "Şimdi Oynatılıyor",
+      "minutesLeft": "{{count}} dk kaldı",
+      "upNext": "Sıradaki",
+      "unknownChannel": "Bilinmeyen Kanal",
+      "providerFallback": "{{appName}}",
+      "channelGuide": "Kanal Rehberi",
+      "noChannelsFound": "Kanal bulunamadı",
+      "streamUnavailableTitle": "Yayın Kullanılamıyor",
+      "streamUnavailableDescription": "Bu kanal şu anda kullanılamıyor. Lütfen daha sonra tekrar deneyin.",
+      "toastCurrentlyViewing": "Şu anda izleniyor: {{title}}",
+      "noProgramInfo": "Program bilgisi yok",
+      "liveBadge": "LIVE",
+      "loadingCategories": "Kategoriler yükleniyor...",
+      "noCategories": "Kategori mevcut değil",
+      "loadingChannels": "Kanallar yükleniyor...",
+      "loadingStream": "Yayın yükleniyor...",
+      "streamFailed": "Yayın yüklenemedi",
+      "streamError": "Yayın yükleme hatası",
+      "selectPrompt": "İzlemeye başlamak için bir kanal seçin",
+      "playbackError": "Oynatma Hatası",
+      "title": "Canlı TV",
+      "categories": {
+        "sports": "Spor",
+        "entertainment": "Eğlence",
+        "news": "Haberler",
+        "movies": "Filmler"
+      },
+      "epg": {
+        "clickToWatch": "İzlemek için tıklayın",
+        "errors": {
+          "loadFailed": "Program rehberi yüklenemedi"
+        },
+        "live": "Canlı",
+        "liveBadge": "LIVE",
+        "liveNow": "Şimdi Canlı",
+        "liveProgramming": "Canlı Yayın Akışı",
+        "loading": "Program rehberi yükleniyor...",
+        "next24h": "Sonraki 24 saat",
+        "noProgramInfo": "Program bilgisi yok",
+        "previous24h": "Önceki 24 saat",
+        "upcoming": "Yaklaşan",
+        "watchChannel": "Kanalı İzle"
+      }
+    },
+    "menu": {
+      "liveTv": "Canlı TV"
+    },
+    "movies": {
+      "emptyTitle": "Film bulunamadı",
+      "emptyDescription": "Aramanızı veya filtrelerinizi ayarlamayı deneyin"
+    },
+    "shows": {
+      "status": {
+        "ongoing": "Devam Ediyor",
+        "completed": "Tamamlandı",
+        "cancelled": "İptal Edildi",
+        "unknown": "Bilinmiyor"
+      },
+      "loading": "Diziler yükleniyor...",
+      "emptyTitle": "Dizi bulunamadı",
+      "emptyDescription": "Aramanızı veya filtrelerinizi ayarlamayı deneyin"
+    },
+    "kids": {
+      "errorTitle": "Çocuk içeriği yükleme hatası",
+      "searchPlaceholder": "Çocuk içeriği ara...",
+      "emptyTitle": "Çocuk içeriği mevcut değil",
+      "emptySearchTitle": "Sonuç bulunamadı",
+      "emptySearchDescription": "Farklı arama terimleri kullanmayı deneyin"
+    },
+    "anime": {
+      "errorTitle": "Anime yükleme hatası",
+      "searchPlaceholder": "Anime ara...",
+      "emptyTitle": "Anime mevcut değil",
+      "emptySearchTitle": "Sonuç bulunamadı",
+      "emptySearchDescription": "Farklı arama terimleri kullanmayı deneyin"
+    },
+    "events": {
+      "errorTitle": "Etkinlik yükleme hatası",
+      "searchPlaceholder": "Etkinlik ara...",
+      "emptyTitle": "Etkinlik mevcut değil",
+      "emptySearchTitle": "Sonuç bulunamadı",
+      "emptySearchDescription": "Farklı arama terimleri kullanmayı deneyin"
+    },
+    "favorites": {
+      "title": "Favorilerim",
+      "description": "Tüm favori içerikleriniz tek bir yerde",
+      "all": "Hepsi",
+      "movies": "Filmler",
+      "series": "Diziler",
+      "channels": "Kanallar",
+      "emptyTitle": "Henüz favoriniz yok",
+      "emptyDescription": "Favorilerinize içerik eklemeye başlayın",
+      "emptyMoviesTitle": "Favori filminiz yok",
+      "emptyMoviesDescription": "Filmler bölümünden favorilerinize film ekleyin",
+      "emptySeriesTitle": "Favori diziniz yok",
+      "emptySeriesDescription": "Diziler bölümünden favorilerinize dizi ekleyin",
+      "emptyChannelsTitle": "Favori kanalınız yok",
+      "emptyChannelsDescription": "Canlı TV bölümünden favorilerinize kanal ekleyin"
+    },
+    "music": {
+      "unknownTrack": "Bilinmeyen parça",
+      "unknownArtist": "Bilinmeyen sanatçı",
+      "unknownAlbum": "Bilinmeyen albüm",
+      "unknownYear": "Bilinmeyen yıl",
+      "searchingFor": "Aranıyor"
+    },
+    "player": {
+      "audioInfo": "Ses bilgisi",
+      "audioTracksTitle": "Ses Parçaları",
+      "audioTracksTitleWithCount": "Ses Parçaları ({{count}})",
+      "noAudioTracks": "Ses parçası algılanmadı",
+      "noAudioTracksHelpLine1": "Bu videoda ayrı parça olmadan gömülü ses olabilir,",
+      "noAudioTracksHelpLine2": "veya tarayıcınız AudioTracks API'sini desteklemiyor.",
+      "noSubtitles": "Altyazı yok",
+      "playbackSpeed": "Hız",
+      "subtitlesTitle": "Altyazılar"
+    }
+  },
+  "auth": {
+    "accessDenied": "Erişim Reddedildi",
+    "noPermissionTitle": "Yetersiz Yetki",
+    "noPermissionDescription": "Bu sayfaya erişim izniniz yok",
+    "permissionDetail": "Mevcut rolünüz ({{role}}) bu kaynağa erişim yetkisine sahip değil. Gerekli roller: {{required}}.",
+    "goToDashboard": "Panele Git",
+    "errors": {
+      "usernameNotFound": "Kullanıcı adı bulunamadı. Lütfen kullanıcı adınızı kontrol edip tekrar deneyin.",
+      "incorrectPassword": "Hatalı şifre. Lütfen şifrenizi kontrol edip tekrar deneyin.",
+      "accountDeactivated": "Hesabınız devre dışı bırakıldı. Lütfen destekle iletişime geçin.",
+      "invalidCredentials": "Geçersiz kullanıcı adı veya şifre. Lütfen bilgilerinizi kontrol edin.",
+      "accessDeniedAdminUI": "Erişim reddedildi. Bu web arayüzü yalnızca yöneticiler ve bayiler için kullanılabilirdir."
+    },
+    "session": {
+      "notAuthenticated": "Kimlik doğrulanmadı",
+      "sessionExpired": "Oturum süresi doldu",
+      "sessionExpiringSoon": "Oturum süresi yakında dolacak",
+      "sessionActive": "Oturum aktif",
+      "title": "Oturum Durumu",
+      "description": "Mevcut kimlik doğrulama oturumu bilgileri",
+      "status": "Durum:",
+      "user": "Kullanıcı:",
+      "role": "Rol:",
+      "expiresIn": "Oturum şu sürede sona erecek:",
+      "validating": "Doğrulanıyor...",
+      "validateSession": "Oturumu Doğrula",
+      "willExpireIn": "Oturumunuz şu sürede sona erecek",
+      "refreshSession": "Oturumu yenile",
+      "sessionExpiringCompact": "Oturum sona eriyor",
+      "sessionActiveCompact": "Oturum aktif"
+    },
+    "forgotPasswordFlow": {
+      "backToLogin": "Girişe Geri Dön",
+      "checkYourEmailDescription": "Bu e-postaya sahip bir hesap varsa, size şifrenizi sıfırlamanız için bir bağlantı gönderdik. Lütfen gelen kutunuzu ve spam klasörünüzü kontrol edin.",
+      "checkYourEmailTitle": "E-postanızı Kontrol Edin",
+      "emailAddressLabel": "E-posta Adresi",
+      "failedToSendResetEmail": "Sıfırlama e-postası gönderilemedi",
+      "forgotPasswordDescription": "E-posta adresinizi girin, size şifrenizi sıfırlamanız için bir bağlantı göndereceğiz.",
+      "forgotPasswordTitle": "Parolanızı mı unuttunuz?",
+      "genericError": "Bir hata oluştu",
+      "sendResetLink": "Sıfırlama Bağlantısını Gönder",
+      "sending": "Gönderiliyor..."
+    },
+    "resetPasswordFlow": {
+      "backToLogin": "Girişe Geri Dön",
+      "confirmPasswordLabel": "Şifreyi Onayla",
+      "confirmPasswordPlaceholder": "Yeni şifreyi onayla",
+      "createNewPasswordFor": "için yeni bir şifre oluşturun",
+      "genericError": "Bir hata oluştu",
+      "goToLogin": "Giriş Yap'a git",
+      "invalidOrExpiredDescription": "Bu şifre sıfırlama bağlantısı geçersiz veya süresi dolmuş. Lütfen yenisini talep edin.",
+      "invalidOrExpiredTitle": "Geçersiz veya Süresi Dolmuş Bağlantı",
+      "newPasswordLabel": "Yeni Şifre",
+      "newPasswordPlaceholder": "Yeni şifreyi girin",
+      "passwordMinLength": "Şifre en az 6 karakter olmalıdır",
+      "passwordsDoNotMatch": "Şifreler eşleşmiyor",
+      "requestNewLink": "Yeni Bağlantı İste",
+      "resetFailed": "Şifre sıfırlanamadı",
+      "resetPasswordButton": "Şifreyi Sıfırla",
+      "resetYourPassword": "Şifrenizi Sıfırlayın",
+      "resetting": "Sıfırlanıyor...",
+      "successDescription": "Şifreniz güncellendi. Artık yeni şifrenizle giriş yapabilirsiniz.",
+      "successTitle": "Şifre Başarıyla Sıfırlandı",
+      "verifyingLink": "Sıfırlama bağlantısı doğrulanıyor..."
+    },
+    "twoFactorModal": {
+      "title": "İki Faktörlü Kimlik Doğrulama",
+      "totpDescription": "Kimlik doğrulayıcı uygulamanızdan 6 haneli kodu girin",
+      "backupDescription": "8 karakterli yedek kodlarınızdan birini girin",
+      "authenticationCode": "Kimlik Doğrulama Kodu",
+      "totpPlaceholder": "000000",
+      "backupCode": "Yedekleme Kodu",
+      "backupPlaceholder": "XXXXXXXX",
+      "backupHint": "Yedek kodlar tek kullanımlıktır ve kullanım sonrasında geçersiz kılınacaktır.",
+      "verifying": "Doğrulanıyor...",
+      "verifyAndSignIn": "Doğrula ve Oturum Aç",
+      "useBackupCode": "Bunun yerine yedek kod kullanın",
+      "lostAccessHelp": "Kimlik doğrulayıcınıza erişiminizi mi kaybettiniz? 2FA'yı sıfırlamak için yöneticinizle iletişime geçin."
+    }
+  },
+  "login": {
+    "title": "{{appName}}",
+    "subtitle": "Kurumsal Medya Platformu",
+    "secureAccess": "Güvenli Erişim Portalı",
+    "systemAccess": "Sistem Erişimi",
+    "enterCredentials": "Devam etmek için bilgilerinizi girin",
+    "username": "Kullanıcı Adı",
+    "password": "Şifre",
+    "usernamePlaceholder": "Kullanıcı adınızı girin",
+    "passwordPlaceholder": "Şifrenizi girin",
+    "usernameDescription": "Hesap kullanıcı adınızı girin",
+    "authenticating": "Doğrulanıyor...",
+    "accessSystem": "Sisteme Eriş",
+    "hidePassword": "Şifreyi gizle",
+    "showPassword": "Şifreyi göster",
+    "signIn": "Giriş Yap",
+    "rememberMeLabel": "Beni 30 gün boyunca hatırla",
+    "rememberMeDescription": "Bu cihazda oturumumu açık tut",
+    "loginSuccess": "Giriş başarılı! Yönlendiriliyor...",
+    "forgotPassword": "Şifrenizi mi unuttunuz?",
+    "noAccountPrompt": "Hesabınız yok mu?",
+    "contactAdmin": "Yöneticinizle iletişime geçin",
+    "loginFailed": "Giriş başarısız",
+    "unexpectedError": "Beklenmedik bir hata oluştu",
+    "footer": "© 2026 {{appName}} KURUMSAL • GÜVENLİ ERİŞİM",
+    "trialAccountCta": "Deneme hesabı deneyin",
+    "trialAccountDescription": "Platformu keşfetmek için geçici bir hesap oluşturun.",
+    "redeemPrompt": "Kodunuz mu var?",
+    "redeemCta": "Buradan aktif edin",
+    "examples": {
+      "title": "Gelişmiş Giriş Formları",
+      "basic": "Temel Giriş",
+      "withStrength": "Şifre Gücü ile",
+      "minimal": "Minimal Giriş"
+    },
+    "hero": {
+      "encrypted": "Şifreli",
+      "mainLogoAlt": "{{appName}} logosu",
+      "mobileLogoAlt": "Uygulama logosu",
+      "secure": "Güvenli",
+      "ultraHd": "Ultra HD"
+    }
+  },
+  "validation": {
+    "usernameRequired": "Kullanıcı adı zorunludur",
+    "usernameTooLong": "Kullanıcı adı çok uzun",
+    "passwordRequired": "Şifre zorunludur",
+    "passwordMinLength": "Şifre en az 8 karakter olmalıdır",
+    "passwordTooLong": "Şifre çok uzun"
+  },
+  "layout": {
+    "adminDashboard": "Yönetici Paneli",
+    "online": "Çevrimiçi"
+  },
+  "breadcrumb": {
+    "admin": "Yönetici"
+  },
+  "sidebar": {
+    "brand": "{{appName}}",
+    "adminDashboard": "Yönetici Paneli",
+    "expand": "Yan menüyü genişlet",
+    "collapse": "Yan menüyü daralt",
+    "overview": "Genel Bakış",
+    "gift-codes": "Hediye Kodları",
+    "giftCodes": "Hediye Kodları",
+    "content": "İçerik Yönetimi",
+    "media-scanner": "Medya Tarayıcı",
+    "epg": "EPG",
+    "music": "Müzik Kitaplığı",
+    "resellers": "Bayiler",
+    "users": "Son Kullanıcılar",
+    "demos": "Demolar",
+    "devices": "Cihazlar",
+    "tickets": "Destek Talepleri",
+    "logs": "Aktivite Günlükleri",
+    "security": "Güvenlik Merkezi",
+    "master-keys": "Ana API Anahtarları",
+    "billing": "Faturalandırma",
+    "email": "E-posta",
+    "app-versions": "Uygulama Sürümleri",
+    "settings": "Ayarlar",
+    "systemStatus": "Sistem Durumu",
+    "systemOperational": "Tüm sistemler çalışıyor",
+    "profile": "Profil",
+    "logout": "Çıkış Yap",
+    "badge": {
+      "new": "YENİ"
+    },
+    "description": {
+      "security": "Güvenlik olaylarını izleyin ve yasaklamaları yönetin",
+      "master-keys": "Harici uygulamalar için API anahtarlarını yönetin",
+      "billing": "Gelir genel bakışı ve çevrimdışı ödemeler",
+      "packages": "Abonelik paketlerini yönetin",
+      "direct-subscriptions": "Doğrudan abonelikleri yönetin"
+    },
+    "packages": "Paketler",
+    "direct-subscriptions": "Doğrudan Abonelikler"
+  },
+  "device": {
+    "title": "Cihaz Kaydı",
+    "description": "Kayıtlı cihazlarınızı yönetin ve yenilerini ekleyin",
+    "devices": "cihazlar",
+    "addDevice": "Cihaz Ekle",
+    "limitStatus": "Cihaz Limiti Durumu",
+    "atLimit": "Limit Dolu",
+    "available": "Müsait",
+    "youHaveDevices": "Kayıtlı {{max}} cihaz hakkınızdan {{count}} tanesini kullanıyorsunuz.",
+    "toAddRemove": "Yeni bir cihaz eklemek için önce mevcut bir cihazı kaldırmalısınız.",
+    "yourRegisteredDevices": "Kayıtlı Cihazlarınız",
+    "table": {
+      "device": "Cihaz",
+      "user": "Kullanıcı",
+      "deviceLimit": "Cihaz Limiti",
+      "riskLevel": "Risk Seviyesi",
+      "status": "Durum",
+      "lastActive": "Son Etkinlik",
+      "actions": "İşlemler"
+    },
+    "risk": {
+      "high": "Yüksek Risk",
+      "safe": "Güvenli"
+    },
+    "remove": "Kaldır",
+    "removeDeviceConfirmation": "\"{{name}}\" cihazını {{username}} kullanıcısından kalıcı olarak kaldırmak istediğinizden emin misiniz?\\n\\nNot: Bu sadece cihazı kaldıracaktır. Kullanıcı daha sonra tekrar kaydedebilir.\\nUyarı: Bu cihazın tekrar bağlanmasını engellemek istiyorsanız bunun yerine \"Kaldır ve Kara Listeye Al\" seçeneğini kullanın.",
+    "removeAndBlacklistAction": "Kaldır ve Kara Listeye Al",
+    "removeAndBlacklistTitle": "Cihazı Kaldır ve Kara Listeye Al",
+    "removeAndBlacklistDescription": "\"{{name}}\" cihazını {{username}} kullanıcısından kaldırmak ve kara listeye eklemek istediğinizden emin misiniz?\\n\\nUyarı: Bu, cihazın bağlantısını hemen kesecek ve manuel olarak kara listeden çıkarılana kadar tekrar bağlanmasını engelleyecektir.",
+    "blacklistOnly": "Yalnızca Kara Listeye Al",
+    "blacklistTitle": "Cihazı Kara Listeye Al",
+    "blacklistDescription": "\"{{name}}\" cihazını kaldırmadan kara listeye eklemek istediğinizden emin misiniz?\\n\\nNot: Bu, cihazın bağlantısını hemen kesecek ancak kullanıcı tekrar bağlanmaya çalışana kadar aktif cihazlar listesinde tutacaktır.",
+    "blacklistAction": "Kara Listeye Al",
+    "removeMultipleTitle": "Birden Fazla Cihazı Kaldır",
+    "removeMultipleDescription": "Seçilen {{count}} cihazı kaldırmak istediğinizden emin misiniz?",
+    "devicesToBeRemovedLabel": "Kaldırılacak cihazlar:",
+    "moreDevices": "... ve {{count}} cihaz daha",
+    "bulkWarning": "Bu işlem geri alınamaz.",
+    "removeAllSelected": "Seçilenlerin Tümünü Kaldır",
+    "removeDeviceTitle": "Cihazı Kaldır",
+    "removeDeviceDescription": "\"{{name}}\" cihazını kaldırmak istediğinizden emin misiniz?\n\nİleride kullanmak için bu cihazı tekrar kaydetmeniz gerekecektir.",
+    "removeDevice": "Cihazı Kaldır",
+    "noDevices": "Kayıtlı cihaz yok",
+    "registerFirstDescription": "Hizmeti kullanmaya başlamak için ilk cihazınızı kaydedin.",
+    "registerFirstButton": "İlk Cihazı Kaydet",
+    "registerNewTitle": "Yeni Cihaz Kaydet",
+    "registerNewDescription": "Hesabınıza yeni bir cihaz ekleyin",
+    "label": {
+      "deviceId": "Cihaz Kimliği",
+      "deviceName": "Cihaz Adı"
+    },
+    "placeholder": {
+      "id": "Benzersiz cihaz tanımlayıcısını girin",
+      "name": "Cihaz adını girin (ör. Oturma Odası TV)",
+      "searchDevices": "Cihaz ara..."
+    },
+    "removeSelected": "Seçilenleri Kaldır ({{count}})",
+    "noDevicesFoundTitle": "Cihaz bulunamadı",
+    "noDevicesFoundFor": "\"{{query}}\" için cihaz bulunamadı",
+    "noDevicesRegistered": "Sistemde şu anda kayıtlı cihaz bulunmamaktadır.",
+    "deviceIdLabel": "Kimlik: {{id}}",
+    "time": {
+      "justNow": "Şimdi",
+      "minutesAgo": "{{count}}dk önce",
+      "hoursAgo": "{{count}}sa önce",
+      "daysAgo": "{{count}}g önce"
+    },
+    "errors": {
+      "loadFailed": "Cihaz bilgileri yüklenemedi. Lütfen daha sonra tekrar deneyin."
+    },
+    "registering": "Kaydediliyor...",
+    "registerDevice": "Cihazı Kaydet"
+  },
+  "tvCategories": {
+    "title": "TV Kanal Kategorilerini Yönet",
+    "description": "Varsayılan kategorileri koruyun ve bunları kendi etiketlerinizle genişletin. Kullanımda olan kategoriler kaldırılamaz.",
+    "inputPlaceholder": "Özel bir kategori oluşturun (ör. Premium Spor)",
+    "addCategory": "Kategori Ekle",
+    "refreshing": "Yenileniyor...",
+    "loading": "Kategoriler yükleniyor...",
+    "none": "Henüz herhangi bir özel kategori oluşturmadınız.",
+    "default": "Varsayılan",
+    "removeTitle": "Kategoriyi kaldır",
+    "removeDescription": "Bu işlem geri alınamaz. \"{{name}}\" kategorisi kaldırılacak.",
+    "removeCategory": "Kategoriyi Kaldır",
+    "editCategory": "Kategoriyi düzenle",
+    "inUseTitle": "Kategori şu anda kullanımda",
+    "created": "Kategori oluşturuldu",
+    "updated": "Kategori güncellendi",
+    "removed": "Kategori kaldırıldı",
+    "nameRequired": "Kategori adı gerekli",
+    "helpText": "Varsayılan kategoriler en üstte sabit kalır. Özel etiketler, sağlayıcıları veya bölgeleri istediğiniz gibi düzenlemenize yardımcı olur.",
+    "protectionNote": "Kullanımdaki kategoriler, kazara kaldırılmasını önlemek için korunmaktadır.",
+    "tableHeaders": {
+      "category": "Kategori",
+      "usage": "Kullanım",
+      "created": "Oluşturulma",
+      "actions": "İşlemler"
+    },
+    "categoryCount": "{{count}} kategori",
+    "usageLabel": {
+      "channel_one": "{{count}} kanal",
+      "channel_other": "{{count}} kanal",
+      "notInUse": "Kullanımda değil"
+    }
+  },
+  "systemConfiguration": {
+    "title": "Sistem Yapılandırması",
+    "creditTitle": "Kredi Sistemi Yapılandırması",
+    "creditDescription": "Kullanıcı oluşturma için varsayılan cihaz limitlerini ve kredi oranlarını yapılandırın",
+    "saveCreditConfig": "Kredi Yapılandırmasını Kaydet",
+    "saveTMDBConfig": "TMDB Yapılandırmasını Kaydet",
+    "testing": "Test ediliyor...",
+    "test": "Test Et",
+    "tmdbKeyValid": "TMDB API anahtarı geçerli!",
+    "tmdbKeyInvalid": "TMDB API anahtarı geçersiz: {{message}}",
+    "failedToLoad": "Yapılandırma yüklenemedi: {{message}}",
+    "creditConfigUpdated": "Kredi yapılandırması başarıyla güncellendi!",
+    "tmdbConfigUpdated": "TMDB yapılandırması başarıyla güncellendi!",
+    "currentConfigTitle": "Mevcut Yapılandırma",
+    "currentConfigDescription": "Mevcut sistem ayarlarının özeti",
+    "defaultDevicesLabel": "Varsayılan Cihazlar",
+    "credits3DevicesLabel": "Krediler (3 cihaz)",
+    "credits5DevicesLabel": "Krediler (5 cihaz)",
+    "tmdbApiLabel": "TMDB API",
+    "configured": "Yapılandırıldı",
+    "notSet": "Ayarlanmadı",
+    "forms": {
+      "defaultDevicesLabel": "Kullanıcı Başına Varsayılan Cihaz",
+      "defaultDevicesHelp": "Yeni kullanıcılar için varsayılan cihaz sayısı",
+      "creditPerExtraDeviceLabel": "Ek Cihaz Başına Kredi",
+      "creditPerExtraDeviceHelp": "Varsayılanın üzerindeki her cihaz için alınan kredi",
+      "credit3DevicesLabel": "3 Cihazlı Kullanıcı İçin Kredi",
+      "credit3DevicesHelp": "3 cihazlı bir kullanıcı oluşturulurken düşülen kredi",
+      "credit5DevicesLabel": "5 Cihazlı Kullanıcı İçin Kredi",
+      "credit5DevicesHelp": "5 cihazlı bir kullanıcı oluşturulurken düşülen kredi",
+      "tmdbTitle": "TMDB API Yapılandırması",
+      "tmdbDescription": "Otomatik içerik metadataları için TMDB API entegrasyonunu yapılandırın",
+      "tmdbApiKeyLabel": "TMDB API Anahtarı",
+      "tmdbApiKeyPlaceholder": "TMDB API anahtarınızı girin",
+      "tmdbApiKeyHelp": "API anahtarınızı TMDB API Ayarları'ndan alın",
+      "tmdbEnabledLabel": "TMDB entegrasyonu",
+      "tmdbEnabledDescription": "Kontrol paneli için TMDB metadata getirmeyi aç/kapat.",
+      "tmdbLanguageLabel": "TMDB Dili",
+      "tmdbLanguagePlaceholder": "TMDB dilini seçin",
+      "tmdbLanguageHelp": "TMDB'den alınan film başlıkları, açıklamalar ve metadatalar için dil",
+      "tmdbPreferredFormatLabel": "Tercih edilen resim formatı",
+      "tmdbPreferredFormatPlaceholder": "Tercih edilen resim formatını seçin",
+      "tmdbPreferredFormatHelp": "Çevrimdışı modda TMDB görselleri için tercih edilen formatı seçin",
+      "tmdbModeLabel": "Metadata kaynağı",
+      "tmdbModePlaceholder": "Metadata kaynağını seçin",
+      "tmdbModeOnline": "Çevrimiçi (TMDB API)",
+      "tmdbModeOffline": "Çevrimdışı (yerel metadata)",
+      "tmdbModeDescription": "Metadataları doğrudan TMDB'den mi yoksa yerel metadata önbelleğinizden mi alacağınızı seçin.",
+      "tmdbMetadataPathLabel": "Metadata klasörü",
+      "tmdbMetadataPathHelp": "Sunucudaki çevrimdışı TMDB metadatalarının ve resimlerinin saklandığı göreceli yol (varsayılan: metadata).",
+      "tmdbOfflineHint": "Çevrimdışı mod, açıklamaları ve görselleri metadata klasöründen sunacaktır. Klasörün güncel TMDB dışa aktarımlarıyla senkronize olduğundan emin olun."
+    }
+  },
+  "profile": {
+    "title": "Profil Ayarları",
+    "description": "İletişim bilgilerinizi güncelleyin veya yönetici şifrenizi değiştirin.",
+    "contactInformation": "İletişim Bilgileri",
+    "emailPlaceholder": "you@example.com",
+    "contactInfoNote": "Bu e-postayı şifre sıfırlama ve önemli bildirimler için kullanıyoruz.",
+    "saveChanges": "Değişiklikleri Kaydet",
+    "changePassword": "Şifreyi Değiştir",
+    "newPasswordPlaceholder": "Yeni şifre girin",
+    "confirmPasswordPlaceholder": "Yeni şifreyi tekrar girin",
+    "passwordHelp": "En az 8 karakter kullanın. Güçlü bir şifre rakam ve sembol içerir.",
+    "updatePassword": "Şifreyi Güncelle",
+    "updated": "Profil güncellendi",
+    "passwordUpdated": "Şifre güncellendi",
+    "enterAndConfirmPassword": "Lütfen yeni şifreyi girin ve onaylayın",
+    "passwordsDoNotMatch": "Şifreler eşleşmiyor",
+    "updateFailed": "Profil güncellenemedi",
+    "passwordTooShort": "Şifre en az 8 karakter uzunluğunda olmalıdır",
+    "updatePasswordFailed": "Şifre güncellenemedi",
+    "currentPasswordLabel": "Mevcut Şifre",
+    "currentPasswordPlaceholder": "Mevcut şifreyi girin",
+    "currentPasswordRequired": "Mevcut şifre gereklidir",
+    "newPasswordLabel": "Yeni Şifre",
+    "confirmPasswordLabel": "Şifreyi Onayla",
+    "twoFactor": {
+      "title": "İki Faktörlü Doğrulama",
+      "description": "Hesabınıza ekstra bir güvenlik katmanı ekleyin",
+      "enabled": "İki faktörlü doğrulama etkin",
+      "disabled": "İki faktörlü doğrulama devre dışı",
+      "enable": "2FA'yı Etkinleştir",
+      "disable": "2FA'yı Devre Dışı Bırak",
+      "disableDescription": "İki faktörlü doğrulamayı devre dışı bırakmak için bir 2FA kodu veya yedek kod girin.",
+      "setupTitle": "İki Faktörlü Doğrulamayı Kur",
+      "scanQR": "Bu QR kodunu kimlik doğrulama uygulamanızla (Google Authenticator, Authy vb.) tarayın",
+      "manualEntry": "Veya bu kodu manuel olarak girin:",
+      "verifyCode": "Doğrulamak için kimlik doğrulama uygulamanızdaki 6 haneli kodu girin:",
+      "verify": "Doğrula ve Etkinleştir",
+      "verifying": "Doğrulanıyor...",
+      "placeholder": "000000",
+      "backupCodes": {
+        "title": "Yedek Kodlarınızı Kaydedin",
+        "description": "Bu kodlar, kimlik doğrulayıcınızı kaybetmeniz durumunda hesabınıza erişmek için kullanılabilir. Her kod yalnızca bir kez kullanılabilir. Bunları güvenli bir yerde saklayın.",
+        "copy": "Tümünü Kopyala ve Kapat"
+      },
+      "errors": {
+        "setupFailed": "2FA kurulumu başlatılamadı",
+        "verifyFailed": "Doğrulama başarısız",
+        "disableFailed": "2FA devre dışı bırakılamadı",
+        "invalidCode": "Lütfen geçerli bir 6 haneli kod girin"
+      },
+      "cancel": "İptal",
+      "code": "Code",
+      "qrAlt": "2FA QR Kodu"
+    }
+  },
+  "creditsPricing": {
+    "savePricingConfig": "Fiyatlandırma Yapılandırmasını Kaydet",
+    "updated": "Fiyatlandırma yapılandırması başarıyla güncellendi",
+    "tiersSorted": "Kademeler sıralandı ve normalleştirildi"
+  },
+  "notifications": {
+    "content": {
+      "createFailed": "İçerik oluşturulamadı: {{message}}"
+    },
+    "security": {
+      "errorLoadingBans": "Güvenlik yasakları yüklenirken hata oluştu",
+      "errorUnbanningUser": "Kullanıcının yasağı kaldırılırken hata oluştu",
+      "errorLoadingStatistics": "Güvenlik istatistikleri yüklenirken hata oluştu",
+      "errorCleaningExpiredBans": "Süresi dolmuş yasaklar temizlenirken hata oluştu",
+      "errorLoadingIncidents": "Güvenlik olayları yüklenirken hata oluştu"
+    },
+    "ban": {
+      "usernameAndReasonRequired": "Kullanıcı adı ve neden gereklidir",
+      "invalidDuration": "Geçersiz süre",
+      "errorCreatingBan": "Yasak oluşturulurken hata oluştu"
+    },
+    "scan": {
+      "folderCompleted": "Klasör taraması tamamlandı",
+      "error": "Tarama başarısız: {{message}}"
+    },
+    "blacklist": {
+      "errorLoading": "Kara listeye alınmış cihazlar yüklenirken hata oluştu",
+      "errorRemoving": "Cihaz kara listeden çıkarılırken hata oluştu",
+      "removed": "Cihaz kara listeden başarıyla çıkarıldı",
+      "removeFailed": "Cihaz kara listeden çıkarılamadı",
+      "confirmRemove": "{{user}} kullanıcısı için \"{{device}}\" cihazını kara listeden çıkarmak istediğinizden emin misiniz?"
+    },
+    "credits": {
+      "updated": "Kredi fiyatlandırması başarıyla güncellendi",
+      "tiersSorted": "Kademeler sıralandı ve normalleştirildi"
+    },
+    "securityIncident": {
+      "deleted": "Güvenlik olayı başarıyla silindi",
+      "deleteFailed": "Güvenlik olayı silinemedi"
+    },
+    "provider": {
+      "removed": "Sağlayıcı kaldırıldı",
+      "added": "\"{{name}}\" sağlayıcısı eklendi",
+      "error": "Sağlayıcı hatası: {{message}}",
+      "syncCompleted": "Senkronizasyon tamamlandı ({{created}} oluşturuldu, {{updated}} güncellendi)"
+    },
+    "edit": {
+      "epgCopied": "EPG Kanal Kimliği kopyalandı",
+      "streamUrlCopied": "Yayın URL'si kopyalandı"
+    },
+    "banUser": {
+      "userUnbanned": "{{user}} kullanıcısının yasağı kaldırıldı"
+    }
+  },
+  "admin": {
+    "search": {
+      "placeholder": "Ara... (Ctrl+K)",
+      "shortcuts": {
+        "enterKey": "Enter tuşu",
+        "escapeKey": "Esc tuşu",
+        "navigate": "Gezin"
+      },
+      "types": {
+        "content": "İçerik",
+        "music": "Müzik",
+        "reseller": "Bayi",
+        "user": "Kullanıcı"
+      }
+    },
+    "security": {
+      "tabs": {
+        "overview": "Güvenlik Genel Bakış",
+        "incidents": "Güvenlik Olayları",
+        "bans": "Güvenlik Yasakları",
+        "blacklistedDevices": "Kara Listedeki Cihazlar"
+      },
+      "actions": {
+        "cleanupExpiredBans": "Süresi Dolan Yasakları Temizle",
+        "createManualBan": "Manuel Yasak Oluştur"
+      },
+      "cards": {
+        "totalIncidents": "Toplam Olay",
+        "todaysIncidents": "Bugünkü Olaylar",
+        "activeBans": "Aktif Yasaklar",
+        "permanentBans": "Kalıcı Yasaklar",
+        "blacklistedDevices": "Kara Listedeki Cihazlar"
+      }
+    },
+    "masterKeys": {
+      "createDialogDescription": "Harici uygulamalar için yeni bir Master API Anahtarı oluşturun. Bu anahtar, arayüz kimlik doğrulaması olmadan tam API erişimi sağlar.",
+      "examples": {
+        "appName": "ör. Harici Düzenleyici Uygulaması 2024"
+      },
+      "keyNameHelp": "Bu API anahtarını tanımlamak için açıklayıcı bir ad",
+      "securityNoteTitle": "Güvenlik Notu",
+      "securityNoteDescription": "Oluşturulan API anahtarı yalnızca bir kez gösterilecektir. Kopyaladığınızdan ve güvenli bir şekilde sakladığınızdan emin olun.",
+      "empty": {
+        "title": "API Anahtarı Bulunamadı",
+        "description": "Harici uygulama entegrasyonunu etkinleştirmek için ilk Master API Anahtarınızı oluşturun"
+      },
+      "detailsTitle": "Master API Anahtarı Detayları",
+      "detailsDescription": "Harici uygulama entegrasyonu için bu API anahtarını görüntüleyin ve yönetin",
+      "apiKeyLabel": "API Anahtarı",
+      "activeStatus": "Aktif Durum",
+      "regenerateButton": "Anahtarı Yeniden Oluştur",
+      "deleteButton": "Anahtarı Sil",
+      "labels": {
+        "created": "Oluşturulma",
+        "lastUpdated": "Son Güncelleme",
+        "lastUsed": "Son Kullanım"
+      }
+    },
+    "loginHistory": {
+      "title": "Giriş Geçmişi",
+      "lastUpdated": "Son güncelleme: {{time}}",
+      "autoRefreshOn": "Otomatik yenileme: AÇIK",
+      "refreshNow": "Şimdi Yenile",
+      "filters": {
+        "username": "Kullanıcı Adı",
+        "ipAddress": "IP Adresi",
+        "startDate": "Başlangıç Tarihi",
+        "endDate": "Bitiş Tarihi"
+      },
+      "placeholders": {
+        "searchUsername": "Kullanıcı adı ara...",
+        "ipAddress": "IP adresi..."
+      },
+      "loading": "Giriş geçmişi yükleniyor...",
+      "errors": {
+        "loading": "Giriş geçmişi yükleme hatası: {{message}}",
+        "loadingFallback": "Giriş geçmişi yüklenemedi"
+      },
+      "noHistory": "Giriş denemesi bulunamadı.",
+      "table": {
+        "dateTime": "Tarih ve Saat",
+        "user": "Kullanıcı",
+        "status": "Durum",
+        "ipAddress": "IP Adresi",
+        "device": "Cihaz",
+        "userAgent": "Kullanıcı Aracısı"
+      }
+    },
+    "securityIncidents": {
+      "filterType": "Türe göre filtrele",
+      "allTypes": "Tüm türler",
+      "bruteForce": "Kaba kuvvet (Brute force)",
+      "suspiciousActivity": "Şüpheli etkinlik",
+      "multipleDevices": "Birden fazla cihaz",
+      "tokenManipulation": "Token manipülasyonu",
+      "searchByUsernamePlaceholder": "Kullanıcı adına göre ara...",
+      "itemsPerPage": "Sayfa başına öğe",
+      "title": "Güvenlik Olayları ({{total}})",
+      "noneFound": "Olay bulunamadı.",
+      "deviceId": "Cihaz Kimliği",
+      "ipAddress": "IP Adresi",
+      "deleteTitle": "Olayı sil",
+      "showingPage": "Sayfa {{page}} / {{totalPages}}",
+      "confirmDelete": "Bu olay silinsin mi?"
+    },
+    "securityBans": {
+      "searchByUsernamePlaceholder": "Kullanıcı adına göre ara...",
+      "itemsPerPage": "Sayfa başına öğe",
+      "title": "Güvenlik Yasakları ({{total}})",
+      "noneFound": "Yasak bulunamadı.",
+      "level": "Seviye",
+      "type": "Tür",
+      "reason": "Neden",
+      "timeRemaining": "Kalan süre"
+    },
+    "blacklistedDevices": {
+      "title": "Kara Listedeki Cihazlar ({{count}})",
+      "noneTitle": "Kara listede cihaz yok",
+      "noneDescription": "Her şey temiz. Şu anda kara listeye alınmış cihaz bulunmuyor.",
+      "removeButton": "Kara listeden çıkar"
+    },
+    "unban": {
+      "action": "Yasağı Kaldır",
+      "confirm": "{{user}} kullanıcısının yasağı kaldırılsın mı?",
+      "promptReason": "Yasağı kaldırma nedenini girin"
+    },
+    "dashboard": {
+      "notAuthenticated": "Kimlik doğrulanmadı",
+      "accessDenied": "Erişim reddedildi. Yönetici rolü gereklidir.",
+      "preparing": "Panel hazırlanıyor..."
+    },
+    "demos": {
+      "title": "Demo Deneyimi",
+      "subtitle": "Kötüye kullanımı kontrol altında tutmak için demo hesaplarını izleyin, oluşturma limitlerini ayarlayın ve erişim geçmişini gözden geçirin.",
+      "settingsTitle": "Oluşturma sınırları",
+      "settingsDescription": "Bir IP üzerinden kaç tane demo oluşturulabileceğini ve ihlal edenlerin ne kadar süre yasaklı kalacağını sınırlayın.",
+      "totalUsers": "Aktif demolar",
+      "thresholdLabel": "Eşik (oluşturma / 24saat)",
+      "banDurationLabel": "Yasak süresi (gün)",
+      "managementTitle": "Demo izleme",
+      "managementDescription": "Aktif demo hesaplarını inceleyin veya birkaç tıklamayla IP izlerini denetleyin.",
+      "usersTab": "Kullanıcılar",
+      "historyTab": "Geçmiş",
+      "usersSummary": "{{count}} aktif demo kullanıcısı",
+      "refreshing": "Yenileniyor...",
+      "ipLabel": "IP adresi",
+      "expiresLabel": "Sona Erme",
+      "deviceLabel": "Cihaz",
+      "userAgentLabel": "Kullanıcı aracısı",
+      "resultLabel": "Sonuç",
+      "successful": "Başarılı",
+      "failed": "Başarısız",
+      "historySummary": "{{total}} günlük girişi gösteriliyor",
+      "noHistoryResults": "Mevcut filtreler için giriş denemesi yok.",
+      "noUsers": "Şu anda demo kullanıcısı yok.",
+      "confirmDelete": "Bu demo kullanıcısı silinsin mi? Bu işlem geri alınamaz.",
+      "userDeleted": "Demo kullanıcısı silindi",
+      "usernamePlaceholder": "ali.yilmaz"
+    },
+    "giftcodes": {
+      "title": "Hediye Kodları",
+      "description": "Kullanıcı abonelikleri oluşturmak veya uzatmak için tek kullanımlık veya çok kullanımlık hediye kodlarını yönetin.",
+      "create": "Kod Oluştur",
+      "bulkCreate": "Toplu Oluştur",
+      "export": "CSV Dışa Aktar",
+      "noData": "Dışa aktarılacak hediye kodu yok.",
+      "bulkCreated": "{{count}} hediye kodu oluşturuldu",
+      "created": "Hediye kodu oluşturuldu",
+      "deletedSelected": "Seçilen {{count}} hediye kodu silindi",
+      "generate": "Üret",
+      "deleteSelected": "Seçilenleri Sil ({{count}})",
+      "deleteConfirm": "Seçilen {{count}} hediye kodu silinsin mi? Bu işlem geri alınamaz.",
+      "table": {
+        "code": "Kod",
+        "duration_days": "Süre (gün)",
+        "uses": "Kullanım",
+        "remaining": "Kalan",
+        "expires_at": "Sona Erme",
+        "created_at": "Oluşturulma"
+      },
+      "form": {
+        "codeOptional": "Kod (isteğe bağlı)",
+        "durationMonths": "Süre (ay)",
+        "uses": "Kullanım",
+        "prefixOptional": "Önek (isteğe bağlı)",
+        "count": "Adet",
+        "usesPerCode": "Kod başına kullanım"
+      }
+    },
+    "billing": {
+      "overview": {
+        "title": "Faturalandırma Genel Bakış",
+        "description": "Bir bakışta gelir ve kredi performansı",
+        "metrics": {
+          "onlineRevenue": "Çevrimiçi Gelir",
+          "offlineRevenue": "Çevrimdışı Gelir",
+          "adjustments": "Düzeltmeler",
+          "totalRevenue": "Toplam Gelir",
+          "creditsOnline": "Krediler (Çevrimiçi)",
+          "creditsOffline": "Krediler (Çevrimdışı)",
+          "creditsAdjustments": "Krediler (Düzeltmeler)",
+          "totalCredits": "Toplam Kredi"
+        }
+      },
+      "pricing": {
+        "title": "Kredi Fiyatlandırması",
+        "description": "Sistemde yapılandırılan temel fiyatlandırma ve indirim kademeleri",
+        "basePrice": "Temel fiyat (kredi başına USD)",
+        "activeTiers": "Aktif kademeler",
+        "effectiveCurrency": "Geçerli para birimi",
+        "tiersNote": "Minimum miktarın karşılandığı en yüksek kademe uygulanacaktır.",
+        "table": {
+          "minQuantity": "Min miktar (dahil)",
+          "discountPercent": "İndirim yüzdesi",
+          "noTiers": "Kademe yapılandırılmadı. Tüm miktarlar için temel fiyat geçerlidir.",
+          "discountSuffix": "indirim"
+        }
+      },
+      "offline": {
+        "title": "Çevrimdışı Ödeme Ekle",
+        "description": "Manuel ödemeleri kaydedin ve anında kredi verin",
+        "labels": {
+          "reseller": "Bayi",
+          "amount": "Tutar (USD)",
+          "credits": "Verilecek kredi",
+          "method": "Yöntem",
+          "reference": "Referans",
+          "notes": "Notlar"
+        },
+        "placeholders": {
+          "resellerSearch": "En az 2 harf yazın…",
+          "amount": "ör. 100.00",
+          "credits": "ör. 100",
+          "method": "nakit/banka/diğer",
+          "reference": "fatura numarası veya referans",
+          "notes": "isteğe bağlı notlar"
+        },
+        "chargedCurrency": "Tahsil edilen para birimi:",
+        "success": "Çevrimdışı ödeme kaydedildi ve krediler verildi",
+        "actions": {
+          "saving": "Kaydediliyor...",
+          "save": "Çevrimdışı Ödemeyi Kaydet"
+        },
+        "errors": {
+          "amountPositive": "Tutar (USD) 0'dan büyük olmalıdır",
+          "creditsPositive": "Krediler pozitif bir tam sayı olmalıdır",
+          "resellerPositive": "Reseller ID pozitif bir tam sayı olmalıdır",
+          "selectReseller": "Listeden bir reseller seçin"
+        }
+      },
+      "transactions": {
+        "title": "Son İşlemler",
+        "description": "Faturalandırma işlemlerini filtreleyin ve sayfalayın",
+        "filters": {
+          "source": "Kaynak",
+          "status": "Durum",
+          "resellerId": "Bayi Kimliği",
+          "reference": "Referans/Kullanıcı Adı",
+          "perPage": "Sayfa başına"
+        },
+        "sources": {
+          "stripe": "Şerit",
+          "offline": "Çevrimdışı",
+          "adjustment": "Düzeltme"
+        },
+        "statuses": {
+          "completed": "Tamamlandı",
+          "pending": "Beklemede",
+          "refunded": "İade Edildi",
+          "failed": "Başarısız"
+        },
+        "placeholders": {
+          "resellerId": "ör. 42",
+          "reference": "Referans veya kullanıcı adı ara"
+        },
+        "table": {
+          "id": "ID",
+          "reseller": "Bayi",
+          "source": "Kaynak",
+          "amount": "Tutar",
+          "credits": "Krediler",
+          "status": "Durum",
+          "reference": "Referans",
+          "createdAt": "Oluşturulma"
+        },
+        "total": "Toplam: {{count}}",
+        "pagination": {
+          "page": "Sayfa {{page}}"
+        },
+        "empty": "İşlem bulunamadı."
+      },
+      "errors": {
+        "fetchOverview": "Faturalandırma genel bakışı alınamadı",
+        "fetchPricing": "Fiyatlandırma yapılandırması alınamadı",
+        "fetchTransactions": "Faturalandırma işlemleri alınamadı",
+        "createOfflinePayment": "Çevrimdışı ödeme oluşturulamadı"
+      }
+    },
+    "devices": {
+      "errors": {
+        "loadFailed": "Cihaz yönetimi verileri yüklenemedi. Lütfen daha sonra tekrar deneyin."
+      },
+      "overview": {
+        "activeUsers": "Aktif kullanıcılar",
+        "statsDescription": "Kullanıcılar arasındaki cihaz kullanımının ayrıntılı dökümü",
+        "usageByUserTitle": "Kullanıcı Başına Cihaz Kullanımı",
+        "usageByUserDescription": "Cihazlar kaydedildiğinde kullanıcı cihaz istatistikleri burada görünecektir.",
+        "deviceCount": "{{count}}/{{max}} cihaz"
+      },
+      "activeList": {
+        "description": "Sistem genelindeki tüm aktif cihaz bağlantılarını izleyin",
+        "searchPlaceholder": "Cihaz ara...",
+        "deviceId": "Kimlik: {{id}}",
+        "actions": {
+          "disconnect": "Bağlantıyı Kes"
+        },
+        "removeDialog": {
+          "title": "Cihazı Kaldır",
+          "description": "\"{{device}}\" cihazını {{user}} kullanıcısından kalıcı olarak kaldırmak istediğinizden emin misiniz? Bu işlem geri alınamaz."
+        },
+        "emptyTitle": "Cihaz bulunamadı",
+        "noDevicesSearch": "\"{{query}}\" için cihaz bulunamadı",
+        "noDevicesDescription": "Şu anda sistemde kayıtlı cihaz yok.",
+        "time": {
+          "justNow": "Az önce",
+          "minutesAgo": "{{count}} dk önce",
+          "hoursAgo": "{{count}} sa önce",
+          "daysAgo": "{{count}} gün önce"
+        }
+      },
+      "limits": {
+        "title": "Cihaz Sınırı Uyarıları",
+        "subtitle": "Cihaz sınırına yaklaşan veya sınırı aşan kullanıcıları izleyin",
+        "summary": {
+          "warningTitle": "Uyarıdaki Kullanıcılar",
+          "warningDescription": "Sınırın %80-99'u kullanıldı",
+          "criticalTitle": "Kritik Durumdaki Kullanıcılar",
+          "criticalDescription": "Cihaz sınırında",
+          "exceededTitle": "Sınırı Aşan Kullanıcılar",
+          "exceededDescription": "Cihaz sınırının üzerinde"
+        },
+        "badges": {
+          "safe": "Güvenli",
+          "warning": "Uyarı",
+          "critical": "Kritik",
+          "exceeded": "Aşıldı"
+        },
+        "attention": {
+          "title": "İlgi Gerektiren Kullanıcılar"
+        },
+        "table": {
+          "deviceUsage": "Cihaz Kullanımı",
+          "progress": "İlerleme",
+          "warningLevel": "Uyarı Seviyesi"
+        },
+        "actions": {
+          "increaseLimit": "Sınırı Artır",
+          "monitor": "İzle"
+        },
+        "allSafeTitle": "Tüm Kullanıcılar Sınırlar Dahilinde",
+        "allSafeDescription": "Şu anda cihaz sınırına yaklaşan veya sınırı aşan kullanıcı yok.",
+        "allUsersTitle": "Tüm Kullanıcılara Genel Bakış"
+      },
+      "removal": {
+        "bulkRemoveFailed": "{{count}} cihaz kaldırılamadı"
+      }
+    },
+    "overview": {
+      "totalUsers": "Toplam Kullanıcı",
+      "allSystemUsers": "Sistemdeki tüm kullanıcılar",
+      "contentItems": "İçerik Öğeleri",
+      "moviesTvSeries": "Filmler, TV dizileri ve daha fazlası",
+      "activeResellers": "Aktif Bayiler",
+      "currentlyActive": "Şu anda aktif",
+      "systemStatus": "Sistem Durumu",
+      "allSystemsOperational": "Tüm sistemler çalışıyor",
+      "quickActions": "Hızlı İşlemler",
+      "commonTasks": "En yaygın yönetim görevlerine gidin",
+      "manageResellers": "Bayileri Yönet",
+      "manageContent": "İçeriği Yönet",
+      "systemConfig": "Sistem Yapılandırması",
+      "viewReports": "Raporları Görüntüle",
+      "systemHealth": "Sistem Sağlığı",
+      "systemStatusDescription": "Kritik bileşenler için gerçek zamanlı hizmet durumu",
+      "apiServices": "API Hizmetleri",
+      "operational": "Çalışıyor",
+      "database": "Veritabanı",
+      "contentDelivery": "İçerik Dağıtımı"
+    },
+    "content": {
+      "title": "İçerik Yönetimi",
+      "description": "TMDB entegrasyonu ile tüm kategorilerdeki içerikleri yönetin",
+      "confirmDelete": "bu içeriği silmek istediğinizden emin misiniz?",
+      "tmdb": {
+        "searchPlaceholder": "Search on TMDB...",
+        "confirm": "{{category}} için TMDB meta verileri doldurulsun mu? Bu işlem TMDB ID'si olmayan öğeleri eşleştirmeye çalışacaktır.",
+        "success": "TMDB meta verileri güncellendi: {{updated}} güncellendi, {{skipped}} atlandı",
+        "warning": "{{count}} öğe eşleştirilemedi. Ayrıntılar için konsolu kontrol edin.",
+        "error": "TMDB meta veri yenileme başarısız oldu",
+        "defaultCategory": "bu kategori",
+        "selectedId": "Selected TMDB ID: {{id}}",
+        "enrichTitle": "Enrich Content with TMDB",
+        "enrichDescription": "Search TMDB to add metadata like poster, description, and more.",
+        "enrichSuccess": "Content enriched successfully from TMDB",
+        "contentTitle": "Content Title",
+        "mediaType": "Media Type",
+        "mediaTypeTvSeries": "TV Series",
+        "mediaTypeMovie": "Movie",
+        "byId": "By TMDB ID",
+        "byName": "By Name / Title",
+        "tmdbId": "TMDB ID",
+        "enrich": "Enrich Content",
+        "selectedResult": "Selected: {{title}} (ID: {{id}})"
+      },
+      "errors": {
+        "load": "İçerik yüklenemedi: {{message}}"
+      },
+      "empty": {
+        "title": "İçerik bulunamadı",
+        "description": "İlk {{category}} öğenizi ekleyerek başlayın."
+      },
+      "categories": {
+        "vod": {
+          "label": "Filmler",
+          "description": "Filmler ve bağımsız video içerikleri"
+        },
+        "tv": {
+          "label": "TV Kanalları",
+          "description": "Canlı TV kanalları ve akışlar"
+        },
+        "series": {
+          "label": "Diziler",
+          "description": "Sezonları ve bölümleri olan TV dizileri"
+        },
+        "events": {
+          "label": "Etkinlikler",
+          "description": "Canlı etkinlikler ve özel programlar"
+        },
+        "kids": {
+          "label": "Çocuk",
+          "description": "Çocuk ve aile içerikleri"
+        },
+        "anime": {
+          "label": "anime",
+          "description": "Anime ve manga uyarlamaları"
+        }
+      },
+      "actions": {
+        "addManualMovie": "Manuel Film Ekle",
+        "addManualSeries": "Manuel Dizi Ekle",
+        "addManualKids": "Manuel Çocuk İçeriği Ekle",
+        "addManualAnime": "Manuel Anime Ekle",
+        "addTvChannel": "TV Kanalı Ekle",
+        "addEvent": "Etkinlik Ekle",
+        "addContent": "İçerik Ekle",
+        "addFromTmdb": "TMDB'den Ekle",
+        "bulkImport": "Toplu İçe Aktar",
+        "manageCategories": "Kategorileri Yönet",
+        "scanFolders": "Klasörleri Tara",
+        "fillMetadata": "Meta Verileri Doldur",
+        "tvProviders": "TV Sağlayıcıları"
+      },
+      "table": {
+        "columns": {
+          "title": "Başlık",
+          "description": "Açıklama",
+          "type": "Tür",
+          "format": "Biçim",
+          "year": "Yıl",
+          "status": "Durum",
+          "created": "Oluşturulma",
+          "actions": "İşlemler"
+        },
+        "values": {
+          "tmdbId": "Veri Tabanı: {{id}}",
+          "noDescription": "Açıklama yok",
+          "unknown": "Bilinmiyor",
+          "event": "Etkinlik"
+        }
+      },
+      "pagination": {
+        "range": "{{total}} öğeden {{start}}-{{end}} arası gösteriliyor",
+        "rowsPerPage": "Sayfa başına satır",
+        "rows": "Satırlar",
+        "updating": "Güncelleniyor...",
+        "pageOf": "Sayfa {{page}} / {{total}}"
+      }
+    },
+    "tickets": {
+      "errors": {
+        "sendMessage": "Mesaj gönderilemedi",
+        "sendMessageRetry": "Mesaj gönderilemedi. Lütfen tekrar deneyin.",
+        "assign": "Destek talebi atanamadı",
+        "assignRetry": "Destek talebi atanamadı. Lütfen tekrar deneyin.",
+        "delete": "Destek talebi silinemedi",
+        "deleteRetry": "Destek talebi silinemedi. Lütfen tekrar deneyin.",
+        "updateStatus": "Destek talebi durumu güncellenemedi",
+        "updateStatusRetry": "Destek talebi durumu güncellenemedi. Lütfen tekrar deneyin.",
+        "create": "Destek talebi oluşturulamadı",
+        "createRetry": "Destek talebi oluşturulamadı. Lütfen tekrar deneyin.",
+        "validation": {
+          "titleDescriptionRequired": "Başlık ve açıklama gereklidir",
+          "resellerRequired": "Lütfen bir bayi seçin"
+        }
+      },
+      "confirm": {
+        "delete": "Bu destek talebini silmek istediğinizden emin misiniz? Bu işlem geri alınamaz."
+      },
+      "filters": {
+        "status": {
+          "all": "Tüm Durumlar"
+        },
+        "priority": {
+          "all": "Tüm Öncelikler"
+        },
+        "unread": {
+          "all": "Tüm Mesajlar",
+          "unread": "Okunmamış Mesajlar",
+          "read": "Okunmuş Mesajlar"
+        }
+      },
+      "actions": {
+        "panelTitle": "Yönetici İşlemleri",
+        "assigning": "Atanıyor...",
+        "assignToMe": "Bana Ata",
+        "changeStatus": "Durumu Değiştir",
+        "internalMessage": "Dahili mesaj olarak gönder",
+        "scheduleFollowUp": "Takip Planla",
+        "reassignTicket": "Destek Talebini Tekrar Ata"
+      },
+      "priority": {
+        "low": "Düşük",
+        "medium": "Orta",
+        "high": "Yüksek",
+        "urgent": "Acil"
+      },
+      "category": {
+        "technical": "Teknik",
+        "billing": "Faturalandırma",
+        "account": "Hesap",
+        "content": "İçerik",
+        "other": "Diğer"
+      },
+      "create": {
+        "title": "Yeni Destek Talebi Oluştur",
+        "description": "Test veya yönetim amaçlı yeni bir destek talebi oluşturun.",
+        "labels": {
+          "title": "Başlık",
+          "description": "Açıklama",
+          "reseller": "Bayi",
+          "priority": "Öncelik",
+          "category": "Kategori"
+        },
+        "placeholders": {
+          "title": "Destek talebi başlığını girin",
+          "description": "Destek talebi açıklamasını girin",
+          "reseller": "Bir bayi seçin"
+        },
+        "submitting": "Oluşturuluyor...",
+        "submit": "Destek Talebi Oluştur"
+      },
+      "advanced": {
+        "title": "Gelişmiş Filtreler",
+        "description": "Aramanızı daraltmak için ek filtreler uygulayın.",
+        "labels": {
+          "dateFrom": "Şu Tarihten itibaren",
+          "dateTo": "Şu Tarihe kadar"
+        },
+        "helper": "Destek taleplerini oluşturulma tarihine göre filtreleyin. Tüm tarihleri göstermek için alanları boş bırakın.",
+        "clear": "Tümünü Temizle",
+        "apply": "Filtreleri Uygula"
+      },
+      "sort": {
+        "title": "Sıralama Seçenekleri",
+        "description": "Destek taleplerinizi nasıl sıralayacağınızı seçin.",
+        "labels": {
+          "sortBy": "Sırala",
+          "direction": "Yön"
+        },
+        "options": {
+          "newestFirst": "Önce En Yeni",
+          "oldestFirst": "Önce En Eski",
+          "priority": "Öncelik",
+          "status": "Durum",
+          "unreadFirst": "Önce Okunmamışlar"
+        },
+        "direction": {
+          "descending": "Azalan",
+          "ascending": "Artan"
+        },
+        "reset": "Varsayılana Sıfırla",
+        "apply": "Sıralamayı Uygula"
+      }
+    },
+    "activityLogs": {
+      "title": "Etkinlik Günlükleri",
+      "subtitle": "Tam sistem etkinliği ve denetim izi",
+      "tabs": {
+        "dashboard": "Gösterge Paneli",
+        "systemLogs": "Sistem Günlükleri",
+        "loginHistory": "Oturum Geçmişi",
+        "viewingHistory": "İzleme Geçmişi"
+      },
+      "filters": {
+        "actionType": "İşlem Türü",
+        "allActions": "Tüm işlemler",
+        "startDate": "Başlangıç Tarihi",
+        "endDate": "Bitiş Tarihi"
+      },
+      "errors": {
+        "loading": "Günlükler yüklenirken hata oluştu: {{message}}",
+        "loadingFallback": "Etkinlik günlükleri yüklenemedi"
+      },
+      "noLogs": "Etkinlik günlüğü bulunamadı.",
+      "table": {
+        "date": "Tarih",
+        "action": "İşlem",
+        "user": "Kullanıcı",
+        "target": "Hedef",
+        "description": "Açıklama",
+        "credits": "Krediler"
+      },
+      "pagination": {
+        "showing": "{{total}} günlüğün {{from}} - {{to}} arası gösteriliyor",
+        "pageOf": "Sayfa {{page}} / {{total_pages}}"
+      },
+      "actionTypes": {
+        "USER_CREATED": "Kullanıcı Oluşturuldu",
+        "USER_DELETED": "Kullanıcı Silindi",
+        "RESELLER_CREATED": "Bayi Oluşturuldu",
+        "RESELLER_DELETED": "Bayi Silindi",
+        "CREDIT_USED": "Kredi Kullanıldı",
+        "CREDIT_ASSIGNED": "Kredi Atandı",
+        "SYSTEM_INIT": "Sistem Başlatıldı",
+        "LOGIN": "Giriş",
+        "LOGOUT": "Çıkış"
+      }
+    },
+    "viewingHistory": {
+      "title": "İzleme Geçmişi",
+      "lastUpdated": "Son güncelleme: {{time}}",
+      "autoRefreshOn": "Otomatik yenileme: AÇIK",
+      "refreshNow": "Şimdi Yenile",
+      "filters": {
+        "username": "Kullanıcı Adı",
+        "contentType": "İçerik Türü",
+        "allTypes": "Tüm türler",
+        "ipAddress": "IP Adresi",
+        "startDate": "Başlangıç Tarihi",
+        "endDate": "Bitiş Tarihi"
+      },
+      "placeholders": {
+        "searchUsername": "Kullanıcı adı ara...",
+        "ipAddress": "IP adresi..."
+      },
+      "loading": "İzleme geçmişi yükleniyor...",
+      "errors": {
+        "loading": "İzleme geçmişi yükleme hatası: {{message}}"
+      },
+      "noHistory": "İzleme geçmişi bulunamadı.",
+      "unknown": "Bilinmeyen",
+      "table": {
+        "dateTime": "Tarih ve Saat",
+        "user": "Kullanıcı",
+        "contentType": "İçerik Türü",
+        "contentTitle": "İçerik Başlığı",
+        "info": "Bilgi",
+        "ipAddress": "IP Adresi",
+        "device": "Cihaz"
+      },
+      "pagination": {
+        "showing": "{{total}} izleme oturumundan {{from}} - {{to}} arası gösteriliyor",
+        "pageOf": "Sayfa {{page}} / {{total_pages}}"
+      }
+    }
+  },
+  "contentType": {
+    "movie": "Film",
+    "tvShow": "TV Programı",
+    "kids": "Çocuk",
+    "tvChannel": "TV Kanalı"
+  },
+  "contentTypeExtended": {
+    "tvChannel": "TV Kanalı",
+    "tvSeries": "TV Dizisi",
+    "event": "Etkinlik",
+    "kidsContent": "Çocuk İçeriği",
+    "anime": "anime",
+    "content": "İçerik"
+  },
+  "providers": {
+    "loading": "Sağlayıcılar yükleniyor...",
+    "none": "Henüz kayıtlı sağlayıcı yok."
+  },
+  "scan": {
+    "scanning": "Tarama yapılıyor...",
+    "start": "Taramayı Başlat"
+  },
+  "epg": {
+    "title": "EPG Kaynakları",
+    "editSource": "Kaynağı Düzenle",
+    "createSource": "Kaynak Oluştur",
+    "inputPlaceholder": "XMLTV Dosyam",
+    "xmltvUrl": "XMLTV URL",
+    "urlPlaceholder": "https://.../guide.xml",
+    "ttl": "TTL (dakika)",
+    "sources": "Kaynaklar",
+    "noSourcesYet": "Henüz kaynak yok",
+    "fetchChannels": "Kanalları getir",
+    "discoveredChannels": "Keşfedilen Kanallar",
+    "loadingChannels": "Kanallar yükleniyor..."
+  },
+  "tickets": {
+    "loadingConversation": "Konuşma yükleniyor...",
+    "loadingConversationDescription": "Lütfen mesajlar getirilirken bekleyin",
+    "noTicketSelected": "Destek talebi seçilmedi",
+    "selectTicketPrompt": "Konuşmayı görüntülemek için lütfen bir destek talebi seçin",
+    "sending": "Gönderiliyor...",
+    "status": {
+      "open": "Açık",
+      "in_progress": "İşlemde",
+      "waiting_response": "Yanıt Bekleniyor",
+      "resolved": "Çözüldü",
+      "closed": "Kapalı",
+      "on_hold": "Beklemede"
+    },
+    "placeholders": {
+      "filterByStatus": "Duruma göre filtrele",
+      "filterByPriority": "Önceliğe göre filtrele",
+      "filterByReadStatus": "Okuma durumuna göre filtrele"
+    },
+    "unreadMessages": "Okunmamış Mesajlar",
+    "stats": {
+      "total": "Toplam"
+    }
+  },
+  "banned": {
+    "title": "Hesap Askıya Alındı",
+    "description": "Bayi hesabınız askıya alındı",
+    "message1": "Bayi hesabınız yasaklandı ve artık aktif değil.",
+    "message2": "Hesap durumunuz hakkında daha fazla bilgi için lütfen yöneticiyle iletişime geçin.",
+    "contactSupport": "Bunun bir hata olduğunu düşünüyorsanız lütfen destek ekibiyle iletişime geçin."
+  },
+  "uiBulk": {
+    "contentManagement.title": "İçerik Yönetimi",
+    "contentManagement.subtitle": "TMDB entegrasyonu ile tüm kategorilerdeki içerikleri yönetin",
+    "scanFolders": "Klasörleri Tara",
+    "addManualMovie": "Manuel Film Ekle",
+    "addFromTMDB": "TMDB'den Ekle",
+    "movies": "Filmler",
+    "tvChannels": "TV Kanalları",
+    "series": "Diziler",
+    "events": "Etkinlikler",
+    "kids": "Çocuk",
+    "anime": "anime",
+    "moviesDescription": "Filmler ve bağımsız video içerikleri",
+    "noContentFound": "İçerik bulunamadı",
+    "getStartedAddFirstMovies": "İlk film içeriğinizi ekleyerek başlayın.",
+    "addManualMovieButton": "Manuel Film Ekle",
+    "addFromTMDBButton": "TMDB'den Ekle",
+    "adminDashboard": "Yönetici Paneli",
+    "resellerManagement.title": "Bayi Yönetimi",
+    "resellerManagement.subtitle": "Kredi sistemiyle bayiler oluşturun ve yönetin",
+    "resetAllCounters": "Tüm Sayaçları Sıfırla",
+    "resetAllCountersConfirm": "Tüm bayiler için günlük demo sayaçlarını sıfırlamak istediğinizden emin misiniz? Bu işlem tüm sayaçları 0 yapacaktır.",
+    "createReseller": "Bayi Oluştur",
+    "createResellerDescription": "Başlangıç kredileri ve demo limitleri ile yeni bir bayi hesabı oluşturun.",
+    "creditsLabel": "Krediler",
+    "dailyDemoLimit": "Günlük Demo Limiti",
+    "reseller": {
+      "form": {
+        "usernamePlaceholder": "Kullanıcı adını girin",
+        "passwordPlaceholder": "Şifreyi girin",
+        "emailPlaceholder": "E-posta girin (isteğe bağlı)"
+      }
+    },
+    "searchByUsernameOrEmail": "Kullanıcı adı veya e-postaya göre ara...",
+    "noResellersYet": "Henüz bayi yok",
+    "createYourFirstReseller": "Son kullanıcıları yönetmeye başlamak için ilk bayinizi oluşturun.",
+    "endUsers.title": "Son Kullanıcılar",
+    "endUsers.subtitle": "Tüm bayilerdeki son kullanıcıları oluşturun ve yönetin",
+    "createEndUser": "Son Kullanıcı Oluştur",
+    "filters": "Filtreler",
+    "searchByUsername": "Kullanıcı adına göre ara...",
+    "searchByEmail": "E-postaya göre ara...",
+    "searchByReseller": "Bayiye göre ara...",
+    "noEndUsersYet": "Henüz son kullanıcı yok",
+    "getStartedCreateFirstEndUser": "İlk son kullanıcınızı oluşturarak başlayın.",
+    "deviceManagement.title": "Cihaz Yönetimi",
+    "deviceManagement.subtitle": "Sistem genelindeki cihaz bağlantılarını izleyin ve yönetin",
+    "deviceManagement.overview": "Genel Bakış",
+    "deviceManagement.activeDevices": "Aktif Cihazlar",
+    "deviceManagement.deviceRemoval": "Cihaz Kaldırma",
+    "deviceManagement.warnings": "Uyarılar",
+    "deviceManagement.totalDevices": "Toplam Cihaz",
+    "deviceManagement.registeredDevices": "Kayıtlı cihazlar",
+    "deviceManagement.currentlyConnected": "Şu an bağlı",
+    "deviceManagement.usersWithDevices": "Cihazı Olan Kullanıcılar",
+    "deviceManagement.limitWarnings": "Limit Uyarıları",
+    "deviceManagement.deviceStatistics.title": "Cihaz İstatistikleri",
+    "deviceManagement.avgDevicesPerUser": "Ort. Cihaz/Kullanıcı",
+    "deviceManagement.usersAtLimit": "Limitteki Kullanıcılar",
+    "deviceManagement.totalCapacity": "Toplam Kapasite",
+    "deviceManagement.utilization": "Kullanım Oranı",
+    "deviceManagement.deviceUsageByUser.none": "Cihazı olan kullanıcı yok",
+    "deviceManagement.usageDistribution": "Kullanım Dağılımı",
+    "deviceManagement.byUsageLevel": "Kullanım Seviyesine Göre",
+    "deviceManagement.lowUsage": "Düşük Kullanım (%0-49)",
+    "deviceManagement.systemHealth.title": "Sistem Durumu",
+    "overview": "Genel Bakış",
+    "activeDevices": "Aktif Cihazlar",
+    "deviceRemoval": "Cihaz Kaldırma",
+    "warnings": "Uyarılar",
+    "totalDevices": "Toplam Cihaz",
+    "registeredDevices": "Kayıtlı cihazlar",
+    "currentlyConnected": "Şu an bağlı",
+    "usersWithDevices": "Cihazı Olan Kullanıcılar",
+    "limitWarnings": "Limit Uyarıları",
+    "deviceStatistics.title": "Cihaz İstatistikleri",
+    "avgDevicesPerUser": "Ort. Cihaz/Kullanıcı",
+    "usersAtLimit": "Limitteki Kullanıcılar",
+    "totalCapacity": "Toplam Kapasite",
+    "utilization": "Kullanım Oranı",
+    "deviceUsageByUser.none": "Cihazı olan kullanıcı yok",
+    "usageDistribution": "Kullanım Dağılımı",
+    "byUsageLevel": "Kullanım Seviyesine Göre",
+    "lowUsage": "Düşük Kullanım (%0-49)",
+    "systemHealth.title": "Sistem Durumu",
+    "supportTickets.title": "Destek Talepleri",
+    "supportTickets.subtitle": "Müşteri destek taleplerini ve isteklerini yönetin",
+    "createTicket": "Talep Oluştur",
+    "tickets.total": "Toplam",
+    "tickets.open": "Açık",
+    "tickets.inProgress": "İşlemde",
+    "tickets.resolved": "Çözüldü",
+    "tickets.closed": "Kapalı",
+    "tickets.unreadMessages": "Okunmamış Mesajlar",
+    "searchTicketsPlaceholder": "Talep ara...",
+    "noTicketsFound": "Kriterlerinize uygun destek talebi bulunamadı",
+    "noTicketsFoundTitle": "Destek talebi bulunamadı",
+    "noTicketsDescription": "Filtreleri ayarlamayı deneyin veya başlamak için yeni bir destek talebi oluşturun.",
+    "ticketsFound": "{{count}} talep gösteriliyor",
+    "advancedFilter": "Gelişmiş Filtre",
+    "sortOptions": "Sıralama Seçenekleri",
+    "refresh": "Yenile",
+    "createTicketButton": "Talep Oluştur",
+    "noTicketsMatch": "Destek talebi bulunamadı",
+    "clearFilters": "Filtreleri Temizle",
+    "createNewTicket": "Yeni Talep Oluştur",
+    "tools": "Araçlar",
+    "viewUsers": "Kullanıcıları Görüntüle",
+    "editReseller": "Bayiyi Düzenle",
+    "resetPassword": "Şifreyi Sıfırla",
+    "manageCredits": "Kredileri Yönet",
+    "demoSettings": "Demo Ayarları",
+    "noMatches": "Eşleşen bayi yok",
+    "tryAdjustingFilters": "Filtreleri veya arama terimlerini ayarlamayı deneyin"
+  },
+  "reseller": {
+    "failedToLoad": "Bayiler yüklenemedi: {{message}}",
+    "activeLabel": "Aktif",
+    "bannedLabel": "Yasaklı",
+    "editCreditsTitle": "Kredileri Düzenle",
+    "editCreditsDescription": "{{username}} için kredileri güncelle",
+    "updateCredits": "Kredileri Güncelle",
+    "editResellerTitle": "Bayiyi Düzenle",
+    "editResellerDescription": "{{username}} için bayi bilgilerini güncelle",
+    "updateReseller": "Bayiyi Güncelle",
+    "resetPasswordTitle": "Şifreyi Sıfırla",
+    "processingReset": "Şifre sıfırlanıyor...",
+    "resetPasswordAction": "Şifreyi Sıfırla",
+    "ban": "Yasakla",
+    "unban": "Yasağı Kaldır",
+    "banTitle": "Bayiyi Yasakla",
+    "banDescription": "\"{{username}}\" isimli bayiyi yasaklamak istediğinizden emin misiniz? Bu işlem hesaba erişimlerini engelleyecektir.",
+    "unbanTitle": "Bayi Yasağını Kaldır",
+    "unbanDescription": "\"{{username}}\" isimli bayinin yasağını kaldırmak istediğinizden emin misiniz?",
+    "banAction": "Yasakla",
+    "unbanAction": "Yasağı Kaldır"
+  },
+  "redeem": {
+    "badge": "Hediye Portalı",
+    "title": "Hediye Kullan",
+    "description": "Hesabınızın kilidini açın veya aboneliğinizi anında uzatın.",
+    "step1": {
+      "title": "Kodu doğrula",
+      "subtitle": "Hediye kodunuzu doğrulayın.",
+      "cta": "Hediye kodunuzu girin",
+      "helper": "Kodu doğrulayacağız ve detaylarını göstereceğiz."
+    },
+    "step2": {
+      "title": "İsteği tamamla",
+      "subtitle": "Ayarları gözden geçirin ve bitirin."
+    },
+    "detail": {
+      "code": "Kod",
+      "duration_days": "Süre",
+      "uses_remaining": "Kalan Kullanım",
+      "expires_at": "Son Kullanma"
+    },
+    "action": {
+      "title": "İşlem Seçin",
+      "create": "Yeni Kullanıcı Oluştur",
+      "create_description": "Yeni bir hesap oluşturun.",
+      "extend": "Mevcut Olanı Uzat",
+      "extend_description": "Bir hesaba zaman ekleyin."
+    },
+    "form": {
+      "codeLabel": "Hediye Kodu",
+      "codePlaceholder": "XXXX-XXXX-XXXX-XXXX",
+      "codeHelp": "Kodlar büyük/küçük harfe duyarlıdır ve harf ile rakam içerebilir.",
+      "username": "Kullanıcı Adı",
+      "usernamePlaceholder": "Bir kullanıcı adı seçin",
+      "password": "Şifre",
+      "passwordPlaceholder": "Güvenli şifre",
+      "emailOptional": "E-posta (isteğe bağlı)",
+      "emailPlaceholder": "Hesap kurtarma için",
+      "emailHint": "Bu e-postayı yalnızca hesap kurtarma ve önemli bildirimler için kullanıyoruz.",
+      "existingUsername": "Mevcut Kullanıcı Adı",
+      "extendHint": "Lütfen hesap ayarlarınızda göründüğü gibi tam olarak girdiğinizden emin olun.",
+      "emptyCode": "Önce bir kod girin.",
+      "createMissing": "Hesap oluşturmak için kullanıcı adı ve şifre gereklidir.",
+      "extendMissing": "Mevcut hesabı uzatmak için kullanıcı adı gereklidir.",
+      "categories": "Kategoriler"
+    },
+    "verify": "Kodu Doğrula",
+    "checking": "Doğrulanıyor...",
+    "validCode": "Kod başarıyla doğrulandı.",
+    "invalidCode": "Geçersiz kod.",
+    "success": "Başarıyla kullanıldı.",
+    "error": {
+      "generic": "Kod doğrulanırken beklenmedik bir hata oluştu.",
+      "submit": "Kullanma işlemi başarısız oldu."
+    },
+    "result": {
+      "errorTitle": "Hata",
+      "successTitle": "Başarılı"
+    },
+    "submitting": "İşleniyor...",
+    "extend_hint": "Mevcut bir kullanıcıyı uzatmak, tüm çalma listelerinizi, favorilerinizi ve cihazlarınızı olduğu gibi korur."
+  },
+  "demo": {
+    "badge": "Anında demo erişimi",
+    "signupTitle": "Dakikalar içinde {{appName}} deneyimini yaşayın",
+    "signupSubtitle": "{{hours}} saat boyunca aktif kalan geçici bir hesap oluşturun. {{appName}} kataloğunu keşfedin, cihazlarınızda test edin ve ekip arkadaşlarınızı sizinle denemeye davet edin.",
+    "formTitle": "Demo bilgilerinizi oluşturun",
+    "formSubtitle": "Giriş bilgilerinizi ekibinizle paylaşın ve her özelliği risksiz keşfedin.",
+    "durationLabel": "Süre",
+    "durationValue": "{{hours}} saat",
+    "durationExplanation": "Her demo {{hours}} saat boyunca aktiftir ve seçilen içerik kategorilerinde tam erişim sağlar.",
+    "clearCategories": "Kategorileri temizle",
+    "categoriesLabel": "Erişilebilir kategoriler (isteğe bağlı)",
+    "categoriesAll": "Tüm kategoriler mevcut olacak.",
+    "categoriesSelected": "{{count}} kategori seçildi",
+    "noCategories": "Mevcut kategori yok",
+    "categoriesHelp": "Tüm kategorilere demo erişimi sağlamak için boş bırakın.",
+    "restrictedBadge": "Mevcut değil",
+    "emailPlaceholder": "Sizinle yalnızca önemli güncellemeler için iletişime geçeceğiz.",
+    "creating": "Oluşturuluyor...",
+    "createButton": "Demo oluştur",
+    "successMessage": "Demo hesabı oluşturuldu. Şimdi giriş yapabilirsiniz.",
+    "successTitle": "Demonuz hazır!",
+    "errorTitle": "Demonuzu oluşturamadık",
+    "durationNote": "Demo hesapları {{hours}} saat sürer ve seçilen kategorilere geçici erişim sağlar.",
+    "failedCreate": "Demo oluşturma başarısız:",
+    "footerNote": "Demo bilgileri otomatik olarak sona erer. Daha derinlere dalmaya hazır mısınız? Uzatılmış denemeler veya bayi seçenekleri için ekibimize danışın."
+  },
+  "metadata": {
+    "title": "{{appName}} - IPTV Yönetim Sistemi",
+    "description": "{{appName}} - Profesyonel IPTV içerik yönetimi ve dağıtım platformu"
+  },
+  "accessibility": {
+    "breadcrumb": "Navigasyon yolu",
+    "selectAll": "Tümünü seç",
+    "tabs": "Sekmeler",
+    "dashboard": "Panel",
+    "notifications": "Bildirimler"
+  },
+  "format": {
+    "m3u8": "M3U8",
+    "drm": "DRM"
+  },
+  "languages": {
+    "english": "İngilizce",
+    "spanish": "İspanyolca",
+    "chinese": "Çince",
+    "portuguese": "Portekizce",
+    "french": "Fransızca",
+    "russian": "Rusça",
+    "turkish": "Türkçe",
+    "slovak": "Slovakça"
+  },
+  "favorites": {
+    "title": "Favorilerim",
+    "description": "Tüm favori içeriğiniz tek bir yerde",
+    "music": "Müzik",
+    "content": "İçerik",
+    "allFavorites": "Tüm Favoriler",
+    "tracks": "Parçalar",
+    "albums": "Albümler",
+    "artists": "Sanatçılar",
+    "track": "Parça",
+    "album": "Albüm",
+    "artist": "Sanatçı",
+    "noMusicFavorites": "Henüz müzik favorisi yok",
+    "addMusicFavorites": "Favori parçalarınızı, albümlerinizi ve sanatçılarınızı eklemeye başlayın",
+    "browseMusic": "Müziğe Göz At",
+    "contentComingSoon": "İçerik favorileri yakında",
+    "contentDescription": "Yakında filmleri, dizileri ve daha fazlasını favorilerinize ekleyebileceksiniz",
+    "add": "Favorilere ekle",
+    "remove": "Favorilerden çıkar",
+    "added": "Favorilere eklendi",
+    "removed": "Favorilerden çıkarıldı",
+    "inFavorites": "Favorilerde",
+    "removeFailed": "Favorilerden çıkarılamadı",
+    "error": "Favoriler güncellenirken hata oluştu"
+  },
+  "history": {
+    "title": "İzleme Geçmişi",
+    "description": "Son izlediğiniz her şeyi gözden geçirin",
+    "filterByCategory": "Kategoriye göre filtrele",
+    "allCategories": "Tüm kategoriler",
+    "items": "öğe",
+    "clearHistory": "Geçmişi Temizle",
+    "confirmClear": "Tüm izleme geçmişinizi temizlemek istediğinizden emin misiniz?",
+    "cleared": "Geçmiş başarıyla temizlendi",
+    "clearFailed": "Geçmiş temizlenemedi",
+    "error": "Geçmiş temizlenirken hata oluştu",
+    "noHistory": "İzleme geçmişi yok",
+    "noHistoryDescription": "Burada görmek için içerik izlemeye başlayın",
+    "browseContent": "İçeriğe Göz At",
+    "page": "Sayfa",
+    "of": "/",
+    "categories": {
+      "movie": "Film",
+      "series": "Dizi",
+      "live": "Canlı"
+    }
+  },
+  "search": {
+    "title": "Genel Arama",
+    "description": "Tüm içerik kategorilerinde arama yapın",
+    "placeholder": "Film, dizi, müzik, kanal ara...",
+    "filters": "Filtreler",
+    "category": "Kategori",
+    "allCategories": "Tüm kategoriler",
+    "movies": "Filmler",
+    "series": "Diziler",
+    "live": "Canlı TV",
+    "kids": "Çocuk",
+    "anime": "anime",
+    "events": "Etkinlikler",
+    "year": "Yıl",
+    "allYears": "Tüm yıllar",
+    "sortBy": "Sırala",
+    "relevance": "İlişki",
+    "titleAZ": "Başlık (A-Z)",
+    "yearDesc": "Yıl (önce en yeni)",
+    "ratingDesc": "Puan",
+    "clearFilters": "Filtreleri temizle",
+    "startSearching": "Aramaya başla",
+    "startSearchingDescription": "İçerik bulmak için arama alanına bir şeyler yazın",
+    "noResults": "Sonuç bulunamadı",
+    "noResultsDescription": "Farklı arama terimleri deneyin veya filtreleri ayarlayın",
+    "resultsFound": "sonuç bulundu",
+    "virtualizedMode": "Optimize edilmiş mod"
+  },
+  "music": {
+    "title": "Müzik Kütüphanesi",
+    "description": "Müzik koleksiyonunuza göz atın ve çalın",
+    "favorites": "Favoriler",
+    "addToFavorites": "Favorilere Ekle",
+    "removeFromFavorites": "Favorilerden Çıkar",
+    "favoriteAdded": "Favorilere eklendi",
+    "favoriteRemoved": "Favorilerinden çıkarıldı",
+    "player": "Oynatıcı",
+    "errorGettingStream": "Yayın alınırken hata oluştu",
+    "goBack": "Geri Git",
+    "errors": {
+      "favoriteError": "Favoriler güncellenirken hata oluştu",
+      "loadError": "Müzik yüklenirken hata oluştu",
+      "streamError": "Müzik yayını sırasında hata oluştu"
+    }
+  },
+  "watch": {
+    "title": "Oynatıcı",
+    "subtitle": "Video oynatıcı",
+    "invalidId": "Geçersiz içerik kimliği",
+    "notFound": "İçerik bulunamadı",
+    "noStreamAvailable": "Bu içerik için kullanılabilir yayın yok",
+    "streamError": "Yayın alınırken hata oluştu",
+    "backToDashboard": "Panele geri dön",
+    "synopsis": "Özet",
+    "playNow": "Şimdi oynat",
+    "seasons": "Sezonlar",
+    "seasonShort": "S{{n}}",
+    "episodeLabel": "B{{n}}",
+    "noEpisodes": "Kullanılabilir bölüm yok",
+    "related": "Önerilen",
+    "noRelated": "Şu an için öneri mevcut değil",
+    "drmNotice": "Bu içerikte DRM yapılandırılmış — uyumlu bir oynatıcı gerekebilir",
+    "goBack": "Geri git",
+    "subtitles": "Altyazılar",
+    "subtitlesOff": "Kapalı",
+    "downloadSubtitle": "İndir",
+    "settings": "Ayarlar",
+    "captionSize": "Altyazı boyutu",
+    "small": "Küçük",
+    "medium": "Orta",
+    "large": "Büyük"
+  },
+  "chat": {
+    "ticket": {
+      "createdBy": "{{username}} tarafından oluşturuldu",
+      "initialRequest": "İlk Talep",
+      "supportRole": "Destek",
+      "customerRole": "Müşteri",
+      "internal": "Dahili",
+      "supportTyping": "Destek yazıyor...",
+      "messagePlaceholder": "Mesajınızı yazın...",
+      "sendHint": "Göndermek için Enter'a, yeni satır için Shift+Enter'a basın"
+    },
+    "admin": {
+      "internalNotes": "Dahili Notlar",
+      "sendAsInternalNote": "Dahili not olarak gönder (müşteri tarafından görülemez)",
+      "internalMessagePlaceholder": "Dahili bir not yazın...",
+      "adminResponsePlaceholder": "Yanıtınızı yönetici olarak yazın...",
+      "internalVisibilityHint": "Dahili not - yalnızca yöneticiler görebilir"
+    }
+  },
+  "contentList": {
+    "listTitle": "{{type}} Liste",
+    "library": "Kütüphane",
+    "manageAndViewAll": "Tüm {{type}} öğelerini yönetin ve görüntüleyin",
+    "searchPlaceholder": "İçerik ara...",
+    "confirmBulkDelete": "Seçilen {{count}} öğe silinsin mi? Bu eylem geri alınamaz.",
+    "deleteSelected": "Sil ({{count}})",
+    "created": "Oluşturuldu",
+    "viewEditContent": "İçeriği Görüntüle/Düzenle",
+    "deleteContentTitle": "İçeriği Sil",
+    "deleteContentDescription": "\"{{title}}\" ifadesini silmek istediğinizden emin misiniz? Bu eylem geri alınamaz.",
+    "deleteContentAction": "İçeriği Sil",
+    "noTypeFound": "{{type}} bulunamadı",
+    "noContentMatching": "\"{{query}}\" ile eşleşen içerik bulunamadı. Farklı bir arama terimi deneyin.",
+    "getStartedByAddingFirst": "İlk {{type}} kodunuzu kitaplığa ekleyerek başlayın.",
+    "addContent": "İçerik Ekle",
+    "failedToLoad": "İçerik yüklenemedi: {{message}}",
+    "bulkDeleteFailed": "Toplu silme başarısız oldu",
+    "runtimeMinutes": "{{minutes}} dk",
+    "channelNumber": "Ch. {{number}}",
+    "live": "Canlı",
+    "tmdb": "TMDB"
+  },
+  "feedback": {
+    "operation": {
+      "saving": "Kaydediliyor",
+      "deleting": "Silme",
+      "uploading": "Yükleniyor",
+      "downloading": "İndiriliyor",
+      "syncing": "Senkronizasyon",
+      "processing": "İşleme"
+    },
+    "operationStatus": {
+      "loading": "{{operation}}...",
+      "success": "{{operation}} başarıyla",
+      "error": "{{operation}} başarısız oldu"
+    },
+    "time": {
+      "minutesAgo": "{{count}} dk önce",
+      "hoursAgo": "{{count}}sa önce",
+      "daysAgo": "{{count}}d önce"
+    },
+    "connection": {
+      "online": "Çevrimiçi",
+      "offline": "Çevrimdışı",
+      "lastSync": "Son senkronizasyon"
+    },
+    "form": {
+      "submitting": "Form gönderiliyor...",
+      "submissionFailed": "Gönderim Başarısız",
+      "readyToSubmit": "Form gönderilmeye hazır",
+      "fixErrors": "Lütfen yukarıdaki hataları düzeltin"
+    },
+    "bulk": {
+      "title": "Toplu {{operation}}",
+      "inProgress": "Operasyon sürüyor...",
+      "completed": "İşlem tamamlandı",
+      "total": "Toplam",
+      "completedCount": "Tamamlanmış",
+      "failedCount": "Arızalı",
+      "remaining": "Geriye kalan",
+      "completedWithErrors": "{{count}} hatayla tamamlandı",
+      "allProcessed": "Tüm öğeler başarıyla işlendi"
+    }
+  },
+  "manualSeries": {
+    "addManual": "Kılavuz Ekle {{type}}",
+    "dialogDescription": "Özel sezonlar ve bölümlerle manuel olarak bir {{type}} oluşturun",
+    "stepBasicInfo": "1. Temel Bilgiler",
+    "stepSeasonsEpisodes": "2. Sezonlar ve Bölümler",
+    "detailsTitle": "{{type}} Ayrıntılar",
+    "detailsDescription": "{{type}} cihazınız için temel bilgileri girin",
+    "titleRequired": "Başlık *",
+    "titlePlaceholder": "{{type}} başlığını girin...",
+    "descriptionPlaceholder": "{{type}} açıklamasını girin...",
+    "activeType": "Etkin {{type}}",
+    "nextAddSeasons": "Sonraki: Mevsim Ekle",
+    "validEpisodes": "Geçerli bölümler: {{count}} (yalnızca video URL'sine sahip bölümler kaydedilecektir)",
+    "episodeShort": "Bölüm {{number}}",
+    "videoUrlOptionalPlaceholder": "Video URL'si (isteğe bağlı)",
+    "createType": "{{type}} oluştur"
+  },
+  "seriesManagement": {
+    "addSeriesContent": "Dizi İçeriği Ekle",
+    "dialogDescription": "Seri bilgileri için TMDB'yi arayın veya seri yapısını manuel olarak oluşturun",
+    "seriesStructure": "Seri Yapısı",
+    "searchTvSeries": "TV Dizisi Ara",
+    "enterSeriesTitleEllipsis": "Dizi başlığını girin...",
+    "tmdbSearchFailed": "TMDB araması başarısız oldu. Lütfen manuel girişi deneyin.",
+    "notAvailable": "N/A",
+    "noSeriesFound": "\"{{query}}\" için seri bulunamadı. Bunun yerine manuel girişi deneyin.",
+    "selectedFromTmdb": "TMDB'den seçilmiş",
+    "tmdbId": "TMDB Kimliği: {{id}}",
+    "seasonsCount": "{{count}} Mevsimler",
+    "seriesInformation": "Seri Bilgileri",
+    "seriesTitleRequired": "Dizi Başlığı *",
+    "enterSeriesTitle": "Seri başlığını girin",
+    "firstAirDateYear": "İlk yayın tarihi yılı",
+    "seriesDescriptionPlaceholder": "Seri açıklaması...",
+    "activeSeries": "Aktif Seri",
+    "seasonsAndEpisodes": "Sezonlar ve Bölümler",
+    "manageSeasonsAndEpisodes": "Bu dizi için sezonları ve bölümleri yönetin",
+    "addSeason": "Sezon Ekle",
+    "seasonTab": "Sezon {{number}}",
+    "seasonTitle": "Sezon Başlığı",
+    "seasonTitlePlaceholder": "Sezon başlığı",
+    "seasonPosterUrl": "Sezon Poster URL'si",
+    "seasonPosterPlaceholder": "https://example.com/season-poster.jpg",
+    "seasonDescription": "Sezon Açıklaması",
+    "seasonDescriptionPlaceholder": "Sezon açıklaması...",
+    "episodes": "Bölümler",
+    "addEpisode": "Bölüm Ekle",
+    "removeSeason": "Sezonu Kaldır",
+    "createSeries": "Seri Oluştur",
+    "defaultSeasonTitle": "Sezon {{number}}",
+    "defaultEpisodeTitle": "Bölüm {{number}}",
+    "episodeHeader": "Bölüm {{number}}: {{title}}",
+    "untitled": "İsimsiz",
+    "urlSet": "URL Seti",
+    "noUrl": "URL yok",
+    "episodeTitle": "Bölüm Başlığı",
+    "episodeTitlePlaceholder": "Bölüm başlığı",
+    "runtimeMinutes": "Çalışma süresi (dakika)",
+    "runtimePlaceholder": "45",
+    "episodeDescription": "Bölüm Açıklaması",
+    "episodeDescriptionPlaceholder": "Bölüm açıklaması...",
+    "videoUrlRequired": "Video URL'si *",
+    "episodeVideoPlaceholder": "https://example.com/episode.m3u8",
+    "episodePosterUrl": "Bölüm Poster URL'si",
+    "episodePosterPlaceholder": "https://example.com/episode-poster.jpg",
+    "removeEpisode": "Bölümü Kaldır"
+  },
+  "ticketCard": {
+    "justNow": "Şu anda",
+    "updatedAt": "{{time}} tarihinde güncellendi",
+    "newCount": "{{count}} Yeni",
+    "chat": "Sohbet",
+    "unreadMessageSingle": "{{count}} okunmamış mesaj",
+    "unreadMessagePlural": "{{count}} okunmamış iletiler",
+    "priority": {
+      "low": "LOW",
+      "medium": "MEDIUM",
+      "high": "HIGH",
+      "urgent": "URGENT"
+    }
+  },
+  "errorHandlingDemo": {
+    "title": "Hata İşleme ve Doğrulama Demosu",
+    "subtitle": "Hata işleme, doğrulama ve kullanıcı geri bildirim sistemlerinin kapsamlı gösterimi",
+    "tabs": {
+      "notifications": "Bildirimler",
+      "loading": "Yükleme Durumları",
+      "operations": "Operasyonlar",
+      "connection": "Bağlantı",
+      "boundaries": "Hata Sınırları",
+      "skeletons": "İskeletler"
+    },
+    "notifications": {
+      "error": {
+        "title": "Hata Bildirimleri",
+        "description": "Farklı türdeki hata bildirimlerini ve tost mesajlarını test edin",
+        "buttons": {
+          "generic": "Genel Hata",
+          "api": "API Hatası",
+          "validation": "Doğrulama Hatası",
+          "network": "Ağ Hatası"
+        }
+      },
+      "success": {
+        "title": "Başarı Bildirimleri",
+        "description": "Farklı başarı türlerini ve bilgilendirici mesajları test edin",
+        "buttons": {
+          "basic": "Temel Başarı",
+          "detailed": "Detaylı Başarı",
+          "info": "Bilgi Mesajı",
+          "warning": "Uyarı Mesajı"
+        }
+      }
+    },
+    "inline": {
+      "title": "Satır İçi Geri Bildirim Mesajları",
+      "successMessage": "Değişiklikleriniz başarıyla kaydedildi.",
+      "viewChanges": "Değişiklikleri Görüntüle",
+      "errorMessage": "Değişiklikler kaydedilemedi. Lütfen tekrar deneyin.",
+      "retry": "Yeniden dene",
+      "warningMessage": "Oturumunuz 5 dakika içinde sona erecektir.",
+      "infoMessage": "Yeni özellikler mevcut. En son güncellemelere göz atın!"
+    },
+    "loading": {
+      "spinners": {
+        "title": "Döndürücüler Yükleniyor",
+        "sizes": {
+          "small": "Küçük",
+          "medium": "Orta",
+          "large": "Büyük",
+          "extraLarge": "Ekstra Büyük"
+        },
+        "variants": {
+          "dots": "Noktalar",
+          "pulse": "Nabız",
+          "bounce": "Sıçrama"
+        }
+      },
+      "overlay": {
+        "title": "Yer Paylaşımı Yükleniyor",
+        "content": "Üst üste bindirilen içerik",
+        "toggle": "Kaplamayı Yüklemeyi Aç/Kapat"
+      },
+      "toast": {
+        "title": "Tost Yükleniyor",
+        "trigger": "Tost Yüklemeyi Tetikle"
+      }
+    },
+    "operations": {
+      "async": {
+        "title": "Eşzamansız İşlemler",
+        "successOperation": "Başarı Operasyonu",
+        "failingOperation": "Başarısız İşlem"
+      },
+      "batch": {
+        "title": "Toplu İşlemler",
+        "start": "Toplu İşlemi Başlat"
+      }
+    },
+    "connection": {
+      "title": "Bağlantı Durumu",
+      "quality": "Bağlantı Kalitesi",
+      "retryCount": "Yeniden Deneme Sayısı",
+      "testing": "Test...",
+      "testConnection": "Bağlantıyı Test Et"
+    },
+    "boundaries": {
+      "title": "Hata Sınırları",
+      "fixError": "Hatayı Düzelt",
+      "triggerError": "Tetikleyici Hata",
+      "noErrorThrown": "Hata atılmadı"
+    },
+    "skeletons": {
+      "title": "İskelet Yükleme Durumları",
+      "text": "Metin İskeletleri",
+      "card": "Kart İskeleti"
+    },
+    "messages": {
+      "demoOperationFailed": "Demo işlemi başarısız oldu",
+      "operationCompletedSuccessfully": "İşlem başarıyla tamamlandı",
+      "asyncOperationCompleted": "Zaman uyumsuz işlem tamamlandı!",
+      "processingAsyncOperation": "Eşzamansız işlem işleniyor...",
+      "batchOperationCompleted": "Toplu işlem tamamlandı!",
+      "genericErrorMessage": "Bu genel bir hata mesajıdır",
+      "genericErrorTitle": "Genel Hata",
+      "apiValidationDetails": "Sağlanan veriler geçersiz",
+      "apiDemo": "API Demosu",
+      "invalidEmailFormat": "E-posta biçimi geçersiz",
+      "networkConnectionFailed": "Ağ bağlantısı başarısız oldu",
+      "networkErrorTitle": "Ağ Hatası",
+      "unableToConnectServer": "Sunucuya bağlanılamıyor",
+      "userProfileUpdated": "Kullanıcı profili başarıyla güncellendi",
+      "profileUpdated": "Profil Güncellendi",
+      "viewProfile": "Profili Görüntüle",
+      "newFeaturesAvailable": "En son güncellemede yeni özellikler mevcut",
+      "sessionExpiresSoon": "Oturumunuz 5 dakika içinde sona erecek",
+      "processingRequest": "İsteğiniz işleniyor...",
+      "loadingCompleted": "Yükleme tamamlandı!",
+      "errorBoundaryTestError": "Bu ErrorBoundary için bir test hatasıdır",
+      "operationCompleted": "Operasyon tamamlandı!"
+    }
+  },
+  "products": {
+    "badge": "Urunlerim",
+    "title": "Paketinizde etkin erisim",
+    "subtitle": "Aktif urunlerinize gore kullanabileceginiz tum icerigi kesfedin.",
+    "search": "Icerik ara",
+    "devices": "Cihazlarim",
+    "list": {
+      "title": "Mevcut urunler"
+    },
+    "loading": "Etkin urunleriniz aliniyor",
+    "empty": {
+      "title": "Henuz size atanmis urun yok",
+      "description": "Yoneticiniz kategorileri etkinlestirdiginde burada gorunecek."
+    },
+    "badgeIncluded": "Paketinize dahil",
+    "cta": {
+      "explore": "Kesfet"
+    },
+    "errors": {
+      "loadCategoriesFailed": "Kategoriler yuklenemedi",
+      "loadProfileFailed": "Profil yuklenemedi"
+    }
+  },
+  "pagination": {
+    "previous": "Önceki",
+    "next": "Sonraki",
+    "pageOf": "Sayfa {{page}} / {{totalPages}}",
+    "showing": "{{from}} ile {{to}} arası gösteriliyor, toplam {{total}} sonuç"
+  },
+  "placeholders": {
+    "currentPassword": "Mevcut şifreyi girin",
+    "enterCountry": "Örn: US, MX, ES...",
+    "enterDescription": "Açıklama girin...",
+    "enterName": "Ad girin...",
+    "enterPosterUrl": "Örn: https://example.com/poster.jpg",
+    "enterProvider": "Örn: Kablo, OTT vb.",
+    "enterStreamUrl": "Örn: https://example.com/video.m3u8",
+    "enterTitle": "Başlık girin...",
+    "enterUsername": "Kullanıcı adı girin...",
+    "expiryDateTime": "Son kullanma tarih ve saatini seçin",
+    "maximumDevices": "Maksimum cihaz sayısı",
+    "playlistUrl": "Oynatma listesi URL girin...",
+    "providerName": "Sağlayıcı adı girin...",
+    "selectCategory": "Kategori seç...",
+    "selectChannel": "Kanal seç...",
+    "selectDrmType": "DRM türü seç...",
+    "selectFormat": "Format seç...",
+    "selectReseller": "Bayi seç...",
+    "selectSource": "Kaynak seç...",
+    "selectSourceFirst": "Önce bir kaynak seçin",
+    "userEmail": "kullanici@example.com"
+  },
+  "creditsCheckout": {
+    "cancel": {
+      "contactSupport": "Yardıma mı ihtiyacınız var? Desteğe Başvurun",
+      "description": "Ödeme işlemi iptal edildi. Hesabınıza herhangi bir masraf uygulanmadı.",
+      "retryHint": "İstediğiniz zaman tekrar deneyebilirsiniz. Ödeme sırasında bir sorunla karşılaşırsanız lütfen ödeme ayrıntılarınızı doğrulayın veya destek ekibiyle iletişime geçin.",
+      "returnToDashboard": "Kontrol Paneline Dön",
+      "title": "Ödeme İptal Edildi",
+      "tryAgain": "Tekrar deneyin"
+    },
+    "success": {
+      "backToDashboard": "Kontrol Paneline Geri Dön",
+      "description": "Satın aldığınız için teşekkür ederiz. Kredileriniz işleniyor ve kısa süre içinde kullanıma sunulacak.",
+      "processingTimeDescription": "Krediler güvenli webhook aracılığıyla otomatik olarak atanır. Bu genellikle 10 saniyeden az sürer.",
+      "processingTimeTitle": "İşlem Süresi",
+      "title": "Ödeme Başarılı",
+      "transactionIdPlaceholder": "İşlem Kimliği: Oturum Tamamlandı",
+      "viewTransactionHistory": "İşlem Geçmişini Görüntüle"
+    }
+  },
+  "formValidation": {
+    "password": {
+      "levels": {
+        "fair": "Orta",
+        "good": "İyi",
+        "strong": "Güçlü",
+        "weak": "Zayıf"
+      },
+      "requirements": {
+        "lowercase": "Küçük harf içerir",
+        "minLength": "En az {{count}} karakter",
+        "number": "Rakam içerir",
+        "special": "Özel karakter içerir",
+        "title": "Gereksinimler",
+        "uppercase": "Büyük harf içerir"
+      },
+      "title": "Parola Gücü"
+    },
+    "summary": {
+      "completion": "Form Tamamlanması",
+      "invalidValue": "Geçersiz değer",
+      "issuesToResolve": "Çözülmesi gereken sorunlar:",
+      "manyErrors": "Düzeltilmesi gereken {{count}} hata var.",
+      "oneError": "Düzeltilmesi gereken 1 hata var.",
+      "valid": "Tüm alanlar geçerli. Formu gönderebilirsiniz."
+    }
+  },
+  "subscription": {
+    "register": {
+      "title": "Hesap Oluştur",
+      "subtitle": "Bilgilerinizi doldurun",
+      "brandTitle": "Bugün İzlemeye Başlayın",
+      "brandSubtitle": "Hesabınızı oluşturun ve bir plan seçin.",
+      "username": "Kullanıcı Adı",
+      "usernamePlaceholder": "Bir kullanıcı adı seçin",
+      "email": "E-posta",
+      "emailPlaceholder": "email@adresiniz.com",
+      "password": "Şifre",
+      "passwordPlaceholder": "Bir şifre oluşturun",
+      "confirmPassword": "Şifreyi Onayla",
+      "confirmPasswordPlaceholder": "Şifrenizi onaylayın",
+      "submit": "Hesap Oluştur",
+      "creating": "Hesap oluşturuluyor...",
+      "alreadyHaveAccount": "Zaten hesabınız var mı?",
+      "signIn": "Giriş yap",
+      "disabled": "Kayıt Devre Dışı",
+      "disabledMessage": "Kendi kendine kayıt kullanılamıyor.",
+      "backToLogin": "Girişe Dön",
+      "emailUnavailable": "Bu e-posta zaten kayıtlı",
+      "passwordsMismatch": "Şifreler eşleşmiyor",
+      "passwordTooShort": "Şifre en az 6 karakter",
+      "usernameTooShort": "Kullanıcı adı en az 3 karakter",
+      "verifyEmail": {
+        "title": "E-postanızı Kontrol Edin",
+        "message": "Doğrulama bağlantısı gönderdik.",
+        "spam": "Spam klasörünü kontrol edin.",
+        "success": "Hesap oluşturuldu! E-postanızı kontrol edin."
+      }
+    },
+    "plans": {
+      "badge": "Planınızı Seçin",
+      "title": "Mükemmel Planı Bulun",
+      "subtitle": "İhtiyaçlarınıza uygun abonelik seçin.",
+      "noPlans": "Mevcut plan yok.",
+      "subscribe": "Şimdi Abone Ol",
+      "redirecting": "Ödemeye yönlendiriliyor...",
+      "devices": "{{count}} cihaza kadar",
+      "devices_plural": "{{count}} cihaza kadar",
+      "categories": "{{count}} kategori",
+      "categories_plural": "{{count}} kategori",
+      "cancelAnytime": "İstediğiniz zaman iptal edin",
+      "perMonth": "/ay",
+      "perYear": "/yıl",
+      "perWeek": "/hafta",
+      "daysAccess": "{{count}} gün erişim",
+      "securePayment": "Stripe ile güvenli ödeme",
+      "alreadyHaveAccount": "Zaten hesabınız var mı?",
+      "signIn": "Giriş yap"
+    },
+    "success": {
+      "title": "Abonelik Aktif!",
+      "message": "Aboneliğiniz aktifleştirildi. Hoş geldiniz!",
+      "allSet": "Her şey hazır!",
+      "allSetMessage": "İçerik erişiminiz aktif.",
+      "manage": "Aboneliğinizi yönetin",
+      "manageMessage": "Plan detaylarını görüntüleyin.",
+      "goToDashboard": "Panele Git",
+      "viewPlans": "Planları Gör"
+    },
+    "cancel": {
+      "title": "Ödeme İptal Edildi",
+      "message": "Ödemeniz iptal edildi.",
+      "noWorries": "Sorun değil!",
+      "noWorriesMessage": "Planlar sayfasına dönebilirsiniz.",
+      "tryAgain": "Tekrar Dene",
+      "backToLogin": "Girişe Dön"
+    },
+    "management": {
+      "title": "Abonelik",
+      "managedByReseller": "Bayi tarafından yönetiliyor",
+      "managedByResellerMessage": "Aboneliğiniz bayiniz tarafından yönetiliyor.",
+      "noSubscription": "Aktif abonelik yok",
+      "noSubscriptionMessage": "Aktif aboneliğiniz yok.",
+      "choosePlan": "Plan Seç",
+      "currentPlan": "Mevcut Plan",
+      "status": "Durum",
+      "periodStart": "Dönem Başlangıcı",
+      "periodEnd": "Yenilenme",
+      "cancelSubscription": "Aboneliği İptal Et",
+      "cancelConfirm": "İptal etmek istediğinizden emin misiniz?",
+      "canceling": "İptal ediliyor...",
+      "cancelAtPeriodEnd": "Aboneliğiniz {{date}} tarihinde sona erecek",
+      "resubscribe": "Yeniden Abone Ol",
+      "changePlan": "Plan Değiştir"
+    },
+    "admin": {
+      "packages": {
+        "title": "Abonelik Paketleri",
+        "subtitle": "{{count}} paket",
+        "create": "Paket Oluştur",
+        "edit": "Düzenle",
+        "deactivate": "Devre Dışı Bırak",
+        "deactivateConfirm": "Bu paketi devre dışı bırakmak?",
+        "name": "Ad",
+        "description": "Açıklama",
+        "price": "Fiyat",
+        "priceCents": "Fiyat (kuruş)",
+        "currency": "Para Birimi",
+        "billingMode": "Faturalandırma",
+        "recurring": "Tekrarlayan",
+        "oneTime": "Tek Seferlik",
+        "interval": "Aralık",
+        "month": "Ay",
+        "year": "Yıl",
+        "week": "Hafta",
+        "durationDays": "Süre (gün)",
+        "maxDevices": "Maks Cihaz",
+        "categoryIds": "Kategori ID'leri (virgül)",
+        "stripePriceId": "Stripe Fiyat ID",
+        "badgeText": "Rozet Metni",
+        "badgeColor": "Rozet Rengi",
+        "sortOrder": "Sıralama",
+        "status": "Durum",
+        "active": "Aktif",
+        "inactive": "Pasif",
+        "actions": "İşlemler",
+        "billing": "Faturalandırma",
+        "devices": "Cihazlar",
+        "noPackages": "Henüz paket yok. \"Paket Oluştur\"a tıklayın.",
+        "updated": "Paket güncellendi",
+        "created": "Paket oluşturuldu",
+        "deactivated": "Paket devre dışı"
+      },
+      "subscriptions": {
+        "title": "Doğrudan Abonelikler",
+        "subtitle": "Stripe üzerinden abone olanlar",
+        "userId": "Kullanıcı ID",
+        "packageId": "Paket ID",
+        "status": "Durum",
+        "period": "Dönem",
+        "cancelStatus": "İptal",
+        "canceling": "İptal ediliyor",
+        "created": "Oluşturuldu",
+        "noSubscriptions": "Abonelik yok.",
+        "stats": {
+          "active": "Aktif",
+          "canceled": "İptal Edildi",
+          "expired": "Süresi Doldu",
+          "mrr": "MRR",
+          "newThisMonth": "Bu Ay Yeni"
+        },
+        "statusBadge": {
+          "active": "Aktif",
+          "past_due": "Gecikmiş",
+          "canceled": "İptal",
+          "expired": "Süresi Dolmuş",
+          "pending": "Bekliyor"
+        }
+      }
+    }
+  }
+}

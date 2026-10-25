@@ -1,0 +1,24 @@
+{
+  "title": "Yasaklı Cihazlar ({{count}})",
+  "empty": {
+    "title": "Yasaklı cihaz yok",
+    "description": "Her şey temiz. Şu anda yasaklı cihaz yok."
+  },
+  "table": {
+    "username": "Kullanıcı",
+    "deviceId": "Cihaz Kimliği",
+    "blacklistedAt": "Yasaklanma Tarihi",
+    "actions": "İşlemler"
+  },
+  "actions": {
+    "remove": "Yasaktan kaldır"
+  },
+  "notifications": {
+    "blacklist": {
+      "errorLoading": "Yasaklı cihazlar yüklenirken hata",
+      "confirmRemove": "{{user}} kullanıcısının \"{{device}}\" cihazını kara listeden kaldırmak istiyor musunuz?",
+      "removed": "Cihaz kara listeden kaldırıldı",
+      "removeFailed": "Cihaz kara listeden kaldırılamadı"
+    }
+  }
+}

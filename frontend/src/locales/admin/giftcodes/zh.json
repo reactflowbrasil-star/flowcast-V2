@@ -1,0 +1,30 @@
+{
+  "title": "礼品码",
+  "description": "管理一次性或多次使用的礼品码，用于创建或延长用户订阅。",
+  "create": "创建代码",
+  "bulkCreate": "批量创建",
+  "export": "导出 CSV",
+  "noData": "没有可导出的礼品码。",
+  "bulkCreated": "已创建 {{count}} 个礼品码",
+  "created": "礼品码已创建",
+  "deletedSelected": "已删除 {{count}} 个所选礼品码",
+  "generate": "生成",
+  "deleteSelected": "删除所选（{{count}}）",
+  "deleteConfirm": "删除 {{count}} 个选定的礼品码？此操作不可撤销。",
+  "table": {
+    "code": "代码",
+    "duration_days": "持续时间（天）",
+    "uses": "使用次数",
+    "remaining": "剩余",
+    "expires_at": "到期时间",
+    "created_at": "创建时间"
+  },
+  "form": {
+    "codeOptional": "代码（可选）",
+    "durationMonths": "持续时间（月）",
+    "uses": "使用次数",
+    "prefixOptional": "前缀（可选）",
+    "count": "数量",
+    "usesPerCode": "每个代码的使用次数"
+  }
+}

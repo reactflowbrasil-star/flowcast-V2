@@ -1,0 +1,30 @@
+{
+  "title": "Códigos de regalo",
+  "description": "Gestiona códigos de regalo de un solo uso o multiuso para crear o extender suscripciones de usuarios.",
+  "create": "Crear código",
+  "bulkCreate": "Crear en masa",
+  "export": "Exportar CSV",
+  "noData": "No hay códigos de regalo para exportar.",
+  "bulkCreated": "Se crearon {{count}} códigos de regalo",
+  "created": "Código de regalo creado",
+  "deletedSelected": "Se eliminaron {{count}} códigos de regalo seleccionados",
+  "generate": "Generar",
+  "deleteSelected": "Eliminar seleccionados ({{count}})",
+  "deleteConfirm": "¿Eliminar {{count}} códigos de regalo seleccionados? Esta acción no se puede deshacer.",
+  "table": {
+    "code": "Código",
+    "duration_days": "Duración (días)",
+    "uses": "Usos",
+    "remaining": "Restante",
+    "expires_at": "Expira",
+    "created_at": "Creado"
+  },
+  "form": {
+    "codeOptional": "Código (opcional)",
+    "durationMonths": "Duración (meses)",
+    "uses": "Usos",
+    "prefixOptional": "Prefijo (opcional)",
+    "count": "Cantidad",
+    "usesPerCode": "Usos por código"
+  }
+}

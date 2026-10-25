@@ -1,0 +1,56 @@
+{
+  "mediaWatcher": {
+    "creating": "Creating...",
+    "title": "Media Watcher Configuration",
+    "description": "Automatically scan folders for new content. Works like 'ls' - quick detection of new folders only.",
+    "addButton": "Add Watch Folder",
+    "empty": "No watch folders configured. Add one to get started.",
+    "deleteConfirm": "Are you sure you want to delete this watch folder?",
+    "form": {
+      "folderPath": "Folder Path",
+      "folderPathPlaceholder": "/mnt/media/movies",
+      "mediaType": "Media Type",
+      "checkInterval": "Check Interval (minutes)"
+    },
+    "createDialog": {
+      "title": "Add Watch Folder",
+      "description": "Configure a folder to automatically scan for new content"
+    },
+    "editDialog": {
+      "title": "Edit Watch Folder",
+      "description": "Update folder configuration",
+      "updating": "Updating...",
+      "update": "Update"
+    },
+    "mediaTypes": {
+      "movies": "Movies",
+      "series": "Series",
+      "kids": "Kids",
+      "anime": "Anime"
+    },
+    "table": {
+      "status": "Status",
+      "folderPath": "Folder Path",
+      "type": "Type",
+      "interval": "Interval",
+      "lastCheck": "Last Check",
+      "actions": "Actions",
+      "lastCheckNever": "Never",
+      "lastCheckInvalid": "Invalid date"
+    },
+    "toasts": {
+      "createSuccess": "Watch folder created successfully",
+      "createFailed": "Failed to create folder",
+      "updateSuccess": "Watch folder updated successfully",
+      "updateFailed": "Failed to update folder",
+      "deleteSuccess": "Watch folder deleted successfully",
+      "deleteFailed": "Failed to delete folder",
+      "checkStarted": "Folder check started",
+      "checkFailed": "Failed to check folder",
+      "enabled": "Folder enabled",
+      "disabled": "Folder disabled",
+      "toggleFailed": "Failed to toggle folder",
+      "folderPathRequired": "Please enter a folder path"
+    }
+  }
+}

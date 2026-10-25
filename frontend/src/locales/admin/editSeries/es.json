@@ -1,0 +1,40 @@
+{
+  "editSeries": {
+    "title": {
+      "editAnime": "Editar Anime",
+      "editSeries": "Editar Serie"
+    },
+    "labels": {
+      "seriesTitle": "Título de la Serie *",
+      "description": "Descripción",
+      "year": "Año",
+      "tmdbId": "ID de TMDB",
+      "totalSeasons": "Total de Temporadas",
+      "posterUrl": "URL del Póster",
+      "backdropUrl": "URL del Fondo",
+      "active": "Activo"
+    },
+    "placeholders": {
+      "seriesTitle": "Ingresa el título de la serie...",
+      "description": "Ingresa la descripción de la serie...",
+      "year": "2024",
+      "tmdbId": "123456",
+      "totalSeasons": "1",
+      "posterUrl": "https://ejemplo.com/poster.jpg",
+      "backdropUrl": "https://ejemplo.com/fondo.jpg"
+    },
+    "episodes": {
+      "title": "Gestión de Episodios:",
+      "description": "Las series no tienen URLs de video directas. El contenido de video se gestiona a través de episodios individuales dentro de las temporadas.",
+      "manageButton": "📺 Gestionar Episodios"
+    },
+    "buttons": {
+      "cancel": "Cancelar",
+      "updating": "Actualizando...",
+      "update": "Actualizar Serie"
+    },
+    "validation": {
+      "titleRequired": "El título es requerido"
+    }
+  }
+}

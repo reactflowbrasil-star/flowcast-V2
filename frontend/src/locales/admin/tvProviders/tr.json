@@ -1,0 +1,56 @@
+{
+  "title": "Oynatma Listesi Sağlayıcıları",
+  "description": "Canlı TV kanallarının otomatik olarak güncel kalması için uzak M3U oynatma listelerini bir yenileme aralığıyla kaydedin.",
+  "alert": {
+    "title": "TTL ile otomatik yenileme",
+    "description": "Her sağlayıcı, TTL'si sona erdiğinde yeniden getirilir. Arka uç, oynatma listesi girişlerinde duyurulan ClearKey DRM, başlıklar, proxy'ler ve DNS-over-HTTPS değerlerini korur."
+  },
+  "form": {
+    "providerName": "Sağlayıcı adı *",
+    "playlistUrl": "Oynatma listesi URL'si *",
+    "refreshInterval": "Yenileme aralığı (dakika)",
+    "enableAutoRefresh": "Otomatik yenilemeyi etkinleştir",
+    "enableAutoRefreshHint": "Oynatma listesini tutmak ancak planlanmış yenilemeleri durdurmak için devre dışı bırakın.",
+    "adding": "Ekleniyor…",
+    "addProvider": "Sağlayıcı Ekle"
+  },
+  "table": {
+    "name": "Ad",
+    "ttl": "TTL",
+    "status": "Durum",
+    "lastFetch": "Son Getirme",
+    "nextRefresh": "Sıradaki Yenileme",
+    "actions": "İşlemler"
+  },
+  "status": {
+    "enabled": "Etkin",
+    "disabled": "Devre Dışı"
+  },
+  "buttons": {
+    "sync": "Senkronize Et",
+    "delete": "Sil",
+    "close": "Kapat"
+  },
+  "validation": {
+    "nameRequired": "Sağlayıcı adı gereklidir",
+    "urlInvalid": "Geçerli M3U/M3U8 URL'si gereklidir",
+    "ttlMinimum": "TTL en az 1 dakika olmalıdır"
+  },
+  "errors": {
+    "loadFailed": "Sağlayıcılar yüklenemedi",
+    "createFailed": "Sağlayıcı oluşturulamadı",
+    "createUnexpected": "Sağlayıcı oluşturulurken beklenmeyen hata",
+    "deleteFailed": "Sağlayıcı silinemedi",
+    "deleteUnexpected": "Sağlayıcı silinirken beklenmeyen hata",
+    "syncFailed": "Senkronizasyon başarısız",
+    "syncUnexpected": "Senkronizasyon sırasında beklenmeyen hata"
+  },
+  "placeholders": {
+    "providerName": "Sensa",
+    "playlistUrl": "https://example.com/playlist.m3u"
+  },
+  "units": {
+    "minutes": "dak"
+  },
+  "deleteConfirm": "{{name}} sağlayıcısını silmek istediğinizden emin misiniz? Bu işlem geri alınamaz."
+}

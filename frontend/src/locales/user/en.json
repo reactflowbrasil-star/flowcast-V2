@@ -1,0 +1,457 @@
+{
+  "user": {
+    "menu": {
+      "home": "Home",
+      "liveTv": "Live TV",
+      "movies": "Movies",
+      "series": "TV Shows",
+      "kids": "Kids",
+      "anime": "Anime",
+      "events": "Events",
+      "music": "Music",
+      "favorites": "Favorites",
+      "search": "Search",
+      "custom": "Menu",
+      "descriptions": {
+        "home": "Main dashboard",
+        "liveTv": "Live channels",
+        "movies": "Movie catalog",
+        "series": "TV series and shows",
+        "kids": "Content for kids",
+        "anime": "Anime catalog",
+        "events": "Special events",
+        "music": "Music library",
+        "favorites": "Your favorites",
+        "search": "Search content",
+        "profile": "Manage account",
+        "devices": "Manage devices"
+      }
+    },
+    "languages": {
+      "es": "Spanish",
+      "es_native": "Spanish",
+      "en": "English",
+      "en_native": "English",
+      "zh": "Chinese",
+      "zh_native": "Chinese",
+      "pt": "Portuguese",
+      "pt_native": "Portuguese",
+      "fr": "French",
+      "fr_native": "French",
+      "ru": "Russian",
+      "ru_native": "Russian",
+      "tr": "Turkish",
+      "tr_native": "Turkish",
+      "sk": "Slovak",
+      "sk_native": "Slovak"
+    },
+    "badges": {
+      "continue": "Continue"
+    },
+    "language": {
+      "placeholder": "Select language"
+    },
+    "categoryCopy": {
+      "vod": "On‑demand movies included in your plan.",
+      "series": "Complete series ready to binge.",
+      "tv": "Live channels and 24/7 programming.",
+      "kids": "Safe, curated content for kids.",
+      "events": "Special events and unique broadcasts.",
+      "anime": "Anime catalog with dub and subs."
+    },
+    "dashboard": {
+      "welcome": "Welcome back",
+      "guest": "User",
+      "greeting": "Hello {{name}}",
+      "continueWatching": "Continue watching",
+      "progressSync": "We sync your progress between devices.",
+      "noHistory": "You haven't started any titles yet",
+      "series": "TV Shows",
+      "kids": "Kids",
+      "anime": "Anime",
+      "events": "Events",
+      "liveTv": "Live TV",
+      "liveChannels": "Channels",
+      "liveGuide": "Guide",
+      "nowPlaying": "Now playing",
+      "noEpg": "No EPG data",
+      "channel": "Channel",
+      "searchChannels": "Search channels...",
+      "viewProducts": "My products",
+      "manageDevices": "Manage devices",
+      "statusActive": "Account active",
+      "connectedDevices": "Connected devices",
+      "devicesUsage": "You can manage your active devices anytime.",
+      "aiStatus": "Recommendations engine",
+      "aiOnline": "Active",
+      "aiOffline": "Configuring",
+      "aiSubtitle": "We update suggestions every few hours",
+      "genreSpotlight": "Explore by genre",
+      "genreSpotlightHint": "Select cinematic categories to refine collections.",
+      "noAiRecommendations": "We'll tailor recommendations shortly",
+      "noTmdbData": "Configure TMDB to enable these collections",
+      "programGuide": "Program guide",
+      "profile": "Profile",
+      "secureSession": "Encrypted and protected session",
+      "badgeFeatured": "Featured",
+      "welcomeTitle": "Your library, always with you",
+      "welcomeDescription": "Explore movies and series curated for you.",
+      "watchNow": "Watch now",
+      "filters": {
+        "movies": "Movies",
+        "sports": "Sports",
+        "kids": "Kids"
+      },
+      "liveStreamError": "Could not obtain channel URL.",
+      "liveLoadError": "Error loading the channel.",
+      "browseGenres": "Browse Genres",
+      "popularMovies": "Trending films globally",
+      "bingeWorthy": "Binge-worthy shows",
+      "browse": "Browse categories",
+      "contentLibrary": "Content Library",
+      "contentSubtitle": "Explore our collection",
+      "noContent": "No content available",
+      "noContentDescription": "Content will appear here once the administrator adds movies, series, or other media.",
+      "encryptedSession": "Encrypted Session",
+      "liveChannel": "Live Channel"
+    },
+    "live": {
+      "title": "Live TV",
+      "toggleChannels": "Channels",
+      "toggleGuide": "Guide",
+      "liveNow": "Live Now",
+      "loadingGuide": "Loading guide...",
+      "minutesLeft": "{{count}} min left",
+      "showingChannels": "Showing {{count}} channels",
+      "channelsLive": "{{count}} channels live",
+      "upNext": "Up Next",
+      "nowPlaying": "Now Playing",
+      "loadingStream": "Connecting...",
+      "streamFailed": "Failed to load stream",
+      "streamError": "Error loading stream",
+      "playbackError": "Playback Error",
+      "streamUnavailableTitle": "Stream Unavailable",
+      "streamUnavailableDescription": "We encountered an error while loading this stream.",
+      "selectPrompt": "Select a channel to start watching",
+      "liveBadge": "LIVE",
+      "unknownChannel": "Unknown Channel",
+      "providerFallback": "{{appName}} Provider",
+      "toastCurrentlyViewing": "Currently viewing: {{title}}",
+      "noProgramInfo": "No program information available",
+      "channelGuide": "Channel Guide",
+      "noChannelsFound": "No channels found",
+      "categories": {
+        "sports": "Sports",
+        "entertainment": "Entertainment",
+        "news": "News",
+        "movies": "Movies"
+      },
+      "epg": {
+        "errors": {
+          "loadFailed": "Failed to load program guide"
+        },
+        "loading": "Loading program guide...",
+        "liveProgramming": "Live Programming",
+        "noProgramInfo": "No program information available",
+        "previous24h": "Previous 24h",
+        "next24h": "Next 24h",
+        "liveNow": "Live Now",
+        "live": "Live",
+        "upcoming": "Upcoming",
+        "liveBadge": "LIVE",
+        "clickToWatch": "Click to watch",
+        "watchChannel": "Watch Channel"
+      }
+    },
+    "filters": {
+      "clear": "Clear filter",
+      "searchChannels": "Search channels...",
+      "searchMovies": "Search movies...",
+      "searchShows": "Search TV shows...",
+      "searchKids": "Search kids content...",
+      "searchAnime": "Search anime...",
+      "searchEvents": "Search events...",
+      "allGenres": "All genres",
+      "allTypes": "All types",
+      "allStatus": "All status",
+      "sortTitle": "Sort by title",
+      "sortYear": "Sort by year",
+      "sortRating": "Sort by rating"
+    },
+    "favorites": {
+      "title": "Favorites",
+      "description": "All your favorite content in one place",
+      "all": "All",
+      "movies": "Movies",
+      "series": "TV Shows",
+      "channels": "Channels",
+      "emptyTitle": "You don't have favorites yet",
+      "emptyDescription": "Start adding content to your favorites",
+      "emptyMoviesTitle": "You don't have favorite movies",
+      "emptyMoviesDescription": "Add movies to your favorites from the movies section",
+      "emptySeriesTitle": "You don't have favorite TV shows",
+      "emptySeriesDescription": "Add TV shows to your favorites from the TV shows section",
+      "emptyChannelsTitle": "You don't have favorite channels",
+      "emptyChannelsDescription": "Add channels to your favorites from the Live TV section"
+    },
+    "movies": {
+      "loading": "Loading movies...",
+      "emptyTitle": "No movies found",
+      "emptyDescription": "Try adjusting your search or filters"
+    },
+    "kids": {
+      "errorTitle": "Error loading kids content",
+      "searchPlaceholder": "Search kids content...",
+      "emptyTitle": "No kids content available",
+      "emptySearchTitle": "No results found",
+      "emptySearchDescription": "Try using different search terms"
+    },
+    "anime": {
+      "errorTitle": "Error loading anime",
+      "searchPlaceholder": "Search anime...",
+      "emptyTitle": "No anime available",
+      "emptySearchTitle": "No results found",
+      "emptySearchDescription": "Try using different search terms"
+    },
+    "events": {
+      "errorTitle": "Error loading events",
+      "searchPlaceholder": "Search events...",
+      "emptyTitle": "No events available",
+      "emptySearchTitle": "No results found",
+      "emptySearchDescription": "Try using different search terms"
+    },
+    "shows": {
+      "loading": "Loading TV shows...",
+      "emptyTitle": "No TV shows found",
+      "emptyDescription": "Try adjusting your search or filters",
+      "season": "Season",
+      "seasons": "Seasons",
+      "status": {
+        "ongoing": "Ongoing",
+        "completed": "Completed",
+        "cancelled": "Cancelled",
+        "unknown": "Unknown"
+      }
+    },
+    "pagination": {
+      "pageLabel": "Page",
+      "moviesLabel": "Movies",
+      "seriesLabel": "Series",
+      "kidsLabel": "Kids",
+      "animeLabel": "Anime"
+    },
+    "profile": {
+      "badge": "My account",
+      "title": "Profile & security",
+      "subtitle": "Manage personal data, contact email and credentials.",
+      "info": {
+        "title": "Basic information",
+        "username": "Username",
+        "role": "Role in system",
+        "createdAt": "Registered on",
+        "expiresAt": "Expires on",
+        "unknown": "Unknown",
+        "noExpiry": "No expiration date"
+      },
+      "contact": {
+        "title": "Contact & notifications",
+        "emailLabel": "Associated email",
+        "emailPlaceholder": "Enter an email for notifications",
+        "hint": "We'll use this email for security alerts and recoveries.",
+        "save": "Update email",
+        "saving": "Saving..."
+      },
+      "password": {
+        "title": "Change password",
+        "current": "Current password",
+        "currentPlaceholder": "Enter your current password",
+        "new": "New password",
+        "newPlaceholder": "Minimum 6 characters",
+        "save": "Update password",
+        "saving": "Updating...",
+        "success": "Password updated",
+        "error": "Could not update password",
+        "hint": "Active sessions on other devices will be signed out after changing."
+      },
+      "plan": {
+        "title": "Plan status",
+        "devices": "Devices in use: {{count}} of {{max}}",
+        "role": "Access type: {{role}}",
+        "expires": "Valid until {{date}}",
+        "withoutExpiry": "Plan without expiry"
+      },
+      "categories": {
+        "title": "Enabled categories",
+        "empty": "Your administrator has not assigned content to your account yet."
+      },
+      "actions": {
+        "title": "Shortcuts",
+        "manageDevices": "Manage devices",
+        "exploreContent": "Explore content",
+        "extendMembership": "Extend membership"
+      },
+      "update": {
+        "success": "Profile updated",
+        "error": "Could not update profile"
+      },
+      "noDataTitle": "We couldn't fetch your profile",
+      "noDataDescription": "Try reloading the page or contact support if the problem persists.",
+      "status": {
+        "unknown": "Unknown status",
+        "banned": "Account suspended",
+        "noExpiry": "No expiration date",
+        "expired": "Subscription expired",
+        "active": "Subscription active"
+      }
+    },
+    "devices": {
+      "badge": "Device management",
+      "title": "Your linked devices",
+      "subtitle": "Control which devices have access and free slots when needed.",
+      "onboarding": {
+        "title": "Register this browser",
+        "body": "Link this browser as a device to continue to the dashboard.",
+        "deviceInfo": "Current device",
+        "slots": "{{available}} slots available of {{max}}",
+        "limitTitle": "Device limit reached",
+        "limitBody": "Remove a device to free a slot and register this browser.",
+        "cta": "Register this device",
+        "fill": "Fill details automatically",
+        "already": "This browser is already registered",
+        "quickRegister": "Register this browser now"
+      },
+      "register": {
+        "title": "Register new device",
+        "deviceId": "Device ID",
+        "deviceIdPlaceholder": "Eg. MAC, UUID or device code",
+        "deviceName": "Device name",
+        "deviceNamePlaceholder": "Eg. Living room TV, Android Box...",
+        "generate": "Generate random ID",
+        "cta": "Register device",
+        "working": "Registering...",
+        "validation": "You need to provide both ID and name",
+        "help": "Use a unique identifier for each device. We recommend the same name as your Android app."
+      },
+      "status": {
+        "title": "Usage status",
+        "progressLabel": "Occupancy",
+        "tipTitle": "Quick tip",
+        "tipBody": "If you hit the limit, remove a device you no longer use before adding a new one.",
+        "syncTitle": "Instant sync",
+        "syncBody": "Changes reflect in the Android app after restart or session refresh."
+      },
+      "list": {
+        "title": "Registered devices",
+        "loading": "Retrieving linked devices list.",
+        "emptyTitle": "You don't have devices yet",
+        "emptyDescription": "Register your first device to start playing content.",
+        "lastActive": "Last access: {{date}}",
+        "statusActive": "Active",
+        "remove": "Remove device",
+        "removeSuccess": "Device removed",
+        "removeError": "Could not remove device"
+      }
+    },
+    "products": {
+      "badge": "My products",
+      "title": "Access enabled in your plan",
+      "subtitle": "Explore all content available according to your active products.",
+      "search": "Search content",
+      "devices": "My devices",
+      "list": {
+        "title": "Available products"
+      },
+      "empty": {
+        "title": "You don't have products assigned yet",
+        "description": "When your administrator enables categories, they will appear here."
+      },
+      "badgeIncluded": "Included in your plan",
+      "cta": {
+        "explore": "Explore"
+      }
+    },
+    "watch": {
+      "title": "Player",
+      "invalidId": "Invalid content ID",
+      "notFound": "Content not found",
+      "noStreamAvailable": "No stream available for this content",
+      "streamError": "Error getting the stream",
+      "backToDashboard": "Back to dashboard",
+      "playNow": "Play now",
+      "synopsis": "Synopsis",
+      "seasons": "Seasons",
+      "seasonShort": "S{{n}}",
+      "episodeLabel": "E{{n}}",
+      "noEpisodes": "No episodes available.",
+      "drmNotice": "This content has DRM configured — it may require a compatible player.",
+      "related": "Recommended",
+      "noRelated": "No recommendations available for now",
+      "goBack": "Go back"
+    },
+    "content": {
+      "browse": {
+        "badge": "Available library",
+        "title": "Explore your content",
+        "subtitle": "Movies, series and live TV in a unified view.",
+        "totalCategories": "{{count}} categories available",
+        "goToSearch": "Go to search",
+        "itemCount": "{{count}} results",
+        "loadingDescription": "Preparing your personalized catalog.",
+        "emptyTitle": "This category has no content yet",
+        "emptyDescription": "We will add more titles here soon.",
+        "noCategoriesTitle": "No categories assigned",
+        "noCategoriesDescription": "Ask your administrator to enable content for your account.",
+        "watch": "Watch",
+        "noDescription": "Description pending",
+        "loadMore": "See more titles",
+        "loadingMore": "Loading..."
+      },
+      "search": {
+        "title": "Search content",
+        "placeholder": "Movies, series, channels...",
+        "emptyTitle": "Search for something to get started",
+        "emptyDesc": "Type a title, category or keyword to find content.",
+        "loading": "Searching for matches",
+        "error": "Search failed",
+        "noResults": "No results",
+        "tryAgain": "Try different keywords or check your spelling."
+      }
+    },
+    "common": {
+      "continue": "Continue",
+      "all": "All",
+      "loading": "Loading...",
+      "search": "Search",
+      "watch": "Watch",
+      "viewAll": "View all",
+      "noItems": "No items",
+      "comeBackSoon": "Come back soon to discover new content.",
+      "noResults": "No results found",
+      "adjustSearch": "Try adjusting your search or filters",
+      "tryDifferent": "Try using different search terms",
+      "reload": "Please try reloading the page",
+      "verified": "Verified",
+      "titleCount": "{{count}} title",
+      "titleCount_plural": "{{count}} titles",
+      "seriesCount": "{{count}} series",
+      "seriesCount_plural": "{{count}} series",
+      "animeCount": "{{count}} anime",
+      "animeCount_plural": "{{count}} anime",
+      "eventCount": "{{count}} event",
+      "eventCount_plural": "{{count}} events",
+      "channelCount": "{{count}} channel",
+      "channelCount_plural": "{{count}} channels"
+    },
+    "player": {
+      "audioInfo": "Audio information",
+      "audioTracksTitle": "Audio Tracks",
+      "audioTracksTitleWithCount": "Audio Tracks ({{count}})",
+      "noAudioTracks": "No audio tracks detected",
+      "noAudioTracksHelpLine1": "This video may have integrated audio without separate tracks,",
+      "noAudioTracksHelpLine2": "or your browser does not support the AudioTracks API.",
+      "subtitlesTitle": "Subtitles",
+      "noSubtitles": "No subtitles",
+      "playbackSpeed": "Speed"
+    }
+  }
+}

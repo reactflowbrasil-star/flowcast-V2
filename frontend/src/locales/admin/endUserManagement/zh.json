@@ -1,0 +1,123 @@
+{
+  "endUserManagement": {
+    "title": "终端用户管理",
+    "subtitle": "创建和管理系统中的终端用户",
+    "createEndUser": "创建终端用户",
+    "noEndUsersYet": "暂无终端用户",
+    "searchByUsername": "按用户名搜索...",
+    "searchByEmail": "按邮箱搜索...",
+    "status": {
+      "active": "活跃",
+      "banned": "已封禁",
+      "inactive": "非活跃"
+    },
+    "actions": {
+      "ban": "封禁",
+      "unban": "解封",
+      "banUser": "封禁用户",
+      "unbanUser": "解封用户",
+      "confirmBan": "确定要{{action}} {{username}}吗？",
+      "banWarning": "这将阻止他们访问服务。",
+      "deleteUser": "删除用户",
+      "confirmDelete": "确定要永久删除 {{username}} 吗？此操作无法撤销。",
+      "edit": "编辑",
+      "create": "创建用户",
+      "manageCredits": "管理积分",
+      "resetPassword": "重置密码"
+    },
+    "labels": {
+      "username": "用户名",
+      "email": "邮箱",
+      "status": "状态",
+      "createdAt": "创建时间"
+    },
+    "placeholders": {
+      "searchByUsername": "按用户名搜索..."
+    },
+    "confirmDelete": "删除此终端用户？此操作无法撤销。",
+    "noMatches": "未找到匹配用户",
+    "editDialog": {
+      "title": "编辑用户",
+      "contentCategories": "内容分类",
+      "maxDevices": "最大设备数",
+      "maxDevicesDesc": "最大并发设备数 (1-10)",
+      "endLicense": "许可结束时间 (可选)",
+      "forcedCategories": "强制内容分类",
+      "forcedCategoriesDesc": "此用户必须有权访问的分类（覆盖默认设置）",
+      "password": "密码",
+      "passwordDesc": "留空以保留当前密码",
+      "save": "保存更改",
+      "cancel": "取消",
+      "updating": "更新中..."
+    },
+    "demoUser": "体验用户",
+    "expiredDemo": "体验已过期",
+    "demoBadge": "体验",
+    "directAdminManagement": "直接管理员管理",
+    "deleteUser": "删除用户",
+    "filters": {
+      "title": "筛选",
+      "username": "用户名",
+      "email": "邮箱",
+      "reseller": "经销商",
+      "showing": "显示 {{count}} / {{total}} 用户",
+      "clear": "清除筛选"
+    },
+    "table": {
+      "username": "用户名",
+      "email": "邮箱",
+      "type": "类型",
+      "maxDevices": "最大设备",
+      "reseller": "经销商",
+      "status": "状态",
+      "created": "创建时间",
+      "endLicense": "许可结束",
+      "actions": "操作",
+      "premium": "高级版"
+    },
+    "form": {
+      "username": "用户名",
+      "password": "密码",
+      "email": "邮箱",
+      "maxDevices": "最大设备数",
+      "expiryDate": "过期日期 (可选)",
+      "expiryDateHelp": "留空表示永不过期。用户将在该日期后自动停用。",
+      "assignReseller": "分配给经销商 (可选)",
+      "selectContentCategories": "内容分类",
+      "selectCategoriesHelp": "点击选择此用户可访问的内容分类。",
+      "loadingCategories": "加载分类中...",
+      "noCategories": "暂无可用分类"
+    },
+    "neverLabel": "从未",
+    "expired": "已过期",
+    "timeLeft": "剩余",
+    "time": {
+      "hoursMinutes": "{{hours}}小时 {{minutes}}分钟",
+      "minutes": "{{minutes}}分钟"
+    },
+    "daysRemaining": "剩余 {{count}} 天",
+    "errors": {
+      "loadEndUsersFailed": "加载终端用户失败",
+      "loadEndUsersFailedWithMessage": "加载终端用户失败：{{message}}",
+      "loadResellersFailed": "加载经销商失败",
+      "createFailed": "创建终端用户失败",
+      "updateStatusFailed": "更新用户状态失败",
+      "deleteFailed": "删除用户失败"
+    },
+    "validation": {
+      "usernameMin": "用户名至少 {{count}} 个字符",
+      "passwordMinDigits": "密码至少 {{count}} 位数字",
+      "passwordMaxDigits": "密码最多 {{count}} 位数字",
+      "passwordDigitsOnly": "密码只能包含数字",
+      "emailInvalid": "邮箱地址无效",
+      "maxDevicesMin": "最少 {{count}} 台设备",
+      "maxDevicesMax": "最多允许 {{count}} 台设备",
+      "categoryMin": "请至少选择 {{count}} 个分类"
+    },
+    "messages": {
+      "noUserSelected": "未选择用户",
+      "passwordUpdateFailed": "更新用户密码失败",
+      "updateFailed": "更新用户失败"
+    }
+  }
+}

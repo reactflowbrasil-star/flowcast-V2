@@ -1,0 +1,56 @@
+{
+  "title": "Poskytovatelia playlistov",
+  "description": "Zaregistrujte vzdialené M3U playlisty s intervalom obnovenia, aby kanály živého vysielania zostali automaticky aktuálne.",
+  "alert": {
+    "title": "Automatické obnovenie s TTL",
+    "description": "Každý poskytovateľ sa znova načíta po uplynutí jeho TTL. Backend zachováva ClearKey DRM, hlavičky, proxy a hodnoty DNS-over-HTTPS uvedené v položkách playlistu."
+  },
+  "form": {
+    "providerName": "Názov poskytovateľa *",
+    "playlistUrl": "URL playlistu *",
+    "refreshInterval": "Interval obnovenia (minúty)",
+    "enableAutoRefresh": "Povoliť automatické obnovenie",
+    "enableAutoRefreshHint": "Zakázaním ponecháte playlist, ale zastavíte naplánované obnovenia.",
+    "adding": "Pridáva sa…",
+    "addProvider": "Pridať poskytovateľa"
+  },
+  "table": {
+    "name": "Názov",
+    "ttl": "TTL",
+    "status": "Stav",
+    "lastFetch": "Posledné načítanie",
+    "nextRefresh": "Nasledujúce obnovenie",
+    "actions": "Akcie"
+  },
+  "status": {
+    "enabled": "Povolené",
+    "disabled": "Zakázané"
+  },
+  "buttons": {
+    "sync": "Synchronizovať",
+    "delete": "Odstrániť",
+    "close": "Zatvoriť"
+  },
+  "validation": {
+    "nameRequired": "Názov poskytovateľa je povinný",
+    "urlInvalid": "Vyžaduje sa platná URL adresa M3U/M3U8",
+    "ttlMinimum": "TTL musí byť aspoň 1 minúta"
+  },
+  "errors": {
+    "loadFailed": "Nemožno načítať poskytovateľov",
+    "createFailed": "Nemožno vytvoriť poskytovateľa",
+    "createUnexpected": "Neočakávaná chyba pri vytváraní poskytovateľa",
+    "deleteFailed": "Nemožno odstrániť poskytovateľa",
+    "deleteUnexpected": "Neočakávaná chyba pri odstraňovaní poskytovateľa",
+    "syncFailed": "Synchronizácia zlyhala",
+    "syncUnexpected": "Neočakávaná chyba počas synchronizácie"
+  },
+  "placeholders": {
+    "providerName": "Sensa",
+    "playlistUrl": "https://example.com/playlist.m3u"
+  },
+  "units": {
+    "minutes": "min"
+  },
+  "deleteConfirm": "Naozaj chcete odstrániť poskytovateľa {{name}}? Túto akciu nie je možné vrátiť."
+}

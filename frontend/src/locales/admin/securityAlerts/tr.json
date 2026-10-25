@@ -1,0 +1,58 @@
+{
+  "securityAlerts": {
+    "title": "Güvenlik Uyarıları",
+    "subtitle": "Güvenlik olaylarını izleyin ve yasakları yönetin",
+    "noAlerts": "Güvenlik uyarısı yok. Her sey normal.",
+    "viewDetails": "Detayları görüntüle",
+    "dismiss": "Kapat",
+    "severity": {
+      "low": "Düşük",
+      "medium": "Orta",
+      "high": "Yüksek",
+      "critical": "Kritik"
+    },
+    "filterBy": {
+      "type": "Türe göre filtrele",
+      "dateRange": "Tarih aralığı",
+      "status": "Durum"
+    },
+    "actions": {
+      "investigate": "Araştır",
+      "banUser": "Kullanıcıyı yasakla",
+      "unbanUser": "Kullanıcının yasağını kaldır",
+      "cleanupExpiredBans": "Süresi Dolan Yasakları Temizle",
+      "createManualBan": "Manuel Yasak Oluştur"
+    },
+    "cards": {
+      "totalIncidents": "Toplam Olay",
+      "todaysIncidents": "Bugünkü Olaylar",
+      "activeBans": "Aktif Yasaklar",
+      "permanentBans": "Kalıcı Yasaklar",
+      "blacklistedDevices": "Kara Listeye Alınmış Cihazlar"
+    },
+    "confirmDelete": "Bu uyarıyı sil? Bu işlem geri alınamaz.",
+    "noPermission": "Bu işlemi yapmak için yetkiniz yok.",
+    "newLabel": "Yeni",
+    "moreAlerts": "... ve {{count}} uyarı daha",
+    "values": {
+      "unknown": "Bilinmiyor"
+    },
+    "browserNotification": {
+      "title": "Güvenlik uyarısı: {{title}}"
+    },
+    "alerts": {
+      "multipleFailedLogins": {
+        "title": "Coklu basarisiz giris denemesi",
+        "description": "Son 1 saatte IP {{ip}} adresinden {{count}} basarisiz giris denemesi"
+      },
+      "unusualDevices": {
+        "title": "Alisilmadik cihaz etkinligi",
+        "description": "{{username}} kullanicisi bu hafta {{deviceCount}} farkli cihazdan giris yapti"
+      },
+      "highActivity": {
+        "title": "Yuksek etkinlik donemi",
+        "description": "Son 1 saatte {{viewCount}} icerik goruntulemesi"
+      }
+    }
+  }
+}

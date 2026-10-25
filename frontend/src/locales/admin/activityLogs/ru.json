@@ -1,0 +1,67 @@
+{
+  "title": "Логи Активности",
+  "subtitle": "Общесистемная активность, действия и аудит",
+  "lastUpdated": "Последнее обновление: {{time}}",
+  "autoRefreshOn": "Авто-обновление ВКЛ",
+  "autoRefreshOff": "Авто-обновление ВЫКЛ",
+  "refreshNow": "Обновить сейчас",
+  "refreshLabel": "Обновить",
+  "tabs": {
+    "dashboard": "Дашборд",
+    "system": "Система",
+    "loginHistory": "История Входов",
+    "viewingHistory": "История Просмотров"
+  },
+  "filters": {
+    "actionType": "Тип действия",
+    "allActions": "Все действия",
+    "user": "Пользователь",
+    "username": "Имя пользователя",
+    "ipAddress": "IP адрес",
+    "startDate": "Дата с (дд/мм/гггг)",
+    "endDate": "Дата по (дд/мм/гггг)",
+    "perPage": "На странице",
+    "search": "Поиск",
+    "placeholderUsername": "Поиск пользователя...",
+    "placeholderIp": "напр. 192.168.0.1",
+    "contentType": "Тип контента",
+    "allTypes": "Все типы"
+  },
+  "common": {
+    "failedLogins": "Неудачные входы",
+    "today": "Сегодня",
+    "views": "Просмотры"
+  },
+  "table": {
+    "date": "Дата",
+    "action": "Действие",
+    "user": "Пользователь",
+    "target": "Цель",
+    "description": "Описание",
+    "credits": "Кредиты",
+    "ip": "IP",
+    "device": "Устройство"
+  },
+  "pagination": {
+    "previous": "Назад",
+    "next": "Вперед",
+    "showing": "Показано {{from}} - {{to}} из {{total}} логов",
+    "pageOf": "Страница {{page}} из {{total_pages}}"
+  },
+  "actionTypes": {
+    "USER_CREATED": "Пользователь Создан",
+    "USER_DELETED": "Пользователь Удален",
+    "RESELLER_CREATED": "Реселлер Создан",
+    "RESELLER_DELETED": "Реселлер Удален",
+    "CREDIT_USED": "Кредит Использован",
+    "CREDIT_ASSIGNED": "Кредит Начислен",
+    "SYSTEM_INIT": "Система Инициализирована",
+    "LOGIN": "Вход",
+    "LOGOUT": "Выход"
+  },
+  "empty": "Логов активности не найдено.",
+  "errors": {
+    "failedLoad": "Не удалось загрузить логи активности",
+    "invalidDateRange": "Неверный диапазон дат"
+  }
+}

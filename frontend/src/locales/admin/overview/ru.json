@@ -1,0 +1,24 @@
+{
+  "overview": {
+    "totalUsers": "Всего Пользователей",
+    "allSystemUsers": "Все пользователи в системе",
+    "contentItems": "Единицы Контента",
+    "moviesTvSeries": "Фильмы, сериалы и другое",
+    "activeResellers": "Активные Реселлеры",
+    "currentlyActive": "В данный момент активны",
+    "systemStatus": "Статус Системы",
+    "allSystemsOperational": "Все системы работают нормально",
+    "quickActions": "Быстрые Действия",
+    "commonTasks": "Перейти к частым административным задачам",
+    "manageResellers": "Управление Реселлерами",
+    "manageContent": "Управление Контентом",
+    "systemConfig": "Конфигурация Системы",
+    "viewReports": "Просмотр Отчетов",
+    "systemHealth": "Здоровье Системы",
+    "systemStatusDescription": "Статус сервисов в реальном времени для критических компонентов",
+    "apiServices": "API Сервисы",
+    "operational": "Работает",
+    "database": "База Данных",
+    "contentDelivery": "Доставка Контента"
+  }
+}

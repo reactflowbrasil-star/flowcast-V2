@@ -1,0 +1,45 @@
+{
+  "loginHistory": {
+    "title": "Historial de accesos",
+    "subtitle": "Inicios de sesión recientes y eventos de autenticación",
+    "lastUpdated": "Última actualización: {{time}}",
+    "autoRefreshOn": "Auto-actualización ACTIVADA",
+    "autoRefreshOff": "Auto-actualización DESACTIVADA",
+    "refreshNow": "Actualizar ahora",
+    "filters": {
+      "username": "Nombre de usuario",
+      "ipAddress": "Dirección IP",
+      "startDate": "Fecha de inicio (dd/mm/aaaa)",
+      "endDate": "Fecha de fin (dd/mm/aaaa)",
+      "result": "Resultado",
+      "allResults": "Todos los resultados",
+      "perPage": "Por página",
+      "placeholderUsername": "Buscar nombre de usuario…",
+      "placeholderIp": "p. ej. 192.168.0.1"
+    },
+    "table": {
+      "date": "Fecha",
+      "username": "Nombre de usuario",
+      "email": "Correo",
+      "ip": "IP",
+      "device": "Dispositivo",
+      "result": "Resultado",
+      "method": "Método"
+    },
+    "pagination": {
+      "previous": "Anterior",
+      "next": "Siguiente",
+      "showing": "Mostrando {{from}} a {{to}} de {{total}} registros",
+      "pageOf": "Página {{page}} de {{total_pages}}"
+    },
+    "empty": "No se encontraron inicios de sesión.",
+    "errors": {
+      "failedLoad": "Error al cargar el historial de accesos",
+      "invalidDateRange": "Rango de fechas inválido"
+    },
+    "common": {
+      "failedLogins": "Inicios de sesión fallidos",
+      "today": "Hoy"
+    }
+  }
+}

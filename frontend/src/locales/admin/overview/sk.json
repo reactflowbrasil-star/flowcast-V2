@@ -1,0 +1,24 @@
+{
+  "overview": {
+    "totalUsers": "Celkom používateľov",
+    "allSystemUsers": "Všetci používatelia v systéme",
+    "contentItems": "Položky obsahu",
+    "moviesTvSeries": "Filmy, TV seriály a ďalšie",
+    "activeResellers": "Aktívni predajcovia",
+    "currentlyActive": "Momentálne aktívni",
+    "systemStatus": "Stav systému",
+    "allSystemsOperational": "Všetky systémy sú funkčné",
+    "quickActions": "Rýchle akcie",
+    "commonTasks": "Prejsť na najbežnejšie administratívne úlohy",
+    "manageResellers": "Spravovať predajcov",
+    "manageContent": "Spravovať obsah",
+    "systemConfig": "Konfigurácia systému",
+    "viewReports": "Zobraziť správy",
+    "systemHealth": "Zdravie systému",
+    "systemStatusDescription": "Stav služieb v reálnom čase pre kritické komponenty",
+    "apiServices": "API Služby",
+    "operational": "Funkčné",
+    "database": "Databáza",
+    "contentDelivery": "Doručovanie obsahu"
+  }
+}

@@ -1,0 +1,110 @@
+{
+  "mediaScanner": {
+    "title": "Scanner de Mídia",
+    "subtitle": "Escaneie pastas do servidor para importar conteúdo de mídia automaticamente",
+    "categorySelector": {
+      "title": "Selecionar Categoria de Conteúdo",
+      "description": "Escolha o tipo de conteúdo que deseja escanear",
+      "movies": "Filmes",
+      "series": "Séries",
+      "kids": "Infantil",
+      "anime": "Anime",
+      "music": "Música"
+    },
+    "folderExplorer": {
+      "title": "Selecionar Pasta para Escanear",
+      "description": "Navegue e selecione a pasta do servidor contendo seus arquivos de mídia",
+      "currentPath": "Caminho Atual",
+      "selectFolder": "Selecionar Esta Pasta",
+      "goUp": "Subir Nível",
+      "loading": "Carregando pastas...",
+      "error": "Erro ao carregar pastas",
+      "noFolders": "Nenhuma pasta encontrada",
+      "refresh": "Atualizar",
+      "selectedFolder": "Pasta selecionada:"
+    },
+    "scanOptions": {
+      "title": "Opções de Escaneamento",
+      "duplicatePolicy": "Política de Duplicatas",
+      "duplicatePolicyOptions": {
+        "omit": "Pular duplicatas",
+        "replace": "Substituir existentes",
+        "allow": "Permitir duplicados"
+      },
+      "addSubtitles": "Incluir Legendas",
+      "addSubtitlesHelp": "Detectar e adicionar arquivos de legenda automaticamente"
+    },
+    "scanProgress": {
+      "title": "Progresso do Escaneamento",
+      "status": "Estado",
+      "scanned": "Arquivos Escaneados",
+      "imported": "Arquivos Importados",
+      "errors": "Erros",
+      "currentFile": "Arquivo Atual",
+      "timeElapsed": "Tempo Decorrido",
+      "estimatedRemaining": "Estimativa Restante",
+      "cancel": "Cancelar",
+      "cancelConfirm": "Tem certeza que deseja cancelar o escaneamento? O progresso será perdido.",
+      "completed": "Concluído",
+      "cancelled": "Cancelado",
+      "failed": "Falhou"
+    },
+    "taskControl": {
+      "title": "Controle de Tarefas",
+      "tasks": "tarefas",
+      "path": "Caminho",
+      "started": "Iniciado",
+      "duration": "Duração",
+      "currentFile": "Arquivo atual",
+      "stats": {
+        "movies": "Filmes",
+        "series": "Séries",
+        "episodes": "Episódios",
+        "subtitles": "Legendas",
+        "skipped": "Pulados",
+        "replaced": "Substituídos"
+      },
+      "error": "Erro",
+      "cancel": "Cancelar",
+      "delete": "Excluir",
+      "cancelling": "Cancelando...",
+      "deleting": "Excluindo...",
+      "idle": "Nenhuma tarefa em execução"
+    },
+    "scanStatus": {
+      "title": "Status do Escaneamento",
+      "scanId": "ID do Scan",
+      "status": "Estado",
+      "backgroundNote": "O escaneamento está rodando no servidor. Você pode fechar esta página e o processo continuará.",
+      "anotherScanNote": "Já existe um escaneamento em progresso. Você pode iniciar outro se necessário."
+    },
+    "actions": {
+      "startScan": "Iniciar Scan",
+      "selectCategory": "Selecionar Categoria",
+      "selectFolder": "Selecionar Pasta",
+      "configureScan": "Configurar Scan",
+      "delete": "Excluir",
+      "deleting": "Excluindo..."
+    },
+    "status": {
+      "idle": "Pronto para escanear",
+      "scanning": "Escaneamento em progresso...",
+      "completed": "Escaneamento concluído com sucesso",
+      "cancelled": "Escaneamento foi cancelado",
+      "failed": "Escaneamento falhou com erros"
+    },
+    "errors": {
+      "noCategory": "Selecione uma categoria de conteúdo",
+      "noFolder": "Selecione uma pasta para escanear",
+      "scanFailed": "Falha ao iniciar scan: {{message}}",
+      "cancelFailed": "Falha ao cancelar scan: {{message}}",
+      "loadFolders": "Falha ao carregar pastas: {{message}}"
+    },
+    "notifications": {
+      "scanStarted": "Escaneamento de mídia iniciado com sucesso",
+      "scanCompleted": "Escaneamento de mídia concluído: {{imported}} arquivos importados",
+      "scanCancelled": "Escaneamento de mídia foi cancelado",
+      "scanFailed": "Escaneamento de mídia falhou: {{message}}"
+    }
+  }
+}

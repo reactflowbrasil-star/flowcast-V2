@@ -1,0 +1,34 @@
+{
+  "activity": {
+    "errorLoadingDashboard": "Zlyhalo načítanie nástenky: {{message}}",
+    "errorLoadingDashboardFallback": "Zlyhalo načítanie údajov aktivít"
+  },
+  "activityDashboard": {
+    "title": "Nástenka aktivity",
+    "activitySubtitle": "Aktivita systému a metriky zapojenia",
+    "autoRefreshState": "Autom. obnovenie: {{state}}",
+    "on": "ZAP",
+    "off": "VYP",
+    "enable": "Povoliť",
+    "disable": "Zakázať",
+    "loginsToday": "Prihlásenia dnes",
+    "activeUsers": "Aktívni používatelia",
+    "last7Days": "Posledných 7 dní",
+    "contentViews": "Zobrazenia obsahu",
+    "deviceDistribution": "Distribúcia zariadení",
+    "mostViewedContent": "Najsledovanejší obsah",
+    "noViewingData": "Žiadne údaje o sledovaní",
+    "multiDeviceUsers": "Používatelia s viacerými zariadeniami",
+    "noMultiDeviceUsers": "Žiadni používatelia s viacerými zariadeniami",
+    "activity24h": "Aktivita (24h)",
+    "logins": "Prihlásenia",
+    "views": "Zobrazenia",
+    "noDeviceData": "Údaje o distribúcii zariadení nie sú k dispozícii",
+    "devicesLabel": "zariadenia",
+    "devices": "zariadenia",
+    "failedLogins": "Neúspešné prihlásenia",
+    "today": "Dnes",
+    "refresh": "Obnoviť",
+    "tryAgain": "Skúsiť znova"
+  }
+}

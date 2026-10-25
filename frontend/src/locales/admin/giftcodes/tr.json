@@ -1,0 +1,30 @@
+{
+  "title": "Hediye Kodları",
+  "description": "Kullanıcı abonelikleri oluşturmak veya uzatmak için tek kullanımlık veya çok kullanımlık hediye kodlarını yönetin.",
+  "create": "Kod Oluştur",
+  "bulkCreate": "Toplu Oluştur",
+  "export": "CSV Dışa Aktar",
+  "noData": "Dışa aktarılacak hediye kodu yok.",
+  "bulkCreated": "{{count}} hediye kodu oluşturuldu",
+  "created": "Hediye kodu oluşturuldu",
+  "deletedSelected": "Seçilen {{count}} hediye kodu silindi",
+  "generate": "Oluştur",
+  "deleteSelected": "Seçilenleri Sil ({{count}})",
+  "deleteConfirm": "Seçilen {{count}} hediye kodu silinsin mi? Bu işlem geri alınamaz.",
+  "table": {
+    "code": "Kod",
+    "duration_days": "Süre (gün)",
+    "uses": "Kullanım",
+    "remaining": "Kalan",
+    "expires_at": "Bitiş Tarihi",
+    "created_at": "Oluşturulma Tarihi"
+  },
+  "form": {
+    "codeOptional": "Kod (isteğe bağlı)",
+    "durationMonths": "Süre (ay)",
+    "uses": "Kullanım",
+    "prefixOptional": "Önek (isteğe bağlı)",
+    "count": "Adet",
+    "usesPerCode": "Kod başına kullanım"
+  }
+}

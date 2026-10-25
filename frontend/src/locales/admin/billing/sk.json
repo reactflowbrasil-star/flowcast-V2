@@ -1,0 +1,114 @@
+{
+  "billing": {
+    "overview": {
+      "title": "Prehľad fakturácie",
+      "description": "Príjmy a výkon kreditov na prvý pohľad",
+      "metrics": {
+        "onlineRevenue": "Online príjmy",
+        "offlineRevenue": "Offline príjmy",
+        "adjustments": "Úpravy",
+        "totalRevenue": "Celkové príjmy",
+        "creditsOnline": "Kredity (Online)",
+        "creditsOffline": "Kredity (Offline)",
+        "creditsAdjustments": "Kredity (Úpravy)",
+        "totalCredits": "Celkom kreditov"
+      }
+    },
+    "pricing": {
+      "title": "Ceny kreditov",
+      "description": "Základná cena a úrovne zliav nakonfigurované v systéme",
+      "basePrice": "Základná cena (USD za kredit)",
+      "activeTiers": "Aktívne úrovne",
+      "effectiveCurrency": "Efektívna mena",
+      "tiersNote": "Uplatní sa najvyššia úroveň, kde je dosiahnuté minimálne množstvo.",
+      "table": {
+        "minQuantity": "Min. množstvo (vrátane)",
+        "discountPercent": "Percento zľavy",
+        "noTiers": "Nie sú nakonfigurované žiadne úrovne. Základná cena platí pre všetky množstvá.",
+        "discountSuffix": "zľava"
+      }
+    },
+    "offline": {
+      "title": "Pridať offline platbu",
+      "description": "Zaznamenať manuálne platby a okamžite prideliť kredity",
+      "labels": {
+        "reseller": "Predajca",
+        "amount": "Suma (USD)",
+        "credits": "Kredity na pridelenie",
+        "method": "Metóda",
+        "reference": "Referencia",
+        "notes": "Poznámky"
+      },
+      "placeholders": {
+        "resellerSearch": "Zadajte aspoň 2 písmená...",
+        "amount": "napr. 100.00",
+        "credits": "napr. 100",
+        "method": "hotovosť/banka/iné",
+        "reference": "číslo faktúry alebo referencia",
+        "notes": "voliteľné poznámky"
+      },
+      "chargedCurrency": "Účtovaná mena:",
+      "success": "Offline platba zaznamenaná a kredity pridelené",
+      "actions": {
+        "saving": "Ukladá sa...",
+        "save": "Uložiť offline platbu"
+      },
+      "errors": {
+        "amountPositive": "Suma (USD) musí byť vyššia ako 0",
+        "creditsPositive": "Kredity musia byť kladné celé číslo",
+        "resellerPositive": "ID predajcu musí byť kladné celé číslo",
+        "selectReseller": "Vyberte predajcu zo zoznamu"
+      }
+    },
+    "transactions": {
+      "title": "Nedávne transakcie",
+      "description": "Filtrovať a stránkovať fakturačné transakcie",
+      "filters": {
+        "source": "Zdroj",
+        "status": "Stav",
+        "resellerId": "ID predajcu",
+        "reference": "Referencia/Používateľ",
+        "perPage": "Na stránku"
+      },
+      "sources": {
+        "stripe": "Stripe",
+        "offline": "Offline",
+        "adjustment": "Úprava"
+      },
+      "statuses": {
+        "completed": "Dokončené",
+        "pending": "Čakajúce",
+        "refunded": "Vrátené",
+        "failed": "Zlyhalo"
+      },
+      "placeholders": {
+        "resellerId": "napr. 42",
+        "reference": "Hľadať referenciu alebo používateľa"
+      },
+      "table": {
+        "id": "ID",
+        "reseller": "Predajca",
+        "source": "Zdroj",
+        "amount": "Suma",
+        "credits": "Kredity",
+        "status": "Stav",
+        "reference": "Referencia",
+        "createdAt": "Vytvorené"
+      },
+      "total": "Celkom: {{count}}",
+      "pagination": {
+        "page": "Stránka {{page}}"
+      },
+      "empty": "Nenašli sa žiadne transakcie."
+    },
+    "errors": {
+      "fetchOverview": "Nepodarilo sa načítať prehľad fakturácie",
+      "fetchPricing": "Nepodarilo sa načítať konfiguráciu cien",
+      "fetchTransactions": "Nepodarilo sa načítať transakcie",
+      "createOfflinePayment": "Nepodarilo sa vytvoriť offline platbu"
+    }
+  },
+  "common": {
+    "refresh": "Obnoviť"
+  }
+}

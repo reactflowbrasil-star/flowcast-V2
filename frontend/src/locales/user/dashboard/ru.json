@@ -1,0 +1,32 @@
+{
+  "title": "Панель управления",
+  "welcome": "С возвращением",
+  "guest": "Гость",
+  "navigation": {
+    "home": "Главная",
+    "movies": "Фильмы",
+    "tv": "Прямой эфир",
+    "series": "Сериалы",
+    "kids": "Дети",
+    "anime": "Аниме",
+    "events": "События",
+    "music": "Музыка",
+    "content": "Контент",
+    "devices": "Устройства",
+    "profile": "Профиль",
+    "products": "Продукты"
+  },
+  "sidebar": {
+    "viewProfile": "Просмотр и редактирование профиля",
+    "secureSession": "Безопасный сеанс",
+    "logout": "Выйти"
+  },
+  "stats": {
+    "activeDevices": "Активные устройства",
+    "subscription": "Подписка",
+    "expiresAt": "Истекает",
+    "unlimited": "Безлимитно",
+    "active": "Активна",
+    "expired": "Истекла"
+  }
+}

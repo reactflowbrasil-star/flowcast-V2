@@ -1,0 +1,46 @@
+{
+  "title": "Správa špecializovaného obsahu",
+  "tabs": {
+    "kids": "Deti",
+    "anime": "Anime",
+    "events": "Udalosti",
+    "tv": "TV",
+    "movies": "Filmy",
+    "series": "Seriály"
+  },
+  "kids": {
+    "addContent": "Pridať detský obsah",
+    "existingContent": "Existujúci detský obsah ({{count}})",
+    "year": "Rok: {{year}}",
+    "active": "Aktívne: {{status}}"
+  },
+  "anime": {
+    "placeholder": "Správa anime obsahu - Podobná štruktúra ako detský obsah"
+  },
+  "events": {
+    "placeholder": "Správa udalostí - S funkciou plánovania"
+  },
+  "tvChannels": {
+    "placeholder": "Správa TV kanálov - Správa živých kanálov"
+  },
+  "movies": {
+    "placeholder": "Správa filmov - Správa VOD obsahu"
+  },
+  "seriesTab": {
+    "placeholder": "Správa seriálov - So sériami a epizódami"
+  },
+  "form": {
+    "title": "Názov",
+    "description": "Popis",
+    "streamUrl": "URL streamu",
+    "imageUrl": "URL obrázka",
+    "tmdbId": "TMDB ID",
+    "year": "Rok",
+    "creating": "Vytvára sa...",
+    "createContent": "Vytvoriť obsah"
+  },
+  "status": {
+    "yes": "Áno",
+    "no": "Nie"
+  }
+}

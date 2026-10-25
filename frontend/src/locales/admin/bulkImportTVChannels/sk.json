@@ -1,0 +1,33 @@
+{
+  "bulkImportTVChannels": {
+    "title": "Hromadný import",
+    "description": "Importujte viacero TV kanálov zo zoznamu M3U.",
+    "labels": {
+      "format": "Formát",
+      "provider": "Poskytovateľ",
+      "globalDescription": "Globálny popis",
+      "country": "Krajina",
+      "startChannelNumber": "Počiatočné číslo kanála",
+      "m3uList": "Zoznam M3U"
+    },
+    "placeholders": {
+      "provider": "napr: Poskytovateľ A, Poskytovateľ B",
+      "description": "Popis pre všetky kanály",
+      "country": "Napr: US, AR, SK",
+      "startChannelNumber": "Automaticky vypočítané, ak je prázdne"
+    },
+    "buttons": {
+      "cancel": "Zrušiť",
+      "chooseFile": "Vybrať súbor M3U",
+      "import": "Importovať"
+    },
+    "validation": {
+      "pasteM3uContent": "Vložte obsah M3U",
+      "mustBePositiveNumber": "Musí byť kladné číslo",
+      "invalidData": "Neplatné údaje",
+      "bulkImportFailed": "Hromadný import zlyhal",
+      "unknownError": "Neznáma chyba",
+      "fileReadFailed": "Nepodarilo sa prečítať vybraný súbor"
+    }
+  }
+}

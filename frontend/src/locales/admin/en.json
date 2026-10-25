@@ -1,0 +1,790 @@
+{
+  "security": {
+    "tabs": {
+      "overview": "Security Overview",
+      "incidents": "Security Incidents",
+      "bans": "Security Bans",
+      "blacklistedDevices": "Blacklisted Devices"
+    },
+    "actions": {
+      "cleanupExpiredBans": "Cleanup Expired Bans",
+      "createManualBan": "Create Manual Ban"
+    },
+    "cards": {
+      "totalIncidents": "Total Incidents",
+      "todaysIncidents": "Today's Incidents",
+      "activeBans": "Active Bans",
+      "permanentBans": "Permanent Bans",
+      "blacklistedDevices": "Blacklisted Devices"
+    }
+  },
+  "masterKeys": {
+    "createDialogDescription": "Create a new Master API Key for external applications. This key provides full API access without UI authentication.",
+    "examples": {
+      "appName": "e.g., External Editor App 2024"
+    },
+    "keyNameHelp": "A descriptive name to identify this API key",
+    "securityNoteTitle": "Security Note",
+    "securityNoteDescription": "The generated API key will be shown only once. Make sure to copy and store it securely.",
+    "empty": {
+      "title": "No API Keys Found",
+      "description": "Create your first Master API Key to enable external application integration"
+    },
+    "detailsTitle": "Master API Key Details",
+    "detailsDescription": "View and manage this API key for external application integration",
+    "apiKeyLabel": "API Key",
+    "activeStatus": "Active Status",
+    "regenerateButton": "Regenerate Key",
+    "deleteButton": "Delete Key",
+    "labels": {
+      "created": "Created",
+      "lastUpdated": "Last Updated",
+      "lastUsed": "Last Used"
+    }
+  },
+  "loginHistory": {
+    "title": "Login History",
+    "lastUpdated": "Last updated: {{time}}",
+    "autoRefreshOn": "Auto-refresh: ON",
+    "refreshNow": "Refresh Now",
+    "filters": {
+      "username": "Username",
+      "ipAddress": "IP Address",
+      "startDate": "Start Date",
+      "endDate": "End Date"
+    },
+    "placeholders": {
+      "searchUsername": "Search username...",
+      "ipAddress": "IP address..."
+    },
+    "loading": "Loading login history...",
+    "errors": {
+      "loading": "Error loading login history: {{message}}",
+      "loadingFallback": "Failed to load login history"
+    },
+    "noHistory": "No login attempts found.",
+    "table": {
+      "dateTime": "Date & Time",
+      "user": "User",
+      "status": "Status",
+      "ipAddress": "IP Address",
+      "device": "Device",
+      "userAgent": "User Agent"
+    }
+  },
+  "securityIncidents": {
+    "filterType": "Filter by type",
+    "allTypes": "All types",
+    "bruteForce": "Brute force",
+    "suspiciousActivity": "Suspicious activity",
+    "multipleDevices": "Multiple devices",
+    "tokenManipulation": "Token manipulation",
+    "searchByUsernamePlaceholder": "Search by username...",
+    "itemsPerPage": "Items per page",
+    "title": "Security Incidents ({{total}})",
+    "noneFound": "No incidents found.",
+    "deviceId": "Device ID",
+    "ipAddress": "IP Address",
+    "deleteTitle": "Delete incident",
+    "showingPage": "Page {{page}} of {{totalPages}}",
+    "confirmDelete": "Delete this incident?"
+  },
+  "securityBans": {
+    "searchByUsernamePlaceholder": "Search by username...",
+    "itemsPerPage": "Items per page",
+    "title": "Security Bans ({{total}})",
+    "noneFound": "No bans found.",
+    "level": "Level",
+    "type": "Type",
+    "reason": "Reason",
+    "timeRemaining": "Time remaining"
+  },
+  "blacklistedDevices": {
+    "title": "Blacklisted Devices ({{count}})",
+    "noneTitle": "No blacklisted devices",
+    "noneDescription": "You're all clear. No devices are currently blacklisted.",
+    "removeButton": "Remove from blacklist"
+  },
+  "unban": {
+    "action": "Unban",
+    "confirm": "Unban user {{user}}?",
+    "promptReason": "Enter reason for unbanning"
+  },
+  "dashboard": {
+    "notAuthenticated": "Not authenticated",
+    "accessDenied": "Access denied. Admin role required.",
+    "preparing": "Preparing dashboard..."
+  },
+  "demos": {
+    "title": "Demo Experience",
+    "subtitle": "Monitor demo accounts, adjust creation limits and review access history to keep abuse under control.",
+    "settingsTitle": "Creation guardrails",
+    "settingsDescription": "Limit how many demos can be created per IP and how long offenders stay banned.",
+    "totalUsers": "Active demos",
+    "thresholdLabel": "Threshold (creations / 24h)",
+    "banDurationLabel": "Ban duration (days)",
+    "managementTitle": "Demo monitoring",
+    "managementDescription": "Review live demo accounts or audit the IP trail in a couple of clicks.",
+    "usersTab": "Users",
+    "historyTab": "History",
+    "usersSummary": "{{count}} demo users active",
+    "refreshing": "Refreshing...",
+    "ipLabel": "IP address",
+    "expiresLabel": "Expires",
+    "deviceLabel": "Device",
+    "userAgentLabel": "User agent",
+    "resultLabel": "Result",
+    "successful": "Successful",
+    "failed": "Failed",
+    "historySummary": "Showing {{total}} log entries",
+    "noHistoryResults": "No login attempts for the current filters.",
+    "noUsers": "No demo users at the moment.",
+    "confirmDelete": "Delete this demo user? This action cannot be undone.",
+    "userDeleted": "Demo user deleted",
+    "usernamePlaceholder": "john.doe"
+  },
+  "giftcodes": {
+    "title": "Gift Codes",
+    "description": "Manage one-time or multi-use gift codes to create or extend user subscriptions.",
+    "create": "Create Code",
+    "bulkCreate": "Bulk Create",
+    "export": "Export CSV",
+    "noData": "No gift codes available to export.",
+    "bulkCreated": "Created {{count}} gift codes",
+    "created": "Gift code created",
+    "deletedSelected": "Deleted {{count}} selected gift codes",
+    "generate": "Generate",
+    "deleteSelected": "Delete Selected ({{count}})",
+    "deleteConfirm": "Delete {{count}} selected gift codes? This action cannot be undone.",
+    "table": {
+      "code": "Code",
+      "duration_days": "Duration (days)",
+      "uses": "Uses",
+      "remaining": "Remaining",
+      "expires_at": "Expires At",
+      "created_at": "Created At"
+    },
+    "form": {
+      "codeOptional": "Code (optional)",
+      "durationMonths": "Duration (months)",
+      "uses": "Uses",
+      "prefixOptional": "Prefix (optional)",
+      "count": "Count",
+      "usesPerCode": "Uses per code"
+    }
+  },
+  "billing": {
+    "overview": {
+      "title": "Billing Overview",
+      "description": "Revenue and credit performance at a glance",
+      "metrics": {
+        "onlineRevenue": "Online Revenue",
+        "offlineRevenue": "Offline Revenue",
+        "adjustments": "Adjustments",
+        "totalRevenue": "Total Revenue",
+        "creditsOnline": "Credits (Online)",
+        "creditsOffline": "Credits (Offline)",
+        "creditsAdjustments": "Credits (Adjustments)",
+        "totalCredits": "Total Credits"
+      }
+    },
+    "pricing": {
+      "title": "Credit Pricing",
+      "description": "Base pricing and discount tiers configured in the system",
+      "basePrice": "Base price (USD per credit)",
+      "activeTiers": "Active tiers",
+      "effectiveCurrency": "Effective currency",
+      "tiersNote": "The highest tier where the minimum quantity is met will be applied.",
+      "table": {
+        "minQuantity": "Min quantity (inclusive)",
+        "discountPercent": "Discount percent",
+        "noTiers": "No tiers configured. Base price applies for all quantities.",
+        "discountSuffix": "off"
+      }
+    },
+    "offline": {
+      "title": "Add Offline Payment",
+      "description": "Record manual payments and grant credits instantly",
+      "labels": {
+        "reseller": "Reseller",
+        "amount": "Amount (USD)",
+        "credits": "Credits to grant",
+        "method": "Method",
+        "reference": "Reference",
+        "notes": "Notes"
+      },
+      "placeholders": {
+        "resellerSearch": "Type at least 2 letters…",
+        "amount": "e.g. 100.00",
+        "credits": "e.g. 100",
+        "method": "cash/bank/other",
+        "reference": "invoice number or reference",
+        "notes": "optional notes"
+      },
+      "chargedCurrency": "Charged currency:",
+      "success": "Offline payment recorded and credits granted",
+      "actions": {
+        "saving": "Saving...",
+        "save": "Save Offline Payment"
+      },
+      "errors": {
+        "amountPositive": "Amount (USD) must be greater than 0",
+        "creditsPositive": "Credits must be a positive integer",
+        "resellerPositive": "Reseller ID must be a positive integer",
+        "selectReseller": "Select a reseller from the list"
+      }
+    },
+    "transactions": {
+      "title": "Recent Transactions",
+      "description": "Filter and paginate billing transactions",
+      "filters": {
+        "source": "Source",
+        "status": "Status",
+        "resellerId": "Reseller ID",
+        "reference": "Reference/Username",
+        "perPage": "Per page"
+      },
+      "sources": {
+        "stripe": "Stripe",
+        "offline": "Offline",
+        "adjustment": "Adjustment"
+      },
+      "statuses": {
+        "completed": "Completed",
+        "pending": "Pending",
+        "refunded": "Refunded",
+        "failed": "Failed"
+      },
+      "placeholders": {
+        "resellerId": "e.g. 42",
+        "reference": "Search reference or username"
+      },
+      "table": {
+        "id": "ID",
+        "reseller": "Reseller",
+        "source": "Source",
+        "amount": "Amount",
+        "credits": "Credits",
+        "status": "Status",
+        "reference": "Reference",
+        "createdAt": "Created at"
+      },
+      "total": "Total: {{count}}",
+      "pagination": {
+        "page": "Page {{page}}"
+      },
+      "empty": "No transactions found."
+    },
+    "errors": {
+      "fetchOverview": "Failed to fetch billing overview",
+      "fetchPricing": "Failed to fetch pricing configuration",
+      "fetchTransactions": "Failed to fetch billing transactions",
+      "createOfflinePayment": "Failed to create offline payment"
+    }
+  },
+  "devices": {
+    "errors": {
+      "loadFailed": "Failed to load device management data. Please try again later."
+    },
+    "overview": {
+      "activeUsers": "Active users",
+      "statsDescription": "Detailed breakdown of device usage across users",
+      "usageByUserTitle": "Device Usage by User",
+      "usageByUserDescription": "User device statistics will appear here once devices are registered.",
+      "deviceCount": "{{count}}/{{max}} devices"
+    },
+    "activeList": {
+      "description": "Monitor all active device connections across the system",
+      "searchPlaceholder": "Search devices...",
+      "deviceId": "ID: {{id}}",
+      "actions": {
+        "disconnect": "Disconnect"
+      },
+      "removeDialog": {
+        "title": "Remove Device",
+        "description": "Are you sure you want to permanently remove device \"{{device}}\" from user {{user}}? This action cannot be undone."
+      },
+      "emptyTitle": "No devices found",
+      "noDevicesSearch": "No devices found for \"{{query}}\"",
+      "noDevicesDescription": "No devices are currently registered in the system.",
+      "time": {
+        "justNow": "Just now",
+        "minutesAgo": "{{count}}m ago",
+        "hoursAgo": "{{count}}h ago",
+        "daysAgo": "{{count}}d ago"
+      }
+    },
+    "limits": {
+      "title": "Device Limit Warnings",
+      "subtitle": "Monitor users approaching or exceeding device limits",
+      "summary": {
+        "warningTitle": "Users at Warning",
+        "warningDescription": "80-99% of limit used",
+        "criticalTitle": "Users at Critical",
+        "criticalDescription": "At device limit",
+        "exceededTitle": "Users Exceeded",
+        "exceededDescription": "Over device limit"
+      },
+      "badges": {
+        "safe": "Safe",
+        "warning": "Warning",
+        "critical": "Critical",
+        "exceeded": "Exceeded"
+      },
+      "attention": {
+        "title": "Users Needing Attention"
+      },
+      "table": {
+        "deviceUsage": "Device Usage",
+        "progress": "Progress",
+        "warningLevel": "Warning Level"
+      },
+      "actions": {
+        "increaseLimit": "Increase Limit",
+        "monitor": "Monitor"
+      },
+      "allSafeTitle": "All Users Within Limits",
+      "allSafeDescription": "No users are currently approaching or exceeding their device limits.",
+      "allUsersTitle": "All Users Overview"
+    },
+    "removal": {
+      "bulkRemoveFailed": "Failed to remove {{count}} devices"
+    }
+  },
+  "overview": {
+    "totalUsers": "Total Users",
+    "allSystemUsers": "All users in the system",
+    "contentItems": "Content Items",
+    "moviesTvSeries": "Movies, TV series, and more",
+    "activeResellers": "Active Resellers",
+    "currentlyActive": "Currently active",
+    "systemStatus": "System Status",
+    "allSystemsOperational": "All systems operational",
+    "quickActions": "Quick Actions",
+    "commonTasks": "Jump to the most common administrative tasks",
+    "manageResellers": "Manage Resellers",
+    "manageContent": "Manage Content",
+    "systemConfig": "System Configuration",
+    "viewReports": "View Reports",
+    "systemHealth": "System Health",
+    "systemStatusDescription": "Real-time service status for critical components",
+    "apiServices": "API Services",
+    "operational": "Operational",
+    "database": "Database",
+    "contentDelivery": "Content Delivery"
+  },
+  "content": {
+    "title": "Content Management",
+    "description": "Manage content across all categories with TMDB integration",
+    "confirmDelete": "Are you sure you want to delete this content?",
+    "tmdb": {
+      "confirm": "Fill TMDB metadata for {{category}}? This will try to match items without TMDB IDs.",
+      "success": "TMDB metadata updated: {{updated}} updated, {{skipped}} skipped",
+      "warning": "{{count}} items could not be matched. Check console for details.",
+      "error": "TMDB metadata refresh failed",
+      "defaultCategory": "this category"
+    },
+    "errors": {
+      "load": "Failed to load content: {{message}}"
+    },
+    "empty": {
+      "title": "No content found",
+      "description": "Get started by adding your first {{category}} item."
+    },
+    "categories": {
+      "vod": {
+        "label": "Movies",
+        "description": "Movies and standalone video content"
+      },
+      "tv": {
+        "label": "TV Channels",
+        "description": "Live TV channels and streams"
+      },
+      "series": {
+        "label": "Series",
+        "description": "TV series with seasons and episodes"
+      },
+      "events": {
+        "label": "Events",
+        "description": "Live events and special programming"
+      },
+      "kids": {
+        "label": "Kids",
+        "description": "Children and family content"
+      },
+      "anime": {
+        "label": "Anime",
+        "description": "Anime and manga adaptations"
+      }
+    },
+    "actions": {
+      "addManualMovie": "Add Manual Movie",
+      "addManualSeries": "Add Manual Series",
+      "addManualKids": "Add Manual Kids",
+      "addManualAnime": "Add Manual Anime",
+      "addTvChannel": "Add TV Channel",
+      "addEvent": "Add Event",
+      "addContent": "Add Content",
+      "addFromTmdb": "Add from TMDB",
+      "bulkImport": "Bulk Import",
+      "manageCategories": "Manage Categories",
+      "scanFolders": "Scan Folders",
+      "fillMetadata": "Fill Metadata",
+      "tvProviders": "TV Providers"
+    },
+    "table": {
+      "columns": {
+        "title": "Title",
+        "description": "Description",
+        "type": "Type",
+        "format": "Format",
+        "year": "Year",
+        "status": "Status",
+        "created": "Created",
+        "actions": "Actions"
+      },
+      "values": {
+        "tmdbId": "TMDB: {{id}}",
+        "noDescription": "No description available",
+        "unknown": "Unknown",
+        "event": "Event"
+      }
+    },
+    "pagination": {
+      "range": "Showing {{start}}-{{end}} of {{total}} items",
+      "rowsPerPage": "Rows per page",
+      "rows": "Rows",
+      "updating": "Updating…",
+      "pageOf": "Page {{page}} of {{total}}"
+    }
+  },
+  "tickets": {
+    "errors": {
+      "sendMessage": "Failed to send message",
+      "sendMessageRetry": "Failed to send message. Please try again.",
+      "assign": "Failed to assign ticket",
+      "assignRetry": "Failed to assign ticket. Please try again.",
+      "delete": "Failed to delete ticket",
+      "deleteRetry": "Failed to delete ticket. Please try again.",
+      "updateStatus": "Failed to update ticket status",
+      "updateStatusRetry": "Failed to update ticket status. Please try again.",
+      "create": "Failed to create ticket",
+      "createRetry": "Failed to create ticket. Please try again.",
+      "validation": {
+        "titleDescriptionRequired": "Title and description are required",
+        "resellerRequired": "Please select a reseller"
+      }
+    },
+    "confirm": {
+      "delete": "Are you sure you want to delete this ticket? This action cannot be undone."
+    },
+    "filters": {
+      "status": {
+        "all": "All Status"
+      },
+      "priority": {
+        "all": "All Priority"
+      },
+      "unread": {
+        "all": "All Messages",
+        "unread": "Unread Messages",
+        "read": "Read Messages"
+      }
+    },
+    "unreadMessages": "Unread Messages",
+    "stats": {
+      "total": "Total"
+    },
+    "actions": {
+      "panelTitle": "Admin Actions",
+      "assigning": "Assigning...",
+      "assignToMe": "Assign to Me",
+      "changeStatus": "Change Status",
+      "internalMessage": "Send as internal message",
+      "scheduleFollowUp": "Schedule Follow-up",
+      "reassignTicket": "Reassign Ticket"
+    },
+    "priority": {
+      "low": "Low",
+      "medium": "Medium",
+      "high": "High",
+      "urgent": "Urgent"
+    },
+    "category": {
+      "technical": "Technical",
+      "billing": "Billing",
+      "account": "Account",
+      "content": "Content",
+      "other": "Other"
+    },
+    "create": {
+      "title": "Create New Ticket",
+      "description": "Create a new support ticket for testing or administrative purposes.",
+      "labels": {
+        "title": "Title",
+        "description": "Description",
+        "reseller": "Reseller",
+        "priority": "Priority",
+        "category": "Category"
+      },
+      "placeholders": {
+        "title": "Enter ticket title",
+        "description": "Enter ticket description",
+        "reseller": "Select a reseller"
+      },
+      "submitting": "Creating...",
+      "submit": "Create Ticket"
+    },
+    "advanced": {
+      "title": "Advanced Filters",
+      "description": "Apply additional filters to narrow down your ticket search.",
+      "labels": {
+        "dateFrom": "Date From",
+        "dateTo": "Date To"
+      },
+      "helper": "Filter tickets by creation date range. Leave fields empty to show all dates.",
+      "clear": "Clear All",
+      "apply": "Apply Filters"
+    },
+    "sort": {
+      "title": "Sort Options",
+      "description": "Choose how to sort your tickets.",
+      "labels": {
+        "sortBy": "Sort By",
+        "direction": "Direction"
+      },
+      "options": {
+        "newestFirst": "Newest First",
+        "oldestFirst": "Oldest First",
+        "priority": "Priority",
+        "status": "Status",
+        "unreadFirst": "Unread First"
+      },
+      "direction": {
+        "descending": "Descending",
+        "ascending": "Ascending"
+      },
+      "reset": "Reset to Default",
+      "apply": "Apply Sort"
+    }
+  },
+  "activityLogs": {
+    "title": "Activity Logs",
+    "subtitle": "Complete system activity and audit trail",
+    "tabs": {
+      "dashboard": "Dashboard",
+      "systemLogs": "System Logs",
+      "loginHistory": "Login History",
+      "viewingHistory": "Viewing History"
+    },
+    "filters": {
+      "actionType": "Action Type",
+      "allActions": "All actions",
+      "startDate": "Start Date",
+      "endDate": "End Date"
+    },
+    "errors": {
+      "loading": "Error loading logs: {{message}}",
+      "loadingFallback": "Failed to load activity logs"
+    },
+    "noLogs": "No activity logs found.",
+    "table": {
+      "date": "Date",
+      "action": "Action",
+      "user": "User",
+      "target": "Target",
+      "description": "Description",
+      "credits": "Credits"
+    },
+    "pagination": {
+      "showing": "Showing {{from}} to {{to}} of {{total}} logs",
+      "pageOf": "Page {{page}} of {{total_pages}}"
+    },
+    "actionTypes": {
+      "USER_CREATED": "User Created",
+      "USER_DELETED": "User Deleted",
+      "RESELLER_CREATED": "Reseller Created",
+      "RESELLER_DELETED": "Reseller Deleted",
+      "CREDIT_USED": "Credit Used",
+      "CREDIT_ASSIGNED": "Credit Assigned",
+      "SYSTEM_INIT": "System Initialized",
+      "LOGIN": "Login",
+      "LOGOUT": "Logout"
+    }
+  },
+  "viewingHistory": {
+    "title": "Viewing History",
+    "lastUpdated": "Last updated: {{time}}",
+    "autoRefreshOn": "Auto-refresh: ON",
+    "refreshNow": "Refresh Now",
+    "filters": {
+      "username": "Username",
+      "contentType": "Content Type",
+      "allTypes": "All types",
+      "ipAddress": "IP Address",
+      "startDate": "Start Date",
+      "endDate": "End Date"
+    },
+    "placeholders": {
+      "searchUsername": "Search username...",
+      "ipAddress": "IP address..."
+    },
+    "loading": "Loading viewing history...",
+    "errors": {
+      "loading": "Error loading viewing history: {{message}}"
+    },
+    "noHistory": "No viewing history found.",
+    "unknown": "Unknown",
+    "table": {
+      "dateTime": "Date & Time",
+      "user": "User",
+      "contentType": "Content Type",
+      "contentTitle": "Content Title",
+      "info": "Info",
+      "ipAddress": "IP Address",
+      "device": "Device"
+    },
+    "pagination": {
+      "showing": "Showing {{from}} to {{to}} of {{total}} viewing sessions",
+      "pageOf": "Page {{page}} of {{total_pages}}"
+    }
+  },
+  "email": {
+    "title": "Email Configuration",
+    "description": "Configure SMTP settings for password reset, 2FA notifications, and other emails",
+    "tabs": {
+      "settings": "SMTP Settings",
+      "test": "Test Email",
+      "guide": "Provider Guide"
+    },
+    "status": {
+      "title": "Email Service Status",
+      "description": "Enable or disable the email service globally"
+    },
+    "server": {
+      "title": "SMTP Server",
+      "description": "Configure your SMTP server connection",
+      "preset": "Provider Preset",
+      "presets": {
+        "gmail": "Gmail",
+        "outlook": "Outlook",
+        "sendgrid": "SendGrid",
+        "mailgun": "Mailgun",
+        "amazonSes": "Amazon SES",
+        "zoho": "Zoho",
+        "custom": "Custom"
+      },
+      "host": "SMTP Host",
+      "port": "Port",
+      "username": "Username / Email",
+      "password": "Password / App Password",
+      "enterPassword": "Enter password",
+      "tls": "Enable TLS/STARTTLS (recommended)"
+    },
+    "identity": {
+      "title": "Email Identity",
+      "description": "Configure how your emails appear to recipients",
+      "fromName": "From Name",
+      "fromEmail": "From Email",
+      "appName": "Application Name",
+      "appNameHint": "Used in email templates and subjects",
+      "frontendUrl": "Frontend URL",
+      "frontendUrlHint": "Used for password reset links"
+    },
+    "test": {
+      "title": "Send Test Email",
+      "description": "Verify your SMTP configuration by sending a test email",
+      "disabled": "Email service is currently disabled. Enable it in the SMTP Settings tab first.",
+      "recipient": "Recipient Email",
+      "send": "Send Test",
+      "sending": "Sending..."
+    },
+    "guide": {
+      "title": "SMTP Provider Setup Guide",
+      "description": "Quick setup instructions for popular email providers",
+      "providers": {
+        "gmail": {
+          "title": "Gmail / Google Workspace",
+          "steps": {
+            "1": "Go to your Google Account settings",
+            "2": "Navigate to Security > 2-Step Verification (must be enabled)",
+            "3": "Go to Security > App passwords",
+            "4": "Generate a new app password for \"Mail\"",
+            "5": "Use that 16-character password here"
+          },
+          "example": "Host: smtp.gmail.com | Port: 587 | TLS: Yes"
+        },
+        "sendgrid": {
+          "title": "SendGrid",
+          "steps": {
+            "1": "Create a SendGrid account",
+            "2": "Go to Settings > API Keys",
+            "3": "Create an API key with \"Mail Send\" permissions",
+            "4": "Username: \"apikey\" (literal text)",
+            "5": "Password: Your API key"
+          },
+          "example": "Host: smtp.sendgrid.net | Port: 587 | TLS: Yes"
+        },
+        "amazonSes": {
+          "title": "Amazon SES",
+          "steps": {
+            "1": "Verify your domain or email in SES console",
+            "2": "Create SMTP credentials in SES",
+            "3": "Use the generated SMTP username and password",
+            "4": "Use the correct region endpoint"
+          },
+          "example": "Host: email-smtp.[region].amazonaws.com | Port: 587 | TLS: Yes"
+        }
+      }
+    },
+    "actions": {
+      "save": "Save Configuration"
+    },
+    "success": {
+      "saved": "SMTP configuration saved successfully"
+    },
+    "errors": {
+      "loadFailed": "Failed to load SMTP configuration",
+      "saveFailed": "Failed to save configuration",
+      "testFailed": "Failed to send test email"
+    }
+  },
+  "twoFactor": {
+    "title": "Two-Factor Authentication",
+    "description": "Add an extra layer of security to your account",
+    "status": {
+      "enabled": "2FA is enabled",
+      "disabled": "2FA is not enabled",
+      "notAvailable": "Two-factor authentication is only available for admin and reseller accounts"
+    },
+    "setup": {
+      "title": "Setup Two-Factor Authentication",
+      "scanQR": "Scan this QR code with your authenticator app",
+      "manualEntry": "Or enter this code manually:",
+      "verifyCode": "Enter the 6-digit code from your app to verify",
+      "placeholder": "Enter 6-digit code",
+      "verify": "Verify & Enable",
+      "verifying": "Verifying..."
+    },
+    "backupCodes": {
+      "title": "Backup Codes",
+      "description": "Save these backup codes in a safe place. Each code can only be used once.",
+      "copy": "Copy Codes",
+      "copied": "Copied!",
+      "regenerate": "Regenerate Codes",
+      "regenerating": "Regenerating..."
+    },
+    "disable": {
+      "title": "Disable 2FA",
+      "description": "Enter your 2FA code or a backup code to disable two-factor authentication",
+      "button": "Disable 2FA",
+      "disabling": "Disabling..."
+    },
+    "errors": {
+      "setupFailed": "Failed to setup 2FA",
+      "verifyFailed": "Invalid code. Please try again.",
+      "disableFailed": "Failed to disable 2FA",
+      "loadFailed": "Failed to load 2FA status"
+    }
+  }
+}

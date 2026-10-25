@@ -1,0 +1,48 @@
+{
+  "editUser": {
+    "title": "Modifier l'utilisateur :",
+    "description": "Mettre à jour les informations utilisateur et le mot de passe",
+    "labels": {
+      "username": "Nom d'utilisateur",
+      "email": "E-mail",
+      "password": "Nouveau mot de passe (4 à 10 chiffres)",
+      "expiresAt": "Date d'expiration",
+      "maxDevices": "Max. appareils",
+      "status": "Statut",
+      "contentCategories": "Catégories de contenu"
+    },
+    "placeholders": {
+      "username": "Entrez le nom d'utilisateur",
+      "email": "Entrez l'e-mail",
+      "password": "Laisser vide pour rester à jour"
+    },
+    "hints": {
+      "expiresAtEmpty": "Laisser vide sans expiration",
+      "categoriesHelp": "Cliquez pour sélectionner les catégories de contenu auxquelles cet utilisateur aura accès."
+    },
+    "status": {
+      "active": "Actif",
+      "suspended": "Suspendu"
+    },
+    "categories": {
+      "loading": "Chargement des catégories...",
+      "noCategories": "Aucune catégorie disponible"
+    },
+    "buttons": {
+      "cancel": "Annuler",
+      "update": "Mettre à jour l'utilisateur",
+      "updating": "Mise à jour..."
+    },
+    "errors": {
+      "noUserSelected": "Aucun utilisateur sélectionné"
+    },
+    "validation": {
+      "usernameMin": "Le nom d'utilisateur doit comporter au moins 3 caractères",
+      "invalidEmail": "E-mail invalide",
+      "passwordMin": "Le mot de passe doit comporter au moins 4 chiffres",
+      "passwordMax": "Le mot de passe doit comporter au maximum 10 chiffres",
+      "passwordDigitsOnly": "Le mot de passe ne peut contenir que des chiffres",
+      "maxDevicesMax": "Maximum 10 appareils autorisés"
+    }
+  }
+}

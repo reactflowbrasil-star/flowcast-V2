@@ -1,0 +1,39 @@
+{
+  "editContent": {
+    "labels": {
+      "year": "年份",
+      "description": "描述",
+      "videoUrl": "视频 URL",
+      "subtitles": "字幕"
+    },
+    "noSubtitles": "未检测到字幕。",
+    "validation": {
+      "titleRequired": "标题为必填项",
+      "videoUrlRequired": "需要有效的视频 URL",
+      "subtitleFileRequired": "首先选择一个字幕文件"
+    },
+    "subtitleLanguagePlaceholder": "en",
+    "drm": {
+      "sectionTitle": "DRM Settings",
+      "optional": "(optional)",
+      "drmType": "DRM Type",
+      "noDrm": "None (no DRM)",
+      "clearkey": "ClearKey",
+      "widevine": "Widevine",
+      "playready": "PlayReady",
+      "clearKeyKeys": "ClearKey Keys",
+      "clearKeyFormat": "Format: kid_hex:key_hex",
+      "licenseServerUrl": "License Server URL",
+      "drmHeadersJson": "DRM Headers (JSON)",
+      "licenseHeadersNote": "Optional headers sent with license requests"
+    },
+    "streamHeaders": {
+      "sectionTitle": "Advanced Stream Settings",
+      "origin": "Origin",
+      "originNote": "Origin header for CORS",
+      "userAgent": "User Agent",
+      "referer": "Referer",
+      "customHeaders": "Custom Headers (JSON)"
+    }
+  }
+}

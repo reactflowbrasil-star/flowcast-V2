@@ -1,0 +1,1035 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- App Name (uses branding.name from local.properties) -->
+    <string name="app_name">@string/branding_name</string>
+    <string name="app_name_full">@string/branding_name</string>
+    
+    <!-- Navigation -->
+    <string name="nav_home">Domov</string>
+    <string name="nav_search">Hľadať</string>
+    <string name="nav_movies">Filmy</string>
+    <string name="nav_series">Seriály</string>
+    <string name="nav_live_tv">Živé TV</string>
+    <string name="nav_kids">Deti</string>
+    <string name="nav_anime">Anime</string>
+    <string name="nav_events">Udalosti</string>
+
+    <string name="nav_favorites">Obľúbené</string>
+    <string name="nav_library">Knižnica</string>
+    <string name="nav_music">Hudba</string>
+    <string name="nav_settings">Nastavenia</string>
+    <string name="nav_profile">Profil</string>
+
+    <!-- Events & Views -->
+    <string name="label_view_categories">Kategórie</string>
+    <string name="label_view_compact">Kompaktné</string>
+    <string name="label_view_large">Veľké</string>
+    <string name="channels_available">%1$d dostupných kanálov</string>
+    <string name="category_no_channels">V tejto kategórii nie sú dostupné žiadne kanály</string>
+    
+    <!-- Authentication -->
+    <string name="auth_welcome">Vitajte v IPTV</string>
+    <string name="auth_welcome_subtitle">Zaregistrujte svoje zariadenie a začnite</string>
+    <string name="auth_register_device">Registrovať zariadenie</string>
+    <string name="auth_device_name">Názov zariadenia</string>
+    <string name="auth_device_name_hint">Môj Android TV</string>
+    <string name="auth_activation_code">Aktivačný kód</string>
+    <string name="auth_activation_code_hint">Zadajte 6-miestny kód</string>
+    <string name="auth_activate">Aktivovať</string>
+    <string name="auth_activating">Aktiváciu…</string>
+    <string name="auth_registering">Registráciu…</string>
+    <string name="auth_success">Zariadenie úspešne aktivované</string>
+    <string name="auth_activate_device">Aktivovať zariadenie</string>
+    <string name="auth_activate_subtitle">Zadajte poskytnutý aktivačný kód</string>
+    
+    <!-- Content -->
+    <string name="content_play">Prehrať</string>
+    <string name="content_play_now">Prehrať teraz</string>
+    <string name="content_more_info">Viac info</string>
+    <string name="content_add_favorite">Pridať k obľúbeným</string>
+    <string name="content_remove_favorite">Odstrániť z obľúbených</string>
+    <string name="content_download">Stiahnuť</string>
+    <string name="content_share">Zdieľať</string>
+    <string name="content_continue_watching">Pokračovať v sledovaní</string>
+    <string name="content_min_remaining">zostáva %d min</string>
+    <string name="content_popular_movies">Populárne filmy</string>
+    <string name="content_recommended_series">Odporúčané seriály</string>
+    <string name="content_recently_added">Nedávno pridané</string>
+    <string name="content_see_all">Zobraziť všetko</string>
+    <string name="content_empty_message">Žiadny dostupný obsah</string>
+    
+    <!-- Player -->
+    <string name="player_play">Prehrať</string>
+    <string name="player_pause">Pauza</string>
+    <string name="player_stop">Zastaviť</string>
+    <string name="player_forward">Dopredu 10 s</string>
+    <string name="player_backward">Dozadu 10 s</string>
+    <string name="player_fullscreen">Celá obrazovka</string>
+    <string name="player_exit_fullscreen">Ukončiť celú obrazovku</string>
+    <string name="player_volume">Hlasitosť</string>
+    <string name="player_subtitles">Titulky</string>
+    <string name="player_quality">Kvalita</string>
+    <string name="player_loading">Príprava videa…</string>
+    <string name="player_placeholder_message">Vyberte obsah na prehranie</string>
+    <string name="player_subtitle_settings">Nastavenia titulkov</string>
+    <string name="player_no_subtitles">Nie sú dostupné žiadne titulky</string>
+    <string name="player_subtitle_off">Off</string>
+    <string name="player_subtitle_off_desc">Zakázať všetky titulky</string>
+    
+    <!-- Search -->
+    <string name="search_hint">Hľadať filmy, seriály, kanály…</string>
+    <string name="search_no_results">Nenašli sa žiadne výsledky</string>
+    <string name="search_suggestions">Návrhy</string>
+    <string name="search_recent">Nedávne hľadania</string>
+    <string name="search_searching">Vyhľadávanie…</string>
+    <string name="search_placeholder">Hľadať obsah…</string>
+    <string name="search_no_results_title">Žiadne výsledky</string>
+    <string name="search_no_results_message">Na vašu požiadavku sa nenašli žiadne výsledky</string>
+    <string name="search_no_results_suggestions">Skúste iné hľadané termíny</string>
+    
+    <!-- Settings -->
+    <string name="settings_profile">Profil</string>
+    <string name="settings_video">Video</string>
+    <string name="settings_audio">Zvuk</string>
+
+    <string name="settings_devices">Zariadenia</string>
+    <string name="settings_about">O aplikácii</string>
+    <string name="settings_logout">Odhlásiť sa</string>
+    <string name="settings_autoplay">Automatické prehrávanie</string>
+    <string name="settings_autoplay_subtitle">Automaticky prehrať ďalšiu časť</string>
+    <string name="settings_subtitles">Titulky</string>
+    <string name="settings_subtitles_subtitle">Zobraziť titulky, ak sú dostupné</string>
+
+    <string name="settings_title">Nastavenia</string>
+    <string name="settings_video_title">Video</string>
+    <string name="settings_video_quality">Kvalita videa</string>
+    <string name="settings_video_quality_subtitle">Vyberte kvalitu prehrávania</string>
+    <string name="settings_app_title">Aplikácia</string>
+    <string name="settings_language">Jazyk</string>
+    <string name="settings_language_subtitle">Zmeniť jazyk aplikácie</string>
+    <string name="settings_account_title">Účet</string>
+    <string name="settings_logout_subtitle">Odhlásiť sa</string>
+    <string name="settings_about_title">O aplikácii</string>
+    <string name="settings_check_updates">Skontrolujte aktualizácie</string>
+    <string name="settings_check_updates_subtitle">Skontrolujte aktualizácie aplikácií</string>
+    <string name="settings_app_version">Verzia aplikácie</string>
+    <string name="settings_privacy_policy">Zásady ochrany súkromia</string>
+    <string name="settings_privacy_policy_subtitle">Zobraziť zásady ochrany súkromia</string>
+    <string name="settings_terms">Všeobecné podmienky</string>
+    <string name="settings_terms_subtitle">Zobraziť všeobecné podmienky</string>
+    <string name="profile_title">Profil</string>
+    <string name="profile_subscription">Predplatné</string>
+
+    <!-- Error Messages -->
+    <string name="error_network">Chyba siete</string>
+    <string name="error_server">Chyba servera</string>
+    <string name="error_unauthorized">Neoprávnený prístup</string>
+    <string name="error_not_found">Obsah sa nenašiel</string>
+    <string name="error_playback">Chyba prehrávania</string>
+    <string name="error_unknown">Neznáma chyba</string>
+    <string name="error_device_registration">Chyba pri registrácii zariadenia</string>
+    <string name="error_device_activation">Chyba pri aktivácii zariadenia</string>
+    <string name="error_invalid_code">Neplatný aktivačný kód</string>
+    <string name="error_title">Chyba</string>
+    <string name="error_retry">Skúsiť znova</string>
+    
+    <!-- Loading States -->
+    <string name="loading">Načítavam…</string>
+    <string name="loading_content">Načítavam obsah…</string>
+    <string name="loading_video">Príprava videa…</string>
+    <string name="loading_search">Vyhľadávanie…</string>
+    
+    <!-- Actions -->
+    <string name="action_retry">Skúsiť znova</string>
+    <string name="action_cancel">Zrušiť</string>
+    <string name="action_ok">Prijať</string>
+    <string name="action_save">Uložiť</string>
+    <string name="action_edit">Upraviť</string>
+    <string name="action_delete">Vymazať</string>
+    <string name="action_share">Zdieľať</string>
+    <string name="action_back">Späť</string>
+    
+    <!-- Content Descriptions (Accessibility) -->
+    <string name="cd_play_button">Tlačidlo prehrávania</string>
+    <string name="cd_pause_button">Tlačidlo pauzy</string>
+    <string name="cd_favorite_button">Tlačidlo obľúbených</string>
+    <string name="cd_search_button">Tlačidlo hľadania</string>
+    <string name="cd_menu_button">Tlačidlo menu</string>
+    <string name="cd_back_button">Tlačidlo späť</string>
+    <string name="cd_back">Späť</string>
+    <string name="cd_clear_button">Vymazať</string>
+    <string name="cd_content_image">Obrázok obsahu</string>
+    <string name="cd_user_avatar">Avatar používateľa</string>
+    <string name="cd_logo">IPTV Logo</string>
+    
+    <!-- Live TV -->
+    <string name="live_tv_channels">Živé kanály</string>
+    <string name="live_tv_now_playing">Práve v éteri</string>
+    <string name="live_tv_next">Nasleduje</string>
+
+    <!-- Channels -->
+    <string name="channels_title">Kanály</string>
+    <string name="channels_count">%1$d kanálov</string>
+    <string name="channels_close">Zatvoriť</string>
+    <string name="channels_search_hint">Hľadať kanály…</string>
+    <string name="channels_no_epg_available">Informácie o programe nie sú k dispozícii</string>
+
+    <!-- EPG -->
+    <string name="epg_live_badge">ŽIVO</string>
+    <string name="epg_press_right_for_more">Stlačte → pre viac</string>
+    <string name="epg_full_programming">Celý program</string>
+    <string name="epg_channel">Kanál</string>
+    <string name="epg_back">Späť</string>
+    <string name="epg_live_program">Živý program</string>
+    
+    <!-- Time formats -->
+    <string name="time_format_hours_minutes">%1$dh %2$dm</string>
+    <string name="time_format_minutes">%1$dm</string>
+    <string name="time_format_less_minute">&lt; 1 m</string>
+
+    <!-- Language Selection -->
+    <string name="language_spanish">Španielčina</string>
+    <string name="language_english">Angličtina</string>
+    <string name="language_portuguese">Portugalčina</string>
+    <string name="language_chinese">Čínština</string>
+    <string name="language_dialog_title">Vyberte jazyk</string>
+    <string name="language_dialog_message">Vyberte si svoj preferovaný jazyk</string>
+    <string name="language_changed">Jazyk úspešne zmenený</string>
+    <string name="language_restart_required">Na aplikovanie zmien reštartujte aplikáciu</string>
+
+    <!-- Hardcoded Strings - UI Components -->
+    <string name="channels_search_hint_alt">Hľadať kanály…</string>
+    <string name="channels_select_channel">Vyberte kanál</string>
+    <string name="channels_no_epg_info">Žiadne informácie EPG</string>
+    <string name="channels_no_programming">Informácie o programe nie sú dostupné</string>
+    <string name="channels_press_back">Stlačte ← pre návrat ku kanálom</string>
+    <string name="live_indicator">ŽIVO</string>
+    <string name="now_label">TERAZ</string>
+    <string name="next_label">NASLEDUJE</string>
+    <string name="current_label">AKTUÁLNY</string>
+    <string name="now_playing">Práve hrá:</string>
+    <string name="auto_label">Automaticky</string>
+
+    <!-- Account & Profile -->
+    <string name="account_title">Účet</string>
+    <string name="account_apply_change">Aplikovať zmenu</string>
+    <string name="account_close">Zatvoriť</string>
+    <string name="account_password_mismatch">Nezhoduje sa</string>
+    <string name="account_logout">Odhlásiť sa</string>
+    <string name="user_label">Používateľ</string>
+
+    <!-- Device Management -->
+    <string name="device_limit_title">Limit zariadení</string>
+    <string name="device_limit_reached">Dosiahli ste limit %1$d zariadení</string>
+    <string name="device_limit_description">Ak chcete pokračovať, musíte nahradiť jedno zo svojich existujúcich zariadení.</string>
+    <string name="device_limit_replacement_warning">Vybrané zariadenie bude natrvalo odhlásené a toto nové zariadenie zaujme jeho miesto.</string>
+    <string name="device_limit_disconnect_warning">Vybrané zariadenie bude okamžite odpojené</string>
+    <string name="device_limit_replacing">Nahrádzam zariadenie…</string>
+    <string name="device_limit_wait">Môže to trvať niekoľko sekúnd</string>
+    <string name="device_limit_this_device">Toto zariadenie</string>
+    <string name="device_limit_cancel">Zrušiť</string>
+    <string name="device_limit_disconnect">Odpojiť</string>
+    <string name="device_limit_disconnecting">Odpájam…</string>
+    <string name="device_limit_confirm_replacement">Potvrdiť nahradenie</string>
+    <string name="device_limit_confirm_message">Potvrdiť nahradenie zariadenia?</string>
+    <string name="device_limit_what_happens">Čo sa stane:</string>
+    <string name="device_limit_device_disconnected">Vybrané zariadenie bude natrvalo odpojené</string>
+    <string name="device_limit_device_replaced">Toto zariadenie zaujme jeho miesto a bude zaregistrované</string>
+    <string name="device_limit_device_to_disconnect">Zariadenie na odpojenie:</string>
+    <string name="device_limit_last_access">Posledný prístup: %1$s</string>
+    <string name="device_limit_yes_disconnect">Áno, odpojiť</string>
+
+    <!-- Account Dialog -->
+    <string name="account_data_title">Údaje o účte</string>
+    <string name="account_change_password">Zmeniť heslo</string>
+    <string name="account_current_password">Aktuálne heslo</string>
+    <string name="account_new_password">Nové heslo</string>
+    <string name="account_confirm_password">Potvrdiť heslo</string>
+    <string name="account_passwords_no_match">Heslá sa nezhodujú</string>
+    <string name="account_changing">Mením…</string>
+    <string name="account_min_length">Minimálne %1$d znakov</string>
+    <string name="account_email">E-mail</string>
+    <string name="account_active">Aktívny</string>
+    <string name="account_inactive">Neaktívny</string>
+    <string name="account_expires">Vyprší:</string>
+
+    <!-- Profile Screen -->
+    <string name="profile_username">Používateľské meno</string>
+    <string name="profile_loading">Načítavam…</string>
+    <string name="profile_change_password">Zmeniť heslo</string>
+    <string name="profile_update_password">Aktualizovať svoje heslo</string>
+    <string name="profile_subscription_details">Podrobnosti o predplatnom</string>
+    <string name="profile_expires_at">Vyprší: %1$s</string>
+    <string name="profile_features_title">Funkcie:</string>
+    <string name="profile_date_not_available">Dátum nie je k dispozícii</string>
+    <string name="profile_renew_subscription">Obnoviť predplatné</string>
+    <string name="profile_connected_devices">Pripojené zariadenia</string>
+    <string name="profile_last_activity">Posledná aktivita:</string>
+    <string name="profile_rename">Premenovať</string>
+    <string name="profile_delete">Odstrániť</string>
+    <string name="profile_quick_actions">Rýchle akcie</string>
+    <string name="profile_clear_history">Vymazať históriu</string>
+    <string name="profile_clear_history_desc">Odstrániť celú históriu sledovania</string>
+    <string name="profile_export_data">Exportovať údaje</string>
+    <string name="profile_export_data_desc">Stiahnuť kópiu vašich údajov</string>
+    <string name="profile_delete_account">Odstrániť účet</string>
+    <string name="profile_delete_account_desc">Natrvalo odstrániť váš účet</string>
+    <string name="profile_rename_device">Premenovať zariadenie</string>
+    <string name="profile_device_name">Názov zariadenia</string>
+    <string name="profile_save">Uložiť</string>
+    <string name="profile_cancel">Zrušiť</string>
+    <string name="profile_delete_device">Odstrániť zariadenie</string>
+    <string name="profile_delete_device_confirm">Naozaj chcete odstrániť zariadenie "%1$s"?</string>
+    <string name="profile_delete_device_action">Odstrániť</string>
+
+    <!-- Settings -->
+    <string name="settings_customize_experience">Prispôsobte si svoj zážitok</string>
+    <string name="settings_manage_account">Spravujte svoj účet a predvoľby</string>
+    <string name="settings_username">Používateľské meno</string>
+    <string name="settings_loading">Načítavam…</string>
+    <string name="settings_active_account">Aktívny účet</string>
+    <string name="settings_loading_account">Načítavam účet…</string>
+    <string name="settings_devices_title">Zariadenia</string>
+    <string name="settings_days_remaining">%1$d dní zostáva</string>
+    <string name="settings_expired">Expirované</string>
+    <string name="settings_remaining">Zostáva</string>
+    <string name="settings_expires">Vyprší: %1$s</string>
+    <string name="settings_invalid_date">Neplatný dátum</string>
+    <string name="settings_no_expiry_date">Bez dátumu vypršania</string>
+    <string name="settings_device_management">Správa zariadení</string>
+    <string name="settings_active_devices">%1$d z %2$d aktívnych zariadení</string>
+
+    <!-- Navigation & Actions -->
+    <string name="nav_back">Späť</string>
+    <string name="nav_clear">Vymazať</string>
+    <string name="nav_select">Vybrať</string>
+
+    <!-- Player & Video -->
+    <string name="player_unknown_content">Neznáme</string>
+    <string name="unknown_label">Neznáme</string>
+    <string name="player_error">Chyba</string>
+    <string name="player_back">Späť</string>
+    <string name="player_next">Nasledujúce</string>
+
+    <!-- EPG -->
+    <string name="epg_now">Teraz</string>
+    <string name="epg_full_programming_alt">Celý program</string>
+
+    <!-- Layout -->
+    <string name="layout_channel_number">2</string>
+    <string name="layout_channel_name">Kanál</string>
+
+    <!-- Errors -->
+    <string name="error_url_not_available">URL streamu nie je k dispozícii</string>
+
+    <!-- Quality -->
+    <string name="quality_title">Kvalita videa</string>
+    <string name="quality_no_options">Žiadne dostupné možnosti kvality</string>
+    <string name="quality_auto_description">Automatické nastavenie podľa pripojenia</string>
+    <string name="quality_close">Zatvoriť</string>
+    <string name="quality_selected">Vybrané</string>
+
+    <!-- Audio -->
+    <string name="audio_title">Jazyk zvuku</string>
+    <string name="audio_no_options">Žiadne prídavné zvukové stopy nie sú k dispozícii</string>
+    <string name="audio_auto_description">Automatický výber podľa vašich predvolieb</string>
+    <string name="audio_close">Zatvoriť</string>
+    <string name="audio_selected">Vybrané</string>
+    <string name="audio_language_prefix">Jazyk:</string>
+
+    <!-- EPG -->
+    <string name="epg_title">Programový sprievodca</string>
+    <string name="epg_no_data">Žiadne údaje EPG</string>
+    <string name="epg_loading">Načítavam sprievodcu…</string>
+    <string name="epg_error">Chyba pri načítavaní EPG</string>
+    <string name="epg_no_programs">Žiadne dostupné programy</string>
+    <string name="epg_channel_info">Informácie o kanáli</string>
+    <string name="epg_program_details">Podrobnosti o programe</string>
+    <string name="epg_program_description">Popis programu</string>
+    <string name="epg_next_programs">Nasledujúce programy</string>
+    <string name="epg_all_channels">Všetky kanály</string>
+    <string name="epg_favorites">Obľúbené</string>
+    <string name="epg_search">Hľadať programy</string>
+    <string name="epg_no_favorites">Nemáte žiadne obľúbené kanály</string>
+    <string name="epg_add_favorite">Pridať k obľúbeným</string>
+    <string name="epg_remove_favorite">Odstrániť z obľúbených</string>
+    <string name="epg_watch_now">Sledovať teraz</string>
+    <string name="epg_remind_me">Pripomenúť</string>
+    <string name="epg_program_started">Program začal</string>
+    <string name="epg_program_ending">Program končí</string>
+    <string name="epg_time_remaining">zostáva %1$d min</string>
+
+    <!-- Live TV Components -->
+    <string name="live_tv_no_epg">Žiadne EPG nie je k dispozícii</string>
+    <string name="live_tv_epg_loading">Načítavam EPG…</string>
+    <string name="live_tv_channel_search_hint">Hľadať kanály…</string>
+    <string name="live_tv_channel_search_no_results">Nenašli sa žiadne kanály</string>
+    <string name="live_tv_channel_search_no_match">Žiadne kanály nezodpovedajú "%1$s"</string>
+    <string name="live_tv_channel_clear">Vymazať</string>
+    <string name="live_tv_channel_count">%1$d z %2$d kanálov</string>
+    <string name="live_tv_favorites_title">Obľúbené kanály</string>
+    <string name="live_tv_favorites_count">%1$d uložených kanálov</string>
+    <string name="live_tv_favorites_empty">Nemáte žiadne obľúbené kanály</string>
+
+    <!-- Device Registration -->
+    <string name="device_registration_title">Registrácia zariadenia</string>
+    <string name="device_registration_subtitle">Zaregistrujte svoje zariadenie a začnite</string>
+    <string name="device_info_title">Informácie o zariadení</string>
+    <string name="device_system_info_title">Systémové informácie</string>
+    <string name="device_model_label">Model</string>
+    <string name="device_android_label">Android</string>
+    <string name="device_manufacturer_label">Výrobca</string>
+    <string name="device_register_button">Registrovať zariadenie</string>
+    <string name="device_skip_temp">Prejsť k obsahu (dočasne)</string>
+    <string name="device_unknown">Neznáme</string>
+    <string name="device_type_label">Typ:</string>
+    <string name="device_model_label_old">Model:</string>
+    <string name="device_android_label_old">Android:</string>
+    <string name="device_type_android_tv">Android TV</string>
+
+    <!-- Content & Media -->
+    <string name="content_hd_label">HD</string>
+    <string name="content_seasons_label">Série</string>
+    <string name="content_episodes_count">%1$d epizód</string>
+    <string name="content_rating_format">★ %1$s</string>
+
+    <!-- Favorites -->
+    <string name="favorites_hint">Označte svoje obľúbené kanály pre rýchly prístup</string>
+    <string name="favorites_explore">Preskúmať kanály</string>
+
+    <!-- Live Content -->
+    <string name="live_sports_title">Priame športové prenosy</string>
+
+    <!-- Navigation -->
+    <string name="nav_previous">Predchádzajúce</string>
+    <string name="nav_episode_info">Epizóda %1$d z %2$d</string>
+
+    <!-- Profile -->
+    <string name="profile_stats_title">Štatistiky účtu</string>
+    <string name="profile_logout_title">Odhlásiť sa</string>
+    <string name="profile_logout_message">Týmto sa ukončí relácia na tomto zariadení</string>
+    <string name="password_mismatch">Heslá sa nezhodujú</string>
+
+    <!-- Device Management -->
+    <string name="device_management_title">Správa zariadení</string>
+    <string name="device_loading">Načítavam zariadenia…</string>
+    <string name="device_no_devices">Žiadne registrované zariadenia</string>
+    <string name="devices_registered_count">%1$d z %2$d zariadení zaregistrovaných</string>
+    <string name="devices_empty_message">Zariadenia sa tu objavia po registrácii</string>
+    <string name="current_device_label">Toto zariadenie</string>
+    <string name="last_access_prefix">Posledný prístup:</string>
+    <string name="delete_device_title">Odstrániť zariadenie</string>
+    <string name="delete_device_confirm">Naozaj chcete odstrániť toto zariadenie?</string>
+
+    <!-- Welcome & Activation -->
+    <string name="welcome_to_iptv">Vitajte v IPTV</string>
+    <string name="register_device_to_continue">Zaregistrujte svoje zariadenie a začnite</string>
+    <string name="activation_code_title">Aktivačný kód</string>
+    <string name="activating_device">Aktivujem…</string>
+    <string name="activate_device_button">Aktivovať zariadenie</string>
+    <string name="need_help">Potrebujete pomoc?</string>
+    <string name="activation_code_info">Aktivačný kód má 6 číslic</string>
+    <string name="verify_code_correct">Skontrolujte, či je kód správny</string>
+    <string name="contact_support_if_issues">Ak máte problémy, kontaktujte podporu</string>
+    <string name="activating_device_long">Aktivujem zariadenie…</string>
+    <string name="please_wait">Prosím čakajte</string>
+    <string name="registering_device_long">Registrujem zariadenie…</string>
+    <string name="replace_device_button">Nahradiť zariadenie</string>
+    <string name="devices_label">Zariadenia</string>
+    <string name="devices_count">%1$d/%2$d</string>
+
+    <!-- Device Selection -->
+    <string name="select_device_to_replace">Vyberte zariadenie, ktoré chcete nahradiť týmto novým zariadením:</string>
+    <string name="device_type_prefix">Typ:</string>
+    <string name="device_last_used_prefix">Naposledy použité:</string>
+
+    <!-- Device Registration Features -->
+    <string name="device_limit_reached_message">Limit dosiahnutý. Nahraďte existujúce zariadenie.</string>
+    <string name="device_spaces_available">Máte %1$d voľných miest.</string>
+    <string name="device_registration_logo_description">@string/branding_name</string>
+    <string name="device_registration_feature_hd">HD/4K obsah</string>
+    <string name="device_registration_feature_devices">Viacero zariadení</string>
+    <string name="device_registration_feature_security">Zabezpečené streamovanie</string>
+
+    <!-- Device Selection Screen -->
+    <string name="device_selection_title">Vyberte zariadenie na nahradenie</string>
+    <string name="device_selection_back_description">Späť</string>
+    <string name="device_selection_unknown_date">Neznáme</string>
+    <string name="device_selection_replace_description">Nahradiť</string>
+    <string name="device_selection_device_description">Zariadenie</string>
+
+    <!-- Device Management Screen -->
+    <string name="device_management_back_description">Späť</string>
+    <string name="device_management_refresh_description">Obnoviť</string>
+    <string name="device_management_delete_description">Odstrániť zariadenie</string>
+    <string name="device_management_device_type_android">Android</string>
+    <string name="device_management_device_type_ios">iOS</string>
+    <string name="device_management_device_type_web">Webový prehliadač</string>
+    <string name="device_management_device_type_tv">Smart TV</string>
+    <string name="device_management_last_active_prefix">dňa</string>
+
+    <!-- Device Management Dialog -->
+    <string name="device_management_delete_device_title">Odstrániť zariadenie</string>
+    <string name="device_management_delete_device_confirm">Naozaj chcete odstrániť toto zariadenie?</string>
+    <string name="device_management_delete_device_warning">Táto akcia je nevratná. Zariadenie bude musieť byť znova zaregistrované, aby k aplikácii malo prístup.</string>
+    <string name="device_management_delete_device_action">Odstrániť</string>
+    <string name="device_management_delete_device_cancel">Zrušiť</string>
+
+    <!-- Favorites Manager -->
+    <string name="favorites_remove_description">Odstrániť z obľúbených</string>
+    <string name="favorites_add_description">Pridať k obľúbeným</string>
+    <string name="favorites_category_title">Obľúbené</string>
+
+    <!-- Channel Search Bar -->
+    <string name="channel_search_placeholder">Hľadať kanály…</string>
+    <string name="channel_search_description">Hľadať</string>
+    <string name="channel_clear_description">Vymazať</string>
+    <string name="channel_category_all">Všetky</string>
+    <string name="channel_category_news">Správy</string>
+    <string name="channel_category_sports">Šport</string>
+    <string name="channel_category_entertainment">Zábava</string>
+    <string name="channel_category_movies">Filmy</string>
+    <string name="channel_category_kids">Deti</string>
+    <string name="channel_quality_all">Všetky</string>
+    <string name="channel_quality_hd">HD</string>
+    <string name="channel_quality_4k">4K</string>
+    <string name="channel_quality_sd">SD</string>
+    <string name="channel_category_title">Kategória</string>
+    <string name="channel_quality_title">Kvalita</string>
+    <string name="channel_search_results">Výsledky pre "%1$s"</string>
+    <string name="channel_search_all_channels">Všetky kanály</string>
+
+    <!-- Device Limit Dialog -->
+    <string name="device_limit_replacing_message">Nahrádzam zariadenie…</string>
+    <string name="device_limit_waiting_message">Môže to trvať niekoľko sekúnd</string>
+    <string name="device_limit_selected_description">Vybrané</string>
+
+    <!-- Detail Screen -->
+    <string name="detail_back_description">Späť</string>
+    <string name="detail_no_description">Žiadny popis nie je k dispozícii</string>
+    <string name="detail_season_prefix">S</string>
+    <string name="detail_season_content_description">Séria %1$d</string>
+
+    <!-- Home Screen -->
+    <string name="home_content_type_live">ŽIVO</string>
+    <string name="home_content_type_hd">HD</string>
+    <string name="home_play_description">Prehrať</string>
+
+    <!-- Search Screen -->
+    <string name="search_placeholder_screen">Hľadať obsah…</string>
+
+    <!-- Search Result Card -->
+    <string name="search_watch_live">SLEDOVAŤ ŽIVO</string>
+    <string name="search_watch_series">SLEDOVAŤ SERIÁL</string>
+    <string name="search_view_details">ZOBRAZIŤ PODROBNOSTI</string>
+    <string name="search_content_type_movie">FILM</string>
+    <string name="search_content_type_series">SERIÁL</string>
+    <string name="search_content_type_live">ŽIVO</string>
+    <string name="search_content_type_episode">EPIZÓDA</string>
+
+    <!-- Player -->
+    <string name="player_stream_url_not_available">URL streamu nie je k dispozícii</string>
+
+    <!-- Password Management -->
+    <string name="password_current">Aktuálne heslo</string>
+    <string name="password_show">Zobraziť heslo</string>
+    <string name="password_hide">Skryť heslo</string>
+    <string name="password_new">Nové heslo</string>
+    <string name="password_confirm">Potvrdiť nové heslo</string>
+    <string name="password_empty">Zadajte svoje aktuálne heslo</string>
+    <string name="password_new_empty">Zadajte nové heslo</string>
+    <string name="password_min_length">Nové heslo musí mať aspoň 6 znakov</string>
+    <string name="password_mismatch_validation">Heslá sa nezhodujú</string>
+    <string name="password_changed_success">Heslo bolo úspešne zmenené</string>
+    <string name="password_empty_error">Heslo nemôže byť prázdne</string>
+
+    <!-- Authentication Errors -->
+    <string name="auth_credentials_invalid">Nesprávne prihlasovacie údaje. Skontrolujte meno a heslo.</string>
+    <string name="auth_enter_credentials">Zadajte meno a heslo</string>
+
+    <!-- Content Validation -->
+    <string name="content_id_empty_error">ID obsahu nemôže byť prázdne</string>
+    <string name="progress_range_error">Priebeh musí byť od 0.0 do 1.0</string>
+    <string name="duration_negative_error">Trvanie nemôže byť záporné</string>
+
+    <!-- Request Validation -->
+    <string name="request_invalid_data">Neplatná požiadavka. Skontrolujte zadané údaje.</string>
+
+    <!-- HTTP Error Messages -->
+    <string name="error_http_400">Neplatná požiadavka. Skontrolujte zadané údaje.</string>
+    <string name="error_http_401">Neoprávnený prístup. Prihláste sa znova.</string>
+    <string name="error_http_403">Prístup odmietnutý</string>
+    <string name="error_http_404">Obsah sa nenašiel</string>
+    <string name="error_http_408">Časový limit vypršal</string>
+    <string name="error_http_429">Príliš veľa požiadaviek. Skúste to neskôr.</string>
+    <string name="error_http_500">Chyba servera. Skúste to neskôr.</string>
+    <string name="error_http_502_503">Služba nie je dostupná</string>
+    <string name="error_network_generic">Chyba siete</string>
+
+    <!-- Network Error Messages -->
+    <string name="error_no_internet">Žiadne internetové pripojenie</string>
+    <string name="error_connection_timeout">Časový limit pripojenia vypršal</string>
+    <string name="error_connection_generic">Chyba pripojenia</string>
+
+    <!-- Exception Messages -->
+    <string name="error_empty_response">Prázdna odpoveď od servera</string>
+    <string name="error_failed_user_profile">Chyba pri získavaní profilu</string>
+    <string name="error_network_message">Chyba siete</string>
+    <string name="error_failed_update_profile">Chyba pri aktualizácii profilu</string>
+    <string name="error_password_change_success">Heslo úspešne zmenené</string>
+    <string name="error_failed_password_change">Chyba pri zmene hesla</string>
+
+    <!-- Authentication Repository Errors -->
+    <string name="error_device_activation_not_implemented">Aktivácia zariadenia nie je implementovaná</string>
+    <string name="error_no_refresh_token">Žiadny obnovovací token k dispozícii</string>
+    <string name="error_token_refresh_failed">Chyba pri obnove tokenu</string>
+    <string name="error_token_refresh_failed_with_message">Chyba pri obnove tokenu: %1$s</string>
+
+    <!-- Logout -->
+    <string name="logout_success">Relácia úspešne ukončená</string>
+    <string name="logout_loading">Odhlasujem sa…</string>
+    <string name="logout_button">Odhlásiť sa</string>
+
+    <!-- Session Management -->
+    <string name="session_expired">Relácia vypršala. Prihláste sa znova.</string>
+    <string name="session_unauthorized">Neoprávnený prístup. Prihláste sa znova.</string>
+
+    <!-- Input Prompts -->
+    <string name="input_enter">Zadajte</string>
+    <string name="input_channel_number">Zadajte číslo kanála</string>
+    <string name="input_verify_data">Skontrolujte zadané údaje</string>
+
+    <!-- Names and Users -->
+    <string name="name_device">Názov zariadenia</string>
+    <string name="name_username">Používateľské meno</string>
+    <string name="name_device_empty">Názov zariadenia nemôže byť prázdny</string>
+    <string name="name_device_min_length">Názov zariadenia musí mať aspoň 3 znaky</string>
+    <string name="name_device_updated">Názov zariadenia aktualizovaný</string>
+    <string name="name_username_empty">Používateľské meno nemôže byť prázdne</string>
+
+    <!-- Platform -->
+    <string name="platform_premium_streaming">Prémiová streamovacia platforma</string>
+
+    <!-- Live TV Channel Selector -->
+    <string name="channel_now">TERAZ</string>
+    <string name="channel_next">NASLEDUJE</string>
+
+    <!-- Content Categories -->
+    <string name="category_load_more">Načítať viac obsahu</string>
+    <string name="category_empty_title">Žiadny obsah</string>
+    <string name="category_empty_message">V kategórii "%1$s" nie je k dispozícii žiadny obsah</string>
+    <string name="sort_title">Názov</string>
+    <string name="sort_year">Rok</string>
+    <string name="sort_rating">Hodnotenie</string>
+    <string name="sort_date_added">Dátum pridania</string>
+
+    <!-- Search -->
+    <string name="search_placeholder_generic">Hľadať…</string>
+    <string name="search_description">Hľadať</string>
+    <string name="search_title">Hľadať</string>
+
+    <!-- Availability -->
+    <string name="service_unavailable">Služba nedostupná</string>
+    <string name="service_temporarily_unavailable">Služba dočasne nedostupná</string>
+
+    <!-- Player Navigation -->
+    <string name="player_next_episode">Nasledujúca epizóda</string>
+    <string name="player_next_with_title">Nasleduje: %1$s</string>
+
+    <!-- UI Elements -->
+    <string name="seasons_title">Série</string>
+    <string name="play_button">Prehrať</string>
+    <string name="close_button">Zatvoriť</string>
+    <string name="pause_button">Pauza</string>
+
+    <!-- Access -->
+    <string name="quick_access">Rýchly prístup</string>
+    <string name="quick_access_description">Označte svoje obľúbené kanály pre rýchly prístup</string>
+    <string name="last_access">Posledný prístup: %1$s</string>
+
+    <!-- Device Registration -->
+    <string name="devices_registered_count_alt">%1$d z %2$d zariadení zaregistrovaných</string>
+
+    <!-- Buttons -->
+    <string name="button_cancel">Zrušiť</string>
+    <string name="button_change">Zmeniť</string>
+
+    <!-- Additional translations for hardcoded texts -->
+    <string name="content_no_image">Žiadny obrázok</string>
+    <string name="content_rating_star">★ %1$s</string>
+    <string name="epg_not_available">EPG nedostupné</string>
+    <string name="channel_starting">Spúšťam kanál…</string>
+    <string name="programs_count">%1$d programov</string>
+    <string name="epg_navigation_hint">↑↓ Navigovať • OK Sledovať</string>
+    <string name="program_time_range">%1$s - %2$s</string>
+    <string name="program_position">%1$d/%2$d</string>
+    <string name="press_ok_to_watch">Stlačte OK pre sledovanie</string>
+    <string name="settings_change_password">Zmeniť heslo</string>
+    <string name="settings_update_password_subtitle">Aktualizovať svoje heslo</string>
+    <string name="settings_subscription_details">Podrobnosti o predplatnom</string>
+
+    <!-- Detail Screen -->
+    <string name="detail_watch_now">Sledovať teraz</string>
+    <string name="detail_trailer">Trailer</string>
+    <string name="detail_overview">Prehľad</string>
+    <string name="detail_seasons">Série</string>
+    <string name="detail_season">Séria</string>
+    <string name="detail_no_description_alt">Žiadny popis nie je k dispozícii</string>
+
+    <!-- Content Details -->
+    <string name="content_synopsis">Synopsa</string>
+    <string name="content_director">Režisér</string>
+    <string name="content_genres">Žánre</string>
+    <string name="content_episodes">Epizódy</string>
+    <string name="content_cast">Obsadenie</string>
+    <string name="content_related">Súvisiaci obsah</string>
+    <string name="content_episode_short">E</string>
+
+    <!-- Live TV (merged section) -->
+    <string name="live_tv_next_program">Nasleduje:</string>
+    <string name="live_tv_current_program">Práve hrá:</string>
+
+    <!-- Channel Navigation -->
+    <string name="all">Všetko</string>
+    <string name="category_entertainment">Zábava</string>
+    <string name="category_sports">Šport</string>
+    <string name="category_news">Správy</string>
+    <string name="category_movies">Filmy</string>
+    <string name="category_series">Seriály</string>
+    <string name="category_music">Hudba</string>
+    <string name="category_kids">Deti</string>
+
+    <string name="category_documentary">Dokumenty</string>
+    <string name="category_lifestyle">Životný štýl</string>
+    <string name="category_culture_education">Kultúra a vzdelávanie</string>
+    <string name="category_international">Medzinárodné</string>
+    <string name="channel_press_back">Stlačte ← pre návrat ku kanálom</string>
+
+    <!-- Program Info Card -->
+    <string name="program_watch_now">Sledovať teraz</string>
+    <string name="program_up_next">Nasleduje</string>
+    <string name="program_remind">Pripomenúť</string>
+    <string name="program_progress">Priebeh programu</string>
+
+    <!-- Authentication -->
+    <string name="auth_sign_in">Prihláste sa</string>
+    <string name="auth_enter_credentials_continue">Pre pokračovanie zadajte poverenia</string>
+    <string name="auth_password">Heslo</string>
+    <string name="auth_sign_in_button">Prihlásiť sa</string>
+    <string name="auth_brand_name">@string/branding_name</string>
+    <string name="auth_brand_description">Prémiová streamovacia platforma</string>
+
+    <!-- Player Controls -->
+    <string name="player_select_language">Vyberte jazyk</string>
+    <string name="player_select_quality">Vyberte kvalitu</string>
+    <string name="player_previous_episode">Predchádzajúca epizóda</string>
+    <string name="player_next_episode_alt">Nasledujúca epizóda</string>
+    <string name="player_previous">Predchádzajúce</string>
+    <string name="player_episode_count">Epizóda %1$d z %2$d</string>
+
+    <!-- Error Messages -->
+    <string name="error_incompatible_content">Tento obsah nie je kompatibilný s prehrávačom epizód</string>
+    <string name="error_loading_player">Chyba pri načítavaní prehrávača: %1$s</string>
+    <string name="error_loading_content">Chyba pri načítavaní obsahu: %1$s</string>
+
+    <!-- Splash Screen Messages -->
+    <string name="splash_welcome_back">Vitajte späť…</string>
+    <string name="splash_redirecting_login">Presmerovanie na prihlásenie…</string>
+    <string name="splash_verifying_auth">Overovanie prihlásenia…</string>
+
+    <!-- Dialog Messages -->
+    <string name="dialog_cancel">Zrušiť</string>
+    <string name="dialog_confirm">Potvrdiť</string>
+    <string name="dialog_confirm_replacement">Potvrdiť nahradenie</string>
+
+    <!-- Content Categories -->
+    <string name="category_movies_vod">VOD - Filmy</string>
+
+    <!-- Home Screen Sections -->
+    <string name="section_featured">Odporúčané</string>
+    <string name="section_movies">Filmy</string>
+    <string name="section_series">Seriály</string>
+    <string name="section_kids">Deti</string>
+
+    <!-- Search Filters -->
+    <string name="search_filters_title">Filtre hľadania</string>
+    <string name="search_clear_filters">Vymazať filtre</string>
+    <string name="search_content_type">Typ obsahu</string>
+    <string name="search_categories">Kategórie</string>
+    <string name="search_genres">Žánre</string>
+    <string name="search_year">Rok</string>
+    <string name="search_country">Krajina</string>
+    <string name="search_all">Všetky</string>
+    <string name="search_all_female">Všetky</string>
+
+    <!-- Genres -->
+    <string name="genre_action">Akcia</string>
+    <string name="genre_comedy">Komédia</string>
+    <string name="genre_drama">Dráma</string>
+    <string name="genre_horror">Horor</string>
+    <string name="genre_sci_fi">Sci-Fi</string>
+    <string name="genre_documentary">Dokument</string>
+    <string name="genre_sports">Šport</string>
+    <string name="genre_news">Správy</string>
+    <string name="genre_adventure">Dobrodružný</string>
+    <string name="genre_animation">Animovaný</string>
+    <string name="genre_biography">Biografický</string>
+    <string name="genre_crime">Krimi</string>
+    <string name="genre_family">Rodinný</string>
+    <string name="genre_fantasy">Fantázia</string>
+    <string name="genre_history">Historický</string>
+    <string name="genre_music">Hudobný</string>
+    <string name="genre_mystery">Mysteriózny</string>
+    <string name="genre_romance">Romantický</string>
+    <string name="genre_thriller">Thriller</string>
+    <string name="genre_war">Vojnový</string>
+    <string name="genre_western">západnej</string>
+
+    <!-- Content Descriptions -->
+    <string name="content_desc_back">Späť</string>
+
+    <!-- Activation -->
+    <string name="activation_code">Aktivačný kód</string>
+
+    <!-- Device Input -->
+    <string name="device_name_label">Názov zariadenia</string>
+    <string name="device_name_placeholder">Napr: Môj Android TV</string>
+
+    <!-- Temporary Content Access -->
+    <string name="temp_content_access">Prejsť k obsahu (dočasne)</string>
+
+    <!-- Search -->
+    <string name="search_action_movies">Hľadať akčné filmy</string>
+    <string name="search_year_movies">Hľadať filmy z roku 2023</string>
+    <string name="search_kids_content">Hľadať detský obsah</string>
+    <string name="search_comedy_series">Zobraziť komediálne seriály</string>
+    <string name="search_documentaries">Nájsť dokumenty</string>
+    <string name="search_sports_channels">Zobraziť športové kanály</string>
+    <string name="search_drama_series">Zobraziť dramatické seriály</string>
+    <string name="search_horror_movies">Nájsť horory</string>
+    <string name="search_news_channels">Zobraziť spravodajské kanály</string>
+    <string name="search_romantic_movies">Zobraziť romantické filmy</string>
+    <string name="music_header_subtitle">Objavte prispôsobené playlisty a mixy</string>
+    <string name="music_quick_actions_title">Začnite počúvať</string>
+    <string name="music_quick_actions_subtitle">Vyberte rýchlu akciu na okamžité prehrávanie hudby</string>
+    <string name="music_now_playing_label">Práve hrá</string>
+    <string name="music_search_action">Hľadať umelca</string>
+    
+    <!-- Music -->
+    <string name="music_title">Hudba</string>
+    <string name="music_recent_tracks">Nedávno vypočuté</string>
+    <string name="music_albums">Albumy</string>
+    <string name="music_album">album</string>
+    <string name="music_artists">Umelci</string>
+    <string name="music_artist">Umelec</string>
+    <string name="music_play">Prehrať</string>
+    <string name="music_pause">Pauza</string>
+    <string name="music_player_previous">Predchádzajúce</string>
+    <string name="music_player_next">Nasledujúce</string>
+    <string name="music_play_all">Prehrať všetko</string>
+    <string name="music_favorited">Obľúbené</string>
+    <string name="music_add_favorite">Pridať k obľúbeným</string>
+    <string name="music_track_count">%1$d skladieb</string>
+    <string name="music_top_tracks">Top skladby</string>
+    <string name="music_artist_album_count">%1$d albumov</string>
+    <string name="music_stats_title">Prehľad vašej knižnice</string>
+    <string name="music_stats_tracks">Skladby</string>
+    <string name="music_stats_albums">Albumy</string>
+    <string name="music_stats_artists">Umelci</string>
+    <string name="music_stats_storage">Úložisko</string>
+    <string name="music_hero_subtitle">Vaša hudobná knižnica vždy pripravená.</string>
+    <string name="music_hero_placeholder">Pre spustenie použite "Prehrať všetko" alebo vyberte skladbu.</string>
+    <string name="common_back">Späť</string>
+    <string name="common_close">Zatvoriť</string>
+    <string name="common_retry">Skúsiť znova</string>
+    <string name="common_refresh">Obnoviť</string>
+    <string name="music_playing">Práve hrá</string>
+    <string name="music_no_track">Žiadna vybraná skladba</string>
+    <string name="music_shuffle">Náhodne</string>
+    <string name="music_previous">Predchádzajúce</string>
+    <string name="music_next">Nasledujúce</string>
+    <string name="music_repeat">Opakovať</string>
+    <string name="music_queue">Fronta</string>
+    <string name="music_queue_count">%1$d vo fronte</string>
+
+    <!-- Admin Scan -->
+    <string name="scan_folders_title">Admin: Skenovať priečinky</string>
+    <string name="scan_root_path">Koreňová cesta (server)</string>
+    <string name="scan_completed_items">Skenovanie dokončené: spracovaných %1$d položiek</string>
+    <string name="scan_root_path_required">Vyžaduje sa koreňová cesta</string>
+    <string name="scan_media_type">Médiá (movies|series|mixed)</string>
+    <string name="scan_duplicate_policy">Politika duplikátov (omit|replace|allow)</string>
+    <string name="scan_add_subs">Pridať externé titulky, ak sa nájdu</string>
+    <string name="scan_start_button">Spustiť skenovanie</string>
+    <string name="scan_scanning_button">Skenujem…</string>
+    <string name="scan_results">Výsledky:</string>
+    <string name="scan_logs">Logy:</string>
+    <string name="scan_movies_created">Vytvorené filmy: %1$d</string>
+    <string name="scan_series_created">Vytvorené seriály: %1$d</string>
+    <string name="scan_episodes_created">Vytvorené epizódy: %1$d</string>
+    <string name="scan_subtitles_added">Pridané titulky: %1$d</string>
+    <string name="scan_skipped">Vynechané: %1$d</string>
+    <string name="scan_replaced">Nahradené: %1$d</string>
+
+    <!-- Player Controls Extras -->
+    <string name="player_speed">Rýchlosť</string>
+    <string name="player_select_audio">Vybrať audio</string>
+    <string name="player_select_subtitles">Vybrať titulky</string>
+    <string name="enabled">Povolené</string>
+    <string name="disabled">Zakázané</string>
+    <string name="open_channel_list">Otvoriť zoznam kanálov</string>
+    <string name="change_date">Zmeniť dátum</string>
+    <string name="epg_auto_update">Sprievodca sa aktualizuje automaticky</string>
+    <string name="epg_error_loading">Chyba pri načítavaní sprievodcu</string>
+
+    <!-- Device Management Errors -->
+    <string name="error_no_credentials">Chýbajúce prihlasovacie údaje. Prihláste sa znova.</string>
+    <string name="error_device_management_failed">Príprava správy zariadení zlyhala</string>
+    <string name="error_unexpected_state">Neočakávaný stav</string>
+    <string name="error_unexpected_during_registration">Neočakávaný stav pri registrácii</string>
+    <string name="error_unexpected_during_removal">Neočakávaný stav pri odstraňovaní</string>
+    <string name="error_unexpected_try_again">Neočakávaná chyba. Skúste to znova.</string>
+    <string name="epg_next">NASLEDUJE</string>
+    <string name="channel_prefix">Kanál: </string>
+    <string name="no_program_info">Žiadne informácie o programe</string>
+    <string name="no_upcoming_info">Žiadne nadchádzajúce informácie</string>
+    <string name="pip_preview">Ukážka PiP</string>
+    <string name="categories_all">Všetko</string>
+    <string name="live_channels_title">Živé kanály</string>
+    
+    <!-- Updates -->
+    <string name="update_available">Dostupná aktualizácia</string>
+    <string name="update_new_version">Dostupná nová verzia %1$s</string>
+    <string name="update_current_version">Aktuálna verzia: %1$s</string>
+    <string name="update_download">Stiahnuť</string>
+    <string name="update_later">Neskôr</string>
+    <string name="update_checking">Kontrola aktualizácií…</string>
+    <string name="update_no_updates">Máte najnovšiu verziu</string>
+    <string name="update_error">Chyba pri kontrole aktualizácií</string>
+    
+    <!-- Subtitles -->
+    <string name="subtitles_title">Titulky</string>
+    <string name="subtitles_off">Vypnuté</string>
+    <string name="subtitles_auto">Automaticky</string>
+    <string name="subtitles_no_options">Žiadne titulky nie sú k dispozícii</string>
+    <string name="subtitles_close">Zatvoriť</string>
+    <string name="subtitles_selected">Vybrané</string>
+    <string name="subtitles_language_prefix">Jazyk:</string>
+    
+    <!-- Profile / Device -->
+    <string name="profile_confirm_delete_device_title">Odstrániť zariadenie</string>
+    <string name="profile_confirm_delete_device_message">Naozaj chcete odstrániť toto zariadenie? Budete sa musieť znova prihlásiť.</string>
+    <string name="common_delete">Odstrániť</string>
+    
+    <!-- Missing strings (fallback to English) -->
+    <string name="error_unknown_generic">Neznáma chyba</string>
+    <string name="player_autoplay">Automatické prehrávanie</string>
+    <string name="profile_id_format">ID: %1$s</string>
+    <string name="search_popular_searches">Populárne vyhľadávania</string>
+    <string name="search_listening">Počúvanie…</string>
+    <string name="common_watched">WATCHED</string>
+    <string name="common_in_progress">IN PROGRESS</string>
+    <string name="security_debug_detected">Zistilo sa ladenie aplikácií</string>
+    <string name="security_debug_description">Z bezpečnostných dôvodov túto aplikáciu nemožno spustiť, keď sú nainštalované nástroje na ladenie alebo nástroje na zachytenie siete.</string>
+    <string name="security_detected_apps">Zistené aplikácie:</string>
+    <string name="security_how_to_use">Ak chcete použiť túto aplikáciu:</string>
+    <string name="security_step_uninstall">1. Odinštalujte zistené aplikácie</string>
+    <string name="security_exit_app">Ukončiť aplikáciu</string>
+    <string name="security_footer">Toto opatrenie chráni obsah a zaisťuje bezpečný zážitok pre všetkých používateľov.</string>
+    <string name="series_seasons_format">%1$d sezóna%2$s</string>
+    <string name="series_season_abbr">S%1$d</string>
+    <string name="series_episode_detail_format">S%1$d:E%2$d • %3$s</string>
+    <string name="series_episode_label">Epizóda %1$d</string>
+    <string name="update_new_available">K dispozícii je nová aktualizácia</string>
+    <string name="common_later">Neskôr</string>
+    <string name="update_now">Aktualizovať teraz</string>
+    <string name="common_hd">HD</string>
+    <string name="common_more_options">Viac možností</string>
+    <string name="common_episodes_label">Epizódy</string>
+    <string name="common_no_episodes_available">K dispozícii nie sú žiadne epizódy</string>
+    <string name="security_step_restart">2. Reštartujte aplikáciu</string>
+    <string name="security_step_enjoy">3. Vychutnajte si obsah bezpečne</string>
+    <string name="common_dot_separator">•</string>
+    <string name="common_dot_separator_with_text">• %1$s</string>
+    <string name="profile_devices_count_format">%1$d/5</string>
+    <string name="profile_edit_profile">Upraviť profil</string>
+    <string name="settings_title_alt">Nastavenia</string>
+    <string name="profile_quick_settings">Rýchle nastavenia</string>
+    <string name="profile_logout">Odhlásiť sa</string>
+    <string name="profile_confirm_logout_title">Potvrďte odhlásenie</string>
+    <string name="profile_confirm_logout_message">Naozaj sa chcete odhlásiť?</string>
+    <string name="common_cancel">Zrušiť</string>
+    <string name="categories_header">kategórie</string>
+    <string name="player_position_duration">%1$s / %2$s</string>
+    <string name="update_required">Vyžaduje sa aktualizácia</string>
+    <string name="update_version_label">Verzia:</string>
+    <string name="update_size_label">Veľkosť: %1$s</string>
+    <string name="update_whats_new">Čo je nové:</string>
+    <string name="update_downloading">Sťahuje sa… %1$d%%</string>
+    <string name="update_install_now">Inštalovať teraz</string>
+    <string name="update_postpone">Pripomenúť neskôr</string>
+    <string name="update_mandatory_message">Ak chcete aplikáciu naďalej používať, vyžaduje sa táto aktualizácia.</string>
+    <string name="update_check_title">Skontrolujte aktualizácie</string>
+    <string name="update_check_subtitle">Skontrolujte, či je k dispozícii nová verzia</string>
+    <string name="update_up_to_date">Ste aktuálny!</string>
+    <string name="update_up_to_date_message">Verzia %1$s je najnovšia verzia.</string>
+    <string name="update_preparing">Pripravuje sa sťahovanie…</string>
+    <string name="update_install_prompt">Čoskoro sa zobrazí výzva na inštaláciu</string>
+    <string name="update_downloading_wait">Čakajte prosím…</string>
+
+
+    <!-- Added for locale completeness -->
+    <string name="category_content_play_description">Prehrať</string>
+    <string name="category_sort_by">Zoradiť podľa</string>
+    <string name="category_filter_by">Filtrovať podľa</string>
+    <string name="category_filter_all">Všetko</string>
+    <string name="category_filter_recent">Nedávne</string>
+    <string name="category_filter_popular">Populárne</string>
+    <string name="category_filter_top_rated">Najlepšie hodnotené</string>
+    <string name="category_sort_description">Možnosti zoradenia</string>
+    <string name="category_sort_ascending">Vzostupne</string>
+    <string name="category_sort_descending">Zostupne</string>
+    <string name="category_grid_size_description">Veľkosť mriežky</string>
+    <string name="category_clear_search_description">Vymazať vyhľadávanie</string>
+    <string name="quick_access_favorites">Obľúbené</string>
+    <string name="quick_access_recently_watched">Nedávno sledované</string>
+    <string name="quick_access_trending">Trendy</string>
+    <string name="quick_access_see_all">Zobraziť všetko</string>
+    <string name="quick_access_actions_title">Rýchle akcie</string>
+    <string name="quick_access_customize_experience">Prispôsobte si prostredie</string>
+    <string name="quick_access_setup_favorites">Nastaviť obľúbené</string>
+    <string name="quick_action_guide_tv">TV program</string>
+    <string name="quick_action_search">Hľadať</string>
+    <string name="quick_action_settings">Nastavenia</string>
+    <string name="quick_action_help">Pomoc</string>
+
+
+    <string name="action_mute">Mute</string>
+    <string name="action_unmute">Unmute</string>
+    <string name="profile_history_cleared">Watch history cleared</string>
+    <string name="profile_device_removed_success">Device removed successfully</string>
+    <string name="device_limit_select_device_prompt">Select a device</string>
+    <string name="device_type_android">Android</string>
+    <string name="device_type_ios">iOS</string>
+    <string name="device_type_web_browser">Web Browser</string>
+    <string name="device_type_smart_tv">Smart TV</string>
+    <string name="nav_streaming_tagline">STREAMING</string>
+    <string name="nav_premium_streaming">Premium Streaming</string>
+    <string name="nav_premium_badge">Premium</string>
+    <string name="error_loading_events">Error loading events</string>
+    <string name="splash_premium_content_platform">Premium Content Platform</string>
+    <string name="emulator_status_title">Device Status</string>
+    <string name="emulator_status_device_type_label">Device type:</string>
+    <string name="emulator_status_emulator">Emulator</string>
+    <string name="emulator_status_real_device">Real Device</string>
+    <string name="emulator_status_emulator_type_label">Emulator type:</string>
+    <string name="emulator_type_bluestacks">BlueStacks</string>
+    <string name="emulator_type_genymotion">Genymotion</string>
+    <string name="emulator_type_android_sdk">Android SDK</string>
+    <string name="emulator_type_unknown">Unknown</string>
+    <string name="emulator_status_device_id_label">Device ID:</string>
+    <string name="emulator_status_detected_title">Emulator Detected</string>
+    <string name="emulator_status_detected_message">You are using an emulator. Make sure your account has emulator access enabled.</string>
+    <string name="emulator_status_authentic_device">Authentic Android device detected</string>
+
+</resources>

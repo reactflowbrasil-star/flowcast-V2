@@ -1,0 +1,110 @@
+{
+  "editTVChannel": {
+    "title": "TV Kanalını Düzenle",
+    "sections": {
+      "basicInfo": "Temel Bilgiler",
+      "currentEpgMapping": "Güncel EPG Eşlemesi",
+      "editEpgMapping": "EPG Eşlemesini Düzenle",
+      "streamSettings": "Yayın Ayarları",
+      "artworkStatus": "Yapıt ve Durum",
+      "livetvHeaders": "LiveTV Başlıkları Yapılandırması"
+    },
+    "labels": {
+      "channelName": "Kanal Adı *",
+      "description": "Tanım",
+      "channelNumber": "Kanal Numarası",
+      "provider": "sağlayıcı",
+      "channelCategory": "Kanal Kategorisi",
+      "country": "Ülke",
+      "epgSource": "EPG Kaynağı",
+      "epgChannelId": "EPG Kanal Kimliği",
+      "timeOffset": "Zaman Farkı",
+      "status": "Durum",
+      "epgChannel": "EPG Kanalı",
+      "offsetMin": "Ofset (dak)",
+      "format": "Biçim",
+      "streamUrl": "Akış URL'si *",
+      "drmType": "DRM Türü *",
+      "clearkeyKeys": "ClearKey Tuşları *",
+      "licenseServerUrl": "Lisans Sunucusu URL'si *",
+      "licenseRequestHeaders": "Lisans İsteği Başlıkları (isteğe bağlı)",
+      "logoUrl": "Logo URL'si",
+      "active": "Aktif",
+      "originHeader": "Köken Başlığı",
+      "userAgent": "Kullanıcı Aracısı",
+      "refererHeader": "Yönlendiren Başlığı",
+      "customHeadersJson": "Özel Başlıklar (JSON)",
+      "httpProxy": "HTTP Proxy'si (isteğe bağlı)",
+      "dnsOverHttps": "HTTPS üzerinden DNS (isteğe bağlı)"
+    },
+    "placeholders": {
+      "channelName": "Kanal adını girin...",
+      "description": "Kanal açıklamasını girin...",
+      "channelNumber": "örneğin 1, 2, 3...",
+      "provider": "ör. Kablo, OTT vb.",
+      "loadingCategories": "Kategoriler yükleniyor...",
+      "selectCategory": "Kategori seç...",
+      "country": "örneğin ABD, MX, ES...",
+      "selectEpgSource": "EPG kaynağını seçin...",
+      "filterByNameOrId": "Ada veya kimliğe göre filtrele...",
+      "selectChannel": "Kanal seç...",
+      "selectSourceFirst": "Önce kaynağı seçin",
+      "selectFormat": "Biçimi seç...",
+      "streamUrl": "https://example.com/stream.m3u8",
+      "selectDrmType": "DRM türünü seçin...",
+      "clearkeyKeys": "ClearKey çiftlerini onaltılık formatta girin: kid_hex:key_hex",
+      "licenseServerUrl": "https://license.example.com/widevine",
+      "licenseRequestHeaders": "{\"X-AxDRM-Message\": \"belirteçiniz-burada\", \"Yetkilendirme\": \"Hamiline ait belirteç\"}",
+      "logoUrl": "https://example.com/logo.png",
+      "originHeader": "https://example.com",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)...",
+      "refererHeader": "https://referer-site.com",
+      "customHeaders": "{\"X-Custom-Header\": \"value\", \"Yetkilendirme\": \"Hamiline ait jeton\"}",
+      "httpProxy": "http://user:pass@ip:port",
+      "dohUrl": "https://dns.google/dns-query"
+    },
+    "tooltips": {
+      "copyChannelId": "Kanal kimliğini kopyala",
+      "formatHelp": "M3U8 (DRM yok) veya DRM (ClearKey). DRM'yi seçerseniz anahtarlar etkinleştirilir.",
+      "help": "Yardım",
+      "streamUrlHelp": "Tam akış URL'si (m3u8, mpd vb.)",
+      "copyStreamUrl": "Akış URL'sini kopyala"
+    },
+    "hints": {
+      "noEpgSourceAssigned": "EPG kaynağı atanmadı",
+      "noChannelIdAssigned": "Kanal kimliği atanmadı",
+      "minutes": "dakika",
+      "epgConfigured": "✓ EPG Yapılandırılmış",
+      "epgNotConfigured": "⚠ EPG Yapılandırılmadı",
+      "loadingEpgMapping": "EPG eşlemesi yükleniyor...",
+      "epgDataNote": "EPG verileri veritabanında saklanmaz; isteğe bağlı aramalar için yalnızca tanımlayıcılar kaydedilir.",
+      "loadingEpgControls": "EPG kontrolleri yükleniyor...",
+      "drmTypeHelp": "ClearKey: Yerel anahtarlar (onaltılı format) | Widevine/PlayReady: Lisans sunucusu gerekli",
+      "clearkeyFormat": "Biçim: kid_hex:key_hex (satır başına bir tane veya virgülle ayrılmış)",
+      "widevineLicenseHelp": "Widevine lisans sunucusu URL'si (ör. PallyCon, BuyDRM, Axinom'dan)",
+      "playreadyLicenseHelp": "PlayReady lisans sunucusu URL'si",
+      "licenseHeadersHelp": "Lisans istekleri için özel başlıklara sahip JSON nesnesi",
+      "originHeaderHelp": "CORS istekleri için kaynak başlığı (isteğe bağlı)",
+      "userAgentHelp": "Tarayıcıyı/aygıtı taklit etmek için Kullanıcı Aracısı başlığı (isteğe bağlı)",
+      "refererHeaderHelp": "İstek kaynağı için yönlendiren başlığı (isteğe bağlı)",
+      "customHeadersHelp": "JSON biçiminde ek özel başlıklar (isteğe bağlı)",
+      "httpProxyHelp": "Only for geoblocked channels. Format: http://user:pass@ip:port",
+      "dohUrlHelp": "DNS engellemesini atlamak için isteğe bağlı DoH çözümleyici. Bir http(s) URL'si olmalıdır."
+    },
+    "toasts": {
+      "epgChannelIdCopied": "EPG Kanal Kimliği kopyalandı",
+      "streamUrlCopied": "Akış URL'si kopyalandı"
+    },
+    "buttons": {
+      "cancel": "İptal etmek",
+      "updating": "Güncelleniyor...",
+      "updateChannel": "Kanalı Güncelle"
+    },
+    "validation": {
+      "titleRequired": "Başlık gerekli",
+      "validVideoUrlRequired": "Geçerli video URL'si gerekli",
+      "proxyUrlFormat": "Format must be http://user:pass@ip:port",
+      "dohUrlFormat": "Biçim http(s):// olmalıdır..."
+    }
+  }
+}

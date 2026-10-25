@@ -1,0 +1,169 @@
+{
+  "activeDevices": "Aktívne zariadenia",
+  "devices": {
+    "title": "Správa zariadení",
+    "description": "Spravujte svoje registrované zariadenia a pridajte nové",
+    "devices": "zariadenia",
+    "addDevice": "Pridať zariadenie",
+    "limitStatus": "Stav limituj zariadení",
+    "atLimit": "Na limite",
+    "available": "Dostupné",
+    "youHaveDevices": "Máte zaregistrovaných {{count}} z {{max}} povolených zariadení.",
+    "toAddRemove": "Ak chcete pridať nové zariadenie, musíte najskôr odstrániť existujúce.",
+    "yourRegisteredDevices": "Vaše registrované zariadenia",
+    "table": {
+      "device": "Zariadenie",
+      "user": "Používateľ",
+      "deviceLimit": "Limit zariadení",
+      "riskLevel": "Úroveň rizika",
+      "status": "Stav",
+      "lastActive": "Posledná aktivita",
+      "actions": "Akcie"
+    },
+    "risk": {
+      "high": "Vysoké riziko",
+      "safe": "Bezpečné"
+    },
+    "remove": "Odstrániť",
+    "removeDeviceConfirmation": "Ste si istí, že chcete natrvalo odstrániť zariadenie \"{{name}}\" používateľa {{username}}?\\n\\nPoznámka: Toto odstráni iba zariadenie. Používateľ ho môže neskôr znova zaregistrovať.\\nVarovanie: Ak chcete tomuto zariadeniu zabrániť v opätovnom pripojení, použite \"Odstrániť a zakázať\".",
+    "removeAndBlacklistAction": "Odstrániť a zakázať",
+    "removeAndBlacklistTitle": "Odstrániť a zakázať zariadenie",
+    "removeAndBlacklistDescription": "Ste si istí, že chcete odstrániť zariadenie \"{{name}}\" používateľa {{username}} a pridať ho na čiernu listinu?\\n\\nVarovanie: Toto okamžite odpojí zariadenie a zabráni mu v opätovnom pripojení, kým nebude manuálne odstránené z čiernej listiny.",
+    "blacklistOnly": "Len zakázať",
+    "blacklistTitle": "Zakázať zariadenie",
+    "blacklistDescription": "Ste si istí, že chcete pridať zariadenie \"{{name}}\" na čiernu listinu bez jeho odstránenia?\\n\\nPoznámka: Toto okamžite odpojí zariadenie, ale ponechá ho v zozname aktívnych zariadení, kým sa používateľ nepokúsi znova pripojiť.",
+    "blacklistAction": "Zakázať zariadenie",
+    "removeMultipleTitle": "Odstrániť viacero zariadení",
+    "removeMultipleDescription": "Ste si istí, že chcete odstrániť {{count}} vybraných zariadení?",
+    "devicesToBeRemovedLabel": "Zariadenia na odstránenie:",
+    "moreDevices": "... a {{count}} ďalších zariadení",
+    "bulkWarning": "Túto akciu nemožno vrátiť späť.",
+    "removeAllSelected": "Odstrániť všetky vybrané",
+    "removeDeviceTitle": "Odstrániť zariadenie",
+    "removeDeviceDescription": "Ste si istí, že chcete odstrániť \"{{name}}\"?\n\nAk ho budete chcieť v budúcnosti používať, budete ho musieť znova zaregistrovať.",
+    "removeDevice": "Odstrániť zariadenie",
+    "noDevices": "Nie sú zaregistrované žiadne zariadenia",
+    "registerFirstDescription": "Zaregistrujte svoje prvé zariadenie a začnite službu používať.",
+    "registerFirstButton": "Zaregistrovať prvé zariadenie",
+    "registerNewTitle": "Zaregistrovať nové zariadenie",
+    "registerNewDescription": "Pridať nové zariadenie do vášho účtu",
+    "label": {
+      "deviceId": "ID zariadenia",
+      "deviceName": "Názov zariadenia"
+    },
+    "placeholder": {
+      "id": "Zadajte jedinečný identifikátor zariadenia",
+      "name": "Zadajte názov zariadenia (napr. TV v obývačke)",
+      "searchDevices": "Hľadať zariadenia..."
+    },
+    "removeSelected": "Odstrániť vybrané ({{count}})",
+    "noDevicesFoundTitle": "Zariadenia sa nenašli",
+    "noDevicesFoundFor": "Pre \"{{query}}\" sa nenašli žiadne zariadenia",
+    "noDevicesRegistered": "V systéme momentálne nie sú žiadne zaregistrované zariadenia.",
+    "deviceIdLabel": "ID: {{id}}",
+    "time": {
+      "justNow": "Práve teraz",
+      "minutesAgo": "pred {{count}}m",
+      "hoursAgo": "pred {{count}}h",
+      "daysAgo": "pred {{count}}d"
+    },
+    "errors": {
+      "loadFailed": "Nepodarilo sa načítať informácie o zariadení. Skúste to prosím neskôr."
+    },
+    "registering": "Registruje sa...",
+    "registerDevice": "Zaregistrovať zariadenie",
+    "activeList": {
+      "description": "Monitorujte všetky aktívne pripojenia zariadení v systéme",
+      "searchPlaceholder": "Hľadať zariadenia...",
+      "deviceId": "ID: {{id}}",
+      "time": {
+        "justNow": "Práve teraz",
+        "minutesAgo": "pred {{count}}m",
+        "hoursAgo": "pred {{count}}h",
+        "daysAgo": "pred {{count}}d"
+      },
+      "actions": {
+        "disconnect": "Odpojiť"
+      },
+      "removeDialog": {
+        "title": "Odstrániť zariadenie",
+        "description": "Ste si istí, že chcete natrvalo odstrániť zariadenie \"{{device}}\" používateľa {{user}}? Túto akciu nemožno vrátiť späť."
+      },
+      "emptyTitle": "Zariadenia sa nenašli",
+      "noDevicesSearch": "Pre \"{{query}}\" sa nenašli žiadne zariadenia",
+      "noDevicesDescription": "V systéme momentálne nie sú žiadne zaregistrované zariadenia."
+    },
+    "limits": {
+      "title": "Varovania limitov zariadení",
+      "subtitle": "Monitorujte používateľov blížiacich sa alebo prekračujúcich limity",
+      "summary": {
+        "warningTitle": "Varovania",
+        "warningDescription": "Používatelia na 80–99% svojho limitu",
+        "criticalTitle": "Kritické",
+        "criticalDescription": "Používatelia na alebo nad limitom",
+        "exceededTitle": "Prekročené",
+        "exceededDescription": "Používatelia prekračujúci svoj limit"
+      },
+      "attention": {
+        "title": "Používatelia vyžadujúci pozornosť"
+      },
+      "table": {
+        "deviceUsage": "Využitie zariadení",
+        "progress": "Priebeh",
+        "warningLevel": "Úroveň varovania"
+      },
+      "actions": {
+        "increaseLimit": "Zvýšiť limit",
+        "monitor": "Monitorovať"
+      },
+      "allSafeTitle": "Všetci používatelia v limitoch",
+      "allSafeDescription": "Žiadni používatelia nie sú blízko alebo nad limitmi.",
+      "allUsersTitle": "Všetci používatelia",
+      "badges": {
+        "safe": "Bezpečné",
+        "warning": "Varovanie",
+        "critical": "Kritické",
+        "exceeded": "Prekročené"
+      }
+    },
+    "overview": {
+      "deviceCount": "{{count}}/{{max}} zariadení"
+    },
+    "activeDevices": "Aktívne zariadenia",
+    "deviceRemoval": "Odstránenie zariadenia",
+    "warnings": "Varovania",
+    "totalDevices": "Celkom zariadení",
+    "registeredDevices": "Registrované zariadenia",
+    "currentlyConnected": "Momentálne pripojené",
+    "usersWithDevices": "Používatelia so zariadeniami",
+    "activeUsers": "Aktívni používatelia",
+    "limitWarnings": "Varovania limitov",
+    "deviceStatistics": {
+      "title": "Štatistiky zariadení"
+    },
+    "statsDescription": "Podrobný prehľad používania zariadení podľa používateľov",
+    "avgDevicesPerUser": "Priem. zar./použ.",
+    "usersAtLimit": "Použ. na limite",
+    "totalCapacity": "Celková kapacita",
+    "utilization": "Využitie",
+    "usageDistribution": "Distribúcia používania",
+    "byUsageLevel": "Podľa úrovne používania",
+    "lowUsage": "Nízke využitie",
+    "systemHealth": {
+      "title": "Zdravie systému"
+    },
+    "deviceUsageByUser": {
+      "none": "Žiadni používatelia so zariadeniami"
+    },
+    "usageByUserTitle": "Používanie zariadení podľa používateľov",
+    "usageByUserDescription": "Štatistiky sa zobrazia, keď budú zariadenia zaregistrované.",
+    "common": {
+      "active": "Aktívne",
+      "inactive": "Neaktívne",
+      "cancel": "Zrušiť",
+      "actions": "Akcie"
+    },
+    "removing": "Odstraňuje sa...",
+    "overviewTitle": "Prehľad"
+  }
+}

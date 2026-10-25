@@ -1,0 +1,501 @@
+{
+  "layout": {
+    "navigation": {
+      "dashboard": "Painel",
+      "subscribers": "Assinantes",
+      "connections": "Conexões",
+      "expirations": "Expiração",
+      "trialUsers": "Usuários de Teste",
+      "walletCredits": "Carteira e Créditos",
+      "apiKeys": "Chaves de API",
+      "support": "Suporte",
+      "activityLogs": "Logs de Atividade"
+    },
+    "sections": {
+      "main": "Principal",
+      "operations": "Operações",
+      "finance": "Finanças",
+      "developer": "Desenvolvedor",
+      "support": "Suporte"
+    },
+    "wallet": {
+      "balance": "Saldo",
+      "addCredits": "Adicionar Créditos",
+      "currencyUnit": "CR"
+    },
+    "search": {
+      "placeholder": "Pesquisar usuários, dispositivos ou tickets..."
+    },
+    "account": {
+      "reseller": "Revendedor",
+      "myAccount": "Minha Conta",
+      "profile": "Perfil",
+      "billing": "Faturamento",
+      "logout": "Sair"
+    }
+  },
+  "dashboard": {
+    "commandCenter": "Centro de Comando do Revendedor",
+    "welcomeBack": "Bem-vindo de volta, {{name}}",
+    "subscribersCount": "{{count}} assinantes",
+    "creditsAvailable": "{{credits}} créditos",
+    "statsDescription": "Você tem <subscribers>{{subscribers}} assinantes</subscribers> e <credits>{{credits}} créditos</credits> disponíveis.",
+    "newUser": "Novo Usuário",
+    "newDemo": "Nova Demo",
+    "expiringSoon": "Expirando em Breve",
+    "viewAll": "Ver Tudo",
+    "quickActions": "Ações Rápidas",
+    "profileSettings": "Configurações de Perfil"
+  },
+  "stats": {
+    "noSubscribersYet": "Nenhum assinante ainda",
+    "excellent": "Excelente",
+    "good": "Bom",
+    "fair": "Regular",
+    "inactive": "{{count}} inativos",
+    "totalSubscribers": "Total de Assinantes",
+    "newThisMonth": "+{{count}} este mês",
+    "noNewThisMonth": "Nenhum novo este mês",
+    "networkHealth": "Saúde da Rede",
+    "deviceSlots": "Vagas de Dispositivos",
+    "activeUsers": "{{count}} usuários ativos",
+    "activeDemos": "Demos Ativas",
+    "trialsInProgress": "Testes em andamento",
+    "noActiveTrials": "Nenhum teste ativo"
+  },
+  "quickActions": {
+    "createUser": "Criar Usuário",
+    "addNewSubscriber": "Adicionar novo assinante",
+    "issueDemo": "Emitir Demo",
+    "generateTrialAccount": "Gerar conta de teste",
+    "manageDevices": "Gerenciar Dispositivos",
+    "resetOrKillSessions": "Redefinir ou encerrar sessões",
+    "userList": "Lista de Usuários",
+    "viewAllSubscribers": "Ver todos os assinantes",
+    "buyCredits": "Comprar Créditos",
+    "topUpWallet": "Recarregar carteira",
+    "support": "Suporte",
+    "openTicket": "Abrir ticket"
+  },
+  "endUsers": {
+    "title": "Usuários Finais",
+    "subtitle": "Crie e gerencie usuários finais em todos os revendedores",
+    "legend": {
+      "demoUser": "Usuário Demo",
+      "expiredDemo": "Demo Expirada",
+      "demoBadge": "Selo de Demo"
+    },
+    "badges": {
+      "demo": "DEMO"
+    },
+    "time": {
+      "expired": "Expirado",
+      "never": "Nunca",
+      "left": "restante",
+      "hoursMinutes": "{{hours}}h {{minutes}}m",
+      "minutes": "{{minutes}}m",
+      "days": "{{days}} dias",
+      "daysRemaining": "({{days}} dias restantes)"
+    },
+    "premium": "Prêmio",
+    "suspended": "Suspenso",
+    "demo": "Demonstração",
+    "expired": "Expirado",
+    "never": "Nunca",
+    "endLicense": "Fim da Licença",
+    "createDialogDescription": "Crie uma nova conta de usuário final. Os créditos serão deduzidos do seu saldo.",
+    "subscriptionDuration": "Duração da Assinatura",
+    "selectDuration": "Selecione a duração",
+    "deviceLimit": "Limite de Dispositivos",
+    "selectDeviceLimit": "Selecione o limite de dispositivos",
+    "contentCategories": "Categorias de Conteúdo",
+    "categoriesHelp": "Clique para selecionar as categorias de conteúdo às quais este usuário terá acesso.",
+    "creditCostCalculation": "Cálculo do Custo de Crédito:",
+    "availableCredits": "Seus créditos disponíveis",
+    "insufficientCredits": "Créditos insuficientes!",
+    "insufficientCreditsShort": "Créditos Insuficientes",
+    "selectOptions": "Selecionar Opções",
+    "needMoreCredits": "Você precisa de mais {{amount}} créditos.",
+    "deviceOptions": {
+      "3": "3 dispositivos (1 crédito/mês)",
+      "5": "5 dispositivos (1.5 créditos/mês)",
+      "6": "6 dispositivos (1.75 créditos/mês)",
+      "7": "7 dispositivos (2 créditos/mês)",
+      "8": "8 dispositivos (2.25 créditos/mês)",
+      "9": "9 dispositivos (2.5 créditos/mês)",
+      "10": "10 dispositivos (2.75 créditos/mês)"
+    },
+    "duration": {
+      "month": "{{count}} mês",
+      "month_plural": "{{count}} meses",
+      "months": "{{count}} meses"
+    },
+    "validation": {
+      "usernameMin": "O nome de usuário deve ter pelo menos 3 caracteres",
+      "passwordMin": "A senha deve ter pelo menos 4 dígitos",
+      "passwordMax": "A senha deve ter no máximo 10 dígitos",
+      "passwordDigits": "A senha deve conter apenas dígitos",
+      "invalidEmail": "Endereço de e-mail inválido",
+      "durationMin": "Mínimo 1 mês",
+      "durationMax": "Máximo 12 meses",
+      "selectDeviceLimit": "Por favor, selecione o limite de dispositivos",
+      "selectCategory": "Por favor, selecione pelo menos uma categoria"
+    },
+    "errors": {
+      "failedToLoadUsers": "Falha ao carregar usuários"
+    },
+    "selectDurationAndDevices": "Selecione a duração e os dispositivos",
+    "monthPlural": "mês",
+    "monthsPlural": "meses",
+    "creditPerMonth": "crédito/mês",
+    "creditsPerMonth": "créditos/mês",
+    "creditBreakdown": "{{duration}} {{durationUnit}} × {{devices}} dispositivo{{devicePlural}} ({{costPerMonth}} {{costUnit}}) = {{total}} crédito{{creditPlural}}"
+  },
+  "dialogs": {
+    "suspend": {
+      "title": "Desativar Usuário",
+      "description": "Tem certeza de que deseja suspender {{username}}? Isso desconectará todos os seus dispositivos ativos."
+    },
+    "activate": {
+      "title": "Ativar Usuário",
+      "description": "Tem certeza de que deseja ativar {{username}}?"
+    },
+    "delete": {
+      "title": "Excluir Usuário",
+      "description": "Tem certeza de que deseja excluir permanentemente {{username}}? Esta ação não pode ser desfeita."
+    }
+  },
+  "activityLogs": {
+    "title": "Logs de Atividade",
+    "description": "Veja suas atividades e ações recentes",
+    "refresh": "Atualizar",
+    "noLogs": "Nenhum log de atividade encontrado",
+    "errorLoading": "Erro ao carregar logs: {{message}}",
+    "filters": {
+      "actionType": "Tipo de Ação",
+      "allActions": "Todas as Ações",
+      "startDate": "Data de Início",
+      "endDate": "Data de Término"
+    },
+    "actionTypes": {
+      "USER_CREATED": "Usuário Criado",
+      "USER_DELETED": "Usuário Excluído",
+      "USER_EXTENDED": "Usuário Estendido",
+      "CREDIT_USED": "Crédito Utilizado",
+      "DEMO_CREATED": "Demo Criada",
+      "LOGIN": "Conecte-se",
+      "LOGOUT": "Sair"
+    },
+    "table": {
+      "date": "Data",
+      "action": "Ação",
+      "targetUser": "Usuário Alvo",
+      "description": "Descrição",
+      "credits": "Créditos"
+    },
+    "pagination": {
+      "showing": "Mostrando {{from}} a {{to}} de {{total}} resultados",
+      "previous": "Anterior",
+      "next": "Próximo",
+      "pageOf": "Página {{page}} de {{totalPages}}"
+    }
+  },
+  "editUser": {
+    "dialogTitle": "Editar Usuário: {{username}}",
+    "dialogDescription": "Edite detalhes do usuário, gerencie a assinatura e estenda o acesso",
+    "editDetailsTitle": "Editar Detalhes do Usuário",
+    "editDetailsDescription": "Atualizar informações do usuário e senha",
+    "validation": {
+      "minMonth": "Mínimo 1 mês",
+      "maxExtension": "Extensão máxima de 12 meses",
+      "usernameMinLength": "O nome de usuário deve ter pelo menos 3 caracteres",
+      "invalidEmail": "Endereço de e-mail inválido",
+      "passwordMinLength": "A senha deve ter pelo menos 4 dígitos",
+      "passwordMaxLength": "A senha deve ter no máximo 10 dígitos",
+      "passwordDigitsOnly": "A senha deve conter apenas dígitos",
+      "maxDevicesLimit": "Máximo de 10 dispositivos permitidos",
+      "selectCategory": "Por favor, selecione pelo menos uma categoria"
+    },
+    "labels": {
+      "username": "Nome de Usuário",
+      "email": "E-mail",
+      "newPassword": "Nova Senha (4-10 dígitos)",
+      "maxDevices": "Máx Dispositivos",
+      "categories": "Categorias",
+      "deviceLimit": "Limite de Dispositivos",
+      "status": "Estado",
+      "expirationDate": "Data de Expiração",
+      "currentCategories": "Categorias Atuais"
+    },
+    "placeholders": {
+      "enterUsername": "Digite o nome de usuário",
+      "enterEmail": "Digite o e-mail",
+      "leaveEmptyToKeep": "Deixe vazio para manter o atual"
+    },
+    "creditWarning": {
+      "title": "Aviso de Custo de Crédito",
+      "addingDevices": "Adicionar {{count}} dispositivo custará",
+      "addingDevicesPlural": "Adicionar {{count}} dispositivos custará",
+      "credits": "{{amount}} créditos",
+      "calculation": "({{days}} dias restantes × 0,25 créditos por dispositivo por mês)"
+    },
+    "subscription": {
+      "title": "Assinatura Atual",
+      "devices": "{{count}} dispositivos",
+      "expired": "Expirado",
+      "active": "Ativo",
+      "noCategories": "Nenhuma categoria atribuída"
+    },
+    "extend": {
+      "title": "Estender Assinatura",
+      "description": "Adicione mais meses à assinatura deste usuário (máximo 12 meses)",
+      "periodLabel": "Período de Extensão",
+      "selectPeriod": "Selecione o período de extensão",
+      "costCalculation": "Cálculo do Custo de Extensão:",
+      "availableCredits": "Seus créditos disponíveis",
+      "insufficientCredits": "Créditos insuficientes!",
+      "needMoreCredits": "Você precisa de mais {{amount}} créditos.",
+      "selectExtension": "Selecionar Extensão",
+      "breakdown": {
+        "device": "dispositivo",
+        "devicesPlural": "dispositivos",
+        "monthsDevices": "{{months}} {{monthLabel}} × {{devices}} {{deviceLabel}}",
+        "oneCredit": "(1 crédito/mês)",
+        "extraDevices": "(1 base + {{extraDevices}} × 0,25 = {{creditsPerMonth}} créditos/mês)",
+        "credit": "crédito",
+        "creditsPlural": "créditos",
+        "totalCredits": "= {{cost}} {{creditLabel}}"
+      }
+    },
+    "buttons": {
+      "cancel": "Cancelar",
+      "updating": "Atualizando...",
+      "updateUser": "Atualizar Usuário",
+      "extending": "Estendendo...",
+      "extendSubscription": "Estender Assinatura ({{cost}} créditos)",
+      "insufficientCredits": "Créditos Insuficientes"
+    },
+    "loading": {
+      "categories": "Carregando categorias..."
+    },
+    "empty": {
+      "noCategories": "Nenhuma categoria disponível"
+    },
+    "errors": {
+      "extendFailed": "Falha ao estender a assinatura",
+      "noUserSelected": "Nenhum usuário selecionado"
+    }
+  },
+  "buyCredits": {
+    "title": "Comprar Créditos",
+    "description": "Compre créditos da plataforma via Stripe Checkout. Os créditos são usados para criar e gerenciar usuários finais.",
+    "loadingPricing": "Carregando preços atuais...",
+    "retry": "Tentar novamente",
+    "basePrice": "Preço base",
+    "perCredit": "por crédito",
+    "yourDiscount": "Seu desconto por quantidade",
+    "applied": "aplicado",
+    "none": "nenhum",
+    "effectiveUnitPrice": "Preço unitário efetivo",
+    "quantityLabel": "Quantidade (créditos)",
+    "quantityHint": "Insira quantos créditos deseja comprar",
+    "totalAmount": "Valor total",
+    "includesDiscount": "Inclui {{discount}}% de desconto por volume",
+    "noDiscount": "Sem desconto para esta quantidade",
+    "redirecting": "Redirecionando...",
+    "proceedToCheckout": "Prosseguir para o Checkout",
+    "volumeDiscountTiers": "Faixas de desconto por volume",
+    "minQuantity": "Qtd. mín.",
+    "discount": "Desconto",
+    "noTiers": "Nenhuma faixa configurada. O preço base se aplica.",
+    "invalidQuantity": "Por favor, insira uma quantidade válida maior que 0",
+    "errors": {
+      "failedLoadPricing": "Falha ao carregar preços",
+      "failedCreateCheckout": "Falha ao criar sessão de checkout"
+    }
+  },
+  "expirationMonitoring": {
+    "title": "Monitoramento de Expiração de Usuários",
+    "errorLoading": "Falha ao carregar dados de expiração de usuários. Por favor, tente novamente.",
+    "neverExpires": "Nunca expira",
+    "noEmail": "Sem e-mail",
+    "status": {
+      "expired": "Expirado",
+      "day": "{{count}} dia",
+      "days": "{{count}} dias",
+      "noExpiration": "Sem expiração",
+      "active": "Ativo",
+      "inactive": "Inativo"
+    },
+    "summary": {
+      "expired": "Expirado",
+      "critical": "Crítico (≤2 dias)",
+      "warning": "Aviso (3-5 dias)",
+      "good": "Bom (>5 dias)",
+      "noExpiration": "Sem Expiração"
+    },
+    "details": {
+      "criticalTitle": "Expirações Críticas",
+      "criticalDescription": "Usuários que requerem atenção imediata (expirando em até 2 dias)",
+      "fullTitle": "Detalhes de Expiração de Usuários",
+      "fullDescription": "Monitore as datas de expiração e o status das contas de seus usuários"
+    },
+    "table": {
+      "username": "Nome de Usuário",
+      "email": "E-mail",
+      "expirationDate": "Data de Expiração",
+      "status": "Estado",
+      "active": "Ativo"
+    },
+    "empty": {
+      "noCritical": "Nenhuma expiração crítica",
+      "noCriticalDescription": "Todos os seus usuários têm mais de 2 dias até a expiração.",
+      "noUsers": "Nenhum usuário encontrado",
+      "noUsersDescription": "Crie alguns usuários finais para monitorar suas datas de expiração."
+    }
+  },
+  "analytics": {
+    "active": "Ativos",
+    "inactive": "Inativos",
+    "acquisitionTrend": "Tendência de Aquisição",
+    "acquisitionDescription": "Novos assinantes nos últimos 6 meses",
+    "networkStatus": "Status da Rede",
+    "networkDescription": "Usuários Ativos vs Suspensos",
+    "totalUsers": "Total de Usuários"
+  },
+  "profile": {
+    "title": "Perfil do Revendedor",
+    "description": "Gerencie as configurações e preferências da sua conta",
+    "contactInformation": "Informações de Contato",
+    "emailPlaceholder": "seu@email.com",
+    "contactInfoNote": "Usaremos este e-mail para notificações importantes",
+    "saveChanges": "Salvar Alterações",
+    "changePassword": "Alterar Senha",
+    "newPasswordLabel": "Nova Senha",
+    "newPasswordPlaceholder": "Digite a nova senha",
+    "confirmPasswordLabel": "Confirmar Senha",
+    "confirmPasswordPlaceholder": "Confirme a nova senha",
+    "passwordHelp": "A senha deve ter pelo menos 8 caracteres",
+    "updatePassword": "Atualizar Senha",
+    "updated": "Perfil atualizado com sucesso",
+    "updateFailed": "Falha ao atualizar perfil",
+    "passwordUpdated": "Senha atualizada com sucesso",
+    "updatePasswordFailed": "Falha ao atualizar senha",
+    "passwordTooShort": "A senha deve ter pelo menos 8 caracteres",
+    "enterAndConfirmPassword": "Por favor, insira e confirme sua nova senha",
+    "passwordsDoNotMatch": "As senhas não coincidem"
+  },
+  "creditBalance": {
+    "title": "Saldo de Créditos",
+    "availableCredits": "Créditos Disponíveis",
+    "lowBalance": "Saldo Baixo",
+    "available": "Disponível",
+    "creditsAvailableDescription": "Créditos disponíveis para criar novos usuários",
+    "lowBalanceWarning": "Seu saldo de créditos está baixo. Entre em contato com seu administrador para adicionar mais créditos.",
+    "totalUsers": "Total de Usuários",
+    "endUsersCreated": "Usuários finais criados",
+    "creditsUsed": "Créditos Usados",
+    "totalCreditsConsumed": "Total de créditos consumidos",
+    "creditSummary": {
+      "title": "Resumo de Créditos",
+      "description": "Visão geral do seu uso e saldo de créditos",
+      "initialCredits": "Créditos Iniciais",
+      "creditsUsed": "Créditos Usados",
+      "availableCredits": "Créditos Disponíveis",
+      "usageRate": "Taxa de Uso"
+    },
+    "userBreakdown": {
+      "title": "Detalhamento de Créditos por Usuário",
+      "description": "Custo de crédito por usuário baseado na configuração do dispositivo",
+      "device": "dispositivo",
+      "devices": "dispositivos",
+      "credits": "créditos"
+    },
+    "calculationGuide": {
+      "title": "Guia de Cálculo de Créditos",
+      "description": "Entenda como os créditos são calculados para diferentes configurações de dispositivos",
+      "standardDevices": "3 Dispositivos (Padrão)",
+      "standardCredits": "1.0 créditos",
+      "standardDescription": "Configuração mais comum para usuários finais",
+      "premiumDevices": "5 Dispositivos (Premium)",
+      "premiumCredits": "1.5 créditos",
+      "premiumDescription": "Pacote premium com mais dispositivos",
+      "extraDevices": "Dispositivos Extras",
+      "extraCredits": "+0.25 créditos cada",
+      "extraDescription": "Custo adicional por dispositivo extra além de 3",
+      "examples": "Exemplos:",
+      "example1Device": "1 dispositivo",
+      "example1DeviceCost": "1.0 créditos",
+      "example4Devices": "4 dispositivos",
+      "example4DevicesCost": "1.25 créditos",
+      "example6Devices": "6 dispositivos",
+      "example6DevicesCost": "1.75 créditos"
+    }
+  },
+  "supportTickets": {
+    "descriptionPlaceholder": "Por favor, forneça informações detalhadas sobre seu problema...",
+    "header": {
+      "title": "Tíquetes de suporte",
+      "description": "Crie e gerencie suas solicitações de suporte",
+      "unreadSingle": "Você tem {{count}} mensagem não lida",
+      "unreadPlural": "Você tem {{count}} mensagens não lidas",
+      "createTicket": "Criar ingresso"
+    },
+    "createDialog": {
+      "title": "Criar ticket de suporte",
+      "description": "Descreva seu problema e ajudaremos você a resolvê-lo o mais rápido possível.",
+      "titleLabel": "Título",
+      "titlePlaceholder": "Breve resumo do seu problema",
+      "categoryLabel": "Categoria",
+      "priorityLabel": "Prioridade",
+      "descriptionLabel": "Descrição",
+      "descriptionPlaceholder": "Forneça informações detalhadas sobre o seu problema...",
+      "cancel": "Cancelar",
+      "creating": "Criando...",
+      "create": "Criar ingresso"
+    },
+    "categories": {
+      "technical": "Problema técnico",
+      "billing": "Pergunta sobre faturamento",
+      "account": "Suporte à conta",
+      "content": "Problema de conteúdo",
+      "other": "Outro"
+    },
+    "priorities": {
+      "low": "Baixo",
+      "medium": "Médio",
+      "high": "Alto",
+      "urgent": "Urgente"
+    },
+    "stats": {
+      "total": "Total",
+      "open": "Abrir",
+      "inProgress": "Em andamento",
+      "resolved": "Resolvido"
+    },
+    "list": {
+      "title": "Meus tickets de suporte",
+      "empty": "Nenhum ingresso encontrado. Crie seu primeiro ticket de suporte acima.",
+      "countSingle": "{{count}} tíquete encontrado",
+      "countPlural": "{{count}} ingressos encontrados",
+      "filter": "Filtro",
+      "sort": "Organizar",
+      "refresh": "Atualizar"
+    },
+    "empty": {
+      "title": "Ainda não há tickets de suporte",
+      "description": "Obtenha ajuda de nossa equipe de suporte criando seu primeiro ticket. Estamos aqui para ajudar você!",
+      "createFirst": "Crie seu primeiro ingresso"
+    },
+    "errors": {
+      "createFailed": "Falha ao criar ticket",
+      "createFailedRetry": "Falha ao criar o ticket. Por favor, tente novamente.",
+      "sendFailed": "Falha ao enviar mensagem",
+      "sendFailedRetry": "Falha ao enviar mensagem. Por favor, tente novamente."
+    }
+  },
+  "secretKeyCopied": "Chave secreta copiada para a área de transferência",
+  "iHaveCopiedMyKey": "Eu Copiei Minha Chave",
+  "noUsersFound": "Nenhum usuário encontrado",
+  "noCriticalExpirations": "Nenhuma expiração crítica"
+}

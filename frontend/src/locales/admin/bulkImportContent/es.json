@@ -1,0 +1,24 @@
+{
+  "bulkImportContent": {
+    "title": "Importación masiva — {{category}} (M3U/M3U8)",
+    "description": "Pega una lista M3U/M3U8 abajo para importar masivamente {{category}}. Cada entrada se creará como un nuevo contenido. Los datos se sanitizan automáticamente (duplicados eliminados, nombres limpiados).",
+    "labels": {
+      "playlist": "Lista (M3U/M3U8)"
+    },
+    "buttons": {
+      "cancel": "Cancelar",
+      "chooseFile": "Elegir archivo M3U",
+      "import": "Importar {{category}}",
+      "importing": "Importando..."
+    },
+    "result": "Importados {{success}} de {{total}} elementos.",
+    "resultWithFailed": "Importados {{success}} de {{total}} elementos ({{failed}} con error).",
+    "validation": {
+      "pasteM3uContent": "Pega el contenido M3U/M3U8",
+      "invalidData": "Datos inválidos",
+      "importFailed": "Falló la importación masiva",
+      "unknownError": "Error desconocido",
+      "fileReadFailed": "No se pudo leer el archivo seleccionado"
+    }
+  }
+}

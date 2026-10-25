@@ -1,0 +1,150 @@
+{
+  "appUpdates": {
+    "title": "Mises à Jour des Apps",
+    "description": "Gérer et distribuer les mises à jour pour les applications TV, Android et iOS",
+    "tabs": {
+      "overview": "Aperçu",
+      "create": "Créer une Mise à Jour",
+      "history": "Historique des Mises à Jour"
+    },
+    "platforms": {
+      "android_tv": "Android TV",
+      "android_mobile": "Mobile Android",
+      "ios": "iOS"
+    },
+    "updateType": {
+      "title": "Type de Mise à Jour",
+      "suggested": "Suggérée",
+      "mandatory": "Obligatoire",
+      "suggestedDescription": "Les utilisateurs peuvent ignorer cette mise à jour et continuer à utiliser l'app",
+      "mandatoryDescription": "Les utilisateurs doivent mettre à jour pour continuer à utiliser l'app"
+    },
+    "status": {
+      "active": "Actif",
+      "inactive": "Inactif",
+      "draft": "Brouillon",
+      "archived": "Archivée"
+    },
+    "form": {
+      "version": "Numéro de Version",
+      "versionPlaceholder": "ex., 2.1.0",
+      "versionCode": "Code de Version",
+      "versionCodePlaceholder": "ex., 21",
+      "versionCodeHelp": "Numéro de build numérique pour comparaison (Android uniquement)",
+      "platform": "Plateforme",
+      "selectPlatform": "Sélectionner la plateforme",
+      "updateType": "Type de Mise à Jour",
+      "downloadUrl": "URL de Téléchargement",
+      "downloadUrlPlaceholder": "https://exemple.com/app.apk",
+      "downloadUrlHelp": "Lien direct vers l'APK ou URL du store",
+      "storeUrl": "URL du Store (optionnel)",
+      "storeUrlPlaceholder": "https://play.google.com/store/apps/details?id=...",
+      "storeUrlHelp": "Lien vers la page Play Store ou App Store",
+      "releaseNotes": "Notes de Version",
+      "releaseNotesPlaceholder": "Nouveautés de cette version...",
+      "releaseNotesHelp": "Décrivez les changements et nouvelles fonctionnalités (supporte Markdown)",
+      "minSdkVersion": "Version SDK Minimum",
+      "minSdkVersionPlaceholder": "ex., 21",
+      "fileSize": "Taille du Fichier",
+      "fileSizePlaceholder": "ex., 45 Mo",
+      "publishDate": "Date de Publication",
+      "status": "Statut"
+    },
+    "actions": {
+      "create": "Créer la Mise à Jour",
+      "creating": "Création...",
+      "edit": "Modifier",
+      "delete": "Supprimer",
+      "archive": "Archiver",
+      "activate": "Activer",
+      "deactivate": "Désactiver",
+      "duplicate": "Dupliquer",
+      "preview": "Aperçu",
+      "save": "Enregistrer les Modifications",
+      "saving": "Enregistrement...",
+      "cancel": "Annuler"
+    },
+    "table": {
+      "version": "Version",
+      "platform": "Plateforme",
+      "type": "Taper",
+      "status": "Statut",
+      "releaseDate": "Date de Sortie",
+      "downloads": "Téléchargements",
+      "actions": "Actes"
+    },
+    "overview": {
+      "title": "Aperçu des Mises à Jour",
+      "description": "Mises à jour actives actuelles par plateforme",
+      "noActiveUpdates": "Aucune mise à jour active",
+      "latestVersion": "Dernière Version",
+      "lastUpdated": "Dernière Mise à Jour",
+      "totalDownloads": "Téléchargements Totaux",
+      "activeUsers": "Utilisateurs Actifs",
+      "updateRate": "Taux de Mise à Jour",
+      "pendingUpdates": "Mises à Jour en Attente"
+    },
+    "stats": {
+      "totalUpdates": "Total des Mises à Jour",
+      "activeUpdates": "Mises à Jour Actives",
+      "mandatoryUpdates": "Mises à Jour Obligatoires",
+      "suggestedUpdates": "Mises à Jour Suggérées",
+      "totalDownloads": "Téléchargements Totaux",
+      "updateAdoption": "Adoption des Mises à Jour"
+    },
+    "confirm": {
+      "delete": "Êtes-vous sûr de vouloir supprimer cette mise à jour ? Cette action est irréversible.",
+      "archive": "Êtes-vous sûr de vouloir archiver cette mise à jour ? Les utilisateurs ne la verront plus.",
+      "activate": "Activer cette mise à jour ? Les utilisateurs commenceront à recevoir des notifications.",
+      "deactivate": "Désactiver cette mise à jour ? Les utilisateurs ne recevront plus de notifications pour cette version."
+    },
+    "empty": {
+      "title": "Aucune Mise à Jour Trouvée",
+      "description": "Créez votre première mise à jour d'app pour commencer à distribuer de nouvelles versions aux utilisateurs.",
+      "noHistory": "Aucun historique de mises à jour disponible.",
+      "noUpdatesForPlatform": "Aucune mise à jour configurée pour {{platform}}"
+    },
+    "success": {
+      "created": "Mise à jour créée avec succès",
+      "updated": "Mise à jour enregistrée avec succès",
+      "deleted": "Mise à jour supprimée avec succès",
+      "activated": "Mise à jour activée avec succès",
+      "deactivated": "Mise à jour désactivée avec succès",
+      "archived": "Mise à jour archivée avec succès"
+    },
+    "errors": {
+      "loadFailed": "Échec du chargement des mises à jour",
+      "createFailed": "Échec de la création de la mise à jour",
+      "updateFailed": "Échec de l'enregistrement de la mise à jour",
+      "deleteFailed": "Échec de la suppression de la mise à jour",
+      "versionRequired": "Le numéro de version est obligatoire",
+      "platformRequired": "La plateforme est obligatoire",
+      "downloadUrlRequired": "L'URL de téléchargement est obligatoire pour les mises à jour hors store",
+      "versionExists": "Cette version existe déjà pour la plateforme sélectionnée"
+    },
+    "filters": {
+      "allPlatforms": "Toutes les Plateformes",
+      "allTypes": "Tous les Types",
+      "allStatuses": "Tous les Statuts",
+      "searchPlaceholder": "Rechercher par version..."
+    },
+    "preview": {
+      "title": "Aperçu de la Mise à Jour",
+      "description": "Voici comment le dialogue de mise à jour apparaîtra aux utilisateurs",
+      "updateAvailable": "Mise à Jour Disponible",
+      "newVersion": "Une nouvelle version est disponible !",
+      "currentVersion": "Version actuelle :",
+      "newVersionLabel": "Nouvelle version :",
+      "whatsNew": "Nouveautés",
+      "downloadNow": "Télécharger Maintenant",
+      "remindLater": "Rappeler Plus Tard",
+      "mandatoryWarning": "Cette mise à jour est obligatoire pour continuer à utiliser l'app."
+    },
+    "history": {
+      "title": "Historique des Mises à Jour",
+      "description": "Voir toutes les mises à jour précédentes et leurs performances",
+      "downloadTrend": "Tendance des Téléchargements",
+      "adoptionRate": "Taux d'Adoption"
+    }
+  }
+}

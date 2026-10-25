@@ -1,0 +1,67 @@
+{
+  "title": "Registros de actividad",
+  "subtitle": "Actividad del sistema, acciones y auditorías",
+  "lastUpdated": "Última actualización: {{time}}",
+  "autoRefreshOn": "Auto-actualización ACTIVADA",
+  "autoRefreshOff": "Auto-actualización DESACTIVADA",
+  "refreshNow": "Actualizar ahora",
+  "refreshLabel": "Actualizar",
+  "tabs": {
+    "dashboard": "Panel",
+    "system": "Sistema",
+    "loginHistory": "Historial de accesos",
+    "viewingHistory": "Historial de visualizaciones"
+  },
+  "filters": {
+    "actionType": "Tipo de acción",
+    "allActions": "Todas las acciones",
+    "user": "Usuario",
+    "username": "Nombre de usuario",
+    "ipAddress": "Dirección IP",
+    "startDate": "Fecha de inicio (dd/mm/aaaa)",
+    "endDate": "Fecha de fin (dd/mm/aaaa)",
+    "perPage": "Por página",
+    "search": "Buscar",
+    "placeholderUsername": "Buscar nombre de usuario…",
+    "placeholderIp": "p. ej. 192.168.0.1",
+    "contentType": "Tipo de contenido",
+    "allTypes": "Todos los tipos"
+  },
+  "common": {
+    "failedLogins": "Inicios de sesión fallidos",
+    "today": "Hoy",
+    "views": "Visualizaciones"
+  },
+  "table": {
+    "date": "Fecha",
+    "action": "Acción",
+    "user": "Usuario",
+    "target": "Objetivo",
+    "description": "Descripción",
+    "credits": "Créditos",
+    "ip": "IP",
+    "device": "Dispositivo"
+  },
+  "pagination": {
+    "previous": "Anterior",
+    "next": "Siguiente",
+    "showing": "Mostrando {{from}} a {{to}} de {{total}} registros",
+    "pageOf": "Página {{page}} de {{total_pages}}"
+  },
+  "actionTypes": {
+    "USER_CREATED": "Usuario creado",
+    "USER_DELETED": "Usuario eliminado",
+    "RESELLER_CREATED": "Revendedor creado",
+    "RESELLER_DELETED": "Revendedor eliminado",
+    "CREDIT_USED": "Crédito usado",
+    "CREDIT_ASSIGNED": "Crédito asignado",
+    "SYSTEM_INIT": "Sistema inicializado",
+    "LOGIN": "Inicio de sesión",
+    "LOGOUT": "Cierre de sesión"
+  },
+  "empty": "No se encontraron registros de actividad.",
+  "errors": {
+    "failedLoad": "Error al cargar los registros de actividad",
+    "invalidDateRange": "Rango de fechas inválido"
+  }
+}

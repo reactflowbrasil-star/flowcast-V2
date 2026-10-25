@@ -1,0 +1,24 @@
+{
+  "bulkImportContent": {
+    "title": "Hromadný import — {{category}} (M3U/M3U8)",
+    "description": "Vložte nižšie playlist M3U/M3U8 pre hromadný import {{category}}. Každá položka bude vytvorená ako nový obsah. Dáta sa automaticky vyčistia (odstránia sa duplicity, upravia sa názvy).",
+    "labels": {
+      "playlist": "Zoznam skladieb (M3U/M3U8)"
+    },
+    "buttons": {
+      "cancel": "Zrušiť",
+      "chooseFile": "Vybrať súbor M3U",
+      "import": "Importovať {{category}}",
+      "importing": "Importuje sa..."
+    },
+    "result": "Importovaných {{success}} z {{total}} položiek.",
+    "resultWithFailed": "Importovaných {{success}} z {{total}} položiek ({{failed}} zlyhalo).",
+    "validation": {
+      "pasteM3uContent": "Vložte obsah M3U/M3U8",
+      "invalidData": "Neplatné údaje",
+      "importFailed": "Hromadný import zlyhal",
+      "unknownError": "Neznáma chyba",
+      "fileReadFailed": "Nepodarilo sa prečítať vybraný súbor"
+    }
+  }
+}

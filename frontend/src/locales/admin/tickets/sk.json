@@ -1,0 +1,127 @@
+{
+  "tickets": {
+    "errors": {
+      "sendMessage": "Nepodarilo sa odoslať správu",
+      "sendMessageRetry": "Nepodarilo sa odoslať správu. Skúste to znova.",
+      "assign": "Nepodarilo sa priradiť vstupenku",
+      "assignRetry": "Nepodarilo sa priradiť vstupenku. Skúste to prosím znova.",
+      "delete": "Nepodarilo sa odstrániť vstupenku",
+      "deleteRetry": "Nepodarilo sa odstrániť vstupenku. Skúste to prosím znova.",
+      "updateStatus": "Nepodarilo sa aktualizovať stav vstupenky",
+      "updateStatusRetry": "Nepodarilo sa aktualizovať stav vstupenky. Skúste to prosím znova.",
+      "create": "Nepodarilo sa vytvoriť vstupenku",
+      "createRetry": "Nepodarilo sa vytvoriť vstupenku. Skúste to prosím znova.",
+      "validation": {
+        "titleDescriptionRequired": "Názov a popis sú povinné",
+        "resellerRequired": "Vyberte prosím predajcu"
+      }
+    },
+    "confirm": {
+      "delete": "Ste si istí, že chcete odstrániť túto vstupenku? Túto akciu nemožno vrátiť späť."
+    },
+    "filters": {
+      "status": {
+        "all": "Všetky stavy"
+      },
+      "priority": {
+        "all": "Všetky priority"
+      },
+      "unread": {
+        "all": "Všetky správy",
+        "unread": "Neprečítané správy",
+        "read": "Prečítané správy"
+      }
+    },
+    "placeholders": {
+      "filterByStatus": "Filtrovať podľa stavu",
+      "filterByPriority": "Filtrovať podľa priority",
+      "filterByReadStatus": "Filtrovať podľa stavu prečítania"
+    },
+    "unreadMessages": "Neprečítané správy",
+    "stats": {
+      "total": "Celkom"
+    },
+    "actions": {
+      "panelTitle": "Akcie správcu",
+      "assigning": "Priraďuje sa...",
+      "assignToMe": "Priradiť mne",
+      "changeStatus": "Zmeniť stav",
+      "internalMessage": "Odoslať ako internú správu",
+      "scheduleFollowUp": "Naplánovať kontrolu",
+      "reassignTicket": "Zmeniť priradenie vstupenky"
+    },
+    "priority": {
+      "low": "Nízka",
+      "medium": "Stredná",
+      "high": "Vysoká",
+      "urgent": "Urgentná"
+    },
+    "status": {
+      "open": "Otvorená",
+      "in_progress": "V riešení",
+      "waiting_response": "Čaká na odpoveď",
+      "resolved": "Vyriešená",
+      "closed": "Uzavretá"
+    },
+    "category": {
+      "technical": "Technická",
+      "billing": "Fakturácia",
+      "account": "Účet",
+      "content": "Obsah",
+      "other": "Iné"
+    },
+    "create": {
+      "title": "Vytvoriť novú vstupenku",
+      "description": "Vytvorte novú vstupenku podpory na testovacie alebo administratívne účely.",
+      "labels": {
+        "title": "Názov",
+        "description": "Popis",
+        "reseller": "Predajca",
+        "priority": "Priorita",
+        "category": "Kategória"
+      },
+      "placeholders": {
+        "title": "Zadajte názov vstupenky",
+        "description": "Zadajte popis vstupenky",
+        "reseller": "Vyberte predajcu"
+      },
+      "submitting": "Vytvára sa...",
+      "submit": "Vytvoriť vstupenku"
+    },
+    "advanced": {
+      "title": "Rozšírené filtre",
+      "description": "Použite ďalšie filtre na zúženie vyhľadávania vstupeniek.",
+      "labels": {
+        "dateFrom": "Dátum od",
+        "dateTo": "Dátum do"
+      },
+      "helper": "Filtrovať podľa rozsahu dátumu vytvorenia. Nechajte prázdne pre všetky dátumy.",
+      "clear": "Vymazať všetko",
+      "apply": "Použiť filtre"
+    },
+    "sort": {
+      "title": "Možnosti zoradenia",
+      "description": "Vyberte, ako zoradiť vaše vstupenky.",
+      "labels": {
+        "sortBy": "Zoradiť podľa",
+        "direction": "Smer"
+      },
+      "options": {
+        "newestFirst": "Najnovšie prvé",
+        "oldestFirst": "Najstaršie prvé",
+        "priority": "Priorita",
+        "status": "Stav",
+        "unreadFirst": "Neprečítané prvé"
+      },
+      "direction": {
+        "descending": "Zostupne",
+        "ascending": "Vzostupne"
+      },
+      "reset": "Obnoviť predvolené",
+      "apply": "Použiť zoradenie"
+    },
+    "common": {
+      "cancel": "Zrušiť"
+    }
+  }
+}

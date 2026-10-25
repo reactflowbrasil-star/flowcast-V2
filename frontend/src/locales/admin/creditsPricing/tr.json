@@ -1,0 +1,44 @@
+{
+  "creditsPricing": {
+    "title": "Kredi Fiyatlandırması (Stripe)",
+    "description": "Stripe Checkout satın alımları için kredi başına temel USD fiyatını ve hacim indirim katmanlarını yapılandırın.",
+    "loading": "Fiyatlandırma yapılandırması yükleniyor...",
+    "updated": "Fiyatlandırma yapılandırması başarıyla güncellendi",
+    "tiersSorted": "Katmanlar normalleştirildi ve sıralandı",
+    "savePricingConfig": "Fiyatlandırma Yapılandırmasını Kaydet",
+    "error": {
+      "loadFailed": "Fiyatlandırma yapılandırması yüklenemedi:",
+      "updateFailed": "Fiyatlandırma yapılandırması güncellenemedi",
+      "fetchFailed": "Fiyatlandırma yapılandırması getirilemedi",
+      "invalidTierConfig": "Geçersiz katman yapılandırması"
+    },
+    "validation": {
+      "tooLarge": "Çok büyük",
+      "minPercent": "Min %0",
+      "maxPercent": "Maks %100",
+      "basePricePositive": "Temel fiyat 0'dan büyük olmalı",
+      "maxTiers": "Maksimum 50 katman",
+      "tiersAscendingOrder": "Katmanlar min. miktara göre kesinlikle artan sırada olmalı"
+    },
+    "retry": "Tekrar Dene",
+    "basePrice": {
+      "label": "Temel Fiyat (kredi başına USD)",
+      "help": "İndirimlerden önceki temel fiyat. İndirimler miktara göre uygulanır."
+    },
+    "currentBasePrice": "Mevcut temel fiyat",
+    "activeTiers": "Aktif katmanlar",
+    "tiersDescription": "İndirim katmanlarını tanımlayın. Min miktar ≤ satın alınan miktarın olduğu en yüksek katman uygulanacaktır.",
+    "actions": {
+      "normalizeSort": "Normalleştir/Sırala",
+      "addTier": "Katman Ekle"
+    },
+    "table": {
+      "minQuantity": "Min Miktar (dahil)",
+      "discountPercent": "İndirim Yüzdesi",
+      "noTiers": "Katman yapılandırılmadı. Temel fiyat tüm miktarlar için geçerlidir."
+    }
+  },
+  "common": {
+    "saving": "Kaydediliyor..."
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "loginHistory": {
+    "title": "История Входов",
+    "subtitle": "Недавние входы и события аутентификации",
+    "lastUpdated": "Последнее обновление: {{time}}",
+    "autoRefreshOn": "Авто-обновление ВКЛ",
+    "autoRefreshOff": "Авто-обновление ВЫКЛ",
+    "refreshNow": "Обновить сейчас",
+    "filters": {
+      "username": "Имя пользователя",
+      "ipAddress": "IP адрес",
+      "startDate": "Дата с (дд/мм/гггг)",
+      "endDate": "Дата по (дд/мм/гггг)",
+      "result": "Результат",
+      "allResults": "Все результаты",
+      "perPage": "На странице",
+      "placeholderUsername": "Поиск пользователя...",
+      "placeholderIp": "напр. 192.168.0.1"
+    },
+    "table": {
+      "date": "Дата",
+      "username": "Пользователь",
+      "email": "Электронная почта",
+      "ip": "IP",
+      "device": "Устройство",
+      "result": "Результат",
+      "method": "Метод"
+    },
+    "pagination": {
+      "previous": "Назад",
+      "next": "Вперед",
+      "showing": "Показано {{from}} - {{to}} из {{total}} записей",
+      "pageOf": "Страница {{page}} из {{total_pages}}"
+    },
+    "empty": "Записи о входах не найдены.",
+    "errors": {
+      "failedLoad": "Не удалось загрузить историю входов",
+      "invalidDateRange": "Неверный диапазон дат"
+    },
+    "common": {
+      "failedLogins": "Неудачные входы",
+      "today": "Сегодня"
+    }
+  }
+}

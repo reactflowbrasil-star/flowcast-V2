@@ -1,0 +1,50 @@
+{
+  "masterKeys": {
+    "createDialogDescription": "Create a new Master API Key for external applications. This key provides full API access without UI authentication.",
+    "examples": {
+      "appName": "e.g., External Editor App 2024"
+    },
+    "descriptionPlaceholder": "Description of the external application or integration...",
+    "descriptionHelp": "Optional: Describe what this API key will be used for",
+    "infoTitle": "API Integration",
+    "infoText": "Master API Keys provide full API access for external applications without requiring UI authentication. Perfect for content management tools, automated scripts, and third-party integrations.",
+    "badges": {
+      "externalApps": "External Apps",
+      "automationScripts": "Automation Scripts",
+      "thirdPartyTools": "Third-party Tools"
+    },
+    "neverLabel": "Never",
+    "keyNameHelp": "A descriptive name to identify this API key",
+    "securityNoteTitle": "Security Note",
+    "securityNoteDescription": "The generated API key will be shown only once. Make sure to copy and store it securely.",
+    "empty": {
+      "title": "No API Keys Found",
+      "description": "Create your first Master API Key to enable external application integration"
+    },
+    "detailsTitle": "Master API Key Details",
+    "detailsDescription": "View and manage this API key for external application integration",
+    "apiKeyLabel": "API Key",
+    "activeStatus": "Active Status",
+    "regenerateButton": "Regenerate Key",
+    "deleteButton": "Delete Key",
+    "labels": {
+      "created": "Created",
+      "lastUpdated": "Last Updated",
+      "lastUsed": "Last Used"
+    },
+    "keyNameRequired": "Key name is required",
+    "noDescription": "No description provided",
+    "loading": "Loading Master API Keys...",
+    "confirmDelete": "Are you sure you want to delete the Master API Key \"{{keyName}}\"? This will immediately revoke access for any external applications using this key.",
+    "confirmRegenerate": "Are you sure you want to regenerate this Master API Key? The old key will be immediately invalidated and external applications will need to be updated.",
+    "fullAccessWarning": "⚠️ Store this key securely. It provides full API access without authentication.",
+    "errors": {
+      "loadFailed": "Failed to load Master API Keys",
+      "loadSingleFailed": "Failed to load Master API Key",
+      "createFailed": "Failed to create Master API Key",
+      "updateFailed": "Failed to update Master API Key",
+      "deleteFailed": "Failed to delete Master API Key",
+      "regenerateFailed": "Failed to regenerate Master API Key"
+    }
+  }
+}

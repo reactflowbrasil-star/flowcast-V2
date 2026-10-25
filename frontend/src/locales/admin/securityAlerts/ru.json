@@ -1,0 +1,58 @@
+{
+  "securityAlerts": {
+    "title": "Оповещения безопасности",
+    "subtitle": "Мониторинг инцидентов безопасности и управление блокировками",
+    "noAlerts": "Нет оповещений безопасности. Все в норме.",
+    "viewDetails": "Просмотреть детали",
+    "dismiss": "Закрыть",
+    "severity": {
+      "low": "Низкая",
+      "medium": "Средняя",
+      "high": "Высокая",
+      "critical": "Критическая"
+    },
+    "filterBy": {
+      "type": "Фильтр по типу",
+      "dateRange": "Диапазон дат",
+      "status": "Статус"
+    },
+    "actions": {
+      "investigate": "Расследовать",
+      "banUser": "Заблокировать пользователя",
+      "unbanUser": "Разблокировать пользователя",
+      "cleanupExpiredBans": "Очистить истекшие блокировки",
+      "createManualBan": "Создать блокировку вручную"
+    },
+    "cards": {
+      "totalIncidents": "Всего инцидентов",
+      "todaysIncidents": "Инциденты за сегодня",
+      "activeBans": "Активные блокировки",
+      "permanentBans": "Постоянные блокировки",
+      "blacklistedDevices": "Черный список устройств"
+    },
+    "confirmDelete": "Удалить это оповещение? Это действие нельзя отменить.",
+    "noPermission": "У вас нет прав для выполнения этого действия.",
+    "newLabel": "Новое",
+    "moreAlerts": "... и еще {{count}} оповещений",
+    "values": {
+      "unknown": "Неизвестно"
+    },
+    "browserNotification": {
+      "title": "Оповещение безопасности: {{title}}"
+    },
+    "alerts": {
+      "multipleFailedLogins": {
+        "title": "Множественные неудачные попытки входа",
+        "description": "{{count}} неудачных попыток входа с IP {{ip}} за последний час"
+      },
+      "unusualDevices": {
+        "title": "Необычная активность устройств",
+        "description": "Пользователь {{username}} вошел с {{deviceCount}} разных устройств на этой неделе"
+      },
+      "highActivity": {
+        "title": "Период высокой активности",
+        "description": "{{viewCount}} просмотров контента за последний час"
+      }
+    }
+  }
+}

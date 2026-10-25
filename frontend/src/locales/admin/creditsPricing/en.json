@@ -1,0 +1,44 @@
+{
+  "creditsPricing": {
+    "title": "Credits Pricing (Stripe)",
+    "description": "Configure the base USD price per credit and volume discount tiers used for Stripe Checkout purchases.",
+    "loading": "Loading pricing configuration...",
+    "updated": "Pricing configuration updated successfully",
+    "tiersSorted": "Tiers normalized and sorted",
+    "savePricingConfig": "Save Pricing Configuration",
+    "error": {
+      "loadFailed": "Failed to load pricing configuration:",
+      "updateFailed": "Failed to update pricing configuration",
+      "fetchFailed": "Failed to fetch pricing config",
+      "invalidTierConfig": "Invalid tier configuration"
+    },
+    "validation": {
+      "tooLarge": "Too large",
+      "minPercent": "Min 0%",
+      "maxPercent": "Max 100%",
+      "basePricePositive": "Base price must be greater than 0",
+      "maxTiers": "Maximum 50 tiers",
+      "tiersAscendingOrder": "Tiers must be in strictly ascending order by min quantity"
+    },
+    "retry": "Retry",
+    "basePrice": {
+      "label": "Base Price (USD per credit)",
+      "help": "Base price before discounts. Discounts apply by quantity."
+    },
+    "currentBasePrice": "Current base price",
+    "activeTiers": "Active tiers",
+    "tiersDescription": "Define discount tiers. The highest tier where min quantity ≤ purchase quantity will be applied.",
+    "actions": {
+      "normalizeSort": "Normalize/Sort",
+      "addTier": "Add Tier"
+    },
+    "table": {
+      "minQuantity": "Min Quantity (inclusive)",
+      "discountPercent": "Discount Percent",
+      "noTiers": "No tiers configured. Base price applies for all quantities."
+    }
+  },
+  "common": {
+    "saving": "Saving..."
+  }
+}

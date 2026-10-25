@@ -1,0 +1,30 @@
+{
+  "title": "Codes Cadeaux",
+  "description": "Gérez les codes cadeaux à usage unique ou multiple pour créer ou étendre des abonnements utilisateurs.",
+  "create": "Créer Code",
+  "bulkCreate": "Création en Masse",
+  "export": "Exporter CSV",
+  "noData": "Aucun code cadeau disponible à l'export.",
+  "bulkCreated": "Créé {{count}} codes cadeaux",
+  "created": "Code cadeau créé",
+  "deletedSelected": "Supprimé {{count}} codes cadeaux sélectionnés",
+  "generate": "Générer",
+  "deleteSelected": "Supprimer Sélection ({{count}})",
+  "deleteConfirm": "Supprimer {{count}} codes cadeaux sélectionnés ? Cette action est irréversible.",
+  "table": {
+    "code": "Code",
+    "duration_days": "Durée (jours)",
+    "uses": "Utilisations",
+    "remaining": "Restant",
+    "expires_at": "Expire Le",
+    "created_at": "Créé Le"
+  },
+  "form": {
+    "codeOptional": "Code (optionnel)",
+    "durationMonths": "Durée (mois)",
+    "uses": "Utilisations",
+    "prefixOptional": "Préfixe (optionnel)",
+    "count": "Quantité",
+    "usesPerCode": "Utilisations par code"
+  }
+}

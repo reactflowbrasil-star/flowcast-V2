@@ -1,0 +1,55 @@
+{
+  "title": "User Device Monitoring",
+  "description": "Monitor active devices for your end users and manage device limits",
+  "loading": "Loading...",
+  "error": {
+    "loadFailed": "Failed to load users: {{message}}",
+    "removeDevice": "Failed to remove device: {{message}}",
+    "noUserSelected": "No selected user"
+  },
+  "time": {
+    "justNow": "Just now",
+    "minutesAgo": "{{count}}m ago",
+    "hoursAgo": "{{count}}h ago",
+    "daysAgo": "{{count}}d ago"
+  },
+  "deviceStatus": {
+    "online": "Online",
+    "recent": "Recent",
+    "offline": "Offline"
+  },
+  "userStatus": {
+    "active": "Active",
+    "suspended": "Suspended"
+  },
+  "table": {
+    "username": "Username",
+    "deviceLimit": "Device Limit",
+    "activeDevices": "Active Devices",
+    "status": "Status",
+    "actions": "Actions",
+    "device": "Device",
+    "deviceId": "Device ID",
+    "lastSeen": "Last Seen",
+    "devices": "devices",
+    "active": "active"
+  },
+  "empty": {
+    "noUsers": "No users found",
+    "noUsersDescription": "Create some end users to monitor their devices.",
+    "noDevices": "No devices found",
+    "noDevicesDescription": "This user hasn't connected any devices yet."
+  },
+  "actions": {
+    "viewDevices": "View Devices",
+    "remove": "Remove",
+    "removeDevice": "Remove Device",
+    "cancel": "Cancel"
+  },
+  "dialog": {
+    "title": "Device Management - {{username}}",
+    "description": "View and manage active devices for this user. Limit: {{limit}} devices",
+    "removeTitle": "Remove Device",
+    "removeDescription": "Are you sure you want to remove \"{{deviceName}}\" from {{username}}'s account? This will disconnect the device immediately."
+  }
+}

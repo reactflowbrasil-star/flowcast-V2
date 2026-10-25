@@ -1,0 +1,453 @@
+{
+  "user": {
+    "menu": {
+      "home": "首页",
+      "liveTv": "直播",
+      "movies": "电影",
+      "series": "剧集",
+      "kids": "儿童",
+      "anime": "动漫",
+      "events": "活动",
+      "music": "音乐",
+      "favorites": "收藏",
+      "search": "搜索",
+      "custom": "菜单",
+      "descriptions": {
+        "home": "主控制面板",
+        "liveTv": "直播频道",
+        "movies": "电影目录",
+        "series": "剧集和节目",
+        "kids": "儿童内容",
+        "anime": "动漫目录",
+        "events": "特殊活动",
+        "music": "音乐库",
+        "favorites": "您的收藏",
+        "search": "搜索内容",
+        "profile": "管理账户",
+        "devices": "管理设备"
+      }
+    },
+    "languages": {
+      "es": "西班牙语",
+      "es_native": "西班牙语",
+      "en": "英语",
+      "en_native": "英语",
+      "zh": "中文",
+      "zh_native": "中文",
+      "pt": "葡萄牙语",
+      "pt_native": "葡萄牙语",
+      "fr": "法语",
+      "fr_native": "法国人",
+      "ru": "俄语",
+      "ru_native": "俄罗斯",
+      "tr": "土耳其语",
+      "tr_native": "图尔克切",
+      "sk": "斯洛伐克语",
+      "sk_native": "斯洛文尼亚"
+    },
+    "badges": {
+      "continue": "继续"
+    },
+    "language": {
+      "placeholder": "选择语言"
+    },
+    "categoryCopy": {
+      "vod": "计划中包含的点播电影。",
+      "series": "完整的电视剧集，随时追剧。",
+      "tv": "直播频道和24/7节目。",
+      "kids": "为儿童策划的安全内容。",
+      "events": "特殊活动和独家广播。",
+      "anime": "配音和字幕动漫目录。"
+    },
+    "dashboard": {
+      "welcome": "欢迎回来",
+      "guest": "用户",
+      "greeting": "你好 {{name}}",
+      "continueWatching": "继续观看",
+      "progressSync": "我们会在设备间同步你的观看进度。",
+      "noHistory": "你还没有开始任何标题",
+      "series": "剧集",
+      "kids": "儿童",
+      "anime": "动漫",
+      "events": "活动",
+      "liveTv": "直播",
+      "liveChannels": "频道",
+      "liveGuide": "节目表",
+      "nowPlaying": "正在播放",
+      "noEpg": "无 EPG 数据",
+      "channel": "频道",
+      "searchChannels": "搜索频道...",
+      "viewProducts": "我的产品",
+      "manageDevices": "管理设备",
+      "statusActive": "账户已激活",
+      "connectedDevices": "已连接设备",
+      "devicesUsage": "你可以随时管理已激活的设备。",
+      "aiStatus": "推荐引擎",
+      "aiOnline": "已启用",
+      "aiOffline": "配置中",
+      "aiSubtitle": "我们会每隔几小时更新推荐结果",
+      "genreSpotlight": "按类型探索",
+      "genreSpotlightHint": "选择影片类型以细化你看到的合集。",
+      "noAiRecommendations": "我们会尽快为你定制推荐",
+      "noTmdbData": "请配置 TMDB 以启用这些集合",
+      "programGuide": "节目指南",
+      "profile": "个人资料",
+      "secureSession": "加密且受保护的会话",
+      "badgeFeatured": "精选",
+      "welcomeTitle": "欢迎回来，{{name}}",
+      "welcomeDescription": "发现您已经开始观看的内容或探索我们的推荐。",
+      "watchNow": "立即观看",
+      "filters": {
+        "movies": "电影",
+        "sports": "体育",
+        "kids": "儿童"
+      },
+      "liveStreamError": "加载直播流时出错",
+      "liveLoadError": "加载直播频道时出错",
+      "browseGenres": "浏览类型",
+      "popularMovies": "热门电影",
+      "bingeWorthy": "值得追的剧集",
+      "browse": "浏览分类",
+      "contentLibrary": "内容库",
+      "contentSubtitle": "探索我们的收藏",
+      "encryptedSession": "加密会话",
+      "liveChannel": "直播频道",
+      "noContent": "暂无可用内容",
+      "noContentDescription": "当管理员添加电影、剧集或其他媒体后，内容会显示在这里。"
+    },
+    "live": {
+      "liveNow": "正在直播",
+      "loadingGuide": "加载节目表...",
+      "minutesLeft": "还剩 {{count}} 分钟",
+      "showingChannels": "显示 {{count}} 个频道",
+      "channelsLive": "{{count}} 个频道正在直播",
+      "upNext": "接下来",
+      "nowPlaying": "正在播放",
+      "loadingStream": "连接中...",
+      "streamFailed": "加载流失败",
+      "streamError": "加载流出错",
+      "streamUnavailableTitle": "流不可用",
+      "streamUnavailableDescription": "加载此流时发生错误。",
+      "selectPrompt": "选择频道开始观看",
+      "liveBadge": "直播",
+      "unknownChannel": "未知频道",
+      "providerFallback": "{{appName}} 提供商",
+      "toastCurrentlyViewing": "当前正在观看：{{title}}",
+      "noProgramInfo": "暂无节目内容信息",
+      "channelGuide": "频道指南",
+      "noChannelsFound": "未找到频道",
+      "categories": {
+        "sports": "体育",
+        "entertainment": "娱乐",
+        "news": "新闻",
+        "movies": "电影"
+      },
+      "title": "直播",
+      "toggleChannels": "频道",
+      "toggleGuide": "节目表",
+      "playbackError": "播放错误",
+      "epg": {
+        "errors": {
+          "loadFailed": "无法加载节目指南"
+        },
+        "loading": "正在加载节目指南...",
+        "liveProgramming": "直播节目",
+        "noProgramInfo": "暂无节目内容信息",
+        "previous24h": "前24小时",
+        "next24h": "后24小时",
+        "liveNow": "正在直播",
+        "live": "直播",
+        "upcoming": "即将播出",
+        "liveBadge": "直播",
+        "clickToWatch": "点击观看",
+        "watchChannel": "观看频道"
+      }
+    },
+    "filters": {
+      "clear": "清除筛选",
+      "searchChannels": "搜索频道...",
+      "searchMovies": "搜索电影...",
+      "searchShows": "搜索剧集...",
+      "searchKids": "搜索儿童内容...",
+      "searchAnime": "搜索动漫...",
+      "searchEvents": "搜索活动...",
+      "allGenres": "全部类型",
+      "allTypes": "全部分类",
+      "allStatus": "全部状态",
+      "sortTitle": "按标题排序",
+      "sortYear": "按年份排序",
+      "sortRating": "按评分排序"
+    },
+    "kids": {
+      "errorTitle": "加载儿童内容时出错",
+      "searchPlaceholder": "搜索儿童内容...",
+      "emptyTitle": "没有可用的儿童内容",
+      "emptySearchTitle": "未找到结果",
+      "emptySearchDescription": "试试其他搜索词"
+    },
+    "anime": {
+      "errorTitle": "加载动漫时出错",
+      "searchPlaceholder": "搜索动漫...",
+      "emptyTitle": "没有可用的动漫",
+      "emptySearchTitle": "未找到结果",
+      "emptySearchDescription": "试试其他搜索词"
+    },
+    "events": {
+      "errorTitle": "加载活动时出错",
+      "searchPlaceholder": "搜索活动...",
+      "emptyTitle": "没有可用的活动",
+      "emptySearchTitle": "未找到结果",
+      "emptySearchDescription": "试试其他搜索词"
+    },
+    "favorites": {
+      "title": "收藏",
+      "description": "将你喜欢的内容集中在一个地方",
+      "emptyTitle": "你还没有收藏",
+      "emptyDescription": "开始把内容添加到收藏",
+      "emptyMoviesTitle": "你没有收藏的电影",
+      "emptyMoviesDescription": "在电影页面将电影添加到收藏",
+      "emptySeriesTitle": "你没有收藏的剧集",
+      "emptySeriesDescription": "在剧集页面将剧集添加到收藏",
+      "emptyChannelsTitle": "你没有收藏的频道",
+      "emptyChannelsDescription": "在直播页面将频道添加到收藏"
+    },
+    "movies": {
+      "loading": "电影加载中...",
+      "emptyTitle": "未找到电影",
+      "emptyDescription": "尝试调整搜索或筛选条件"
+    },
+    "shows": {
+      "loading": "剧集加载中...",
+      "emptyTitle": "未找到剧集",
+      "emptyDescription": "尝试调整搜索或筛选条件",
+      "season": "季",
+      "seasons": "季",
+      "status": {
+        "ongoing": "连载中",
+        "completed": "已完结",
+        "cancelled": "已取消",
+        "unknown": "未知"
+      }
+    },
+    "pagination": {
+      "pageLabel": "页",
+      "moviesLabel": "电影",
+      "seriesLabel": "剧集",
+      "kidsLabel": "儿童",
+      "animeLabel": "动漫"
+    },
+    "profile": {
+      "badge": "我的账户",
+      "title": "个人资料与安全",
+      "subtitle": "管理个人信息、联系邮箱和登录凭证。",
+      "info": {
+        "title": "基本信息",
+        "username": "用户名",
+        "role": "系统角色",
+        "createdAt": "注册时间",
+        "expiresAt": "到期",
+        "unknown": "未知",
+        "noExpiry": "无到期日期"
+      },
+      "contact": {
+        "title": "联系方式与通知",
+        "emailLabel": "关联邮箱",
+        "emailPlaceholder": "请输入用于接收通知的邮箱",
+        "hint": "我们会使用该邮箱发送安全提醒与找回信息。",
+        "save": "更新邮箱",
+        "saving": "保存中..."
+      },
+      "password": {
+        "title": "修改密码",
+        "current": "当前密码",
+        "currentPlaceholder": "请输入当前密码",
+        "new": "新密码",
+        "newPlaceholder": "至少6个字符",
+        "save": "更新密码",
+        "saving": "更新中...",
+        "success": "密码已更新",
+        "error": "无法更新密码",
+        "hint": "修改后将关闭其他设备上的活跃会话。"
+      },
+      "plan": {
+        "title": "套餐状态",
+        "devices": "使用中的设备：{{count}} / {{max}}",
+        "role": "访问类型：{{role}}",
+        "expires": "有效至 {{date}}",
+        "withoutExpiry": "无到期日期的套餐"
+      },
+      "categories": {
+        "title": "已启用分类",
+        "empty": "你的管理员尚未为你的账户分配任何内容。"
+      },
+      "actions": {
+        "title": "快捷操作",
+        "manageDevices": "管理设备",
+        "exploreContent": "浏览内容",
+        "extendMembership": "延长会员"
+      },
+      "update": {
+        "success": "个人资料已更新",
+        "error": "无法更新个人资料"
+      },
+      "noDataTitle": "无法获取你的个人资料",
+      "noDataDescription": "请尝试刷新页面，或在问题持续时联系支持。",
+      "status": {
+        "unknown": "未知状态",
+        "banned": "账户已暂停",
+        "noExpiry": "无到期日期",
+        "expired": "订阅已过期",
+        "active": "订阅已激活"
+      }
+    },
+    "devices": {
+      "badge": "设备管理",
+      "title": "已绑定的设备",
+      "subtitle": "控制哪些设备可以访问你的账户，并在需要时释放空间。",
+      "onboarding": {
+        "title": "注册此浏览器",
+        "body": "将此浏览器绑定为设备以继续使用控制面板。",
+        "limitTitle": "设备数量已达上限",
+        "limitBody": "删除一个设备以释放名额并注册此浏览器。",
+        "cta": "注册此设备",
+        "fill": "自动填写信息",
+        "already": "此浏览器已注册",
+        "quickRegister": "立即注册此浏览器",
+        "deviceInfo": "当前设备",
+        "slots": "可用 {{available}} / {{max}} 个名额"
+      },
+      "register": {
+        "title": "注册新设备",
+        "deviceId": "设备 ID",
+        "deviceIdPlaceholder": "例如 MAC、UUID 或设备代码",
+        "deviceName": "设备名称",
+        "deviceNamePlaceholder": "例如 客厅电视、Android 盒子...",
+        "generate": "生成随机 ID",
+        "cta": "注册设备",
+        "working": "注册中...",
+        "validation": "你需要填写设备 ID 和名称",
+        "help": "为每个设备使用唯一标识。建议与 Android 应用中使用的名称一致。"
+      },
+      "status": {
+        "title": "使用状态",
+        "progressLabel": "占用率",
+        "tipTitle": "小提示",
+        "tipBody": "如果达到上限，请删除不再使用的设备后再添加新的设备。",
+        "syncTitle": "即时同步",
+        "syncBody": "更改会在 Android 应用重启或刷新会话后生效。"
+      },
+      "list": {
+        "title": "已注册的设备",
+        "loading": "正在检索已绑定设备列表。",
+        "emptyTitle": "你还没有设备",
+        "emptyDescription": "注册你的第一个设备以开始播放内容。",
+        "lastActive": "最近访问：{{date}}",
+        "statusActive": "激活",
+        "remove": "删除设备",
+        "removeSuccess": "设备已删除",
+        "removeError": "无法删除设备"
+      }
+    },
+    "products": {
+      "badge": "我的产品",
+      "title": "计划中启用的访问权限",
+      "subtitle": "根据你的活跃产品探索所有可用内容。",
+      "search": "搜索内容",
+      "devices": "我的设备",
+      "list": {
+        "title": "可用产品"
+      },
+      "empty": {
+        "title": "你还没有分配的产品",
+        "description": "当你的管理员启用类别时，它们会出现在这里。"
+      },
+      "badgeIncluded": "包含在你的计划中",
+      "cta": {
+        "explore": "探索"
+      }
+    },
+    "watch": {
+      "title": "播放器",
+      "invalidId": "无效的内容ID",
+      "notFound": "未找到内容",
+      "noStreamAvailable": "此内容没有可用的流",
+      "streamError": "获取流时出错",
+      "backToDashboard": "返回仪表板",
+      "playNow": "立即播放",
+      "synopsis": "简介",
+      "seasons": "季",
+      "seasonShort": "第{{n}}季",
+      "episodeLabel": "第{{n}}集",
+      "noEpisodes": "没有可用的剧集。",
+      "drmNotice": "此内容已配置DRM — 可能需要兼容的播放器。",
+      "related": "推荐",
+      "noRelated": "暂时没有推荐内容",
+      "goBack": "返回"
+    },
+    "content": {
+      "browse": {
+        "badge": "可用库",
+        "title": "浏览你的内容",
+        "subtitle": "电影、剧集与直播 TV 的统一视图。",
+        "totalCategories": "可用分类：{{count}}",
+        "goToSearch": "前往搜索",
+        "itemCount": "{{count}} 个结果",
+        "loadingDescription": "正在准备你的个性化目录。",
+        "emptyTitle": "该分类目前还没有内容",
+        "emptyDescription": "我们很快会在这里添加更多标题。",
+        "noCategoriesTitle": "尚未分配分类",
+        "noCategoriesDescription": "请联系管理员为你的账户启用内容。",
+        "watch": "观看",
+        "noDescription": "描述待补充",
+        "loadMore": "查看更多标题",
+        "loadingMore": "加载中..."
+      },
+      "search": {
+        "title": "搜索内容",
+        "placeholder": "电影、剧集、频道...",
+        "emptyTitle": "搜索点什么开始吧",
+        "emptyDesc": "输入标题、分类或关键字以查找内容。",
+        "loading": "正在搜索匹配项",
+        "error": "无法执行搜索",
+        "noResults": "没有结果",
+        "tryAgain": "试试其他关键字或检查拼写。"
+      }
+    },
+    "common": {
+      "continue": "继续",
+      "all": "全部",
+      "loading": "加载中...",
+      "search": "搜索",
+      "watch": "观看",
+      "viewAll": "查看全部",
+      "noItems": "没有项目",
+      "comeBackSoon": "请稍后回来发现新内容。",
+      "noResults": "未找到结果",
+      "adjustSearch": "试试调整搜索或筛选条件",
+      "tryDifferent": "试试其他搜索词",
+      "reload": "请尝试刷新页面",
+      "verified": "已验证",
+      "titleCount": "{{count}} 个标题",
+      "titleCount_plural": "{{count}} 个标题",
+      "seriesCount": "{{count}} 部剧集",
+      "seriesCount_plural": "{{count}} 部剧集",
+      "animeCount": "{{count}} 部动漫",
+      "animeCount_plural": "{{count}} 部动漫",
+      "eventCount": "{{count}} 个活动",
+      "eventCount_plural": "{{count}} 个活动",
+      "channelCount": "{{count}} 个频道",
+      "channelCount_plural": "{{count}} 个频道"
+    },
+    "player": {
+      "audioInfo": "音频信息",
+      "audioTracksTitle": "音轨",
+      "audioTracksTitleWithCount": "音轨 ({{count}})",
+      "noAudioTracks": "未检测到音轨",
+      "noAudioTracksHelpLine1": "此视频可能有集成音频而没有单独的音轨，",
+      "noAudioTracksHelpLine2": "或者您的浏览器不支持 AudioTracks API。",
+      "subtitlesTitle": "字幕",
+      "noSubtitles": "无字幕",
+      "playbackSpeed": "速度"
+    }
+  }
+}

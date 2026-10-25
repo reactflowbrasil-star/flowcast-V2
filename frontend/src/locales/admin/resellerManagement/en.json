@@ -1,0 +1,66 @@
+{
+  "uiBulk": {
+    "reseller": {
+      "form": {
+        "usernamePlaceholder": "Enter username",
+        "passwordPlaceholder": "Enter numeric password (4-10 digits)",
+        "emailPlaceholder": "Enter email"
+      }
+    }
+  },
+  "resellerManagement": {
+    "title": "Resellers",
+    "subtitle": "Create and manage resellers with credit system",
+    "createReseller": "Create Reseller",
+    "createResellerDescription": "Create a new reseller account with initial credits and demo limits.",
+    "resetAllCounters": "Reset All Counters",
+    "resetAllCountersConfirm": "Are you sure you want to reset daily demo counters for all resellers? This will set all counters to 0.",
+    "searchByUsernameOrEmail": "Search by username or email...",
+    "noResellersYet": "No resellers yet",
+    "createYourFirstReseller": "Create your first reseller to start managing end users.",
+    "endUsersTitle": "End Users",
+    "endUsersSubtitle": "Create and manage end users across all resellers",
+    "createEndUser": "Create End User",
+    "filters": "Filters",
+    "searchByUsername": "Search by username...",
+    "searchByEmail": "Search by email...",
+    "searchByReseller": "Search by reseller...",
+    "noEndUsersYet": "No end users yet",
+    "viewUsersDialog": {
+      "title": "End Users - {{username}}",
+      "description": "View all end users created by this reseller. These users will be transferred to admin if the reseller is deleted.",
+      "totalUsers": "Total Users",
+      "subtitle": "End users created",
+      "totalDevices": "Total Devices",
+      "totalDevicesSubtitle": "Devices allocated",
+      "creditCost": "Credit Cost",
+      "creditCostSubtitle": "Total credits used",
+      "sectionTitle": "User Details",
+      "empty": "This reseller has no end users yet.",
+      "active": "Active",
+      "inactive": "Inactive",
+      "devices": "devices",
+      "credits": "credits",
+      "expires": "Expires",
+      "never": "Never",
+      "created": "Created",
+      "transferNotice": {
+        "title": "Transfer Notice",
+        "description": "If this reseller is deleted, all {{count}} end user(s) will be automatically transferred to the admin account. The users will retain their current settings and subscription status."
+      }
+    },
+    "resetPasswordDialog": {
+      "successForUser": "Password has been reset successfully for {{username}}.",
+      "newPasswordLabel": "New Password:",
+      "copy": "Copy",
+      "importantLabel": "Important:",
+      "saveImmediately": "Please save this password immediately. It will not be shown again and cannot be recovered.",
+      "errorTitle": "Error resetting password",
+      "generatedNotSaved": "Password was generated but not saved due to error:",
+      "tryAgainQuestion": "Would you like to try again?",
+      "generatedLabel": "Password generated:",
+      "resetForUser": "Reset Password for {{username}}",
+      "confirmContinue": "Are you sure you want to continue?"
+    }
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "title": "Fournisseurs de listes de lecture",
+  "description": "Enregistrez des listes de lecture M3U distantes avec un intervalle d'actualisation afin que les chaînes de télévision en direct restent à jour automatiquement.",
+  "alert": {
+    "title": "Actualisation automatique avec TTL",
+    "description": "Chaque fournisseur est récupéré à nouveau à l'expiration de son TTL. Le backend préserve les clés DRM ClearKey, les en-têtes, les proxys et les valeurs DNS-over-HTTPS annoncés dans les entrées de la liste de lecture."
+  },
+  "form": {
+    "providerName": "Nom du fournisseur *",
+    "playlistUrl": "URL de la liste de lecture *",
+    "refreshInterval": "Intervalle d'actualisation (minutes)",
+    "enableAutoRefresh": "Activer l'actualisation automatique",
+    "enableAutoRefreshHint": "Désactivez pour conserver la liste de lecture mais arrêter les actualisations programmées.",
+    "adding": "Ajout…",
+    "addProvider": "Ajouter un fournisseur"
+  },
+  "table": {
+    "name": "Nom",
+    "ttl": "TTL",
+    "status": "Statut",
+    "lastFetch": "Dernière récupération",
+    "nextRefresh": "Prochaine actualisation",
+    "actions": "Actes"
+  },
+  "status": {
+    "enabled": "Activé",
+    "disabled": "Désactivé"
+  },
+  "buttons": {
+    "sync": "Synchroniser",
+    "delete": "Supprimer",
+    "close": "Fermer"
+  },
+  "validation": {
+    "nameRequired": "Le nom du fournisseur est requis",
+    "urlInvalid": "Une URL M3U/M3U8 valide est requise",
+    "ttlMinimum": "Le TTL doit être d'au moins 1 minute"
+  },
+  "errors": {
+    "loadFailed": "Impossible de charger les fournisseurs",
+    "createFailed": "Impossible de créer le fournisseur",
+    "createUnexpected": "Erreur inattendue lors de la création du fournisseur",
+    "deleteFailed": "Impossible de supprimer le fournisseur",
+    "deleteUnexpected": "Erreur inattendue lors de la suppression du fournisseur",
+    "syncFailed": "Échec de la synchronisation",
+    "syncUnexpected": "Erreur inattendue pendant la synchronisation"
+  },
+  "placeholders": {
+    "providerName": "Sensa",
+    "playlistUrl": "https://exemple.com/liste.m3u"
+  },
+  "units": {
+    "minutes": "min"
+  },
+  "deleteConfirm": "Êtes-vous sûr de vouloir supprimer le fournisseur {{name}} ? Cette action est irréversible."
+}

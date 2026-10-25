@@ -1,0 +1,40 @@
+{
+  "editSeries": {
+    "title": {
+      "editAnime": "编辑动漫",
+      "editSeries": "编辑剧集"
+    },
+    "labels": {
+      "seriesTitle": "剧集标题 *",
+      "description": "描述",
+      "year": "年份",
+      "tmdbId": "TMDB ID",
+      "totalSeasons": "总季数",
+      "posterUrl": "海报URL",
+      "backdropUrl": "背景URL",
+      "active": "启用"
+    },
+    "placeholders": {
+      "seriesTitle": "输入剧集标题...",
+      "description": "输入剧集描述...",
+      "year": "2024",
+      "tmdbId": "123456",
+      "totalSeasons": "1",
+      "posterUrl": "https://example.com/poster.jpg",
+      "backdropUrl": "https://example.com/backdrop.jpg"
+    },
+    "episodes": {
+      "title": "剧集管理：",
+      "description": "剧集没有直接的视频URL。视频内容通过季节中的单个剧集进行管理。",
+      "manageButton": "📺 管理剧集"
+    },
+    "buttons": {
+      "cancel": "取消",
+      "updating": "更新中...",
+      "update": "更新剧集"
+    },
+    "validation": {
+      "titleRequired": "标题是必填项"
+    }
+  }
+}

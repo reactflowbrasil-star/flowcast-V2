@@ -1,0 +1,64 @@
+{
+  "title": "Bezpečnosť",
+  "subtitle": "Sledovanie incidentov, zákazov a zariadení na čiernej listine.",
+  "tabs": {
+    "overview": "Prehľad",
+    "incidents": "Incidenty",
+    "bans": "Zákazy",
+    "blacklistedDevices": "Zariadenia na čiernej listine"
+  },
+  "actions": {
+    "cleanupExpiredBans": "Vyčistiť expirované zákazy",
+    "createManualBan": "Vytvoriť manuálny zákaz"
+  },
+  "searchByUsernamePlaceholder": "Hľadať podľa používateľského mena...",
+  "confirmDelete": "Naozaj chcete odstrániť túto položku? Túto akciu nie je možné vrátiť späť.",
+  "admin": {
+    "createBan": {
+      "title": "Vytvoriť manuálny zákaz",
+      "usernameLabel": "Používateľské meno",
+      "usernamePlaceholder": "Zadajte používateľské meno na zákaz",
+      "banTypeLabel": "Typ zákazu",
+      "temporary": "Dočasný",
+      "permanent": "Trvalý",
+      "banLevelLabel": "Úroveň zákazu",
+      "level1": "Úroveň 1 - Obmedzenie prihlásenia",
+      "level2": "Úroveň 2 - Pozastavenie účtu",
+      "level3": "Úroveň 3 - Trvalý zákaz",
+      "customDurationLabel": "Vlastné trvanie",
+      "customDurationPlaceholder": "Zadajte trvanie v dňoch",
+      "customDurationNote": "Nechajte prázdne pre trvalý zákaz",
+      "reasonLabel": "Dôvod",
+      "reasonPlaceholder": "Zadajte dôvod zákazu"
+    }
+  },
+  "cards": {
+    "totalIncidents": "Celkom incidentov",
+    "todaysIncidents": "Dnešné incidenty",
+    "activeBans": "Aktívne zákazy",
+    "permanentBans": "Trvalé zákazy",
+    "blacklistedDevices": "Zariadenia na čiernej listine"
+  },
+  "stats": {
+    "incidentsByType": "Incidenty podľa typu",
+    "recentIncidents": "Nedávne incidenty",
+    "noRecentIncidents": "Žiadne nedávne incidenty",
+    "summary": "Zhrnutie bezpečnosti",
+    "totalIncidents": "Celkom incidentov",
+    "todaysIncidents": "Dnešné incidenty",
+    "activeBans": "Aktívne zákazy",
+    "permanentBans": "Trvalé zákazy"
+  },
+  "pagination": {
+    "previous": "Predchádzajúce",
+    "next": "Nasledujúce",
+    "pageOf": "Strana {{page}} z {{total_pages}}",
+    "showing": "Zobrazuje sa {{from}}–{{to}} z {{total}}"
+  },
+  "notifications": {
+    "security": {
+      "errorLoadingStatistics": "Nepodarilo sa načítať štatistiky bezpečnosti",
+      "errorCleaningExpiredBans": "Nepodarilo sa vyčistiť expirované zákazy"
+    }
+  }
+}

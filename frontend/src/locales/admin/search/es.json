@@ -1,0 +1,17 @@
+{
+  "search": {
+    "placeholder": "Buscar...",
+    "noResults": "No se encontraron resultados.",
+    "types": {
+      "user": "Usuario",
+      "reseller": "Revendedor",
+      "content": "Contenido",
+      "music": "Música"
+    },
+    "shortcuts": {
+      "navigate": "para navegar",
+      "enterKey": "Enter",
+      "escapeKey": "Esc"
+    }
+  }
+}

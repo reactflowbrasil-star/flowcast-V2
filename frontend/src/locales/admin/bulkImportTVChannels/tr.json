@@ -1,0 +1,33 @@
+{
+  "bulkImportTVChannels": {
+    "title": "Toplu İçe Aktarım",
+    "description": "Bir M3U listesinden birden fazla TV kanalını içe aktarın.",
+    "labels": {
+      "format": "Biçim",
+      "provider": "Sağlayıcı",
+      "globalDescription": "Genel Açıklama",
+      "country": "Ülke",
+      "startChannelNumber": "Başlangıç Kanal Numarası",
+      "m3uList": "M3U Listesi"
+    },
+    "placeholders": {
+      "provider": "ör: Sağlayıcı A, Sağlayıcı B",
+      "description": "Tüm kanallar için açıklama",
+      "country": "Ör: US, AR, TR",
+      "startChannelNumber": "Boş bırakılırsa otomatik hesaplanır"
+    },
+    "buttons": {
+      "cancel": "İptal",
+      "chooseFile": "M3U dosyası seç",
+      "import": "İçe Aktar"
+    },
+    "validation": {
+      "pasteM3uContent": "M3U içeriğini yapıştırın",
+      "mustBePositiveNumber": "Pozitif bir sayı olmalı",
+      "invalidData": "Geçersiz veri",
+      "bulkImportFailed": "Toplu içe aktarım başarısız",
+      "unknownError": "Bilinmeyen hata",
+      "fileReadFailed": "Seçilen dosya okunamadı"
+    }
+  }
+}

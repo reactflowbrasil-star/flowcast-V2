@@ -1,0 +1,242 @@
+{
+  "en": {
+    "admin": {
+      "masterKeys": {
+        "descriptionPlaceholder": "Description of the external application or integration...",
+        "descriptionHelp": "Optional: Describe what this API key will be used for",
+        "infoTitle": "API Integration",
+        "infoText": "Master API Keys provide full API access for external applications without requiring UI authentication. Perfect for content management tools, automated scripts, and third-party integrations.",
+        "badges": {
+          "externalApps": "External Apps",
+          "automationScripts": "Automation Scripts",
+          "thirdPartyTools": "Third-party Tools"
+        },
+        "neverLabel": "Never"
+      }
+    },
+    "placeholders": {
+      "enterUsername": "Enter username",
+      "currentPassword": "Enter 4-10 digit password",
+      "userEmail": "Enter user email",
+      "maximumDevices": "Max devices (1-10)",
+      "expiryDateTime": "Select expiration date & time",
+      "selectReseller": "Select a reseller",
+      "searchEmail": "Search by email...",
+      "searchReseller": "Search by reseller...",
+      "noMatches": "No matches",
+      "noMatchesDescription": "Try adjusting filters or search terms",
+      "noEndUsers": "No end users",
+      "noEndUsersDescription": "Start by creating your first end user"
+    }
+  },
+  "es": {
+    "admin": {
+      "masterKeys": {
+        "descriptionPlaceholder": "Descripción de la aplicación o integración externa...",
+        "descriptionHelp": "Opcional: Describe para qué se usará esta clave API",
+        "infoTitle": "Integración API",
+        "infoText": "Las Claves API Maestras brindan acceso completo a la API para aplicaciones externas sin requerir autenticación en la interfaz. Ideales para herramientas de gestión de contenido, scripts automatizados e integraciones de terceros.",
+        "badges": {
+          "externalApps": "Aplicaciones externas",
+          "automationScripts": "Scripts de automatización",
+          "thirdPartyTools": "Herramientas de terceros"
+        },
+        "neverLabel": "Nunca"
+      }
+    },
+    "placeholders": {
+      "enterUsername": "Ingresa el usuario",
+      "currentPassword": "Ingresa contraseña de 4-10 dígitos",
+      "userEmail": "Ingresa el correo del usuario",
+      "maximumDevices": "Máx. dispositivos (1-10)",
+      "expiryDateTime": "Selecciona fecha y hora de expiración",
+      "selectReseller": "Selecciona un revendedor",
+      "searchEmail": "Buscar por correo...",
+      "searchReseller": "Buscar por revendedor...",
+      "noMatches": "Sin coincidencias",
+      "noMatchesDescription": "Intenta ajustar filtros o términos de búsqueda",
+      "noEndUsers": "Sin usuarios finales",
+      "noEndUsersDescription": "Comienza creando tu primer usuario final"
+    }
+  },
+  "zh": {
+    "admin": {
+      "masterKeys": {
+        "descriptionPlaceholder": "外部应用或集成的说明…",
+        "descriptionHelp": "可选：描述此 API 密钥的用途",
+        "infoTitle": "API 集成",
+        "infoText": "主 API 密钥为外部应用提供完整的 API 访问权限，无需 UI 登录。非常适合内容管理工具、自动化脚本和第三方集成。",
+        "badges": {
+          "externalApps": "外部应用",
+          "automationScripts": "自动化脚本",
+          "thirdPartyTools": "第三方工具"
+        },
+        "neverLabel": "从未"
+      }
+    },
+    "placeholders": {
+      "enterUsername": "输入用户名",
+      "currentPassword": "输入 4-10 位数字密码",
+      "userEmail": "输入用户邮箱",
+      "maximumDevices": "最大设备数 (1-10)",
+      "expiryDateTime": "选择到期日期和时间",
+      "selectReseller": "选择经销商",
+      "searchEmail": "按邮箱搜索…",
+      "searchReseller": "按经销商搜索…",
+      "noMatches": "无匹配结果",
+      "noMatchesDescription": "尝试调整筛选或搜索条件",
+      "noEndUsers": "暂无终端用户",
+      "noEndUsersDescription": "从创建第一个终端用户开始"
+    }
+  },
+  "pt": {
+    "admin": {
+      "masterKeys": {
+        "descriptionPlaceholder": "Descrição da aplicação externa ou integração...",
+        "descriptionHelp": "Opcional: Descreva para que esta chave API será usada",
+        "infoTitle": "Integração API",
+        "infoText": "As Chaves API Mestras fornecem acesso completo à API para aplicações externas sem exigir autenticação na interface. Perfeito para ferramentas de gestão de conteúdo, scripts automatizados e integrações de terceiros.",
+        "badges": {
+          "externalApps": "Apps Externos",
+          "automationScripts": "Scripts de Automação",
+          "thirdPartyTools": "Ferramentas de Terceiros"
+        },
+        "neverLabel": "Nunca"
+      }
+    },
+    "placeholders": {
+      "enterUsername": "Digite o nome de usuário",
+      "currentPassword": "Digite a senha de 4-10 dígitos",
+      "userEmail": "Digite o email do usuário",
+      "maximumDevices": "Máx dispositivos (1-10)",
+      "expiryDateTime": "Selecione a data e hora de expiração",
+      "selectReseller": "Selecione um revendedor",
+      "searchEmail": "Buscar por email...",
+      "searchReseller": "Buscar por revendedor...",
+      "noMatches": "Sem correspondências",
+      "noMatchesDescription": "Tente ajustar os filtros ou termos de busca",
+      "noEndUsers": "Sem usuários finais",
+      "noEndUsersDescription": "Comece criando seu primeiro usuário final"
+    }
+  },
+  "fr": {
+    "admin": {
+      "masterKeys": {
+        "descriptionPlaceholder": "Description de l'application externe ou de l'intégration...",
+        "descriptionHelp": "Facultatif : Décrivez l'utilisation de cette clé API",
+        "infoTitle": "Intégration API",
+        "infoText": "Les clés API Maîtres offrent un accès complet à l'API pour les applications externes sans authentification UI. Idéal pour les outils de gestion de contenu, les scripts automatisés et les intégrations tierces.",
+        "badges": {
+          "externalApps": "Apps Externes",
+          "automationScripts": "Scripts d'Automatisation",
+          "thirdPartyTools": "Outils Tiers"
+        },
+        "neverLabel": "Jamais"
+      }
+    },
+    "placeholders": {
+      "enterUsername": "Entrez le nom d'utilisateur",
+      "currentPassword": "Entrez un mot de passe de 4 à 10 chiffres",
+      "userEmail": "Entrez l'email de l'utilisateur",
+      "maximumDevices": "Max appareils (1-10)",
+      "expiryDateTime": "Sélectionnez la date et l'heure d'expiration",
+      "selectReseller": "Sélectionnez un revendeur",
+      "searchEmail": "Rechercher par email...",
+      "searchReseller": "Rechercher par revendeur...",
+      "noMatches": "Aucune correspondance",
+      "noMatchesDescription": "Essayez d'ajuster les filtres ou les termes de recherche",
+      "noEndUsers": "Aucun utilisateur final",
+      "noEndUsersDescription": "Commencez par créer votre premier utilisateur final"
+    }
+  },
+  "ru": {
+    "admin": {
+      "masterKeys": {
+        "descriptionPlaceholder": "Описание внешнего приложения или интеграции...",
+        "descriptionHelp": "Опционально: опишите, для чего будет использоваться этот API-ключ",
+        "infoTitle": "Интеграция по API",
+        "infoText": "Мастер API-ключи предоставляют полный доступ к API для внешних приложений без необходимости аутентификации через интерфейс. Идеально подходит для инструментов управления контентом, автоматизированных скриптов и сторонних интеграций.",
+        "badges": {
+          "externalApps": "Внешние приложения",
+          "automationScripts": "Скрипты автоматизации",
+          "thirdPartyTools": "Сторонние инструменты"
+        },
+        "neverLabel": "Никогда"
+      }
+    },
+    "placeholders": {
+      "enterUsername": "Введите имя пользователя",
+      "currentPassword": "Введите пароль (4-10 цифр)",
+      "userEmail": "Введите email пользователя",
+      "maximumDevices": "Макс. устройств (1-10)",
+      "expiryDateTime": "Выберите дату и время истечения",
+      "selectReseller": "Выберите реселлера",
+      "searchEmail": "Поиск по email...",
+      "searchReseller": "Поиск по реселлеру...",
+      "noMatches": "Нет совпадений",
+      "noMatchesDescription": "Попробуйте изменить фильтры или условия поиска",
+      "noEndUsers": "Нет конечных пользователей",
+      "noEndUsersDescription": "Начните с создания первого конечного пользователя"
+    }
+  },
+  "tr": {
+    "admin": {
+      "masterKeys": {
+        "descriptionPlaceholder": "Harici uygulama veya entegrasyon açıklaması...",
+        "descriptionHelp": "İsteğe bağlı: Bu API anahtarının ne için kullanılacağını açıklayın",
+        "infoTitle": "API Entegrasyonu",
+        "infoText": "Ana API Anahtarları, UI kimlik doğrulaması gerektirmeden harici uygulamalar için tam API erişimi sağlar. İçerik yönetim araçları, otomatik komut dosyaları ve üçüncü taraf entegrasyonları için mükemmeldir.",
+        "badges": {
+          "externalApps": "Harici Uygulamalar",
+          "automationScripts": "Otomasyon Komut Dosyaları",
+          "thirdPartyTools": "Üçüncü Taraf Araçlar"
+        },
+        "neverLabel": "Asla"
+      }
+    },
+    "placeholders": {
+      "enterUsername": "Kullanıcı adını girin",
+      "currentPassword": "4-10 haneli şifre girin",
+      "userEmail": "Kullanıcı e-postasını girin",
+      "maximumDevices": "Maksimum cihaz (1-10)",
+      "expiryDateTime": "Sona erme tarihi ve saatini seçin",
+      "selectReseller": "Bir bayi seçin",
+      "searchEmail": "E-postaya göre ara...",
+      "searchReseller": "Bayiye göre ara...",
+      "noMatches": "Eşleşme bulunamadı",
+      "noMatchesDescription": "Filtreleri veya arama terimlerini ayarlamayı deneyin",
+      "noEndUsers": "Son kullanıcı yok",
+      "noEndUsersDescription": "İlk son kullanıcınızı oluşturarak başlayın"
+    }
+  },
+  "sk": {
+    "admin": {
+      "masterKeys": {
+        "descriptionPlaceholder": "Popis externej aplikácie alebo integrácie...",
+        "descriptionHelp": "Voliteľné: Popíšte, na čo sa tento API kľúč bude používať",
+        "infoTitle": "API integrácia",
+        "infoText": "Hlavné API kľúče poskytujú plný prístup k API pre externé aplikácie bez potreby autentifikácie cez UI. Ideálne pre nástroje na správu obsahu, automatizované skripty a integrácie tretích strán.",
+        "badges": {
+          "externalApps": "Externé aplikácie",
+          "automationScripts": "Automatizované skripty",
+          "thirdPartyTools": "Nástroje tretích strán"
+        },
+        "neverLabel": "Nikdy"
+      }
+    },
+    "placeholders": {
+      "enterUsername": "Zadajte používateľské meno",
+      "currentPassword": "Zadajte 4-10 miestne heslo",
+      "userEmail": "Zadajte email používateľa",
+      "maximumDevices": "Max. zariadení (1-10)",
+      "expiryDateTime": "Vyberte dátum a čas vypršania",
+      "selectReseller": "Vyberte predajcu",
+      "searchEmail": "Hľadať podľa emailu...",
+      "searchReseller": "Hľadať podľa predajcu...",
+      "noMatches": "Žiadne zhody",
+      "noMatchesDescription": "Skúste upraviť filtre alebo hľadané výrazy",
+      "noEndUsers": "Žiadni koncoví používatelia",
+      "noEndUsersDescription": "Začnite vytvorením prvého koncového používateľa"
+    }
+  }
+}

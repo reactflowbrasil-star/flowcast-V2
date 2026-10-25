@@ -1,0 +1,48 @@
+{
+  "editUser": {
+    "title": "Editar usuario:",
+    "description": "Actualiza la información del usuario y la contraseña",
+    "labels": {
+      "username": "Usuario",
+      "email": "Correo electrónico",
+      "password": "Nueva contraseña (4-10 dígitos)",
+      "expiresAt": "Fecha de expiración",
+      "maxDevices": "Máx. dispositivos",
+      "status": "Estado",
+      "contentCategories": "Categorías de contenido"
+    },
+    "placeholders": {
+      "username": "Ingresa el usuario",
+      "email": "Ingresa el email",
+      "password": "Deja vacío para mantener la actual"
+    },
+    "hints": {
+      "expiresAtEmpty": "Deja vacío para sin expiración",
+      "categoriesHelp": "Haz clic para seleccionar las categorías de contenido a las que este usuario tendrá acceso."
+    },
+    "status": {
+      "active": "Activo",
+      "suspended": "Suspendido"
+    },
+    "categories": {
+      "loading": "Cargando categorías...",
+      "noCategories": "No hay categorías disponibles"
+    },
+    "buttons": {
+      "cancel": "Cancelar",
+      "update": "Actualizar usuario",
+      "updating": "Actualizando..."
+    },
+    "errors": {
+      "noUserSelected": "Ningún usuario seleccionado"
+    },
+    "validation": {
+      "usernameMin": "El usuario debe tener al menos 3 caracteres",
+      "invalidEmail": "Email inválido",
+      "passwordMin": "La contraseña debe tener al menos 4 dígitos",
+      "passwordMax": "La contraseña debe tener como máximo 10 dígitos",
+      "passwordDigitsOnly": "La contraseña solo puede contener números",
+      "maxDevicesMax": "Se permiten como máximo 10 dispositivos"
+    }
+  }
+}

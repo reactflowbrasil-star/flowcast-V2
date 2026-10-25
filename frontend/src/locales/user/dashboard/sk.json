@@ -1,0 +1,32 @@
+{
+  "title": "Nástenka",
+  "welcome": "Vitajte späť",
+  "guest": "Hosť",
+  "navigation": {
+    "home": "Domov",
+    "movies": "Filmy",
+    "tv": "Živé vysielanie",
+    "series": "TV seriály",
+    "kids": "Deti",
+    "anime": "Anime",
+    "events": "Udalosti",
+    "music": "Hudba",
+    "content": "Obsah",
+    "devices": "Zariadenia",
+    "profile": "Profil",
+    "products": "Produkty"
+  },
+  "sidebar": {
+    "viewProfile": "Zobraziť a upraviť profil",
+    "secureSession": "Zabezpečená relácia",
+    "logout": "Odhlásiť sa"
+  },
+  "stats": {
+    "activeDevices": "Aktívne zariadenia",
+    "subscription": "Predplatné",
+    "expiresAt": "Expiruje",
+    "unlimited": "Neobmedzené",
+    "active": "Aktívne",
+    "expired": "Expirované"
+  }
+}

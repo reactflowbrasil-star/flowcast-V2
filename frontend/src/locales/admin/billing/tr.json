@@ -1,0 +1,114 @@
+{
+  "billing": {
+    "overview": {
+      "title": "Fatura Özeti",
+      "description": "Gelir ve kredi performansı bir bakışta",
+      "metrics": {
+        "onlineRevenue": "Çevrimiçi Gelir",
+        "offlineRevenue": "Çevrimdışı Gelir",
+        "adjustments": "Düzeltmeler",
+        "totalRevenue": "Toplam Gelir",
+        "creditsOnline": "Krediler (Çevrimiçi)",
+        "creditsOffline": "Krediler (Çevrimdışı)",
+        "creditsAdjustments": "Krediler (Düzeltmeler)",
+        "totalCredits": "Toplam Kredi"
+      }
+    },
+    "pricing": {
+      "title": "Kredi Fiyatlandırması",
+      "description": "Sistemde yapılandırılmış taban fiyat ve indirim kademeleri",
+      "basePrice": "Taban fiyat (Kredi başına USD)",
+      "activeTiers": "Aktif kademeler",
+      "effectiveCurrency": "Geçerli para birimi",
+      "tiersNote": "Minimum miktarın karşılandığı en yüksek kademe uygulanacaktır.",
+      "table": {
+        "minQuantity": "Min miktar (dahil)",
+        "discountPercent": "İndirim yüzdesi",
+        "noTiers": "Kademe yapılandırılmadı. Taban fiyat tüm miktarlar için geçerlidir.",
+        "discountSuffix": "indirim"
+      }
+    },
+    "offline": {
+      "title": "Çevrimdışı Ödeme Ekle",
+      "description": "Manuel ödemeleri kaydedin ve anında kredi verin",
+      "labels": {
+        "reseller": "Bayi",
+        "amount": "Tutar (USD)",
+        "credits": "Verilecek krediler",
+        "method": "Yöntem",
+        "reference": "Referans",
+        "notes": "Notlar"
+      },
+      "placeholders": {
+        "resellerSearch": "En az 2 harf yazın...",
+        "amount": "ör. 100.00",
+        "credits": "ör. 100",
+        "method": "nakit/banka/diğer",
+        "reference": "fatura numarası veya referans",
+        "notes": "isteğe bağlı notlar"
+      },
+      "chargedCurrency": "Tahsil edilen para birimi:",
+      "success": "Çevrimdışı ödeme kaydedildi ve krediler verildi",
+      "actions": {
+        "saving": "Kaydediliyor...",
+        "save": "Çevrimdışı Ödemeyi Kaydet"
+      },
+      "errors": {
+        "amountPositive": "Tutar (USD) 0'dan büyük olmalıdır",
+        "creditsPositive": "Krediler pozitif bir tam sayı olmalıdır",
+        "resellerPositive": "Bayi Kimliği pozitif bir tam sayı olmalıdır",
+        "selectReseller": "Listeden bir bayi seçin"
+      }
+    },
+    "transactions": {
+      "title": "Son İşlemler",
+      "description": "Fatura işlemlerini filtrele ve sayfala",
+      "filters": {
+        "source": "Kaynak",
+        "status": "Durum",
+        "resellerId": "Bayi Kimliği",
+        "reference": "Referans/Kullanıcı",
+        "perPage": "Sayfa başına"
+      },
+      "sources": {
+        "stripe": "Stripe",
+        "offline": "Çevrimdışı",
+        "adjustment": "Düzeltme"
+      },
+      "statuses": {
+        "completed": "Tamamlandı",
+        "pending": "Beklemede",
+        "refunded": "İade Edildi",
+        "failed": "Başarısız"
+      },
+      "placeholders": {
+        "resellerId": "ör. 42",
+        "reference": "Referans veya kullanıcı ara"
+      },
+      "table": {
+        "id": "Kimlik",
+        "reseller": "Bayi",
+        "source": "Kaynak",
+        "amount": "Tutar",
+        "credits": "Krediler",
+        "status": "Durum",
+        "reference": "Referans",
+        "createdAt": "Oluşturulma"
+      },
+      "total": "Toplam: {{count}}",
+      "pagination": {
+        "page": "Sayfa {{page}}"
+      },
+      "empty": "İşlem bulunamadı."
+    },
+    "errors": {
+      "fetchOverview": "Fatura özeti yüklenemedi",
+      "fetchPricing": "Fiyatlandırma yapılandırması yüklenemedi",
+      "fetchTransactions": "İşlemler yüklenemedi",
+      "createOfflinePayment": "Çevrimdışı ödeme oluşturulamadı"
+    }
+  },
+  "common": {
+    "refresh": "Yenile"
+  }
+}

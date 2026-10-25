@@ -1,0 +1,1035 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- App Name (uses branding.name from local.properties) -->
+    <string name="app_name">@string/branding_name</string>
+    <string name="app_name_full">@string/branding_name</string>
+    
+    <!-- Navigation -->
+    <string name="nav_home">Anasayfa</string>
+    <string name="nav_search">Ara</string>
+    <string name="nav_movies">Filmler</string>
+    <string name="nav_series">Diziler</string>
+    <string name="nav_live_tv">Canlı TV</string>
+    <string name="nav_kids">Çocuk</string>
+    <string name="nav_anime">anime</string>
+    <string name="nav_events">Etkinlikler</string>
+
+    <string name="nav_favorites">Favoriler</string>
+    <string name="nav_library">Kitaplık</string>
+    <string name="nav_music">Müzik</string>
+    <string name="nav_settings">Ayarlar</string>
+    <string name="nav_profile">Profil</string>
+
+    <!-- Events & Views -->
+    <string name="label_view_categories">Kategoriler</string>
+    <string name="label_view_compact">Sıkışık</string>
+    <string name="label_view_large">Geniş</string>
+    <string name="channels_available">%1$d kanal mevcut</string>
+    <string name="category_no_channels">Bu kategoride kanal bulunamadı</string>
+    
+    <!-- Authentication -->
+    <string name="auth_welcome">IPTV\'ye Hoş Geldiniz</string>
+    <string name="auth_welcome_subtitle">Başlamak için cihazınızı kaydedin</string>
+    <string name="auth_register_device">Cihazı Kaydet</string>
+    <string name="auth_device_name">Cihaz Adı</string>
+    <string name="auth_device_name_hint">Android TV\'im</string>
+    <string name="auth_activation_code">Aktivasyon Kodu</string>
+    <string name="auth_activation_code_hint">6 haneli kodu girin</string>
+    <string name="auth_activate">Aktif Et</string>
+    <string name="auth_activating">Aktif ediliyor…</string>
+    <string name="auth_registering">Kaydediliyor…</string>
+    <string name="auth_success">Cihaz başarıyla aktif edildi</string>
+    <string name="auth_activate_device">Cihazı Aktifleştir</string>
+    <string name="auth_activate_subtitle">Size verilen aktivasyon kodunu girin</string>
+    
+    <!-- Content -->
+    <string name="content_play">Oynat</string>
+    <string name="content_play_now">Şimdi Oynat</string>
+    <string name="content_more_info">Daha fazla bilgi</string>
+    <string name="content_add_favorite">Favorilere ekle</string>
+    <string name="content_remove_favorite">Favorilerden çıkar</string>
+    <string name="content_download">İndir</string>
+    <string name="content_share">Paylaş</string>
+    <string name="content_continue_watching">İzlemeye devam et</string>
+    <string name="content_min_remaining">%d dk kaldı</string>
+    <string name="content_popular_movies">Popüler Filmler</string>
+    <string name="content_recommended_series">Önerilen Diziler</string>
+    <string name="content_recently_added">Son eklenenler</string>
+    <string name="content_see_all">Hepsini gör</string>
+    <string name="content_empty_message">İçerik mevcut değil</string>
+    
+    <!-- Player -->
+    <string name="player_play">Oynat</string>
+    <string name="player_pause">Duraklat</string>
+    <string name="player_stop">Durdur</string>
+    <string name="player_forward">10sn İleri</string>
+    <string name="player_backward">10sn Geri</string>
+    <string name="player_fullscreen">Tam ekran</string>
+    <string name="player_exit_fullscreen">Tam ekrandan çık</string>
+    <string name="player_volume">Ses</string>
+    <string name="player_subtitles">Altyazı</string>
+    <string name="player_quality">Kalite</string>
+    <string name="player_loading">Video hazırlanıyor…</string>
+    <string name="player_placeholder_message">Oynatmak için bir içerik seçin</string>
+    <string name="player_subtitle_settings">Altyazı Ayarları</string>
+    <string name="player_no_subtitles">Altyazı mevcut değil</string>
+    <string name="player_subtitle_off">Off</string>
+    <string name="player_subtitle_off_desc">Tüm altyazıları devre dışı bırak</string>
+    
+    <!-- Search -->
+    <string name="search_hint">Film, dizi, kanal ara…</string>
+    <string name="search_no_results">Sonuç bulunamadı</string>
+    <string name="search_suggestions">Öneriler</string>
+    <string name="search_recent">Son aramalar</string>
+    <string name="search_searching">Aranıyor…</string>
+    <string name="search_placeholder">İçerik ara…</string>
+    <string name="search_no_results_title">Sonuç yok</string>
+    <string name="search_no_results_message">Aramanıza uygun sonuç bulunamadı</string>
+    <string name="search_no_results_suggestions">Farklı anahtar kelimeler deneyin</string>
+    
+    <!-- Settings -->
+    <string name="settings_profile">Profil</string>
+    <string name="settings_video">Video</string>
+    <string name="settings_audio">Ses</string>
+
+    <string name="settings_devices">Cihazlar</string>
+    <string name="settings_about">Hakkında</string>
+    <string name="settings_logout">Çıkış Yap</string>
+    <string name="settings_autoplay">Otomatik oynatma</string>
+    <string name="settings_autoplay_subtitle">Sıradaki bölümü otomatik oynat</string>
+    <string name="settings_subtitles">Altyazılar</string>
+    <string name="settings_subtitles_subtitle">Varsa altyazıları göster</string>
+
+    <string name="settings_title">Ayarlar</string>
+    <string name="settings_video_title">Video</string>
+    <string name="settings_video_quality">Video Kalitesi</string>
+    <string name="settings_video_quality_subtitle">Oynatma kalitesini seçin</string>
+    <string name="settings_app_title">Uygulama</string>
+    <string name="settings_language">Dil</string>
+    <string name="settings_language_subtitle">Uygulama dilini değiştirin</string>
+    <string name="settings_account_title">Hesap</string>
+    <string name="settings_logout_subtitle">Oturumu kapat</string>
+    <string name="settings_about_title">Hakkında</string>
+    <string name="settings_check_updates">Güncellemeleri Kontrol Et</string>
+    <string name="settings_check_updates_subtitle">Uygulama güncellemelerini kontrol edin</string>
+    <string name="settings_app_version">Uygulama sürümü</string>
+    <string name="settings_privacy_policy">Gizlilik Politikası</string>
+    <string name="settings_privacy_policy_subtitle">Gizlilik politikasını görüntüle</string>
+    <string name="settings_terms">Şartlar ve Koşullar</string>
+    <string name="settings_terms_subtitle">Şartlar ve koşulları görüntüle</string>
+    <string name="profile_title">Profil</string>
+    <string name="profile_subscription">Abonelik</string>
+
+    <!-- Error Messages -->
+    <string name="error_network">Ağ hatası</string>
+    <string name="error_server">Sunucu hatası</string>
+    <string name="error_unauthorized">Yetkisiz erişim</string>
+    <string name="error_not_found">İçerik bulunamadı</string>
+    <string name="error_playback">Oynatma hatası</string>
+    <string name="error_unknown">Bilinmeyen hata</string>
+    <string name="error_device_registration">Cihaz kaydı sırasında hata oluştu</string>
+    <string name="error_device_activation">Cihaz aktivasyonu sırasında hata oluştu</string>
+    <string name="error_invalid_code">Geçersiz aktivasyon kodu</string>
+    <string name="error_title">Hata</string>
+    <string name="error_retry">Tekrar dene</string>
+    
+    <!-- Loading States -->
+    <string name="loading">Yükleniyor…</string>
+    <string name="loading_content">İçerik yükleniyor…</string>
+    <string name="loading_video">Video hazırlanıyor…</string>
+    <string name="loading_search">Aranıyor…</string>
+    
+    <!-- Actions -->
+    <string name="action_retry">Tekrar dene</string>
+    <string name="action_cancel">İptal</string>
+    <string name="action_ok">Kabul et</string>
+    <string name="action_save">Kaydet</string>
+    <string name="action_edit">Düzenle</string>
+    <string name="action_delete">Sil</string>
+    <string name="action_share">Paylaş</string>
+    <string name="action_back">Geri</string>
+    
+    <!-- Content Descriptions (Accessibility) -->
+    <string name="cd_play_button">Oynat butonu</string>
+    <string name="cd_pause_button">Duraklat butonu</string>
+    <string name="cd_favorite_button">Favori butonu</string>
+    <string name="cd_search_button">Arama butonu</string>
+    <string name="cd_menu_button">Menü butonu</string>
+    <string name="cd_back_button">Geri butonu</string>
+    <string name="cd_back">Geri</string>
+    <string name="cd_clear_button">Temizle</string>
+    <string name="cd_content_image">İçerik görseli</string>
+    <string name="cd_user_avatar">Kullanıcı avatarı</string>
+    <string name="cd_logo">IPTV Logosu</string>
+    
+    <!-- Live TV -->
+    <string name="live_tv_channels">Canlı Kanallar</string>
+    <string name="live_tv_now_playing">Şu an yayında</string>
+    <string name="live_tv_next">Sıradaki</string>
+
+    <!-- Channels -->
+    <string name="channels_title">Kanallar</string>
+    <string name="channels_count">%1$d kanal</string>
+    <string name="channels_close">Kapat</string>
+    <string name="channels_search_hint">Kanal ara…</string>
+    <string name="channels_no_epg_available">Yayın akışı bilgisi yok</string>
+
+    <!-- EPG -->
+    <string name="epg_live_badge">CANLI</string>
+    <string name="epg_press_right_for_more">Daha fazlası için → tuşuna basın</string>
+    <string name="epg_full_programming">Tam akış</string>
+    <string name="epg_channel">Kanal</string>
+    <string name="epg_back">Geri</string>
+    <string name="epg_live_program">Canlı yayın</string>
+    
+    <!-- Time formats -->
+    <string name="time_format_hours_minutes">%1$ds %2$ddk</string>
+    <string name="time_format_minutes">%1$ddk</string>
+    <string name="time_format_less_minute">&lt; 1dk</string>
+
+    <!-- Language Selection -->
+    <string name="language_spanish">İspanyolca</string>
+    <string name="language_english">İngilizce</string>
+    <string name="language_portuguese">Portekizce</string>
+    <string name="language_chinese">Çince</string>
+    <string name="language_dialog_title">Dil seçin</string>
+    <string name="language_dialog_message">Tercih ettiğiniz dili seçin</string>
+    <string name="language_changed">Dil başarıyla değiştirildi</string>
+    <string name="language_restart_required">Değişikliklerin uygulanması için uygulamayı yeniden başlatın</string>
+
+    <!-- Hardcoded Strings - UI Components -->
+    <string name="channels_search_hint_alt">Kanal ara…</string>
+    <string name="channels_select_channel">Bir kanal seçin</string>
+    <string name="channels_no_epg_info">EPG bilgisi yok</string>
+    <string name="channels_no_programming">Yayın akışı yok</string>
+    <string name="channels_press_back">Kanallara dönmek için ← tuşuna basın</string>
+    <string name="live_indicator">CANLI</string>
+    <string name="now_label">ŞİMDİ</string>
+    <string name="next_label">SIRADAKİ</string>
+    <string name="current_label">GÜNCEL</string>
+    <string name="now_playing">Şimdi oynuyor:</string>
+    <string name="auto_label">Otomatik</string>
+
+    <!-- Account & Profile -->
+    <string name="account_title">Hesap</string>
+    <string name="account_apply_change">Değişikliği uygula</string>
+    <string name="account_close">Kapat</string>
+    <string name="account_password_mismatch">Eşleşmiyor</string>
+    <string name="account_logout">Çıkış yap</string>
+    <string name="user_label">Kullanıcı</string>
+
+    <!-- Device Management -->
+    <string name="device_limit_title">Cihaz Sınırı</string>
+    <string name="device_limit_reached">%1$d cihaz sınırına ulaştınız</string>
+    <string name="device_limit_description">Devam etmek için mevcut cihazlarınızdan birini değiştirmeniz gerekir.</string>
+    <string name="device_limit_replacement_warning">Seçilen cihazın oturumu kalıcı olarak kapatılacak ve yerine bu yeni cihaz geçecektir.</string>
+    <string name="device_limit_disconnect_warning">Seçilen cihazın bağlantısı derhal kesilecektir</string>
+    <string name="device_limit_replacing">Cihaz değiştiriliyor…</string>
+    <string name="device_limit_wait">Bu birkaç saniye sürebilir</string>
+    <string name="device_limit_this_device">Bu cihaz</string>
+    <string name="device_limit_cancel">İptal</string>
+    <string name="device_limit_disconnect">Bağlantıyı Kes</string>
+    <string name="device_limit_disconnecting">Bağlantı kesiliyor…</string>
+    <string name="device_limit_confirm_replacement">Değişimi onayla</string>
+    <string name="device_limit_confirm_message">Cihaz değişimini onaylıyor musunuz?</string>
+    <string name="device_limit_what_happens">Neler olacak:</string>
+    <string name="device_limit_device_disconnected">Seçilen cihazın bağlantısı kalıcı olarak kesilecek</string>
+    <string name="device_limit_device_replaced">Bu cihaz onun yerini alacak ve kaydedilecek</string>
+    <string name="device_limit_device_to_disconnect">Bağlantısı kesilecek cihaz:</string>
+    <string name="device_limit_last_access">Son erişim: %1$s</string>
+    <string name="device_limit_yes_disconnect">Evet, Bağlantıyı Kes</string>
+
+    <!-- Account Dialog -->
+    <string name="account_data_title">Hesap Verileri</string>
+    <string name="account_change_password">Şifre Değiştir</string>
+    <string name="account_current_password">Mevcut Şifre</string>
+    <string name="account_new_password">Yeni Şifre</string>
+    <string name="account_confirm_password">Şifreyi Onayla</string>
+    <string name="account_passwords_no_match">Şifreler eşleşmiyor</string>
+    <string name="account_changing">Değiştiriliyor…</string>
+    <string name="account_min_length">En az %1$d karakter</string>
+    <string name="account_email">E-posta</string>
+    <string name="account_active">Aktif</string>
+    <string name="account_inactive">Pasif</string>
+    <string name="account_expires">Bitiş:</string>
+
+    <!-- Profile Screen -->
+    <string name="profile_username">Kullanıcı adı</string>
+    <string name="profile_loading">Yükleniyor…</string>
+    <string name="profile_change_password">Şifre Değiştir</string>
+    <string name="profile_update_password">Şifrenizi güncelleyin</string>
+    <string name="profile_subscription_details">Abonelik Detayları</string>
+    <string name="profile_expires_at">Bitiş tarihi: %1$s</string>
+    <string name="profile_features_title">Özellikler:</string>
+    <string name="profile_date_not_available">Tarih mevcut değil</string>
+    <string name="profile_renew_subscription">Aboneliği Yenile</string>
+    <string name="profile_connected_devices">Bağlı Cihazlar</string>
+    <string name="profile_last_activity">Son etkinlik:</string>
+    <string name="profile_rename">Yeniden Adlandır</string>
+    <string name="profile_delete">Sil</string>
+    <string name="profile_quick_actions">Hızlı İşlemler</string>
+    <string name="profile_clear_history">Geçmişi Temizle</string>
+    <string name="profile_clear_history_desc">Tüm izleme geçmişini siler</string>
+    <string name="profile_export_data">Verileri Dışa Aktar</string>
+    <string name="profile_export_data_desc">Verilerinizin bir kopyasını indirin</string>
+    <string name="profile_delete_account">Hesabı Sil</string>
+    <string name="profile_delete_account_desc">Hesabınızı kalıcı olarak siler</string>
+    <string name="profile_rename_device">Cihazı Yeniden Adlandır</string>
+    <string name="profile_device_name">Cihaz Adı</string>
+    <string name="profile_save">Kaydet</string>
+    <string name="profile_cancel">İptal</string>
+    <string name="profile_delete_device">Cihazı Sil</string>
+    <string name="profile_delete_device_confirm">"%1$s" cihazını silmek istediğinize emin misiniz?</string>
+    <string name="profile_delete_device_action">Sil</string>
+
+    <!-- Settings -->
+    <string name="settings_customize_experience">Deneyiminizi özelleştirin</string>
+    <string name="settings_manage_account">Hesabınızı ve tercihlerinizi yönetin</string>
+    <string name="settings_username">Kullanıcı adı</string>
+    <string name="settings_loading">Yükleniyor…</string>
+    <string name="settings_active_account">Aktif hesap</string>
+    <string name="settings_loading_account">Hesap yükleniyor…</string>
+    <string name="settings_devices_title">Cihazlar</string>
+    <string name="settings_days_remaining">%1$d gün kaldı</string>
+    <string name="settings_expired">Süresi doldu</string>
+    <string name="settings_remaining">Kalan</string>
+    <string name="settings_expires">Bitiş: %1$s</string>
+    <string name="settings_invalid_date">Geçersiz tarih</string>
+    <string name="settings_no_expiry_date">Bitiş tarihi yok</string>
+    <string name="settings_device_management">Cihaz Yönetimi</string>
+    <string name="settings_active_devices">%1$d / %2$d cihaz aktif</string>
+
+    <!-- Navigation & Actions -->
+    <string name="nav_back">Geri</string>
+    <string name="nav_clear">Temizle</string>
+    <string name="nav_select">Seç</string>
+
+    <!-- Player & Video -->
+    <string name="player_unknown_content">Bilinmiyor</string>
+    <string name="unknown_label">Bilinmiyor</string>
+    <string name="player_error">Hata</string>
+    <string name="player_back">Geri</string>
+    <string name="player_next">Sıradaki</string>
+
+    <!-- EPG -->
+    <string name="epg_now">Şimdi</string>
+    <string name="epg_full_programming_alt">Tam Akış</string>
+
+    <!-- Layout -->
+    <string name="layout_channel_number">2</string>
+    <string name="layout_channel_name">Kanal</string>
+
+    <!-- Errors -->
+    <string name="error_url_not_available">Yayın adresi (URL) mevcut değil</string>
+
+    <!-- Quality -->
+    <string name="quality_title">Video Kalitesi</string>
+    <string name="quality_no_options">Kalite seçeneği mevcut değil</string>
+    <string name="quality_auto_description">Bağlantıya göre otomatik ayarla</string>
+    <string name="quality_close">Kapat</string>
+    <string name="quality_selected">Seçildi</string>
+
+    <!-- Audio -->
+    <string name="audio_title">Ses Dili</string>
+    <string name="audio_no_options">Ek ses kanalı mevcut değil</string>
+    <string name="audio_auto_description">Tercihlerinize göre otomatik seç</string>
+    <string name="audio_close">Kapat</string>
+    <string name="audio_selected">Seçildi</string>
+    <string name="audio_language_prefix">Dil:</string>
+
+    <!-- EPG -->
+    <string name="epg_title">Yayın Akışı</string>
+    <string name="epg_no_data">EPG verisi yok</string>
+    <string name="epg_loading">Akış yükleniyor…</string>
+    <string name="epg_error">EPG yüklenirken hata oluştu</string>
+    <string name="epg_no_programs">Program mevcut değil</string>
+    <string name="epg_channel_info">Kanal Bilgisi</string>
+    <string name="epg_program_details">Program Detayları</string>
+    <string name="epg_program_description">Program Açıklaması</string>
+    <string name="epg_next_programs">Sıradaki Programlar</string>
+    <string name="epg_all_channels">Tüm Kanallar</string>
+    <string name="epg_favorites">Favoriler</string>
+    <string name="epg_search">Program Ara</string>
+    <string name="epg_no_favorites">Favori kanalınız yok</string>
+    <string name="epg_add_favorite">Favorilere ekle</string>
+    <string name="epg_remove_favorite">Favorilerden çıkar</string>
+    <string name="epg_watch_now">Şimdi İzle</string>
+    <string name="epg_remind_me">Hatırlat</string>
+    <string name="epg_program_started">Program başladı</string>
+    <string name="epg_program_ending">Program bitiyor</string>
+    <string name="epg_time_remaining">%1$d dk kaldı</string>
+
+    <!-- Live TV Components -->
+    <string name="live_tv_no_epg">EPG mevcut değil</string>
+    <string name="live_tv_epg_loading">EPG yükleniyor…</string>
+    <string name="live_tv_channel_search_hint">Kanal ara…</string>
+    <string name="live_tv_channel_search_no_results">Kanal bulunamadı</string>
+    <string name="live_tv_channel_search_no_match">"%1$s" ile eşleşen kanal yok</string>
+    <string name="live_tv_channel_clear">Temizle</string>
+    <string name="live_tv_channel_count">%1$d / %2$d kanal</string>
+    <string name="live_tv_favorites_title">Favori Kanallar</string>
+    <string name="live_tv_favorites_count">%1$d favori kanal</string>
+    <string name="live_tv_favorites_empty">Favori kanalınız yok</string>
+
+    <!-- Device Registration -->
+    <string name="device_registration_title">Cihaz Kaydı</string>
+    <string name="device_registration_subtitle">Başlamak için cihazınızı kaydedin</string>
+    <string name="device_info_title">Cihaz Bilgileri</string>
+    <string name="device_system_info_title">Sistem Bilgileri</string>
+    <string name="device_model_label">Modeli</string>
+    <string name="device_android_label">Android</string>
+    <string name="device_manufacturer_label">Üretici</string>
+    <string name="device_register_button">Cihazı Kaydet</string>
+    <string name="device_skip_temp">İçeriğe Geç (Geçici)</string>
+    <string name="device_unknown">Bilinmiyor</string>
+    <string name="device_type_label">Tür:</string>
+    <string name="device_model_label_old">Modeli:</string>
+    <string name="device_android_label_old">Android:</string>
+    <string name="device_type_android_tv">Android TV</string>
+
+    <!-- Content & Media -->
+    <string name="content_hd_label">HD</string>
+    <string name="content_seasons_label">Sezonlar</string>
+    <string name="content_episodes_count">%1$d bölüm</string>
+    <string name="content_rating_format">★ %1$s</string>
+
+    <!-- Favorites -->
+    <string name="favorites_hint">Hızlı erişim için favori kanallarınızı işaretleyin</string>
+    <string name="favorites_explore">Kanalları keşfet</string>
+
+    <!-- Live Content -->
+    <string name="live_sports_title">Canlı Spor</string>
+
+    <!-- Navigation -->
+    <string name="nav_previous">Önceki</string>
+    <string name="nav_episode_info">Bölüm %1$d / %2$d</string>
+
+    <!-- Profile -->
+    <string name="profile_stats_title">Hesap İstatistikleri</string>
+    <string name="profile_logout_title">Çıkış Yap</string>
+    <string name="profile_logout_message">Bu cihazdaki oturumunuz kapatılacak</string>
+    <string name="password_mismatch">Şifreler eşleşmiyor</string>
+
+    <!-- Device Management -->
+    <string name="device_management_title">Cihaz Yönetimi</string>
+    <string name="device_loading">Cihazlar yükleniyor…</string>
+    <string name="device_no_devices">Kayıtlı cihaz yok</string>
+    <string name="devices_registered_count">%1$d / %2$d cihaz kayıtlı</string>
+    <string name="devices_empty_message">Kayıt olduktan sonra cihazlar burada görünecek</string>
+    <string name="current_device_label">Bu cihaz</string>
+    <string name="last_access_prefix">Son erişim:</string>
+    <string name="delete_device_title">Cihazı Sil</string>
+    <string name="delete_device_confirm">Bu cihazı silmek istediğinize emin misiniz?</string>
+
+    <!-- Welcome & Activation -->
+    <string name="welcome_to_iptv">IPTV\'ye Hoş Geldiniz</string>
+    <string name="register_device_to_continue">Başlamak için cihazınızı kaydedin</string>
+    <string name="activation_code_title">Aktivasyon Kodu</string>
+    <string name="activating_device">Aktif ediliyor…</string>
+    <string name="activate_device_button">Cihazı Aktifleştir</string>
+    <string name="need_help">Yardım mı lazım?</string>
+    <string name="activation_code_info">Aktivasyon kodu 6 hanelidir</string>
+    <string name="verify_code_correct">Kodun doğru olduğundan emin olun</string>
+    <string name="contact_support_if_issues">Sorun yaşarsanız destek ile iletişime geçin</string>
+    <string name="activating_device_long">Cihaz aktifleştiriliyor…</string>
+    <string name="please_wait">Lütfen bekleyin</string>
+    <string name="registering_device_long">Cihaz kaydediliyor…</string>
+    <string name="replace_device_button">Cihaz Değiştir</string>
+    <string name="devices_label">Cihazlar</string>
+    <string name="devices_count">%1$d / %2$d</string>
+
+    <!-- Device Selection -->
+    <string name="select_device_to_replace">Bu yeni cihazla değiştirmek istediğiniz cihazı seçin:</string>
+    <string name="device_type_prefix">Tür:</string>
+    <string name="device_last_used_prefix">Son kullanım:</string>
+
+    <!-- Device Registration Features -->
+    <string name="device_limit_reached_message">Sınıra ulaşıldı. Mevcut bir cihazı değiştirin.</string>
+    <string name="device_spaces_available">%1$d boş yeriniz var.</string>
+    <string name="device_registration_logo_description">@string/branding_name</string>
+    <string name="device_registration_feature_hd">HD/4K İçerik</string>
+    <string name="device_registration_feature_devices">Çoklu Cihaz</string>
+    <string name="device_registration_feature_security">Güvenli Yayın</string>
+
+    <!-- Device Selection Screen -->
+    <string name="device_selection_title">Değiştirilecek Cihazı Seç</string>
+    <string name="device_selection_back_description">Geri</string>
+    <string name="device_selection_unknown_date">Bilinmiyor</string>
+    <string name="device_selection_replace_description">Değiştir</string>
+    <string name="device_selection_device_description">Cihaz</string>
+
+    <!-- Device Management Screen -->
+    <string name="device_management_back_description">Geri</string>
+    <string name="device_management_refresh_description">Yenile</string>
+    <string name="device_management_delete_description">Cihazı Sil</string>
+    <string name="device_management_device_type_android">Android</string>
+    <string name="device_management_device_type_ios">iOS</string>
+    <string name="device_management_device_type_web">Web Tarayıcı</string>
+    <string name="device_management_device_type_tv">Akıllı TV</string>
+    <string name="device_management_last_active_prefix">on</string>
+
+    <!-- Device Management Dialog -->
+    <string name="device_management_delete_device_title">Cihazı Sil</string>
+    <string name="device_management_delete_device_confirm">Bu cihazı silmek istediğinize emin misiniz?</string>
+    <string name="device_management_delete_device_warning">Bu işlem geri alınamaz. Cihazın erişimi için tekrar kaydedilmesi gerekir.</string>
+    <string name="device_management_delete_device_action">Sil</string>
+    <string name="device_management_delete_device_cancel">İptal</string>
+
+    <!-- Favorites Manager -->
+    <string name="favorites_remove_description">Favorilerden çıkar</string>
+    <string name="favorites_add_description">Favorilere ekle</string>
+    <string name="favorites_category_title">Favoriler</string>
+
+    <!-- Channel Search Bar -->
+    <string name="channel_search_placeholder">Kanal ara…</string>
+    <string name="channel_search_description">Ara</string>
+    <string name="channel_clear_description">Temizle</string>
+    <string name="channel_category_all">Tümü</string>
+    <string name="channel_category_news">Haber</string>
+    <string name="channel_category_sports">Spor</string>
+    <string name="channel_category_entertainment">Eğlence</string>
+    <string name="channel_category_movies">Film</string>
+    <string name="channel_category_kids">Çocuk</string>
+    <string name="channel_quality_all">Tümü</string>
+    <string name="channel_quality_hd">HD</string>
+    <string name="channel_quality_4k">4K</string>
+    <string name="channel_quality_sd">SD</string>
+    <string name="channel_category_title">Kategori</string>
+    <string name="channel_quality_title">Kalite</string>
+    <string name="channel_search_results">"%1$s" için sonuçlar</string>
+    <string name="channel_search_all_channels">Tüm Kanallar</string>
+
+    <!-- Device Limit Dialog -->
+    <string name="device_limit_replacing_message">Cihaz değiştiriliyor…</string>
+    <string name="device_limit_waiting_message">Bu birkaç saniye sürebilir</string>
+    <string name="device_limit_selected_description">Seçildi</string>
+
+    <!-- Detail Screen -->
+    <string name="detail_back_description">Geri</string>
+    <string name="detail_no_description">Açıklama mevcut değil</string>
+    <string name="detail_season_prefix">S</string>
+    <string name="detail_season_content_description">Sezon %1$d</string>
+
+    <!-- Home Screen -->
+    <string name="home_content_type_live">CANLI</string>
+    <string name="home_content_type_hd">HD</string>
+    <string name="home_play_description">Oynat</string>
+
+    <!-- Search Screen -->
+    <string name="search_placeholder_screen">İçerik ara…</string>
+
+    <!-- Search Result Card -->
+    <string name="search_watch_live">CANLI İZLE</string>
+    <string name="search_watch_series">DİZİYİ İZLE</string>
+    <string name="search_view_details">DETAYLARI GÖR</string>
+    <string name="search_content_type_movie">FİLM</string>
+    <string name="search_content_type_series">DİZİ</string>
+    <string name="search_content_type_live">CANLI</string>
+    <string name="search_content_type_episode">BÖLÜM</string>
+
+    <!-- Player -->
+    <string name="player_stream_url_not_available">Yayın adresi (URL) mevcut değil</string>
+
+    <!-- Password Management -->
+    <string name="password_current">Mevcut Şifre</string>
+    <string name="password_show">Şifreyi Göster</string>
+    <string name="password_hide">Şifreyi Gizle</string>
+    <string name="password_new">Yeni Şifre</string>
+    <string name="password_confirm">Yeni Şifreyi Onayla</string>
+    <string name="password_empty">Mevcut şifrenizi girin</string>
+    <string name="password_new_empty">Yeni bir şifre girin</string>
+    <string name="password_min_length">Yeni şifre en az 6 karakter olmalı</string>
+    <string name="password_mismatch_validation">Şifreler eşleşmiyor</string>
+    <string name="password_changed_success">Şifre başarıyla değiştirildi</string>
+    <string name="password_empty_error">Şifre boş olamaz</string>
+
+    <!-- Authentication Errors -->
+    <string name="auth_credentials_invalid">Geçersiz bilgiler. Kullanıcı adınızı ve şifrenizi kontrol edin.</string>
+    <string name="auth_enter_credentials">Lütfen kullanıcı adınızı ve şifrenizi girin</string>
+
+    <!-- Content Validation -->
+    <string name="content_id_empty_error">İçerik ID boş olamaz</string>
+    <string name="progress_range_error">İlerleme 0.0 ile 1.0 arasında olmalı</string>
+    <string name="duration_negative_error">Süre negatif olamaz</string>
+
+    <!-- Request Validation -->
+    <string name="request_invalid_data">Geçersiz istek. Girdiğiniz verileri kontrol edin.</string>
+
+    <!-- HTTP Error Messages -->
+    <string name="error_http_400">Geçersiz istek. Verileri kontrol edin.</string>
+    <string name="error_http_401">Yetkisiz. Tekrar giriş yapın.</string>
+    <string name="error_http_403">Erişim engellendi</string>
+    <string name="error_http_404">İçerik bulunamadı</string>
+    <string name="error_http_408">Zaman aşımı oluştu</string>
+    <string name="error_http_429">Çok fazla istek. Daha sonra tekrar deneyin.</string>
+    <string name="error_http_500">Sunucu hatası. Daha sonra deneyin.</string>
+    <string name="error_http_502_503">Servis şu an kullanılamıyor</string>
+    <string name="error_network_generic">Ağ hatası</string>
+
+    <!-- Network Error Messages -->
+    <string name="error_no_internet">İnternet bağlantısı yok</string>
+    <string name="error_connection_timeout">Bağlantı zaman aşımına uğradı</string>
+    <string name="error_connection_generic">Bağlantı hatası</string>
+
+    <!-- Exception Messages -->
+    <string name="error_empty_response">Sunucudan boş yanıt döndü</string>
+    <string name="error_failed_user_profile">Profil bilgileri alınırken hata oluştu</string>
+    <string name="error_network_message">Ağ hatası</string>
+    <string name="error_failed_update_profile">Profil güncellenirken hata oluştu</string>
+    <string name="error_password_change_success">Şifre başarıyla değiştirildi</string>
+    <string name="error_failed_password_change">Şifre değiştirilirken hata oluştu</string>
+
+    <!-- Authentication Repository Errors -->
+    <string name="error_device_activation_not_implemented">Cihaz aktivasyonu henüz uygulanmadı</string>
+    <string name="error_no_refresh_token">Yenileme jetonu bulunamadı</string>
+    <string name="error_token_refresh_failed">Jeton yenilenirken hata oluştu</string>
+    <string name="error_token_refresh_failed_with_message">Jeton yenilenirken hata oluştu: %1$s</string>
+
+    <!-- Logout -->
+    <string name="logout_success">Oturum başarıyla kapatıldı</string>
+    <string name="logout_loading">Çıkış yapılıyor…</string>
+    <string name="logout_button">Çıkış Yap</string>
+
+    <!-- Session Management -->
+    <string name="session_expired">Oturum süresi doldu. Tekrar giriş yapın.</string>
+    <string name="session_unauthorized">Yetkisiz. Tekrar giriş yapın.</string>
+
+    <!-- Input Prompts -->
+    <string name="input_enter">Girin</string>
+    <string name="input_channel_number">Kanal numarasını girin</string>
+    <string name="input_verify_data">Girdiğiniz verileri doğrulayın</string>
+
+    <!-- Names and Users -->
+    <string name="name_device">Cihaz Adı</string>
+    <string name="name_username">Kullanıcı Adı</string>
+    <string name="name_device_empty">Cihaz adı boş olamaz</string>
+    <string name="name_device_min_length">Cihaz adı en az 3 karakter olmalı</string>
+    <string name="name_device_updated">Cihaz adı güncellendi</string>
+    <string name="name_username_empty">Kullanıcı adı boş olamaz</string>
+
+    <!-- Platform -->
+    <string name="platform_premium_streaming">Premium Yayın Platformu</string>
+
+    <!-- Live TV Channel Selector -->
+    <string name="channel_now">ŞİMDİ</string>
+    <string name="channel_next">SIRADAKİ</string>
+
+    <!-- Content Categories -->
+    <string name="category_load_more">Daha fazla içerik yükle</string>
+    <string name="category_empty_title">İçerik yok</string>
+    <string name="category_empty_message">"%1$s" kategorisinde içerik bulunmuyor</string>
+    <string name="sort_title">Başlık</string>
+    <string name="sort_year">Yıl</string>
+    <string name="sort_rating">Puan</string>
+    <string name="sort_date_added">Eklenme Tarihi</string>
+
+    <!-- Search -->
+    <string name="search_placeholder_generic">Ara…</string>
+    <string name="search_description">Ara</string>
+    <string name="search_title">Ara</string>
+
+    <!-- Availability -->
+    <string name="service_unavailable">Servis kullanılamıyor</string>
+    <string name="service_temporarily_unavailable">Servis geçici olarak kapalı</string>
+
+    <!-- Player Navigation -->
+    <string name="player_next_episode">Sıradaki Bölüm</string>
+    <string name="player_next_with_title">Sıradaki: %1$s</string>
+
+    <!-- UI Elements -->
+    <string name="seasons_title">Sezonlar</string>
+    <string name="play_button">Oynat</string>
+    <string name="close_button">Kapat</string>
+    <string name="pause_button">Duraklat</string>
+
+    <!-- Access -->
+    <string name="quick_access">Hızlı Erişim</string>
+    <string name="quick_access_description">Hızlı erişim için favori kanalları işaretleyin</string>
+    <string name="last_access">Son erişim: %1$s</string>
+
+    <!-- Device Registration -->
+    <string name="devices_registered_count_alt">%1$d / %2$d cihaz kayıtlı</string>
+
+    <!-- Buttons -->
+    <string name="button_cancel">İptal</string>
+    <string name="button_change">Değiştir</string>
+
+    <!-- Additional translations for hardcoded texts -->
+    <string name="content_no_image">Görsel yok</string>
+    <string name="content_rating_star">★ %1$s</string>
+    <string name="epg_not_available">EPG yok</string>
+    <string name="channel_starting">Kanal başlatılıyor…</string>
+    <string name="programs_count">%1$d program</string>
+    <string name="epg_navigation_hint">↑↓ Gezin • OK İzle</string>
+    <string name="program_time_range">%1$s - %2$s</string>
+    <string name="program_position">%1$d/%2$d</string>
+    <string name="press_ok_to_watch">İzlemek için OK tuşuna basın</string>
+    <string name="settings_change_password">Şifre Değiştir</string>
+    <string name="settings_update_password_subtitle">Şifrenizi güncelleyin</string>
+    <string name="settings_subscription_details">Abonelik Detayları</string>
+
+    <!-- Detail Screen -->
+    <string name="detail_watch_now">Şimdi İzle</string>
+    <string name="detail_trailer">Fragman</string>
+    <string name="detail_overview">Özet</string>
+    <string name="detail_seasons">Sezonlar</string>
+    <string name="detail_season">Sezon</string>
+    <string name="detail_no_description_alt">Açıklama mevcut değil</string>
+
+    <!-- Content Details -->
+    <string name="content_synopsis">Sinopsis</string>
+    <string name="content_director">Yönetmen</string>
+    <string name="content_genres">Türler</string>
+    <string name="content_episodes">Bölümler</string>
+    <string name="content_cast">Oyuncular</string>
+    <string name="content_related">İlgili İçerikler</string>
+    <string name="content_episode_short">B</string>
+
+    <!-- Live TV (merged section) -->
+    <string name="live_tv_next_program">Sıradaki:</string>
+    <string name="live_tv_current_program">Şimdi:</string>
+
+    <!-- Channel Navigation -->
+    <string name="all">Hepsi</string>
+    <string name="category_entertainment">Eğlence</string>
+    <string name="category_sports">Spor</string>
+    <string name="category_news">Haber</string>
+    <string name="category_movies">Film</string>
+    <string name="category_series">Dizi</string>
+    <string name="category_music">Müzik</string>
+    <string name="category_kids">Çocuk</string>
+
+    <string name="category_documentary">Belgesel</string>
+    <string name="category_lifestyle">Yaşam</string>
+    <string name="category_culture_education">Kültür ve Eğitim</string>
+    <string name="category_international">Uluslararası</string>
+    <string name="channel_press_back">Kanallara dönmek için ← tuşuna basın</string>
+
+    <!-- Program Info Card -->
+    <string name="program_watch_now">Şimdi İzle</string>
+    <string name="program_up_next">Sıradaki</string>
+    <string name="program_remind">Hatırlat</string>
+    <string name="program_progress">Program İlerlemesi</string>
+
+    <!-- Authentication -->
+    <string name="auth_sign_in">Giriş Yap</string>
+    <string name="auth_enter_credentials_continue">Devam etmek için bilgilerinizi girin</string>
+    <string name="auth_password">Şifre</string>
+    <string name="auth_sign_in_button">Oturum Aç</string>
+    <string name="auth_brand_name">@string/branding_name</string>
+    <string name="auth_brand_description">Premium Yayın Platformu</string>
+
+    <!-- Player Controls -->
+    <string name="player_select_language">Dil seçin</string>
+    <string name="player_select_quality">Kalite seçin</string>
+    <string name="player_previous_episode">Önceki Bölüm</string>
+    <string name="player_next_episode_alt">Sonraki Bölüm</string>
+    <string name="player_previous">Önceki</string>
+    <string name="player_episode_count">Bölüm %1$d / %2$d</string>
+
+    <!-- Error Messages -->
+    <string name="error_incompatible_content">Bu içerik bölüm oynatıcı ile uyumlu değil</string>
+    <string name="error_loading_player">Oynatıcı yüklenirken hata: %1$s</string>
+    <string name="error_loading_content">İçerik yüklenirken hata: %1$s</string>
+
+    <!-- Splash Screen Messages -->
+    <string name="splash_welcome_back">Tekrar Hoş Geldiniz…</string>
+    <string name="splash_redirecting_login">Girişe yönlendiriliyorsunuz…</string>
+    <string name="splash_verifying_auth">Oturum doğrulanıyor…</string>
+
+    <!-- Dialog Messages -->
+    <string name="dialog_cancel">İptal</string>
+    <string name="dialog_confirm">Onayla</string>
+    <string name="dialog_confirm_replacement">Değişimi Onayla</string>
+
+    <!-- Content Categories -->
+    <string name="category_movies_vod">VOD - Filmler</string>
+
+    <!-- Home Screen Sections -->
+    <string name="section_featured">Öne Çıkanlar</string>
+    <string name="section_movies">Filmler</string>
+    <string name="section_series">Diziler</string>
+    <string name="section_kids">Çocuk</string>
+
+    <!-- Search Filters -->
+    <string name="search_filters_title">Arama Filtreleri</string>
+    <string name="search_clear_filters">Filtreleri Temizle</string>
+    <string name="search_content_type">İçerik Türü</string>
+    <string name="search_categories">Kategoriler</string>
+    <string name="search_genres">Türler</string>
+    <string name="search_year">Yıl</string>
+    <string name="search_country">Ülke</string>
+    <string name="search_all">Hepsi</string>
+    <string name="search_all_female">Hepsi</string>
+
+    <!-- Genres -->
+    <string name="genre_action">Aksiyon</string>
+    <string name="genre_comedy">Komedi</string>
+    <string name="genre_drama">Dram</string>
+    <string name="genre_horror">Korku</string>
+    <string name="genre_sci_fi">Bilim Kurgu</string>
+    <string name="genre_documentary">Belgesel</string>
+    <string name="genre_sports">Spor</string>
+    <string name="genre_news">Haber</string>
+    <string name="genre_adventure">Macera</string>
+    <string name="genre_animation">Animasyon</string>
+    <string name="genre_biography">Biyografi</string>
+    <string name="genre_crime">Suç</string>
+    <string name="genre_family">Aile</string>
+    <string name="genre_fantasy">Fantastik</string>
+    <string name="genre_history">Tarih</string>
+    <string name="genre_music">Müzik</string>
+    <string name="genre_mystery">Gizem</string>
+    <string name="genre_romance">Romantik</string>
+    <string name="genre_thriller">Gerilim</string>
+    <string name="genre_war">Savaş</string>
+    <string name="genre_western">Vahşi Batı</string>
+
+    <!-- Content Descriptions -->
+    <string name="content_desc_back">Geri</string>
+
+    <!-- Activation -->
+    <string name="activation_code">Aktivasyon Kodu</string>
+
+    <!-- Device Input -->
+    <string name="device_name_label">Cihaz Adı</string>
+    <string name="device_name_placeholder">Örn: Android TV\'im</string>
+
+    <!-- Temporary Content Access -->
+    <string name="temp_content_access">İçeriğe Geç (Geçici)</string>
+
+    <!-- Search -->
+    <string name="search_action_movies">Aksiyon filmleri ara</string>
+    <string name="search_year_movies">2023 filmlerini ara</string>
+    <string name="search_kids_content">Çocuk içeriklerini ara</string>
+    <string name="search_comedy_series">Komedi dizilerini göster</string>
+    <string name="search_documentaries">Belgesel bul</string>
+    <string name="search_sports_channels">Spor kanallarını göster</string>
+    <string name="search_drama_series">Dram dizilerini göster</string>
+    <string name="search_horror_movies">Korku filmlerini bul</string>
+    <string name="search_news_channels">Haber kanallarını göster</string>
+    <string name="search_romantic_movies">Romantik filmleri göster</string>
+    <string name="music_header_subtitle">Kişiselleştirilmiş çalma listelerini keşfedin</string>
+    <string name="music_quick_actions_title">Dinlemeye Başlayın</string>
+    <string name="music_quick_actions_subtitle">Müziği anında başlatmak için bir işlem seçin</string>
+    <string name="music_now_playing_label">Şu an çalıyor</string>
+    <string name="music_search_action">Sanatçı ara</string>
+    
+    <!-- Music -->
+    <string name="music_title">Müzik</string>
+    <string name="music_recent_tracks">Son dinlenenler</string>
+    <string name="music_albums">Albüm</string>
+    <string name="music_album">Albüm</string>
+    <string name="music_artists">Sanatçı</string>
+    <string name="music_artist">Sanatçı</string>
+    <string name="music_play">Oynat</string>
+    <string name="music_pause">Duraklat</string>
+    <string name="music_player_previous">Önceki</string>
+    <string name="music_player_next">Sonraki</string>
+    <string name="music_play_all">Tümünü çal</string>
+    <string name="music_favorited">Favorilerde</string>
+    <string name="music_add_favorite">Favorilere ekle</string>
+    <string name="music_track_count">%1$d şarkı</string>
+    <string name="music_top_tracks">Popüler Şarkılar</string>
+    <string name="music_artist_album_count">%1$d albüm</string>
+    <string name="music_stats_title">Kitaplık Özeti</string>
+    <string name="music_stats_tracks">Şarkı</string>
+    <string name="music_stats_albums">Albüm</string>
+    <string name="music_stats_artists">Sanatçı</string>
+    <string name="music_stats_storage">Depolama</string>
+    <string name="music_hero_subtitle">Müzik kütüphaneniz her zaman hazır.</string>
+    <string name="music_hero_placeholder">Başlamak için "Tümünü Çal"ı kullanın veya bir şarkı seçin.</string>
+    <string name="common_back">Geri</string>
+    <string name="common_close">Kapat</string>
+    <string name="common_retry">Tekrar dene</string>
+    <string name="common_refresh">Yenile</string>
+    <string name="music_playing">Çalıyor</string>
+    <string name="music_no_track">Şarkı seçilmedi</string>
+    <string name="music_shuffle">Karıştır</string>
+    <string name="music_previous">Önceki</string>
+    <string name="music_next">Sonraki</string>
+    <string name="music_repeat">Tekrarla</string>
+    <string name="music_queue">Sıra</string>
+    <string name="music_queue_count">Sırada %1$d</string>
+
+    <!-- Admin Scan -->
+    <string name="scan_folders_title">Admin: Klasörleri Tara</string>
+    <string name="scan_root_path">Kök Dizin (sunucu)</string>
+    <string name="scan_completed_items">Tarama tamamlandı: %1$d öğe işlendi</string>
+    <string name="scan_root_path_required">Kök yol gerekli</string>
+    <string name="scan_media_type">Medya Türleri (movies|series|mixed)</string>
+    <string name="scan_duplicate_policy">Kopya Politikası (omit|replace|allow)</string>
+    <string name="scan_add_subs">Varsa harici altyazıları ekle</string>
+    <string name="scan_start_button">Taramayı Başlat</string>
+    <string name="scan_scanning_button">Taranıyor…</string>
+    <string name="scan_results">Sonuçlar:</string>
+    <string name="scan_logs">Loglar:</string>
+    <string name="scan_movies_created">Oluşturulan Filmler: %1$d</string>
+    <string name="scan_series_created">Oluşturulan Diziler: %1$d</string>
+    <string name="scan_episodes_created">Oluşturulan Bölümler: %1$d</string>
+    <string name="scan_subtitles_added">Eklenen Altyazılar: %1$d</string>
+    <string name="scan_skipped">Atlanan: %1$d</string>
+    <string name="scan_replaced">Değiştirilen: %1$d</string>
+
+    <!-- Player Controls Extras -->
+    <string name="player_speed">Hız</string>
+    <string name="player_select_audio">Ses seç</string>
+    <string name="player_select_subtitles">Altyazı seç</string>
+    <string name="enabled">Aktif</string>
+    <string name="disabled">Pasif</string>
+    <string name="open_channel_list">Kanal listesini aç</string>
+    <string name="change_date">Tarih değiştir</string>
+    <string name="epg_auto_update">Yayın akışı otomatik güncellenecek</string>
+    <string name="epg_error_loading">Akış yüklenirken hata oluştu</string>
+
+    <!-- Device Management Errors -->
+    <string name="error_no_credentials">Oturum bilgileri eksik. Lütfen tekrar giriş yapın.</string>
+    <string name="error_device_management_failed">Cihaz yönetimi hazırlığı başarısız oldu</string>
+    <string name="error_unexpected_state">Beklenmedik bir durum oluştu</string>
+    <string name="error_unexpected_during_registration">Kayıt sırasında beklenmedik hata</string>
+    <string name="error_unexpected_during_removal">Kaldırma sırasında beklenmedik hata</string>
+    <string name="error_unexpected_try_again">Beklenmedik hata. Lütfen tekrar deneyin.</string>
+    <string name="epg_next">SIRADA</string>
+    <string name="channel_prefix">Kanal: </string>
+    <string name="no_program_info">Program bilgisi yok</string>
+    <string name="no_upcoming_info">Yaklaşan bilgi yok</string>
+    <string name="pip_preview">PiP Önizleme</string>
+    <string name="categories_all">Tümü</string>
+    <string name="live_channels_title">Canlı Kanallar</string>
+    
+    <!-- Updates -->
+    <string name="update_available">Güncelleme Mevcut</string>
+    <string name="update_new_version">Yeni sürüm %1$s mevcut</string>
+    <string name="update_current_version">Mevcut sürüm: %1$s</string>
+    <string name="update_download">İndir</string>
+    <string name="update_later">Daha Sonra</string>
+    <string name="update_checking">Güncellemeler kontrol ediliyor…</string>
+    <string name="update_no_updates">En son sürüme sahipsiniz</string>
+    <string name="update_error">Güncellemeler kontrol edilirken hata oluştu</string>
+    
+    <!-- Subtitles -->
+    <string name="subtitles_title">Altyazılar</string>
+    <string name="subtitles_off">Kapalı</string>
+    <string name="subtitles_auto">Otomatik</string>
+    <string name="subtitles_no_options">Altyazı mevcut değil</string>
+    <string name="subtitles_close">Kapat</string>
+    <string name="subtitles_selected">Seçildi</string>
+    <string name="subtitles_language_prefix">Dil:</string>
+    
+    <!-- Profile / Device -->
+    <string name="profile_confirm_delete_device_title">Cihazı Kaldır</string>
+    <string name="profile_confirm_delete_device_message">Bu cihazı kaldırmak istediğinize emin misiniz? Tekrar giriş yapmanız gerekecek.</string>
+    <string name="common_delete">Sil</string>
+    
+    <!-- Missing strings (fallback to English) -->
+    <string name="error_unknown_generic">Bilinmeyen hata</string>
+    <string name="player_autoplay">Otomatik oynatma</string>
+    <string name="profile_id_format">Kimlik: %1$s</string>
+    <string name="search_popular_searches">Popüler aramalar</string>
+    <string name="search_listening">Dinleme…</string>
+    <string name="common_watched">WATCHED</string>
+    <string name="common_in_progress">IN PROGRESS</string>
+    <string name="security_debug_detected">Algılanan Uygulamalarda Hata Ayıklama</string>
+    <string name="security_debug_description">Güvenlik nedeniyle bu uygulama, hata ayıklama araçları veya ağ müdahale araçları yüklendiğinde çalıştırılamaz.</string>
+    <string name="security_detected_apps">Algılanan Uygulamalar:</string>
+    <string name="security_how_to_use">Bu uygulamayı kullanmak için:</string>
+    <string name="security_step_uninstall">1. Algılanan uygulamaları kaldırın</string>
+    <string name="security_exit_app">Uygulamadan Çık</string>
+    <string name="security_footer">Bu önlem içeriği korur ve tüm kullanıcılar için güvenli bir deneyim sağlar.</string>
+    <string name="series_seasons_format">%1$d sezon%2$s</string>
+    <string name="series_season_abbr">S%1$d</string>
+    <string name="series_episode_detail_format">S%1$d:E%2$d • %3$s</string>
+    <string name="series_episode_label">Bölüm %1$d</string>
+    <string name="update_new_available">Yeni Güncelleme Mevcut</string>
+    <string name="common_later">Daha sonra</string>
+    <string name="update_now">Şimdi Güncelle</string>
+    <string name="common_hd">HD</string>
+    <string name="common_more_options">Daha fazla seçenek</string>
+    <string name="common_episodes_label">Bölümler</string>
+    <string name="common_no_episodes_available">Bölüm mevcut değil</string>
+    <string name="security_step_restart">2. Uygulamayı yeniden başlatın</string>
+    <string name="security_step_enjoy">3. İçeriğin keyfini güvenli bir şekilde çıkarın</string>
+    <string name="common_dot_separator">•</string>
+    <string name="common_dot_separator_with_text">• %1$s</string>
+    <string name="profile_devices_count_format">%1$d/5</string>
+    <string name="profile_edit_profile">Profili Düzenle</string>
+    <string name="settings_title_alt">Ayarlar</string>
+    <string name="profile_quick_settings">Hızlı Ayarlar</string>
+    <string name="profile_logout">Oturumu kapat</string>
+    <string name="profile_confirm_logout_title">Oturumu Kapatmayı Onaylayın</string>
+    <string name="profile_confirm_logout_message">Oturumu kapatmak istediğinizden emin misiniz?</string>
+    <string name="common_cancel">İptal etmek</string>
+    <string name="categories_header">Kategoriler</string>
+    <string name="player_position_duration">%1$s / %2$s</string>
+    <string name="update_required">Güncelleme Gerekli</string>
+    <string name="update_version_label">Sürüm:</string>
+    <string name="update_size_label">Boyut: %1$s</string>
+    <string name="update_whats_new">Ne var ne yok:</string>
+    <string name="update_downloading">İndiriliyor… %1$d%%</string>
+    <string name="update_install_now">Şimdi Yükle</string>
+    <string name="update_postpone">Daha Sonra Hatırlat</string>
+    <string name="update_mandatory_message">Bu güncelleme, uygulamayı kullanmaya devam etmek için gereklidir.</string>
+    <string name="update_check_title">Güncellemeleri Kontrol Et</string>
+    <string name="update_check_subtitle">Yeni bir sürümün mevcut olup olmadığını kontrol edin</string>
+    <string name="update_up_to_date">Güncelsiniz!</string>
+    <string name="update_up_to_date_message">Sürüm %1$s en son sürümdür.</string>
+    <string name="update_preparing">İndirmeye hazırlanıyor…</string>
+    <string name="update_install_prompt">Kurulum istemi kısa süre içinde görünecektir</string>
+    <string name="update_downloading_wait">Lütfen bekleyin…</string>
+
+
+    <!-- Added for locale completeness -->
+    <string name="category_content_play_description">Oynat</string>
+    <string name="category_sort_by">Sırala</string>
+    <string name="category_filter_by">Filtrele</string>
+    <string name="category_filter_all">Tümü</string>
+    <string name="category_filter_recent">Son eklenen</string>
+    <string name="category_filter_popular">Popüler</string>
+    <string name="category_filter_top_rated">En yüksek puanlı</string>
+    <string name="category_sort_description">Sıralama seçenekleri</string>
+    <string name="category_sort_ascending">Artan sıra</string>
+    <string name="category_sort_descending">Azalan sıra</string>
+    <string name="category_grid_size_description">Izgara boyutu</string>
+    <string name="category_clear_search_description">Aramayı temizle</string>
+    <string name="quick_access_favorites">Favoriler</string>
+    <string name="quick_access_recently_watched">Son izlenenler</string>
+    <string name="quick_access_trending">Trendler</string>
+    <string name="quick_access_see_all">Tümünü gör</string>
+    <string name="quick_access_actions_title">Hızlı işlemler</string>
+    <string name="quick_access_customize_experience">Deneyiminizi özelleştirin</string>
+    <string name="quick_access_setup_favorites">Favorileri ayarla</string>
+    <string name="quick_action_guide_tv">TV Rehberi</string>
+    <string name="quick_action_search">Ara</string>
+    <string name="quick_action_settings">Ayarlar</string>
+    <string name="quick_action_help">Yardım</string>
+
+
+    <string name="action_mute">Mute</string>
+    <string name="action_unmute">Unmute</string>
+    <string name="profile_history_cleared">Watch history cleared</string>
+    <string name="profile_device_removed_success">Device removed successfully</string>
+    <string name="device_limit_select_device_prompt">Select a device</string>
+    <string name="device_type_android">Android</string>
+    <string name="device_type_ios">iOS</string>
+    <string name="device_type_web_browser">Web Browser</string>
+    <string name="device_type_smart_tv">Smart TV</string>
+    <string name="nav_streaming_tagline">STREAMING</string>
+    <string name="nav_premium_streaming">Premium Streaming</string>
+    <string name="nav_premium_badge">Premium</string>
+    <string name="error_loading_events">Error loading events</string>
+    <string name="splash_premium_content_platform">Premium Content Platform</string>
+    <string name="emulator_status_title">Device Status</string>
+    <string name="emulator_status_device_type_label">Device type:</string>
+    <string name="emulator_status_emulator">Emulator</string>
+    <string name="emulator_status_real_device">Real Device</string>
+    <string name="emulator_status_emulator_type_label">Emulator type:</string>
+    <string name="emulator_type_bluestacks">BlueStacks</string>
+    <string name="emulator_type_genymotion">Genymotion</string>
+    <string name="emulator_type_android_sdk">Android SDK</string>
+    <string name="emulator_type_unknown">Unknown</string>
+    <string name="emulator_status_device_id_label">Device ID:</string>
+    <string name="emulator_status_detected_title">Emulator Detected</string>
+    <string name="emulator_status_detected_message">You are using an emulator. Make sure your account has emulator access enabled.</string>
+    <string name="emulator_status_authentic_device">Authentic Android device detected</string>
+
+</resources>

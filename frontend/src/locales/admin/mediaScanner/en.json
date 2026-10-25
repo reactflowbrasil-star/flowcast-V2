@@ -1,0 +1,110 @@
+{
+  "mediaScanner": {
+    "title": "Media Scanner",
+    "subtitle": "Scan server folders to automatically import media content",
+    "categorySelector": {
+      "title": "Select Content Category",
+      "description": "Choose the type of content you want to scan for",
+      "movies": "Movies",
+      "series": "Series",
+      "kids": "Kids",
+      "anime": "Anime",
+      "music": "Music"
+    },
+    "folderExplorer": {
+      "title": "Select Folder to Scan",
+      "description": "Browse and select the server folder containing your media files",
+      "currentPath": "Current Path",
+      "selectFolder": "Select This Folder",
+      "selectedFolder": "Selected folder:",
+      "goUp": "Go Up",
+      "loading": "Loading folders...",
+      "error": "Error loading folders",
+      "noFolders": "No folders found",
+      "refresh": "Refresh"
+    },
+    "scanOptions": {
+      "title": "Scan Options",
+      "duplicatePolicy": "Duplicate Policy",
+      "duplicatePolicyOptions": {
+        "omit": "Skip duplicates",
+        "replace": "Replace existing",
+        "allow": "Allow duplicates"
+      },
+      "addSubtitles": "Include Subtitles",
+      "addSubtitlesHelp": "Automatically detect and add subtitle files"
+    },
+    "scanProgress": {
+      "title": "Scan Progress",
+      "status": "Status",
+      "scanned": "Files Scanned",
+      "imported": "Files Imported",
+      "errors": "Errors",
+      "currentFile": "Current File",
+      "timeElapsed": "Time Elapsed",
+      "estimatedRemaining": "Estimated Remaining",
+      "cancel": "Cancel Scan",
+      "cancelConfirm": "Are you sure you want to cancel the scan? Progress will be lost.",
+      "completed": "Scan Completed",
+      "cancelled": "Scan Cancelled",
+      "failed": "Scan Failed"
+    },
+    "taskControl": {
+      "title": "Task Control",
+      "tasks": "tasks",
+      "path": "Path",
+      "started": "Started",
+      "duration": "Duration",
+      "currentFile": "Current file",
+      "stats": {
+        "movies": "Movies",
+        "series": "Series",
+        "episodes": "Episodes",
+        "subtitles": "Subtitles",
+        "skipped": "Skipped",
+        "replaced": "Replaced"
+      },
+      "error": "Error",
+      "cancel": "Cancel",
+      "delete": "Delete",
+      "cancelling": "Cancelling...",
+      "deleting": "Deleting...",
+      "idle": "No tasks running"
+    },
+    "scanStatus": {
+      "title": "Scan Status",
+      "scanId": "Scan ID",
+      "status": "Status",
+      "backgroundNote": "The scan is running on the server. You can close this page and the process will continue.",
+      "anotherScanNote": "There is already a scan in progress. You can start another if needed."
+    },
+    "actions": {
+      "startScan": "Start Scan",
+      "selectCategory": "Select Category",
+      "selectFolder": "Select Folder",
+      "configureScan": "Configure Scan",
+      "delete": "Delete",
+      "deleting": "Deleting..."
+    },
+    "status": {
+      "idle": "Ready to scan",
+      "scanning": "Scanning in progress...",
+      "completed": "Scan completed successfully",
+      "cancelled": "Scan was cancelled",
+      "failed": "Scan failed with errors"
+    },
+    "errors": {
+      "noCategory": "Please select a content category",
+      "noFolder": "Please select a folder to scan",
+      "scanFailed": "Failed to start scan: {{message}}",
+      "cancelFailed": "Failed to cancel scan: {{message}}",
+      "loadFolders": "Failed to load folders: {{message}}"
+    },
+    "notifications": {
+      "scanStarted": "Media scan started successfully",
+      "scanCompleted": "Media scan completed: {{imported}} files imported",
+      "scanCancelled": "Media scan was cancelled",
+      "scanFailed": "Media scan failed: {{message}}"
+    }
+  }
+}

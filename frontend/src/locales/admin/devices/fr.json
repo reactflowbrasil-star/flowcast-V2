@@ -1,0 +1,169 @@
+{
+  "activeDevices": "Appareils Actifs",
+  "devices": {
+    "title": "Gestion des Appareils",
+    "description": "Gérez vos appareils enregistrés et ajoutez-en de nouveaux",
+    "devices": "appareils",
+    "addDevice": "Ajouter un Appareil",
+    "limitStatus": "Statut Limite Appareils",
+    "atLimit": "À la Limite",
+    "available": "Disponible",
+    "youHaveDevices": "Vous avez {{count}} sur {{max}} appareils autorisés enregistrés.",
+    "toAddRemove": "Pour ajouter un nouvel appareil, vous devez d'abord en supprimer un existant.",
+    "yourRegisteredDevices": "Vos Appareils Enregistrés",
+    "table": {
+      "device": "Appareil",
+      "user": "Utilisateur",
+      "deviceLimit": "Limite Appareils",
+      "riskLevel": "Niveau de Risque",
+      "status": "Statut",
+      "lastActive": "Dernière Activité",
+      "actions": "Actes"
+    },
+    "risk": {
+      "high": "Risque Élevé",
+      "safe": "Sûr"
+    },
+    "remove": "Supprimer",
+    "removeDeviceConfirmation": "Êtes-vous sûr de vouloir supprimer définitivement l'appareil \"{{name}}\" de l'utilisateur {{username}} ?\\n\\nNote : Cela supprimera uniquement l'appareil. L'utilisateur pourra le réenregistrer plus tard.\\nAttention : Si vous souhaitez empêcher cet appareil de se reconnecter, utilisez \"Supprimer & Blacklister\".",
+    "removeAndBlacklistAction": "Supprimer & Blacklister",
+    "removeAndBlacklistTitle": "Supprimer & Blacklister Appareil",
+    "removeAndBlacklistDescription": "Êtes-vous sûr de vouloir supprimer l'appareil \"{{name}}\" de l'utilisateur {{username}} et de l'ajouter à la liste noire ?\\n\\nAttention : Cela déconnectera immédiatement l'appareil et l'empêchera de se reconnecter jusqu'à ce qu'il soit retiré manuellement de la liste noire.",
+    "blacklistOnly": "Blacklister Uniquement",
+    "blacklistTitle": "Blacklister Appareil",
+    "blacklistDescription": "Êtes-vous sûr de vouloir ajouter l'appareil \"{{name}}\" à la liste noire sans le supprimer ?\\n\\nNote : Cela déconnectera l'appareil immédiatement mais le gardera dans la liste des appareils actifs jusqu'à ce que l'utilisateur tente de se reconnecter.",
+    "blacklistAction": "Blacklister Appareil",
+    "removeMultipleTitle": "Supprimer Plusieurs Appareils",
+    "removeMultipleDescription": "Êtes-vous sûr de vouloir supprimer {{count}} appareils sélectionnés ?",
+    "devicesToBeRemovedLabel": "Appareils à supprimer :",
+    "moreDevices": "... et {{count}} autres appareils",
+    "bulkWarning": "Cette action est irréversible.",
+    "removeAllSelected": "Supprimer Sélection",
+    "removeDeviceTitle": "Supprimer Appareil",
+    "removeDeviceDescription": "Êtes-vous sûr de vouloir supprimer \"{{name}}\" ?\n\nVous devrez réenregistrer cet appareil pour l'utiliser à l'avenir.",
+    "removeDevice": "Supprimer Appareil",
+    "noDevices": "Aucun appareil enregistré",
+    "registerFirstDescription": "Enregistrez votre premier appareil pour commencer à utiliser le service.",
+    "registerFirstButton": "Enregistrer Premier Appareil",
+    "registerNewTitle": "Enregistrer Nouvel Appareil",
+    "registerNewDescription": "Ajouter un nouvel appareil à votre compte",
+    "label": {
+      "deviceId": "ID Appareil",
+      "deviceName": "Nom de l'Appareil"
+    },
+    "placeholder": {
+      "id": "Entrez l'identifiant unique de l'appareil",
+      "name": "Entrez le nom de l'appareil (ex: TV Salon)",
+      "searchDevices": "Rechercher des appareils..."
+    },
+    "removeSelected": "Supprimer Sélection ({{count}})",
+    "noDevicesFoundTitle": "Aucun appareil trouvé",
+    "noDevicesFoundFor": "Aucun appareil trouvé pour \"{{query}}\"",
+    "noDevicesRegistered": "Aucun appareil actuellement enregistré dans le système.",
+    "deviceIdLabel": "ID : {{id}}",
+    "time": {
+      "justNow": "À l'instant",
+      "minutesAgo": "il y a {{count}}m",
+      "hoursAgo": "il y a {{count}}h",
+      "daysAgo": "il y a {{count}}j"
+    },
+    "errors": {
+      "loadFailed": "Échec du chargement des informations de l'appareil. Veuillez réessayer plus tard."
+    },
+    "registering": "Enregistrement...",
+    "registerDevice": "Enregistrer Appareil",
+    "activeList": {
+      "description": "Surveiller toutes les connexions d'appareils actifs dans le système",
+      "searchPlaceholder": "Rechercher des appareils...",
+      "deviceId": "ID : {{id}}",
+      "time": {
+        "justNow": "À l'instant",
+        "minutesAgo": "il y a {{count}}m",
+        "hoursAgo": "il y a {{count}}h",
+        "daysAgo": "il y a {{count}}j"
+      },
+      "actions": {
+        "disconnect": "Déconnecter"
+      },
+      "removeDialog": {
+        "title": "Supprimer Appareil",
+        "description": "Êtes-vous sûr de vouloir supprimer définitivement l'appareil \"{{device}}\" de l'utilisateur {{user}} ? Cette action est irréversible."
+      },
+      "emptyTitle": "Aucun appareil trouvé",
+      "noDevicesSearch": "Aucun appareil trouvé pour \"{{query}}\"",
+      "noDevicesDescription": "Aucun appareil actuellement enregistré dans le système."
+    },
+    "limits": {
+      "title": "Avertissements Limite Appareils",
+      "subtitle": "Surveiller les utilisateurs approchant ou dépassant les limites d'appareils",
+      "summary": {
+        "warningTitle": "Avertissements",
+        "warningDescription": "Utilisateurs à 80–99% de leur limite",
+        "criticalTitle": "Critique",
+        "criticalDescription": "Utilisateurs à ou au-dessus de leur limite",
+        "exceededTitle": "Dépassé",
+        "exceededDescription": "Utilisateurs dépassant leur limite"
+      },
+      "attention": {
+        "title": "Utilisateurs Nécessitant Attention"
+      },
+      "table": {
+        "deviceUsage": "Utilisation Appareils",
+        "progress": "Progression",
+        "warningLevel": "Niveau d'Avertissement"
+      },
+      "actions": {
+        "increaseLimit": "Augmenter Limite",
+        "monitor": "Surveiller"
+      },
+      "allSafeTitle": "Tous Utils. Dans les Limites",
+      "allSafeDescription": "Aucun utilisateur proche ou au-dessus des limites.",
+      "allUsersTitle": "Tous les Utilisateurs",
+      "badges": {
+        "safe": "Sûr",
+        "warning": "Avertissement",
+        "critical": "Critique",
+        "exceeded": "Dépassé"
+      }
+    },
+    "overview": {
+      "deviceCount": "{{count}}/{{max}} appareils"
+    },
+    "activeDevices": "Appareils Actifs",
+    "deviceRemoval": "Suppression d'Appareil",
+    "warnings": "Avertissements",
+    "totalDevices": "Total Appareils",
+    "registeredDevices": "Appareils enregistrés",
+    "currentlyConnected": "Actuellement connectés",
+    "usersWithDevices": "Utilisateurs avec Appareils",
+    "activeUsers": "Utilisateurs actifs",
+    "limitWarnings": "Avertissements de Limite",
+    "deviceStatistics": {
+      "title": "Statistiques Appareils"
+    },
+    "statsDescription": "Détail de l'utilisation des appareils par utilisateur",
+    "avgDevicesPerUser": "Moy. Appareils/Util.",
+    "usersAtLimit": "Utilisateurs à la Limite",
+    "totalCapacity": "Capacité Totale",
+    "utilization": "Utilisation",
+    "usageDistribution": "Distribution d'Usage",
+    "byUsageLevel": "Par Niveau d'Usage",
+    "lowUsage": "Faible usage",
+    "systemHealth": {
+      "title": "Santé Système"
+    },
+    "deviceUsageByUser": {
+      "none": "Aucun utilisateur avec appareils"
+    },
+    "usageByUserTitle": "Utilisation des appareils par utilisateur",
+    "usageByUserDescription": "Les statistiques apparaîtront ici une fois les appareils enregistrés.",
+    "common": {
+      "active": "Actif",
+      "inactive": "Inactif",
+      "cancel": "Annuler",
+      "actions": "Actes"
+    },
+    "removing": "Suppression...",
+    "overviewTitle": "Vue d'Ensemble"
+  }
+}

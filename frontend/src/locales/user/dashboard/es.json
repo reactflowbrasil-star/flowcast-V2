@@ -1,0 +1,32 @@
+{
+  "title": "Panel de Control",
+  "welcome": "Bienvenido de nuevo",
+  "guest": "Invitado",
+  "navigation": {
+    "home": "Inicio",
+    "movies": "Películas",
+    "tv": "TV en vivo",
+    "series": "Series",
+    "kids": "Niños",
+    "anime": "animado",
+    "events": "Eventos",
+    "music": "Música",
+    "content": "Contenido",
+    "devices": "Dispositivos",
+    "profile": "Perfil",
+    "products": "Productos"
+  },
+  "sidebar": {
+    "viewProfile": "Ver y editar tu perfil",
+    "secureSession": "Sesión segura",
+    "logout": "Cerrar sesión"
+  },
+  "stats": {
+    "activeDevices": "Dispositivos Activos",
+    "subscription": "Suscripción",
+    "expiresAt": "Expira",
+    "unlimited": "Ilimitado",
+    "active": "Activo",
+    "expired": "Expirado"
+  }
+}

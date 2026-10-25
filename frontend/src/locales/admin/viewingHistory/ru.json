@@ -1,0 +1,46 @@
+{
+  "viewingHistory": {
+    "title": "История Просмотров",
+    "subtitle": "Недавние события воспроизведения и активность просмотров",
+    "lastUpdated": "Последнее обновление: {{time}}",
+    "autoRefreshOn": "Авто-обновление ВКЛ",
+    "autoRefreshOff": "Авто-обновление ВЫКЛ",
+    "refreshNow": "Обновить сейчас",
+    "filters": {
+      "username": "Пользователь",
+      "contentType": "Тип контента",
+      "allTypes": "Все типы",
+      "ipAddress": "IP адрес",
+      "startDate": "Дата с (дд/мм/гггг)",
+      "endDate": "Дата по (дд/мм/гггг)",
+      "perPage": "На странице",
+      "search": "Поиск",
+      "placeholderUsername": "Поиск пользователя...",
+      "placeholderIp": "напр. 192.168.0.1"
+    },
+    "table": {
+      "date": "Дата",
+      "username": "Пользователь",
+      "content": "Контент",
+      "type": "Тип",
+      "duration": "Длительность",
+      "device": "Устройство",
+      "ip": "IP"
+    },
+    "pagination": {
+      "previous": "Назад",
+      "next": "Вперед",
+      "showing": "Показано {{from}} - {{to}} из {{total}} записей",
+      "pageOf": "Страница {{page}} из {{total_pages}}"
+    },
+    "empty": "История просмотров не найдена.",
+    "errors": {
+      "failedLoad": "Не удалось загрузить историю просмотров",
+      "invalidDateRange": "Неверный диапазон дат"
+    },
+    "common": {
+      "views": "Просмотры",
+      "today": "Сегодня"
+    }
+  }
+}

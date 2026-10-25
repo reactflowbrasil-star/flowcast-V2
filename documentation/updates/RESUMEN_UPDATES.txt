@@ -1,0 +1,108 @@
+STREAMCORE - SIMPLE UPDATES SUMMARY
+
+Generated on: 2026-03-02
+
+Included versions:
+- v1.0.1 (January 2026)
+- v1.1.0 (January 2026)
+- v1.1.2 (February 2026)
+- v1.2.0 (March 2026)
+
+========================================
+v1.0.1 - Main changes
+========================================
+- Full database migration: SQLite -> PostgreSQL 16.
+- Performance improvements (N+1 query optimization and large import optimizations).
+- Full internationalization in 8 languages (web + Android apps).
+- Security fixes in stream delivery (prevent JWT token leakage to external URLs).
+- Bug fixes across backend, frontend, Android TV, and Android Phone.
+- Docker improvements (simplified structure, healthcheck, correct pg_dump support).
+- Documentation updates for deployment, backup, and restore.
+
+========================================
+v1.1.0 - Main changes
+========================================
+- Anti-injection security hardening (server-side validation/sanitization).
+- Android TV EPG fix (time window extended from 6h to 24h).
+- Frontend API URL fixes (removed incorrect fallback behavior).
+- Increased upload limits (APK/movies) and custom nginx support.
+- New TMDB credits/cast endpoint.
+- Backend compatibility improvements for Android Mobile app.
+- Android TV update dialog improvements (focus, progress, UX).
+- i18n namespace loading fixes and general bug fixes.
+
+========================================
+v1.1.2 - Main changes
+========================================
+- Version alignment to 1.1.2 across backend, frontend, Android TV, and Android Phone.
+- Android Phone project integrated as a first-class module.
+- Stricter URL validation rules in Live TV (stream/proxy/DoH/license).
+- Stream/subtitle proxy hardening (anti-SSRF, host allowlist, optional auth).
+- New backend features: password reset, SMTP, 2FA, reseller/master API keys,
+  gift codes, public API v1 with API key auth, TV provider sync, and media watcher.
+- UI/UX improvements across admin/reseller/end-user panels.
+- Additional Android TV update flow and stability improvements.
+
+========================================
+v1.2.0 - Main changes
+========================================
+- 9+ security fixes: bcrypt API keys, IP spoofing patched, Stripe idempotency,
+  2FA fail-open closed, gift code double-spend prevention, rate limiting.
+- End-user self-registration with automatic activation and package selection.
+- Package-based subscription system (free + Stripe paid) with direct billing.
+- Category-based content access — users only see subscribed categories.
+- Regular License enforcement — restricts to free packages only.
+- ClearKey DRM fully fixed across phone and TV apps (DASH parser rewrite).
+- Per-episode multi-stream support with DRM per episode.
+- Stripe payment settings configurable from Admin UI (DB-first, env fallback).
+- API response encryption (AES-256-GCM) for end-user clients.
+- Automatic v1.1.2 → v1.2.0 database migration (44 tables, FK-safe ordering).
+- 77K+ RPS on content endpoints, 82 automated tests, 0 Clippy warnings.
+- Google Fonts dependency removed — local font bundled for Docker reliability.
+
+========================================
+Everything that was updated (global)
+========================================
+Backend
+- Validation security and anti-injection hardening.
+- Expanded auth/security system (2FA, password reset, API keys, bans/incidents, rate limiting).
+- New endpoints and service improvements (subscriptions, packages, billing, watch progress).
+- Stronger URL/proxy rules for streaming.
+- ClearKey DRM consistency and episode DRM inheritance.
+- API response encryption layer.
+
+Frontend Web
+- Dynamic sidebar and navigation based on user subscribed categories.
+- Subscription flow (registration → package selection → dashboard).
+- Admin panel improvements (Stripe settings, per-episode streams, upload progress).
+- Responsive dialogs, list view image fixes, version changelog updates.
+- Google Fonts removed — local Outfit font for Docker build reliability.
+
+Android TV
+- ClearKey DRM fully fixed (JSON priority, manifest parser).
+- EPG, D-pad navigation, and update dialog improvements.
+- HEVC 10-bit playback improvements.
+- Device registration persistence.
+
+Android Phone
+- ClearKey DRM fully fixed (Referer header, DASH parser rewrite).
+- Device registration persistence via DataStore Preferences.
+- Watch progress contract parity with backend.
+
+Infrastructure / DevOps
+- Automatic database migration engine (v1.1.2 → v1.2.0).
+- New environment variables for encryption, pool tuning, media storage.
+- Docker Compose updated with subscription and encryption config.
+
+Compatibility status
+- Master API Keys invalidated on upgrade — must regenerate.
+- Public gift code/demo defaults to disabled after upgrade.
+- All other updates are backward-compatible.
+
+Sources:
+- CHANGELOG.md
+- UPDATE_1.0.1.md
+- UPDATE_1.1.0.md
+- UPDATE_1.1.2.md
+- UPDATE_1.2.0.md
+- RELEASE_1.2.0.md

@@ -1,0 +1,110 @@
+{
+  "editTVChannel": {
+    "title": "Upraviť TV kanál",
+    "sections": {
+      "basicInfo": "Základné informácie",
+      "currentEpgMapping": "Aktuálne mapovanie EPG",
+      "editEpgMapping": "Upraviť mapovanie EPG",
+      "streamSettings": "Nastavenia streamu",
+      "artworkStatus": "Umelecké dielo a stav",
+      "livetvHeaders": "Konfigurácia hlavičiek LiveTV"
+    },
+    "labels": {
+      "channelName": "Názov kanála *",
+      "description": "Popis",
+      "channelNumber": "Číslo kanála",
+      "provider": "Poskytovateľ",
+      "channelCategory": "Kategória kanála",
+      "country": "Krajina",
+      "epgSource": "Zdroj EPG",
+      "epgChannelId": "ID kanála EPG",
+      "timeOffset": "Časový posun",
+      "status": "Stav",
+      "epgChannel": "EPG kanál",
+      "offsetMin": "Posun (min)",
+      "format": "Formátovať",
+      "streamUrl": "Webová adresa streamu *",
+      "drmType": "Typ DRM *",
+      "clearkeyKeys": "Klávesy ClearKey *",
+      "licenseServerUrl": "Adresa URL licenčného servera *",
+      "licenseRequestHeaders": "Hlavičky žiadostí o licenciu (voliteľné)",
+      "logoUrl": "Adresa URL loga",
+      "active": "Aktívne",
+      "originHeader": "Hlavička pôvodu",
+      "userAgent": "User Agent",
+      "refererHeader": "Hlavička referenta",
+      "customHeadersJson": "Vlastné hlavičky (JSON)",
+      "httpProxy": "HTTP proxy (voliteľné)",
+      "dnsOverHttps": "DNS-over-HTTPS (voliteľné)"
+    },
+    "placeholders": {
+      "channelName": "Zadajte názov kanála...",
+      "description": "Zadajte popis kanála...",
+      "channelNumber": "napr.1,2,3...",
+      "provider": "napr. Kábel, OTT atď.",
+      "loadingCategories": "Načítavajú sa kategórie...",
+      "selectCategory": "Vyberte kategóriu...",
+      "country": "napr. US, MX, ES...",
+      "selectEpgSource": "Vybrať zdroj EPG...",
+      "filterByNameOrId": "Filtrovať podľa mena alebo ID...",
+      "selectChannel": "Vybrať kanál...",
+      "selectSourceFirst": "Najprv vyberte zdroj",
+      "selectFormat": "Vybrať formát...",
+      "streamUrl": "https://example.com/stream.m3u8",
+      "selectDrmType": "Vyberte typ DRM...",
+      "clearkeyKeys": "Zadajte páry ClearKey v hexadecimálnom formáte: kid_hex:key_hex",
+      "licenseServerUrl": "https://license.example.com/widevine",
+      "licenseRequestHeaders": "{\"X-AxDRM-Message\": \"váš-token-tu\", \"Autorizácia\": \"Token na doručiteľa\"}",
+      "logoUrl": "https://example.com/logo.png",
+      "originHeader": "https://example.com",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)...",
+      "refererHeader": "https://referer-site.com",
+      "customHeaders": "{\"X-Custom-Header\": \"value\", \"Authorization\": \"Token nosiča\"}",
+      "httpProxy": "http://user:pass@ip:port",
+      "dohUrl": "https://dns.google/dns-query"
+    },
+    "tooltips": {
+      "copyChannelId": "Kopírovať ID kanála",
+      "formatHelp": "M3U8 (bez DRM) alebo DRM (ClearKey). Ak vyberiete DRM, kľúče sú povolené.",
+      "help": "Pomoc",
+      "streamUrlHelp": "URL celého streamu (m3u8, mpd atď.)",
+      "copyStreamUrl": "Kopírovať webovú adresu streamu"
+    },
+    "hints": {
+      "noEpgSourceAssigned": "Nie je priradený žiadny zdroj EPG",
+      "noChannelIdAssigned": "Nie je priradené ID kanála",
+      "minutes": "minút",
+      "epgConfigured": "✓ EPG je nakonfigurované",
+      "epgNotConfigured": "⚠ EPG nie je nakonfigurované",
+      "loadingEpgMapping": "Načítava sa mapovanie EPG...",
+      "epgDataNote": "Údaje EPG nie sú uložené v databáze; ukladajú sa iba identifikátory pre vyhľadávanie na požiadanie.",
+      "loadingEpgControls": "Načítavajú sa ovládacie prvky EPG...",
+      "drmTypeHelp": "ClearKey: Lokálne kľúče (hexadecimálny formát) | Widevine/PlayReady: Vyžaduje sa licenčný server",
+      "clearkeyFormat": "Formát: kid_hex:key_hex (jeden na riadok alebo oddelené čiarkou)",
+      "widevineLicenseHelp": "Adresa URL licenčného servera Widevine (napr. z PallyCon, BuyDRM, Axinom)",
+      "playreadyLicenseHelp": "Adresa URL licenčného servera PlayReady",
+      "licenseHeadersHelp": "Objekt JSON s vlastnými hlavičkami pre žiadosti o licenciu",
+      "originHeaderHelp": "Hlavička pôvodu pre požiadavky CORS (voliteľné)",
+      "userAgentHelp": "Hlavička User-Agent na emuláciu prehliadača/zariadenia (voliteľné)",
+      "refererHeaderHelp": "Referenčná hlavička pre pôvod žiadosti (voliteľné)",
+      "customHeadersHelp": "Ďalšie vlastné hlavičky vo formáte JSON (voliteľné)",
+      "httpProxyHelp": "Only for geoblocked channels. Format: http://user:pass@ip:port",
+      "dohUrlHelp": "Voliteľný DoH resolver na obídenie blokovania DNS. Musí to byť http(s) URL."
+    },
+    "toasts": {
+      "epgChannelIdCopied": "ID kanála EPG bolo skopírované",
+      "streamUrlCopied": "Webová adresa streamu bola skopírovaná"
+    },
+    "buttons": {
+      "cancel": "Zrušiť",
+      "updating": "Aktualizuje sa...",
+      "updateChannel": "Aktualizovať kanál"
+    },
+    "validation": {
+      "titleRequired": "Vyžaduje sa názov",
+      "validVideoUrlRequired": "Vyžaduje sa platná adresa URL videa",
+      "proxyUrlFormat": "Format must be http://user:pass@ip:port",
+      "dohUrlFormat": "Formát musí byť http(s)://..."
+    }
+  }
+}

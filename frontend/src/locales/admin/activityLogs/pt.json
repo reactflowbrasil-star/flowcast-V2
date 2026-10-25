@@ -1,0 +1,67 @@
+{
+  "title": "Logs de Atividade",
+  "subtitle": "Atividade do sistema, ações e auditorias",
+  "lastUpdated": "Última atualização: {{time}}",
+  "autoRefreshOn": "Atualização auto está LIGADA",
+  "autoRefreshOff": "Atualização auto está DESLIGADA",
+  "refreshNow": "Atualizar agora",
+  "refreshLabel": "Atualizar",
+  "tabs": {
+    "dashboard": "Painel",
+    "system": "Sistema",
+    "loginHistory": "Histórico de Login",
+    "viewingHistory": "Histórico de Visualização"
+  },
+  "filters": {
+    "actionType": "Tipo de ação",
+    "allActions": "Todas as ações",
+    "user": "Usuário",
+    "username": "Usuário",
+    "ipAddress": "Endereço IP",
+    "startDate": "Data inicial (dd/mm/aaaa)",
+    "endDate": "Data final (dd/mm/aaaa)",
+    "perPage": "Por página",
+    "search": "Buscar",
+    "placeholderUsername": "Buscar usuário...",
+    "placeholderIp": "ex: 192.168.0.1",
+    "contentType": "Tipo de conteúdo",
+    "allTypes": "Todos os tipos"
+  },
+  "common": {
+    "failedLogins": "Logins falhos",
+    "today": "Hoje",
+    "views": "Visitas"
+  },
+  "table": {
+    "date": "Data",
+    "action": "Ação",
+    "user": "Usuário",
+    "target": "Alvo",
+    "description": "Descrição",
+    "credits": "Créditos",
+    "ip": "IP",
+    "device": "Dispositivo"
+  },
+  "pagination": {
+    "previous": "Anterior",
+    "next": "Próximo",
+    "showing": "Mostrando {{from}} a {{to}} de {{total}} logs",
+    "pageOf": "Página {{page}} de {{total_pages}}"
+  },
+  "actionTypes": {
+    "USER_CREATED": "Usuário Criado",
+    "USER_DELETED": "Usuário Excluído",
+    "RESELLER_CREATED": "Revendedor Criado",
+    "RESELLER_DELETED": "Revendedor Excluído",
+    "CREDIT_USED": "Crédito Usado",
+    "CREDIT_ASSIGNED": "Crédito Atribuído",
+    "SYSTEM_INIT": "Sistema Inicializado",
+    "LOGIN": "Conecte-se",
+    "LOGOUT": "Sair"
+  },
+  "empty": "Nenhum log de atividade encontrado.",
+  "errors": {
+    "failedLoad": "Falha ao carregar logs de atividade",
+    "invalidDateRange": "Intervalo de data inválido"
+  }
+}

@@ -1,0 +1,114 @@
+{
+  "billing": {
+    "overview": {
+      "title": "Resumen de facturación",
+      "description": "Rendimiento de ingresos y créditos de un vistazo",
+      "metrics": {
+        "onlineRevenue": "Ingresos en línea",
+        "offlineRevenue": "Ingresos fuera de línea",
+        "adjustments": "Ajustes",
+        "totalRevenue": "Ingresos Totales",
+        "creditsOnline": "Créditos (En línea)",
+        "creditsOffline": "Créditos (Fuera de línea)",
+        "creditsAdjustments": "Créditos (Ajustes)",
+        "totalCredits": "Créditos Totales"
+      }
+    },
+    "pricing": {
+      "title": "Precio de créditos",
+      "description": "Precio base y niveles de descuento configurados en el sistema",
+      "basePrice": "Precio base (USD por crédito)",
+      "activeTiers": "Niveles activos",
+      "effectiveCurrency": "Moneda efectiva",
+      "tiersNote": "El nivel más alto cuya cantidad mínima se cumpla será aplicado.",
+      "table": {
+        "minQuantity": "Cantidad mínima (inclusive)",
+        "discountPercent": "Porcentaje de descuento",
+        "noTiers": "No hay niveles configurados. El precio base aplica para todas las cantidades.",
+        "discountSuffix": "descuento"
+      }
+    },
+    "offline": {
+      "title": "Agregar Pago Offline",
+      "description": "Registrar pagos manuales y otorgar créditos al instante",
+      "labels": {
+        "reseller": "Revendedor",
+        "amount": "Monto (USD)",
+        "credits": "Créditos a otorgar",
+        "method": "Método",
+        "reference": "Referencia",
+        "notes": "Notas"
+      },
+      "placeholders": {
+        "resellerSearch": "Escribe al menos 2 letras…",
+        "amount": "p. ej. 100.00",
+        "credits": "p. ej. 100",
+        "method": "efectivo/banco/otro",
+        "reference": "número de factura o referencia",
+        "notes": "notas opcionales"
+      },
+      "chargedCurrency": "Moneda cobrada:",
+      "success": "Pago offline registrado y créditos otorgados",
+      "actions": {
+        "saving": "Guardando...",
+        "save": "Guardar Pago Offline"
+      },
+      "errors": {
+        "amountPositive": "El monto (USD) debe ser mayor que 0",
+        "creditsPositive": "Los créditos deben ser un entero positivo",
+        "resellerPositive": "El ID del revendedor debe ser un entero positivo",
+        "selectReseller": "Selecciona un revendedor de la lista"
+      }
+    },
+    "transactions": {
+      "title": "Transacciones recientes",
+      "description": "Filtra y pagina las transacciones de facturación",
+      "filters": {
+        "source": "Origen",
+        "status": "Estado",
+        "resellerId": "ID de revendedor",
+        "reference": "Referencia/Usuario",
+        "perPage": "Por página"
+      },
+      "sources": {
+        "stripe": "Raya",
+        "offline": "Desconectado",
+        "adjustment": "Ajuste"
+      },
+      "statuses": {
+        "completed": "Completada",
+        "pending": "Pendiente",
+        "refunded": "Reembolsada",
+        "failed": "Fallida"
+      },
+      "placeholders": {
+        "resellerId": "p. ej. 42",
+        "reference": "Buscar referencia o usuario"
+      },
+      "table": {
+        "id": "ID",
+        "reseller": "Revendedor",
+        "source": "Origen",
+        "amount": "Monto",
+        "credits": "Créditos",
+        "status": "Estado",
+        "reference": "Referencia",
+        "createdAt": "Creada el"
+      },
+      "total": "Total: {{count}}",
+      "pagination": {
+        "page": "Página {{page}}"
+      },
+      "empty": "No se encontraron transacciones."
+    },
+    "errors": {
+      "fetchOverview": "Error al obtener el resumen de facturación",
+      "fetchPricing": "Error al obtener la configuración de precios",
+      "fetchTransactions": "Error al obtener las transacciones",
+      "createOfflinePayment": "Error al crear el pago offline"
+    }
+  },
+  "common": {
+    "refresh": "Actualizar"
+  }
+}

@@ -1,0 +1,839 @@
+{
+  "security": {
+    "tabs": {
+      "overview": "Prehľad bezpečnosti",
+      "incidents": "Bezpečnostné incidenty",
+      "bans": "Bezpečnostné zákazy",
+      "blacklistedDevices": "Zariadenia na čiernej listine"
+    },
+    "actions": {
+      "cleanupExpiredBans": "Vyčistiť expirované zákazy",
+      "createManualBan": "Vytvoriť manuálny zákaz"
+    },
+    "cards": {
+      "totalIncidents": "Celkom incidentov",
+      "todaysIncidents": "Dnešné incidenty",
+      "activeBans": "Aktívne zákazy",
+      "permanentBans": "Trvalé zákazy",
+      "blacklistedDevices": "Zariadenia na čiernej listine"
+    }
+  },
+  "masterKeys": {
+    "createDialogDescription": "Vytvorte nový hlavný kľúč API (Master API Key) pre externé aplikácie. Tento kľúč poskytuje úplný prístup k API bez nutnosti overenia cez UI.",
+    "examples": {
+      "appName": "napr. Externá aplikácia editora 2024"
+    },
+    "keyNameHelp": "Popisný názov na identifikáciu tohto kľúča API",
+    "securityNoteTitle": "Poznámka k bezpečnosti",
+    "securityNoteDescription": "Vygenerovaný kľúč API sa zobrazí iba raz. Nezabudnite si ho skopírovať a bezpečne uložiť.",
+    "empty": {
+      "title": "Nenašli sa žiadne kľúče API",
+      "description": "Vytvorte si svoj prvý hlavný kľúč API na povolenie integrácie externých aplikácií"
+    },
+    "detailsTitle": "Podrobnosti o hlavnom kľúči API",
+    "detailsDescription": "Zobraziť a spravovať tento kľúč API pre integráciu externých aplikácií",
+    "apiKeyLabel": "Kľúč API",
+    "activeStatus": "Aktívny stav",
+    "regenerateButton": "Pregenerovať kľúč",
+    "deleteButton": "Odstrániť kľúč",
+    "labels": {
+      "created": "Vytvorené",
+      "lastUpdated": "Posledná aktualizácia",
+      "lastUsed": "Posledné použitie"
+    }
+  },
+  "loginHistory": {
+    "title": "História prihlásení",
+    "lastUpdated": "Posledná aktualizácia: {{time}}",
+    "autoRefreshOn": "Automatické obnovovanie: ZAPNUTÉ",
+    "refreshNow": "Obnoviť teraz",
+    "filters": {
+      "username": "Používateľské meno",
+      "ipAddress": "IP adresa",
+      "startDate": "Dátum od",
+      "endDate": "Dátum do"
+    },
+    "placeholders": {
+      "searchUsername": "Hľadať používateľské meno...",
+      "ipAddress": "IP adresa..."
+    },
+    "loading": "Načítava sa história prihlásení...",
+    "errors": {
+      "loading": "Chyba pri načítaní histórie prihlásení: {{message}}",
+      "loadingFallback": "Nepodarilo sa načítať históriu prihlásení"
+    },
+    "noHistory": "Nenašli sa žiadne pokusy o prihlásenie.",
+    "table": {
+      "dateTime": "Dátum a čas",
+      "user": "Používateľ",
+      "status": "Stav",
+      "ipAddress": "IP adresa",
+      "device": "Zariadenie",
+      "userAgent": "User Agent"
+    }
+  },
+  "securityIncidents": {
+    "filterType": "Filtrovať podľa typu",
+    "allTypes": "Všetky typy",
+    "bruteForce": "Hrubá sila",
+    "suspiciousActivity": "Podozrivá aktivita",
+    "multipleDevices": "Viacero zariadení",
+    "tokenManipulation": "Manipulácia s tokenom",
+    "searchByUsernamePlaceholder": "Hľadať podľa používateľského mena...",
+    "itemsPerPage": "Položiek na stránku",
+    "title": "Bezpečnostné incidenty ({{total}})",
+    "noneFound": "Nenašli sa žiadne incidenty.",
+    "deviceId": "ID zariadenia",
+    "ipAddress": "IP adresa",
+    "deleteTitle": "Odstrániť incident",
+    "showingPage": "Stránka {{page}} z {{totalPages}}",
+    "confirmDelete": "Odstrániť tento incident?"
+  },
+  "securityBans": {
+    "searchByUsernamePlaceholder": "Hľadať podľa používateľského mena...",
+    "itemsPerPage": "Položiek na stránku",
+    "title": "Bezpečnostné zákazy ({{total}})",
+    "noneFound": "Nenašli sa žiadne zákazy.",
+    "level": "Úroveň",
+    "type": "Typ",
+    "reason": "Dôvod",
+    "timeRemaining": "Zostávajúci čas"
+  },
+  "blacklistedDevices": {
+    "title": "Zariadenia na čiernej listine ({{count}})",
+    "noneTitle": "Žiadne zariadenia na čiernej listine",
+    "noneDescription": "Všetko je čisté. Momentálne nie sú na čiernej listine žiadne zariadenia.",
+    "removeButton": "Odstrániť z čiernej listiny"
+  },
+  "unban": {
+    "action": "Odblokovať",
+    "confirm": "Odblokovať používateľa {{user}}?",
+    "promptReason": "Zadajte dôvod odblokovania"
+  },
+  "dashboard": {
+    "notAuthenticated": "Neoverený prístup",
+    "accessDenied": "Prístup odmietnutý. Vyžaduje sa rola administrátora.",
+    "preparing": "Pripravuje sa nástenka..."
+  },
+  "demos": {
+    "title": "Demo skúsenosť",
+    "subtitle": "Monitorujte demo účty, upravujte limity vytvárania a kontrolujte históriu prístupov, aby ste udržali zneužívanie pod kontrolou.",
+    "settingsTitle": "Limity vytvárania",
+    "settingsDescription": "Obmedzte, koľko demo účtov je možné vytvoriť na jednu IP adresu a ako dlho zostanú porušovatelia zablokovaní.",
+    "totalUsers": "Aktívne demá",
+    "thresholdLabel": "Prah (vytvorenia / 24h)",
+    "banDurationLabel": "Trvanie zákazu (dni)",
+    "managementTitle": "Monitorovanie dema",
+    "managementDescription": "Kontrolujte živé demo účty alebo auditujte stopy IP v niekoľkých kliknutiach.",
+    "usersTab": "Používatelia",
+    "historyTab": "História",
+    "usersSummary": "{{count}} aktívnych demo používateľov",
+    "refreshing": "Obnovuje sa...",
+    "ipLabel": "IP adresa",
+    "expiresLabel": "Vyprší",
+    "deviceLabel": "Zariadenie",
+    "userAgentLabel": "Používateľský agent",
+    "resultLabel": "Výsledok",
+    "successful": "Úspešné",
+    "failed": "Zlyhalo",
+    "historySummary": "Zobrazuje sa {{total}} záznamov",
+    "noHistoryResults": "Nenašli sa žiadne pokusy o prihlásenie pre aktuálne filtre.",
+    "noUsers": "Momentálne nie sú k dispozícii žiadni demo používatelia.",
+    "confirmDelete": "Odstrániť tohto demo používateľa? Túto akciu nie je možné vrátiť späť.",
+    "userDeleted": "Demo používateľ bol odstránený",
+    "usernamePlaceholder": "jan.novak"
+  },
+  "giftcodes": {
+    "title": "Darčekové kódy",
+    "description": "Spravujte jednorazové alebo viacnásobné darčekové kódy na vytvorenie alebo predĺženie predplatného používateľov.",
+    "create": "Vytvoriť kód",
+    "bulkCreate": "Hromadné vytvorenie",
+    "export": "Exportovať CSV",
+    "noData": "Nie sú k dispozícii žiadne darčekové kódy na export.",
+    "bulkCreated": "Vytvorených {{count}} darčekových kódov",
+    "created": "Darčekový kód bol vytvorený",
+    "deletedSelected": "Vymazaných {{count}} vybraných darčekových kódov",
+    "generate": "Generovať",
+    "deleteSelected": "Vymazať vybrané ({{count}})",
+    "deleteConfirm": "Vymazať {{count}} vybraných darčekových kódov? Túto akciu nie je možné vrátiť späť.",
+    "table": {
+      "code": "Kód",
+      "duration_days": "Trvanie (dni)",
+      "uses": "Použitia",
+      "remaining": "Zostáva",
+      "expires_at": "Vyprší dňa",
+      "created_at": "Vytvorené dňa"
+    },
+    "form": {
+      "codeOptional": "Kód (voliteľné)",
+      "durationMonths": "Trvanie (mesiace)",
+      "uses": "Použitia",
+      "prefixOptional": "Predpona (voliteľné)",
+      "count": "Počet",
+      "usesPerCode": "Použitia na kód"
+    }
+  },
+  "billing": {
+    "overview": {
+      "title": "Prehľad fakturácie",
+      "description": "Výnosy a výkonnosť kreditov na prvý pohľad",
+      "metrics": {
+        "onlineRevenue": "Online výnosy",
+        "offlineRevenue": "Offline výnosy",
+        "adjustments": "Úpravy",
+        "totalRevenue": "Celkové výnosy",
+        "creditsOnline": "Kredity (Online)",
+        "creditsOffline": "Kredity (Offline)",
+        "creditsAdjustments": "Kredity (Úpravy)",
+        "totalCredits": "Celkový počet kreditov"
+      }
+    },
+    "pricing": {
+      "title": "Ceny kreditov",
+      "description": "Základné ceny a zľavové úrovne nakonfigurované v systéme",
+      "basePrice": "Základná cena (USD za kredit)",
+      "activeTiers": "Aktívne úrovne",
+      "effectiveCurrency": "Efektívna mena",
+      "tiersNote": "Uplatní sa najvyššia úroveň, kde je splnené minimálne množstvo.",
+      "table": {
+        "minQuantity": "Min. množstvo (vrátane)",
+        "discountPercent": "Zľava v percentách",
+        "noTiers": "Nie sú nakonfigurované žiadne úrovne. Základná cena platí pre všetky množstvá.",
+        "discountSuffix": "zľava"
+      }
+    },
+    "offline": {
+      "title": "Pridať offline platbu",
+      "description": "Zaznamenajte manuálne platby a okamžite udeľte kredity",
+      "labels": {
+        "reseller": "Predajca",
+        "amount": "Suma (USD)",
+        "credits": "Kredity na udelenie",
+        "method": "Metóda",
+        "reference": "Referencia",
+        "notes": "Poznámky"
+      },
+      "placeholders": {
+        "resellerSearch": "Zadajte aspoň 2 písmená…",
+        "amount": "napr. 100.00",
+        "credits": "napr. 100",
+        "method": "hotovosť/banka/iné",
+        "reference": "číslo faktúry alebo referencia",
+        "notes": "voliteľné poznámky"
+      },
+      "chargedCurrency": "Účtovaná mena:",
+      "success": "Offline platba bola zaznamenaná a kredity boli udelené",
+      "actions": {
+        "saving": "Ukladá sa...",
+        "save": "Uložiť offline platbu"
+      },
+      "errors": {
+        "amountPositive": "Suma (USD) musí byť väčšia ako 0",
+        "creditsPositive": "Kredity musia byť kladné celé číslo",
+        "resellerPositive": "ID predajcu musí byť kladné celé číslo",
+        "selectReseller": "Vyberte predajcu zo zoznamu"
+      }
+    },
+    "transactions": {
+      "title": "Nedávne transakcie",
+      "description": "Filtrujte a stránkujte fakturačné transakcie",
+      "filters": {
+        "source": "Zdroj",
+        "status": "Stav",
+        "resellerId": "ID predajcu",
+        "reference": "Referencia/Meno",
+        "perPage": "Na stránku"
+      },
+      "sources": {
+        "stripe": "Stripe",
+        "offline": "Offline",
+        "adjustment": "Úprava"
+      },
+      "statuses": {
+        "completed": "Dokončené",
+        "pending": "Čakajúce",
+        "refunded": "Vrátené",
+        "failed": "Zlyhalo"
+      },
+      "placeholders": {
+        "resellerId": "napr. 42",
+        "reference": "Hľadať referenciu alebo meno"
+      },
+      "table": {
+        "id": "ID",
+        "reseller": "Predajca",
+        "source": "Zdroj",
+        "amount": "Suma",
+        "credits": "Kredity",
+        "status": "Stav",
+        "reference": "Referencia",
+        "createdAt": "Vytvorené o"
+      },
+      "total": "Celkom: {{count}}",
+      "pagination": {
+        "page": "Stránka {{page}}"
+      },
+      "empty": "Nenašli sa žiadne transakcie."
+    },
+    "errors": {
+      "fetchOverview": "Nepodarilo sa načítať prehľad fakturácie",
+      "fetchPricing": "Nepodarilo sa načítať konfiguráciu cien",
+      "fetchTransactions": "Nepodarilo sa načítať fakturačné transakcie",
+      "createOfflinePayment": "Nepodarilo sa vytvoriť offline platbu"
+    }
+  },
+  "devices": {
+    "errors": {
+      "loadFailed": "Nepodarilo sa načítať údaje o správe zariadení. Skúste to prosím neskôr znova."
+    },
+    "overview": {
+      "activeUsers": "Aktívni používatelia",
+      "statsDescription": "Podrobný rozpis používania zariadení medzi používateľmi",
+      "usageByUserTitle": "Používanie zariadení podľa používateľa",
+      "usageByUserDescription": "Štatistiky zariadení používateľov sa zobrazia tu, keď budú zariadenia zaregistrované.",
+      "deviceCount": "{{count}}/{{max}} zariadení"
+    },
+    "activeList": {
+      "description": "Monitorujte všetky aktívne pripojenia zariadení v systéme",
+      "searchPlaceholder": "Hľadať zariadenia...",
+      "deviceId": "ID: {{id}}",
+      "actions": {
+        "remove": "Odstrániť",
+        "blacklist": "Pridať na čiernu listinu",
+        "disconnect": "Odpojiť"
+      },
+      "removeDialog": {
+        "title": "Odstrániť zariadenie",
+        "description": "Ste si istí, že chcete natrvalo odstrániť zariadenie \"{{device}}\" používateľa {{user}}? Túto akciu nie je možné vrátiť späť."
+      },
+      "emptyTitle": "Nenašli sa žiadne zariadenia",
+      "noDevicesSearch": "Nenašli sa žiadne zariadenia pre \"{{query}}\"",
+      "noDevicesDescription": "V systéme nie sú momentálne zaregistrované žiadne zariadenia.",
+      "time": {
+        "justNow": "Práve teraz",
+        "minutesAgo": "pred {{count}}m",
+        "hoursAgo": "pred {{count}}h",
+        "daysAgo": "pred {{count}}d"
+      },
+      "table": {
+        "device": "Zariadenie",
+        "user": "Používateľ",
+        "status": "Stav",
+        "lastActive": "Naposledy aktívne",
+        "riskLevel": "Úroveň rizika"
+      }
+    },
+    "limits": {
+      "title": "Upozornenia na limit zariadení",
+      "subtitle": "Monitorujte používateľov blížiacich sa alebo prekračujúcich limity zariadení",
+      "summary": {
+        "warningTitle": "Používatelia na varovaní",
+        "warningDescription": "80-99% limitu využité",
+        "criticalTitle": "Používatelia na kritickom",
+        "criticalDescription": "Na limite zariadení",
+        "exceededTitle": "Používatelia prekročili",
+        "exceededDescription": "Nad limitom zariadení"
+      },
+      "badges": {
+        "safe": "Bezpečné",
+        "warning": "Varovanie",
+        "critical": "Kritické",
+        "exceeded": "Prekročené"
+      },
+      "attention": {
+        "title": "Používatelia vyžadujúci pozornosť"
+      },
+      "table": {
+        "deviceUsage": "Využitie zariadení",
+        "progress": "Priebeh",
+        "warningLevel": "Úroveň varovania"
+      },
+      "actions": {
+        "increaseLimit": "Zvýšiť limit",
+        "monitor": "Monitorovať"
+      },
+      "allSafeTitle": "Všetci používatelia v rámci limitov",
+      "allSafeDescription": "Žiadni používatelia sa momentálne neblížia ani neprekračujú svoje limity zariadení.",
+      "allUsersTitle": "Prehľad všetkých používateľov"
+    },
+    "removal": {
+      "bulkRemoveFailed": "Nepodarilo sa odstrániť {{count}} zariadení"
+    }
+  },
+  "overview": {
+    "totalUsers": "Celkový počet používateľov",
+    "allSystemUsers": "Všetci používatelia v systéme",
+    "contentItems": "Položky obsahu",
+    "moviesTvSeries": "Filmy, TV seriály a ďalšie",
+    "activeResellers": "Aktívni predajcovia",
+    "currentlyActive": "Momentálne aktívni",
+    "systemStatus": "Stav systému",
+    "allSystemsOperational": "Všetky systémy sú v prevádzke",
+    "quickActions": "Rýchle akcie",
+    "commonTasks": "Prejdite na najbežnejšie administratívne úlohy",
+    "manageResellers": "Spravovať predajcov",
+    "manageContent": "Spravovať obsah",
+    "systemConfig": "Systémová konfigurácia",
+    "viewReports": "Zobraziť reporty",
+    "systemHealth": "Stav systému",
+    "systemStatusDescription": "Stav služieb kritických komponentov v reálnom čase",
+    "apiServices": "API služby",
+    "operational": "V prevádzke",
+    "database": "Databáza",
+    "contentDelivery": "Doručovanie obsahu"
+  },
+  "content": {
+    "title": "Správa obsahu",
+    "description": "Spravujte obsah vo všetkých kategóriách s integráciou TMDB",
+    "confirmDelete": "Ste si istí, že chcete odstrániť tento obsah?",
+    "tmdb": {
+      "confirm": "Vyplniť TMDB metadáta pre {{category}}? Toto sa pokúsi priradiť položky bez TMDB ID.",
+      "success": "TMDB metadáta aktualizované: {{updated}} aktualizovaných, {{skipped}} preskočených",
+      "warning": "{{count}} položiek sa nepodarilo priradiť. Skontrolujte konzolu pre podrobnosti.",
+      "error": "Obnova TMDB metadát zlyhala",
+      "defaultCategory": "túto kategóriu"
+    },
+    "errors": {
+      "load": "Nepodarilo sa načítať obsah: {{message}}"
+    },
+    "empty": {
+      "title": "Nenašiel sa žiadny obsah",
+      "description": "Začnite pridaním svojej prvej {{category}} položky."
+    },
+    "categories": {
+      "vod": {
+        "label": "Filmy",
+        "description": "Filmy a samostatný video obsah"
+      },
+      "tv": {
+        "label": "TV kanály",
+        "description": "Živé TV kanály a streamy"
+      },
+      "series": {
+        "label": "Seriály",
+        "description": "TV seriály so sezónami a epizódami"
+      },
+      "events": {
+        "label": "Udalosti",
+        "description": "Živé udalosti a špeciálne vysielanie"
+      },
+      "kids": {
+        "label": "Deti",
+        "description": "Detský a rodinný obsah"
+      },
+      "anime": {
+        "label": "Anime",
+        "description": "Anime a manga adaptácie"
+      }
+    },
+    "actions": {
+      "addManualMovie": "Pridať manuálne film",
+      "addManualSeries": "Pridať manuálne seriál",
+      "addManualKids": "Pridať manuálne detský obsah",
+      "addManualAnime": "Pridať manuálne anime",
+      "addTvChannel": "Pridať TV kanál",
+      "addEvent": "Pridať udalosť",
+      "addContent": "Pridať obsah",
+      "addFromTmdb": "Pridať z TMDB",
+      "bulkImport": "Hromadný import",
+      "manageCategories": "Spravovať kategórie",
+      "scanFolders": "Skenovať priečinky",
+      "fillMetadata": "Vyplniť metadáta",
+      "tvProviders": "TV poskytovatelia"
+    },
+    "table": {
+      "columns": {
+        "title": "Názov",
+        "description": "Popis",
+        "type": "Typ",
+        "format": "Formát",
+        "year": "Rok",
+        "status": "Stav",
+        "created": "Vytvorené",
+        "actions": "Akcie"
+      },
+      "values": {
+        "tmdbId": "TMDB: {{id}}",
+        "noDescription": "Popis nie je k dispozícii",
+        "unknown": "Neznáme",
+        "event": "Udalosť"
+      }
+    },
+    "pagination": {
+      "range": "Zobrazuje sa {{start}}-{{end}} z {{total}} položiek",
+      "rowsPerPage": "Riadkov na stránku",
+      "rows": "Riadky",
+      "updating": "Aktualizuje sa…",
+      "pageOf": "Stránka {{page}} z {{total}}"
+    }
+  },
+  "tickets": {
+    "errors": {
+      "sendMessage": "Nepodarilo sa odoslať správu",
+      "sendMessageRetry": "Nepodarilo sa odoslať správu. Skúste to prosím znova.",
+      "assign": "Nepodarilo sa priradiť lístok",
+      "assignRetry": "Nepodarilo sa priradiť lístok. Skúste to prosím znova.",
+      "delete": "Nepodarilo sa odstrániť lístok",
+      "deleteRetry": "Nepodarilo sa odstrániť lístok. Skúste to prosím znova.",
+      "updateStatus": "Nepodarilo sa aktualizovať stav lístka",
+      "updateStatusRetry": "Nepodarilo sa aktualizovať stav lístka. Skúste to prosím znova.",
+      "create": "Nepodarilo sa vytvoriť lístok",
+      "createRetry": "Nepodarilo sa vytvoriť lístok. Skúste to prosím znova.",
+      "validation": {
+        "titleDescriptionRequired": "Názov a popis sú povinné",
+        "resellerRequired": "Prosím vyberte predajcu"
+      }
+    },
+    "confirm": {
+      "delete": "Ste si istí, že chcete odstrániť tento lístok? Túto akciu nie je možné vrátiť späť."
+    },
+    "filters": {
+      "status": {
+        "all": "Všetky stavy"
+      },
+      "priority": {
+        "all": "Všetky priority"
+      },
+      "unread": {
+        "all": "Všetky správy",
+        "unread": "Neprečítané správy",
+        "read": "Prečítané správy"
+      }
+    },
+    "unreadMessages": "Neprečítané správy",
+    "stats": {
+      "total": "Celkom"
+    },
+    "actions": {
+      "panelTitle": "Akcie administrátora",
+      "assigning": "Priraďuje sa...",
+      "assignToMe": "Priradiť mne",
+      "changeStatus": "Zmeniť stav",
+      "internalMessage": "Odoslať ako internú správu",
+      "scheduleFollowUp": "Naplánovať následné opatrenie",
+      "reassignTicket": "Prepriradiť lístok"
+    },
+    "priority": {
+      "low": "Nízka",
+      "medium": "Stredná",
+      "high": "Vysoká",
+      "urgent": "Urgentná"
+    },
+    "category": {
+      "technical": "Technická",
+      "billing": "Fakturácia",
+      "account": "Účet",
+      "content": "Obsah",
+      "other": "Iné"
+    },
+    "create": {
+      "title": "Vytvoriť nový lístok",
+      "description": "Vytvorte nový lístok podpory na testovacie alebo administratívne účely.",
+      "labels": {
+        "title": "Názov",
+        "description": "Popis",
+        "reseller": "Predajca",
+        "priority": "Priorita",
+        "category": "Kategória"
+      },
+      "placeholders": {
+        "title": "Zadajte názov lístka",
+        "description": "Zadajte popis lístka",
+        "reseller": "Vyberte predajcu"
+      },
+      "submitting": "Vytvára sa...",
+      "submit": "Vytvoriť lístok"
+    },
+    "advanced": {
+      "title": "Rozšírené filtre",
+      "description": "Aplikujte ďalšie filtre na zúženie vyhľadávania lístkov.",
+      "labels": {
+        "dateFrom": "Dátum od",
+        "dateTo": "Dátum do"
+      },
+      "helper": "Filtrujte lístky podľa rozsahu dátumov vytvorenia. Pre zobrazenie všetkých dátumov nechajte polia prázdne.",
+      "clear": "Vymazať všetko",
+      "apply": "Použiť filtre"
+    },
+    "sort": {
+      "title": "Možnosti zoradenia",
+      "description": "Vyberte, ako zoradiť svoje lístky.",
+      "labels": {
+        "sortBy": "Zoradiť podľa",
+        "direction": "Smer"
+      },
+      "options": {
+        "newestFirst": "Najnovšie prvé",
+        "oldestFirst": "Najstaršie prvé",
+        "priority": "Priorita",
+        "status": "Stav",
+        "unreadFirst": "Neprečítané prvé"
+      },
+      "direction": {
+        "descending": "Zostupne",
+        "ascending": "Vzostupne"
+      },
+      "reset": "Obnoviť predvolené",
+      "apply": "Použiť zoradenie"
+    }
+  },
+  "activityLogs": {
+    "title": "Záznamy o činnosti",
+    "subtitle": "Úplná história systémovej činnosti a audit",
+    "tabs": {
+      "dashboard": "Nástenka",
+      "systemLogs": "Systémové logy",
+      "loginHistory": "História prihlásení",
+      "viewingHistory": "História sledovania"
+    },
+    "filters": {
+      "actionType": "Typ akcie",
+      "allActions": "Všetky akcie",
+      "startDate": "Dátum od",
+      "endDate": "Dátum do"
+    },
+    "errors": {
+      "loading": "Chyba pri načítaní logov: {{message}}",
+      "loadingFallback": "Nepodarilo sa načítať záznamy o činnosti"
+    },
+    "noLogs": "Nenašli sa žiadne záznamy o činnosti.",
+    "table": {
+      "date": "Dátum",
+      "action": "Akcia",
+      "user": "Používateľ",
+      "target": "Cieľ",
+      "description": "Popis",
+      "credits": "Kredity"
+    },
+    "pagination": {
+      "showing": "Zobrazuje sa {{from}} až {{to}} z {{total}} logov",
+      "pageOf": "Stránka {{page}} z {{total_pages}}"
+    },
+    "actionTypes": {
+      "USER_CREATED": "Používateľ vytvorený",
+      "USER_DELETED": "Používateľ odstránený",
+      "RESELLER_CREATED": "Predajca vytvorený",
+      "RESELLER_DELETED": "Predajca odstránený",
+      "CREDIT_USED": "Kredit použitý",
+      "CREDIT_ASSIGNED": "Kredit pridelený",
+      "SYSTEM_INIT": "Systém inicializovaný",
+      "LOGIN": "Prihlásenie",
+      "LOGOUT": "Odhlásenie"
+    }
+  },
+  "viewingHistory": {
+    "title": "História sledovania",
+    "lastUpdated": "Posledná aktualizácia: {{time}}",
+    "autoRefreshOn": "Automatické obnovovanie: ZAPNUTÉ",
+    "refreshNow": "Obnoviť teraz",
+    "filters": {
+      "username": "Používateľské meno",
+      "contentType": "Typ obsahu",
+      "allTypes": "Všetky typy",
+      "ipAddress": "IP adresa",
+      "startDate": "Dátum od",
+      "endDate": "Dátum do"
+    },
+    "placeholders": {
+      "searchUsername": "Hľadať používateľské meno...",
+      "ipAddress": "IP adresa..."
+    },
+    "loading": "Načítava sa história sledovania...",
+    "errors": {
+      "loading": "Chyba pri načítaní histórie sledovania: {{message}}"
+    },
+    "noHistory": "Nenašla sa žiadna história sledovania.",
+    "unknown": "Neznáme",
+    "table": {
+      "dateTime": "Dátum a čas",
+      "user": "Používateľ",
+      "contentType": "Typ obsahu",
+      "contentTitle": "Názov obsahu",
+      "info": "Info",
+      "ipAddress": "IP adresa",
+      "device": "Zariadenie"
+    },
+    "pagination": {
+      "showing": "Zobrazuje sa {{from}} až {{to}} z {{total}} sledovaní",
+      "pageOf": "Stránka {{page}} z {{total_pages}}"
+    }
+  },
+  "email": {
+    "title": "Konfigurácia e-mailu",
+    "description": "Konfigurujte nastavenia SMTP pre obnovu hesla, upozornenia 2FA a ďalšie e-maily",
+    "tabs": {
+      "settings": "Nastavenia SMTP",
+      "test": "Testovací e-mail",
+      "guide": "Sprievodca poskytovateľov"
+    },
+    "status": {
+      "title": "Stav e-mailovej služby",
+      "description": "Povoliť alebo zakázať e-mailovú službu globálne"
+    },
+    "server": {
+      "title": "SMTP server",
+      "description": "Konfigurujte pripojenie k vášmu SMTP serveru",
+      "preset": "Prednastavenie poskytovateľa",
+      "host": "SMTP hostiteľ",
+      "port": "Port",
+      "username": "Používateľské meno / E-mail",
+      "password": "Heslo / App heslo",
+      "enterPassword": "Zadajte heslo",
+      "tls": "Povoliť TLS/STARTTLS (odporúčané)",
+      "presets": {
+        "gmail": "Gmail",
+        "outlook": "Outlook",
+        "sendgrid": "SendGrid",
+        "mailgun": "Mailgun",
+        "amazonSes": "Amazon SES",
+        "zoho": "Zoho",
+        "custom": "Vlastné"
+      }
+    },
+    "identity": {
+      "title": "E-mailová identita",
+      "description": "Konfigurujte, ako sa vaše e-maily zobrazujú príjemcom",
+      "fromName": "Meno odosielateľa",
+      "fromEmail": "E-mail odosielateľa",
+      "appName": "Názov aplikácie",
+      "appNameHint": "Používa sa v e-mailových šablónach a predmetoch",
+      "frontendUrl": "URL frontendu",
+      "frontendUrlHint": "Používa sa pre odkazy na obnovu hesla"
+    },
+    "test": {
+      "title": "Odoslať testovací e-mail",
+      "description": "Overte konfiguráciu SMTP odoslaním testovacieho e-mailu",
+      "disabled": "E-mailová služba je momentálne zakázaná. Najprv ju povoľte na karte Nastavenia SMTP.",
+      "recipient": "E-mail príjemcu",
+      "send": "Odoslať test",
+      "sending": "Odosiela sa..."
+    },
+    "guide": {
+      "title": "Sprievodca nastavením SMTP poskytovateľa",
+      "description": "Rýchle pokyny na nastavenie pre populárnych e-mailových poskytovateľov",
+      "providers": {
+        "gmail": {
+          "title": "Gmail / Google Workspace",
+          "steps": {
+            "1": "Prejdite do nastavení účtu Google",
+            "2": "Prejdite na Zabezpečenie > Verifikácia v dvoch krokoch (musí byť povolená)",
+            "3": "Prejdite do časti Zabezpečenie > Heslá aplikácií",
+            "4": "Vygenerujte nové heslo aplikácie pre „Poštu“",
+            "5": "Tu použite toto 16-miestne heslo"
+          },
+          "example": "Hostiteľ: smtp.gmail.com | Prístav: 587 | TLS: Áno"
+        },
+        "sendgrid": {
+          "title": "SendGrid",
+          "steps": {
+            "1": "Vytvorte si účet SendGrid",
+            "2": "Prejdite do časti Nastavenia > Kľúče API",
+            "3": "Vytvorte kľúč API s povoleniami „Odoslanie pošty“.",
+            "4": "Používateľské meno: \"apikey\" (doslovný text)",
+            "5": "Heslo: Váš kľúč API"
+          },
+          "example": "Hostiteľ: smtp.sendgrid.net | Prístav: 587 | TLS: Áno"
+        },
+        "amazonSes": {
+          "title": "Amazon SES",
+          "steps": {
+            "1": "Overte svoju doménu alebo e-mail v konzole SES",
+            "2": "Vytvorte poverenia SMTP v SES",
+            "3": "Použite vygenerované používateľské meno a heslo SMTP",
+            "4": "Použite správny koncový bod regiónu"
+          },
+          "example": "Hostiteľ: email-smtp.[region].amazonaws.com | Prístav: 587 | TLS: Áno"
+        }
+      }
+    },
+    "actions": {
+      "save": "Uložiť konfiguráciu"
+    },
+    "success": {
+      "saved": "Konfigurácia SMTP bola úspešne uložená"
+    },
+    "errors": {
+      "loadFailed": "Nepodarilo sa načítať konfiguráciu SMTP",
+      "saveFailed": "Nepodarilo sa uložiť konfiguráciu",
+      "testFailed": "Nepodarilo sa odoslať testovací e-mail"
+    }
+  },
+  "twoFactor": {
+    "title": "Dvojfaktorová autentifikácia",
+    "description": "Pridajte k svojmu účtu ďalšiu vrstvu zabezpečenia",
+    "status": {
+      "enabled": "2FA je povolená",
+      "disabled": "2FA nie je povolená",
+      "notAvailable": "Dvojfaktorová autentifikácia je dostupná iba pre účty administrátorov a predajcov"
+    },
+    "setup": {
+      "title": "Nastaviť dvojfaktorovú autentifikáciu",
+      "scanQR": "Naskenujte tento QR kód svojou autentifikačnou aplikáciou",
+      "manualEntry": "Alebo zadajte tento kód manuálne:",
+      "verifyCode": "Zadajte 6-miestny kód z aplikácie na overenie",
+      "placeholder": "Zadajte 6-miestny kód",
+      "verify": "Overiť a povoliť",
+      "verifying": "Overuje sa..."
+    },
+    "backupCodes": {
+      "title": "Záložné kódy",
+      "description": "Uložte si tieto záložné kódy na bezpečnom mieste. Každý kód je možné použiť iba raz.",
+      "copy": "Kopírovať kódy",
+      "copied": "Skopírované!",
+      "regenerate": "Pregenerovať kódy",
+      "regenerating": "Pregenerováva sa..."
+    },
+    "disable": {
+      "title": "Zakázať 2FA",
+      "description": "Zadajte svoj 2FA kód alebo záložný kód na zakázanie dvojfaktorovej autentifikácie",
+      "button": "Zakázať 2FA",
+      "disabling": "Zakazuje sa..."
+    },
+    "errors": {
+      "setupFailed": "Nepodarilo sa nastaviť 2FA",
+      "verifyFailed": "Neplatný kód. Skúste to prosím znova.",
+      "disableFailed": "Nepodarilo sa zakázať 2FA",
+      "loadFailed": "Nepodarilo sa načítať stav 2FA"
+    }
+  },
+  "resellers": {
+    "title": "Správa predajcov",
+    "description": "Vytvárajte a spravujte účty predajcov a ich kreditné kvóty.",
+    "create": "Vytvoriť predajcu",
+    "table": {
+      "username": "Používateľské meno",
+      "credits": "Kredity",
+      "users": "Používatelia",
+      "status": "Stav",
+      "actions": "Akcie"
+    },
+    "form": {
+      "username": "Používateľské meno",
+      "password": "Heslo",
+      "credits": "Kredity",
+      "status": "Stav"
+    }
+  },
+  "users": {
+    "title": "Správa používateľov",
+    "description": "Spravujte koncových používateľov, ich predplatné a zariadenia.",
+    "create": "Vytvoriť používateľa",
+    "table": {
+      "username": "Používateľské meno",
+      "expires_at": "Vyprší dňa",
+      "devices": "Zariadenia",
+      "status": "Stav",
+      "actions": "Akcie"
+    }
+  },
+  "logs": {
+    "title": "Záznamy o činnosti",
+    "description": "Monitorujte systémové udalosti a personálne akcie.",
+    "table": {
+      "timestamp": "Časová pečiatka",
+      "user": "Používateľ",
+      "action": "Akcia",
+      "details": "Podrobnosti"
+    }
+  }
+}

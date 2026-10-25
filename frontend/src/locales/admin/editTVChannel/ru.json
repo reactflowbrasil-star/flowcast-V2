@@ -1,0 +1,110 @@
+{
+  "editTVChannel": {
+    "title": "Редактировать телеканал",
+    "sections": {
+      "basicInfo": "Основная информация",
+      "currentEpgMapping": "Текущее отображение EPG",
+      "editEpgMapping": "Редактировать сопоставление EPG",
+      "streamSettings": "Настройки потока",
+      "artworkStatus": "Произведения и статус",
+      "livetvHeaders": "Конфигурация заголовков LiveTV"
+    },
+    "labels": {
+      "channelName": "Название канала *",
+      "description": "Описание",
+      "channelNumber": "Номер канала",
+      "provider": "Поставщик",
+      "channelCategory": "Категория канала",
+      "country": "Страна",
+      "epgSource": "Источник электронного телегида",
+      "epgChannelId": "Идентификатор канала EPG",
+      "timeOffset": "Смещение времени",
+      "status": "Статус",
+      "epgChannel": "EPG-канал",
+      "offsetMin": "Смещение (мин)",
+      "format": "Формат",
+      "streamUrl": "URL-адрес потока *",
+      "drmType": "Тип DRM *",
+      "clearkeyKeys": "Клавиши ClearKey *",
+      "licenseServerUrl": "URL-адрес сервера лицензий *",
+      "licenseRequestHeaders": "Заголовки запроса лицензии (необязательно)",
+      "logoUrl": "URL-адрес логотипа",
+      "active": "Активный",
+      "originHeader": "Исходный заголовок",
+      "userAgent": "Пользовательский агент",
+      "refererHeader": "Заголовок реферера",
+      "customHeadersJson": "Пользовательские заголовки (JSON)",
+      "httpProxy": "HTTP-прокси (необязательно)",
+      "dnsOverHttps": "DNS-over-HTTPS (необязательно)"
+    },
+    "placeholders": {
+      "channelName": "Введите название канала...",
+      "description": "Введите описание канала...",
+      "channelNumber": "например, 1, 2, 3...",
+      "provider": "например, кабельное, OTT и т. д.",
+      "loadingCategories": "Загрузка категорий...",
+      "selectCategory": "Выберите категорию...",
+      "country": "например, США, MX, ES...",
+      "selectEpgSource": "Выберите источник EPG...",
+      "filterByNameOrId": "Фильтровать по имени или идентификатору...",
+      "selectChannel": "Выбрать канал...",
+      "selectSourceFirst": "Сначала выберите источник",
+      "selectFormat": "Выберите формат...",
+      "streamUrl": "https://example.com/stream.m3u8",
+      "selectDrmType": "Выберите тип DRM...",
+      "clearkeyKeys": "Введите пары ClearKey в шестнадцатеричном формате: kid_hex:key_hex.",
+      "licenseServerUrl": "https://license.example.com/widevine",
+      "licenseRequestHeaders": "{\"X-AxDRM-Message\": \"ваш-токен-здесь\", \"Авторизация\": \"Токен на предъявителя\"}",
+      "logoUrl": "https://example.com/logo.png",
+      "originHeader": "https://example.com",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)...",
+      "refererHeader": "https://referer-site.com",
+      "customHeaders": "{\"X-Custom-Header\": \"значение\", \"Авторизация\": \"Токен на предъявителя\"}",
+      "httpProxy": "http://user:pass@ip:port",
+      "dohUrl": "https://dns.google/dns-query"
+    },
+    "tooltips": {
+      "copyChannelId": "Скопировать идентификатор канала",
+      "formatHelp": "M3U8 (без DRM) или DRM (ClearKey). Если вы выберете DRM, ключи будут включены.",
+      "help": "Помощь",
+      "streamUrlHelp": "Полный URL-адрес потока (m3u8, mpd и т. д.)",
+      "copyStreamUrl": "Скопировать URL-адрес потока"
+    },
+    "hints": {
+      "noEpgSourceAssigned": "Источник EPG не назначен",
+      "noChannelIdAssigned": "Идентификатор канала не назначен",
+      "minutes": "минуты",
+      "epgConfigured": "✓ EPG настроен",
+      "epgNotConfigured": "⚠ Электронная программа передач не настроена.",
+      "loadingEpgMapping": "Загрузка карты EPG...",
+      "epgDataNote": "Данные EPG не сохраняются в базе данных; для поиска по требованию сохраняются только идентификаторы.",
+      "loadingEpgControls": "Загрузка элементов управления EPG...",
+      "drmTypeHelp": "ClearKey: Локальные ключи (шестнадцатеричный формат) | Widevine/PlayReady: требуется сервер лицензий.",
+      "clearkeyFormat": "Формат: kid_hex:key_hex (по одному в строке или через запятую).",
+      "widevineLicenseHelp": "URL-адрес сервера лицензий Widevine (например, от PallyCon, BuyDRM, Axinom)",
+      "playreadyLicenseHelp": "URL-адрес сервера лицензий PlayReady",
+      "licenseHeadersHelp": "Объект JSON с настраиваемыми заголовками для запросов лицензий",
+      "originHeaderHelp": "Исходный заголовок для запросов CORS (необязательно)",
+      "userAgentHelp": "Заголовок User-Agent для эмуляции браузера/устройства (необязательно)",
+      "refererHeaderHelp": "Заголовок Referer для происхождения запроса (необязательно)",
+      "customHeadersHelp": "Дополнительные пользовательские заголовки в формате JSON (необязательно)",
+      "httpProxyHelp": "Only for geoblocked channels. Format: http://user:pass@ip:port",
+      "dohUrlHelp": "Дополнительный преобразователь DoH для обхода блокировки DNS. Должен быть URL-адрес http(s)."
+    },
+    "toasts": {
+      "epgChannelIdCopied": "Идентификатор канала EPG скопирован.",
+      "streamUrlCopied": "URL-адрес потока скопирован."
+    },
+    "buttons": {
+      "cancel": "Отмена",
+      "updating": "Обновление...",
+      "updateChannel": "Обновить канал"
+    },
+    "validation": {
+      "titleRequired": "Требуется название",
+      "validVideoUrlRequired": "Укажите действительный URL-адрес видео.",
+      "proxyUrlFormat": "Format must be http://user:pass@ip:port",
+      "dohUrlFormat": "Формат должен быть http(s)://..."
+    }
+  }
+}

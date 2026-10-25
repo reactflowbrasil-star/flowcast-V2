@@ -1,0 +1,46 @@
+{
+  "title": "专业内容管理",
+  "tabs": {
+    "kids": "儿童",
+    "anime": "动漫",
+    "events": "活动",
+    "tv": "电视",
+    "movies": "电影",
+    "series": "剧集"
+  },
+  "kids": {
+    "addContent": "添加儿童内容",
+    "existingContent": "现有儿童内容 ({{count}})",
+    "year": "年份: {{year}}",
+    "active": "活跃: {{status}}"
+  },
+  "anime": {
+    "placeholder": "动漫内容管理 - 与儿童内容结构相似"
+  },
+  "events": {
+    "placeholder": "活动管理 - 带有日程安排功能"
+  },
+  "tvChannels": {
+    "placeholder": "电视频道管理 - 直播频道管理"
+  },
+  "movies": {
+    "placeholder": "电影管理 - VOD内容管理"
+  },
+  "seriesTab": {
+    "placeholder": "剧集管理 - 带有季和集"
+  },
+  "form": {
+    "title": "标题",
+    "description": "描述",
+    "streamUrl": "流媒体URL",
+    "imageUrl": "图片URL",
+    "tmdbId": "TMDB ID",
+    "year": "年份",
+    "creating": "创建中...",
+    "createContent": "创建内容"
+  },
+  "status": {
+    "yes": "是",
+    "no": "否"
+  }
+}

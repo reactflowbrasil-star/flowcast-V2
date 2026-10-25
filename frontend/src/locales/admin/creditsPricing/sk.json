@@ -1,0 +1,44 @@
+{
+  "creditsPricing": {
+    "title": "Ceny kreditov (Stripe)",
+    "description": "Nakonfigurujte základnú cenu za kredit v USD a úrovne množstevných zliav pre nákupy cez Stripe Checkout.",
+    "loading": "Načítavanie konfigurácie cien...",
+    "updated": "Konfigurácia cien úspešne aktualizovaná",
+    "tiersSorted": "Úrovne normalizované a zoradené",
+    "savePricingConfig": "Uložiť konfiguráciu cien",
+    "error": {
+      "loadFailed": "Nepodarilo sa načítať konfiguráciu cien:",
+      "updateFailed": "Nepodarilo sa aktualizovať konfiguráciu cien",
+      "fetchFailed": "Nepodarilo sa získať konfiguráciu cien",
+      "invalidTierConfig": "Neplatná konfigurácia úrovne"
+    },
+    "validation": {
+      "tooLarge": "Príliš veľké",
+      "minPercent": "min 0 %",
+      "maxPercent": "max 100 %",
+      "basePricePositive": "Základná cena musí byť väčšia ako 0",
+      "maxTiers": "Maximálne 50 úrovní",
+      "tiersAscendingOrder": "Úrovne musia byť striktne v stúpajúcom poradí podľa min. množstva"
+    },
+    "retry": "Skúsiť znova",
+    "basePrice": {
+      "label": "Základná cena (USD za kredit)",
+      "help": "Základná cena pred zľavami. Zľavy sa uplatňujú podľa množstva."
+    },
+    "currentBasePrice": "Aktuálna základná cena",
+    "activeTiers": "Aktívne úrovne",
+    "tiersDescription": "Definujte úrovne zliav. Použije sa najvyššia úroveň, kde min. množstvo ≤ zakúpené množstvo.",
+    "actions": {
+      "normalizeSort": "Normalizovať/Zoradiť",
+      "addTier": "Pridať úroveň"
+    },
+    "table": {
+      "minQuantity": "Min. množstvo (vrátane)",
+      "discountPercent": "Percento zľavy",
+      "noTiers": "Nie sú nakonfigurované žiadne úrovne. Základná cena platí pre všetky množstvá."
+    }
+  },
+  "common": {
+    "saving": "Ukladanie..."
+  }
+}

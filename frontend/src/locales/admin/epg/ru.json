@@ -1,0 +1,18 @@
+{
+  "errors": {
+    "loadingSources": "Ошибка загрузки EPG источников",
+    "nameUrlRequired": "Имя и URL обязательны",
+    "createFailed": "Не удалось создать источник",
+    "updateFailed": "Не удалось обновить источник",
+    "deleteFailed": "Не удалось удалить источник",
+    "fetchChannelsFailed": "Не удалось получить каналы"
+  },
+  "units": {
+    "minutes": "мин"
+  },
+  "labels": {
+    "timezone": "TZ:"
+  },
+  "confirmDelete": "Удалить EPG источник \"{{name}}\"?",
+  "inactive": "(неактивно)"
+}

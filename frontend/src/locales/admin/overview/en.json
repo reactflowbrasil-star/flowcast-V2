@@ -1,0 +1,24 @@
+{
+  "overview": {
+    "totalUsers": "Total Users",
+    "allSystemUsers": "All users in the system",
+    "contentItems": "Content Items",
+    "moviesTvSeries": "Movies, TV series, and more",
+    "activeResellers": "Active Resellers",
+    "currentlyActive": "Currently active",
+    "systemStatus": "System Status",
+    "allSystemsOperational": "All systems operational",
+    "quickActions": "Quick Actions",
+    "commonTasks": "Jump to the most common administrative tasks",
+    "manageResellers": "Manage Resellers",
+    "manageContent": "Manage Content",
+    "systemConfig": "System Configuration",
+    "viewReports": "View Reports",
+    "systemHealth": "System Health",
+    "systemStatusDescription": "Real-time service status for critical components",
+    "apiServices": "API Services",
+    "operational": "Operational",
+    "database": "Database",
+    "contentDelivery": "Content Delivery"
+  }
+}

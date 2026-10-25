@@ -1,0 +1,38 @@
+{
+  "title": "Güvenlik Yasakları ({{total}})",
+  "noneFound": "Yasak bulunmadı.",
+  "itemsPerPage": "Sayfa başına öğe",
+  "admin": {
+    "securityBans": {
+      "searchByUsernamePlaceholder": "Kullanıcı adına göre ara...",
+      "itemsPerPage": "Sayfa başına öğe",
+      "title": "Güvenlik Yasakları ({{total}})",
+      "noneFound": "Yasak bulunmadı.",
+      "level": "Seviye",
+      "type": "Tür",
+      "reason": "Neden",
+      "timeRemaining": "Kalan süre"
+    }
+  },
+  "unban": {
+    "action": "Yasağı Kaldır",
+    "confirm": "{{user}} kullanıcısının yasağı kaldırılsın mı?",
+    "promptReason": "Yasağı kaldırma nedenini girin"
+  },
+  "notifications": {
+    "ban": {
+      "userUnbanned": "{{user}} kullanıcısının yasağı kaldırıldı"
+    },
+    "security": {
+      "errorLoadingBans": "Güvenlik yasakları yüklenirken hata oluştu",
+      "errorUnbanningUser": "Kullanıcı yasağı kaldırılırken hata oluştu"
+    }
+  },
+  "common": {
+    "username": "Kullanıcı Adı",
+    "actions": "İşlemler",
+    "previous": "Önceki",
+    "next": "Sonraki",
+    "paginationShowing": "Sayfa {{page}} / {{totalPages}}"
+  }
+}

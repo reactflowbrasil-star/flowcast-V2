@@ -1,0 +1,64 @@
+{
+  "title": "Безопасность",
+  "subtitle": "Мониторинг инцидентов, блокировок и устройств в черном списке.",
+  "tabs": {
+    "overview": "Обзор",
+    "incidents": "Инциденты",
+    "bans": "Блокировки",
+    "blacklistedDevices": "Черный список устройств"
+  },
+  "actions": {
+    "cleanupExpiredBans": "Очистить истекшие блокировки",
+    "createManualBan": "Создать блокировку вручную"
+  },
+  "searchByUsernamePlaceholder": "Поиск по имени пользователя...",
+  "confirmDelete": "Вы уверены, что хотите удалить этот элемент? Это действие нельзя отменить.",
+  "admin": {
+    "createBan": {
+      "title": "Создать блокировку вручную",
+      "usernameLabel": "Имя пользователя",
+      "usernamePlaceholder": "Введите имя пользователя для блокировки",
+      "banTypeLabel": "Тип блокировки",
+      "temporary": "Временная",
+      "permanent": "Постоянная",
+      "banLevelLabel": "Уровень блокировки",
+      "level1": "Уровень 1 - Ограничение входа",
+      "level2": "Уровень 2 - Приостановка аккаунта",
+      "level3": "Уровень 3 - Постоянная блокировка",
+      "customDurationLabel": "Пользовательская длительность",
+      "customDurationPlaceholder": "Введите длительность в днях",
+      "customDurationNote": "Оставьте пустым для постоянной блокировки",
+      "reasonLabel": "Причина",
+      "reasonPlaceholder": "Введите причину блокировки"
+    }
+  },
+  "cards": {
+    "totalIncidents": "Всего инцидентов",
+    "todaysIncidents": "Инциденты за сегодня",
+    "activeBans": "Активные блокировки",
+    "permanentBans": "Постоянные блокировки",
+    "blacklistedDevices": "Черный список устройств"
+  },
+  "stats": {
+    "incidentsByType": "Инциденты по типу",
+    "recentIncidents": "Недавние инциденты",
+    "noRecentIncidents": "Нет недавних инцидентов",
+    "summary": "Итоги безопасности",
+    "totalIncidents": "Всего инцидентов",
+    "todaysIncidents": "Инциденты за сегодня",
+    "activeBans": "Активные блокировки",
+    "permanentBans": "Постоянные блокировки"
+  },
+  "pagination": {
+    "previous": "Назад",
+    "next": "Вперед",
+    "pageOf": "Страница {{page}} из {{total_pages}}",
+    "showing": "Показано {{from}}–{{to}} из {{total}}"
+  },
+  "notifications": {
+    "security": {
+      "errorLoadingStatistics": "Ошибка загрузки статистики безопасности",
+      "errorCleaningExpiredBans": "Ошибка очистки истекших блокировок"
+    }
+  }
+}

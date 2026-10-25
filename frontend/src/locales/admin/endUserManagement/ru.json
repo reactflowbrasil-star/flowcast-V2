@@ -1,0 +1,123 @@
+{
+  "endUserManagement": {
+    "title": "Управление Пользователями",
+    "subtitle": "Создание и управление конечными пользователями в системе",
+    "createEndUser": "Создать Пользователя",
+    "noEndUsersYet": "Пока нет пользователей",
+    "searchByUsername": "Поиск по имени пользователя...",
+    "searchByEmail": "Поиск по email...",
+    "status": {
+      "active": "Активен",
+      "banned": "Забанен",
+      "inactive": "Неактивен"
+    },
+    "actions": {
+      "ban": "Забанить",
+      "unban": "Разбанить",
+      "banUser": "Забанить Пользователя",
+      "unbanUser": "Разбанить Пользователя",
+      "confirmBan": "Вы уверены, что хотите {{action}} {{username}}?",
+      "banWarning": "Это запретит им доступ к сервису.",
+      "deleteUser": "Удалить Пользователя",
+      "confirmDelete": "Вы уверены, что хотите навсегда удалить {{username}}? Это действие нельзя отменить.",
+      "edit": "Редактировать",
+      "create": "Создать",
+      "manageCredits": "Управлять кредитами",
+      "resetPassword": "Сбросить пароль"
+    },
+    "labels": {
+      "username": "Имя пользователя",
+      "email": "Электронная почта",
+      "status": "Статус",
+      "createdAt": "Создан"
+    },
+    "placeholders": {
+      "searchByUsername": "Поиск по имени пользователя..."
+    },
+    "confirmDelete": "Удалить этого пользователя? Это действие нельзя отменить.",
+    "noMatches": "Нет подходящих пользователей",
+    "editDialog": {
+      "title": "Редактировать Пользователя",
+      "contentCategories": "Категории Контента",
+      "maxDevices": "Макс. Устройств",
+      "maxDevicesDesc": "Максимальное количество одновременных устройств (1-10)",
+      "endLicense": "Конец Лицензии (Опционально)",
+      "forcedCategories": "Принудительные Категории",
+      "forcedCategoriesDesc": "Категории, к которым этот пользователь ОБЯЗАН иметь доступ (переопределяет настройки по умолчанию)",
+      "password": "Пароль",
+      "passwordDesc": "Оставьте пустым, чтобы сохранить текущий пароль",
+      "save": "Сохранить Изменения",
+      "cancel": "Отмена",
+      "updating": "Обновление..."
+    },
+    "demoUser": "Демо Пользователь",
+    "expiredDemo": "Демо Истекло",
+    "demoBadge": "Демо",
+    "directAdminManagement": "Прямое Администрирование",
+    "deleteUser": "Удалить Пользователя",
+    "filters": {
+      "title": "Фильтры",
+      "username": "Имя пользователя",
+      "email": "Электронная почта",
+      "reseller": "Реселлер",
+      "showing": "Показано {{count}} из {{total}} пользователей",
+      "clear": "Очистить фильтры"
+    },
+    "table": {
+      "username": "Имя пользователя",
+      "email": "Электронная почта",
+      "type": "Тип",
+      "maxDevices": "Макс. Устр.",
+      "reseller": "Реселлер",
+      "status": "Статус",
+      "created": "Создан",
+      "endLicense": "Конец Лицензии",
+      "actions": "Действия",
+      "premium": "Премиум"
+    },
+    "form": {
+      "username": "Имя пользователя",
+      "password": "Пароль",
+      "email": "Электронная почта",
+      "maxDevices": "Макс. Устройств",
+      "expiryDate": "Дата Истечения (Опционально)",
+      "expiryDateHelp": "Оставьте пустым, если срок действия не ограничен. Пользователь будет автоматически деактивирован после этой даты.",
+      "assignReseller": "Назначить Реселлера (Опционально)",
+      "selectContentCategories": "Категории Контента",
+      "selectCategoriesHelp": "Нажмите, чтобы выбрать категории контента, к которым у пользователя будет доступ.",
+      "loadingCategories": "Загрузка категорий...",
+      "noCategories": "Нет доступных категорий"
+    },
+    "neverLabel": "Никогда",
+    "expired": "Истекло",
+    "timeLeft": "осталось",
+    "time": {
+      "hoursMinutes": "{{hours}}ч {{minutes}}м",
+      "minutes": "{{minutes}}м"
+    },
+    "daysRemaining": "{{count}} дн.",
+    "errors": {
+      "loadEndUsersFailed": "Не удалось загрузить пользователей",
+      "loadEndUsersFailedWithMessage": "Не удалось загрузить пользователей: {{message}}",
+      "loadResellersFailed": "Не удалось загрузить реселлеров",
+      "createFailed": "Не удалось создать пользователя",
+      "updateStatusFailed": "Не удалось обновить статус пользователя",
+      "deleteFailed": "Не удалось удалить пользователя"
+    },
+    "validation": {
+      "usernameMin": "Имя пользователя должно быть не короче {{count}} символов",
+      "passwordMinDigits": "Пароль должен содержать минимум {{count}} цифры",
+      "passwordMaxDigits": "Пароль должен содержать максимум {{count}} цифр",
+      "passwordDigitsOnly": "Пароль должен содержать только цифры",
+      "emailInvalid": "Некорректный email",
+      "maxDevicesMin": "Минимум {{count}} устройство",
+      "maxDevicesMax": "Максимум {{count}} устройств",
+      "categoryMin": "Выберите как минимум {{count}} категорию"
+    },
+    "messages": {
+      "noUserSelected": "Пользователь не выбран",
+      "passwordUpdateFailed": "Не удалось обновить пароль пользователя",
+      "updateFailed": "Не удалось обновить пользователя"
+    }
+  }
+}

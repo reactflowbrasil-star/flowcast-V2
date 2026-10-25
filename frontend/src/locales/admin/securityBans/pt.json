@@ -1,0 +1,38 @@
+{
+  "title": "Banimentos de Segurança ({{total}})",
+  "noneFound": "Nenhum banimento encontrado.",
+  "itemsPerPage": "Itens por página",
+  "admin": {
+    "securityBans": {
+      "searchByUsernamePlaceholder": "Pesquisar por nome de usuário...",
+      "itemsPerPage": "Itens por página",
+      "title": "Banimentos de Segurança ({{total}})",
+      "noneFound": "Nenhum banimento encontrado.",
+      "level": "Nível",
+      "type": "Tipo",
+      "reason": "Motivo",
+      "timeRemaining": "Tempo restante"
+    }
+  },
+  "unban": {
+    "action": "Desbanir",
+    "confirm": "Desbanir usuário {{user}}?",
+    "promptReason": "Insira o motivo do desbanimento"
+  },
+  "notifications": {
+    "ban": {
+      "userUnbanned": "O usuário {{user}} foi desbanido"
+    },
+    "security": {
+      "errorLoadingBans": "Erro ao carregar banimentos de segurança",
+      "errorUnbanningUser": "Erro ao desbanir usuário"
+    }
+  },
+  "common": {
+    "username": "Nome de Usuário",
+    "actions": "Ações",
+    "previous": "Anterior",
+    "next": "Próximo",
+    "paginationShowing": "Página {{page}} de {{totalPages}}"
+  }
+}

@@ -1,0 +1,501 @@
+{
+  "layout": {
+    "navigation": {
+      "dashboard": "Dashboard",
+      "subscribers": "Subscribers",
+      "connections": "Connections",
+      "expirations": "Expirations",
+      "trialUsers": "Trial Users",
+      "walletCredits": "Wallet & Credits",
+      "apiKeys": "API Keys",
+      "support": "Support",
+      "activityLogs": "Activity Logs"
+    },
+    "sections": {
+      "main": "Main",
+      "operations": "Operations",
+      "finance": "Finance",
+      "developer": "Developer",
+      "support": "Support"
+    },
+    "wallet": {
+      "balance": "Balance",
+      "addCredits": "Add Credits",
+      "currencyUnit": "CR"
+    },
+    "search": {
+      "placeholder": "Search users, devices, or tickets..."
+    },
+    "account": {
+      "reseller": "Reseller",
+      "myAccount": "My Account",
+      "profile": "Profile",
+      "billing": "Billing",
+      "logout": "Log out"
+    }
+  },
+  "dashboard": {
+    "commandCenter": "Reseller Command Center",
+    "welcomeBack": "Welcome back, {{name}}",
+    "subscribersCount": "{{count}} subscribers",
+    "creditsAvailable": "{{credits}} credits",
+    "statsDescription": "You have <subscribers>{{subscribers}} subscribers</subscribers> and <credits>{{credits}} credits</credits> available.",
+    "newUser": "New User",
+    "newDemo": "New Demo",
+    "expiringSoon": "Expiring Soon",
+    "viewAll": "View All",
+    "quickActions": "Quick Actions",
+    "profileSettings": "Profile Settings"
+  },
+  "stats": {
+    "noSubscribersYet": "No subscribers yet",
+    "excellent": "Excellent",
+    "good": "Good",
+    "fair": "Fair",
+    "inactive": "{{count}} inactive",
+    "totalSubscribers": "Total Subscribers",
+    "newThisMonth": "+{{count}} this month",
+    "noNewThisMonth": "No new this month",
+    "networkHealth": "Network Health",
+    "deviceSlots": "Device Slots",
+    "activeUsers": "{{count}} active users",
+    "activeDemos": "Active Demos",
+    "trialsInProgress": "Trials in progress",
+    "noActiveTrials": "No active trials"
+  },
+  "quickActions": {
+    "createUser": "Create User",
+    "addNewSubscriber": "Add new subscriber",
+    "issueDemo": "Issue Demo",
+    "generateTrialAccount": "Generate trial account",
+    "manageDevices": "Manage Devices",
+    "resetOrKillSessions": "Reset or kill sessions",
+    "userList": "User List",
+    "viewAllSubscribers": "View all subscribers",
+    "buyCredits": "Buy Credits",
+    "topUpWallet": "Top up wallet",
+    "support": "Support",
+    "openTicket": "Open ticket"
+  },
+  "endUsers": {
+    "title": "End Users",
+    "subtitle": "Create and manage end users across all resellers",
+    "legend": {
+      "demoUser": "Demo User",
+      "expiredDemo": "Expired Demo",
+      "demoBadge": "Demo Badge"
+    },
+    "badges": {
+      "demo": "DEMO"
+    },
+    "time": {
+      "expired": "Expired",
+      "never": "Never",
+      "left": "left",
+      "hoursMinutes": "{{hours}}h {{minutes}}m",
+      "minutes": "{{minutes}}m",
+      "days": "{{days}} days",
+      "daysRemaining": "({{days}} days remaining)"
+    },
+    "premium": "Premium",
+    "suspended": "Suspended",
+    "demo": "Demo",
+    "expired": "Expired",
+    "never": "Never",
+    "endLicense": "End License",
+    "createDialogDescription": "Create a new end user account. Credits will be deducted from your balance.",
+    "subscriptionDuration": "Subscription Duration",
+    "selectDuration": "Select duration",
+    "deviceLimit": "Device Limit",
+    "selectDeviceLimit": "Select device limit",
+    "contentCategories": "Content Categories",
+    "categoriesHelp": "Click to select the content categories this user will have access to.",
+    "creditCostCalculation": "Credit Cost Calculation:",
+    "availableCredits": "Your available credits",
+    "insufficientCredits": "Insufficient credits!",
+    "insufficientCreditsShort": "Insufficient Credits",
+    "selectOptions": "Select Options",
+    "needMoreCredits": "You need {{amount}} more credits.",
+    "deviceOptions": {
+      "3": "3 devices (1 credit/month)",
+      "5": "5 devices (1.5 credits/month)",
+      "6": "6 devices (1.75 credits/month)",
+      "7": "7 devices (2 credits/month)",
+      "8": "8 devices (2.25 credits/month)",
+      "9": "9 devices (2.5 credits/month)",
+      "10": "10 devices (2.75 credits/month)"
+    },
+    "duration": {
+      "month": "{{count}} month",
+      "month_plural": "{{count}} months",
+      "months": "{{count}} months"
+    },
+    "validation": {
+      "usernameMin": "Username must be at least 3 characters",
+      "passwordMin": "Password must be at least 4 digits",
+      "passwordMax": "Password must be at most 10 digits",
+      "passwordDigits": "Password must contain only digits",
+      "invalidEmail": "Invalid email address",
+      "durationMin": "Minimum 1 month",
+      "durationMax": "Maximum 12 months",
+      "selectDeviceLimit": "Please select device limit",
+      "selectCategory": "Please select at least one category"
+    },
+    "errors": {
+      "failedToLoadUsers": "Failed to load users"
+    },
+    "selectDurationAndDevices": "Select duration and devices",
+    "monthPlural": "month",
+    "monthsPlural": "months",
+    "creditPerMonth": "credit/month",
+    "creditsPerMonth": "credits/month",
+    "creditBreakdown": "{{duration}} {{durationUnit}} × {{devices}} device{{devicePlural}} ({{costPerMonth}} {{costUnit}}) = {{total}} credit{{creditPlural}}"
+  },
+  "dialogs": {
+    "suspend": {
+      "title": "Disable User",
+      "description": "Are you sure you want to suspend {{username}}? This will disconnect all their active devices."
+    },
+    "activate": {
+      "title": "Enable User",
+      "description": "Are you sure you want to activate {{username}}?"
+    },
+    "delete": {
+      "title": "Delete User",
+      "description": "Are you sure you want to permanently delete {{username}}? This action cannot be undone."
+    }
+  },
+  "activityLogs": {
+    "title": "Activity Logs",
+    "description": "View your recent activity and actions",
+    "refresh": "Refresh",
+    "noLogs": "No activity logs found",
+    "errorLoading": "Error loading logs: {{message}}",
+    "filters": {
+      "actionType": "Action Type",
+      "allActions": "All Actions",
+      "startDate": "Start Date",
+      "endDate": "End Date"
+    },
+    "actionTypes": {
+      "USER_CREATED": "User Created",
+      "USER_DELETED": "User Deleted",
+      "USER_EXTENDED": "User Extended",
+      "CREDIT_USED": "Credit Used",
+      "DEMO_CREATED": "Demo Created",
+      "LOGIN": "Login",
+      "LOGOUT": "Logout"
+    },
+    "table": {
+      "date": "Date",
+      "action": "Action",
+      "targetUser": "Target User",
+      "description": "Description",
+      "credits": "Credits"
+    },
+    "pagination": {
+      "showing": "Showing {{from}} to {{to}} of {{total}} results",
+      "previous": "Previous",
+      "next": "Next",
+      "pageOf": "Page {{page}} of {{totalPages}}"
+    }
+  },
+  "editUser": {
+    "dialogTitle": "Edit User: {{username}}",
+    "dialogDescription": "Edit user details, manage subscription, and extend access",
+    "editDetailsTitle": "Edit User Details",
+    "editDetailsDescription": "Update user information and password",
+    "validation": {
+      "minMonth": "Minimum 1 month",
+      "maxExtension": "Maximum 12 months extension",
+      "usernameMinLength": "Username must be at least 3 characters",
+      "invalidEmail": "Invalid email address",
+      "passwordMinLength": "Password must be at least 4 digits",
+      "passwordMaxLength": "Password must be at most 10 digits",
+      "passwordDigitsOnly": "Password must contain only digits",
+      "maxDevicesLimit": "Maximum 10 devices allowed",
+      "selectCategory": "Please select at least one category"
+    },
+    "labels": {
+      "username": "Username",
+      "email": "Email",
+      "newPassword": "New Password (4-10 digits)",
+      "maxDevices": "Max Devices",
+      "categories": "Categories",
+      "deviceLimit": "Device Limit",
+      "status": "Status",
+      "expirationDate": "Expiration Date",
+      "currentCategories": "Current Categories"
+    },
+    "placeholders": {
+      "enterUsername": "Enter username",
+      "enterEmail": "Enter email",
+      "leaveEmptyToKeep": "Leave empty to keep current"
+    },
+    "creditWarning": {
+      "title": "Credit Cost Warning",
+      "addingDevices": "Adding {{count}} device will cost",
+      "addingDevicesPlural": "Adding {{count}} devices will cost",
+      "credits": "{{amount}} credits",
+      "calculation": "({{days}} days remaining × 0.25 credits per device per month)"
+    },
+    "subscription": {
+      "title": "Current Subscription",
+      "devices": "{{count}} devices",
+      "expired": "Expired",
+      "active": "Active",
+      "noCategories": "No categories assigned"
+    },
+    "extend": {
+      "title": "Extend Subscription",
+      "description": "Add more months to this user's subscription (maximum 12 months)",
+      "periodLabel": "Extension Period",
+      "selectPeriod": "Select extension period",
+      "costCalculation": "Extension Cost Calculation:",
+      "availableCredits": "Your available credits",
+      "insufficientCredits": "Insufficient credits!",
+      "needMoreCredits": "You need {{amount}} more credits.",
+      "selectExtension": "Select Extension",
+      "breakdown": {
+        "device": "device",
+        "devicesPlural": "devices",
+        "monthsDevices": "{{months}} {{monthLabel}} × {{devices}} {{deviceLabel}}",
+        "oneCredit": "(1 credit/month)",
+        "extraDevices": "(1 base + {{extraDevices}} × 0.25 = {{creditsPerMonth}} credits/month)",
+        "credit": "credit",
+        "creditsPlural": "credits",
+        "totalCredits": "= {{cost}} {{creditLabel}}"
+      }
+    },
+    "buttons": {
+      "cancel": "Cancel",
+      "updating": "Updating...",
+      "updateUser": "Update User",
+      "extending": "Extending...",
+      "extendSubscription": "Extend Subscription ({{cost}} credits)",
+      "insufficientCredits": "Insufficient Credits"
+    },
+    "loading": {
+      "categories": "Loading categories..."
+    },
+    "empty": {
+      "noCategories": "No categories available"
+    },
+    "errors": {
+      "noUserSelected": "No user selected",
+      "extendFailed": "Failed to extend subscription"
+    }
+  },
+  "buyCredits": {
+    "title": "Buy Credits",
+    "description": "Purchase platform credits via Stripe Checkout. Credits are used to create and manage end users.",
+    "loadingPricing": "Loading current pricing...",
+    "retry": "Retry",
+    "basePrice": "Base price",
+    "perCredit": "per credit",
+    "yourDiscount": "Your quantity discount",
+    "applied": "applied",
+    "none": "none",
+    "effectiveUnitPrice": "Effective unit price",
+    "quantityLabel": "Quantity (credits)",
+    "quantityHint": "Enter how many credits you want to purchase",
+    "totalAmount": "Total amount",
+    "includesDiscount": "Includes {{discount}}% volume discount",
+    "noDiscount": "No discount for this quantity",
+    "redirecting": "Redirecting...",
+    "proceedToCheckout": "Proceed to Checkout",
+    "volumeDiscountTiers": "Volume discount tiers",
+    "minQuantity": "Min. quantity",
+    "discount": "Discount",
+    "noTiers": "No tiers configured. Base price applies.",
+    "invalidQuantity": "Please enter a valid quantity greater than 0",
+    "errors": {
+      "failedLoadPricing": "Failed to load pricing",
+      "failedCreateCheckout": "Failed to create checkout session"
+    }
+  },
+  "expirationMonitoring": {
+    "title": "User Expiration Monitoring",
+    "errorLoading": "Failed to load user expiration data. Please try again.",
+    "neverExpires": "Never expires",
+    "noEmail": "No email",
+    "status": {
+      "expired": "Expired",
+      "day": "{{count}} day",
+      "days": "{{count}} days",
+      "noExpiration": "No expiration",
+      "active": "Active",
+      "inactive": "Inactive"
+    },
+    "summary": {
+      "expired": "Expired",
+      "critical": "Critical (≤2 days)",
+      "warning": "Warning (3-5 days)",
+      "good": "Good (>5 days)",
+      "noExpiration": "No Expiration"
+    },
+    "details": {
+      "criticalTitle": "Critical Expirations",
+      "criticalDescription": "Users requiring immediate attention (expiring within 2 days)",
+      "fullTitle": "User Expiration Details",
+      "fullDescription": "Monitor your users' account expiration dates and status"
+    },
+    "table": {
+      "username": "Username",
+      "email": "Email",
+      "expirationDate": "Expiration Date",
+      "status": "Status",
+      "active": "Active"
+    },
+    "empty": {
+      "noCritical": "No critical expirations",
+      "noCriticalDescription": "All your users have more than 2 days until expiration.",
+      "noUsers": "No users found",
+      "noUsersDescription": "Create some end users to monitor their expiration dates."
+    }
+  },
+  "analytics": {
+    "active": "Active",
+    "inactive": "Inactive",
+    "acquisitionTrend": "Acquisition Trend",
+    "acquisitionDescription": "New subscribers over the last 6 months",
+    "networkStatus": "Network Status",
+    "networkDescription": "Active vs Suspended users",
+    "totalUsers": "Total Users"
+  },
+  "profile": {
+    "title": "Reseller Profile",
+    "description": "Manage your account settings and preferences",
+    "contactInformation": "Contact Information",
+    "emailPlaceholder": "your@email.com",
+    "contactInfoNote": "We will use this email for important notifications",
+    "saveChanges": "Save Changes",
+    "changePassword": "Change Password",
+    "newPasswordLabel": "New Password",
+    "newPasswordPlaceholder": "Enter new password",
+    "confirmPasswordLabel": "Confirm Password",
+    "confirmPasswordPlaceholder": "Confirm new password",
+    "passwordHelp": "Password must be at least 8 characters",
+    "updatePassword": "Update Password",
+    "updated": "Profile updated successfully",
+    "updateFailed": "Failed to update profile",
+    "passwordUpdated": "Password updated successfully",
+    "updatePasswordFailed": "Failed to update password",
+    "passwordTooShort": "Password must be at least 8 characters",
+    "enterAndConfirmPassword": "Please enter and confirm your new password",
+    "passwordsDoNotMatch": "Passwords do not match"
+  },
+  "creditBalance": {
+    "title": "Credit Balance",
+    "availableCredits": "Available Credits",
+    "lowBalance": "Low Balance",
+    "available": "Available",
+    "creditsAvailableDescription": "Credits available for creating new users",
+    "lowBalanceWarning": "Your credit balance is low. Contact your administrator to add more credits.",
+    "totalUsers": "Total Users",
+    "endUsersCreated": "End users created",
+    "creditsUsed": "Credits Used",
+    "totalCreditsConsumed": "Total credits consumed",
+    "creditSummary": {
+      "title": "Credit Summary",
+      "description": "Overview of your credit usage and balance",
+      "initialCredits": "Initial Credits",
+      "creditsUsed": "Credits Used",
+      "availableCredits": "Available Credits",
+      "usageRate": "Usage Rate"
+    },
+    "userBreakdown": {
+      "title": "User Credit Breakdown",
+      "description": "Credit cost per user based on device configuration",
+      "device": "device",
+      "devices": "devices",
+      "credits": "credits"
+    },
+    "calculationGuide": {
+      "title": "Credit Calculation Guide",
+      "description": "Understand how credits are calculated for different device configurations",
+      "standardDevices": "3 Devices (Standard)",
+      "standardCredits": "1.0 credits",
+      "standardDescription": "Most common configuration for end users",
+      "premiumDevices": "5 Devices (Premium)",
+      "premiumCredits": "1.5 credits",
+      "premiumDescription": "Premium package with more devices",
+      "extraDevices": "Extra Devices",
+      "extraCredits": "+0.25 credits each",
+      "extraDescription": "Additional cost per extra device beyond 3",
+      "examples": "Examples:",
+      "example1Device": "1 device",
+      "example1DeviceCost": "1.0 credits",
+      "example4Devices": "4 devices",
+      "example4DevicesCost": "1.25 credits",
+      "example6Devices": "6 devices",
+      "example6DevicesCost": "1.75 credits"
+    }
+  },
+  "supportTickets": {
+    "header": {
+      "title": "Support Tickets",
+      "description": "Create and manage your support requests",
+      "unreadSingle": "You have {{count}} unread message",
+      "unreadPlural": "You have {{count}} unread messages",
+      "createTicket": "Create Ticket"
+    },
+    "createDialog": {
+      "title": "Create Support Ticket",
+      "description": "Describe your issue and we'll help you resolve it as quickly as possible.",
+      "titleLabel": "Title",
+      "titlePlaceholder": "Brief summary of your issue",
+      "categoryLabel": "Category",
+      "priorityLabel": "Priority",
+      "descriptionLabel": "Description",
+      "descriptionPlaceholder": "Please provide detailed information about your issue...",
+      "cancel": "Cancel",
+      "creating": "Creating...",
+      "create": "Create Ticket"
+    },
+    "categories": {
+      "technical": "Technical Issue",
+      "billing": "Billing Question",
+      "account": "Account Support",
+      "content": "Content Issue",
+      "other": "Other"
+    },
+    "priorities": {
+      "low": "Low",
+      "medium": "Medium",
+      "high": "High",
+      "urgent": "Urgent"
+    },
+    "stats": {
+      "total": "Total",
+      "open": "Open",
+      "inProgress": "In Progress",
+      "resolved": "Resolved"
+    },
+    "list": {
+      "title": "My Support Tickets",
+      "empty": "No tickets found. Create your first support ticket above.",
+      "countSingle": "{{count}} ticket found",
+      "countPlural": "{{count}} tickets found",
+      "filter": "Filter",
+      "sort": "Sort",
+      "refresh": "Refresh"
+    },
+    "empty": {
+      "title": "No support tickets yet",
+      "description": "Get help from our support team by creating your first ticket. We're here to assist you!",
+      "createFirst": "Create Your First Ticket"
+    },
+    "errors": {
+      "createFailed": "Failed to create ticket",
+      "createFailedRetry": "Failed to create ticket. Please try again.",
+      "sendFailed": "Failed to send message",
+      "sendFailedRetry": "Failed to send message. Please try again."
+    },
+    "descriptionPlaceholder": "Please provide detailed information about your issue..."
+  },
+  "secretKeyCopied": "Secret key copied to clipboard",
+  "iHaveCopiedMyKey": "I've Copied My Key",
+  "noUsersFound": "No users found",
+  "noCriticalExpirations": "No critical expirations"
+}

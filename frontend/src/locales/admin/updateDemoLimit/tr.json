@@ -1,0 +1,29 @@
+{
+  "updateDemoLimit": {
+    "validation": {
+      "minLimit": "Demo limiti 0 veya daha büyük olmalıdır",
+      "maxLimit": "Demo limiti 100'ü geçemez"
+    },
+    "title": "{{username}} için demo limitini güncelle",
+    "description": "Bu bayinin oluşturabileceği demo kullanıcıların günlük limitini ayarlayın.",
+    "currentStatus": "Mevcut Durum",
+    "currentLimit": "Mevcut Limit:",
+    "demosPerDay": "demo/gün",
+    "createdToday": "Bugün oluşturulan:",
+    "dailyDemoLimit": "Günlük Demo Limiti",
+    "enterDailyLimit": "Günlük demo limitini girin",
+    "helpText": "Bu bayinin günde oluşturabileceği demo kullanıcı sayısı (0-100)",
+    "demoUserInfo": "Demo Kullanıcı Bilgileri",
+    "duration": "Süre:",
+    "durationValue": "Oluşturulduğundan itibaren geçici",
+    "access": "Erişim:",
+    "accessValue": "Tam premium özellikler",
+    "devices": "Cihazlar:",
+    "devicesValue": "3 eşzamanlı cihaza kadar",
+    "autoCleanup": "Otomatik temizlik:",
+    "autoCleanupValue": "Hesap süresi dolduktan sonra otomatik silinir",
+    "cancel": "İptal",
+    "updating": "Güncelleniyor...",
+    "updateDemoLimit": "Demo Limitini Güncelle"
+  }
+}

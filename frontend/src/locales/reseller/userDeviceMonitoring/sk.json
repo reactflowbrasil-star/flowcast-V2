@@ -1,0 +1,55 @@
+{
+  "title": "Monitorovanie Zariadení Používateľov",
+  "description": "Monitorujte aktívne zariadenia vašich koncových používateľov a spravujte limity zariadení",
+  "loading": "Načítavam...",
+  "error": {
+    "loadFailed": "Nepodarilo sa načítať používateľov: {{message}}",
+    "removeDevice": "Nepodarilo sa odstrániť zariadenie: {{message}}",
+    "noUserSelected": "Nie je vybraný žiadny používateľ"
+  },
+  "time": {
+    "justNow": "Práve teraz",
+    "minutesAgo": "pred {{count}}m",
+    "hoursAgo": "pred {{count}}h",
+    "daysAgo": "pred {{count}}d"
+  },
+  "deviceStatus": {
+    "online": "Online",
+    "recent": "Nedávno",
+    "offline": "Offline"
+  },
+  "userStatus": {
+    "active": "Aktívny",
+    "suspended": "Pozastavený"
+  },
+  "table": {
+    "username": "Používateľské meno",
+    "deviceLimit": "Limit zariadení",
+    "activeDevices": "Aktívne zariadenia",
+    "status": "Stav",
+    "actions": "Akcie",
+    "device": "Zariadenie",
+    "deviceId": "ID zariadenia",
+    "lastSeen": "Naposledy videný",
+    "devices": "zariadení",
+    "active": "aktívne"
+  },
+  "empty": {
+    "noUsers": "Nenašli sa žiadni používatelia",
+    "noUsersDescription": "Vytvorte koncových používateľov, aby ste mohli monitorovať ich zariadenia.",
+    "noDevices": "Nenašli sa žiadne zariadenia",
+    "noDevicesDescription": "Tento používateľ ešte nepripojil žiadne zariadenie."
+  },
+  "actions": {
+    "viewDevices": "Zobraziť zariadenia",
+    "remove": "Odstrániť",
+    "removeDevice": "Odstrániť zariadenie",
+    "cancel": "Zrušiť"
+  },
+  "dialog": {
+    "title": "Správa zariadení - {{username}}",
+    "description": "Zobrazenie a správa aktívnych zariadení pre tohto používateľa. Limit: {{limit}} zariadení",
+    "removeTitle": "Odstrániť zariadenie",
+    "removeDescription": "Naozaj chcete odstrániť \"{{deviceName}}\" z účtu používateľa {{username}}? Týmto sa zariadenie okamžite odpojí."
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "masterKeys": {
+    "createDialogDescription": "Vytvorte nový kľúč Master API pre externé aplikácie. Tento kľúč poskytuje úplný prístup k API bez autentifikácie cez používateľské rozhranie.",
+    "examples": {
+      "appName": "napr. Externá aplikácia editora 2024"
+    },
+    "descriptionPlaceholder": "Popis externej aplikácie alebo integrácie...",
+    "descriptionHelp": "Voliteľné: Popíšte, na čo sa bude tento kľúč API používať",
+    "infoTitle": "Integrácia API",
+    "infoText": "Kľúče Master API poskytujú úplný prístup k API pre externé aplikácie bez nutnosti autentifikácie cez používateľské rozhranie. Ideálne pre nástroje na správu obsahu, automatizované skripty a integrácie tretích strán.",
+    "badges": {
+      "externalApps": "Externé aplikácie",
+      "automationScripts": "Automatizačné skripty",
+      "thirdPartyTools": "Nástroje tretích strán"
+    },
+    "neverLabel": "Nikdy",
+    "keyNameHelp": "Popisný názov na identifikáciu tohto kľúča API",
+    "securityNoteTitle": "Bezpečnostná poznámka",
+    "securityNoteDescription": "Vygenerovaný kľúč API sa zobrazí iba raz. Nezabudnite si ho skopírovať a bezpečne uložiť.",
+    "empty": {
+      "title": "Nenašli sa žiadne kľúče API",
+      "description": "Vytvorte si svoj prvý kľúč Master API na povolenie integrácie externých aplikácií"
+    },
+    "detailsTitle": "Podrobnosti kľúča Master API",
+    "detailsDescription": "Zobraziť a spravovať tento kľúč API pre integráciu externých aplikácií",
+    "apiKeyLabel": "Kľúč API",
+    "activeStatus": "Aktívny stav",
+    "regenerateButton": "Vygenerovať kľúč znova",
+    "deleteButton": "Vymazať kľúč",
+    "labels": {
+      "created": "Vytvorené",
+      "lastUpdated": "Posledná aktualizácia",
+      "lastUsed": "Posledné použitie"
+    },
+    "noDescription": "Žiadny popis",
+    "keyNameRequired": "Názov kľúča je povinný",
+    "confirmDelete": "Naozaj chcete odstrániť hlavný API kľúč \"{{keyName}}\"? Tým sa okamžite zruší prístup pre všetky externé aplikácie, ktoré tento kľúč používajú.",
+    "confirmRegenerate": "Naozaj chcete znovu vygenerovať tento hlavný API kľúč? Starý kľúč bude okamžite zneplatnený a externé aplikácie bude potrebné aktualizovať.",
+    "errors": {
+      "createFailed": "Nepodarilo sa vytvoriť hlavný API kľúč",
+      "deleteFailed": "Nepodarilo sa odstrániť hlavný API kľúč",
+      "loadFailed": "Nepodarilo sa načítať hlavné API kľúče",
+      "loadSingleFailed": "Nepodarilo sa načítať hlavný API kľúč",
+      "regenerateFailed": "Nepodarilo sa znovu vygenerovať hlavný API kľúč",
+      "updateFailed": "Nepodarilo sa aktualizovať hlavný API kľúč"
+    },
+    "fullAccessWarning": "⚠️ Uložte tento kľúč bezpečne. Poskytuje plný prístup k API bez autentifikácie.",
+    "loading": "Načítavajú sa hlavné API kľúče..."
+  }
+}

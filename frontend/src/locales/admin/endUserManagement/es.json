@@ -1,0 +1,123 @@
+{
+  "endUserManagement": {
+    "title": "Gestión de usuarios finales",
+    "subtitle": "Crear y gestionar usuarios finales en el sistema",
+    "createEndUser": "Crear usuario final",
+    "noEndUsersYet": "Aún no hay usuarios finales",
+    "searchByUsername": "Buscar por usuario...",
+    "searchByEmail": "Buscar por correo...",
+    "status": {
+      "active": "Activo",
+      "banned": "Baneado",
+      "inactive": "Inactivo"
+    },
+    "actions": {
+      "ban": "Bloquear",
+      "unban": "Desbloquear",
+      "banUser": "Bloquear Usuario",
+      "unbanUser": "Desbloquear Usuario",
+      "confirmBan": "¿Estás seguro de que quieres {{action}} a {{username}}?",
+      "banWarning": "Esto evitará que accedan al servicio.",
+      "deleteUser": "Eliminar Usuario",
+      "confirmDelete": "¿Estás seguro de eliminar permanentemente a {{username}}? Esta acción es irreversible.",
+      "edit": "Editar",
+      "create": "Crear",
+      "manageCredits": "Gestionar créditos",
+      "resetPassword": "Restablecer contraseña"
+    },
+    "labels": {
+      "username": "Usuario",
+      "email": "Correo",
+      "status": "Estado",
+      "createdAt": "Creado el"
+    },
+    "placeholders": {
+      "searchByUsername": "Buscar por usuario..."
+    },
+    "confirmDelete": "¿Eliminar este usuario final? Esta acción no se puede deshacer.",
+    "noMatches": "No se encontraron usuarios",
+    "editDialog": {
+      "title": "Editar Usuario",
+      "contentCategories": "Categorías de Contenido",
+      "maxDevices": "Máx. Dispositivos",
+      "maxDevicesDesc": "Número máximo de dispositivos simultáneos (1-10)",
+      "endLicense": "Fin de Licencia (Opcional)",
+      "forcedCategories": "Categorías Forzadas",
+      "forcedCategoriesDesc": "Categorías a las que este usuario DEBE tener acceso (anula valores por defecto)",
+      "password": "Contraseña",
+      "passwordDesc": "Dejar en blanco para mantener la contraseña actual",
+      "save": "Guardar Cambios",
+      "cancel": "Cancelar",
+      "updating": "Actualizando..."
+    },
+    "demoUser": "Usuario Demo",
+    "expiredDemo": "Demo Expirada",
+    "demoBadge": "Manifestación",
+    "directAdminManagement": "Gestión Directa de Admin",
+    "deleteUser": "Eliminar Usuario",
+    "filters": {
+      "title": "Filtros",
+      "username": "Usuario",
+      "email": "Correo electrónico",
+      "reseller": "Revendedor",
+      "showing": "Mostrando {{count}} de {{total}} usuarios",
+      "clear": "Limpiar filtros"
+    },
+    "table": {
+      "username": "Usuario",
+      "email": "Correo electrónico",
+      "type": "Tipo",
+      "maxDevices": "Máx. Disp.",
+      "reseller": "Revendedor",
+      "status": "Estado",
+      "created": "Creado",
+      "endLicense": "Fin Licencia",
+      "actions": "Acciones",
+      "premium": "De primera calidad"
+    },
+    "form": {
+      "username": "Usuario",
+      "password": "Contraseña",
+      "email": "Correo electrónico",
+      "maxDevices": "Máx. Dispositivos",
+      "expiryDate": "Fecha de Expiración (Opcional)",
+      "expiryDateHelp": "Dejar vacío para no expirar. El usuario será desactivado tras esta fecha.",
+      "assignReseller": "Asignar a Revendedor (Opcional)",
+      "selectContentCategories": "Categorías de Contenido",
+      "selectCategoriesHelp": "Clic para seleccionar categorías a las que accederá el usuario.",
+      "loadingCategories": "Cargando categorías...",
+      "noCategories": "No hay categorías disponibles"
+    },
+    "neverLabel": "Nunca",
+    "expired": "Expirado",
+    "timeLeft": "restante",
+    "time": {
+      "hoursMinutes": "{{hours}}h {{minutes}}m",
+      "minutes": "{{minutes}}m"
+    },
+    "daysRemaining": "{{count}} días",
+    "errors": {
+      "loadEndUsersFailed": "No se pudieron cargar los usuarios finales",
+      "loadEndUsersFailedWithMessage": "No se pudieron cargar los usuarios finales: {{message}}",
+      "loadResellersFailed": "No se pudieron cargar los revendedores",
+      "createFailed": "No se pudo crear el usuario final",
+      "updateStatusFailed": "No se pudo actualizar el estado del usuario",
+      "deleteFailed": "No se pudo eliminar el usuario"
+    },
+    "validation": {
+      "usernameMin": "El usuario debe tener al menos {{count}} caracteres",
+      "passwordMinDigits": "La contraseña debe tener al menos {{count}} dígitos",
+      "passwordMaxDigits": "La contraseña debe tener como máximo {{count}} dígitos",
+      "passwordDigitsOnly": "La contraseña solo puede contener dígitos",
+      "emailInvalid": "Correo inválido",
+      "maxDevicesMin": "Mínimo {{count}} dispositivo",
+      "maxDevicesMax": "Máximo {{count}} dispositivos permitidos",
+      "categoryMin": "Selecciona al menos {{count}} categoría"
+    },
+    "messages": {
+      "noUserSelected": "No se seleccionó ningún usuario",
+      "passwordUpdateFailed": "No se pudo actualizar la contraseña del usuario",
+      "updateFailed": "No se pudo actualizar el usuario"
+    }
+  }
+}

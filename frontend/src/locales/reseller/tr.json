@@ -1,0 +1,501 @@
+{
+  "layout": {
+    "navigation": {
+      "dashboard": "Panel",
+      "subscribers": "Aboneler",
+      "connections": "Bağlantılar",
+      "expirations": "Süre Dolumları",
+      "trialUsers": "Deneme Kullanıcıları",
+      "walletCredits": "Cüzdan ve Krediler",
+      "apiKeys": "API Anahtarları",
+      "support": "Destek",
+      "activityLogs": "Etkinlik Kayıtları"
+    },
+    "sections": {
+      "main": "Ana",
+      "operations": "İşlemler",
+      "finance": "Finans",
+      "developer": "Geliştirici",
+      "support": "Destek"
+    },
+    "wallet": {
+      "balance": "Bakiye",
+      "addCredits": "Kredi Ekle",
+      "currencyUnit": "CR"
+    },
+    "search": {
+      "placeholder": "Kullanıcı, cihaz veya destek talebi ara..."
+    },
+    "account": {
+      "reseller": "Bayi",
+      "myAccount": "Hesabım",
+      "profile": "Profil",
+      "billing": "Faturalandırma",
+      "logout": "Çıkış Yap"
+    }
+  },
+  "dashboard": {
+    "commandCenter": "Bayi Komuta Merkezi",
+    "welcomeBack": "Tekrar hoş geldin, {{name}}",
+    "subscribersCount": "{{count}} abone",
+    "creditsAvailable": "{{credits}} kredi",
+    "statsDescription": "<subscribers>{{subscribers}} aboneniz</subscribers> ve <credits>{{credits}} krediniz</credits> mevcut.",
+    "newUser": "Yeni Kullanıcı",
+    "newDemo": "Yeni Demo",
+    "expiringSoon": "Süresi Dolmak Üzere",
+    "viewAll": "Hepsini Gör",
+    "quickActions": "Hızlı İşlemler",
+    "profileSettings": "Profil Ayarları"
+  },
+  "stats": {
+    "noSubscribersYet": "Henüz abone yok",
+    "excellent": "Mükemmel",
+    "good": "İyi",
+    "fair": "Orta",
+    "inactive": "{{count}} pasif",
+    "totalSubscribers": "Toplam Abone",
+    "newThisMonth": "Bu ay +{{count}}",
+    "noNewThisMonth": "Bu ay yeni yok",
+    "networkHealth": "Ağ Durumu",
+    "deviceSlots": "Cihaz Slotları",
+    "activeUsers": "{{count}} aktif kullanıcı",
+    "activeDemos": "Aktif Demolar",
+    "trialsInProgress": "Devam eden denemeler",
+    "noActiveTrials": "Aktif deneme yok"
+  },
+  "quickActions": {
+    "createUser": "Kullanıcı Oluştur",
+    "addNewSubscriber": "Yeni abone ekle",
+    "issueDemo": "Demo Tanımla",
+    "generateTrialAccount": "Deneme hesabı oluştur",
+    "manageDevices": "Cihazları Yönet",
+    "resetOrKillSessions": "Oturumları sıfırla veya sonlandır",
+    "userList": "Kullanıcı Listesi",
+    "viewAllSubscribers": "Tüm aboneleri gör",
+    "buyCredits": "Kredi Satın Al",
+    "topUpWallet": "Cüzdana para yükle",
+    "support": "Destek",
+    "openTicket": "Destek talebi aç"
+  },
+  "endUsers": {
+    "title": "Son Kullanıcılar",
+    "subtitle": "Tüm bayilerdeki son kullanıcıları oluşturun ve yönetin",
+    "legend": {
+      "demoUser": "Demo Kullanıcı",
+      "expiredDemo": "Süresi Dolmuş Demo",
+      "demoBadge": "Demo Rozeti"
+    },
+    "badges": {
+      "demo": "DEMO"
+    },
+    "time": {
+      "expired": "Süresi Doldu",
+      "never": "Asla",
+      "left": "kaldı",
+      "hoursMinutes": "{{hours}}sa {{minutes}}dk",
+      "minutes": "{{minutes}}dk",
+      "days": "{{days}} gün",
+      "daysRemaining": "({{days}} gün kaldı)"
+    },
+    "premium": "prim",
+    "suspended": "Askıya Alındı",
+    "demo": "Demo",
+    "expired": "Süresi Doldu",
+    "never": "Asla",
+    "endLicense": "Lisans Sonu",
+    "createDialogDescription": "Yeni bir son kullanıcı hesabı oluşturun. Krediler bakiyenizden düşülecektir.",
+    "subscriptionDuration": "Abonelik Süresi",
+    "selectDuration": "Süre seçin",
+    "deviceLimit": "Cihaz Limiti",
+    "selectDeviceLimit": "Cihaz limiti seçin",
+    "contentCategories": "İçerik Kategorileri",
+    "categoriesHelp": "Bu kullanıcının erişebileceği içerik kategorilerini seçmek için tıklayın.",
+    "creditCostCalculation": "Kredi Maliyeti Hesaplaması:",
+    "availableCredits": "Mevcut kredileriniz",
+    "insufficientCredits": "Yetersiz kredi!",
+    "insufficientCreditsShort": "Yetersiz Kredi",
+    "selectOptions": "Seçenekleri Belirleyin",
+    "needMoreCredits": "{{amount}} kredi daha gerekiyor.",
+    "deviceOptions": {
+      "3": "3 cihaz (1 kredi/ay)",
+      "5": "5 cihaz (1.5 kredi/ay)",
+      "6": "6 cihaz (1.75 kredi/ay)",
+      "7": "7 cihaz (2 kredi/ay)",
+      "8": "8 cihaz (2.25 kredi/ay)",
+      "9": "9 cihaz (2.5 kredi/ay)",
+      "10": "10 cihaz (2.75 kredi/ay)"
+    },
+    "duration": {
+      "month": "{{count}} ay",
+      "month_plural": "{{count}} ay",
+      "months": "{{count}} ay"
+    },
+    "validation": {
+      "usernameMin": "Kullanıcı adı en az 3 karakter olmalıdır",
+      "passwordMin": "Şifre en az 4 rakamdan oluşmalıdır",
+      "passwordMax": "Şifre en fazla 10 rakamdan oluşmalıdır",
+      "passwordDigits": "Şifre sadece rakamlardan oluşmalıdır",
+      "invalidEmail": "Geçersiz e-posta adresi",
+      "durationMin": "Minimum 1 ay",
+      "durationMax": "Maksimum 12 ay",
+      "selectDeviceLimit": "Lütfen cihaz limitini seçin",
+      "selectCategory": "Lütfen en az bir kategori seçin"
+    },
+    "errors": {
+      "failedToLoadUsers": "Kullanıcılar yüklenemedi"
+    },
+    "selectDurationAndDevices": "Süre ve cihaz seçin",
+    "monthPlural": "ay",
+    "monthsPlural": "ay",
+    "creditPerMonth": "kredi/ay",
+    "creditsPerMonth": "kredi/ay",
+    "creditBreakdown": "{{duration}} {{durationUnit}} × {{devices}} cihaz{{devicePlural}} ({{costPerMonth}} {{costUnit}}) = {{total}} kredi{{creditPlural}}"
+  },
+  "dialogs": {
+    "suspend": {
+      "title": "Kullanıcıyı Devre Dışı Bırak",
+      "description": "{{username}} isimli kullanıcıyı askıya almak istediğinizden emin misiniz? Bu işlem, tüm aktif cihazlarının bağlantısını kesecektir."
+    },
+    "activate": {
+      "title": "Kullanıcıyı Etkinleştir",
+      "description": "{{username}} isimli kullanıcıyı etkinleştirmek istediğinizden emin misiniz?"
+    },
+    "delete": {
+      "title": "Kullanıcıyı Sil",
+      "description": "{{username}} isimli kullanıcıyı kalıcı olarak silmek istediğinizden emin misiniz? Bu işlem geri alınamaz."
+    }
+  },
+  "activityLogs": {
+    "title": "Etkinlik Kayıtları",
+    "description": "Son etkinliklerinizi ve işlemlerinizi görüntüleyin",
+    "refresh": "Yenile",
+    "noLogs": "Etkinlik kaydı bulunamadı",
+    "errorLoading": "Kayıtlar yüklenirken hata oluştu: {{message}}",
+    "filters": {
+      "actionType": "İşlem Türü",
+      "allActions": "Tüm İşlemler",
+      "startDate": "Başlangıç Tarihi",
+      "endDate": "Bitiş Tarihi"
+    },
+    "actionTypes": {
+      "USER_CREATED": "Kullanıcı Oluşturuldu",
+      "USER_DELETED": "Kullanıcı Silindi",
+      "USER_EXTENDED": "Abonelik Uzatıldı",
+      "CREDIT_USED": "Kredi Kullanıldı",
+      "DEMO_CREATED": "Demo Oluşturuldu",
+      "LOGIN": "Giriş",
+      "LOGOUT": "Çıkış"
+    },
+    "table": {
+      "date": "Tarih",
+      "action": "İşlem",
+      "targetUser": "Hedef Kullanıcı",
+      "description": "Açıklama",
+      "credits": "Krediler"
+    },
+    "pagination": {
+      "showing": "{{total}} sonuçtan {{from}} - {{to}} arası gösteriliyor",
+      "previous": "Önceki",
+      "next": "Sonraki",
+      "pageOf": "{{totalPages}} sayfa üzerinden {{page}}. sayfa"
+    }
+  },
+  "editUser": {
+    "dialogTitle": "Kullanıcıyı Düzenle: {{username}}",
+    "dialogDescription": "Kullanıcı bilgilerini düzenleyin, aboneliği yönetin ve erişimi uzatın",
+    "editDetailsTitle": "Kullanıcı Bilgilerini Düzenle",
+    "editDetailsDescription": "Kullanıcı bilgilerini ve şifresini güncelleyin",
+    "validation": {
+      "minMonth": "Minimum 1 ay",
+      "maxExtension": "Maksimum 12 ay uzatma",
+      "usernameMinLength": "Kullanıcı adı en az 3 karakter olmalıdır",
+      "invalidEmail": "Geçersiz e-posta adresi",
+      "passwordMinLength": "Şifre en az 4 rakam olmalıdır",
+      "passwordMaxLength": "Şifre en fazla 10 rakam olmalıdır",
+      "passwordDigitsOnly": "Şifre sadece rakamlardan oluşmalıdır",
+      "maxDevicesLimit": "En fazla 10 cihaza izin verilir",
+      "selectCategory": "Lütfen en az bir kategori seçin"
+    },
+    "labels": {
+      "username": "Kullanıcı Adı",
+      "email": "E-posta",
+      "newPassword": "Yeni Şifre (4-10 rakam)",
+      "maxDevices": "Maks. Cihaz",
+      "categories": "Kategoriler",
+      "deviceLimit": "Cihaz Limiti",
+      "status": "Durum",
+      "expirationDate": "Son Kullanma Tarihi",
+      "currentCategories": "Mevcut Kategoriler"
+    },
+    "placeholders": {
+      "enterUsername": "Kullanıcı adı girin",
+      "enterEmail": "E-postayı girin",
+      "leaveEmptyToKeep": "Aynı kalması için boş bırakın"
+    },
+    "creditWarning": {
+      "title": "Kredi Maliyeti Uyarısı",
+      "addingDevices": "{{count}} cihaz eklemek şu kadar tutacaktır:",
+      "addingDevicesPlural": "{{count}} cihaz eklemek şu kadar tutacaktır:",
+      "credits": "{{amount}} kredi",
+      "calculation": "({{days}} gün kaldı × ayda cihaz başına 0.25 kredi)"
+    },
+    "subscription": {
+      "title": "Mevcut Abonelik",
+      "devices": "{{count}} cihaz",
+      "expired": "Süresi Doldu",
+      "active": "Aktif",
+      "noCategories": "Kategori atanmamış"
+    },
+    "extend": {
+      "title": "Aboneliği Uzat",
+      "description": "Bu kullanıcının aboneliğine daha fazla ay ekleyin (maksimum 12 ay)",
+      "periodLabel": "Uzatma Süresi",
+      "selectPeriod": "Uzatma süresini seçin",
+      "costCalculation": "Uzatma Maliyeti Hesaplaması:",
+      "availableCredits": "Mevcut kredileriniz",
+      "insufficientCredits": "Yetersiz kredi!",
+      "needMoreCredits": "{{amount}} kredi daha gerekiyor.",
+      "selectExtension": "Uzatmayı Seçin",
+      "breakdown": {
+        "device": "cihaz",
+        "devicesPlural": "cihaz",
+        "monthsDevices": "{{months}} {{monthLabel}} × {{devices}} {{deviceLabel}}",
+        "oneCredit": "(1 kredi/ay)",
+        "extraDevices": "(1 temel + {{extraDevices}} × 0.25 = {{creditsPerMonth}} kredi/ay)",
+        "credit": "kredi",
+        "creditsPlural": "kredi",
+        "totalCredits": "= {{cost}} {{creditLabel}}"
+      }
+    },
+    "buttons": {
+      "cancel": "İptal",
+      "updating": "Güncelleniyor...",
+      "updateUser": "Kullanıcıyı Güncelle",
+      "extending": "Uzatılıyor...",
+      "extendSubscription": "Aboneliği Uzat ({{cost}} kredi)",
+      "insufficientCredits": "Yetersiz Kredi"
+    },
+    "loading": {
+      "categories": "Kategoriler yükleniyor..."
+    },
+    "empty": {
+      "noCategories": "Kullanılabilir kategori yok"
+    },
+    "errors": {
+      "extendFailed": "Abonelik uzatılamadı",
+      "noUserSelected": "Kullanıcı seçilmedi"
+    }
+  },
+  "buyCredits": {
+    "title": "Kredi Satın Al",
+    "description": "Stripe Checkout üzerinden platform kredisi satın alın. Krediler, son kullanıcı oluşturmak ve yönetmek için kullanılır.",
+    "loadingPricing": "Güncel fiyatlar yükleniyor...",
+    "retry": "Tekrar Dene",
+    "basePrice": "Taban fiyat",
+    "perCredit": "kredi başına",
+    "yourDiscount": "Miktar indiriminiz",
+    "applied": "uygulandı",
+    "none": "yok",
+    "effectiveUnitPrice": "Efektif birim fiyat",
+    "quantityLabel": "Miktar (kredi)",
+    "quantityHint": "Satın almak istediğiniz kredi miktarını girin",
+    "totalAmount": "Toplam tutar",
+    "includesDiscount": "%{{discount}} hacim indirimi dahildir",
+    "noDiscount": "Bu miktar için indirim tanımlanmamış",
+    "redirecting": "Yönlendiriliyor...",
+    "proceedToCheckout": "Ödemeye Devam Et",
+    "volumeDiscountTiers": "Hacim indirim kademeleri",
+    "minQuantity": "Min. miktar",
+    "discount": "İndirim",
+    "noTiers": "Kademe yapılandırılmamış. Taban fiyat geçerlidir.",
+    "invalidQuantity": "Lütfen 0'dan büyük geçerli bir miktar girin",
+    "errors": {
+      "failedLoadPricing": "Fiyatlar yüklenemedi",
+      "failedCreateCheckout": "Ödeme oturumu oluşturulamadı"
+    }
+  },
+  "expirationMonitoring": {
+    "title": "Kullanıcı Süre Takibi",
+    "errorLoading": "Kullanıcı süre verileri yüklenemedi. Lütfen tekrar deneyin.",
+    "neverExpires": "Süresiz",
+    "noEmail": "E-posta yok",
+    "status": {
+      "expired": "Süresi Dolmuş",
+      "day": "{{count}} gün",
+      "days": "{{count}} gün",
+      "noExpiration": "Süre sınırı yok",
+      "active": "Aktif",
+      "inactive": "Pasif"
+    },
+    "summary": {
+      "expired": "Süresi Dolan",
+      "critical": "Kritik (≤2 gün)",
+      "warning": "Uyarı (3-5 gün)",
+      "good": "İyi (>5 gün)",
+      "noExpiration": "Süre Sınırı Yok"
+    },
+    "details": {
+      "criticalTitle": "Kritik Süre Dolumları",
+      "criticalDescription": "Acil müdahale gerektiren kullanıcılar (2 gün içinde süresi dolacaklar)",
+      "fullTitle": "Kullanıcı Süre Ayrıntıları",
+      "fullDescription": "Kullanıcılarınızın hesap son kullanma tarihlerini ve durumlarını izleyin"
+    },
+    "table": {
+      "username": "Kullanıcı Adı",
+      "email": "E-posta",
+      "expirationDate": "Son Kullanma Tarihi",
+      "status": "Durum",
+      "active": "Aktif"
+    },
+    "empty": {
+      "noCritical": "Kritik süre dolumu yok",
+      "noCriticalDescription": "Tüm kullanıcılarınızın süresinin dolmasına 2 günden fazla vakit var.",
+      "noUsers": "Kullanıcı bulunamadı",
+      "noUsersDescription": "Süre tarihlerini takip etmek için son kullanıcılar oluşturun."
+    }
+  },
+  "analytics": {
+    "active": "Aktif",
+    "inactive": "Pasif",
+    "acquisitionTrend": "Edinme Eğilimi",
+    "acquisitionDescription": "Son 6 aydaki yeni aboneler",
+    "networkStatus": "Ağ Durumu",
+    "networkDescription": "Aktif ve Askıya Alınmış kullanıcılar",
+    "totalUsers": "Toplam Kullanıcı"
+  },
+  "profile": {
+    "title": "Bayi Profili",
+    "description": "Hesap ayarlarınızı ve tercihlerinizi yönetin",
+    "contactInformation": "İletişim Bilgileri",
+    "emailPlaceholder": "e-posta@adresiniz.com",
+    "contactInfoNote": "Bu e-postayı önemli bildirimler için kullanacağız",
+    "saveChanges": "Değişiklikleri Kaydet",
+    "changePassword": "Şifreyi Değiştir",
+    "newPasswordLabel": "Yeni Şifre",
+    "newPasswordPlaceholder": "Yeni şifre girin",
+    "confirmPasswordLabel": "Şifreyi Onayla",
+    "confirmPasswordPlaceholder": "Yeni şifreyi onaylayın",
+    "passwordHelp": "Şifre en az 8 karakter olmalıdır",
+    "updatePassword": "Şifreyi Güncelle",
+    "updated": "Profil başarıyla güncellendi",
+    "updateFailed": "Profil güncellenemedi",
+    "passwordUpdated": "Şifre başarıyla güncellendi",
+    "updatePasswordFailed": "Şifre güncellenemedi",
+    "passwordTooShort": "Şifre en az 8 karakter olmalıdır",
+    "enterAndConfirmPassword": "Lütfen yeni şifrenizi girin ve onaylayın",
+    "passwordsDoNotMatch": "Şifreler eşleşmiyor"
+  },
+  "creditBalance": {
+    "title": "Kredi Bakiyesi",
+    "availableCredits": "Mevcut Krediler",
+    "lowBalance": "Düşük Bakiye",
+    "available": "Mevcut",
+    "creditsAvailableDescription": "Yeni kullanıcı oluşturmak için kullanılabilir krediler",
+    "lowBalanceWarning": "Kredi bakiyeniz düşük. Daha fazla kredi eklemek için yöneticinizle iletişime geçin.",
+    "totalUsers": "Toplam Kullanıcı",
+    "endUsersCreated": "Oluşturulan son kullanıcılar",
+    "creditsUsed": "Kullanılan Kredi",
+    "totalCreditsConsumed": "Toplam tüketilen kredi",
+    "creditSummary": {
+      "title": "Kredi Özeti",
+      "description": "Kredi kullanımınıza ve bakiyenize genel bakış",
+      "initialCredits": "Başlangıç Kredileri",
+      "creditsUsed": "Kullanılan Kredi",
+      "availableCredits": "Mevcut Krediler",
+      "usageRate": "Kullanım Oranı"
+    },
+    "userBreakdown": {
+      "title": "Kullanıcı Kredi Dağılımı",
+      "description": "Cihaz yapılandırmasına göre kullanıcı başına kredi maliyeti",
+      "device": "cihaz",
+      "devices": "cihaz",
+      "credits": "kredi"
+    },
+    "calculationGuide": {
+      "title": "Kredi Hesaplama Kılavuzu",
+      "description": "Farklı cihaz yapılandırmaları için kredilerin nasıl hesaplandığını anlayın",
+      "standardDevices": "3 Cihaz (Standart)",
+      "standardCredits": "1.0 kredi",
+      "standardDescription": "Son kullanıcılar için en yaygın yapılandırma",
+      "premiumDevices": "5 Cihaz (Premium)",
+      "premiumCredits": "1.5 kredi",
+      "premiumDescription": "Daha fazla cihaz içeren premium paket",
+      "extraDevices": "Ek Cihazlar",
+      "extraCredits": "Her biri +0.25 kredi",
+      "extraDescription": "3 cihazdan sonraki her ek cihaz için ilave maliyet",
+      "examples": "Örnekler:",
+      "example1Device": "1 cihaz",
+      "example1DeviceCost": "1.0 kredi",
+      "example4Devices": "4 cihaz",
+      "example4DevicesCost": "1.25 kredi",
+      "example6Devices": "6 cihaz",
+      "example6DevicesCost": "1.75 kredi"
+    }
+  },
+  "supportTickets": {
+    "descriptionPlaceholder": "Lütfen sorununuz hakkında detaylı bilgi verin...",
+    "header": {
+      "title": "Destek Biletleri",
+      "description": "Destek taleplerinizi oluşturun ve yönetin",
+      "unreadSingle": "{{count}} okunmamış mesajınız var",
+      "unreadPlural": "{{count}} okunmamış mesajınız var",
+      "createTicket": "Bilet Oluştur"
+    },
+    "createDialog": {
+      "title": "Destek Bileti Oluştur",
+      "description": "Sorununuzu açıklayın; mümkün olan en kısa sürede çözmenize yardımcı olalım.",
+      "titleLabel": "Başlık",
+      "titlePlaceholder": "Sorununuzun kısa özeti",
+      "categoryLabel": "Kategori",
+      "priorityLabel": "Öncelik",
+      "descriptionLabel": "Tanım",
+      "descriptionPlaceholder": "Lütfen sorununuz hakkında detaylı bilgi veriniz...",
+      "cancel": "İptal etmek",
+      "creating": "Oluşturuluyor...",
+      "create": "Bilet Oluştur"
+    },
+    "categories": {
+      "technical": "Teknik Sorun",
+      "billing": "Faturalandırma Sorusu",
+      "account": "Hesap Desteği",
+      "content": "İçerik Sorunu",
+      "other": "Diğer"
+    },
+    "priorities": {
+      "low": "Düşük",
+      "medium": "Orta",
+      "high": "Yüksek",
+      "urgent": "Acil"
+    },
+    "stats": {
+      "total": "Toplam",
+      "open": "Açık",
+      "inProgress": "Devam etmekte",
+      "resolved": "Çözüldü"
+    },
+    "list": {
+      "title": "Destek Biletlerim",
+      "empty": "Bilet bulunamadı. Yukarıda ilk destek biletinizi oluşturun.",
+      "countSingle": "{{count}} bilet bulundu",
+      "countPlural": "{{count}} bilet bulundu",
+      "filter": "Filtre",
+      "sort": "Düzenlemek",
+      "refresh": "Yenile"
+    },
+    "empty": {
+      "title": "Henüz destek bileti yok",
+      "description": "İlk biletinizi oluşturarak destek ekibimizden yardım alın. Size yardımcı olmak için buradayız!",
+      "createFirst": "İlk Biletinizi Oluşturun"
+    },
+    "errors": {
+      "createFailed": "Bilet oluşturulamadı",
+      "createFailedRetry": "Bilet oluşturulamadı. Lütfen tekrar deneyin.",
+      "sendFailed": "Mesaj gönderilemedi",
+      "sendFailedRetry": "Mesaj gönderilemedi. Lütfen tekrar deneyin."
+    }
+  },
+  "secretKeyCopied": "Gizli anahtar panoya kopyalandı",
+  "iHaveCopiedMyKey": "Anahtarımı Kopyaladım",
+  "noUsersFound": "Kullanıcı bulunamadı",
+  "noCriticalExpirations": "Kritik süre dolma yok"
+}

@@ -1,0 +1,56 @@
+{
+  "mediaWatcher": {
+    "creating": "Criando...",
+    "title": "Configuracao do monitor de midia",
+    "description": "Verifica automaticamente pastas em busca de novo conteudo. Funciona como \"ls\": deteccao rapida apenas de novas pastas.",
+    "addButton": "Adicionar pasta monitorada",
+    "empty": "Nenhuma pasta configurada. Adicione uma para comecar.",
+    "deleteConfirm": "Tem certeza de que deseja excluir esta pasta monitorada?",
+    "form": {
+      "folderPath": "Caminho da pasta",
+      "folderPathPlaceholder": "/mnt/mídia/filmes",
+      "mediaType": "Tipo de midia",
+      "checkInterval": "Intervalo de verificacao (minutos)"
+    },
+    "createDialog": {
+      "title": "Adicionar pasta",
+      "description": "Configure uma pasta para verificar automaticamente novo conteudo"
+    },
+    "editDialog": {
+      "title": "Editar pasta",
+      "description": "Atualizar configuracao da pasta",
+      "updating": "Atualizando...",
+      "update": "Atualizar"
+    },
+    "mediaTypes": {
+      "movies": "Filmes",
+      "series": "Série",
+      "kids": "Infantil",
+      "anime": "Anime"
+    },
+    "table": {
+      "status": "Estado",
+      "folderPath": "Caminho da pasta",
+      "type": "Tipo",
+      "interval": "Intervalo",
+      "lastCheck": "Ultima verificacao",
+      "actions": "Acoes",
+      "lastCheckNever": "Nunca",
+      "lastCheckInvalid": "Data invalida"
+    },
+    "toasts": {
+      "createSuccess": "Pasta criada com sucesso",
+      "createFailed": "Falha ao criar a pasta",
+      "updateSuccess": "Pasta atualizada com sucesso",
+      "updateFailed": "Falha ao atualizar a pasta",
+      "deleteSuccess": "Pasta excluida com sucesso",
+      "deleteFailed": "Falha ao excluir a pasta",
+      "checkStarted": "Verificacao da pasta iniciada",
+      "checkFailed": "Falha ao verificar a pasta",
+      "enabled": "Pasta habilitada",
+      "disabled": "Pasta desabilitada",
+      "toggleFailed": "Falha ao alterar o status da pasta",
+      "folderPathRequired": "Informe o caminho da pasta"
+    }
+  }
+}

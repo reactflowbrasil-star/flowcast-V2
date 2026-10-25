@@ -1,0 +1,55 @@
+{
+  "title": "Surveillance des Appareils Utilisateur",
+  "description": "Surveillez les appareils actifs de vos utilisateurs finaux et gérez les limites d'appareils",
+  "loading": "Chargement...",
+  "error": {
+    "loadFailed": "Échec du chargement des utilisateurs : {{message}}",
+    "removeDevice": "Échec de la suppression de l'appareil : {{message}}",
+    "noUserSelected": "Aucun utilisateur sélectionné"
+  },
+  "time": {
+    "justNow": "À l'instant",
+    "minutesAgo": "il y a {{count}}m",
+    "hoursAgo": "il y a {{count}}h",
+    "daysAgo": "il y a {{count}}j"
+  },
+  "deviceStatus": {
+    "online": "En ligne",
+    "recent": "Récent",
+    "offline": "Hors ligne"
+  },
+  "userStatus": {
+    "active": "Actif",
+    "suspended": "Suspendu"
+  },
+  "table": {
+    "username": "Nom d'utilisateur",
+    "deviceLimit": "Limite d'appareils",
+    "activeDevices": "Appareils Actifs",
+    "status": "Statut",
+    "actions": "Actes",
+    "device": "Appareil",
+    "deviceId": "ID de l'appareil",
+    "lastSeen": "Dernière connexion",
+    "devices": "appareils",
+    "active": "actif"
+  },
+  "empty": {
+    "noUsers": "Aucun utilisateur trouvé",
+    "noUsersDescription": "Créez des utilisateurs finaux pour surveiller leurs appareils.",
+    "noDevices": "Aucun appareil trouvé",
+    "noDevicesDescription": "Cet utilisateur n'a pas encore connecté d'appareil."
+  },
+  "actions": {
+    "viewDevices": "Voir les appareils",
+    "remove": "Supprimer",
+    "removeDevice": "Supprimer l'appareil",
+    "cancel": "Annuler"
+  },
+  "dialog": {
+    "title": "Gestion des Appareils - {{username}}",
+    "description": "Consultez et gérez les appareils actifs pour cet utilisateur. Limite : {{limit}} appareils",
+    "removeTitle": "Supprimer l'appareil",
+    "removeDescription": "Êtes-vous sûr de vouloir supprimer \"{{deviceName}}\" du compte de {{username}} ? Cela déconnectera l'appareil immédiatement."
+  }
+}

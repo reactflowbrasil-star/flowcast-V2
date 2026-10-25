@@ -1,0 +1,19 @@
+{
+    "createBan": {
+        "title": "Create Ban",
+        "usernameLabel": "Username",
+        "usernamePlaceholder": "Enter username to ban",
+        "banTypeLabel": "Ban Type",
+        "temporary": "Temporary",
+        "permanent": "Permanent",
+        "banLevelLabel": "Ban Level",
+        "level1": "Level 1 - Warning",
+        "level2": "Level 2 - Restricted",
+        "level3": "Level 3 - Full Ban",
+        "reasonLabel": "Reason",
+        "reasonPlaceholder": "Enter reason for ban...",
+        "customDurationLabel": "Custom Duration",
+        "customDurationPlaceholder": "Enter duration in hours",
+        "customDurationNote": "Duration in hours. Leave empty for default."
+    }
+}

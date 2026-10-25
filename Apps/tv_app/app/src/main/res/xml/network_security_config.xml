@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Network Security Configuration for IPTV Android App
+    
+    SECURITY NOTES:
+    - Base config now BLOCKS cleartext (HTTP) traffic by default
+    - Only specific domains for development and streaming are whitelisted for HTTP
+    - For production: Set backend URL in local.properties as backend.url=https://your-server.com
+    - Consider adding certificate pinning for production API servers
+    
+    To add certificate pinning for your production server:
+    1. Get your server's certificate SHA-256 pin using:
+       openssl s_client -connect your-server.com:443 | openssl x509 -pubkey -noout | openssl pkey -pubin -outform der | openssl dgst -sha256 -binary | openssl enc -base64
+    2. Add a domain-config with <pin-set> for your production domain
+-->
+<network-security-config>
+    <!-- 
+        IPTV STREAMING: Allow cleartext (HTTP) traffic globally
+        Many IPTV streams use HTTP URLs from various providers.
+        This is required for compatibility with legacy streaming sources.
+        
+        NOTE: The app should still prefer HTTPS where available.
+    -->
+    <base-config cleartextTrafficPermitted="true">
+        <trust-anchors>
+            <certificates src="system"/>
+        </trust-anchors>
+    </base-config>
+    
+    <!-- Development and Local Testing - Allow HTTP only for these specific domains -->
+    <domain-config cleartextTrafficPermitted="true">
+        <!-- Android emulator host -->
+        <domain includeSubdomains="true">10.0.2.2</domain>
+        <!-- Local development -->
+        <domain includeSubdomains="true">localhost</domain>
+        <domain includeSubdomains="false">127.0.0.1</domain>
+        <!-- Local network ranges for development (common private IP ranges) -->
+        <domain includeSubdomains="true">192.168.1.1</domain>
+        <domain includeSubdomains="true">192.168.0.1</domain>
+        <!-- Specific development IPs can be added here -->
+    </domain-config>
+    
+    <!-- Media Streaming Providers - Allow HTTP for IPTV compatibility -->
+    <domain-config cleartextTrafficPermitted="true">
+        <!-- HLS/DASH streaming providers that may use HTTP -->
+        <domain includeSubdomains="true">clarovideo.com</domain>
+        <domain includeSubdomains="true">clarovideo.net</domain>
+        <!-- Add other streaming CDN domains as needed -->
+    </domain-config>
+    
+    <!-- TMDB Image CDN - Trust system certificates -->
+    <domain-config cleartextTrafficPermitted="false">
+        <domain includeSubdomains="true">tmdb.org</domain>
+        <domain includeSubdomains="true">themoviedb.org</domain>
+        <trust-anchors>
+            <certificates src="system"/>
+        </trust-anchors>
+    </domain-config>
+    
+    <!--
+        PRODUCTION CERTIFICATE PINNING TEMPLATE
+        Uncomment and configure this section for production deployments:
+        
+    <domain-config cleartextTrafficPermitted="false">
+        <domain includeSubdomains="true">your-production-api.com</domain>
+        <pin-set expiration="2025-12-31">
+            <pin digest="SHA-256">YOUR_CERTIFICATE_PIN_HERE=</pin>
+            <pin digest="SHA-256">YOUR_BACKUP_PIN_HERE=</pin>
+        </pin-set>
+        <trust-anchors>
+            <certificates src="system"/>
+        </trust-anchors>
+    </domain-config>
+    -->
+</network-security-config>

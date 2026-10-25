@@ -1,0 +1,18 @@
+{
+  "errors": {
+    "loadingSources": "Erreur chargement sources EPG",
+    "nameUrlRequired": "Nom et URL sont requis",
+    "createFailed": "Échec création source",
+    "updateFailed": "Échec mise à jour source",
+    "deleteFailed": "Échec suppression source",
+    "fetchChannelsFailed": "Échec récupération chaînes"
+  },
+  "units": {
+    "minutes": "min"
+  },
+  "labels": {
+    "timezone": "TZ:"
+  },
+  "confirmDelete": "Supprimer source EPG \"{{name}}\" ?",
+  "inactive": "(inactif)"
+}

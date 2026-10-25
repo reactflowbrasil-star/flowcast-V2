@@ -1,0 +1,125 @@
+{
+  "title": "API Keys",
+  "description": "Manage API keys for programmatic access to your reseller account",
+  "createButton": "Create API Key",
+  "empty": {
+    "title": "No API keys yet",
+    "description": "Create your first API key to get started with the API"
+  },
+  "table": {
+    "name": "Name",
+    "key": "Key",
+    "permissions": "Permissions",
+    "lastUsed": "Last Used",
+    "requests": "Requests",
+    "status": "Status",
+    "actions": "Actions"
+  },
+  "tooltips": {
+    "edit": "Edit permissions",
+    "regenerate": "Regenerate key",
+    "delete": "Delete key"
+  },
+  "never": "Never",
+  "apiUsage": {
+    "title": "API Usage",
+    "description": "How to use your API keys",
+    "authHeader": "Authentication Header",
+    "exampleListUsers": "Example: List Users",
+    "exampleCreateUser": "Example: Create User",
+    "endpoint": "Endpoint"
+  },
+  "createDialog": {
+    "title": "Create New API Key",
+    "description": "Create a new API key with specific permissions for programmatic access.",
+    "keyName": "Key Name",
+    "keyNamePlaceholder": "e.g., My Integration",
+    "permissions": "Permissions",
+    "allowedOrigins": "Allowed Origins (CORS)",
+    "allowedOriginsPlaceholder": "* for all, or comma-separated domains",
+    "allowedOriginsHelp": "Use * to allow all origins, or specify domains like https://example.com",
+    "rateLimitMinute": "Rate Limit (per minute)",
+    "rateLimitDay": "Rate Limit (per day)",
+    "cancel": "Cancel",
+    "creating": "Creating...",
+    "create": "Create API Key"
+  },
+  "secretDialog": {
+    "title": "API Key Created",
+    "description": "Copy your secret key now. You won't be able to see it again!",
+    "warning": "This is the only time you'll see this key. Store it securely!",
+    "copied": "I've Copied My Key"
+  },
+  "deleteDialog": {
+    "title": "Delete API Key",
+    "description": "Are you sure you want to delete \"{{keyName}}\"? This action cannot be undone and any integrations using this key will stop working.",
+    "cancel": "Cancel",
+    "deleting": "Deleting...",
+    "delete": "Delete Key"
+  },
+  "regenerateDialog": {
+    "title": "Regenerate API Key",
+    "description": "Are you sure you want to regenerate \"{{keyName}}\"? The current key will be invalidated immediately and any integrations will need to be updated.",
+    "cancel": "Cancel",
+    "regenerating": "Regenerating...",
+    "regenerate": "Regenerate Key"
+  },
+  "editDialog": {
+    "title": "Edit API Key",
+    "description": "Update the name, permissions, and settings for this API key.",
+    "keyName": "Key Name",
+    "keyNamePlaceholder": "e.g., My Integration",
+    "permissions": "Permissions",
+    "allowedOrigins": "Allowed Origins (CORS)",
+    "allowedOriginsPlaceholder": "* for all, or comma-separated domains",
+    "rateLimitMinute": "Rate Limit (per minute)",
+    "rateLimitDay": "Rate Limit (per day)",
+    "cancel": "Cancel",
+    "saving": "Saving...",
+    "save": "Save Changes"
+  },
+  "permissions": {
+    "users:read": {
+      "name": "Read Users",
+      "description": "List and view your end users"
+    },
+    "users:create": {
+      "name": "Create Users",
+      "description": "Create new end users (deducts credits)"
+    },
+    "users:update": {
+      "name": "Update Users",
+      "description": "Update existing end user details"
+    },
+    "users:extend": {
+      "name": "Extend Subscriptions",
+      "description": "Extend user subscriptions (deducts credits)"
+    },
+    "users:delete": {
+      "name": "Delete Users",
+      "description": "Delete end users"
+    },
+    "credits:read": {
+      "name": "Read Credits",
+      "description": "View credit balance and calculate costs"
+    }
+  },
+  "toast": {
+    "created": "API key created successfully",
+    "deleted": "API key deleted",
+    "regenerated": "API key regenerated",
+    "statusUpdated": "API key status updated",
+    "updated": "API key updated successfully",
+    "secretCopied": "Secret key copied to clipboard",
+    "errors": {
+      "create": "Failed to create API key",
+      "delete": "Failed to delete API key",
+      "regenerate": "Failed to regenerate API key",
+      "update": "Failed to update API key"
+    }
+  },
+  "validation": {
+    "keyNameRequired": "Please enter a key name",
+    "permissionRequired": "Please select at least one permission"
+  }
+}

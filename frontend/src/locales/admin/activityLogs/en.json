@@ -1,0 +1,67 @@
+{
+  "title": "Activity Logs",
+  "subtitle": "System-wide activity, actions and audits",
+  "lastUpdated": "Last updated: {{time}}",
+  "autoRefreshOn": "Auto-refresh is ON",
+  "autoRefreshOff": "Auto-refresh is OFF",
+  "refreshNow": "Refresh now",
+  "refreshLabel": "Refresh",
+  "tabs": {
+    "dashboard": "Dashboard",
+    "system": "System",
+    "loginHistory": "Login History",
+    "viewingHistory": "Viewing History"
+  },
+  "filters": {
+    "actionType": "Action type",
+    "allActions": "All actions",
+    "user": "User",
+    "username": "Username",
+    "ipAddress": "IP address",
+    "startDate": "Start date (dd/mm/yyyy)",
+    "endDate": "End date (dd/mm/yyyy)",
+    "perPage": "Per page",
+    "search": "Search",
+    "placeholderUsername": "Search username…",
+    "placeholderIp": "e.g. 192.168.0.1",
+    "contentType": "Content type",
+    "allTypes": "All types"
+  },
+  "common": {
+    "failedLogins": "Failed logins",
+    "today": "Today",
+    "views": "Views"
+  },
+  "table": {
+    "date": "Date",
+    "action": "Action",
+    "user": "User",
+    "target": "Target",
+    "description": "Description",
+    "credits": "Credits",
+    "ip": "IP",
+    "device": "Device"
+  },
+  "pagination": {
+    "previous": "Previous",
+    "next": "Next",
+    "showing": "Showing {{from}} to {{to}} of {{total}} logs",
+    "pageOf": "Page {{page}} of {{total_pages}}"
+  },
+  "actionTypes": {
+    "USER_CREATED": "User Created",
+    "USER_DELETED": "User Deleted",
+    "RESELLER_CREATED": "Reseller Created",
+    "RESELLER_DELETED": "Reseller Deleted",
+    "CREDIT_USED": "Credit Used",
+    "CREDIT_ASSIGNED": "Credit Assigned",
+    "SYSTEM_INIT": "System Initialized",
+    "LOGIN": "Login",
+    "LOGOUT": "Logout"
+  },
+  "empty": "No activity logs found.",
+  "errors": {
+    "failedLoad": "Failed to load activity logs",
+    "invalidDateRange": "Invalid date range"
+  }
+}

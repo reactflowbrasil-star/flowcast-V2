@@ -1,0 +1,2575 @@
+{
+  "common": {
+    "create": "创建",
+    "edit": "编辑",
+    "delete": "删除",
+    "save": "保存",
+    "cancel": "取消",
+    "submit": "提交",
+    "close": "关闭",
+    "copy": "复制",
+    "open": "打开",
+    "dismiss": "关闭",
+    "back": "返回",
+    "next": "下一步",
+    "previous": "上一步",
+    "loading": "加载中...",
+    "error": "错误",
+    "success": "成功",
+    "warning": "警告",
+    "info": "信息",
+    "confirm": "确认",
+    "yes": "是",
+    "no": "否",
+    "ok": "确定",
+    "notAvailable": "N/A",
+    "unknown": "未知",
+    "search": "搜索",
+    "filter": "筛选",
+    "sort": "排序",
+    "export": "导出",
+    "import": "导入",
+    "upload": "上传",
+    "download": "下载",
+    "select": "选择",
+    "selected": "已选择",
+    "all": "全部",
+    "none": "无",
+    "enabled": "启用",
+    "disabled": "禁用",
+    "active": "活跃",
+    "inactive": "不活跃",
+    "pending": "待处理",
+    "completed": "完成",
+    "failed": "失败",
+    "title": "标题",
+    "description": "描述",
+    "name": "名称",
+    "email": "电子邮件",
+    "optional": "可选",
+    "password": "密码",
+    "username": "用户名",
+    "status": "状态",
+    "date": "日期",
+    "time": "时间",
+    "type": "类型",
+    "category": "类别",
+    "action": "操作",
+    "actions": "操作",
+    "settings": "设置",
+    "configuration": "配置",
+    "management": "管理",
+    "manage": "和管理",
+    "endUsers": "终端用户",
+    "across": "所有",
+    "saved": "更改已保存",
+    "provider": "提供商",
+    "country": "国家",
+    "columns": "列",
+    "dashboard": "仪表板",
+    "overview": "概览",
+    "details": "详情",
+    "summary": "摘要",
+    "statistics": "统计",
+    "failedLogins": "登录失败",
+    "today": "今天",
+    "views": "次观看",
+    "analytics": "分析",
+    "reports": "报告",
+    "logs": "日志",
+    "history": "历史",
+    "activity": "活动",
+    "notifications": "通知",
+    "messages": "消息",
+    "tickets": "工单",
+    "support": "支持",
+    "help": "帮助",
+    "about": "关于",
+    "version": "版本",
+    "language": "语言",
+    "theme": "主题",
+    "somethingWentWrong": "发生错误",
+    "saving": "保存中...",
+    "tryAgain": "重试",
+    "logout": "登出",
+    "loggingOut": "正在登出...",
+    "confirmLogoutTitle": "确认登出",
+    "confirmLogoutDescription": "确认要登出，{{user}} 吗？您需要重新登录以访问您的帐户。",
+    "justNow": "刚刚",
+    "refresh": "刷新",
+    "activityDashboard": "活动仪表板",
+    "activitySubtitle": "系统活动与参与度指标",
+    "autoRefreshState": "自动刷新：{{state}}",
+    "on": "开启",
+    "off": "关闭",
+    "enable": "启用",
+    "disable": "禁用",
+    "loginsToday": "今日登录",
+    "activeUsers": "活跃用户",
+    "last7Days": "过去7天",
+    "contentViews": "内容浏览量",
+    "deviceDistribution": "设备分布",
+    "mostViewedContent": "最受欢迎内容",
+    "noViewingData": "无观看数据",
+    "multiDeviceUsers": "多设备用户",
+    "noMultiDeviceUsers": "没有多设备用户",
+    "activity24h": "活动（24小时）",
+    "removing": "正在移除...",
+    "sessionExpiredTitle": "会话已过期",
+    "sessionExpiredDescription": "您的会话已过期。请重新登录。",
+    "noPermission": "您没有执行此操作的权限。",
+    "notFound": "未找到请求的资源。",
+    "pageNotFoundTitle": "未找到页面",
+    "goToLogin": "前往登录",
+    "invalidData": "提供的数据无效。",
+    "tooManyRequests": "请求过多。请稍后再试。",
+    "serverError": "服务器错误。请稍后再试。",
+    "serviceUnavailable": "服务暂时不可用。请稍后再试。",
+    "networkErrorTitle": "网络错误",
+    "networkErrorDescription": "无法连接到服务器。请检查您的网络连接。",
+    "operationFailedTitle": "操作失败",
+    "operationFailedWithContext": "{{context}} 失败",
+    "validationErrorTitle": "验证错误",
+    "authErrorTitle": "认证错误",
+    "permissionDeniedTitle": "权限不足",
+    "deviceDisconnectedTitle": "设备已断开",
+    "deviceDisconnectedDescription": "您的设备已断开连接，正在跳转到登录...",
+    "unexpectedErrorDescription": "发生意外错误。对此给您带来的不便我们深表歉意。",
+    "unknownError": "发生未知错误",
+    "technicalDetails": "技术详情",
+    "reload": "重新加载",
+    "reloadPage": "重新加载页面",
+    "goHome": "返回首页",
+    "paginationShowing": "第 {{page}} 页，共 {{totalPages}} 页",
+    "contactSupport": "如果此问题仍然存在，请使用错误 ID 联系支持。",
+    "tmdbAttribution": "本产品使用 TMDB API，但未获得 TMDB 的认可或认证。",
+    "processing": "处理中...",
+    "retry": "重试",
+    "add": "添加",
+    "remove": "移除",
+    "noData": "无数据",
+    "noDescription": "无描述",
+    "copied": "已复制",
+    "expired": "已过期",
+    "change": "更改",
+    "continue": "继续",
+    "createDescription": "填写详细信息以创建新条目。",
+    "editDescription": "修改此条目的详细信息。",
+    "minVersion": "最低版本",
+    "selectApk": "选择 APK 文件",
+    "size": "大小",
+    "suspended": "已暂停",
+    "timestamp": "时间戳",
+    "versionCodeRequired": "版本代码为必填项",
+    "year": "年份",
+    "total": "合计",
+    "apply": "应用",
+    "reset": "重置",
+    "uploading": "上传中...",
+    "updating": "更新中...",
+    "creating": "创建中...",
+    "componentStack": "组件堆栈：",
+    "errorDetails": "错误详情",
+    "errorId": "错误 ID"
+  },
+  "pagination": {
+    "previous": "上一页",
+    "next": "下一页",
+    "pageOf": "第 {{page}} 页，共 {{totalPages}} 页",
+    "showing": "显示第 {{from}} 到 {{to}} 条，共 {{total}} 条结果"
+  },
+  "placeholders": {
+    "currentPassword": "输入当前密码",
+    "enterCountry": "例如：US, MX, ES...",
+    "enterDescription": "输入描述...",
+    "enterName": "输入名称...",
+    "enterPosterUrl": "例如：https://example.com/poster.jpg",
+    "enterProvider": "例如：有线, OTT 等",
+    "enterStreamUrl": "例如：https://example.com/video.m3u8",
+    "enterTitle": "输入标题...",
+    "enterUsername": "输入用户名...",
+    "expiryDateTime": "选择到期日期和时间",
+    "maximumDevices": "最大设备数量",
+    "playlistUrl": "输入播放列表 URL...",
+    "providerName": "输入提供商名称...",
+    "selectCategory": "选择分类...",
+    "selectChannel": "选择频道...",
+    "selectDrmType": "选择 DRM 类型...",
+    "selectFormat": "选择格式...",
+    "selectReseller": "选择经销商...",
+    "selectSource": "选择来源...",
+    "selectSourceFirst": "请先选择来源",
+    "userEmail": "用户@example.com"
+  },
+  "createContent": {
+    "addNew": "添加新的 {{type}}",
+    "add": "添加 {{type}}",
+    "dialogDescription": "从 TMDB 搜索以获取自动元数据或手动添加内容",
+    "description": "提供详细信息以创建 {{type}} 或从 TMDB 导入",
+    "tmdbSearch": "搜索 TMDB",
+    "manualEntry": "手动输入",
+    "searchLabel": "搜索 {{type}}",
+    "searchPlaceholder": "在 TMDB 上搜索 {{type}}...",
+    "searching": "搜索中...",
+    "searchTmdb": "搜索 TMDB",
+    "searchingTmdb": "正在 TMDB 上搜索...",
+    "findingMatches": "为 \"{{query}}\" 查找最佳匹配项",
+    "searchResults": "搜索结果",
+    "resultsFound": "找到 {{count}} 个结果",
+    "noDescription": "暂无描述",
+    "noResultsFound": "未找到结果",
+    "noResultsDescription": "无法找到与 \"{{query}}\" 匹配的 {{type}}",
+    "suggestions": {
+      "tryKeywords": "尝试其他关键词",
+      "checkSpelling": "检查拼写",
+      "useOriginalTitle": "使用原始标题"
+    },
+    "switchToManual": "切换到手动输入",
+    "manualAlert": "手动填写内容详情。除视频 URL 外的字段均为可选。",
+    "idLabel": "ID：{{id}}",
+    "createButton": "创建 {{type}}",
+    "creating": "创建中...",
+    "metadataLoaded": "已从 TMDB 加载元数据：{{title}} (ID: {{id}})",
+    "searchFailed": "搜索失败",
+    "unknownYear": "未知",
+    "labels": {
+      "title": "标题",
+      "year": "年份",
+      "description": "描述",
+      "videoUrl": "视频 URL",
+      "posterUrl": "海报 URL",
+      "backdropUrl": "背景图 URL",
+      "channelNumber": "频道号",
+      "provider": "提供者",
+      "country": "国家",
+      "format": "格式",
+      "drmKeys": "DRM 密钥",
+      "origin": "Origin 头",
+      "userAgent": "用户代理",
+      "referer": "Referer 头",
+      "customHeaders": "自定义头 (JSON)",
+      "channelCategory": "渠道类别",
+      "drmType": "数字版权管理类型",
+      "licenseServerUrl": "许可证服务器 URL",
+      "licenseRequestHeadersOptional": "许可证请求标头（可选）",
+      "httpProxyOptional": "HTTP 代理（可选）",
+      "dohOptional": "DNS-over-HTTPS（可选）",
+      "liveChannel": "直播频道",
+      "airDate": "播出日期",
+      "videoUrlOptional": "视频网址（可选）",
+      "chapterPosterUrl": "章节海报网址",
+      "externalSubtitleOptional": "外部字幕（可选）",
+      "subtitleFile": "字幕文件"
+    },
+    "form": {
+      "titlePlaceholder": "请输入标题",
+      "yearPlaceholder": "例如：2024",
+      "descriptionPlaceholder": "请输入描述",
+      "videoUrlPlaceholder": "例如：https://example.com/video.m3u8（示例 URL，支持 HLS）",
+      "posterUrlPlaceholder": "例如：https://example.com/poster.jpg（示例海报 URL）",
+      "backdropUrlPlaceholder": "例如：https://example.com/backdrop.jpg（示例背景图 URL）",
+      "channelNumberPlaceholder": "例如：1、2、3…",
+      "providerPlaceholder": "例如：有线、OTT 等",
+      "countryPlaceholder": "例如：US、MX、ES…",
+      "formatSelectPlaceholder": "选择格式…",
+      "formatOption": {
+        "m3u8": "M3U8（HLS 格式）",
+        "drm": "DRM（数字版权管理）"
+      },
+      "drmPlaceholder": "以十六进制格式输入 ClearKey 对：c50f8758b7fb4bf886dd561a7cda6e84:0541856bd180caf65d26a9eaf33e0f24",
+      "originPlaceholder": "例如：https://example.com（示例）",
+      "userAgentPlaceholder": "例如：Mozilla/5.0 (Windows NT 10.0; Win64; x64)...（示例）",
+      "refererPlaceholder": "例如：https://referer-site.com（示例）",
+      "customHeadersPlaceholder": "例如：{\"X-Custom-Header\": \"值\", \"Authorization\": \"Bearer <令牌>\"}（示例 JSON 头）",
+      "channelCategoryPlaceholder": "选择类别...",
+      "drmTypePlaceholder": "选择 DRM 类型...",
+      "drmType": {
+        "clearkey": "明键",
+        "widevine": "宽藤",
+        "playready": "游戏就绪"
+      },
+      "licenseServerUrlPlaceholder": "https://license.example.com/widevine",
+      "licenseHeadersPlaceholder": "{“X-AxDRM-Message”：“您的令牌”，“授权”：“不记名令牌”}",
+      "customHeadersLinesPlaceholder": "X-自定义标头：值 1 X-另一个标头：值 2",
+      "proxyUrlPlaceholder": "http://user:pass@ip:port",
+      "dohUrlPlaceholder": "https://dns.google/dns-query",
+      "chapterTitlePlaceholder": "章节标题",
+      "episodeTitlePlaceholder": "剧集标题",
+      "chapterDescriptionPlaceholder": "章节描述...",
+      "chapterVideoUrlPlaceholder": "视频网址（可选）",
+      "chapterPosterUrlPlaceholder": "https://example.com/chapter-poster.jpg",
+      "subtitleLanguagePlaceholder": "例如 zh, en, es"
+    },
+    "tv": {
+      "tvSettingsTitle": "频道设置",
+      "liveTvTitle": "LiveTV 头部设置",
+      "drmFormatNote": "格式：kid_hex:key_hex（每行一个或用逗号分隔）",
+      "originNote": "跨域请求的 Origin 头（可选）",
+      "userAgentNote": "用于模拟浏览器/设备的 User-Agent（可选）",
+      "refererNote": "请求来源的 Referer 头（可选）",
+      "customHeadersNote": "额外头部（JSON 格式，可选）",
+      "drmTypeHelp": "ClearKey：本地密钥（十六进制格式）| Widevine/PlayReady：需要许可证服务器",
+      "widevineLicenseHelp": "Widevine 许可证服务器 URL（例如，来自 PallyCon、BuyDRM、Axinom）",
+      "playreadyLicenseHelp": "PlayReady 许可证服务器 URL",
+      "licenseHeadersHelp": "具有用于许可证请求的自定义标头（身份验证令牌等）的 JSON 对象",
+      "proxyHelp": "Only for geoblocked channels. Format: http://user:pass@ip:port",
+      "dohHelp": "可选的 DoH 解析器可绕过 DNS 阻止。必须是 http(s) URL。"
+    },
+    "createdSuccess": "{{type}} 创建成功",
+    "loadingCategories": "正在加载类别...",
+    "untitled": "无题",
+    "urlSet": "网址设置",
+    "noUrl": "无网址",
+    "addEpisode": "添加剧集",
+    "removeChapter": "删除章节",
+    "chapterLabel": "第 {{number}} 章：{{title}}",
+    "chapterDescriptionLabel": "章节说明",
+    "chapterTitle": "章节标题",
+    "episodeTitle": "剧集标题",
+    "episodesTitle": "剧集数",
+    "episodesDescription": "管理该内容的剧集"
+  },
+  "theme": {
+    "light": "浅色",
+    "dark": "深色",
+    "midnight": "午夜",
+    "darkBlue": "深蓝",
+    "system": "系统",
+    "placeholder": "主题"
+  },
+  "language": {
+    "english": "英语",
+    "spanish": "西班牙语",
+    "french": "法语",
+    "portuguese": "葡萄牙语",
+    "russian": "俄语",
+    "turkish": "土耳其语",
+    "slovak": "斯洛伐克语",
+    "chinese": "中文",
+    "placeholder": "语言"
+  },
+  "user": {
+    "common": {
+      "verified": "已验证",
+      "watch": "观看",
+      "titleCount": "{{count}} 个标题",
+      "titleCount_plural": "{{count}} 个标题",
+      "seriesCount": "{{count}} 部剧集",
+      "seriesCount_plural": "{{count}} 部剧集",
+      "animeCount": "{{count}} 部动画",
+      "animeCount_plural": "{{count}} 部动画",
+      "eventCount": "{{count}} 个活动",
+      "eventCount_plural": "{{count}} 个活动",
+      "channelCount": "{{count}} 个频道",
+      "channelCount_plural": "{{count}} 个频道",
+      "noResults": "未找到结果",
+      "adjustSearch": "请调整搜索或筛选条件",
+      "tryDifferent": "请尝试其他搜索词",
+      "reload": "请尝试刷新页面"
+    },
+    "filters": {
+      "clear": "清除筛选",
+      "allGenres": "所有类型",
+      "allTypes": "所有类别",
+      "allStatus": "所有状态",
+      "sortTitle": "按标题排序",
+      "sortYear": "按年份排序",
+      "sortRating": "按评分排序",
+      "searchMovies": "搜索电影...",
+      "searchShows": "搜索剧集...",
+      "searchKids": "搜索儿童内容...",
+      "searchAnime": "搜索动漫...",
+      "searchEvents": "搜索活动...",
+      "searchChannels": "搜索频道..."
+    },
+    "live": {
+      "toggleChannels": "频道",
+      "toggleGuide": "节目表",
+      "categoryCount": "{{count}} 个分类",
+      "categoryCount_plural": "{{count}} 个分类",
+      "channelsLive": "{{count}} 个频道正在直播",
+      "nowPlaying": "正在播放",
+      "minutesLeft": "还剩 {{count}} 分钟",
+      "upNext": "接下来",
+      "unknownChannel": "未知频道",
+      "providerFallback": "{{appName}}",
+      "channelGuide": "频道指南",
+      "noChannelsFound": "未找到频道",
+      "streamUnavailableTitle": "直播流不可用",
+      "streamUnavailableDescription": "此频道暂时不可用。请稍后重试。",
+      "toastCurrentlyViewing": "正在观看 {{title}}",
+      "noProgramInfo": "暂无节目信息",
+      "liveBadge": "LIVE",
+      "loadingCategories": "正在加载分类...",
+      "noCategories": "暂无可用分类",
+      "loadingChannels": "正在加载频道...",
+      "loadingStream": "正在加载视频流...",
+      "streamFailed": "无法加载视频流",
+      "streamError": "加载视频流时出错",
+      "selectPrompt": "请选择一个频道开始观看",
+      "playbackError": "播放错误",
+      "title": "直播电视",
+      "categories": {
+        "sports": "体育",
+        "entertainment": "娱乐",
+        "news": "新闻",
+        "movies": "电影"
+      },
+      "epg": {
+        "clickToWatch": "点击观看",
+        "errors": {
+          "loadFailed": "加载节目指南失败"
+        },
+        "live": "直播",
+        "liveBadge": "LIVE",
+        "liveNow": "正在直播",
+        "liveProgramming": "直播节目",
+        "loading": "正在加载节目指南...",
+        "next24h": "接下来 24 小时",
+        "noProgramInfo": "暂无节目信息",
+        "previous24h": "前 24 小时",
+        "upcoming": "即将播出",
+        "watchChannel": "观看频道"
+      }
+    },
+    "menu": {
+      "liveTv": "直播电视"
+    },
+    "movies": {
+      "emptyTitle": "未找到电影",
+      "emptyDescription": "请调整搜索或筛选条件"
+    },
+    "shows": {
+      "status": {
+        "ongoing": "连载中",
+        "completed": "已完结",
+        "cancelled": "已取消",
+        "unknown": "未知"
+      },
+      "loading": "正在加载剧集...",
+      "emptyTitle": "未找到剧集",
+      "emptyDescription": "请调整搜索或筛选条件"
+    },
+    "kids": {
+      "errorTitle": "儿童内容加载出错",
+      "searchPlaceholder": "搜索儿童内容...",
+      "emptyTitle": "暂无儿童内容",
+      "emptySearchTitle": "未找到结果",
+      "emptySearchDescription": "请尝试其他搜索词"
+    },
+    "anime": {
+      "errorTitle": "动漫加载出错",
+      "searchPlaceholder": "搜索动漫...",
+      "emptyTitle": "暂无动漫内容",
+      "emptySearchTitle": "未找到结果",
+      "emptySearchDescription": "请尝试其他搜索词"
+    },
+    "events": {
+      "errorTitle": "活动加载出错",
+      "searchPlaceholder": "搜索活动...",
+      "emptyTitle": "暂无活动",
+      "emptySearchTitle": "未找到结果",
+      "emptySearchDescription": "请尝试其他搜索词"
+    },
+    "favorites": {
+      "title": "我的最爱",
+      "description": "您收藏的所有内容都在这里",
+      "all": "全部",
+      "movies": "电影",
+      "series": "电视剧",
+      "channels": "频道",
+      "emptyTitle": "您还没有收藏任何内容",
+      "emptyDescription": "开始将内容添加到您的最爱",
+      "emptyMoviesTitle": "您没有收藏的电影",
+      "emptyMoviesDescription": "从电影板块添加电影到您的最爱",
+      "emptySeriesTitle": "您没有收藏的电视剧",
+      "emptySeriesDescription": "从电视剧板块添加电视剧到您的最爱",
+      "emptyChannelsTitle": "您没有收藏的频道",
+      "emptyChannelsDescription": "从直播电视板块添加频道到您的最爱"
+    },
+    "music": {
+      "unknownTrack": "未知曲目",
+      "unknownArtist": "未知艺术家",
+      "unknownAlbum": "未知专辑",
+      "unknownYear": "未知年份",
+      "searchingFor": "正在搜索"
+    },
+    "player": {
+      "audioInfo": "音频信息",
+      "audioTracksTitle": "音轨",
+      "audioTracksTitleWithCount": "音轨（{{count}}）",
+      "noAudioTracks": "未检测到音轨",
+      "noAudioTracksHelpLine1": "此视频可能使用内嵌音频而没有独立音轨，",
+      "noAudioTracksHelpLine2": "或者您的浏览器不支持 AudioTracks API。",
+      "noSubtitles": "无字幕",
+      "playbackSpeed": "速度",
+      "subtitlesTitle": "字幕"
+    }
+  },
+  "auth": {
+    "accessDenied": "访问被拒绝",
+    "noPermissionTitle": "权限不足",
+    "noPermissionDescription": "您没有权限访问此页面",
+    "permissionDetail": "您当前的角色（{{role}}）没有访问此资源的权限。需要的角色：{{required}}。",
+    "goToDashboard": "前往控制面板",
+    "errors": {
+      "usernameNotFound": "未找到用户名。请检查用户名并重试。",
+      "incorrectPassword": "密码不正确。请检查密码并重试。",
+      "accountDeactivated": "您的帐户已被停用。请联系支持。",
+      "invalidCredentials": "用户名或密码无效。请检查您的凭据。",
+      "accessDeniedAdminUI": "访问被拒绝。该 Web 界面仅对管理员和经销商开放。"
+    },
+    "session": {
+      "notAuthenticated": "未认证",
+      "sessionExpired": "会话已过期",
+      "sessionExpiringSoon": "会话即将过期",
+      "sessionActive": "会话活跃",
+      "title": "会话状态",
+      "description": "当前认证会话信息",
+      "status": "状态：",
+      "user": "用户：",
+      "role": "角色：",
+      "expiresIn": "会话过期时间：",
+      "validating": "验证中...",
+      "validateSession": "验证会话",
+      "willExpireIn": "您的会话将在",
+      "refreshSession": "刷新会话",
+      "sessionExpiringCompact": "会话即将过期",
+      "sessionActiveCompact": "会话活跃"
+    },
+    "forgotPasswordFlow": {
+      "backToLogin": "返回登录",
+      "checkYourEmailDescription": "If an account with that email exists, we've sent you a link to reset your password.请检查您的收件箱和垃圾邮件文件夹。",
+      "checkYourEmailTitle": "检查您的电子邮件",
+      "emailAddressLabel": "电子邮件",
+      "failedToSendResetEmail": "发送重置邮件失败",
+      "forgotPasswordDescription": "输入您的电子邮件地址，我们将向您发送用于重置密码的链接。",
+      "forgotPasswordTitle": "忘记密码？",
+      "genericError": "发生错误",
+      "sendResetLink": "发送重置链接",
+      "sending": "正在发送..."
+    },
+    "resetPasswordFlow": {
+      "backToLogin": "返回登录",
+      "confirmPasswordLabel": "确认密码",
+      "confirmPasswordPlaceholder": "确认新密码",
+      "createNewPasswordFor": "创建新密码",
+      "genericError": "发生错误",
+      "goToLogin": "前往登录",
+      "invalidOrExpiredDescription": "此密码重置链接无效或已过期。请索取一份新的。",
+      "invalidOrExpiredTitle": "链接无效或过期",
+      "newPasswordLabel": "新密码",
+      "newPasswordPlaceholder": "输入新密码",
+      "passwordMinLength": "密码必须至少为 6 个字符",
+      "passwordsDoNotMatch": "密码不匹配",
+      "requestNewLink": "请求新链接",
+      "resetFailed": "重置密码失败",
+      "resetPasswordButton": "重置密码",
+      "resetYourPassword": "重置您的密码",
+      "resetting": "正在重置...",
+      "successDescription": "您的密码已更新。您现在可以使用新密码登录。",
+      "successTitle": "密码重置成功",
+      "verifyingLink": "正在验证重置链接..."
+    },
+    "twoFactorModal": {
+      "title": "双因素身份验证",
+      "totpDescription": "输入验证器应用程序中的 6 位数代码",
+      "backupDescription": "输入您的 8 个字符的备份代码之一",
+      "authenticationCode": "验证码",
+      "totpPlaceholder": "000000",
+      "backupCode": "备份代码",
+      "backupPlaceholder": "XXXXXXXX",
+      "backupHint": "备份码是一次性的，使用后将失效",
+      "verifying": "正在验证...",
+      "verifyAndSignIn": "验证并登录",
+      "useBackupCode": "使用备份代码代替",
+      "lostAccessHelp": "无法访问您的身份验证器？请联系您的管理员重置 2FA。"
+    }
+  },
+  "login": {
+    "title": "{{appName}}",
+    "subtitle": "企业媒体平台",
+    "secureAccess": "安全访问门户",
+    "systemAccess": "系统访问",
+    "enterCredentials": "输入您的凭据以继续",
+    "username": "用户名",
+    "password": "密码",
+    "usernamePlaceholder": "输入您的用户名",
+    "passwordPlaceholder": "输入您的密码",
+    "usernameDescription": "输入您的账户用户名",
+    "authenticating": "验证中...",
+    "accessSystem": "访问系统",
+    "hidePassword": "隐藏密码",
+    "showPassword": "显示密码",
+    "signIn": "登录",
+    "rememberMeLabel": "在此设备上记住登录 30 天",
+    "rememberMeDescription": "在此设备上保持登录状态",
+    "loginSuccess": "登录成功！正在重定向...",
+    "forgotPassword": "忘记密码？",
+    "noAccountPrompt": "还没有账户？",
+    "contactAdmin": "联系管理员",
+    "loginFailed": "登录失败",
+    "unexpectedError": "发生意外错误",
+    "footer": "© 2026 {{appName}} ENTERPRISE • 安全访问",
+    "trialAccountCta": "开始试用",
+    "trialAccountDescription": "创建一个临时账户来探索平台。",
+    "redeemPrompt": "有兑换码？",
+    "redeemCta": "在此兑换",
+    "examples": {
+      "title": "增强型登录表单",
+      "basic": "基础登录",
+      "withStrength": "带密码强度",
+      "minimal": "简约登录"
+    },
+    "hero": {
+      "encrypted": "加密的",
+      "mainLogoAlt": "{{appName}} 标志",
+      "mobileLogoAlt": "应用标志",
+      "secure": "安全的",
+      "ultraHd": "超高清"
+    }
+  },
+  "validation": {
+    "usernameRequired": "用户名为必填项",
+    "usernameTooLong": "用户名过长",
+    "passwordRequired": "密码为必填项",
+    "passwordMinLength": "密码长度至少为8个字符",
+    "passwordTooLong": "密码过长"
+  },
+  "layout": {
+    "adminDashboard": "管理面板",
+    "online": "在线"
+  },
+  "breadcrumb": {
+    "admin": "管理"
+  },
+  "sidebar": {
+    "brand": "{{appName}}",
+    "adminDashboard": "管理面板",
+    "expand": "展开侧边栏",
+    "collapse": "折叠侧边栏",
+    "overview": "概览",
+    "gift-codes": "礼品码",
+    "giftCodes": "礼品码",
+    "content": "内容管理",
+    "media-scanner": "媒体扫描器",
+    "epg": "节目指南",
+    "music": "音乐库",
+    "resellers": "经销商",
+    "users": "终端用户",
+    "demos": "体验",
+    "devices": "设备",
+    "tickets": "支持工单",
+    "logs": "活动日志",
+    "security": "安全中心",
+    "master-keys": "主 API 密钥",
+    "billing": "财务",
+    "email": "邮件",
+    "app-versions": "应用版本",
+    "settings": "设置",
+    "systemStatus": "系统状态",
+    "systemOperational": "所有系统运行正常",
+    "profile": "个人资料",
+    "logout": "登出",
+    "badge": {
+      "new": "新"
+    },
+    "description": {
+      "security": "监控安全事件并管理封禁",
+      "master-keys": "管理外部应用的 API 密钥",
+      "billing": "收入概览与离线支付",
+      "packages": "管理用户订阅套餐",
+      "direct-subscriptions": "查看和管理直接订阅"
+    },
+    "packages": "套餐",
+    "direct-subscriptions": "直接订阅"
+  },
+  "device": {
+    "title": "设备注册",
+    "description": "管理已注册设备并添加新设备",
+    "devices": "设备",
+    "addDevice": "添加设备",
+    "limitStatus": "设备限制状态",
+    "atLimit": "达到上限",
+    "available": "可用",
+    "youHaveDevices": "您已注册 {{count}} / {{max}} 台设备。",
+    "toAddRemove": "要添加新设备，您必须先移除一个已有设备。",
+    "yourRegisteredDevices": "您已注册的设备",
+    "table": {
+      "device": "设备",
+      "user": "用户",
+      "deviceLimit": "设备上限",
+      "riskLevel": "风险等级",
+      "status": "状态",
+      "lastActive": "最后活跃",
+      "actions": "操作"
+    },
+    "risk": {
+      "high": "高风险",
+      "safe": "安全"
+    },
+    "remove": "移除",
+    "removeDeviceConfirmation": "您确定要永久移除设备 \"{{name}}\"（用户 {{username}}）吗？\\n\\n注意：此操作只会移除设备。用户稍后可以重新注册。\\n警告：若要阻止该设备再次连接，请使用“移除并加入黑名单”。",
+    "removeAndBlacklistAction": "移除并加入黑名单",
+    "removeAndBlacklistTitle": "移除并加入黑名单设备",
+    "removeAndBlacklistDescription": "您确定要移除设备 \"{{name}}\"（用户 {{username}}）并将其加入黑名单吗？\\n\\n警告：此操作会立即断开设备连接并阻止其再次连接，直到从黑名单中手动移除。",
+    "blacklistOnly": "仅加入黑名单",
+    "blacklistTitle": "加入黑名单",
+    "blacklistDescription": "您确定要在不移除设备的情况下将设备 \"{{name}}\" 加入黑名单吗？\\n\\n注意：这会立即断开设备连接，但在用户尝试重新连接之前，该设备仍会显示在活动设备列表中。",
+    "blacklistAction": "加入黑名单",
+    "removeMultipleTitle": "移除多个设备",
+    "removeMultipleDescription": "您确定要移除 {{count}} 个选中的设备吗？",
+    "devicesToBeRemovedLabel": "将被移除的设备：",
+    "moreDevices": "... 以及另外 {{count}} 个设备",
+    "bulkWarning": "此操作不可撤销。",
+    "removeAllSelected": "移除所有选中项",
+    "removeDeviceTitle": "移除设备",
+    "removeDeviceDescription": "您确定要移除 “{{name}}” 吗？\n\n将来若要再次使用此设备，您需要重新注册它。",
+    "removeDevice": "移除设备",
+    "noDevices": "尚未注册设备",
+    "registerFirstDescription": "注册您的第一个设备以开始使用本服务。",
+    "registerFirstButton": "注册第一个设备",
+    "registerNewTitle": "注册新设备",
+    "registerNewDescription": "向您的帐户添加新设备",
+    "label": {
+      "deviceId": "设备 ID",
+      "deviceName": "设备名称"
+    },
+    "placeholder": {
+      "id": "输入唯一设备标识符",
+      "name": "输入设备名称（例如：客厅电视）",
+      "searchDevices": "搜索设备..."
+    },
+    "removeSelected": "移除已选（{{count}}）",
+    "noDevicesFoundTitle": "未找到设备",
+    "noDevicesFoundFor": "未找到与“{{query}}”匹配的设备",
+    "noDevicesRegistered": "系统中当前没有注册的设备。",
+    "deviceIdLabel": "ID：{{id}}",
+    "time": {
+      "justNow": "刚刚",
+      "minutesAgo": "{{count}} 分钟前",
+      "hoursAgo": "{{count}} 小时前",
+      "daysAgo": "{{count}} 天前"
+    },
+    "errors": {
+      "loadFailed": "无法加载设备信息。请稍后重试。"
+    },
+    "registering": "注册中...",
+    "registerDevice": "注册设备"
+  },
+  "tvCategories": {
+    "title": "管理频道分类",
+    "description": "保留默认分类并根据需要添加自定义标签。正在使用的分类无法删除。",
+    "inputPlaceholder": "创建自定义分类（例如：高级体育）",
+    "addCategory": "添加分类",
+    "refreshing": "刷新中…",
+    "loading": "正在加载分类…",
+    "none": "您尚未创建任何自定义分类。",
+    "default": "默认",
+    "removeTitle": "移除分类",
+    "removeDescription": "此操作不可撤销。分类 “{{name}}” 将被移除。",
+    "removeCategory": "移除分类",
+    "editCategory": "编辑分类",
+    "inUseTitle": "分类当前正在使用",
+    "created": "分类已创建",
+    "updated": "分类已更新",
+    "removed": "分类已移除",
+    "nameRequired": "分类名称为必填项",
+    "helpText": "默认分类固定在顶部显示。自定义标签帮助您按需组织提供商或地区。",
+    "protectionNote": "正在使用的分类受到保护，以避免意外删除。",
+    "tableHeaders": {
+      "category": "分类",
+      "usage": "使用",
+      "created": "创建时间",
+      "actions": "操作"
+    },
+    "categoryCount": "{{count}} 个分类",
+    "usageLabel": {
+      "channel_one": "{{count}} 个频道",
+      "channel_other": "{{count}} 个频道",
+      "notInUse": "未使用"
+    }
+  },
+  "systemConfiguration": {
+    "title": "系统配置",
+    "creditTitle": "信用系统配置",
+    "creditDescription": "配置默认设备限制和用户创建的信用费率",
+    "saveCreditConfig": "保存信用配置",
+    "saveTMDBConfig": "保存 TMDB 配置",
+    "testing": "测试中...",
+    "test": "测试",
+    "tmdbKeyValid": "TMDB API 密钥有效！",
+    "tmdbKeyInvalid": "TMDB API 密钥无效：{{message}}",
+    "failedToLoad": "加载配置失败：{{message}}",
+    "creditConfigUpdated": "信用配置已成功更新！",
+    "tmdbConfigUpdated": "TMDB 配置已成功更新！",
+    "currentConfigTitle": "当前配置",
+    "currentConfigDescription": "系统当前配置摘要",
+    "defaultDevicesLabel": "默认设备",
+    "credits3DevicesLabel": "积分 (3 个设备)",
+    "credits5DevicesLabel": "积分 (5 个设备)",
+    "tmdbApiLabel": "TMDB 接口",
+    "configured": "已配置",
+    "notSet": "未设置",
+    "forms": {
+      "defaultDevicesLabel": "每用户默认设备数",
+      "defaultDevicesHelp": "新用户的默认设备数量",
+      "creditPerExtraDeviceLabel": "额外设备积分",
+      "creditPerExtraDeviceHelp": "超出默认数量的每个设备收取的积分",
+      "credit3DevicesLabel": "3 个设备用户的积分",
+      "credit3DevicesHelp": "创建具有 3 个设备的用户时扣除的积分",
+      "credit5DevicesLabel": "5 个设备用户的积分",
+      "credit5DevicesHelp": "创建具有 5 个设备的用户时扣除的积分",
+      "tmdbTitle": "TMDB API 配置",
+      "tmdbDescription": "配置 TMDB API 集成以获取自动内容元数据",
+      "tmdbApiKeyLabel": "TMDB API 密钥",
+      "tmdbApiKeyPlaceholder": "输入您的 TMDB API 密钥",
+      "tmdbApiKeyHelp": "从 TMDB API 设置获取您的 API 密钥",
+      "tmdbEnabledLabel": "TMDB 集成",
+      "tmdbEnabledDescription": "切换控制面板的 TMDB 元数据抓取。",
+      "tmdbLanguageLabel": "TMDB 语言",
+      "tmdbLanguagePlaceholder": "选择 TMDB 语言",
+      "tmdbLanguageHelp": "从 TMDB 获取电影标题、描述和元数据的语言",
+      "tmdbPreferredFormatLabel": "首选图片格式",
+      "tmdbPreferredFormatPlaceholder": "选择首选图片格式",
+      "tmdbPreferredFormatHelp": "离线模式下选择 TMDB 艺术图的首选格式",
+      "tmdbModeLabel": "元数据来源",
+      "tmdbModePlaceholder": "选择元数据来源",
+      "tmdbModeOnline": "在线（TMDB API）",
+      "tmdbModeOffline": "离线（本地元数据）",
+      "tmdbModeDescription": "选择直接从 TMDB 获取元数据还是使用本地元数据缓存。",
+      "tmdbMetadataPathLabel": "元数据文件夹",
+      "tmdbMetadataPathHelp": "服务器上存储离线 TMDB 元数据和图片的相对路径（默认：metadata）。",
+      "tmdbOfflineHint": "离线模式将从元数据文件夹提供描述和艺术作品。请确保文件夹与最新的 TMDB 导出同步。"
+    }
+  },
+  "profile": {
+    "title": "个人资料设置",
+    "description": "更新您的联系信息或更改管理员密码。",
+    "contactInformation": "联系信息",
+    "emailPlaceholder": "输入您的电子邮箱地址",
+    "contactInfoNote": "我们将使用此电子邮件进行密码重置和重要通知。",
+    "saveChanges": "保存更改",
+    "changePassword": "更改密码",
+    "newPasswordPlaceholder": "输入新密码",
+    "confirmPasswordPlaceholder": "重新输入新密码",
+    "passwordHelp": "至少使用8个字符。强密码应包含数字和符号。",
+    "updatePassword": "更新密码",
+    "updated": "个人资料已更新",
+    "passwordUpdated": "密码已更新",
+    "enterAndConfirmPassword": "请输入并确认新密码",
+    "passwordsDoNotMatch": "密码不匹配",
+    "updateFailed": "更新个人资料失败",
+    "passwordTooShort": "密码必须至少8个字符",
+    "updatePasswordFailed": "更新密码失败",
+    "currentPasswordLabel": "当前密码",
+    "currentPasswordPlaceholder": "输入当前密码",
+    "currentPasswordRequired": "当前密码是必填项",
+    "newPasswordLabel": "新密码",
+    "confirmPasswordLabel": "确认密码",
+    "twoFactor": {
+      "title": "双重身份验证",
+      "description": "为您的账户添加额外的安全保护",
+      "enabled": "双重身份验证已启用",
+      "disabled": "双重身份验证已禁用",
+      "enable": "启用双重验证",
+      "disable": "禁用双重验证",
+      "disableDescription": "输入双重验证码或备用码以禁用双重身份验证。",
+      "setupTitle": "设置双重身份验证",
+      "scanQR": "使用您的身份验证应用扫描此二维码（Google Authenticator、Authy等）",
+      "manualEntry": "或手动输入此代码：",
+      "verifyCode": "输入您的身份验证应用中的6位数字代码进行验证：",
+      "verify": "验证并启用",
+      "verifying": "验证中...",
+      "placeholder": "000000",
+      "backupCodes": {
+        "title": "保存您的备用码",
+        "description": "如果您丢失了身份验证器，可以使用这些代码访问您的账户。每个代码只能使用一次。请将它们保存在安全的地方。",
+        "copy": "复制全部并关闭"
+      },
+      "errors": {
+        "setupFailed": "启动双重验证设置失败",
+        "verifyFailed": "验证失败",
+        "disableFailed": "禁用双重验证失败",
+        "invalidCode": "请输入有效的6位数字代码"
+      },
+      "cancel": "取消",
+      "code": "Code",
+      "qrAlt": "2FA 二维码"
+    }
+  },
+  "creditsPricing": {
+    "savePricingConfig": "保存定价配置",
+    "updated": "定价配置已成功更新",
+    "tiersSorted": "层级已排序并规范化"
+  },
+  "notifications": {
+    "content": {
+      "createFailed": "创建内容失败：{{message}}"
+    },
+    "security": {
+      "errorLoadingBans": "加载封禁列表时出错",
+      "errorUnbanningUser": "取消封禁用户时出错",
+      "errorLoadingStatistics": "加载安全统计时出错",
+      "errorCleaningExpiredBans": "清理过期封禁时出错",
+      "errorLoadingIncidents": "加载安全事件时出错"
+    },
+    "ban": {
+      "usernameAndReasonRequired": "用户名和原因为必填项",
+      "invalidDuration": "无效的持续时间",
+      "errorCreatingBan": "创建封禁时出错"
+    },
+    "scan": {
+      "folderCompleted": "文件夹扫描完成",
+      "error": "扫描失败：{{message}}"
+    },
+    "blacklist": {
+      "errorLoading": "加载黑名单设备时出错",
+      "errorRemoving": "移除黑名单设备时出错",
+      "removed": "设备已从黑名单移除",
+      "removeFailed": "移除黑名单设备失败",
+      "confirmRemove": "确定要将用户 {{user}} 的设备 \"{{device}}\" 从黑名单移除吗？"
+    },
+    "credits": {
+      "updated": "积分定价已更新",
+      "tiersSorted": "层级已排序并规范化"
+    },
+    "securityIncident": {
+      "deleted": "安全事件已删除",
+      "deleteFailed": "删除安全事件失败"
+    },
+    "provider": {
+      "removed": "供应商已移除",
+      "added": "供应商 \"{{name}}\" 已添加",
+      "error": "供应商错误：{{message}}",
+      "syncCompleted": "同步完成（创建 {{created}}，更新 {{updated}}）"
+    },
+    "edit": {
+      "epgCopied": "已复制 EPG 频道 ID",
+      "streamUrlCopied": "已复制流 URL"
+    },
+    "banUser": {
+      "userUnbanned": "用户 {{user}} 已被解封"
+    }
+  },
+  "admin": {
+    "search": {
+      "placeholder": "搜索... (Ctrl+K)",
+      "shortcuts": {
+        "enterKey": "回车键",
+        "escapeKey": "Esc 键",
+        "navigate": "导航"
+      },
+      "types": {
+        "content": "内容",
+        "music": "音乐",
+        "reseller": "分销商",
+        "user": "用户"
+      }
+    },
+    "security": {
+      "tabs": {
+        "overview": "安全总览",
+        "incidents": "安全事件",
+        "bans": "安全封禁",
+        "blacklistedDevices": "黑名单设备"
+      },
+      "actions": {
+        "cleanupExpiredBans": "清理已过期封禁",
+        "createManualBan": "创建手动封禁"
+      },
+      "cards": {
+        "totalIncidents": "事件总数",
+        "todaysIncidents": "今日事件",
+        "activeBans": "活动封禁",
+        "permanentBans": "永久封禁",
+        "blacklistedDevices": "黑名单设备"
+      }
+    },
+    "masterKeys": {
+      "createDialogDescription": "为外部应用创建新的主 API 密钥。该密钥可在无需 UI 登录的情况下提供完整 API 访问。",
+      "examples": {
+        "appName": "例如：External Editor App 2024"
+      },
+      "keyNameHelp": "用于识别此 API 密钥的描述性名称",
+      "securityNoteTitle": "安全提示",
+      "securityNoteDescription": "生成的 API 密钥仅显示一次。请务必复制并妥善保存。",
+      "empty": {
+        "title": "暂无 API 密钥",
+        "description": "创建你的第一个主 API 密钥以启用外部应用集成"
+      },
+      "detailsTitle": "主 API 密钥详情",
+      "detailsDescription": "查看并管理此密钥以用于外部应用集成",
+      "apiKeyLabel": "API 密钥",
+      "activeStatus": "激活状态",
+      "regenerateButton": "重新生成密钥",
+      "deleteButton": "删除密钥",
+      "labels": {
+        "created": "创建时间",
+        "lastUpdated": "最后更新",
+        "lastUsed": "最后使用"
+      }
+    },
+    "loginHistory": {
+      "title": "登录历史",
+      "lastUpdated": "最后更新：{{time}}",
+      "autoRefreshOn": "自动刷新：开启",
+      "refreshNow": "立即刷新",
+      "filters": {
+        "username": "用户名",
+        "ipAddress": "IP 地址",
+        "startDate": "开始日期",
+        "endDate": "结束日期"
+      },
+      "placeholders": {
+        "searchUsername": "搜索用户名…",
+        "ipAddress": "IP 地址…"
+      },
+      "loading": "正在加载登录历史…",
+      "errors": {
+        "loading": "加载登录历史失败：{{message}}",
+        "loadingFallback": "加载登录历史失败"
+      },
+      "noHistory": "未找到登录尝试。",
+      "table": {
+        "dateTime": "日期与时间",
+        "user": "用户",
+        "status": "状态",
+        "ipAddress": "IP 地址",
+        "device": "设备",
+        "userAgent": "用户代理"
+      }
+    },
+    "securityIncidents": {
+      "filterType": "按类型筛选",
+      "allTypes": "所有类型",
+      "bruteForce": "暴力破解",
+      "suspiciousActivity": "可疑活动",
+      "multipleDevices": "多设备",
+      "tokenManipulation": "令牌篡改",
+      "searchByUsernamePlaceholder": "按用户名搜索…",
+      "itemsPerPage": "每页数量",
+      "title": "安全事件（{{total}}）",
+      "noneFound": "未找到事件。",
+      "deviceId": "设备 ID",
+      "ipAddress": "IP 地址",
+      "deleteTitle": "删除事件",
+      "showingPage": "第 {{page}} 页，共 {{totalPages}} 页",
+      "confirmDelete": "删除此事件？"
+    },
+    "securityBans": {
+      "searchByUsernamePlaceholder": "按用户名搜索…",
+      "itemsPerPage": "每页数量",
+      "title": "安全封禁（{{total}}）",
+      "noneFound": "未找到封禁。",
+      "level": "等级",
+      "type": "类型",
+      "reason": "原因",
+      "timeRemaining": "剩余时间"
+    },
+    "blacklistedDevices": {
+      "title": "黑名单设备（{{count}}）",
+      "noneTitle": "无黑名单设备",
+      "noneDescription": "一切正常。目前没有设备在黑名单中。",
+      "removeButton": "从黑名单移除"
+    },
+    "unban": {
+      "action": "取消封禁",
+      "confirm": "取消封禁用户 {{user}}？",
+      "promptReason": "输入取消封禁的原因"
+    },
+    "dashboard": {
+      "notAuthenticated": "未通过身份验证",
+      "accessDenied": "拒绝访问，需要管理员角色。",
+      "preparing": "正在准备仪表板..."
+    },
+    "demos": {
+      "title": "体验账号管理",
+      "subtitle": "监控体验账号、调节创建限制并查看 IP 历史，以防止滥用。",
+      "settingsTitle": "创建保护参数",
+      "settingsDescription": "限制每个 IP 的体验账号创建次数以及违规后的封禁天数。",
+      "totalUsers": "活跃体验账号",
+      "thresholdLabel": "阈值（24 小时内创建次数）",
+      "banDurationLabel": "封禁天数",
+      "managementTitle": "体验账号监控",
+      "managementDescription": "快速查看实时体验账号或追踪 IP 访问记录。",
+      "usersTab": "用户",
+      "historyTab": "历史",
+      "usersSummary": "当前有 {{count}} 个体验账号",
+      "refreshing": "刷新中...",
+      "ipLabel": "IP 地址",
+      "expiresLabel": "到期时间",
+      "deviceLabel": "设备",
+      "userAgentLabel": "用户代理",
+      "resultLabel": "结果",
+      "successful": "成功",
+      "failed": "失败",
+      "historySummary": "共 {{total}} 条记录",
+      "noHistoryResults": "当前筛选条件下没有登录记录。",
+      "noUsers": "暂无体验账号。",
+      "confirmDelete": "确定要删除该体验账号吗？此操作不可撤销。",
+      "userDeleted": "体验账号已删除",
+      "usernamePlaceholder": "示例：demo.user"
+    },
+    "giftcodes": {
+      "title": "礼品码",
+      "description": "管理一次性或多次使用的礼品码，用于创建或延长用户订阅。",
+      "create": "创建代码",
+      "bulkCreate": "批量创建",
+      "export": "导出 CSV",
+      "noData": "没有可导出的礼品码。",
+      "bulkCreated": "已创建 {{count}} 个礼品码",
+      "created": "礼品码已创建",
+      "deletedSelected": "已删除 {{count}} 个所选礼品码",
+      "generate": "生成",
+      "deleteSelected": "删除所选（{{count}}）",
+      "deleteConfirm": "删除 {{count}} 个选定的礼品码？此操作不可撤销。",
+      "table": {
+        "code": "代码",
+        "duration_days": "持续时间（天）",
+        "uses": "使用次数",
+        "remaining": "剩余",
+        "expires_at": "到期时间",
+        "created_at": "创建时间"
+      },
+      "form": {
+        "codeOptional": "代码（可选）",
+        "durationMonths": "持续时间（月）",
+        "uses": "使用次数",
+        "prefixOptional": "前缀（可选）",
+        "count": "数量",
+        "usesPerCode": "每个代码的使用次数"
+      }
+    },
+    "billing": {
+      "overview": {
+        "title": "账单总览",
+        "description": "快速查看收入和积分表现",
+        "metrics": {
+          "onlineRevenue": "线上收入",
+          "offlineRevenue": "线下收入",
+          "adjustments": "调整",
+          "totalRevenue": "总收入",
+          "creditsOnline": "积分（线上）",
+          "creditsOffline": "积分（线下）",
+          "creditsAdjustments": "积分（调整）",
+          "totalCredits": "总积分"
+        }
+      },
+      "pricing": {
+        "title": "积分定价",
+        "description": "系统中配置的基础价格和折扣层级",
+        "basePrice": "基础价格（美元/积分）",
+        "activeTiers": "启用层级",
+        "effectiveCurrency": "有效货币",
+        "tiersNote": "将应用满足最小数量的最高层级。",
+        "table": {
+          "minQuantity": "最小数量（含）",
+          "discountPercent": "折扣百分比",
+          "noTiers": "未配置层级。所有数量使用基础价格。",
+          "discountSuffix": "折扣"
+        }
+      },
+      "offline": {
+        "title": "添加线下付款",
+        "description": "记录手动付款并立即发放积分",
+        "labels": {
+          "reseller": "代理商",
+          "amount": "金额（美元）",
+          "credits": "发放积分",
+          "method": "方式",
+          "reference": "参考",
+          "notes": "备注"
+        },
+        "placeholders": {
+          "resellerSearch": "输入至少2个字母…",
+          "amount": "例如 100.00",
+          "credits": "例如 100",
+          "method": "现金/银行/其他",
+          "reference": "发票号或参考",
+          "notes": "可选备注"
+        },
+        "chargedCurrency": "计费货币：",
+        "success": "线下付款已记录并发放积分",
+        "actions": {
+          "saving": "正在保存...",
+          "save": "保存线下付款"
+        },
+        "errors": {
+          "amountPositive": "金额（美元）必须大于0",
+          "creditsPositive": "积分数量必须为正整数",
+          "resellerPositive": "代理商ID必须为正整数",
+          "selectReseller": "请从列表中选择代理商"
+        }
+      },
+      "transactions": {
+        "title": "最新交易",
+        "description": "筛选并分页查看账单交易",
+        "filters": {
+          "source": "来源",
+          "status": "状态",
+          "resellerId": "代理商ID",
+          "reference": "参考/用户名",
+          "perPage": "每页数量"
+        },
+        "sources": {
+          "stripe": "Stripe（支付）",
+          "offline": "线下",
+          "adjustment": "调整"
+        },
+        "statuses": {
+          "completed": "已完成",
+          "pending": "待处理",
+          "refunded": "已退款",
+          "failed": "失败"
+        },
+        "placeholders": {
+          "resellerId": "例如 42",
+          "reference": "搜索参考或用户名"
+        },
+        "table": {
+          "id": "编号",
+          "reseller": "代理商",
+          "source": "来源",
+          "amount": "金额",
+          "credits": "积分",
+          "status": "状态",
+          "reference": "参考",
+          "createdAt": "创建时间"
+        },
+        "total": "总计：{{count}}",
+        "pagination": {
+          "page": "第 {{page}} 页"
+        },
+        "empty": "未找到交易。"
+      },
+      "errors": {
+        "fetchOverview": "获取账单总览失败",
+        "fetchPricing": "获取定价配置失败",
+        "fetchTransactions": "获取账单交易失败",
+        "createOfflinePayment": "创建线下付款失败"
+      }
+    },
+    "devices": {
+      "errors": {
+        "loadFailed": "无法加载设备管理数据。请稍后重试。"
+      },
+      "overview": {
+        "activeUsers": "活跃用户",
+        "statsDescription": "按用户查看设备使用的详细概览",
+        "usageByUserTitle": "按用户的设备使用情况",
+        "usageByUserDescription": "注册设备后将显示用户的设备统计。",
+        "deviceCount": "{{count}}/{{max}} 台设备"
+      },
+      "activeList": {
+        "description": "监控系统中的所有活跃设备连接",
+        "searchPlaceholder": "搜索设备...",
+        "deviceId": "ID：{{id}}",
+        "actions": {
+          "disconnect": "断开连接"
+        },
+        "removeDialog": {
+          "title": "移除设备",
+          "description": "确定要将设备“{{device}}”从用户 {{user}} 永久移除吗？此操作无法撤销。"
+        },
+        "emptyTitle": "未找到设备",
+        "noDevicesSearch": "未找到与“{{query}}”匹配的设备",
+        "noDevicesDescription": "系统中当前没有注册的设备。",
+        "time": {
+          "justNow": "刚刚",
+          "minutesAgo": "{{count}} 分钟前",
+          "hoursAgo": "{{count}} 小时前",
+          "daysAgo": "{{count}} 天前"
+        }
+      },
+      "limits": {
+        "title": "设备限额预警",
+        "subtitle": "监控即将达到或超出设备上限的用户",
+        "summary": {
+          "warningTitle": "警告中的用户",
+          "warningDescription": "已使用上限的 80-99%",
+          "criticalTitle": "临界用户",
+          "criticalDescription": "已达到设备上限",
+          "exceededTitle": "超限用户",
+          "exceededDescription": "超出设备上限"
+        },
+        "badges": {
+          "safe": "正常",
+          "warning": "警告",
+          "critical": "临界",
+          "exceeded": "超限"
+        },
+        "attention": {
+          "title": "需要关注的用户"
+        },
+        "table": {
+          "deviceUsage": "设备使用",
+          "progress": "进度",
+          "warningLevel": "预警等级"
+        },
+        "actions": {
+          "increaseLimit": "提高上限",
+          "monitor": "监控"
+        },
+        "allSafeTitle": "所有用户均在限额内",
+        "allSafeDescription": "目前没有用户接近或超出其设备上限。",
+        "allUsersTitle": "所有用户概览"
+      },
+      "removal": {
+        "bulkRemoveFailed": "未能移除 {{count}} 台设备"
+      }
+    },
+    "overview": {
+      "totalUsers": "用户总数",
+      "allSystemUsers": "系统中的全部用户",
+      "contentItems": "内容条目",
+      "moviesTvSeries": "电影、剧集等",
+      "activeResellers": "活跃经销商",
+      "currentlyActive": "当前活跃",
+      "systemStatus": "系统状态",
+      "allSystemsOperational": "所有系统正常运行",
+      "quickActions": "快捷操作",
+      "commonTasks": "快速进入最常见的管理任务",
+      "manageResellers": "管理经销商",
+      "manageContent": "管理内容",
+      "systemConfig": "系统配置",
+      "viewReports": "查看报表",
+      "systemHealth": "系统健康",
+      "systemStatusDescription": "关键服务的实时运行状态",
+      "apiServices": "API 服务",
+      "operational": "正常",
+      "database": "数据库",
+      "contentDelivery": "内容分发"
+    },
+    "content": {
+      "title": "内容管理",
+      "description": "通过 TMDB 集成管理所有类别的内容",
+      "confirmDelete": "确定要删除此内容吗？",
+      "tmdb": {
+        "searchPlaceholder": "Search on TMDB...",
+        "confirm": "要为 {{category}} 填充 TMDB 元数据吗？这将尝试匹配没有 TMDB ID 的项目。",
+        "success": "TMDB 元数据已更新：{{updated}} 个已更新，{{skipped}} 个已跳过",
+        "warning": "{{count}} 个项目无法匹配。详情请查看控制台。",
+        "error": "TMDB 元数据更新失败",
+        "defaultCategory": "此类别",
+        "selectedId": "Selected TMDB ID: {{id}}",
+        "enrichTitle": "Enrich Content with TMDB",
+        "enrichDescription": "Search TMDB to add metadata like poster, description, and more.",
+        "enrichSuccess": "Content enriched successfully from TMDB",
+        "contentTitle": "Content Title",
+        "mediaType": "Media Type",
+        "mediaTypeTvSeries": "TV Series",
+        "mediaTypeMovie": "Movie",
+        "byId": "By TMDB ID",
+        "byName": "By Name / Title",
+        "tmdbId": "TMDB ID",
+        "enrich": "Enrich Content",
+        "selectedResult": "Selected: {{title}} (ID: {{id}})"
+      },
+      "errors": {
+        "load": "加载内容失败：{{message}}"
+      },
+      "empty": {
+        "title": "未找到内容",
+        "description": "通过添加第一个 {{category}} 条目开始。"
+      },
+      "categories": {
+        "vod": {
+          "label": "电影",
+          "description": "电影及独立视频内容"
+        },
+        "tv": {
+          "label": "电视频道",
+          "description": "直播电视频道和流媒体"
+        },
+        "series": {
+          "label": "剧集",
+          "description": "包含季和集的电视连续剧"
+        },
+        "events": {
+          "label": "活动",
+          "description": "直播活动和特别节目"
+        },
+        "kids": {
+          "label": "儿童",
+          "description": "适合儿童和家庭的内容"
+        },
+        "anime": {
+          "label": "动漫",
+          "description": "动漫及漫画改编作品"
+        }
+      },
+      "actions": {
+        "addManualMovie": "手动添加影片",
+        "addManualSeries": "手动添加剧集",
+        "addManualKids": "手动添加儿童内容",
+        "addManualAnime": "手动添加动漫",
+        "addTvChannel": "添加电视频道",
+        "addEvent": "添加活动",
+        "addContent": "添加内容",
+        "addFromTmdb": "从 TMDB 添加",
+        "bulkImport": "批量导入",
+        "manageCategories": "管理类别",
+        "scanFolders": "扫描文件夹",
+        "fillMetadata": "填充元数据",
+        "tvProviders": "电视提供商"
+      },
+      "table": {
+        "columns": {
+          "title": "标题",
+          "description": "描述",
+          "type": "类型",
+          "format": "格式",
+          "year": "年份",
+          "status": "状态",
+          "created": "创建时间",
+          "actions": "操作"
+        },
+        "values": {
+          "tmdbId": "TMDB 编号：{{id}}",
+          "noDescription": "暂无描述",
+          "unknown": "未知",
+          "event": "活动"
+        }
+      },
+      "pagination": {
+        "range": "显示第 {{start}}-{{end}} 项，共 {{total}} 项",
+        "rowsPerPage": "每页行数",
+        "rows": "行",
+        "updating": "正在更新…",
+        "pageOf": "第 {{page}} 页，共 {{total}} 页"
+      }
+    },
+    "tickets": {
+      "errors": {
+        "sendMessage": "无法发送消息",
+        "sendMessageRetry": "无法发送消息，请稍后重试。",
+        "assign": "无法分配工单",
+        "assignRetry": "无法分配工单，请稍后重试。",
+        "delete": "无法删除工单",
+        "deleteRetry": "无法删除工单，请稍后重试。",
+        "updateStatus": "无法更新工单状态",
+        "updateStatusRetry": "无法更新工单状态，请稍后重试。",
+        "create": "无法创建工单",
+        "createRetry": "无法创建工单，请稍后重试。",
+        "validation": {
+          "titleDescriptionRequired": "必须填写标题和描述",
+          "resellerRequired": "请选择一个代理商"
+        }
+      },
+      "confirm": {
+        "delete": "确定要删除此工单吗？该操作无法撤销。"
+      },
+      "filters": {
+        "status": {
+          "all": "所有状态"
+        },
+        "priority": {
+          "all": "全部优先级"
+        },
+        "unread": {
+          "all": "所有消息",
+          "unread": "未读消息",
+          "read": "已读消息"
+        }
+      },
+      "actions": {
+        "panelTitle": "管理员操作",
+        "assigning": "正在分配...",
+        "assignToMe": "分配给我",
+        "changeStatus": "更改状态",
+        "internalMessage": "作为内部消息发送",
+        "scheduleFollowUp": "安排后续跟进",
+        "reassignTicket": "重新指派工单"
+      },
+      "priority": {
+        "low": "低",
+        "medium": "中",
+        "high": "高",
+        "urgent": "紧急"
+      },
+      "category": {
+        "technical": "技术",
+        "billing": "账单",
+        "account": "账户",
+        "content": "内容",
+        "other": "其他"
+      },
+      "create": {
+        "title": "创建新工单",
+        "description": "创建新的支持工单，用于测试或管理用途。",
+        "labels": {
+          "title": "标题",
+          "description": "描述",
+          "reseller": "代理商",
+          "priority": "优先级",
+          "category": "类别"
+        },
+        "placeholders": {
+          "title": "输入工单标题",
+          "description": "输入工单描述",
+          "reseller": "选择代理商"
+        },
+        "submitting": "正在创建...",
+        "submit": "创建工单"
+      },
+      "advanced": {
+        "title": "高级筛选",
+        "description": "应用更多筛选条件以缩小工单范围。",
+        "labels": {
+          "dateFrom": "起始日期",
+          "dateTo": "结束日期"
+        },
+        "helper": "按创建日期范围筛选工单。留空表示显示所有日期。",
+        "clear": "清除全部",
+        "apply": "应用筛选"
+      },
+      "sort": {
+        "title": "排序选项",
+        "description": "选择工单的排序方式。",
+        "labels": {
+          "sortBy": "排序依据",
+          "direction": "排序方向"
+        },
+        "options": {
+          "newestFirst": "最新优先",
+          "oldestFirst": "最旧优先",
+          "priority": "优先级",
+          "status": "状态",
+          "unreadFirst": "未读优先"
+        },
+        "direction": {
+          "descending": "降序",
+          "ascending": "升序"
+        },
+        "reset": "恢复默认",
+        "apply": "应用排序"
+      }
+    },
+    "activityLogs": {
+      "title": "活动日志",
+      "subtitle": "完整的系统活动与审计跟踪",
+      "tabs": {
+        "dashboard": "仪表板",
+        "systemLogs": "系统日志",
+        "loginHistory": "登录历史",
+        "viewingHistory": "观看历史"
+      },
+      "filters": {
+        "actionType": "操作类型",
+        "allActions": "所有操作",
+        "startDate": "开始日期",
+        "endDate": "结束日期"
+      },
+      "errors": {
+        "loading": "加载日志失败：{{message}}",
+        "loadingFallback": "加载活动日志失败"
+      },
+      "noLogs": "未找到活动日志。",
+      "table": {
+        "date": "日期",
+        "action": "操作",
+        "user": "用户",
+        "target": "目标",
+        "description": "描述",
+        "credits": "积分"
+      },
+      "pagination": {
+        "showing": "显示 {{from}} 至 {{to}} 条，共 {{total}} 条日志",
+        "pageOf": "第 {{page}} 页，共 {{total_pages}} 页"
+      },
+      "actionTypes": {
+        "USER_CREATED": "用户已创建",
+        "USER_DELETED": "用户已删除",
+        "RESELLER_CREATED": "经销商已创建",
+        "RESELLER_DELETED": "经销商已删除",
+        "CREDIT_USED": "积分已使用",
+        "CREDIT_ASSIGNED": "积分已分配",
+        "SYSTEM_INIT": "系统已初始化",
+        "LOGIN": "登录",
+        "LOGOUT": "登出"
+      }
+    },
+    "viewingHistory": {
+      "title": "观看历史",
+      "lastUpdated": "最后更新：{{time}}",
+      "autoRefreshOn": "自动刷新：开启",
+      "refreshNow": "立即刷新",
+      "filters": {
+        "username": "用户名",
+        "contentType": "内容类型",
+        "allTypes": "全部类型",
+        "ipAddress": "IP 地址",
+        "startDate": "开始日期",
+        "endDate": "结束日期"
+      },
+      "placeholders": {
+        "searchUsername": "搜索用户名…",
+        "ipAddress": "IP 地址…"
+      },
+      "loading": "正在加载观看历史…",
+      "errors": {
+        "loading": "加载观看历史失败：{{message}}"
+      },
+      "noHistory": "未找到观看历史。",
+      "unknown": "未知",
+      "table": {
+        "dateTime": "日期与时间",
+        "user": "用户",
+        "contentType": "内容类型",
+        "contentTitle": "内容标题",
+        "info": "信息",
+        "ipAddress": "IP 地址",
+        "device": "设备"
+      },
+      "pagination": {
+        "showing": "显示 {{from}} 至 {{to}} 条，共 {{total}} 条观看记录",
+        "pageOf": "第 {{page}} 页，共 {{total_pages}} 页"
+      }
+    }
+  },
+  "contentType": {
+    "movie": "电影",
+    "tvShow": "电视剧",
+    "kids": "儿童",
+    "tvChannel": "电视频道"
+  },
+  "contentTypeExtended": {
+    "tvChannel": "电视频道",
+    "tvSeries": "电视剧系列",
+    "event": "活动",
+    "kidsContent": "儿童内容",
+    "anime": "动漫",
+    "content": "内容"
+  },
+  "providers": {
+    "loading": "正在加载提供者…",
+    "none": "尚未注册任何提供者。"
+  },
+  "scan": {
+    "scanning": "扫描中…",
+    "start": "开始扫描"
+  },
+  "epg": {
+    "title": "EPG 源",
+    "editSource": "编辑源",
+    "createSource": "创建源",
+    "inputPlaceholder": "我的 XMLTV",
+    "xmltvUrl": "XMLTV 地址",
+    "urlPlaceholder": "例如：https://.../guide.xml（示例）",
+    "ttl": "TTL（分钟）",
+    "sources": "来源",
+    "noSourcesYet": "尚无来源",
+    "fetchChannels": "获取频道",
+    "discoveredChannels": "发现的频道",
+    "loadingChannels": "正在加载频道…"
+  },
+  "tickets": {
+    "loadingConversation": "正在加载会话...",
+    "loadingConversationDescription": "请稍候，我们正在获取消息",
+    "noTicketSelected": "未选择工单",
+    "selectTicketPrompt": "请选择一个工单以查看会话",
+    "sending": "发送中...",
+    "status": {
+      "open": "打开",
+      "in_progress": "处理中",
+      "waiting_response": "等待回复",
+      "resolved": "已解决",
+      "closed": "已关闭",
+      "on_hold": "暂挂"
+    },
+    "placeholders": {
+      "filterByStatus": "按状态筛选",
+      "filterByPriority": "按优先级筛选",
+      "filterByReadStatus": "按阅读状态筛选"
+    },
+    "unreadMessages": "未读消息",
+    "stats": {
+      "total": "总计"
+    }
+  },
+  "banned": {
+    "title": "账户已暂停",
+    "description": "您的经销商账户已被暂停",
+    "message1": "您的经销商账户已被封禁，现已停用。",
+    "message2": "如需了解账户状态详情，请联系管理员。",
+    "contactSupport": "如果您认为这是误封，请联系支持。"
+  },
+  "uiBulk": {
+    "contentManagement.title": "内容管理",
+    "contentManagement.subtitle": "借助 TMDB 集成管理所有类别的内容",
+    "scanFolders": "扫描文件夹",
+    "addManualMovie": "手动添加影片",
+    "addFromTMDB": "从 TMDB 添加",
+    "movies": "电影",
+    "tvChannels": "电视频道",
+    "series": "剧集",
+    "events": "活动",
+    "kids": "儿童",
+    "anime": "动漫",
+    "moviesDescription": "电影及独立视频内容",
+    "noContentFound": "未找到内容",
+    "getStartedAddFirstMovies": "通过添加第一批电影内容开始。",
+    "addManualMovieButton": "手动添加影片",
+    "addFromTMDBButton": "从 TMDB 添加",
+    "adminDashboard": "管理面板",
+    "resellerManagement.title": "经销商管理",
+    "resellerManagement.subtitle": "创建并管理经销商及积分系统",
+    "resetAllCounters": "重置所有计数器",
+    "resetAllCountersConfirm": "确定要重置所有经销商的每日演示计数器吗？这会将所有计数器置为 0。",
+    "createReseller": "创建经销商",
+    "createResellerDescription": "创建一个新的经销商帐户，包含初始积分和演示限制。",
+    "creditsLabel": "积分",
+    "dailyDemoLimit": "每日演示上限",
+    "reseller": {
+      "form": {
+        "usernamePlaceholder": "输入用户名",
+        "passwordPlaceholder": "输入密码",
+        "emailPlaceholder": "输入邮箱（可选）"
+      }
+    },
+    "searchByUsernameOrEmail": "按用户名或邮箱搜索...",
+    "noResellersYet": "尚无经销商",
+    "createYourFirstReseller": "创建您的第一个经销商以开始管理终端用户。",
+    "endUsers.title": "终端用户",
+    "endUsers.subtitle": "为所有经销商创建并管理终端用户",
+    "createEndUser": "创建终端用户",
+    "filters": "过滤器",
+    "searchByUsername": "按用户名搜索...",
+    "searchByEmail": "按邮箱搜索...",
+    "searchByReseller": "按经销商搜索...",
+    "noEndUsersYet": "尚无终端用户",
+    "getStartedCreateFirstEndUser": "开始创建您的第一个终端用户。",
+    "deviceManagement.title": "设备管理",
+    "deviceManagement.subtitle": "监控并管理系统中的设备连接",
+    "deviceManagement.overview": "概述",
+    "deviceManagement.activeDevices": "有源设备",
+    "deviceManagement.deviceRemoval": "设备移除",
+    "deviceManagement.warnings": "警告",
+    "deviceManagement.totalDevices": "设备总数",
+    "deviceManagement.registeredDevices": "注册设备",
+    "deviceManagement.currentlyConnected": "目前已连接",
+    "deviceManagement.usersWithDevices": "拥有设备的用户",
+    "deviceManagement.limitWarnings": "限制警告",
+    "deviceManagement.deviceStatistics.title": "设备统计",
+    "deviceManagement.avgDevicesPerUser": "平均设备/用户数",
+    "deviceManagement.usersAtLimit": "限制用户数",
+    "deviceManagement.totalCapacity": "总容量",
+    "deviceManagement.utilization": "利用率",
+    "deviceManagement.deviceUsageByUser.none": "没有拥有设备的用户",
+    "deviceManagement.usageDistribution": "使用分布",
+    "deviceManagement.byUsageLevel": "按使用级别",
+    "deviceManagement.lowUsage": "低使用率 (0-49%)",
+    "deviceManagement.systemHealth.title": "系统健康状况",
+    "overview": "概览",
+    "activeDevices": "在线设备",
+    "deviceRemoval": "移除设备",
+    "warnings": "警告",
+    "totalDevices": "设备总数",
+    "registeredDevices": "已注册设备",
+    "currentlyConnected": "当前在线设备",
+    "usersWithDevices": "拥有设备的用户",
+    "limitWarnings": "超限警告",
+    "deviceStatistics.title": "设备统计",
+    "avgDevicesPerUser": "每位用户平均设备数",
+    "usersAtLimit": "已达上限的用户",
+    "totalCapacity": "设备总容量",
+    "utilization": "利用率",
+    "deviceUsageByUser.none": "设备注册后将显示该用户的设备统计信息。",
+    "usageDistribution": "使用分布",
+    "byUsageLevel": "按使用级别",
+    "lowUsage": "低使用（0-49%）",
+    "systemHealth.title": "系统健康状况",
+    "supportTickets.title": "支持工单",
+    "supportTickets.subtitle": "管理客户支持工单和请求",
+    "createTicket": "创建工单",
+    "tickets.total": "总数",
+    "tickets.open": "打开",
+    "tickets.inProgress": "处理中",
+    "tickets.resolved": "已解决",
+    "tickets.closed": "已关闭",
+    "tickets.unreadMessages": "未读消息",
+    "searchTicketsPlaceholder": "搜索工单...",
+    "noTicketsFound": "未找到匹配的工单",
+    "noTicketsFoundTitle": "未找到工单",
+    "noTicketsDescription": "尝试调整筛选条件或创建新的支持工单。",
+    "ticketsFound": "共显示 {{count}} 个工单",
+    "advancedFilter": "高级筛选",
+    "sortOptions": "排序选项",
+    "refresh": "刷新",
+    "createTicketButton": "创建工单",
+    "noTicketsMatch": "没有匹配的工单",
+    "clearFilters": "清除筛选",
+    "createNewTicket": "创建新工单",
+    "tools": "工具",
+    "viewUsers": "查看用户",
+    "editReseller": "编辑经销商",
+    "resetPassword": "重置密码",
+    "manageCredits": "管理积分",
+    "demoSettings": "演示设置",
+    "noMatches": "没有匹配的经销商",
+    "tryAdjustingFilters": "尝试调整筛选或搜索条件"
+  },
+  "reseller": {
+    "failedToLoad": "加载经销商失败：{{message}}",
+    "activeLabel": "活跃",
+    "bannedLabel": "已封禁",
+    "editCreditsTitle": "编辑积分",
+    "editCreditsDescription": "为 {{username}} 更新积分",
+    "updateCredits": "更新积分",
+    "editResellerTitle": "编辑经销商",
+    "editResellerDescription": "为 {{username}} 更新经销商信息",
+    "updateReseller": "更新经销商",
+    "resetPasswordTitle": "重置密码",
+    "processingReset": "正在处理重置...",
+    "resetPasswordAction": "重置密码",
+    "ban": "封禁",
+    "unban": "取消封禁",
+    "banTitle": "封禁经销商",
+    "banDescription": "确定要封禁经销商 “{{username}}” 吗？这将阻止其访问账户。",
+    "unbanTitle": "取消封禁经销商",
+    "unbanDescription": "确定要取消封禁经销商 “{{username}}” 吗？",
+    "banAction": "封禁",
+    "unbanAction": "取消封禁"
+  },
+  "redeem": {
+    "badge": "礼品码门户",
+    "title": "兑换访问权限",
+    "description": "使用礼品码即可在几个引导步骤内激活新账户或延长现有访问权限。",
+    "step1": {
+      "title": "第1步 — 验证礼品码",
+      "subtitle": "验证礼品码以解锁演示账号或续期。",
+      "cta": "粘贴礼品码开始",
+      "helper": "我们会自动验证并显示可用天数及剩余次数。"
+    },
+    "step2": {
+      "title": "第2步 — 完成申请",
+      "subtitle": "查看礼品码详情，选择用法并填写表单。"
+    },
+    "detail": {
+      "code": "代码",
+      "duration_days": "持续时间（天）",
+      "uses_remaining": "剩余次数",
+      "expires_at": "到期时间"
+    },
+    "action": {
+      "title": "你希望如何使用这个礼品码？",
+      "create": "创建新用户",
+      "create_description": "使用礼品码赠送的时长创建全新账户。",
+      "extend": "延长现有用户",
+      "extend_description": "将礼品码应用到现有账户以延长使用时间。"
+    },
+    "form": {
+      "codeLabel": "礼品码",
+      "codePlaceholder": "例如：XXXX-XXXX-XXXX（示例）",
+      "codeHelp": "礼品码区分大小写，可包含字母和数字。",
+      "username": "用户名",
+      "usernamePlaceholder": "选择用户名",
+      "password": "密码",
+      "passwordPlaceholder": "创建安全密码",
+      "emailOptional": "电子邮箱（可选）",
+      "emailPlaceholder": "我们联系你的方式",
+      "emailHint": "仅用于账号找回及重要通知。",
+      "existingUsername": "现有用户名",
+      "extendHint": "请与账户设置中的用户名完全一致。",
+      "emptyCode": "请先输入礼品码。",
+      "createMissing": "创建账户需要用户名和密码。",
+      "extendMissing": "延长现有账户需要填写用户名。",
+      "categories": "类别"
+    },
+    "verify": "验证礼品码",
+    "checking": "正在检查...",
+    "validCode": "礼品码验证成功。",
+    "invalidCode": "礼品码无效。",
+    "success": "兑换成功。",
+    "error": {
+      "generic": "验证礼品码时发生异常。",
+      "submit": "兑换失败。"
+    },
+    "result": {
+      "errorTitle": "发生错误",
+      "successTitle": "全部就绪！"
+    },
+    "submitting": "提交中...",
+    "extend_hint": "延长现有用户可保留播放列表、收藏和设备。"
+  },
+  "demo": {
+    "badge": "即刻体验版",
+    "signupTitle": "几分钟体验 {{appName}}",
+    "signupSubtitle": "创建有效期 {{hours}} 小时的临时账号。浏览节目目录、在你的设备上测试，并邀请团队一起体验。",
+    "formTitle": "创建体验版凭据",
+    "formSubtitle": "把登录信息分享给团队，放心试用全部功能。",
+    "durationLabel": "持续时间",
+    "durationValue": "{{hours}} 小时",
+    "durationExplanation": "每个体验账号有效 {{hours}} 小时，并在所选分类内开放全部访问权限。",
+    "clearCategories": "清空分类",
+    "categoriesLabel": "可访问分类（可选）",
+    "categoriesAll": "默认开放全部分类。",
+    "categoriesSelected": "已选择 {{count}} 个分类",
+    "noCategories": "暂无可用分类",
+    "categoriesHelp": "留空则开放全部分类。",
+    "restrictedBadge": "不可用",
+    "emailPlaceholder": "仅在重要通知时联系你。",
+    "creating": "正在创建...",
+    "createButton": "创建体验账号",
+    "successMessage": "体验账号已创建，你现在可以登录。",
+    "successTitle": "体验账号已就绪！",
+    "errorTitle": "无法创建体验账号",
+    "durationNote": "体验账号有效期 {{hours}} 小时，并开放所选分类的临时访问。",
+    "failedCreate": "创建体验账号失败：",
+    "footerNote": "体验凭据会自动失效。需要更长试用或代理方案？请联系我们。"
+  },
+  "metadata": {
+    "title": "IPTV 管理系统",
+    "description": "专业的 IPTV 内容管理和交付平台"
+  },
+  "accessibility": {
+    "breadcrumb": "面包屑导航",
+    "selectAll": "全选",
+    "tabs": "选项卡",
+    "dashboard": "仪表板",
+    "notifications": "通知"
+  },
+  "format": {
+    "m3u8": "M3U8",
+    "drm": "DRM"
+  },
+  "languages": {
+    "english": "英语",
+    "spanish": "西班牙语",
+    "chinese": "中文",
+    "portuguese": "葡萄牙语",
+    "french": "法语",
+    "russian": "俄语",
+    "turkish": "土耳其语",
+    "slovak": "斯洛伐克语"
+  },
+  "favorites": {
+    "title": "我的最爱",
+    "description": "您收藏的所有内容都在这里",
+    "music": "音乐",
+    "content": "内容",
+    "allFavorites": "所有最爱",
+    "tracks": "音轨",
+    "albums": "专辑",
+    "artists": "艺术家",
+    "track": "音轨",
+    "album": "专辑",
+    "artist": "艺术家",
+    "noMusicFavorites": "尚无音乐最爱",
+    "addMusicFavorites": "开始添加您喜爱的音轨、专辑和艺术家",
+    "browseMusic": "浏览音乐",
+    "contentComingSoon": "内容收藏功能即将推出",
+    "contentDescription": "很快您就能收藏电影、剧集等内容",
+    "add": "加入最爱",
+    "remove": "从最爱移除",
+    "added": "已加入最爱",
+    "removed": "已从最爱移除",
+    "inFavorites": "在最爱中",
+    "removeFailed": "从最爱移除失败",
+    "error": "更新最爱时出错"
+  },
+  "history": {
+    "title": "观看历史",
+    "description": "查看您最近观看的所有内容",
+    "filterByCategory": "按类别筛选",
+    "allCategories": "所有类别",
+    "items": "项",
+    "clearHistory": "清除历史",
+    "confirmClear": "您确定要清除所有观看历史吗？",
+    "cleared": "历史已成功清除",
+    "clearFailed": "清除历史失败",
+    "error": "清除历史时出错",
+    "noHistory": "没有观看历史",
+    "noHistoryDescription": "开始观看内容以在此处查看",
+    "browseContent": "浏览内容",
+    "page": "页",
+    "of": "共",
+    "categories": {
+      "movie": "电影",
+      "series": "剧集",
+      "live": "直播"
+    }
+  },
+  "search": {
+    "title": "全局搜索",
+    "description": "搜索所有内容类别",
+    "placeholder": "搜索电影、剧集、音乐、频道...",
+    "filters": "筛选器",
+    "category": "类别",
+    "allCategories": "所有类别",
+    "movies": "电影",
+    "series": "剧集",
+    "live": "电视直播",
+    "kids": "儿童",
+    "anime": "动漫",
+    "events": "活动",
+    "year": "年份",
+    "allYears": "所有年份",
+    "sortBy": "排序方式",
+    "relevance": "相关性",
+    "titleAZ": "标题 (A-Z)",
+    "yearDesc": "年份 (最新)",
+    "ratingDesc": "评分",
+    "clearFilters": "清除筛选器",
+    "startSearching": "开始搜索",
+    "startSearchingDescription": "在搜索框中输入内容以查找",
+    "noResults": "未找到结果",
+    "noResultsDescription": "尝试不同的搜索词或调整筛选器",
+    "resultsFound": "找到结果",
+    "virtualizedMode": "优化模式"
+  },
+  "music": {
+    "title": "音乐库",
+    "description": "浏览和播放您的音乐收藏",
+    "favorites": "收藏",
+    "addToFavorites": "添加到收藏",
+    "removeFromFavorites": "从收藏中移除",
+    "favoriteAdded": "已添加到收藏",
+    "favoriteRemoved": "已从收藏中移除",
+    "player": "播放器",
+    "errorGettingStream": "获取流时出错",
+    "goBack": "返回",
+    "errors": {
+      "favoriteError": "更新收藏时出错",
+      "loadError": "加载音乐时出错",
+      "streamError": "播放音乐时出错"
+    }
+  },
+  "watch": {
+    "title": "播放器",
+    "subtitle": "视频播放器",
+    "invalidId": "无效的内容ID",
+    "notFound": "未找到内容",
+    "noStreamAvailable": "此内容没有可用的流",
+    "streamError": "获取流时出错",
+    "backToDashboard": "返回仪表板",
+    "synopsis": "简介",
+    "playNow": "立即播放",
+    "seasons": "季",
+    "seasonShort": "第{{n}}季",
+    "episodeLabel": "第{{n}}集",
+    "noEpisodes": "没有可用的剧集",
+    "related": "推荐",
+    "noRelated": "暂时没有推荐内容",
+    "drmNotice": "此内容已配置DRM — 可能需要兼容的播放器",
+    "goBack": "返回",
+    "subtitles": "字幕",
+    "subtitlesOff": "关闭",
+    "downloadSubtitle": "下载",
+    "settings": "设置",
+    "captionSize": "字幕大小",
+    "small": "小",
+    "medium": "中",
+    "large": "大"
+  },
+  "chat": {
+    "ticket": {
+      "createdBy": "创建者：{{username}}",
+      "initialRequest": "初始请求",
+      "supportRole": "支持",
+      "customerRole": "顾客",
+      "internal": "内部的",
+      "supportTyping": "支持正在输入...",
+      "messagePlaceholder": "输入您的消息...",
+      "sendHint": "按 Enter 发送，Shift+Enter 换行"
+    },
+    "admin": {
+      "internalNotes": "内部注释",
+      "sendAsInternalNote": "作为内部注释发送（客户不可见）",
+      "internalMessagePlaceholder": "输入内部注释...",
+      "adminResponsePlaceholder": "以管理员身份输入您的回复...",
+      "internalVisibilityHint": "内部注释 - 仅管理员可见"
+    }
+  },
+  "contentList": {
+    "listTitle": "{{type}} 列表",
+    "library": "图书馆",
+    "manageAndViewAll": "管理和查看所有 {{type}}",
+    "searchPlaceholder": "搜索内容...",
+    "confirmBulkDelete": "删除 {{count}} 所选项目？此操作无法撤消。",
+    "deleteSelected": "删除 ({{count}})",
+    "created": "已创建",
+    "viewEditContent": "查看/编辑内容",
+    "deleteContentTitle": "删除内容",
+    "deleteContentDescription": "您确定要删除“{{title}}”吗？此操作无法撤消。",
+    "deleteContentAction": "删除内容",
+    "noTypeFound": "未找到 {{type}}",
+    "noContentMatching": "找不到与“{{query}}”匹配的内容。尝试不同的搜索词。",
+    "getStartedByAddingFirst": "首先将您的第一个 {{type}} 添加到库中。",
+    "addContent": "添加内容",
+    "failedToLoad": "无法加载内容：{{message}}",
+    "bulkDeleteFailed": "批量删除失败",
+    "runtimeMinutes": "{{minutes}}分钟",
+    "channelNumber": "章。 {{number}}",
+    "live": "直播",
+    "tmdb": "TMDB"
+  },
+  "feedback": {
+    "operation": {
+      "saving": "保存",
+      "deleting": "正在删除",
+      "uploading": "上传中",
+      "downloading": "正在下载",
+      "syncing": "正在同步",
+      "processing": "加工"
+    },
+    "operationStatus": {
+      "loading": "{{operation}}...",
+      "success": "{{operation}} 成功",
+      "error": "未能{{operation}}"
+    },
+    "time": {
+      "minutesAgo": "{{count}} 分钟前",
+      "hoursAgo": "{{count}} 小时前",
+      "daysAgo": "{{count}} 天前"
+    },
+    "connection": {
+      "online": "在线的",
+      "offline": "离线",
+      "lastSync": "上次同步"
+    },
+    "form": {
+      "submitting": "正在提交表格...",
+      "submissionFailed": "提交失败",
+      "readyToSubmit": "表格已准备好提交",
+      "fixErrors": "请修正以上错误"
+    },
+    "bulk": {
+      "title": "批量 {{operation}}",
+      "inProgress": "操作正在进行中...",
+      "completed": "操作完成",
+      "total": "全部的",
+      "completedCount": "完全的",
+      "failedCount": "失败的",
+      "remaining": "其余的",
+      "completedWithErrors": "已完成，但有 {{count}} 错误",
+      "allProcessed": "所有项目均已成功处理"
+    }
+  },
+  "manualSeries": {
+    "addManual": "添加手册 {{type}}",
+    "dialogDescription": "使用自定义季节和剧集手动创建 {{type}}",
+    "stepBasicInfo": "一、基本信息",
+    "stepSeasonsEpisodes": "2. 季节和剧集",
+    "detailsTitle": "{{type}} 详细信息",
+    "detailsDescription": "输入您的 {{type}} 的基本信息",
+    "titleRequired": "标题 *",
+    "titlePlaceholder": "输入 {{type}} 标题...",
+    "descriptionPlaceholder": "输入 {{type}} 描述...",
+    "activeType": "活跃 {{type}}",
+    "nextAddSeasons": "下一步：添加季节",
+    "validEpisodes": "有效剧集：{{count}}（仅保存带有视频 URL 的剧集）",
+    "episodeShort": "第 {{number}} 集",
+    "videoUrlOptionalPlaceholder": "视频网址（可选）",
+    "createType": "创建 {{type}}"
+  },
+  "seriesManagement": {
+    "addSeriesContent": "添加系列内容",
+    "dialogDescription": "在 TMDB 中搜索系列信息或手动创建系列结构",
+    "seriesStructure": "系列结构",
+    "searchTvSeries": "搜索电视剧",
+    "enterSeriesTitleEllipsis": "输入系列标题...",
+    "tmdbSearchFailed": "TMDB 搜索失败。请尝试手动输入。",
+    "notAvailable": "N/A",
+    "noSeriesFound": "找不到“{{query}}”的系列。请尝试手动输入。",
+    "selectedFromTmdb": "选自TMDB",
+    "tmdbId": "TMDB ID：{{id}}",
+    "seasonsCount": "{{count}} 季节",
+    "seriesInformation": "系列信息",
+    "seriesTitleRequired": "系列标题 *",
+    "enterSeriesTitle": "输入系列标题",
+    "firstAirDateYear": "首播日期年份",
+    "seriesDescriptionPlaceholder": "系列说明...",
+    "activeSeries": "活力系列",
+    "seasonsAndEpisodes": "季节和剧集",
+    "manageSeasonsAndEpisodes": "管理该系列剧的季数和剧集",
+    "addSeason": "添加季节",
+    "seasonTab": "季节 {{number}}",
+    "seasonTitle": "赛季标题",
+    "seasonTitlePlaceholder": "赛季标题",
+    "seasonPosterUrl": "本季海报网址",
+    "seasonPosterPlaceholder": "https://example.com/season-poster.jpg",
+    "seasonDescription": "季节描述",
+    "seasonDescriptionPlaceholder": "季节描述...",
+    "episodes": "剧集数",
+    "addEpisode": "添加剧集",
+    "removeSeason": "删除季节",
+    "createSeries": "创建系列",
+    "defaultSeasonTitle": "季节 {{number}}",
+    "defaultEpisodeTitle": "第 {{number}} 集",
+    "episodeHeader": "第 {{number}} 集：{{title}}",
+    "untitled": "无题",
+    "urlSet": "网址设置",
+    "noUrl": "无网址",
+    "episodeTitle": "剧集标题",
+    "episodeTitlePlaceholder": "剧集标题",
+    "runtimeMinutes": "运行时间（分钟）",
+    "runtimePlaceholder": "45",
+    "episodeDescription": "剧集描述",
+    "episodeDescriptionPlaceholder": "剧集描述...",
+    "videoUrlRequired": "视频网址 *",
+    "episodeVideoPlaceholder": "https://example.com/episode.m3u8",
+    "episodePosterUrl": "剧集海报网址",
+    "episodePosterPlaceholder": "https://example.com/episode-poster.jpg",
+    "removeEpisode": "删除剧集"
+  },
+  "ticketCard": {
+    "justNow": "现在",
+    "updatedAt": "已更新 {{time}}",
+    "newCount": "{{count}} 新",
+    "chat": "聊天",
+    "unreadMessageSingle": "{{count}} 未读消息",
+    "unreadMessagePlural": "{{count}} 条未读消息",
+    "priority": {
+      "low": "LOW",
+      "medium": "MEDIUM",
+      "high": "HIGH",
+      "urgent": "URGENT"
+    }
+  },
+  "errorHandlingDemo": {
+    "title": "错误处理和验证演示",
+    "subtitle": "错误处理、验证和用户反馈系统的全面演示",
+    "tabs": {
+      "notifications": "通知",
+      "loading": "加载状态",
+      "operations": "运营",
+      "connection": "联系",
+      "boundaries": "误差边界",
+      "skeletons": "骷髅"
+    },
+    "notifications": {
+      "error": {
+        "title": "错误通知",
+        "description": "测试不同类型的错误通知和 toast 消息",
+        "buttons": {
+          "generic": "一般错误",
+          "api": "API错误",
+          "validation": "验证错误",
+          "network": "网络错误"
+        }
+      },
+      "success": {
+        "title": "成功通知",
+        "description": "测试不同类型的成功和信息性消息",
+        "buttons": {
+          "basic": "基本成功",
+          "detailed": "详细的成功",
+          "info": "信息消息",
+          "warning": "警告信息"
+        }
+      }
+    },
+    "inline": {
+      "title": "内联反馈消息",
+      "successMessage": "您的更改已成功保存。",
+      "viewChanges": "查看变更",
+      "errorMessage": "无法保存更改。请再试一次。",
+      "retry": "重试",
+      "warningMessage": "您的会话将在 5 分钟后过期。",
+      "infoMessage": "新功能可用。查看最新更新！"
+    },
+    "loading": {
+      "spinners": {
+        "title": "加载旋转器",
+        "sizes": {
+          "small": "小的",
+          "medium": "中等的",
+          "large": "大的",
+          "extraLarge": "特大号"
+        },
+        "variants": {
+          "dots": "点",
+          "pulse": "脉冲",
+          "bounce": "弹跳"
+        }
+      },
+      "overlay": {
+        "title": "加载叠加",
+        "content": "被覆盖的内容",
+        "toggle": "切换加载叠加层"
+      },
+      "toast": {
+        "title": "装载吐司",
+        "trigger": "触发加载 Toast"
+      }
+    },
+    "operations": {
+      "async": {
+        "title": "异步操作",
+        "successOperation": "成功运营",
+        "failingOperation": "操作失败"
+      },
+      "batch": {
+        "title": "批量操作",
+        "start": "开始批量操作"
+      }
+    },
+    "connection": {
+      "title": "连接状态",
+      "quality": "连接质量",
+      "retryCount": "重试次数",
+      "testing": "测试...",
+      "testConnection": "测试连接"
+    },
+    "boundaries": {
+      "title": "误差边界",
+      "fixError": "修复错误",
+      "triggerError": "触发错误",
+      "noErrorThrown": "没有抛出错误"
+    },
+    "skeletons": {
+      "title": "骨架加载状态",
+      "text": "文字骨架",
+      "card": "卡牌骨架"
+    },
+    "messages": {
+      "demoOperationFailed": "演示操作失败",
+      "operationCompletedSuccessfully": "操作成功完成",
+      "asyncOperationCompleted": "异步操作完成！",
+      "processingAsyncOperation": "处理异步操作...",
+      "batchOperationCompleted": "批量操作完成！",
+      "genericErrorMessage": "这是一条通用错误消息",
+      "genericErrorTitle": "一般错误",
+      "apiValidationDetails": "提供的数据无效",
+      "apiDemo": "API演示",
+      "invalidEmailFormat": "电子邮件格式无效",
+      "networkConnectionFailed": "网络连接失败",
+      "networkErrorTitle": "网络错误",
+      "unableToConnectServer": "无法连接到服务器",
+      "userProfileUpdated": "用户个人资料更新成功",
+      "profileUpdated": "个人资料已更新",
+      "viewProfile": "查看资料",
+      "newFeaturesAvailable": "最新更新中提供了新功能",
+      "sessionExpiresSoon": "您的会话将在 5 分钟后过期",
+      "processingRequest": "正在处理您的请求...",
+      "loadingCompleted": "加载完成！",
+      "errorBoundaryTestError": "这是 ErrorBoundary 的测试错误",
+      "operationCompleted": "操作完成！"
+    }
+  },
+  "products": {
+    "badge": "我的产品",
+    "title": "你的套餐已开通的访问权限",
+    "subtitle": "根据你当前的产品，探索所有可用内容。",
+    "search": "搜索内容",
+    "devices": "我的设备",
+    "list": {
+      "title": "可用产品"
+    },
+    "loading": "正在获取已开通的产品",
+    "empty": {
+      "title": "你还没有被分配任何产品",
+      "description": "当管理员启用分类后，它们会显示在这里。"
+    },
+    "badgeIncluded": "已包含在你的套餐中",
+    "cta": {
+      "explore": "探索"
+    },
+    "errors": {
+      "loadCategoriesFailed": "加载分类失败",
+      "loadProfileFailed": "加载个人资料失败"
+    }
+  },
+  "creditsCheckout": {
+    "cancel": {
+      "contactSupport": "需要帮助吗？联系支持人员",
+      "description": "结账流程被取消。尚未向您的帐户收取任何费用。",
+      "retryHint": "您可以随时重试。如果您在结账时遇到问题，请验证您的付款详细信息或联系支持人员。",
+      "returnToDashboard": "返回仪表板",
+      "title": "付款已取消",
+      "tryAgain": "再试一次"
+    },
+    "success": {
+      "backToDashboard": "返回仪表板",
+      "description": "感谢您的购买。您的积分正在处理中，将立即可用。",
+      "processingTimeDescription": "积分通过安全 Webhook 自动分配。这通常需要不到 10 秒的时间。",
+      "processingTimeTitle": "处理时间",
+      "title": "付款成功",
+      "transactionIdPlaceholder": "交易 ID：会话已完成",
+      "viewTransactionHistory": "查看交易记录"
+    }
+  },
+  "formValidation": {
+    "password": {
+      "levels": {
+        "fair": "一般",
+        "good": "良好",
+        "strong": "强",
+        "weak": "弱"
+      },
+      "requirements": {
+        "lowercase": "包含小写字母",
+        "minLength": "至少 {{count}} 个字符",
+        "number": "包含数字",
+        "special": "包含特殊字符",
+        "title": "要求",
+        "uppercase": "包含大写字母"
+      },
+      "title": "密码强度"
+    },
+    "summary": {
+      "completion": "表单完成度",
+      "invalidValue": "无效值",
+      "issuesToResolve": "待解决的问题：",
+      "manyErrors": "有 {{count}} 个错误需要修复。",
+      "oneError": "有 1 个错误需要修复。",
+      "valid": "所有字段均有效。您可以提交表单。"
+    }
+  },
+  "subscription": {
+    "register": {
+      "title": "创建账户",
+      "subtitle": "填写信息以开始",
+      "brandTitle": "立即开始观看",
+      "brandSubtitle": "创建账户并选择计划。",
+      "username": "用户名",
+      "usernamePlaceholder": "选择用户名",
+      "email": "电子邮件",
+      "emailPlaceholder": "您的@邮箱.com",
+      "password": "密码",
+      "passwordPlaceholder": "创建密码",
+      "confirmPassword": "确认密码",
+      "confirmPasswordPlaceholder": "确认您的密码",
+      "submit": "创建账户",
+      "creating": "正在创建账户...",
+      "alreadyHaveAccount": "已有账户？",
+      "signIn": "登录",
+      "disabled": "注册已禁用",
+      "disabledMessage": "目前不支持自助注册。",
+      "backToLogin": "返回登录",
+      "emailUnavailable": "此邮箱已注册",
+      "passwordsMismatch": "密码不匹配",
+      "passwordTooShort": "密码至少6个字符",
+      "usernameTooShort": "用户名至少3个字符",
+      "verifyEmail": {
+        "title": "检查邮箱",
+        "message": "我们已发送验证链接。",
+        "spam": "检查垃圾邮件文件夹。",
+        "success": "账户已创建！请验证邮箱。"
+      }
+    },
+    "plans": {
+      "badge": "选择计划",
+      "title": "找到完美计划",
+      "subtitle": "选择适合您的订阅。",
+      "noPlans": "没有可用计划。",
+      "subscribe": "立即订阅",
+      "redirecting": "跳转到付款...",
+      "devices": "最多{{count}}台设备",
+      "devices_plural": "最多{{count}}台设备",
+      "categories": "{{count}}个分类",
+      "categories_plural": "{{count}}个分类",
+      "cancelAnytime": "随时取消",
+      "perMonth": "/月",
+      "perYear": "/年",
+      "perWeek": "/周",
+      "daysAccess": "{{count}}天访问权",
+      "securePayment": "通过Stripe安全支付",
+      "alreadyHaveAccount": "已有账户？",
+      "signIn": "登录"
+    },
+    "success": {
+      "title": "订阅已激活！",
+      "message": "您的订阅已成功激活。欢迎！",
+      "allSet": "一切就绪！",
+      "allSetMessage": "您的内容访问权已激活。",
+      "manage": "管理订阅",
+      "manageMessage": "查看计划详情和管理设备。",
+      "goToDashboard": "前往控制面板",
+      "viewPlans": "查看计划"
+    },
+    "cancel": {
+      "title": "付款已取消",
+      "message": "您的付款已取消。",
+      "noWorries": "没关系！",
+      "noWorriesMessage": "您可以随时返回计划页面。",
+      "tryAgain": "重试",
+      "backToLogin": "返回登录"
+    },
+    "management": {
+      "title": "订阅",
+      "managedByReseller": "由经销商管理",
+      "managedByResellerMessage": "您的订阅由经销商管理。",
+      "noSubscription": "无活跃订阅",
+      "noSubscriptionMessage": "您没有活跃的订阅。",
+      "choosePlan": "选择计划",
+      "currentPlan": "当前计划",
+      "status": "状态",
+      "periodStart": "周期开始",
+      "periodEnd": "续订日期",
+      "cancelSubscription": "取消订阅",
+      "cancelConfirm": "确定要取消吗？",
+      "canceling": "取消中...",
+      "cancelAtPeriodEnd": "订阅将于{{date}}结束",
+      "resubscribe": "重新订阅",
+      "changePlan": "更改计划"
+    },
+    "admin": {
+      "packages": {
+        "title": "订阅套餐",
+        "subtitle": "已配置{{count}}个套餐",
+        "create": "创建套餐",
+        "edit": "编辑",
+        "deactivate": "停用",
+        "deactivateConfirm": "停用此套餐？",
+        "name": "名称",
+        "description": "描述",
+        "price": "价格",
+        "priceCents": "价格（分）",
+        "currency": "货币",
+        "billingMode": "计费模式",
+        "recurring": "周期性",
+        "oneTime": "一次性",
+        "interval": "间隔",
+        "month": "月",
+        "year": "年",
+        "week": "周",
+        "durationDays": "时长（天）",
+        "maxDevices": "最大设备数",
+        "categoryIds": "分类ID（逗号分隔）",
+        "stripePriceId": "Stripe价格ID",
+        "badgeText": "徽章文字",
+        "badgeColor": "徽章颜色",
+        "sortOrder": "排序",
+        "status": "状态",
+        "active": "活跃",
+        "inactive": "未激活",
+        "actions": "操作",
+        "billing": "计费",
+        "devices": "设备",
+        "noPackages": "暂无套餐。点击\"创建套餐\"。",
+        "updated": "套餐已更新",
+        "created": "套餐已创建",
+        "deactivated": "套餐已停用"
+      },
+      "subscriptions": {
+        "title": "直接订阅",
+        "subtitle": "通过Stripe订阅的用户",
+        "userId": "用户ID",
+        "packageId": "套餐ID",
+        "status": "状态",
+        "period": "周期",
+        "cancelStatus": "取消",
+        "canceling": "取消中",
+        "created": "创建时间",
+        "noSubscriptions": "暂无订阅。",
+        "stats": {
+          "active": "活跃",
+          "canceled": "已取消",
+          "expired": "已过期",
+          "mrr": "MRR",
+          "newThisMonth": "本月新增"
+        },
+        "statusBadge": {
+          "active": "活跃",
+          "past_due": "逾期",
+          "canceled": "已取消",
+          "expired": "已过期",
+          "pending": "待处理"
+        }
+      }
+    }
+  }
+}

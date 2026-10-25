@@ -1,0 +1,56 @@
+{
+  "title": "Proveedores de Listas",
+  "description": "Registre listas M3U remotas con un intervalo de actualización para que los canales de TV en vivo se mantengan actualizados automáticamente.",
+  "alert": {
+    "title": "Actualización automática con TTL",
+    "description": "Cada proveedor se vuelve a obtener cuando expira su TTL. El backend preserva ClearKey DRM, cabeceras, proxies y valores DNS-over-HTTPS anunciados en las entradas de la lista."
+  },
+  "form": {
+    "providerName": "Nombre del proveedor *",
+    "playlistUrl": "URL de la lista *",
+    "refreshInterval": "Intervalo de actualización (minutos)",
+    "enableAutoRefresh": "Habilitar actualización automática",
+    "enableAutoRefreshHint": "Deshabilite para mantener la lista pero detener las actualizaciones programadas.",
+    "adding": "Agregando…",
+    "addProvider": "Agregar Proveedor"
+  },
+  "table": {
+    "name": "Nombre",
+    "ttl": "TTL",
+    "status": "Estado",
+    "lastFetch": "Última Obtención",
+    "nextRefresh": "Próxima Actualización",
+    "actions": "Acciones"
+  },
+  "status": {
+    "enabled": "Habilitado",
+    "disabled": "Deshabilitado"
+  },
+  "buttons": {
+    "sync": "Sincronizar",
+    "delete": "Eliminar",
+    "close": "Cerrar"
+  },
+  "validation": {
+    "nameRequired": "El nombre del proveedor es obligatorio",
+    "urlInvalid": "Se requiere una URL M3U/M3U8 válida",
+    "ttlMinimum": "El TTL debe ser de al menos 1 minuto"
+  },
+  "errors": {
+    "loadFailed": "No se pudieron cargar los proveedores",
+    "createFailed": "No se pudo crear el proveedor",
+    "createUnexpected": "Error inesperado al crear el proveedor",
+    "deleteFailed": "No se pudo eliminar el proveedor",
+    "deleteUnexpected": "Error inesperado al eliminar el proveedor",
+    "syncFailed": "Error en la sincronización",
+    "syncUnexpected": "Error inesperado durante la sincronización"
+  },
+  "placeholders": {
+    "providerName": "Sensa",
+    "playlistUrl": "https://ejemplo.com/playlist.m3u"
+  },
+  "units": {
+    "minutes": "mín."
+  },
+  "deleteConfirm": "¿Está seguro de que desea eliminar el proveedor {{name}}? Esta acción no se puede deshacer."
+}

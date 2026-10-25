@@ -1,0 +1,65 @@
+{
+  "scanFolder": {
+    "dialog": {
+      "title": "Scan Library Folder",
+      "description": "Recursively ingest movies and series from a filesystem path. TMDB metadata and matching .srt subtitles are imported automatically when available."
+    },
+    "alert": {
+      "title": "Smart ingest with subtitle pairing",
+      "description": "The scanner auto-detects TMDB IDs in folder names, matches seasons/episodes, and links external .srt files that share the video basename. Use the category overrides below if you want movies or series to land in a custom section such as Kids or Anime.",
+      "descriptionPrefix": "The scanner auto-detects TMDB IDs in folder names, matches seasons/episodes, and links external",
+      "descriptionMiddle": "files that share the video basename. Use the",
+      "descriptionSuffix": "category overrides below if you want movies or series to land in a custom section such as Kids or Anime."
+    },
+    "mediaType": {
+      "label": "Media type",
+      "placeholder": "Select type",
+      "mixed": "Mixed (auto-detect movies & series)",
+      "movies": "Movies only",
+      "series": "Series only",
+      "anime": "Anime only",
+      "kids": "Kids movies only"
+    },
+    "duplicatePolicy": {
+      "label": "Duplicate policy",
+      "placeholder": "Select policy",
+      "omit": "Skip existing items",
+      "replace": "Replace existing items",
+      "allow": "Allow duplicates"
+    },
+    "form": {
+      "rootPath": "Root path *",
+      "rootPathPlaceholder": "/mnt/media/library",
+      "attachSubtitles": "Attach external subtitles",
+      "attachSubtitlesHelp": "Automatically import matching .srt files found alongside video files.",
+      "attachSubtitlesHelpPrefix": "Automatically import matching",
+      "attachSubtitlesHelpSuffix": "files found alongside video files.",
+      "overrideMovieCategory": "Override movie category",
+      "overrideMovieCategoryHelp": "Pick an alternate category type for detected movies if needed.",
+      "overrideSeriesCategory": "Override series category",
+      "overrideSeriesCategoryHelp": "Useful when scanning Kids/Anime libraries that should bypass the standard Series section.",
+      "defaultVod": "Default (VOD)",
+      "defaultSeries": "Default (Series)"
+    },
+    "results": {
+      "moviesCreated": "Movies created",
+      "seriesCreated": "Series created",
+      "episodesCreated": "Episodes created",
+      "subtitlesAdded": "Subtitles added",
+      "replaced": "Replaced",
+      "skipped": "Skipped",
+      "scanLog": "Scan Log"
+    },
+    "badges": {
+      "tmdbLookup": "TMDB lookup",
+      "subtitlePairing": "Subtitle pairing",
+      "recursiveScan": "Recursive scan"
+    },
+    "errors": {
+      "rootPathRequired": "Root path is required",
+      "unableToLoadCategories": "Unable to load categories",
+      "scanFailed": "Scan failed",
+      "unexpectedError": "Unexpected error during scan"
+    }
+  }
+}

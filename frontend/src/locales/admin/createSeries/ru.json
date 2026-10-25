@@ -1,0 +1,42 @@
+{
+  "createSeries": {
+    "dialogTitle": "Добавить {{type}} из TMDB",
+    "dialogDescription": "Выполните поиск в TMDB и автоматически импортируйте все сезоны и серии.",
+    "tabSearch": "1. Поиск",
+    "tabReview": "2. Обзор",
+    "tabEpisodes": "3. Эпизоды",
+    "searching": "Идет поиск...",
+    "search": "Поиск",
+    "cancel": "Отмена",
+    "backToSearch": "Вернуться к поиску",
+    "nextAddUrls": "Далее: Добавьте URL выпусков",
+    "back": "Назад",
+    "creating": "Создание...",
+    "createButton": "Создать {{type}}",
+    "loadingDetails": "Загрузка подробностей о серии...",
+    "loadingEpisodes": "Загрузка информации о выпуске...",
+    "previewTitle": "Предварительный просмотр сезонов и серий",
+    "addEpisodeUrls": "Добавьте URL-адреса выпусков",
+    "completed": "завершенный",
+    "episodeLabel": "Эпизод {{number}}: {{name}}",
+    "unknownYear": "Неизвестный",
+    "noDescription": "Нет описания",
+    "na": "N/A",
+    "errors": {
+      "missingData": "Отсутствуют данные о сериях или сезонах.",
+      "unsupportedType": "Неподдерживаемый тип контента: {{type}}.",
+      "uploadVideoFailed": "Failed to upload video",
+      "uploadSubtitleFailed": "Failed to upload subtitle",
+      "createFailed": "Failed to create series"
+    },
+    "uploadEpisodeVideoOptional": "Upload Episode Video (optional)",
+    "uploadSubtitleOptional": "Upload Subtitle (optional)",
+    "subtitleLanguagePlaceholder": "en",
+    "messages": {
+      "createdSuccess": "{{type}} created successfully",
+      "uploadsFailedSummary": "{{type}} created, but {{count}} uploads failed. {{preview}}",
+      "episodeNotFoundAfterCreation": "episode not found after creation",
+      "episodeNotFoundForSubtitle": "episode not found for subtitle upload"
+    }
+  }
+}

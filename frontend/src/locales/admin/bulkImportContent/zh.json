@@ -1,0 +1,24 @@
+{
+  "bulkImportContent": {
+    "title": "批量导入 — {{category}}（M3U/M3U8）",
+    "description": "在下方粘贴 M3U/M3U8 播放列表以批量导入 {{category}}。每个条目都会创建为新的内容项。数据将自动清理（去重、清洗名称）。",
+    "labels": {
+      "playlist": "播放列表（M3U/M3U8）"
+    },
+    "buttons": {
+      "cancel": "取消",
+      "chooseFile": "选择 M3U 文件",
+      "import": "导入 {{category}}",
+      "importing": "正在导入..."
+    },
+    "result": "已导入 {{success}} / {{total}} 项。",
+    "resultWithFailed": "已导入 {{success}} / {{total}} 项（失败 {{failed}} 项）。",
+    "validation": {
+      "pasteM3uContent": "请粘贴 M3U/M3U8 内容",
+      "invalidData": "无效数据",
+      "importFailed": "批量导入失败",
+      "unknownError": "未知错误",
+      "fileReadFailed": "无法读取所选文件"
+    }
+  }
+}

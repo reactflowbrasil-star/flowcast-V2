@@ -1,0 +1,67 @@
+{
+  "title": "活动日志",
+  "subtitle": "系统范围的活动、操作与审计",
+  "lastUpdated": "最后更新：{{time}}",
+  "autoRefreshOn": "自动刷新 已开启",
+  "autoRefreshOff": "自动刷新 已关闭",
+  "refreshNow": "立即刷新",
+  "refreshLabel": "刷新",
+  "tabs": {
+    "dashboard": "仪表盘",
+    "system": "系统",
+    "loginHistory": "登录历史",
+    "viewingHistory": "观看历史"
+  },
+  "filters": {
+    "actionType": "操作类型",
+    "allActions": "所有操作",
+    "user": "用户",
+    "username": "用户名",
+    "ipAddress": "IP 地址",
+    "startDate": "开始日期 (dd/mm/yyyy)",
+    "endDate": "结束日期 (dd/mm/yyyy)",
+    "perPage": "每页",
+    "search": "搜索",
+    "placeholderUsername": "搜索用户名…",
+    "placeholderIp": "例如 192.168.0.1",
+    "contentType": "内容类型",
+    "allTypes": "所有类型"
+  },
+  "common": {
+    "failedLogins": "登录失败",
+    "today": "今天",
+    "views": "浏览量"
+  },
+  "table": {
+    "date": "日期",
+    "action": "操作",
+    "user": "用户",
+    "target": "目标",
+    "description": "描述",
+    "credits": "积分",
+    "ip": "IP",
+    "device": "设备"
+  },
+  "pagination": {
+    "previous": "上一步",
+    "next": "下一步",
+    "showing": "显示 {{from}} 到 {{to}} ，共 {{total}} 条日志",
+    "pageOf": "第 {{page}} / {{total_pages}} 页"
+  },
+  "actionTypes": {
+    "USER_CREATED": "用户已创建",
+    "USER_DELETED": "用户已删除",
+    "RESELLER_CREATED": "代理已创建",
+    "RESELLER_DELETED": "代理已删除",
+    "CREDIT_USED": "额度已使用",
+    "CREDIT_ASSIGNED": "额度已分配",
+    "SYSTEM_INIT": "系统初始化",
+    "LOGIN": "登录",
+    "LOGOUT": "登出"
+  },
+  "empty": "未找到活动日志。",
+  "errors": {
+    "failedLoad": "加载活动日志失败",
+    "invalidDateRange": "无效的日期范围"
+  }
+}

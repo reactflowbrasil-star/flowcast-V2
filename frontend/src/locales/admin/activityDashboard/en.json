@@ -1,0 +1,34 @@
+{
+  "activity": {
+    "errorLoadingDashboard": "Failed to load dashboard: {{message}}",
+    "errorLoadingDashboardFallback": "Failed to load activity data"
+  },
+  "activityDashboard": {
+    "title": "Activity Logs",
+    "activitySubtitle": "System activity and engagement metrics",
+    "autoRefreshState": "Auto-refresh: {{state}}",
+    "on": "ON",
+    "off": "OFF",
+    "enable": "Enable",
+    "disable": "Disable",
+    "loginsToday": "Logins today",
+    "activeUsers": "Active users",
+    "last7Days": "Last 7 days",
+    "contentViews": "Content views",
+    "deviceDistribution": "Device distribution",
+    "mostViewedContent": "Most viewed content",
+    "noViewingData": "No viewing data",
+    "multiDeviceUsers": "Multi-device users",
+    "noMultiDeviceUsers": "No users with multiple devices",
+    "activity24h": "Activity (24h)",
+    "logins": "Logins",
+    "views": "Views",
+    "noDeviceData": "No device distribution data available",
+    "devicesLabel": "devices",
+    "devices": "devices",
+    "failedLogins": "Failed logins",
+    "today": "Today",
+    "refresh": "Refresh",
+    "tryAgain": "Try Again"
+  }
+}

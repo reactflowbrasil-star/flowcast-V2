@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Brand Colors -->
+    <color name="brand_primary">#1976D2</color>
+    <color name="brand_primary_dark">#1565C0</color>
+    <color name="brand_primary_light">#42A5F5</color>
+    <color name="brand_secondary">#FF6B35</color>
+    <color name="brand_accent">#42A5F5</color>
+    
+    <!-- Material Design 3 Colors -->
+    <color name="primary">#1976D2</color>
+    <color name="on_primary">#FFFFFF</color>
+    <color name="primary_container">#1565C0</color>
+    <color name="on_primary_container">#FFFFFF</color>
+    
+    <color name="secondary">#FF6B35</color>
+    <color name="on_secondary">#FFFFFF</color>
+    <color name="secondary_container">#FF8A65</color>
+    <color name="on_secondary_container">#FFFFFF</color>
+    
+    <!-- Background Colors -->
+    <color name="background">#0A0A0A</color>
+    <color name="on_background">#FFFFFF</color>
+    <color name="surface">#1A1A1A</color>
+    <color name="on_surface">#E0E0E0</color>
+    <color name="surface_variant">#2A2A2A</color>
+    <color name="on_surface_variant">#B0B0B0</color>
+    <color name="surface_bright">#3A3A3A</color>
+    
+    <!-- Text Colors -->
+    <color name="text_primary">#FFFFFF</color>
+    <color name="text_secondary">#E0E0E0</color>
+    <color name="text_tertiary">#B0B0B0</color>
+    <color name="text_disabled">#666666</color>
+    
+    <!-- Status Colors -->
+    <color name="success">#4CAF50</color>
+    <color name="warning">#FF9800</color>
+    <color name="error">#F44336</color>
+    <color name="info">#2196F3</color>
+    
+    <!-- Utility Colors -->
+    <color name="transparent">#00000000</color>
+    <color name="semi_transparent">#80000000</color>
+    <color name="overlay_dark">#CC000000</color>
+    <color name="overlay_light">#33FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="white">#FFFFFF</color>
+    
+    <!-- Gradient Colors -->
+    <color name="gradient_start">#1976D2</color>
+    <color name="gradient_end">#42A5F5</color>
+
+    <!-- Logo Background Colors (Splash & Login screens) -->
+    <color name="logo_background_start">#4F46E5</color>
+    <color name="logo_background_middle">#3730A3</color>
+    <color name="logo_background_end">#1E1B4B</color>
+    
+    <!-- Focus Colors - Enhanced contrast for better visibility -->
+    <color name="focus_border">#42A5F5</color>
+    <color name="focus_background">#4042A5F5</color>
+
+    <!-- Button Focus Colors - More visible contrast -->
+    <color name="button_focused_primary">#1565C0</color>
+    <color name="button_focused_secondary">#424242</color>
+    <color name="button_focused_outline">#4042A5F5</color>
+</resources>

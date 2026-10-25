@@ -1,0 +1,58 @@
+{
+  "securityAlerts": {
+    "title": "Alertas de Segurança",
+    "subtitle": "Monitorar incidentes de segurança e gerir banimentos",
+    "noAlerts": "Nenhum alerta de segurança. Tudo normal.",
+    "viewDetails": "Ver detalhes",
+    "dismiss": "Ignorar",
+    "severity": {
+      "low": "Baixa",
+      "medium": "Média",
+      "high": "Alta",
+      "critical": "Crítica"
+    },
+    "filterBy": {
+      "type": "Filtrar por tipo",
+      "dateRange": "Intervalo de datas",
+      "status": "Estado"
+    },
+    "actions": {
+      "investigate": "Investigar",
+      "banUser": "Banir usuário",
+      "unbanUser": "Desbanir usuário",
+      "cleanupExpiredBans": "Limpar Banimentos Expirados",
+      "createManualBan": "Criar Banimento Manual"
+    },
+    "cards": {
+      "totalIncidents": "Total de Incidentes",
+      "todaysIncidents": "Incidentes de Hoje",
+      "activeBans": "Banimentos Ativos",
+      "permanentBans": "Banimentos Permanentes",
+      "blacklistedDevices": "Dispositivos Bloqueados"
+    },
+    "confirmDelete": "Excluir este alerta? Esta ação não pode ser desfeita.",
+    "noPermission": "Você não tem permissão para realizar esta ação.",
+    "newLabel": "Novo",
+    "moreAlerts": "... e mais {{count}} alertas",
+    "values": {
+      "unknown": "Desconhecido"
+    },
+    "browserNotification": {
+      "title": "Alerta de segurança: {{title}}"
+    },
+    "alerts": {
+      "multipleFailedLogins": {
+        "title": "Múltiplas tentativas de login com falha",
+        "description": "{{count}} tentativas de login com falha do IP {{ip}} na última hora"
+      },
+      "unusualDevices": {
+        "title": "Atividade incomum de dispositivos",
+        "description": "O usuário {{username}} fez login em {{deviceCount}} dispositivos diferentes esta semana"
+      },
+      "highActivity": {
+        "title": "Período de alta atividade",
+        "description": "{{viewCount}} visualizações de conteúdo na última hora"
+      }
+    }
+  }
+}

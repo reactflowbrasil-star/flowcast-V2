@@ -1,0 +1,19 @@
+{
+    "createBan": {
+        "title": "Criar ban",
+        "usernameLabel": "Nome de usuário",
+        "usernamePlaceholder": "Digite o nome de usuário para banir",
+        "banTypeLabel": "Tipo de ban",
+        "temporary": "Temporário",
+        "permanent": "Permanente",
+        "banLevelLabel": "Nível de ban",
+        "level1": "Nível 1 - Aviso",
+        "level2": "Nível 2 - Restrito",
+        "level3": "Nível 3 - Ban completo",
+        "reasonLabel": "Motivo",
+        "reasonPlaceholder": "Digite o motivo do ban...",
+        "customDurationLabel": "Duração personalizada",
+        "customDurationPlaceholder": "Digite a duração em horas",
+        "customDurationNote": "Duração em horas. Deixe vazio para o padrão."
+    }
+}

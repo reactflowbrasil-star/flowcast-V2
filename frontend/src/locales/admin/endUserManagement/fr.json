@@ -1,0 +1,123 @@
+{
+  "endUserManagement": {
+    "title": "Gestion des Utilisateurs Finaux",
+    "subtitle": "Créez et gérez les utilisateurs finaux sur l'ensemble du système",
+    "createEndUser": "Créer un Utilisateur",
+    "noEndUsersYet": "Aucun utilisateur pour le moment",
+    "searchByUsername": "Rechercher par nom d'utilisateur...",
+    "searchByEmail": "Rechercher par email...",
+    "status": {
+      "active": "Actif",
+      "banned": "Banni",
+      "inactive": "Inactif"
+    },
+    "actions": {
+      "ban": "Bannir",
+      "unban": "Débannir",
+      "banUser": "Bannir l'Utilisateur",
+      "unbanUser": "Débannir l'Utilisateur",
+      "confirmBan": "Êtes-vous sûr de vouloir {{action}} {{username}} ?",
+      "banWarning": "Cela les empêchera d'accéder au service.",
+      "deleteUser": "Supprimer l'Utilisateur",
+      "confirmDelete": "Êtes-vous sûr de vouloir supprimer définitivement {{username}} ? Cette action est irréversible.",
+      "edit": "Modifier",
+      "create": "Créer",
+      "manageCredits": "Gérer les crédits",
+      "resetPassword": "Réinitialiser le mot de passe"
+    },
+    "labels": {
+      "username": "Utilisateur",
+      "email": "E-mail",
+      "status": "Statut",
+      "createdAt": "Créé le"
+    },
+    "placeholders": {
+      "searchByUsername": "Rechercher par nom d'utilisateur..."
+    },
+    "confirmDelete": "Supprimer cet utilisateur ? Cette action est irréversible.",
+    "noMatches": "Aucun utilisateur correspondant",
+    "editDialog": {
+      "title": "Modifier l'Utilisateur",
+      "contentCategories": "Catégories de Contenu",
+      "maxDevices": "Appareils Max",
+      "maxDevicesDesc": "Nombre maximum d'appareils simultanés (1-10)",
+      "endLicense": "Fin de Licence (Optionnel)",
+      "forcedCategories": "Catégories Forcées",
+      "forcedCategoriesDesc": "Catégories auxquelles cet utilisateur DOIT avoir accès (remplace les valeurs par défaut)",
+      "password": "Mot de Passe",
+      "passwordDesc": "Laisser vide pour conserver le mot de passe actuel",
+      "save": "Enregistrer",
+      "cancel": "Annuler",
+      "updating": "Mise à jour..."
+    },
+    "demoUser": "Utilisateur Démo",
+    "expiredDemo": "Démo Expirée",
+    "demoBadge": "Démo",
+    "directAdminManagement": "Gestion Admin Directe",
+    "deleteUser": "Supprimer l'Utilisateur",
+    "filters": {
+      "title": "Filtres",
+      "username": "Utilisateur",
+      "email": "E-mail",
+      "reseller": "Revendeur",
+      "showing": "Affichage de {{count}} sur {{total}} utilisateurs",
+      "clear": "Effacer les filtres"
+    },
+    "table": {
+      "username": "Utilisateur",
+      "email": "E-mail",
+      "type": "Taper",
+      "maxDevices": "Appareils Max",
+      "reseller": "Revendeur",
+      "status": "Statut",
+      "created": "Créé",
+      "endLicense": "Fin de Licence",
+      "actions": "Actes",
+      "premium": "Prime"
+    },
+    "form": {
+      "username": "Utilisateur",
+      "password": "Mot de Passe",
+      "email": "E-mail",
+      "maxDevices": "Appareils Max",
+      "expiryDate": "Date d'Expiration (Optionnel)",
+      "expiryDateHelp": "Laisser vide pour aucune expiration. L'utilisateur sera automatiquement désactivé après cette date.",
+      "assignReseller": "Assigner à un Revendeur (Optionnel)",
+      "selectContentCategories": "Catégories de Contenu",
+      "selectCategoriesHelp": "Cliquez pour sélectionner les catégories de contenu auxquelles cet utilisateur aura accès.",
+      "loadingCategories": "Chargement des catégories...",
+      "noCategories": "Aucune catégorie disponible"
+    },
+    "neverLabel": "Jamais",
+    "expired": "Expire",
+    "timeLeft": "restant",
+    "time": {
+      "hoursMinutes": "{{hours}}h {{minutes}}m",
+      "minutes": "{{minutes}}m"
+    },
+    "daysRemaining": "{{count}} jours",
+    "errors": {
+      "loadEndUsersFailed": "Echec du chargement des utilisateurs finaux",
+      "loadEndUsersFailedWithMessage": "Echec du chargement des utilisateurs finaux : {{message}}",
+      "loadResellersFailed": "Echec du chargement des revendeurs",
+      "createFailed": "Echec de la creation de l'utilisateur final",
+      "updateStatusFailed": "Echec de la mise a jour du statut de l'utilisateur",
+      "deleteFailed": "Echec de la suppression de l'utilisateur"
+    },
+    "validation": {
+      "usernameMin": "Le nom d'utilisateur doit contenir au moins {{count}} caracteres",
+      "passwordMinDigits": "Le mot de passe doit contenir au moins {{count}} chiffres",
+      "passwordMaxDigits": "Le mot de passe doit contenir au maximum {{count}} chiffres",
+      "passwordDigitsOnly": "Le mot de passe ne doit contenir que des chiffres",
+      "emailInvalid": "Adresse email invalide",
+      "maxDevicesMin": "Minimum {{count}} appareil",
+      "maxDevicesMax": "Maximum {{count}} appareils autorises",
+      "categoryMin": "Veuillez selectionner au moins {{count}} categorie"
+    },
+    "messages": {
+      "noUserSelected": "Aucun utilisateur sélectionné",
+      "passwordUpdateFailed": "Échec de la mise à jour du mot de passe de l'utilisateur",
+      "updateFailed": "Échec de la mise à jour de l'utilisateur"
+    }
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "title": "Security Incidents ({{total}})",
+  "noneFound": "No incidents found",
+  "itemsPerPage": "Items per page",
+  "searchByUsernamePlaceholder": "Search by username...",
+  "admin": {
+    "securityIncidents": {
+      "confirmDelete": "Delete this security incident?",
+      "filterType": "Incident type",
+      "allTypes": "All types",
+      "bruteForce": "Brute Force Attack",
+      "suspiciousActivity": "Suspicious Activity",
+      "multipleDevices": "Multiple Devices",
+      "tokenManipulation": "Token Manipulation",
+      "searchByUsernamePlaceholder": "Search by username...",
+      "itemsPerPage": "Items per page",
+      "title": "Security Incidents ({{total}})",
+      "noneFound": "No incidents found",
+      "deviceId": "Device ID",
+      "ipAddress": "IP",
+      "deleteTitle": "Delete incident",
+      "showingPage": "Page {{page}} of {{totalPages}}"
+    }
+  },
+  "notifications": {
+    "security": {
+      "errorLoadingIncidents": "Error loading incidents"
+    },
+    "securityIncident": {
+      "deleted": "Incident deleted",
+      "deleteFailed": "Failed to delete incident"
+    }
+  },
+  "common": {
+    "username": "Username",
+    "type": "Type",
+    "date": "Date",
+    "actions": "Actions",
+    "previous": "Previous",
+    "next": "Next",
+    "none": "None"
+  }
+}

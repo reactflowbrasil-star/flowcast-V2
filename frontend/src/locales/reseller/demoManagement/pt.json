@@ -1,0 +1,66 @@
+{
+  "title": "Gestão de Demos",
+  "loading": "A carregar...",
+  "error": {
+    "loadFailed": "Falha ao carregar estatísticas de demo. Por favor, tente novamente.",
+    "fetchConfigFailed": "Falha ao buscar a configuração de demonstração"
+  },
+  "stats": {
+    "dailyLimit": "Limite Diário",
+    "dailyLimitDesc": "Máximo de demos por dia",
+    "createdToday": "Criados Hoje",
+    "createdTodayDesc": "Demos criados hoje",
+    "remainingToday": "Restantes Hoje",
+    "remainingTodayDesc": "Demos que ainda pode criar",
+    "activeDemos": "Demos Ativos",
+    "activeDemosDesc": "Demos atualmente ativos",
+    "demoDuration": "Duração da Demo",
+    "demoDurationDesc": "Cada demo dura este tempo"
+  },
+  "createDemo": {
+    "title": "Criar Utilizador Demo",
+    "description": "Crie uma conta demo para potenciais clientes. Os utilizadores demo têm acesso premium temporário.",
+    "dialogTitle": "Criar Utilizador Demo",
+    "dialogDescription": "Crie uma conta demo. O utilizador terá acesso premium temporário a partir da criação."
+  },
+  "status": {
+    "canCreate": "Pode criar mais {{count}} demo hoje.",
+    "canCreatePlural": "Pode criar mais {{count}} demos hoje.",
+    "limitReached": "Limite diário de demos atingido ({{created}}/{{limit}}). Tente novamente amanhã."
+  },
+  "form": {
+    "username": "Nome de Utilizador",
+    "usernamePlaceholder": "utilizador_demo_123",
+    "password": "Palavra-passe",
+    "passwordPlaceholder": "Introduza a palavra-passe",
+    "email": "E-mail (Opcional)",
+    "emailPlaceholder": "utilizador@exemplo.com",
+    "categories": "Categorias de Conteúdo",
+    "categoriesHint": "Clique para selecionar as categorias de conteúdo a que este utilizador demo terá acesso.",
+    "loadingCategories": "A carregar categorias...",
+    "noCategories": "Nenhuma categoria disponível",
+    "selectCategory": "Por favor, selecione pelo menos uma categoria"
+  },
+  "validation": {
+    "usernameMin": "O nome de utilizador deve ter pelo menos 3 caracteres",
+    "passwordMin": "A palavra-passe deve ter pelo menos 6 caracteres",
+    "invalidEmail": "E-mail inválido",
+    "categoryRequired": "Por favor, selecione pelo menos uma categoria"
+  },
+  "actions": {
+    "cancel": "Cancelar",
+    "creating": "A criar...",
+    "createDemo": "Criar Demo"
+  },
+  "info": {
+    "title": "Informação do Utilizador Demo",
+    "duration": "Duração:",
+    "durationValue": "{{hours}} horas após a criação",
+    "access": "Acesso:",
+    "accessValue": "Funcionalidades premium completas",
+    "devices": "Dispositivos:",
+    "devicesValue": "Até 3 dispositivos simultâneos",
+    "autoCleanup": "Limpeza automática:",
+    "autoCleanupValue": "Conta eliminada automaticamente após a expiração"
+  }
+}

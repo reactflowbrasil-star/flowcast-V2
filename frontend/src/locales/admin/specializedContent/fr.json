@@ -1,0 +1,46 @@
+{
+  "title": "Gestion Contenu Spécialisé",
+  "tabs": {
+    "kids": "Enfants",
+    "anime": "Anime",
+    "events": "Événements",
+    "tv": "TV",
+    "movies": "Films",
+    "series": "Séries"
+  },
+  "kids": {
+    "addContent": "Ajouter Contenu Enfants",
+    "existingContent": "Contenu Enfants Existant ({{count}})",
+    "year": "Année : {{year}}",
+    "active": "Actif : {{status}}"
+  },
+  "anime": {
+    "placeholder": "Gestion Contenu Anime - Structure similaire au Contenu Enfants"
+  },
+  "events": {
+    "placeholder": "Gestion Événements - Avec fonctionnalité de planification"
+  },
+  "tvChannels": {
+    "placeholder": "Gestion Chaînes TV - Gestion des chaînes en direct"
+  },
+  "movies": {
+    "placeholder": "Gestion Films - Gestion contenu VOD"
+  },
+  "seriesTab": {
+    "placeholder": "Gestion Séries - Avec saisons et épisodes"
+  },
+  "form": {
+    "title": "Titre",
+    "description": "Description",
+    "streamUrl": "URL Stream",
+    "imageUrl": "URL Image",
+    "tmdbId": "ID TMDB",
+    "year": "Année",
+    "creating": "Création...",
+    "createContent": "Créer Contenu"
+  },
+  "status": {
+    "yes": "Oui",
+    "no": "Non"
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "securityAlerts": {
+    "title": "安全警报",
+    "subtitle": "监控安全事件并管理封禁",
+    "noAlerts": "没有安全警报。一切正常。",
+    "viewDetails": "查看详情",
+    "dismiss": "忽略",
+    "severity": {
+      "low": "低",
+      "medium": "中",
+      "high": "高",
+      "critical": "严重"
+    },
+    "filterBy": {
+      "type": "按类型筛选",
+      "dateRange": "日期范围",
+      "status": "状态"
+    },
+    "actions": {
+      "investigate": "调查",
+      "banUser": "封禁用户",
+      "unbanUser": "解封用户",
+      "cleanupExpiredBans": "清理过期封禁",
+      "createManualBan": "手动创建封禁"
+    },
+    "cards": {
+      "totalIncidents": "总事件数",
+      "todaysIncidents": "今日事件",
+      "activeBans": "活跃封禁",
+      "permanentBans": "永久封禁",
+      "blacklistedDevices": "黑名单设备"
+    },
+    "confirmDelete": "删除此警报？此操作无法撤销。",
+    "noPermission": "您没有执行此操作的权限。",
+    "newLabel": "新",
+    "moreAlerts": "... 还有 {{count}} 条警报",
+    "values": {
+      "unknown": "未知"
+    },
+    "browserNotification": {
+      "title": "安全警报：{{title}}"
+    },
+    "alerts": {
+      "multipleFailedLogins": {
+        "title": "多次登录失败",
+        "description": "过去一小时内来自 IP {{ip}} 的 {{count}} 次登录失败"
+      },
+      "unusualDevices": {
+        "title": "异常设备活动",
+        "description": "用户 {{username}} 本周在 {{deviceCount}} 台不同设备上登录"
+      },
+      "highActivity": {
+        "title": "高活跃时段",
+        "description": "过去一小时内有 {{viewCount}} 次内容观看"
+      }
+    }
+  }
+}

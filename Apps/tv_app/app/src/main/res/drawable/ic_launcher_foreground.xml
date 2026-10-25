@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108"
+    android:tint="#FFFFFF">
+    <!-- IPTV Play Button Icon -->
+    <group android:translateX="27" android:translateY="27">
+        <!-- TV Screen outline -->
+        <path
+            android:fillColor="#6C5CE7"
+            android:pathData="M48,4H6C3.79,4 2,5.79 2,8v28c0,2.21 1.79,4 4,4h14v4H10v2h34v-2H32v-4h16c2.21,0 4,-1.79 4,-4V8C52,5.79 50.21,4 48,4zM48,32H6V8h42V32z"/>
+        <!-- Play triangle -->
+        <path
+            android:fillColor="#FFFFFF"
+            android:pathData="M20,12v20l16,-10z"/>
+    </group>
+</vector>

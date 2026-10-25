@@ -1,0 +1,65 @@
+{
+  "scanFolder": {
+    "dialog": {
+      "title": "Kütüphane Klasörünü Tara",
+      "description": "Bir dosya sistemi yolundan filmleri ve dizileri özyinelemeli olarak alın. TMDB meta verileri ve eşleşen .srt altyazıları varsa otomatik olarak içe aktarılır."
+    },
+    "alert": {
+      "title": "Altyazı eşleştirmeli akıllı alım",
+      "description": "Tarayıcı, klasör adlarındaki TMDB kimliklerini otomatik olarak algılar, sezonları/bölümleri eşleştirir ve video taban adını paylaşan harici .srt dosyalarını bağlar. Filmlerin veya dizilerin Çocuk veya Anime gibi özel bir bölüme gitmesini istiyorsanız aşağıdaki kategori geçersiz kılmalarını kullanın.",
+      "descriptionPrefix": "Tarayıcı, klasör adlarındaki TMDB kimliklerini otomatik olarak algılar, sezonları/bölümleri eşleştirir ve harici bağlantılar sağlar",
+      "descriptionMiddle": "video taban adını paylaşan dosyalar. Şunu kullanın:",
+      "descriptionSuffix": "Filmlerin veya dizilerin Çocuklar veya Anime gibi özel bir bölüme yerleştirilmesini istiyorsanız aşağıdaki kategori geçersiz kılınır."
+    },
+    "mediaType": {
+      "label": "Medya türü",
+      "placeholder": "Tür seçin",
+      "mixed": "Karışık (filmleri ve dizileri otomatik algıla)",
+      "movies": "Sadece Filmler",
+      "series": "Sadece Diziler",
+      "anime": "Sadece Anime",
+      "kids": "Sadece Çocuk Filmleri"
+    },
+    "duplicatePolicy": {
+      "label": "Kopya politikası",
+      "placeholder": "Politika seçin",
+      "omit": "Mevcut öğeleri atla",
+      "replace": "Mevcut öğeleri değiştir",
+      "allow": "Kopyalara izin ver"
+    },
+    "form": {
+      "rootPath": "Kök yolu *",
+      "rootPathPlaceholder": "/mnt/media/kutuphane",
+      "attachSubtitles": "Harici altyazıları ekle",
+      "attachSubtitlesHelp": "Video dosyalarının yanında bulunan eşleşen .srt dosyalarını otomatik olarak içe aktar.",
+      "overrideMovieCategory": "Film kategorisini geçersiz kıl",
+      "overrideMovieCategoryHelp": "Gerekirse algılanan filmler için alternatif bir kategori türü seçin.",
+      "overrideSeriesCategory": "Dizi kategorisini geçersiz kıl",
+      "overrideSeriesCategoryHelp": "Standart Dizi bölümünü atlaması gereken Çocuk/Anime kütüphanelerini tararken kullanışlıdır.",
+      "defaultVod": "Varsayılan (VOD)",
+      "defaultSeries": "Varsayılan (Diziler)",
+      "attachSubtitlesHelpPrefix": "Eşleşmeyi otomatik olarak içe aktar",
+      "attachSubtitlesHelpSuffix": "video dosyalarının yanında bulunan dosyalar."
+    },
+    "results": {
+      "moviesCreated": "Oluşturulan filmler",
+      "seriesCreated": "Oluşturulan diziler",
+      "episodesCreated": "Oluşturulan bölümler",
+      "subtitlesAdded": "Eklenen altyazılar",
+      "replaced": "Değiştirilen",
+      "skipped": "Atlanan",
+      "scanLog": "Tarama Günlüğü"
+    },
+    "badges": {
+      "tmdbLookup": "TMDB araması",
+      "subtitlePairing": "Altyazı eşleştirme",
+      "recursiveScan": "Özyinelemeli tarama"
+    },
+    "errors": {
+      "rootPathRequired": "Kök yolu gerekli",
+      "unableToLoadCategories": "Kategoriler yüklenemedi",
+      "scanFailed": "Tarama başarısız",
+      "unexpectedError": "Tarama sırasında beklenmeyen hata"
+    }
+  }
+}

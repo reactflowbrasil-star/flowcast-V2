@@ -1,0 +1,43 @@
+{
+  "title": "Güvenlik Olayları ({{total}})",
+  "noneFound": "Olay bulunmadı",
+  "itemsPerPage": "Sayfa başına öğe",
+  "searchByUsernamePlaceholder": "Kullanıcı adına göre ara...",
+  "admin": {
+    "securityIncidents": {
+      "confirmDelete": "Bu güvenlik olayını sil?",
+      "filterType": "Olay türü",
+      "allTypes": "Tüm türler",
+      "bruteForce": "Kaba Kuvvet Saldırısı",
+      "suspiciousActivity": "Şüpheli Aktivite",
+      "multipleDevices": "Birden Fazla Cihaz",
+      "tokenManipulation": "Token Manipülasyonu",
+      "searchByUsernamePlaceholder": "Kullanıcı adına göre ara...",
+      "itemsPerPage": "Sayfa başına öğe",
+      "title": "Güvenlik Olayları ({{total}})",
+      "noneFound": "Olay bulunmadı",
+      "deviceId": "Cihaz ID",
+      "ipAddress": "IP",
+      "deleteTitle": "Olayı sil",
+      "showingPage": "Sayfa {{page}} / {{totalPages}}"
+    }
+  },
+  "notifications": {
+    "security": {
+      "errorLoadingIncidents": "Olaylar yüklenirken hata oluştu"
+    },
+    "securityIncident": {
+      "deleted": "Olay silindi",
+      "deleteFailed": "Olay silinemedi"
+    }
+  },
+  "common": {
+    "username": "Kullanıcı Adı",
+    "type": "Tür",
+    "date": "Tarih",
+    "actions": "İşlemler",
+    "previous": "Önceki",
+    "next": "Sonraki",
+    "none": "Yok"
+  }
+}

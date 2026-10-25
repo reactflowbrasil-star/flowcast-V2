@@ -1,0 +1,110 @@
+{
+  "editTVChannel": {
+    "title": "Modifier la chaîne de télévision",
+    "sections": {
+      "basicInfo": "Informations de base",
+      "currentEpgMapping": "Cartographie EPG actuelle",
+      "editEpgMapping": "Modifier le mappage EPG",
+      "streamSettings": "Paramètres de flux",
+      "artworkStatus": "Oeuvre et statut",
+      "livetvHeaders": "Configuration des en-têtes LiveTV"
+    },
+    "labels": {
+      "channelName": "Nom de la chaîne *",
+      "description": "Description",
+      "channelNumber": "Numéro de chaîne",
+      "provider": "Fournisseur",
+      "channelCategory": "Catégorie de chaîne",
+      "country": "Pays",
+      "epgSource": "Source EPG",
+      "epgChannelId": "ID de chaîne EPG",
+      "timeOffset": "Décalage horaire",
+      "status": "Statut",
+      "epgChannel": "Chaîne EPG",
+      "offsetMin": "Décalage (min)",
+      "format": "Format",
+      "streamUrl": "URL du flux *",
+      "drmType": "Type de DRM*",
+      "clearkeyKeys": "Touches ClearKey *",
+      "licenseServerUrl": "URL du serveur de licences *",
+      "licenseRequestHeaders": "En-têtes de demande de licence (facultatif)",
+      "logoUrl": "URL du logo",
+      "active": "Actif",
+      "originHeader": "En-tête d'origine",
+      "userAgent": "Agent utilisateur",
+      "refererHeader": "En-tête du référent",
+      "customHeadersJson": "En-têtes personnalisés (JSON)",
+      "httpProxy": "Proxy HTTP (facultatif)",
+      "dnsOverHttps": "DNS sur HTTPS (facultatif)"
+    },
+    "placeholders": {
+      "channelName": "Entrez le nom de la chaîne...",
+      "description": "Entrez la description de la chaîne...",
+      "channelNumber": "par exemple, 1, 2, 3...",
+      "provider": "par exemple, câble, OTT, etc.",
+      "loadingCategories": "Chargement des catégories...",
+      "selectCategory": "Sélectionnez la catégorie...",
+      "country": "par exemple, États-Unis, MX, ES...",
+      "selectEpgSource": "Sélectionnez la source EPG...",
+      "filterByNameOrId": "Filtrer par nom ou identifiant...",
+      "selectChannel": "Sélectionnez la chaîne...",
+      "selectSourceFirst": "Sélectionnez d'abord la source",
+      "selectFormat": "Sélectionnez le format...",
+      "streamUrl": "https://example.com/stream.m3u8",
+      "selectDrmType": "Sélectionnez le type de DRM...",
+      "clearkeyKeys": "Saisissez les paires ClearKey au format hexadécimal : kid_hex:key_hex",
+      "licenseServerUrl": "https://license.example.com/widevine",
+      "licenseRequestHeaders": "{\"X-AxDRM-Message\": \"votre-jeton-ici\", \"Autorisation\": \"Jeton du porteur\"}",
+      "logoUrl": "https://example.com/logo.png",
+      "originHeader": "https://example.com",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0 ; Win64 ; x64)...",
+      "refererHeader": "https://referer-site.com",
+      "customHeaders": "{\"X-Custom-Header\": \"value\", \"Authorization\": \"Bearer token\"}",
+      "httpProxy": "http://user:pass@ip:port",
+      "dohUrl": "https://dns.google/dns-query"
+    },
+    "tooltips": {
+      "copyChannelId": "Copier l'ID de la chaîne",
+      "formatHelp": "M3U8 (pas de DRM) ou DRM (ClearKey). Si vous choisissez DRM, les clés sont activées.",
+      "help": "Aide",
+      "streamUrlHelp": "URL du flux complet (m3u8, mpd, etc.)",
+      "copyStreamUrl": "Copier l'URL du flux"
+    },
+    "hints": {
+      "noEpgSourceAssigned": "Aucune source EPG attribuée",
+      "noChannelIdAssigned": "Aucun ID de chaîne attribué",
+      "minutes": "minutes",
+      "epgConfigured": "✓ EPG configuré",
+      "epgNotConfigured": "⚠ EPG non configuré",
+      "loadingEpgMapping": "Chargement du mappage EPG...",
+      "epgDataNote": "Les données EPG ne sont pas stockées dans la base de données ; seuls les identifiants sont enregistrés pour les recherches à la demande.",
+      "loadingEpgControls": "Chargement des contrôles EPG...",
+      "drmTypeHelp": "ClearKey : Clés locales (format hexadécimal) | Widevine/PlayReady : serveur de licence requis",
+      "clearkeyFormat": "Format : kid_hex :key_hex (un par ligne ou séparé par des virgules)",
+      "widevineLicenseHelp": "URL du serveur de licences Widevine (par exemple, de PallyCon, BuyDRM, Axinom)",
+      "playreadyLicenseHelp": "URL du serveur de licences PlayReady",
+      "licenseHeadersHelp": "Objet JSON avec en-têtes personnalisés pour les demandes de licence",
+      "originHeaderHelp": "En-tête d'origine pour les requêtes CORS (facultatif)",
+      "userAgentHelp": "En-tête User-Agent pour émuler le navigateur/appareil (facultatif)",
+      "refererHeaderHelp": "En-tête de référence pour l'origine de la demande (facultatif)",
+      "customHeadersHelp": "En-têtes personnalisés supplémentaires au format JSON (facultatif)",
+      "httpProxyHelp": "Only for geoblocked channels. Format: http://user:pass@ip:port",
+      "dohUrlHelp": "Résolveur DoH en option pour contourner le blocage DNS. Il doit s'agir d'une URL http(s)."
+    },
+    "toasts": {
+      "epgChannelIdCopied": "ID de chaîne EPG copié",
+      "streamUrlCopied": "URL du flux copiée"
+    },
+    "buttons": {
+      "cancel": "Annuler",
+      "updating": "Mise à jour...",
+      "updateChannel": "Mettre à jour la chaîne"
+    },
+    "validation": {
+      "titleRequired": "Le titre est requis",
+      "validVideoUrlRequired": "Une URL de vidéo valide est requise",
+      "proxyUrlFormat": "Format must be http://user:pass@ip:port",
+      "dohUrlFormat": "Le format doit être http(s)://..."
+    }
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "tvCategories": {
+    "title": "Gerir Categorias de Canais de TV",
+    "description": "Mantenha as categorias padrão e estenda-as com os seus próprios rótulos. Categorias em uso não podem ser removidas.",
+    "inputPlaceholder": "Criar uma categoria personalizada (ex: Esportes Premium)",
+    "addCategory": "Adicionar Categoria",
+    "refreshing": "Atualizando…",
+    "loading": "Carregando categorias…",
+    "none": "Você ainda não criou categorias personalizadas.",
+    "default": "Padrão",
+    "removeTitle": "Remover categoria",
+    "removeDescription": "Esta ação não pode ser desfeita. A categoria \"{{name}}\" será removida.",
+    "removeCategory": "Remover Categoria",
+    "editCategory": "Editar categoria",
+    "inUseTitle": "Categoria em uso",
+    "created": "Categoria criada",
+    "updated": "Categoria atualizada",
+    "removed": "Categoria removida",
+    "nameRequired": "O nome da categoria é obrigatório",
+    "helpText": "As categorias padrão permanecem fixadas no topo. Rótulos personalizados ajudam você a organizar provedores ou regiões como precisar.",
+    "protectionNote": "Categorias em uso são protegidas para evitar remoção acidental.",
+    "tableHeaders": {
+      "category": "Categoria",
+      "usage": "Uso",
+      "created": "Criada",
+      "actions": "Ações"
+    },
+    "categoryCount_one": "{{count}} categoria",
+    "categoryCount_other": "{{count}} categorias",
+    "usageLabel": {
+      "channel_one": "{{count}} canal",
+      "channel_other": "{{count}} canais",
+      "notInUse": "Não está em uso"
+    }
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "title": "安全",
+  "subtitle": "监控事件、封禁与黑名单设备。",
+  "tabs": {
+    "overview": "概览",
+    "incidents": "事件",
+    "bans": "封禁",
+    "blacklistedDevices": "黑名单设备"
+  },
+  "actions": {
+    "cleanupExpiredBans": "清理已过期封禁",
+    "createManualBan": "创建手动封禁"
+  },
+  "searchByUsernamePlaceholder": "按用户名搜索...",
+  "confirmDelete": "确定要删除此项目吗？此操作无法撤销。",
+  "admin": {
+    "createBan": {
+      "title": "创建手动封禁",
+      "usernameLabel": "用户名",
+      "usernamePlaceholder": "输入要封禁的用户名",
+      "banTypeLabel": "封禁类型",
+      "temporary": "临时",
+      "permanent": "永久",
+      "banLevelLabel": "封禁级别",
+      "level1": "级别 1 - 登录限制",
+      "level2": "级别 2 - 账户暂停",
+      "level3": "级别 3 - 永久封禁",
+      "customDurationLabel": "自定义持续时间",
+      "customDurationPlaceholder": "输入持续天数",
+      "customDurationNote": "留空表示永久封禁",
+      "reasonLabel": "原因",
+      "reasonPlaceholder": "输入封禁原因"
+    }
+  },
+  "cards": {
+    "totalIncidents": "事件总数",
+    "todaysIncidents": "今日事件",
+    "activeBans": "活动封禁",
+    "permanentBans": "永久封禁",
+    "blacklistedDevices": "黑名单设备"
+  },
+  "stats": {
+    "incidentsByType": "按类型统计",
+    "recentIncidents": "最近事件",
+    "noRecentIncidents": "最近无事件",
+    "summary": "安全概览",
+    "totalIncidents": "事件总数",
+    "todaysIncidents": "今日事件",
+    "activeBans": "活动封禁",
+    "permanentBans": "永久封禁"
+  },
+  "pagination": {
+    "previous": "上一页",
+    "next": "下一页",
+    "pageOf": "第 {{page}} 页，共 {{total_pages}} 页",
+    "showing": "显示第 {{from}}–{{to}} 条，共 {{total}} 条"
+  },
+  "notifications": {
+    "security": {
+      "errorLoadingStatistics": "加载安全统计失败",
+      "errorCleaningExpiredBans": "清理已过期封禁失败"
+    }
+  }
+}

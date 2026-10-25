@@ -1,0 +1,65 @@
+{
+  "scanFolder": {
+    "dialog": {
+      "title": "Escanear Carpeta de Biblioteca",
+      "description": "Importa recursivamente películas y series desde una ruta del sistema de archivos. Los metadatos de TMDB y los subtítulos .srt coincidentes se importan automáticamente cuando están disponibles."
+    },
+    "alert": {
+      "title": "Importación inteligente con emparejamiento de subtítulos",
+      "description": "El escáner detecta automáticamente los IDs de TMDB en los nombres de carpetas, coincide temporadas/episodios y vincula archivos .srt externos que comparten el nombre base del video. Usa las anulaciones de categoría a continuación si deseas que las películas o series se ubiquen en una sección personalizada como Niños o Anime.",
+      "descriptionPrefix": "El escáner detecta automáticamente los ID de TMDB en los nombres de las carpetas, coincide con temporadas/episodios y vincula externos",
+      "descriptionMiddle": "archivos que comparten el nombre base del video. Utilice el",
+      "descriptionSuffix": "La categoría se anula a continuación si desea que las películas o series lleguen a una sección personalizada, como Niños o Anime."
+    },
+    "mediaType": {
+      "label": "Tipo de medio",
+      "placeholder": "Seleccionar tipo",
+      "mixed": "Mixto (auto-detectar películas y series)",
+      "movies": "Solo películas",
+      "series": "Solo series",
+      "anime": "Solo anime",
+      "kids": "Solo películas infantiles"
+    },
+    "duplicatePolicy": {
+      "label": "Política de duplicados",
+      "placeholder": "Seleccionar política",
+      "omit": "Omitir elementos existentes",
+      "replace": "Reemplazar elementos existentes",
+      "allow": "Permitir duplicados"
+    },
+    "form": {
+      "rootPath": "Ruta raíz *",
+      "rootPathPlaceholder": "/mnt/medios/biblioteca",
+      "attachSubtitles": "Adjuntar subtítulos externos",
+      "attachSubtitlesHelp": "Importar automáticamente archivos .srt coincidentes encontrados junto a los archivos de video.",
+      "overrideMovieCategory": "Anular categoría de películas",
+      "overrideMovieCategoryHelp": "Selecciona un tipo de categoría alternativo para las películas detectadas si es necesario.",
+      "overrideSeriesCategory": "Anular categoría de series",
+      "overrideSeriesCategoryHelp": "Útil al escanear bibliotecas de Niños/Anime que deben omitir la sección estándar de Series.",
+      "defaultVod": "Predeterminado (VOD)",
+      "defaultSeries": "Predeterminado (Series)",
+      "attachSubtitlesHelpPrefix": "Importar coincidencias automáticamente",
+      "attachSubtitlesHelpSuffix": "archivos que se encuentran junto con archivos de vídeo."
+    },
+    "results": {
+      "moviesCreated": "Películas creadas",
+      "seriesCreated": "Series creadas",
+      "episodesCreated": "Episodios creados",
+      "subtitlesAdded": "Subtítulos añadidos",
+      "replaced": "Reemplazados",
+      "skipped": "Omitidos",
+      "scanLog": "Registro de Escaneo"
+    },
+    "badges": {
+      "tmdbLookup": "Búsqueda TMDB",
+      "subtitlePairing": "Emparejamiento de subtítulos",
+      "recursiveScan": "Escaneo recursivo"
+    },
+    "errors": {
+      "rootPathRequired": "La ruta raíz es obligatoria",
+      "unableToLoadCategories": "No se pudieron cargar las categorías",
+      "scanFailed": "Escaneo fallido",
+      "unexpectedError": "Error inesperado durante el escaneo"
+    }
+  }
+}

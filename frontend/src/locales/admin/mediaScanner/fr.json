@@ -1,0 +1,110 @@
+{
+  "mediaScanner": {
+    "title": "Scanner Média",
+    "subtitle": "Scannez les dossiers du serveur pour importer automatiquement du contenu média",
+    "categorySelector": {
+      "title": "Sélectionner Catégorie de Contenu",
+      "description": "Choisissez le type de contenu que vous souhaitez scanner",
+      "movies": "Films",
+      "series": "Séries",
+      "kids": "Enfants",
+      "anime": "Anime",
+      "music": "Musique"
+    },
+    "folderExplorer": {
+      "title": "Sélectionner Dossier à Scanner",
+      "description": "Naviguez et sélectionnez le dossier du serveur contenant vos fichiers média",
+      "currentPath": "Chemin Actuel",
+      "selectFolder": "Sélectionner Ce Dossier",
+      "goUp": "Remonter",
+      "loading": "Chargement dossiers...",
+      "error": "Erreur chargement dossiers",
+      "noFolders": "Aucun dossier trouvé",
+      "refresh": "Rafraîchir",
+      "selectedFolder": "Dossier sélectionné :"
+    },
+    "scanOptions": {
+      "title": "Options de Scan",
+      "duplicatePolicy": "Politique de Doublons",
+      "duplicatePolicyOptions": {
+        "omit": "Ignorer doublons",
+        "replace": "Remplacer existants",
+        "allow": "Autoriser les doublons"
+      },
+      "addSubtitles": "Inclure Sous-titres",
+      "addSubtitlesHelp": "Détecter et ajouter automatiquement les fichiers de sous-titres"
+    },
+    "scanProgress": {
+      "title": "Progression du Scan",
+      "status": "Statut",
+      "scanned": "Fichiers Scannés",
+      "imported": "Fichiers Importés",
+      "errors": "Erreurs",
+      "currentFile": "Fichier Actuel",
+      "timeElapsed": "Temps Écoulé",
+      "estimatedRemaining": "Estimation Restante",
+      "cancel": "Annuler",
+      "cancelConfirm": "Êtes-vous sûr de vouloir annuler le scan ? La progression sera perdue.",
+      "completed": "Terminé",
+      "cancelled": "Annulé",
+      "failed": "Échoué"
+    },
+    "taskControl": {
+      "title": "Contrôle des Tâches",
+      "tasks": "tâches",
+      "path": "Chemin",
+      "started": "Démarré",
+      "duration": "Durée",
+      "currentFile": "Fichier actuel",
+      "stats": {
+        "movies": "Films",
+        "series": "Séries",
+        "episodes": "Épisodes",
+        "subtitles": "Sous-titres",
+        "skipped": "Ignorés",
+        "replaced": "Remplacés"
+      },
+      "error": "Erreur",
+      "cancel": "Annuler",
+      "delete": "Supprimer",
+      "cancelling": "Annulation...",
+      "deleting": "Suppression...",
+      "idle": "Aucune tâche en cours"
+    },
+    "scanStatus": {
+      "title": "Statut du Scan",
+      "scanId": "ID Scan",
+      "status": "Statut",
+      "backgroundNote": "Le scan s'exécute sur le serveur. Vous pouvez fermer cette page et le processus continuera.",
+      "anotherScanNote": "Un scan est déjà en cours. Vous pourrez en lancer un autre si nécessaire."
+    },
+    "actions": {
+      "startScan": "Démarrer Scan",
+      "selectCategory": "Sélectionner Catégorie",
+      "selectFolder": "Sélectionner Dossier",
+      "configureScan": "Configurer Scan",
+      "delete": "Supprimer",
+      "deleting": "Suppression..."
+    },
+    "status": {
+      "idle": "Prêt à scanner",
+      "scanning": "Scan en cours...",
+      "completed": "Scan terminé avec succès",
+      "cancelled": "Scan annulé",
+      "failed": "Scan échoué avec erreurs"
+    },
+    "errors": {
+      "noCategory": "Veuillez sélectionner une catégorie de contenu",
+      "noFolder": "Veuillez sélectionner un dossier à scanner",
+      "scanFailed": "Échec démarrage scan : {{message}}",
+      "cancelFailed": "Échec annulation scan : {{message}}",
+      "loadFolders": "Échec chargement dossiers : {{message}}"
+    },
+    "notifications": {
+      "scanStarted": "Scan média démarré avec succès",
+      "scanCompleted": "Scan média terminé : {{imported}} fichiers importés",
+      "scanCancelled": "Scan média annulé",
+      "scanFailed": "Scan média échoué : {{message}}"
+    }
+  }
+}

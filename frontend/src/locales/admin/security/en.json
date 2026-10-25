@@ -1,0 +1,64 @@
+{
+  "title": "Security Center",
+  "subtitle": "Monitor incidents, bans and blacklisted devices.",
+  "tabs": {
+    "overview": "Overview",
+    "incidents": "Incidents",
+    "bans": "Bans",
+    "blacklistedDevices": "Blacklisted Devices"
+  },
+  "actions": {
+    "cleanupExpiredBans": "Cleanup Expired Bans",
+    "createManualBan": "Create Manual Ban"
+  },
+  "searchByUsernamePlaceholder": "Search by username...",
+  "confirmDelete": "Are you sure you want to delete this item? This action cannot be undone.",
+  "admin": {
+    "createBan": {
+      "title": "Create Manual Ban",
+      "usernameLabel": "Username",
+      "usernamePlaceholder": "Enter username to ban",
+      "banTypeLabel": "Ban Type",
+      "temporary": "Temporary",
+      "permanent": "Permanent",
+      "banLevelLabel": "Ban Level",
+      "level1": "Level 1 - Login Restriction",
+      "level2": "Level 2 - Account Suspension",
+      "level3": "Level 3 - Permanent Ban",
+      "customDurationLabel": "Custom Duration",
+      "customDurationPlaceholder": "Enter duration in days",
+      "customDurationNote": "Leave empty for permanent ban",
+      "reasonLabel": "Reason",
+      "reasonPlaceholder": "Enter reason for ban"
+    }
+  },
+  "cards": {
+    "totalIncidents": "Total Incidents",
+    "todaysIncidents": "Today's Incidents",
+    "activeBans": "Active Bans",
+    "permanentBans": "Permanent Bans",
+    "blacklistedDevices": "Blacklisted Devices"
+  },
+  "stats": {
+    "incidentsByType": "Incidents by Type",
+    "recentIncidents": "Recent Incidents",
+    "noRecentIncidents": "No recent incidents",
+    "summary": "Security Summary",
+    "totalIncidents": "Total Incidents",
+    "todaysIncidents": "Today's Incidents",
+    "activeBans": "Active Bans",
+    "permanentBans": "Permanent Bans"
+  },
+  "pagination": {
+    "previous": "Previous",
+    "next": "Next",
+    "pageOf": "Page {{page}} of {{total_pages}}",
+    "showing": "Showing {{from}}–{{to}} of {{total}}"
+  },
+  "notifications": {
+    "security": {
+      "errorLoadingStatistics": "Failed to load security statistics",
+      "errorCleaningExpiredBans": "Failed to cleanup expired bans"
+    }
+  }
+}

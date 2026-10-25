@@ -1,0 +1,44 @@
+{
+  "creditsPricing": {
+    "title": "积分定价 (Stripe)",
+    "description": "配置每个积分的美元基础价格和用于 Stripe Checkout 购买的批量折扣等级。",
+    "loading": "正在加载定价配置...",
+    "updated": "定价配置更新成功",
+    "tiersSorted": "等级已规范化并排序",
+    "savePricingConfig": "保存定价配置",
+    "error": {
+      "loadFailed": "加载定价配置失败：",
+      "updateFailed": "更新定价配置失败",
+      "fetchFailed": "获取定价配置失败",
+      "invalidTierConfig": "无效的等级配置"
+    },
+    "validation": {
+      "tooLarge": "数值过大",
+      "minPercent": "最小 0%",
+      "maxPercent": "最大 100%",
+      "basePricePositive": "基础价格必须大于 0",
+      "maxTiers": "最多 50 个等级",
+      "tiersAscendingOrder": "等级必须按最小数量严格升序排列"
+    },
+    "retry": "重试",
+    "basePrice": {
+      "label": "基础价格（每积分美元）",
+      "help": "折扣前的基础价格。折扣按数量应用。"
+    },
+    "currentBasePrice": "当前基础价格",
+    "activeTiers": "活动等级",
+    "tiersDescription": "定义折扣等级。将应用最小数量 ≤ 购买数量的最高等级。",
+    "actions": {
+      "normalizeSort": "规范化/排序",
+      "addTier": "添加等级"
+    },
+    "table": {
+      "minQuantity": "最小数量（含）",
+      "discountPercent": "折扣百分比",
+      "noTiers": "未配置等级。所有数量均适用基础价格。"
+    }
+  },
+  "common": {
+    "saving": "保存中..."
+  }
+}

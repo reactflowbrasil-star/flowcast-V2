@@ -1,0 +1,43 @@
+{
+  "title": "Bezpečnostné incidenty ({{total}})",
+  "noneFound": "Nenašli sa žiadne incidenty",
+  "itemsPerPage": "Položiek na stránku",
+  "searchByUsernamePlaceholder": "Hľadať podľa používateľského mena...",
+  "admin": {
+    "securityIncidents": {
+      "confirmDelete": "Odstrániť tento bezpečnostný incident?",
+      "filterType": "Typ incidentu",
+      "allTypes": "Všetky typy",
+      "bruteForce": "Brute Force útok",
+      "suspiciousActivity": "Podozrivá aktivita",
+      "multipleDevices": "Viacero zariadení",
+      "tokenManipulation": "Manipulácia s tokenom",
+      "searchByUsernamePlaceholder": "Hľadať podľa používateľského mena...",
+      "itemsPerPage": "Položiek na stránku",
+      "title": "Bezpečnostné incidenty ({{total}})",
+      "noneFound": "Nenašli sa žiadne incidenty",
+      "deviceId": "ID zariadenia",
+      "ipAddress": "IP",
+      "deleteTitle": "Odstrániť incident",
+      "showingPage": "Strana {{page}} z {{totalPages}}"
+    }
+  },
+  "notifications": {
+    "security": {
+      "errorLoadingIncidents": "Chyba pri načítavaní incidentov"
+    },
+    "securityIncident": {
+      "deleted": "Incident odstránený",
+      "deleteFailed": "Nepodarilo sa odstrániť incident"
+    }
+  },
+  "common": {
+    "username": "Používateľské meno",
+    "type": "Typ",
+    "date": "Dátum",
+    "actions": "Akcie",
+    "previous": "Predchádzajúce",
+    "next": "Nasledujúce",
+    "none": "Žiadne"
+  }
+}

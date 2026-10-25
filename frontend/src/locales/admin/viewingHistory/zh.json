@@ -1,0 +1,46 @@
+{
+  "viewingHistory": {
+    "title": "观看历史",
+    "subtitle": "最近的播放事件与观看活动",
+    "lastUpdated": "最后更新：{{time}}",
+    "autoRefreshOn": "自动刷新 已开启",
+    "autoRefreshOff": "自动刷新 已关闭",
+    "refreshNow": "立即刷新",
+    "filters": {
+      "username": "用户名",
+      "contentType": "内容类型",
+      "allTypes": "所有类型",
+      "ipAddress": "IP 地址",
+      "startDate": "开始日期 (dd/mm/yyyy)",
+      "endDate": "结束日期 (dd/mm/yyyy)",
+      "perPage": "每页",
+      "search": "搜索",
+      "placeholderUsername": "搜索用户名…",
+      "placeholderIp": "例如 192.168.0.1"
+    },
+    "table": {
+      "date": "日期",
+      "username": "用户名",
+      "content": "内容",
+      "type": "类型",
+      "duration": "时长",
+      "device": "设备",
+      "ip": "IP"
+    },
+    "pagination": {
+      "previous": "上一步",
+      "next": "下一步",
+      "showing": "显示 {{from}} 到 {{to}} ，共 {{total}} 条记录",
+      "pageOf": "第 {{page}} / {{total_pages}} 页"
+    },
+    "empty": "未找到观看历史。",
+    "errors": {
+      "failedLoad": "加载观看历史失败",
+      "invalidDateRange": "无效的日期范围"
+    },
+    "common": {
+      "views": "浏览量",
+      "today": "今天"
+    }
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "bulkImportTVChannels": {
+    "title": "Importação em Massa",
+    "description": "Importe múltiplos canais de TV de uma lista M3U.",
+    "labels": {
+      "format": "Formato",
+      "provider": "Provedor",
+      "globalDescription": "Descrição global",
+      "country": "País",
+      "startChannelNumber": "Número do Canal Inicial",
+      "m3uList": "Lista M3U"
+    },
+    "placeholders": {
+      "provider": "ex: Provedor A, Provedor B",
+      "description": "Descrição para todos os canais",
+      "country": "Ex: US, AR, MX, BR",
+      "startChannelNumber": "Calculado auto se vazio"
+    },
+    "buttons": {
+      "cancel": "Cancelar",
+      "chooseFile": "Escolher arquivo M3U",
+      "import": "Importar"
+    },
+    "validation": {
+      "pasteM3uContent": "Cole o conteúdo M3U",
+      "mustBePositiveNumber": "Deve ser um número positivo",
+      "invalidData": "Dados inválidos",
+      "bulkImportFailed": "Falha na importação em massa",
+      "unknownError": "Erro desconhecido",
+      "fileReadFailed": "Não foi possível ler o arquivo selecionado"
+    }
+  }
+}

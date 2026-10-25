@@ -1,0 +1,190 @@
+{
+  "content": {
+    "title": "Управление Контентом",
+    "description": "Управляйте контентом всех категорий с интеграцией TMDB",
+    "confirmDelete": "Вы уверены, что хотите удалить этот контент?",
+    "confirmDeleteDescription": "Это действие нельзя отменить.",
+    "confirmBulkDelete": "Удалить {{count}} выбранных элементов?",
+    "confirmBulkDeleteDescription": "Это навсегда удалит {{count}} элементов. Это действие нельзя отменить.",
+    "tmdb": {
+      "confirm": "Заполнить метаданные TMDB для {{category}}? Это попытается сопоставить элементы без TMDB ID.",
+      "success": "Метаданные TMDB обновлены: {{updated}} обновлено, {{skipped}} пропущено",
+      "warning": "{{count}} элементов не удалось сопоставить. Подробности в консоли.",
+      "error": "Ошибка обновления метаданных TMDB",
+      "defaultCategory": "эта категория",
+      "mediaTypeMovie": "Фильм",
+      "mediaTypeTvSeries": "ТВ / Сериалы"
+    },
+    "errors": {
+      "load": "Не удалось загрузить контент: {{message}}"
+    },
+    "empty": {
+      "title": "Контент не найден",
+      "description": "Начните с добавления первого элемента в {{category}}."
+    },
+    "categories": {
+      "vod": {
+        "label": "Фильмы",
+        "description": "Фильмы и отдельный видеоконтент"
+      },
+      "tv": {
+        "label": "ТВ Каналы",
+        "description": "Прямые ТВ каналы и потоки"
+      },
+      "series": {
+        "label": "Сериалы",
+        "description": "ТВ сериалы с сезонами и эпизодами"
+      },
+      "events": {
+        "label": "События",
+        "description": "Прямые трансляции и специальные события"
+      },
+      "kids": {
+        "label": "Детям",
+        "description": "Семейные и детские фильмы"
+      },
+      "anime": {
+        "label": "Аниме",
+        "description": "Аниме сериалы и фильмы"
+      }
+    },
+    "actions": {
+      "addManualMovie": "Добавить Фильм Вручную",
+      "addManualSeries": "Добавить Сериал Вручную",
+      "addTvChannel": "Добавить ТВ Канал",
+      "addEvent": "Добавить Событие",
+      "addFromTmdb": "Добавить из TMDB",
+      "bulkImport": "Массовый Импорт",
+      "importFromM3U8": "Импорт из M3U/M3U8",
+      "manageCategories": "Управление Категориями",
+      "scanFolders": "Сканировать Папки",
+      "fillMetadata": "Заполнить Метаданные",
+      "deleteSelected": "Удалить Выбранное ({{count}})",
+      "preview": "Предпросмотр",
+      "addManualKids": "Добавить Детское Вручную",
+      "addManualAnime": "Добавить Аниме Вручную",
+      "addContent": "Добавить Контент",
+      "tvProviders": "ТВ Провайдеры"
+    },
+    "pagination": {
+      "range": "{{start}}-{{end}} из {{total}}",
+      "rowsPerPage": "Строк на странице",
+      "rows": "Строк",
+      "updating": "Обновление...",
+      "pageOf": "Страница {{page}} из {{total}}"
+    },
+    "preview": {
+      "title": "Предпросмотр",
+      "error": "Не удалось загрузить предпросмотр.",
+      "unsupported": "Ваш браузер не поддерживает воспроизведение видео.",
+      "notAvailable": "Предпросмотр недоступен для этого контента.",
+      "playerLabel": "Плеер: {{player}}"
+    },
+    "dialogs": {
+      "scanLibraryFolderDescription": "Выберите папку для сканирования медиафайлов"
+    },
+    "table": {
+      "columns": {
+        "title": "Название",
+        "description": "Описание",
+        "type": "Тип",
+        "format": "Формат",
+        "year": "Год",
+        "status": "Статус",
+        "created": "Создано",
+        "actions": "Действия"
+      },
+      "values": {
+        "tmdbId": "TMDB: {{id}}",
+        "noDescription": "Описание недоступно",
+        "unknown": "Неизвестно",
+        "event": "Событие"
+      }
+    },
+    "editDialogs": {
+      "channel": {
+        "title": "Редактировать ТВ Канал",
+        "basicInfo": "Основная Инфо",
+        "name": "Название Канала",
+        "description": "Описание",
+        "channelNumber": "Номер Канала",
+        "provider": "Провайдер",
+        "channelCategory": "Категория Канала",
+        "country": "Страна",
+        "epgMapping": {
+          "currentTitle": "Текущая привязка EPG",
+          "editTitle": "Редактировать привязку EPG",
+          "source": "Источник EPG",
+          "channel": "Канал EPG",
+          "channelId": "ID Канала EPG",
+          "timeOffset": "Смещение времени (мин)",
+          "status": "Статус",
+          "configured": "✓ EPG Настроен",
+          "notConfigured": "⚠ EPG Не Настроен",
+          "loading": "Загрузка EPG...",
+          "loadingControls": "Загрузка управления EPG...",
+          "noSource": "Источник EPG не назначен",
+          "noChannel": "ID канала не назначен",
+          "help": "Данные EPG не хранятся в базе данных; сохраняются только идентификаторы для запросов по требованию."
+        },
+        "streamSettings": "Настройки Потока",
+        "format": "Формат",
+        "streamUrl": "URL Потока",
+        "drmType": "Тип DRM",
+        "clearkeyKeys": "Ключи ClearKey",
+        "clearkeyHelp": "Формат: kid_hex:key_hex (один на строку или через запятую)",
+        "licenseServerUrl": "URL Сервера Лицензий",
+        "licenseHeaders": "Заголовки Запроса Лицензии (опц.)",
+        "licenseHeadersHelp": "JSON объект с пользовательскими заголовками для запросов лицензии",
+        "artworkStatus": "Арт и Статус",
+        "logoUrl": "URL Логотипа",
+        "active": "Активен",
+        "liveTvHeaders": {
+          "title": "Настройка Заголовков LiveTV",
+          "origin": "Заголовок Origin",
+          "userAgent": "Пользовательский агент",
+          "referer": "Заголовок Referer",
+          "custom": "Пользовательские Заголовки",
+          "proxy": "HTTP Прокси",
+          "doh": "DNS-over-HTTPS"
+        },
+        "save": "Сохранить",
+        "cancel": "Отмена"
+      },
+      "series": {
+        "title": "Редактировать Сериал",
+        "titleAnime": "Редактировать Аниме",
+        "name": "Название Сериала",
+        "description": "Описание",
+        "year": "Год",
+        "tmdbId": "TMDB ID",
+        "totalSeasons": "Всего Сезонов",
+        "episodesManagement": "Управление Эпизодами",
+        "episodesHelp": "У сериалов нет прямых URL видео. Видеоконтент управляется через отдельные эпизоды внутри сезонов.",
+        "manageEpisodes": "📺 Управление Эпизодами",
+        "posterUrl": "URL Постера",
+        "backdropUrl": "URL Фона",
+        "active": "Активен",
+        "cancel": "Отмена",
+        "save": "Обновить Сериал",
+        "updating": "Обновление..."
+      },
+      "event": {
+        "title": "Редактировать Событие",
+        "name": "Название События",
+        "description": "Описание",
+        "provider": "Провайдер",
+        "country": "Страна",
+        "format": "Формат",
+        "clearkeyKeys": "Ключи ClearKey",
+        "clearkeyHelp": "Формат: kid_hex:key_hex (один на строку или через запятую)",
+        "streamUrl": "URL Потока",
+        "posterUrl": "URL Постера",
+        "active": "Активен",
+        "cancel": "Отмена",
+        "save": "Обновить Событие",
+        "updating": "Обновление..."
+      }
+    }
+  }
+}

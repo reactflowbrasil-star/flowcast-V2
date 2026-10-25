@@ -1,0 +1,44 @@
+{
+  "creditsPricing": {
+    "title": "Preço de Créditos (Stripe)",
+    "description": "Configure o preço base em USD por crédito e níveis de desconto por volume usados para compras no Stripe Checkout.",
+    "loading": "Carregando configuração de preços...",
+    "updated": "Configuração de preços atualizada com sucesso",
+    "tiersSorted": "Níveis normalizados e ordenados",
+    "savePricingConfig": "Salvar Configuração de Preços",
+    "error": {
+      "loadFailed": "Falha ao carregar configuração de preços:",
+      "updateFailed": "Falha ao atualizar configuração de preços",
+      "fetchFailed": "Falha ao buscar config de preços",
+      "invalidTierConfig": "Configuração de nível inválida"
+    },
+    "validation": {
+      "tooLarge": "Muito grande",
+      "minPercent": "Mín 0%",
+      "maxPercent": "Máx 100%",
+      "basePricePositive": "Preço base deve ser maior que 0",
+      "maxTiers": "Máximo 50 níveis",
+      "tiersAscendingOrder": "Níveis devem estar estritamente em ordem crescente por quantidade mínima"
+    },
+    "retry": "Tentar Novamente",
+    "basePrice": {
+      "label": "Preço Base (USD por crédito)",
+      "help": "Preço base antes dos descontos. Descontos aplicam-se por quantidade."
+    },
+    "currentBasePrice": "Preço base atual",
+    "activeTiers": "Níveis ativos",
+    "tiersDescription": "Defina níveis de desconto. O nível mais alto onde quantidade mín ≤ quantidade comprada será aplicado.",
+    "actions": {
+      "normalizeSort": "Normalizar/Ordenar",
+      "addTier": "Adic Nível"
+    },
+    "table": {
+      "minQuantity": "Qtd Mínima (inclusiva)",
+      "discountPercent": "Porcentagem de Desconto",
+      "noTiers": "Nenhum nível configurado. Preço base aplica-se para todas as quantidades."
+    }
+  },
+  "common": {
+    "saving": "Salvando..."
+  }
+}

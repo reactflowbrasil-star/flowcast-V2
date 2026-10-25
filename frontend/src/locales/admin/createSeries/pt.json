@@ -1,0 +1,42 @@
+{
+  "createSeries": {
+    "dialogTitle": "Adicionar {{type}} do TMDB",
+    "dialogDescription": "Pesquise no TMDB e importe automaticamente todas as temporadas e episódios",
+    "tabSearch": "1. Pesquisa",
+    "tabReview": "2. Revisão",
+    "tabEpisodes": "3. Episódios",
+    "searching": "Procurando...",
+    "search": "Procurar",
+    "cancel": "Cancelar",
+    "backToSearch": "Voltar à pesquisa",
+    "nextAddUrls": "Próximo: Adicionar URLs de episódios",
+    "back": "Voltar",
+    "creating": "Criando...",
+    "createButton": "Criar {{type}}",
+    "loadingDetails": "Carregando detalhes da série...",
+    "loadingEpisodes": "Carregando informações do episódio...",
+    "previewTitle": "Visualizar temporadas e episódios",
+    "addEpisodeUrls": "Adicionar URLs de episódios",
+    "completed": "concluído",
+    "episodeLabel": "Episódio {{number}}: {{name}}",
+    "unknownYear": "Desconhecido",
+    "noDescription": "Nenhuma descrição disponível",
+    "na": "N/A",
+    "errors": {
+      "missingData": "Dados de série ou temporada ausentes",
+      "unsupportedType": "Tipo de conteúdo não compatível: {{type}}",
+      "uploadVideoFailed": "Failed to upload video",
+      "uploadSubtitleFailed": "Failed to upload subtitle",
+      "createFailed": "Failed to create series"
+    },
+    "uploadEpisodeVideoOptional": "Upload Episode Video (optional)",
+    "uploadSubtitleOptional": "Upload Subtitle (optional)",
+    "subtitleLanguagePlaceholder": "en",
+    "messages": {
+      "createdSuccess": "{{type}} created successfully",
+      "uploadsFailedSummary": "{{type}} created, but {{count}} uploads failed. {{preview}}",
+      "episodeNotFoundAfterCreation": "episode not found after creation",
+      "episodeNotFoundForSubtitle": "episode not found for subtitle upload"
+    }
+  }
+}

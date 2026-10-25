@@ -1,0 +1,34 @@
+{
+  "activity": {
+    "errorLoadingDashboard": "Ошибка загрузки дашборда: {{message}}",
+    "errorLoadingDashboardFallback": "Ошибка загрузки данных активности"
+  },
+  "activityDashboard": {
+    "title": "Дашборд Активности",
+    "activitySubtitle": "Системная активность и метрики вовлеченности",
+    "autoRefreshState": "Авто-обновление: {{state}}",
+    "on": "ВКЛ",
+    "off": "ВЫКЛ",
+    "enable": "Включить",
+    "disable": "Выключить",
+    "loginsToday": "Входы сегодня",
+    "activeUsers": "Активные пользователи",
+    "last7Days": "Последние 7 дней",
+    "contentViews": "Просмотры контента",
+    "deviceDistribution": "Распределение устройств",
+    "mostViewedContent": "Самый просматриваемый контент",
+    "noViewingData": "Нет данных о просмотрах",
+    "multiDeviceUsers": "Пользователи с мульти-устройствами",
+    "noMultiDeviceUsers": "Нет пользователей с несколькими устройствами",
+    "activity24h": "Активность (24ч)",
+    "logins": "Входы",
+    "views": "Просмотры",
+    "noDeviceData": "Нет данных о распределении устройств",
+    "devicesLabel": "устройства",
+    "devices": "устройства",
+    "failedLogins": "Неудачные входы",
+    "today": "Сегодня",
+    "refresh": "Обновить",
+    "tryAgain": "Попробовать снова"
+  }
+}

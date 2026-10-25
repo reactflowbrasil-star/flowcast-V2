@@ -1,0 +1,36 @@
+{
+  "tvCategories": {
+    "title": "Gestionar Categorías de Canales de TV",
+    "description": "Mantén las categorías predeterminadas y amplíalas con tus propias etiquetas. Las categorías en uso no se pueden eliminar.",
+    "inputPlaceholder": "Crear una categoría personalizada (ej. Deportes Premium)",
+    "addCategory": "Agregar Categoría",
+    "refreshing": "Actualizando…",
+    "loading": "Cargando categorías…",
+    "none": "Aún no has creado ninguna categoría personalizada.",
+    "default": "Predeterminado",
+    "removeTitle": "Eliminar categoría",
+    "removeDescription": "Esta acción no se puede deshacer. La categoría \"{{name}}\" será eliminada.",
+    "removeCategory": "Eliminar Categoría",
+    "editCategory": "Editar categoría",
+    "inUseTitle": "Categoría actualmente en uso",
+    "created": "Categoría creada",
+    "updated": "Categoría actualizada",
+    "removed": "Categoría eliminada",
+    "nameRequired": "El nombre de la categoría es obligatorio",
+    "helpText": "Las categorías predeterminadas se mantienen fijas en la parte superior. Las etiquetas personalizadas te ayudan a organizar proveedores o regiones según tus necesidades.",
+    "protectionNote": "Las categorías en uso están protegidas para evitar eliminaciones accidentales.",
+    "tableHeaders": {
+      "category": "Categoría",
+      "usage": "Uso",
+      "created": "Creado",
+      "actions": "Acciones"
+    },
+    "categoryCount_one": "{{count}} categoría",
+    "categoryCount_other": "{{count}} categorías",
+    "usageLabel": {
+      "channel_one": "{{count}} canal",
+      "channel_other": "{{count}} canales",
+      "notInUse": "Sin usar"
+    }
+  }
+}

@@ -1,0 +1,190 @@
+{
+  "content": {
+    "title": "Správa obsahu",
+    "description": "Spravujte obsah vo všetkých kategóriách pomocou integrácie TMDB",
+    "confirmDelete": "Ste si istí, že chcete odstrániť tento obsah?",
+    "confirmDeleteDescription": "Túto akciu nemožno vrátiť späť.",
+    "confirmBulkDelete": "Odstrániť {{count}} vybraných položiek?",
+    "confirmBulkDeleteDescription": "Týmto sa natrvalo odstráni {{count}} položiek. Túto akciu nemožno vrátiť späť.",
+    "tmdb": {
+      "confirm": "Vyplniť metadáta TMDB pre {{category}}? Toto sa pokúsi spárovať položky bez ID TMDB.",
+      "success": "Metadáta TMDB aktualizované: {{updated}} aktualizovaných, {{skipped}} preskočených",
+      "warning": "{{count}} položiek sa nepodarilo spárovať. Skontrolujte konzolu pre podrobnosti.",
+      "error": "Aktualizácia metadát TMDB zlyhala",
+      "defaultCategory": "táto kategória",
+      "mediaTypeMovie": "Film",
+      "mediaTypeTvSeries": "TV / Seriály"
+    },
+    "errors": {
+      "load": "Nepodarilo sa načítať obsah: {{message}}"
+    },
+    "empty": {
+      "title": "Nenašiel sa žiadny obsah",
+      "description": "Začnite pridaním prvej položky do {{category}}."
+    },
+    "categories": {
+      "vod": {
+        "label": "Filmy",
+        "description": "Filmy a samostatný video obsah"
+      },
+      "tv": {
+        "label": "TV Kanály",
+        "description": "Živé TV kanály a streamy"
+      },
+      "series": {
+        "label": "Seriály",
+        "description": "TV seriály so sériami a epizódami"
+      },
+      "events": {
+        "label": "Udalosti",
+        "description": "Živé udalosti a špeciálne vysielania"
+      },
+      "kids": {
+        "label": "Deti",
+        "description": "Filmy pre rodinu a deti"
+      },
+      "anime": {
+        "label": "Anime",
+        "description": "Anime seriály a filmy"
+      }
+    },
+    "actions": {
+      "addManualMovie": "Pridať film ručne",
+      "addManualSeries": "Pridať seriál ručne",
+      "addTvChannel": "Pridať TV kanál",
+      "addEvent": "Pridať udalosť",
+      "addFromTmdb": "Pridať z TMDB",
+      "bulkImport": "Hromadný import",
+      "importFromM3U8": "Importovať z M3U/M3U8",
+      "manageCategories": "Spravovať kategórie",
+      "scanFolders": "Skenovať priečinky",
+      "fillMetadata": "Vyplniť metadáta",
+      "deleteSelected": "Odstrániť vybrané ({{count}})",
+      "preview": "Ukážka",
+      "addManualKids": "Pridať detské ručne",
+      "addManualAnime": "Pridať anime ručne",
+      "addContent": "Pridať obsah",
+      "tvProviders": "Poskytovatelia TV"
+    },
+    "pagination": {
+      "range": "{{start}}-{{end}} z {{total}}",
+      "rowsPerPage": "Riadkov na stránku",
+      "rows": "Riadkov",
+      "updating": "Aktualizuje sa...",
+      "pageOf": "Stránka {{page}} z {{total}}"
+    },
+    "preview": {
+      "title": "Ukážka",
+      "error": "Nepodarilo sa načítať ukážku.",
+      "unsupported": "Váš prehliadač nepodporuje prehrávanie videa.",
+      "notAvailable": "Pre tento obsah nie je k dispozícii žiadna ukážka.",
+      "playerLabel": "Prehrávač: {{player}}"
+    },
+    "dialogs": {
+      "scanLibraryFolderDescription": "Vyberte priečinok na skenovanie mediálnych súborov"
+    },
+    "table": {
+      "columns": {
+        "title": "Názov",
+        "description": "Popis",
+        "type": "Typ",
+        "format": "Formát",
+        "year": "Rok",
+        "status": "Stav",
+        "created": "Vytvorené",
+        "actions": "Akcie"
+      },
+      "values": {
+        "tmdbId": "TMDB: {{id}}",
+        "noDescription": "Popis nie je k dispozícii",
+        "unknown": "Neznáme",
+        "event": "Udalosť"
+      }
+    },
+    "editDialogs": {
+      "channel": {
+        "title": "Upraviť TV kanál",
+        "basicInfo": "Základné informácie",
+        "name": "Názov kanála",
+        "description": "Popis",
+        "channelNumber": "Číslo kanála",
+        "provider": "Poskytovateľ",
+        "channelCategory": "Kategória kanála",
+        "country": "Krajina",
+        "epgMapping": {
+          "currentTitle": "Aktuálne mapovanie EPG",
+          "editTitle": "Upraviť mapovanie EPG",
+          "source": "Zdroj EPG",
+          "channel": "EPG kanál",
+          "channelId": "ID EPG kanála",
+          "timeOffset": "Časový posun (min)",
+          "status": "Stav",
+          "configured": "✓ EPG nakonfigurované",
+          "notConfigured": "⚠ EPG nenakonfigurované",
+          "loading": "Načítava sa mapovanie EPG...",
+          "loadingControls": "Načítavajú sa ovládacie prvky EPG...",
+          "noSource": "Nie je priradený žiadny zdroj EPG",
+          "noChannel": "Nie je priradené žiadne ID kanála",
+          "help": "Údaje EPG sa neukladajú do databázy; ukladajú sa iba identifikátory pre vyhľadávanie na požiadanie."
+        },
+        "streamSettings": "Nastavenia streamu",
+        "format": "Formát",
+        "streamUrl": "URL streamu",
+        "drmType": "Typ DRM",
+        "clearkeyKeys": "Kľúče ClearKey",
+        "clearkeyHelp": "Formát: kid_hex:key_hex (jeden na riadok alebo oddelené čiarkou)",
+        "licenseServerUrl": "URL licenčného servera",
+        "licenseHeaders": "Hlavičky žiadosti o licenciu (voliteľné)",
+        "licenseHeadersHelp": "Objekt JSON s vlastnými hlavičkami pre žiadosti o licenciu",
+        "artworkStatus": "Obrázok a stav",
+        "logoUrl": "URL loga",
+        "active": "Aktívne",
+        "liveTvHeaders": {
+          "title": "Konfigurácia hlavičiek LiveTV",
+          "origin": "Hlavička Origin",
+          "userAgent": "User Agent",
+          "referer": "Hlavička Referer",
+          "custom": "Vlastné hlavičky",
+          "proxy": "HTTP proxy",
+          "doh": "DNS-over-HTTPS"
+        },
+        "save": "Uložiť zmeny",
+        "cancel": "Zrušiť"
+      },
+      "series": {
+        "title": "Upraviť seriál",
+        "titleAnime": "Upraviť anime",
+        "name": "Názov seriálu",
+        "description": "Popis",
+        "year": "Rok",
+        "tmdbId": "ID TMDB",
+        "totalSeasons": "Celkom sérií",
+        "episodesManagement": "Správa epizód",
+        "episodesHelp": "Seriály nemajú priame URL videa. Video obsah sa spravuje prostredníctvom jednotlivých epizód v rámci sérií.",
+        "manageEpisodes": "📺 Spravovať epizódy",
+        "posterUrl": "URL plagátu",
+        "backdropUrl": "URL pozadia",
+        "active": "Aktívne",
+        "cancel": "Zrušiť",
+        "save": "Aktualizovať seriál",
+        "updating": "Aktualizuje sa..."
+      },
+      "event": {
+        "title": "Upraviť udalosť",
+        "name": "Názov udalosti",
+        "description": "Popis",
+        "provider": "Poskytovateľ",
+        "country": "Krajina",
+        "format": "Formát",
+        "clearkeyKeys": "Kľúče ClearKey",
+        "clearkeyHelp": "Formát: kid_hex:key_hex (jeden na riadok alebo oddelené čiarkou)",
+        "streamUrl": "URL streamu",
+        "posterUrl": "URL plagátu",
+        "active": "Aktívne",
+        "cancel": "Zrušiť",
+        "save": "Aktualizovať udalosť",
+        "updating": "Aktualizuje sa..."
+      }
+    }
+  }
+}

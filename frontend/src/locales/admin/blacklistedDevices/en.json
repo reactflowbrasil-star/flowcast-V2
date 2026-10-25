@@ -1,0 +1,24 @@
+{
+  "title": "Blacklisted Devices ({{count}})",
+  "empty": {
+    "title": "No blacklisted devices",
+    "description": "You're all clear. No devices are currently blacklisted."
+  },
+  "table": {
+    "username": "Username",
+    "deviceId": "Device ID",
+    "blacklistedAt": "Blacklisted At",
+    "actions": "Actions"
+  },
+  "actions": {
+    "remove": "Remove from blacklist"
+  },
+  "notifications": {
+    "blacklist": {
+      "errorLoading": "Error loading blacklisted devices",
+      "confirmRemove": "Remove device \"{{device}}\" for user {{user}} from blacklist?",
+      "removed": "Device removed from blacklist",
+      "removeFailed": "Failed to remove device from blacklist"
+    }
+  }
+}

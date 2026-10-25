@@ -1,0 +1,125 @@
+{
+  "title": "API Anahtarları",
+  "description": "Bayi hesabınıza programatik erişim için API anahtarlarını yönetin",
+  "createButton": "API Anahtarı Oluştur",
+  "empty": {
+    "title": "Henüz API anahtarı yok",
+    "description": "API'yi kullanmaya başlamak için ilk API anahtarınızı oluşturun"
+  },
+  "table": {
+    "name": "İsim",
+    "key": "Anahtar",
+    "permissions": "İzinler",
+    "lastUsed": "Son Kullanım",
+    "requests": "İstekler",
+    "status": "Durum",
+    "actions": "İşlemler"
+  },
+  "tooltips": {
+    "edit": "İzinleri düzenle",
+    "regenerate": "Anahtarı yeniden oluştur",
+    "delete": "Anahtarı sil"
+  },
+  "never": "Hiçbir zaman",
+  "apiUsage": {
+    "title": "API Kullanımı",
+    "description": "API anahtarlarınızı nasıl kullanırsınız",
+    "authHeader": "Kimlik Doğrulama Başlığı",
+    "exampleListUsers": "Örnek: Kullanıcıları Listele",
+    "exampleCreateUser": "Örnek: Kullanıcı Oluştur",
+    "endpoint": "Uç Nokta (Endpoint)"
+  },
+  "createDialog": {
+    "title": "Yeni API Anahtarı Oluştur",
+    "description": "Programatik erişim için belirli izinlere sahip yeni bir API anahtarı oluşturun.",
+    "keyName": "Anahtar Adı",
+    "keyNamePlaceholder": "örn: Entegrasyonum",
+    "permissions": "İzinler",
+    "allowedOrigins": "İzin Verilen Kökenler (CORS)",
+    "allowedOriginsPlaceholder": "Tümü için * veya virgülle ayrılmış alan adları",
+    "allowedOriginsHelp": "Tüm kökenlere izin vermek için * kullanın veya https://example.com gibi alan adları belirtin",
+    "rateLimitMinute": "Hız Sınırı (dakika başına)",
+    "rateLimitDay": "Hız Sınırı (günlük)",
+    "cancel": "İptal",
+    "creating": "Oluşturuluyor...",
+    "create": "API Anahtarı Oluştur"
+  },
+  "secretDialog": {
+    "title": "API Anahtarı Oluşturuldu",
+    "description": "Gizli anahtarınızı şimdi kopyalayın. Bir daha göremeyeceksiniz!",
+    "warning": "Bu anahtarı göreceğiniz tek zamandır. Güvenli bir şekilde saklayın!",
+    "copied": "Anahtarımı Kopyaladım"
+  },
+  "deleteDialog": {
+    "title": "API Anahtarını Sil",
+    "description": "\"{{keyName}}\" isimli anahtarı silmek istediğinizden emin misiniz? Bu işlem geri alınamaz ve bu anahtarı kullanan tüm entegrasyonlar duracaktır.",
+    "cancel": "İptal",
+    "deleting": "Siliniyor...",
+    "delete": "Anahtarı Sil"
+  },
+  "regenerateDialog": {
+    "title": "API Anahtarını Yeniden Oluştur",
+    "description": "\"{{keyName}}\" isimli anahtarı yeniden oluşturmak istediğinizden emin misiniz? Mevcut anahtar derhal geçersiz kılınacak ve tüm entegrasyonların güncellenmesi gerekecektir.",
+    "cancel": "İptal",
+    "regenerating": "Yeniden Oluşturuluyor...",
+    "regenerate": "Anahtarı Yeniden Oluştur"
+  },
+  "editDialog": {
+    "title": "API Anahtarını Düzenle",
+    "description": "Bu API anahtarı için adı, izinleri ve ayarları güncelleyin.",
+    "keyName": "Anahtar Adı",
+    "keyNamePlaceholder": "örn: Entegrasyonum",
+    "permissions": "İzinler",
+    "allowedOrigins": "İzin Verilen Kökenler (CORS)",
+    "allowedOriginsPlaceholder": "Tümü için * veya virgülle ayrılmış alan adları",
+    "rateLimitMinute": "Hız Sınırı (dakika başına)",
+    "rateLimitDay": "Hız Sınırı (günlük)",
+    "cancel": "İptal",
+    "saving": "Kaydediliyor...",
+    "save": "Değişiklikleri Kaydet"
+  },
+  "permissions": {
+    "users:read": {
+      "name": "Kullanıcıları Oku",
+      "description": "Son kullanıcılarınızı listeleyin ve görüntüleyin"
+    },
+    "users:create": {
+      "name": "Kullanıcı Oluştur",
+      "description": "Yeni son kullanıcılar oluşturun (kredi düşer)"
+    },
+    "users:update": {
+      "name": "Kullanıcıları Güncelle",
+      "description": "Mevcut son kullanıcı ayrıntılarını güncelleyin"
+    },
+    "users:extend": {
+      "name": "Abonelikleri Uzat",
+      "description": "Kullanıcı aboneliklerini uzatın (kredi düşer)"
+    },
+    "users:delete": {
+      "name": "Kullanıcıları Sil",
+      "description": "Son kullanıcıları silin"
+    },
+    "credits:read": {
+      "name": "Kredileri Oku",
+      "description": "Kredi bakiyesini görüntüleyin ve maliyetleri hesaplayın"
+    }
+  },
+  "toast": {
+    "created": "API anahtarı başarıyla oluşturuldu",
+    "deleted": "API anahtarı silindi",
+    "regenerated": "API anahtarı yeniden oluşturuldu",
+    "statusUpdated": "API anahtarı durumu güncellendi",
+    "updated": "API anahtarı başarıyla güncellendi",
+    "secretCopied": "Gizli anahtar panoya kopyalandı",
+    "errors": {
+      "create": "API anahtarı oluşturulamadı",
+      "delete": "API anahtarı silinemedi",
+      "regenerate": "API anahtarı yeniden oluşturulamadı",
+      "update": "API anahtarı güncellenemedi"
+    }
+  },
+  "validation": {
+    "keyNameRequired": "Lütfen bir anahtar adı girin",
+    "permissionRequired": "Lütfen en az bir izin seçin"
+  }
+}

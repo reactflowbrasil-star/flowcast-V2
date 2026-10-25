@@ -1,0 +1,32 @@
+{
+  "title": "Tableau de Bord",
+  "welcome": "Bon retour",
+  "guest": "Invité",
+  "navigation": {
+    "home": "Acceuil",
+    "movies": "Films",
+    "tv": "TV en direct",
+    "series": "Séries TV",
+    "kids": "Enfants",
+    "anime": "Anime",
+    "events": "Événements",
+    "music": "Musique",
+    "content": "Contenu",
+    "devices": "Appareils",
+    "profile": "Profil",
+    "products": "Produits"
+  },
+  "sidebar": {
+    "viewProfile": "Voir et modifier votre profil",
+    "secureSession": "Session sécurisée",
+    "logout": "Se déconnecter"
+  },
+  "stats": {
+    "activeDevices": "Appareils actifs",
+    "subscription": "Abonnement",
+    "expiresAt": "Expire le",
+    "unlimited": "Illimité",
+    "active": "Actif",
+    "expired": "Expiré"
+  }
+}

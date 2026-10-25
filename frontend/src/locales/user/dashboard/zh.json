@@ -1,0 +1,32 @@
+{
+  "title": "仪表板",
+  "welcome": "欢迎回来",
+  "guest": "访客",
+  "navigation": {
+    "home": "首页",
+    "movies": "电影",
+    "tv": "直播电视",
+    "series": "剧集",
+    "kids": "儿童",
+    "anime": "动漫",
+    "events": "活动",
+    "music": "音乐",
+    "content": "内容",
+    "devices": "设备",
+    "profile": "个人资料",
+    "products": "产品"
+  },
+  "sidebar": {
+    "viewProfile": "查看和编辑您的个人资料",
+    "secureSession": "安全会话",
+    "logout": "退出登录"
+  },
+  "stats": {
+    "activeDevices": "活跃设备",
+    "subscription": "订阅",
+    "expiresAt": "到期时间",
+    "unlimited": "无限制",
+    "active": "活跃",
+    "expired": "已过期"
+  }
+}

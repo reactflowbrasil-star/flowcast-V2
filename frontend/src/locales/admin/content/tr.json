@@ -1,0 +1,190 @@
+{
+  "content": {
+    "title": "İçerik Yönetimi",
+    "description": "TMDB entegrasyonu ile tüm kategorilerdeki içerikleri yönetin",
+    "confirmDelete": "Bu içeriği silmek istediğinizden emin misiniz?",
+    "confirmDeleteDescription": "Bu işlem geri alınamaz.",
+    "confirmBulkDelete": "{{count}} seçili öğeyi sil?",
+    "confirmBulkDeleteDescription": "Bu işlem {{count}} öğeyi kalıcı olarak silecektir. Geri alınamaz.",
+    "tmdb": {
+      "confirm": "{{category}} için TMDB üst verilerini dolduru? Bu işlem, TMDB kimliği olmayan öğeleri eşleştirmeye çalışacaktır.",
+      "success": "TMDB üst verileri güncellendi: {{updated}} güncellendi, {{skipped}} atlandı",
+      "warning": "{{count}} öğe eşleştirilemedi. Detaylar için konsolu kontrol edin.",
+      "error": "TMDB üst veri yenileme hatası",
+      "defaultCategory": "bu kategori",
+      "mediaTypeMovie": "Film",
+      "mediaTypeTvSeries": "TV / Diziler"
+    },
+    "errors": {
+      "load": "İçerik yüklenemedi: {{message}}"
+    },
+    "empty": {
+      "title": "İçerik bulunamadı",
+      "description": "{{category}} kategorisine ilk öğenizi ekleyerek başlayın."
+    },
+    "categories": {
+      "vod": {
+        "label": "Filmler",
+        "description": "Filmler ve bağımsız video içeriği"
+      },
+      "tv": {
+        "label": "TV Kanalları",
+        "description": "Canlı TV kanalları ve yayınları"
+      },
+      "series": {
+        "label": "Diziler",
+        "description": "Sezon ve bölümlü TV dizileri"
+      },
+      "events": {
+        "label": "Etkinlikler",
+        "description": "Canlı etkinlikler ve özel yayınlar"
+      },
+      "kids": {
+        "label": "Çocuk",
+        "description": "Aile ve çocuk dostu filmler"
+      },
+      "anime": {
+        "label": "anime",
+        "description": "Anime dizileri ve filmleri"
+      }
+    },
+    "actions": {
+      "addManualMovie": "Manuel Film Ekle",
+      "addManualSeries": "Manuel Dizi Ekle",
+      "addTvChannel": "TV Kanalı Ekle",
+      "addEvent": "Etkinlik Ekle",
+      "addFromTmdb": "TMDB'den Ekle",
+      "bulkImport": "Toplu İçe Aktarma",
+      "importFromM3U8": "M3U/M3U8'den içe aktar",
+      "manageCategories": "Kategorileri Yönet",
+      "scanFolders": "Klasörleri Tara",
+      "fillMetadata": "Üst Verileri Doldur",
+      "deleteSelected": "Seçilenleri Sil ({{count}})",
+      "preview": "Önizleme",
+      "addManualKids": "Manuel Çocuk İçeriği Ekle",
+      "addManualAnime": "Manuel Anime Ekle",
+      "addContent": "İçerik Ekle",
+      "tvProviders": "TV Sağlayıcıları"
+    },
+    "pagination": {
+      "range": "{{total}} üzerinden {{start}}-{{end}}",
+      "rowsPerPage": "Sayfa başına satır",
+      "rows": "Satır",
+      "updating": "Güncelleniyor...",
+      "pageOf": "Sayfa {{page}} / {{total}}"
+    },
+    "preview": {
+      "title": "Önizleme",
+      "error": "Önizleme yüklenemedi.",
+      "unsupported": "Tarayıcınız video oynatmayı desteklemiyor.",
+      "notAvailable": "Bu içerik için önizleme mevcut değil.",
+      "playerLabel": "Oynatıcı: {{player}}"
+    },
+    "dialogs": {
+      "scanLibraryFolderDescription": "Medya dosyalarını taramak için bir klasör seçin"
+    },
+    "table": {
+      "columns": {
+        "title": "Başlık",
+        "description": "Açıklama",
+        "type": "Tür",
+        "format": "Biçim",
+        "year": "Yıl",
+        "status": "Durum",
+        "created": "Oluşturulma",
+        "actions": "İşlemler"
+      },
+      "values": {
+        "tmdbId": "Veri Tabanı: {{id}}",
+        "noDescription": "Açıklama mevcut değil",
+        "unknown": "Bilinmiyor",
+        "event": "Etkinlik"
+      }
+    },
+    "editDialogs": {
+      "channel": {
+        "title": "TV Kanalını Düzenle",
+        "basicInfo": "Temel Bilgiler",
+        "name": "Kanal Adı",
+        "description": "Açıklama",
+        "channelNumber": "Kanal Numarası",
+        "provider": "Sağlayıcı",
+        "channelCategory": "Kanal Kategorisi",
+        "country": "Ülke",
+        "epgMapping": {
+          "currentTitle": "Mevcut EPG Eşleşmesi",
+          "editTitle": "EPG Eşleşmesini Düzenle",
+          "source": "EPG Kaynağı",
+          "channel": "EPG Kanalı",
+          "channelId": "EPG Kanal Kimliği",
+          "timeOffset": "Zaman Kayması (dk)",
+          "status": "Durum",
+          "configured": "✓ EPG Yapılandırıldı",
+          "notConfigured": "⚠ EPG Yapılandırılmadı",
+          "loading": "EPG eşleşmesi yükleniyor...",
+          "loadingControls": "EPG kontrolleri yükleniyor...",
+          "noSource": "EPG kaynağı atanmadı",
+          "noChannel": "Kanal kimliği atanmadı",
+          "help": "EPG verileri veritabanında saklanmaz; sadece isteğe bağlı aramalar için tanımlayıcılar kaydedilir."
+        },
+        "streamSettings": "Yayın Ayarları",
+        "format": "Biçim",
+        "streamUrl": "Yayın URL'si",
+        "drmType": "DRM Türü",
+        "clearkeyKeys": "ClearKey Anahtarları",
+        "clearkeyHelp": "Format: kid_hex:key_hex (satır başına bir tane veya virgülle ayrılmış)",
+        "licenseServerUrl": "Lisans Sunucusu URL'si",
+        "licenseHeaders": "Lisans İstek Başlıkları (isteğe bağlı)",
+        "licenseHeadersHelp": "Lisans istekleri için özel başlıklar içeren JSON nesnesi",
+        "artworkStatus": "Görsel & Durum",
+        "logoUrl": "Logo URL'si",
+        "active": "Aktif",
+        "liveTvHeaders": {
+          "title": "Canlı TV Başlıkları Yapılandırması",
+          "origin": "Origin Başlığı",
+          "userAgent": "Kullanıcı Aracısı",
+          "referer": "Referer Başlığı",
+          "custom": "Özel Başlıklar",
+          "proxy": "HTTP Proxy'si",
+          "doh": "HTTPS üzerinden DNS"
+        },
+        "save": "Değişiklikleri Kaydet",
+        "cancel": "İptal"
+      },
+      "series": {
+        "title": "Diziyi Düzenle",
+        "titleAnime": "Animeyi Düzenle",
+        "name": "Dizi Adı",
+        "description": "Açıklama",
+        "year": "Yıl",
+        "tmdbId": "TMDB Kimliği",
+        "totalSeasons": "Toplam Sezon",
+        "episodesManagement": "Bölüm Yönetimi",
+        "episodesHelp": "Dizilerin doğrudan video URL'leri yoktur. Video içeriği sezonlar içindeki bireysel bölümler üzerinden yönetilir.",
+        "manageEpisodes": "📺 Bölümleri Yönet",
+        "posterUrl": "Poster URL'si",
+        "backdropUrl": "Arkaplan URL'si",
+        "active": "Aktif",
+        "cancel": "İptal",
+        "save": "Diziyi Güncelle",
+        "updating": "Güncelleniyor..."
+      },
+      "event": {
+        "title": "Etkinliği Düzenle",
+        "name": "Etkinlik Adı",
+        "description": "Açıklama",
+        "provider": "Sağlayıcı",
+        "country": "Ülke",
+        "format": "Biçim",
+        "clearkeyKeys": "ClearKey Anahtarları",
+        "clearkeyHelp": "Format: kid_hex:key_hex (satır başına bir tane veya virgülle ayrılmış)",
+        "streamUrl": "Yayın URL'si",
+        "posterUrl": "Poster URL'si",
+        "active": "Aktif",
+        "cancel": "İptal",
+        "save": "Etkinliği Güncelle",
+        "updating": "Güncelleniyor..."
+      }
+    }
+  }
+}

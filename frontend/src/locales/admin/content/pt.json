@@ -1,0 +1,190 @@
+{
+  "content": {
+    "title": "Gestão de Conteúdo",
+    "description": "Gerencie conteúdo em todas as categorias com integração TMDB",
+    "confirmDelete": "Tem certeza que deseja excluir este conteúdo?",
+    "confirmDeleteDescription": "Esta ação não pode ser desfeita.",
+    "confirmBulkDelete": "Excluir {{count}} itens selecionados?",
+    "confirmBulkDeleteDescription": "Isso excluirá permanentemente {{count}} itens. Esta ação não pode ser desfeita.",
+    "tmdb": {
+      "confirm": "Preencher metadados TMDB para {{category}}? Isso tentará corresponder itens sem IDs TMDB.",
+      "success": "Metadados TMDB atualizados: {{updated}} atualizados, {{skipped}} ignorados",
+      "warning": "{{count}} itens não puderam ser correspondidos. Verifique o console para detalhes.",
+      "error": "Falha na atualização dos metadados TMDB",
+      "defaultCategory": "esta categoria",
+      "mediaTypeMovie": "Filme",
+      "mediaTypeTvSeries": "TV / Séries"
+    },
+    "errors": {
+      "load": "Falha ao carregar conteúdo: {{message}}"
+    },
+    "empty": {
+      "title": "Nenhum conteúdo encontrado",
+      "description": "Comece adicionando seu primeiro item em {{category}}."
+    },
+    "categories": {
+      "vod": {
+        "label": "Filmes",
+        "description": "Filmes e conteúdo de vídeo avulso"
+      },
+      "tv": {
+        "label": "Canais de TV",
+        "description": "Canais de TV ao vivo e transmissões"
+      },
+      "series": {
+        "label": "Séries",
+        "description": "Séries de TV com temporadas e episódios"
+      },
+      "events": {
+        "label": "Eventos",
+        "description": "Eventos ao vivo e transmissões especiais"
+      },
+      "kids": {
+        "label": "Crianças",
+        "description": "Filmes para família e crianças"
+      },
+      "anime": {
+        "label": "Anime",
+        "description": "Séries e filmes de anime"
+      }
+    },
+    "actions": {
+      "addManualMovie": "Adicionar Filme Manual",
+      "addManualSeries": "Adicionar Série Manual",
+      "addTvChannel": "Adicionar Canal de TV",
+      "addEvent": "Adicionar Evento",
+      "addFromTmdb": "Adicionar do TMDB",
+      "bulkImport": "Importação em Massa",
+      "importFromM3U8": "Importar de M3U/M3U8",
+      "manageCategories": "Gerenciar Categorias",
+      "scanFolders": "Escanear Pastas",
+      "fillMetadata": "Preencher Metadados",
+      "deleteSelected": "Excluir Selecionados ({{count}})",
+      "preview": "Pré-visualizar",
+      "addManualKids": "Adicionar Kids Manual",
+      "addManualAnime": "Adicionar Anime Manual",
+      "addContent": "Adicionar Conteúdo",
+      "tvProviders": "Provedores de TV"
+    },
+    "pagination": {
+      "range": "{{start}}-{{end}} de {{total}}",
+      "rowsPerPage": "Linhas por página",
+      "rows": "Linhas",
+      "updating": "Atualizando...",
+      "pageOf": "Página {{page}} de {{total}}"
+    },
+    "preview": {
+      "title": "Pré-visualização",
+      "error": "Não foi possível carregar a pré-visualização.",
+      "unsupported": "Seu navegador não suporta reprodução de vídeo.",
+      "notAvailable": "Nenhuma pré-visualização disponível para este conteúdo.",
+      "playerLabel": "Reprodutor: {{player}}"
+    },
+    "dialogs": {
+      "scanLibraryFolderDescription": "Selecione uma pasta para escanear arquivos de mídia"
+    },
+    "table": {
+      "columns": {
+        "title": "Título",
+        "description": "Descrição",
+        "type": "Tipo",
+        "format": "Formato",
+        "year": "Ano",
+        "status": "Estado",
+        "created": "Criado em",
+        "actions": "Ações"
+      },
+      "values": {
+        "tmdbId": "TMDB: {{id}}",
+        "noDescription": "Nenhuma descrição disponível",
+        "unknown": "Desconhecido",
+        "event": "Evento"
+      }
+    },
+    "editDialogs": {
+      "channel": {
+        "title": "Editar Canal de TV",
+        "basicInfo": "Informações Básicas",
+        "name": "Nome do Canal",
+        "description": "Descrição",
+        "channelNumber": "Número do Canal",
+        "provider": "Provedor",
+        "channelCategory": "Categoria do Canal",
+        "country": "País",
+        "epgMapping": {
+          "currentTitle": "Mapeamento EPG Atual",
+          "editTitle": "Editar Mapeamento EPG",
+          "source": "Fonte EPG",
+          "channel": "Canal EPG",
+          "channelId": "ID do Canal EPG",
+          "timeOffset": "Deslocamento de Tempo (min)",
+          "status": "Estado",
+          "configured": "✓ EPG Configurado",
+          "notConfigured": "⚠ EPG Não Configurado",
+          "loading": "Carregando mapeamento EPG...",
+          "loadingControls": "Carregando controles EPG...",
+          "noSource": "Nenhuma fonte EPG atribuída",
+          "noChannel": "Nenhum ID de canal atribuído",
+          "help": "Os dados EPG não são armazenados no banco de dados; apenas identificadores são salvos para consultas sob demanda."
+        },
+        "streamSettings": "Configurações de Transmissão",
+        "format": "Formato",
+        "streamUrl": "URL da Transmissão",
+        "drmType": "Tipo DRM",
+        "clearkeyKeys": "Chaves ClearKey",
+        "clearkeyHelp": "Formato: kid_hex:key_hex (um por linha ou separado por vírgula)",
+        "licenseServerUrl": "URL do Servidor de Licença",
+        "licenseHeaders": "Cabeçalhos de Solicitação de Licença (opcional)",
+        "licenseHeadersHelp": "Objeto JSON com cabeçalhos personalizados para solicitações de licença",
+        "artworkStatus": "Arte e Status",
+        "logoUrl": "URL do Logo",
+        "active": "Ativo",
+        "liveTvHeaders": {
+          "title": "Configuração de Cabeçalhos LiveTV",
+          "origin": "Cabeçalho Origin",
+          "userAgent": "Agente do usuário",
+          "referer": "Cabeçalho Referer",
+          "custom": "Cabeçalhos Personalizados",
+          "proxy": "Proxy HTTP",
+          "doh": "DNS sobre HTTPS"
+        },
+        "save": "Salvar Alterações",
+        "cancel": "Cancelar"
+      },
+      "series": {
+        "title": "Editar Série",
+        "titleAnime": "Editar Anime",
+        "name": "Título da Série",
+        "description": "Descrição",
+        "year": "Ano",
+        "tmdbId": "ID TMDB",
+        "totalSeasons": "Total de Temporadas",
+        "episodesManagement": "Gestão de Episódios",
+        "episodesHelp": "As séries não têm URLs de vídeo diretos. O conteúdo de vídeo é gerenciado através de episódios individuais dentro das temporadas.",
+        "manageEpisodes": "📺 Gerenciar Episódios",
+        "posterUrl": "URL do Pôster",
+        "backdropUrl": "URL do Plano de Fundo",
+        "active": "Ativo",
+        "cancel": "Cancelar",
+        "save": "Atualizar Série",
+        "updating": "Atualizando..."
+      },
+      "event": {
+        "title": "Editar Evento",
+        "name": "Nome do Evento",
+        "description": "Descrição",
+        "provider": "Provedor",
+        "country": "País",
+        "format": "Formato",
+        "clearkeyKeys": "Chaves ClearKey",
+        "clearkeyHelp": "Formato: kid_hex:key_hex (um por linha ou separado por vírgula)",
+        "streamUrl": "URL da Transmissão",
+        "posterUrl": "URL do Pôster",
+        "active": "Ativo",
+        "cancel": "Cancelar",
+        "save": "Atualizar Evento",
+        "updating": "Atualizando..."
+      }
+    }
+  }
+}

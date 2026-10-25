@@ -1,0 +1,501 @@
+{
+  "layout": {
+    "navigation": {
+      "dashboard": "仪表盘",
+      "subscribers": "订阅者",
+      "connections": "连接",
+      "expirations": "到期",
+      "trialUsers": "试用用户",
+      "walletCredits": "钱包与积分",
+      "apiKeys": "API密钥",
+      "support": "支持",
+      "activityLogs": "活动日志"
+    },
+    "sections": {
+      "main": "主要",
+      "operations": "运营",
+      "finance": "财务",
+      "developer": "开发者",
+      "support": "支持"
+    },
+    "wallet": {
+      "balance": "余额",
+      "addCredits": "添加积分",
+      "currencyUnit": "CR"
+    },
+    "search": {
+      "placeholder": "搜索用户、设备或工单..."
+    },
+    "account": {
+      "reseller": "经销商",
+      "myAccount": "我的账户",
+      "profile": "个人资料",
+      "billing": "账单",
+      "logout": "退出登录"
+    }
+  },
+  "dashboard": {
+    "commandCenter": "经销商控制中心",
+    "welcomeBack": "欢迎回来，{{name}}",
+    "subscribersCount": "{{count}} 位订阅者",
+    "creditsAvailable": "{{credits}} 积分",
+    "statsDescription": "您有 <subscribers>{{subscribers}} 位订阅者</subscribers> 和 <credits>{{credits}} 积分</credits> 可用。",
+    "newUser": "新用户",
+    "newDemo": "新演示",
+    "expiringSoon": "即将到期",
+    "viewAll": "查看全部",
+    "quickActions": "快捷操作",
+    "profileSettings": "个人设置"
+  },
+  "stats": {
+    "noSubscribersYet": "暂无订阅者",
+    "excellent": "优秀",
+    "good": "良好",
+    "fair": "一般",
+    "inactive": "{{count}} 个不活跃",
+    "totalSubscribers": "订阅者总数",
+    "newThisMonth": "本月新增 +{{count}}",
+    "noNewThisMonth": "本月无新增",
+    "networkHealth": "网络健康",
+    "deviceSlots": "设备插槽",
+    "activeUsers": "{{count}} 个活跃用户",
+    "activeDemos": "活跃演示",
+    "trialsInProgress": "试用进行中",
+    "noActiveTrials": "无活跃试用"
+  },
+  "quickActions": {
+    "createUser": "创建用户",
+    "addNewSubscriber": "添加新订阅者",
+    "issueDemo": "发放演示",
+    "generateTrialAccount": "生成试用账户",
+    "manageDevices": "管理设备",
+    "resetOrKillSessions": "重置或终止会话",
+    "userList": "用户列表",
+    "viewAllSubscribers": "查看所有订阅者",
+    "buyCredits": "购买积分",
+    "topUpWallet": "钱包充值",
+    "support": "支持",
+    "openTicket": "开启工单"
+  },
+  "endUsers": {
+    "title": "终端用户",
+    "subtitle": "创建和管理所有经销商的终端用户",
+    "legend": {
+      "demoUser": "演示用户",
+      "expiredDemo": "演示已过期",
+      "demoBadge": "演示徽章"
+    },
+    "badges": {
+      "demo": "演示"
+    },
+    "time": {
+      "expired": "已过期",
+      "never": "永不",
+      "left": "剩余",
+      "hoursMinutes": "{{hours}}小时 {{minutes}}分钟",
+      "minutes": "{{minutes}}分钟",
+      "days": "{{days}} 天",
+      "daysRemaining": "(剩余 {{days}} 天)"
+    },
+    "premium": "高级",
+    "suspended": "已暂停",
+    "demo": "演示",
+    "expired": "已过期",
+    "never": "永不",
+    "endLicense": "许可证到期",
+    "createDialogDescription": "创建新的终端用户帐户。积分将从您的余额中扣除。",
+    "subscriptionDuration": "订阅时长",
+    "selectDuration": "选择时长",
+    "deviceLimit": "设备限制",
+    "selectDeviceLimit": "选择设备限制",
+    "contentCategories": "内容分类",
+    "categoriesHelp": "点击选择此用户可以访问的内容分类。",
+    "creditCostCalculation": "积分费用计算：",
+    "availableCredits": "您的可用积分",
+    "insufficientCredits": "积分不足！",
+    "insufficientCreditsShort": "积分不足",
+    "selectOptions": "选择选项",
+    "needMoreCredits": "您还需要 {{amount}} 积分。",
+    "deviceOptions": {
+      "3": "3台设备（1积分/月）",
+      "5": "5台设备（1.5积分/月）",
+      "6": "6台设备（1.75积分/月）",
+      "7": "7台设备（2积分/月）",
+      "8": "8台设备（2.25积分/月）",
+      "9": "9台设备（2.5积分/月）",
+      "10": "10台设备（2.75积分/月）"
+    },
+    "duration": {
+      "month": "{{count}} 个月",
+      "month_plural": "{{count}} 个月",
+      "months": "{{count}} 个月"
+    },
+    "validation": {
+      "usernameMin": "用户名必须至少3个字符",
+      "passwordMin": "密码必须至少4位数字",
+      "passwordMax": "密码最多10位数字",
+      "passwordDigits": "密码只能包含数字",
+      "invalidEmail": "无效的电子邮件地址",
+      "durationMin": "最少1个月",
+      "durationMax": "最多12个月",
+      "selectDeviceLimit": "请选择设备限制",
+      "selectCategory": "请至少选择一个分类"
+    },
+    "errors": {
+      "failedToLoadUsers": "加载用户失败"
+    },
+    "selectDurationAndDevices": "选择时长和设备",
+    "monthPlural": "个月",
+    "monthsPlural": "个月",
+    "creditPerMonth": "积分/月",
+    "creditsPerMonth": "积分/月",
+    "creditBreakdown": "{{duration}} {{durationUnit}} × {{devices}} 台设备 ({{costPerMonth}} {{costUnit}}) = {{total}} 积分"
+  },
+  "dialogs": {
+    "suspend": {
+      "title": "禁用用户",
+      "description": "您确定要暂停 {{username}} 吗？这将断开其所有活动设备的连接。"
+    },
+    "activate": {
+      "title": "启用用户",
+      "description": "您确定要激活 {{username}} 吗？"
+    },
+    "delete": {
+      "title": "删除用户",
+      "description": "您确定要永久删除 {{username}} 吗？此操作无法撤销。"
+    }
+  },
+  "activityLogs": {
+    "title": "活动日志",
+    "description": "查看您最近的活动和操作",
+    "refresh": "刷新",
+    "noLogs": "未找到活动日志",
+    "errorLoading": "加载日志错误: {{message}}",
+    "filters": {
+      "actionType": "操作类型",
+      "allActions": "所有操作",
+      "startDate": "开始日期",
+      "endDate": "结束日期"
+    },
+    "actionTypes": {
+      "USER_CREATED": "用户已创建",
+      "USER_DELETED": "用户已删除",
+      "USER_EXTENDED": "用户已延期",
+      "CREDIT_USED": "积分已使用",
+      "DEMO_CREATED": "演示已创建",
+      "LOGIN": "登录",
+      "LOGOUT": "登出"
+    },
+    "table": {
+      "date": "日期",
+      "action": "操作",
+      "targetUser": "目标用户",
+      "description": "描述",
+      "credits": "积分"
+    },
+    "pagination": {
+      "showing": "显示 {{from}} 至 {{to}} 共 {{total}} 条结果",
+      "previous": "上一页",
+      "next": "下一页",
+      "pageOf": "第 {{page}} 页 / 共 {{totalPages}} 页"
+    }
+  },
+  "editUser": {
+    "dialogTitle": "编辑用户: {{username}}",
+    "dialogDescription": "编辑用户详情、管理订阅和延长访问权限",
+    "editDetailsTitle": "编辑用户详情",
+    "editDetailsDescription": "更新用户信息和密码",
+    "validation": {
+      "minMonth": "最少1个月",
+      "maxExtension": "最多延长12个月",
+      "usernameMinLength": "用户名必须至少3个字符",
+      "invalidEmail": "无效的电子邮件地址",
+      "passwordMinLength": "密码必须至少4位数字",
+      "passwordMaxLength": "密码最多10位数字",
+      "passwordDigitsOnly": "密码只能包含数字",
+      "maxDevicesLimit": "最多允许10台设备",
+      "selectCategory": "请至少选择一个分类"
+    },
+    "labels": {
+      "username": "用户名",
+      "email": "电子邮件",
+      "newPassword": "新密码（4-10位数字）",
+      "maxDevices": "最大设备数",
+      "categories": "分类",
+      "deviceLimit": "设备限制",
+      "status": "状态",
+      "expirationDate": "到期日期",
+      "currentCategories": "当前分类"
+    },
+    "placeholders": {
+      "enterUsername": "输入用户名",
+      "enterEmail": "输入电子邮件",
+      "leaveEmptyToKeep": "留空以保持当前密码"
+    },
+    "creditWarning": {
+      "title": "积分费用警告",
+      "addingDevices": "添加 {{count}} 台设备将花费",
+      "addingDevicesPlural": "添加 {{count}} 台设备将花费",
+      "credits": "{{amount}} 积分",
+      "calculation": "(剩余 {{days}} 天 × 每月每台设备 0.25 积分)"
+    },
+    "subscription": {
+      "title": "当前订阅",
+      "devices": "{{count}} 台设备",
+      "expired": "已过期",
+      "active": "活跃",
+      "noCategories": "未分配分类"
+    },
+    "extend": {
+      "title": "延长订阅",
+      "description": "为此用户的订阅增加更多月份（最多12个月）",
+      "periodLabel": "延长期限",
+      "selectPeriod": "选择延长期限",
+      "costCalculation": "延长费用计算：",
+      "availableCredits": "您的可用积分",
+      "insufficientCredits": "积分不足！",
+      "needMoreCredits": "您还需要 {{amount}} 积分。",
+      "selectExtension": "选择延长",
+      "breakdown": {
+        "device": "台设备",
+        "devicesPlural": "台设备",
+        "monthsDevices": "{{months}} {{monthLabel}} × {{devices}} {{deviceLabel}}",
+        "oneCredit": "(1积分/月)",
+        "extraDevices": "(1基础 + {{extraDevices}} × 0.25 = {{creditsPerMonth}} 积分/月)",
+        "credit": "积分",
+        "creditsPlural": "积分",
+        "totalCredits": "= {{cost}} {{creditLabel}}"
+      }
+    },
+    "buttons": {
+      "cancel": "取消",
+      "updating": "更新中...",
+      "updateUser": "更新用户",
+      "extending": "延长中...",
+      "extendSubscription": "延长订阅（{{cost}} 积分）",
+      "insufficientCredits": "积分不足"
+    },
+    "loading": {
+      "categories": "加载分类中..."
+    },
+    "empty": {
+      "noCategories": "无可用分类"
+    },
+    "errors": {
+      "extendFailed": "延长订阅失败",
+      "noUserSelected": "未选择用户"
+    }
+  },
+  "buyCredits": {
+    "title": "购买积分",
+    "description": "通过Stripe Checkout购买平台积分。积分用于创建和管理终端用户。",
+    "loadingPricing": "正在加载当前价格...",
+    "retry": "重试",
+    "basePrice": "基础价格",
+    "perCredit": "每积分",
+    "yourDiscount": "您的数量折扣",
+    "applied": "已应用",
+    "none": "无",
+    "effectiveUnitPrice": "实际单价",
+    "quantityLabel": "数量（积分）",
+    "quantityHint": "输入您要购买的积分数量",
+    "totalAmount": "总金额",
+    "includesDiscount": "包含{{discount}}%批量折扣",
+    "noDiscount": "此数量无折扣",
+    "redirecting": "正在跳转...",
+    "proceedToCheckout": "前往结账",
+    "volumeDiscountTiers": "批量折扣等级",
+    "minQuantity": "最小数量",
+    "discount": "折扣",
+    "noTiers": "未配置等级。适用基础价格。",
+    "invalidQuantity": "请输入大于0的有效数量",
+    "errors": {
+      "failedLoadPricing": "加载价格失败",
+      "failedCreateCheckout": "创建结账会话失败"
+    }
+  },
+  "expirationMonitoring": {
+    "title": "用户到期监控",
+    "errorLoading": "加载到期数据失败，请重试。",
+    "neverExpires": "永不过期",
+    "noEmail": "无邮箱",
+    "status": {
+      "expired": "已过期",
+      "day": "{{count}} 天",
+      "days": "{{count}} 天",
+      "noExpiration": "无到期日",
+      "active": "活跃",
+      "inactive": "非活跃"
+    },
+    "summary": {
+      "expired": "已过期",
+      "critical": "紧急 (≤2天)",
+      "warning": "警告 (3-5天)",
+      "good": "正常 (>5天)",
+      "noExpiration": "无到期日"
+    },
+    "details": {
+      "criticalTitle": "紧急到期",
+      "criticalDescription": "需要立即关注的用户（2天内到期）",
+      "fullTitle": "用户到期详情",
+      "fullDescription": "监控用户账户的到期日期和状态"
+    },
+    "table": {
+      "username": "用户名",
+      "email": "邮箱",
+      "expirationDate": "到期日期",
+      "status": "状态",
+      "active": "活跃"
+    },
+    "empty": {
+      "noCritical": "无紧急到期",
+      "noCriticalDescription": "所有用户距离到期都超过2天。",
+      "noUsers": "未找到用户",
+      "noUsersDescription": "创建一些终端用户以监控其到期日期。"
+    }
+  },
+  "analytics": {
+    "active": "活跃",
+    "inactive": "非活跃",
+    "acquisitionTrend": "获客趋势",
+    "acquisitionDescription": "过去6个月的新订阅用户",
+    "networkStatus": "网络状态",
+    "networkDescription": "活跃用户与暂停用户对比",
+    "totalUsers": "用户总数"
+  },
+  "profile": {
+    "title": "经销商资料",
+    "description": "管理您的账户设置和偏好",
+    "contactInformation": "联系信息",
+    "emailPlaceholder": "your@email.com",
+    "contactInfoNote": "我们将使用此邮箱发送重要通知",
+    "saveChanges": "保存更改",
+    "changePassword": "修改密码",
+    "newPasswordLabel": "新密码",
+    "newPasswordPlaceholder": "输入新密码",
+    "confirmPasswordLabel": "确认密码",
+    "confirmPasswordPlaceholder": "确认新密码",
+    "passwordHelp": "密码必须至少8个字符",
+    "updatePassword": "更新密码",
+    "updated": "资料更新成功",
+    "updateFailed": "资料更新失败",
+    "passwordUpdated": "密码更新成功",
+    "updatePasswordFailed": "密码更新失败",
+    "passwordTooShort": "密码必须至少8个字符",
+    "enterAndConfirmPassword": "请输入并确认您的新密码",
+    "passwordsDoNotMatch": "密码不匹配"
+  },
+  "creditBalance": {
+    "title": "积分余额",
+    "availableCredits": "可用积分",
+    "lowBalance": "余额不足",
+    "available": "可用",
+    "creditsAvailableDescription": "可用于创建新用户的积分",
+    "lowBalanceWarning": "您的积分余额较低。请联系管理员添加更多积分。",
+    "totalUsers": "用户总数",
+    "endUsersCreated": "已创建的终端用户",
+    "creditsUsed": "已用积分",
+    "totalCreditsConsumed": "已消耗的总积分",
+    "creditSummary": {
+      "title": "积分摘要",
+      "description": "积分使用和余额概览",
+      "initialCredits": "初始积分",
+      "creditsUsed": "已用积分",
+      "availableCredits": "可用积分",
+      "usageRate": "使用率"
+    },
+    "userBreakdown": {
+      "title": "用户积分明细",
+      "description": "根据设备配置的每用户积分成本",
+      "device": "设备",
+      "devices": "设备",
+      "credits": "积分"
+    },
+    "calculationGuide": {
+      "title": "积分计算指南",
+      "description": "了解不同设备配置的积分计算方式",
+      "standardDevices": "3设备（标准）",
+      "standardCredits": "1.0积分",
+      "standardDescription": "终端用户最常见的配置",
+      "premiumDevices": "5设备（高级）",
+      "premiumCredits": "1.5积分",
+      "premiumDescription": "更多设备的高级套餐",
+      "extraDevices": "额外设备",
+      "extraCredits": "每个+0.25积分",
+      "extraDescription": "超过3个设备后每增加一个的额外成本",
+      "examples": "示例：",
+      "example1Device": "1个设备",
+      "example1DeviceCost": "1.0积分",
+      "example4Devices": "4个设备",
+      "example4DevicesCost": "1.25积分",
+      "example6Devices": "6个设备",
+      "example6DevicesCost": "1.75积分"
+    }
+  },
+  "supportTickets": {
+    "descriptionPlaceholder": "请提供有关您问题的详细信息...",
+    "header": {
+      "title": "支持票",
+      "description": "创建和管理您的支持请求",
+      "unreadSingle": "您有 {{count}} 条未读消息",
+      "unreadPlural": "您有 {{count}} 条未读消息",
+      "createTicket": "创建票证"
+    },
+    "createDialog": {
+      "title": "创建支持票",
+      "description": "描述您的问题，我们将尽快帮助您解决。",
+      "titleLabel": "标题",
+      "titlePlaceholder": "您的问题的简要摘要",
+      "categoryLabel": "类别",
+      "priorityLabel": "优先事项",
+      "descriptionLabel": "描述",
+      "descriptionPlaceholder": "请提供有关您的问题的详细信息...",
+      "cancel": "取消",
+      "creating": "创造...",
+      "create": "创建票证"
+    },
+    "categories": {
+      "technical": "技术问题",
+      "billing": "计费问题",
+      "account": "账户支持",
+      "content": "内容问题",
+      "other": "其他"
+    },
+    "priorities": {
+      "low": "低的",
+      "medium": "中等的",
+      "high": "高的",
+      "urgent": "紧迫的"
+    },
+    "stats": {
+      "total": "全部的",
+      "open": "打开",
+      "inProgress": "进行中",
+      "resolved": "已解决"
+    },
+    "list": {
+      "title": "我的支持票",
+      "empty": "没有找到票。在上面创建您的第一张支持票。",
+      "countSingle": "找到 {{count}} 票",
+      "countPlural": "找到 {{count}} 门票",
+      "filter": "筛选",
+      "sort": "种类",
+      "refresh": "刷新"
+    },
+    "empty": {
+      "title": "还没有支持票",
+      "description": "通过创建您的第一张票证，获得我们支持团队的帮助。我们随时为您提供帮助！",
+      "createFirst": "创建您的第一张票"
+    },
+    "errors": {
+      "createFailed": "创建工单失败",
+      "createFailedRetry": "创建工单失败。请再试一次。",
+      "sendFailed": "发送消息失败",
+      "sendFailedRetry": "发送消息失败。请再试一次。"
+    }
+  },
+  "secretKeyCopied": "密钥已复制到剪贴板",
+  "iHaveCopiedMyKey": "我已复制我的密钥",
+  "noUsersFound": "未找到用户",
+  "noCriticalExpirations": "无关键过期"
+}

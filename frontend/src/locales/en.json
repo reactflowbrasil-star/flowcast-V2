@@ -1,0 +1,2577 @@
+{
+  "common": {
+    "create": "Create",
+    "edit": "Edit",
+    "delete": "Delete",
+    "save": "Save",
+    "cancel": "Cancel",
+    "submit": "Submit",
+    "close": "Close",
+    "copy": "Copy",
+    "open": "Open",
+    "dismiss": "Dismiss",
+    "back": "Back",
+    "next": "Next",
+    "previous": "Previous",
+    "loading": "Loading...",
+    "error": "Error",
+    "success": "Success",
+    "warning": "Warning",
+    "info": "Info",
+    "confirm": "Confirm",
+    "yes": "Yes",
+    "no": "No",
+    "ok": "OK",
+    "search": "Search",
+    "filter": "Filter",
+    "sort": "Sort",
+    "export": "Export",
+    "import": "Import",
+    "upload": "Upload",
+    "download": "Download",
+    "select": "Select",
+    "selected": "Selected",
+    "all": "All",
+    "none": "None",
+    "notAvailable": "N/A",
+    "unknown": "Unknown",
+    "enabled": "Enabled",
+    "disabled": "Disabled",
+    "active": "Active",
+    "inactive": "Inactive",
+    "pending": "Pending",
+    "completed": "Completed",
+    "failed": "Failed",
+    "title": "Title",
+    "description": "Description",
+    "name": "Name",
+    "email": "Email",
+    "optional": "optional",
+    "password": "Password",
+    "username": "Username",
+    "status": "Status",
+    "date": "Date",
+    "time": "Time",
+    "type": "Type",
+    "category": "Category",
+    "action": "Action",
+    "actions": "Actions",
+    "settings": "Settings",
+    "configuration": "Configuration",
+    "management": "Management",
+    "manage": "and manage",
+    "endUsers": "End Users",
+    "across": "across",
+    "saved": "Changes saved",
+    "provider": "Provider",
+    "country": "Country",
+    "columns": "Columns",
+    "dashboard": "Dashboard",
+    "overview": "Overview",
+    "details": "Details",
+    "summary": "Summary",
+    "statistics": "Statistics",
+    "failedLogins": "Failed Logins",
+    "today": "Today",
+    "views": "views",
+    "analytics": "Analytics",
+    "reports": "Reports",
+    "logs": "Logs",
+    "history": "History",
+    "activity": "Activity",
+    "notifications": "Notifications",
+    "messages": "Messages",
+    "tickets": "Tickets",
+    "support": "Support",
+    "help": "Help",
+    "about": "About",
+    "version": "Version",
+    "language": "Language",
+    "theme": "Theme",
+    "somethingWentWrong": "Something went wrong",
+    "saving": "Saving...",
+    "tryAgain": "Try Again",
+    "logout": "Logout",
+    "loggingOut": "Logging out...",
+    "confirmLogoutTitle": "Confirm Logout",
+    "confirmLogoutDescription": "Are you sure you want to logout, {{user}}? You will need to sign in again to access your account.",
+    "justNow": "Just now",
+    "refresh": "Refresh",
+    "activityDashboard": "Activity Dashboard",
+    "activitySubtitle": "System activity and engagement metrics",
+    "autoRefreshState": "Auto-refresh: {{state}}",
+    "on": "ON",
+    "off": "OFF",
+    "enable": "Enable",
+    "disable": "Disable",
+    "loginsToday": "Logins today",
+    "activeUsers": "Active users",
+    "last7Days": "Last 7 days",
+    "contentViews": "Content views",
+    "deviceDistribution": "Device distribution",
+    "mostViewedContent": "Most viewed content",
+    "noViewingData": "No viewing data",
+    "multiDeviceUsers": "Multi-device users",
+    "noMultiDeviceUsers": "No users with multiple devices",
+    "activity24h": "Activity (24h)",
+    "removing": "Removing...",
+    "sessionExpiredTitle": "Session Expired",
+    "sessionExpiredDescription": "You have been logged out. Please log in again.",
+    "noPermission": "You do not have permission to perform this action.",
+    "notFound": "The requested resource was not found.",
+    "pageNotFoundTitle": "Page Not Found",
+    "goToLogin": "Go to Login",
+    "invalidData": "Invalid data provided.",
+    "tooManyRequests": "Too many requests. Please try again later.",
+    "serverError": "Server error. Please try again later.",
+    "serviceUnavailable": "Service temporarily unavailable. Please try again later.",
+    "networkErrorTitle": "Network Error",
+    "networkErrorDescription": "Unable to connect to the server. Please check your internet connection.",
+    "operationFailedTitle": "Operation Failed",
+    "operationFailedWithContext": "{{context}} Failed",
+    "validationErrorTitle": "Validation Error",
+    "authErrorTitle": "Authentication Error",
+    "permissionDeniedTitle": "Permission Denied",
+    "deviceDisconnectedTitle": "Device Disconnected",
+    "deviceDisconnectedDescription": "Your device has been disconnected. Redirecting to login...",
+    "unexpectedErrorDescription": "An unexpected error occurred. We apologize for the inconvenience.",
+    "unknownError": "Unknown error occurred",
+    "technicalDetails": "Technical Details",
+    "errorDetails": "Error Details",
+    "componentStack": "Component Stack:",
+    "errorId": "Error ID",
+    "reload": "Reload",
+    "reloadPage": "Reload Page",
+    "goHome": "Go Home",
+    "paginationShowing": "Page {{page}} of {{totalPages}}",
+    "contactSupport": "If this problem persists, please contact support with the error ID above.",
+    "tmdbAttribution": "This product uses the TMDB API but is not endorsed or certified by TMDB.",
+    "processing": "Processing...",
+    "retry": "Retry",
+    "add": "Add",
+    "remove": "Remove",
+    "noData": "No data available",
+    "noDescription": "No description provided",
+    "copied": "Copied",
+    "expired": "Expired",
+    "change": "Change",
+    "continue": "Continue",
+    "createDescription": "Fill in the details to create a new entry.",
+    "editDescription": "Modify the details of this entry.",
+    "minVersion": "Minimum Version",
+    "selectApk": "Select APK file",
+    "size": "Size",
+    "suspended": "Suspended",
+    "timestamp": "Timestamp",
+    "versionCodeRequired": "Version code is required",
+    "year": "Year",
+    "total": "Total",
+    "apply": "Apply",
+    "reset": "Reset",
+    "uploading": "Uploading...",
+    "updating": "Updating...",
+    "creating": "Creating..."
+  },
+  "pagination": {
+    "previous": "Previous",
+    "next": "Next",
+    "pageOf": "Page {{page}} of {{totalPages}}",
+    "showing": "Showing {{from}} to {{to}} of {{total}} results"
+  },
+  "placeholders": {
+    "currentPassword": "Enter current password",
+    "enterCountry": "e.g., US, MX, ES...",
+    "enterDescription": "Enter description...",
+    "enterName": "Enter name...",
+    "enterPosterUrl": "e.g., https://example.com/poster.jpg",
+    "enterProvider": "e.g., Cable, OTT, etc.",
+    "enterStreamUrl": "e.g., https://example.com/video.m3u8",
+    "enterTitle": "Enter title...",
+    "enterUsername": "Enter username...",
+    "expiryDateTime": "Select expiry date and time",
+    "maximumDevices": "Maximum number of devices",
+    "playlistUrl": "Enter playlist URL...",
+    "providerName": "Enter provider name...",
+    "selectCategory": "Select category...",
+    "selectChannel": "Select a channel...",
+    "selectDrmType": "Select DRM type...",
+    "selectFormat": "Select format...",
+    "selectReseller": "Select a reseller...",
+    "selectSource": "Select source...",
+    "selectSourceFirst": "Select a source first",
+    "userEmail": "user@example.com"
+  },
+  "createContent": {
+    "addNew": "Add new {{type}}",
+    "add": "Add {{type}}",
+    "dialogDescription": "Search TMDB for automatic metadata or add content manually",
+    "description": "Provide details to create {{type}} or import from TMDB",
+    "tmdbSearch": "Search TMDB",
+    "manualEntry": "Manual entry",
+    "searchLabel": "Search {{type}}",
+    "searchPlaceholder": "Search {{type}} on TMDB...",
+    "searching": "Searching...",
+    "searchTmdb": "Search TMDB",
+    "searchingTmdb": "Searching TMDB...",
+    "findingMatches": "Finding best matches for \"{{query}}\"",
+    "searchResults": "Search results",
+    "resultsFound": "{{count}} results found",
+    "noDescription": "No description available",
+    "noResultsFound": "No results found",
+    "noResultsDescription": "We couldn't find any {{type}} matching \"{{query}}\"",
+    "suggestions": {
+      "tryKeywords": "Try different keywords",
+      "checkSpelling": "Check spelling",
+      "useOriginalTitle": "Use original title"
+    },
+    "switchToManual": "Switch to manual entry",
+    "manualAlert": "Fill in content details manually. All fields except video URL are optional.",
+    "idLabel": "ID: {{id}}",
+    "createButton": "Create {{type}}",
+    "creating": "Creating...",
+    "metadataLoaded": "Metadata loaded from TMDB: {{title}} (ID: {{id}})",
+    "searchFailed": "Search failed",
+    "unknownYear": "Unknown",
+    "labels": {
+      "title": "Title",
+      "year": "Year",
+      "description": "Description",
+      "videoUrl": "Video URL",
+      "posterUrl": "Poster URL",
+      "backdropUrl": "Backdrop URL",
+      "channelNumber": "Channel Number",
+      "provider": "Provider",
+      "country": "Country",
+      "format": "Format",
+      "drmKeys": "DRM Keys",
+      "origin": "Origin header",
+      "userAgent": "User Agent",
+      "referer": "Referer header",
+      "customHeaders": "Custom headers (JSON)",
+      "channelCategory": "Channel Category",
+      "drmType": "DRM Type",
+      "licenseServerUrl": "License Server URL",
+      "licenseRequestHeadersOptional": "License Request Headers (optional)",
+      "httpProxyOptional": "HTTP Proxy (optional)",
+      "dohOptional": "DNS-over-HTTPS (optional)",
+      "liveChannel": "Live Channel",
+      "airDate": "Air Date",
+      "videoUrlOptional": "Video URL (Optional)",
+      "chapterPosterUrl": "Chapter Poster URL",
+      "externalSubtitleOptional": "External Subtitle (optional)",
+      "subtitleFile": "Subtitle File (.srt/.vtt)"
+    },
+    "form": {
+      "titlePlaceholder": "Enter title",
+      "yearPlaceholder": "2024",
+      "descriptionPlaceholder": "Enter description",
+      "videoUrlPlaceholder": "https://example.com/video.m3u8",
+      "posterUrlPlaceholder": "https://example.com/poster.jpg",
+      "backdropUrlPlaceholder": "https://example.com/backdrop.jpg",
+      "channelNumberPlaceholder": "e.g., 1, 2, 3...",
+      "providerPlaceholder": "e.g., Cable, OTT, etc.",
+      "countryPlaceholder": "e.g., US, MX, ES...",
+      "formatSelectPlaceholder": "Select format...",
+      "formatOption": {
+        "m3u8": "M3U8",
+        "drm": "DRM"
+      },
+      "drmPlaceholder": "Enter ClearKey pairs in hex format: c50f8758b7fb4bf886dd561a7cda6e84:0541856bd180caf65d26a9eaf33e0f24",
+      "originPlaceholder": "https://example.com",
+      "userAgentPlaceholder": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)...",
+      "refererPlaceholder": "https://referer-site.com",
+      "customHeadersPlaceholder": "{\"X-Custom-Header\": \"value\", \"Authorization\": \"Bearer token\"}",
+      "channelCategoryPlaceholder": "Select category...",
+      "drmTypePlaceholder": "Select DRM type...",
+      "drmType": {
+        "clearkey": "ClearKey",
+        "widevine": "Widevine",
+        "playready": "PlayReady"
+      },
+      "licenseServerUrlPlaceholder": "https://license.example.com/widevine",
+      "licenseHeadersPlaceholder": "{\"X-AxDRM-Message\": \"your-token-here\", \"Authorization\": \"Bearer token\"}",
+      "customHeadersLinesPlaceholder": "X-Custom-Header: value1\nX-Another-Header: value2",
+      "proxyUrlPlaceholder": "http://user:pass@ip:port",
+      "dohUrlPlaceholder": "https://dns.google/dns-query",
+      "chapterTitlePlaceholder": "Chapter title",
+      "episodeTitlePlaceholder": "Episode title",
+      "chapterDescriptionPlaceholder": "Chapter description...",
+      "chapterVideoUrlPlaceholder": "Video URL (optional)",
+      "chapterPosterUrlPlaceholder": "https://example.com/chapter-poster.jpg",
+      "subtitleLanguagePlaceholder": "en"
+    },
+    "tv": {
+      "tvSettingsTitle": "TV channel settings",
+      "liveTvTitle": "LiveTV headers settings",
+      "drmFormatNote": "Format: kid_hex:key_hex (one per line or comma-separated)",
+      "originNote": "Origin header for cross-origin requests (optional)",
+      "userAgentNote": "User-Agent to emulate browser/device (optional)",
+      "refererNote": "Referer header for request origin (optional)",
+      "customHeadersNote": "Additional headers as JSON (optional)",
+      "drmTypeHelp": "ClearKey: Local keys (hex format) | Widevine/PlayReady: License server required",
+      "widevineLicenseHelp": "Widevine license server URL (e.g., from PallyCon, BuyDRM, Axinom)",
+      "playreadyLicenseHelp": "PlayReady license server URL",
+      "licenseHeadersHelp": "JSON object with custom headers for license requests (authentication tokens, etc.)",
+      "proxyHelp": "Only for geoblocked channels. Format: http://user:pass@ip:port",
+      "dohHelp": "Optional DoH resolver to bypass DNS blocking. Must be an http(s) URL."
+    },
+    "createdSuccess": "{{type}} created successfully",
+    "loadingCategories": "Loading categories...",
+    "untitled": "Untitled",
+    "urlSet": "URL Set",
+    "noUrl": "No URL",
+    "addEpisode": "Add Episode",
+    "removeChapter": "Remove Chapter",
+    "chapterLabel": "Chapter {{number}}: {{title}}",
+    "chapterDescriptionLabel": "Chapter Description",
+    "chapterTitle": "Chapter Title",
+    "episodeTitle": "Episode Title",
+    "episodesTitle": "Episodes",
+    "episodesDescription": "Manage episodes for this content",
+    "uploadingEpisodesSuccess": "Episode videos uploaded successfully",
+    "uploadingEpisodesError": "Some episode videos failed to upload. Please check and re-upload."
+  },
+  "theme": {
+    "light": "Light",
+    "dark": "Dark",
+    "midnight": "Midnight",
+    "darkBlue": "Dark Blue",
+    "system": "System",
+    "placeholder": "Theme"
+  },
+  "language": {
+    "english": "English",
+    "spanish": "Spanish",
+    "french": "French",
+    "portuguese": "Portuguese",
+    "russian": "Russian",
+    "turkish": "Turkish",
+    "slovak": "Slovak",
+    "chinese": "Chinese",
+    "placeholder": "Language"
+  },
+  "user": {
+    "common": {
+      "verified": "Verified",
+      "watch": "Watch",
+      "titleCount": "{{count}} title",
+      "titleCount_plural": "{{count}} titles",
+      "seriesCount": "{{count}} series",
+      "seriesCount_plural": "{{count}} series",
+      "animeCount": "{{count}} anime",
+      "animeCount_plural": "{{count}} anime",
+      "eventCount": "{{count}} event",
+      "eventCount_plural": "{{count}} events",
+      "channelCount": "{{count}} channel",
+      "channelCount_plural": "{{count}} channels",
+      "noResults": "No results found",
+      "adjustSearch": "Try adjusting your search or filters",
+      "tryDifferent": "Try using different search terms",
+      "reload": "Please try reloading the page"
+    },
+    "filters": {
+      "clear": "Clear filter",
+      "allGenres": "All genres",
+      "allTypes": "All types",
+      "allStatus": "All status",
+      "sortTitle": "Sort by title",
+      "sortYear": "Sort by year",
+      "sortRating": "Sort by rating",
+      "searchMovies": "Search movies...",
+      "searchShows": "Search TV shows...",
+      "searchKids": "Search kids content...",
+      "searchAnime": "Search anime...",
+      "searchEvents": "Search events...",
+      "searchChannels": "Search channels..."
+    },
+    "live": {
+      "title": "Live TV",
+      "toggleChannels": "Channels",
+      "toggleGuide": "Guide",
+      "categoryCount": "{{count}} category",
+      "categoryCount_plural": "{{count}} categories",
+      "channelsLive": "{{count}} channels live",
+      "nowPlaying": "Now Playing",
+      "minutesLeft": "{{count}} min left",
+      "upNext": "Up Next",
+      "unknownChannel": "Unknown Channel",
+      "providerFallback": "{{appName}}",
+      "channelGuide": "Channel Guide",
+      "noChannelsFound": "No channels found",
+      "streamUnavailableTitle": "Stream Unavailable",
+      "streamUnavailableDescription": "This channel is currently unavailable. Please try again later.",
+      "toastCurrentlyViewing": "Currently viewing {{title}}",
+      "noProgramInfo": "No program information available",
+      "liveBadge": "LIVE",
+      "loadingCategories": "Loading categories...",
+      "noCategories": "No categories available",
+      "loadingChannels": "Loading channels...",
+      "loadingStream": "Loading stream...",
+      "streamFailed": "Failed to load stream",
+      "streamError": "Error loading stream",
+      "selectPrompt": "Select a channel to start watching",
+      "playbackError": "Playback Error",
+      "categories": {
+        "sports": "Sports",
+        "entertainment": "Entertainment",
+        "news": "News",
+        "movies": "Movies"
+      },
+      "epg": {
+        "errors": {
+          "loadFailed": "Failed to load program guide"
+        },
+        "loading": "Loading program guide...",
+        "liveProgramming": "Live Programming",
+        "noProgramInfo": "No program information available",
+        "previous24h": "Previous 24h",
+        "next24h": "Next 24h",
+        "liveNow": "Live Now",
+        "live": "Live",
+        "upcoming": "Upcoming",
+        "liveBadge": "LIVE",
+        "clickToWatch": "Click to watch",
+        "watchChannel": "Watch Channel"
+      }
+    },
+    "menu": {
+      "liveTv": "Live TV"
+    },
+    "movies": {
+      "emptyTitle": "No movies found",
+      "emptyDescription": "Try adjusting your search or filters"
+    },
+    "shows": {
+      "status": {
+        "ongoing": "Ongoing",
+        "completed": "Completed",
+        "cancelled": "Cancelled",
+        "unknown": "Unknown"
+      },
+      "loading": "Loading TV shows...",
+      "emptyTitle": "No TV shows found",
+      "emptyDescription": "Try adjusting your search or filters"
+    },
+    "kids": {
+      "errorTitle": "Error loading kids content",
+      "searchPlaceholder": "Search kids content...",
+      "emptyTitle": "No kids content available",
+      "emptySearchTitle": "No results found",
+      "emptySearchDescription": "Try using different search terms"
+    },
+    "anime": {
+      "errorTitle": "Error loading anime",
+      "searchPlaceholder": "Search anime...",
+      "emptyTitle": "No anime available",
+      "emptySearchTitle": "No results found",
+      "emptySearchDescription": "Try using different search terms"
+    },
+    "events": {
+      "errorTitle": "Error loading events",
+      "searchPlaceholder": "Search events...",
+      "emptyTitle": "No events available",
+      "emptySearchTitle": "No results found",
+      "emptySearchDescription": "Try using different search terms"
+    },
+    "favorites": {
+      "title": "My Favorites",
+      "description": "All your favorite content in one place",
+      "all": "All",
+      "movies": "Movies",
+      "series": "TV Shows",
+      "channels": "Channels",
+      "emptyTitle": "You don't have favorites yet",
+      "emptyDescription": "Start adding content to your favorites",
+      "emptyMoviesTitle": "You don't have favorite movies",
+      "emptyMoviesDescription": "Add movies to your favorites from the movies section",
+      "emptySeriesTitle": "You don't have favorite TV shows",
+      "emptySeriesDescription": "Add TV shows to your favorites from the TV shows section",
+      "emptyChannelsTitle": "You don't have favorite channels",
+      "emptyChannelsDescription": "Add channels to your favorites from the Live TV section"
+    },
+    "music": {
+      "unknownTrack": "Unknown track",
+      "unknownArtist": "Unknown artist",
+      "unknownAlbum": "Unknown album",
+      "unknownYear": "Unknown year",
+      "searchingFor": "Searching for"
+    },
+    "player": {
+      "audioInfo": "Audio information",
+      "audioTracksTitle": "Audio Tracks",
+      "audioTracksTitleWithCount": "Audio Tracks ({{count}})",
+      "noAudioTracks": "No audio tracks detected",
+      "noAudioTracksHelpLine1": "This video may have integrated audio without separate tracks,",
+      "noAudioTracksHelpLine2": "or your browser does not support the AudioTracks API.",
+      "subtitlesTitle": "Subtitles",
+      "noSubtitles": "No subtitles",
+      "playbackSpeed": "Speed"
+    }
+  },
+  "auth": {
+    "accessDenied": "Access Denied",
+    "noPermissionTitle": "Insufficient Permissions",
+    "noPermissionDescription": "You don't have permission to access this page",
+    "permissionDetail": "Your current role ({{role}}) doesn't have access to this resource. Required roles: {{required}}.",
+    "goToDashboard": "Go to Dashboard",
+    "errors": {
+      "usernameNotFound": "Username not found. Please check your username and try again.",
+      "incorrectPassword": "Incorrect password. Please check your password and try again.",
+      "accountDeactivated": "Your account has been deactivated. Please contact support.",
+      "invalidCredentials": "Invalid username or password. Please check your credentials.",
+      "accessDeniedAdminUI": "Access denied. This web interface is only available for administrators and resellers."
+    },
+    "session": {
+      "notAuthenticated": "Not authenticated",
+      "sessionExpired": "Session expired",
+      "sessionExpiringSoon": "Session expiring soon",
+      "sessionActive": "Session active",
+      "title": "Session Status",
+      "description": "Current authentication session information",
+      "status": "Status:",
+      "user": "User:",
+      "role": "Role:",
+      "expiresIn": "Session expires in:",
+      "validating": "Validating...",
+      "validateSession": "Validate Session",
+      "willExpireIn": "Your session will expire in",
+      "refreshSession": "Refresh session",
+      "sessionExpiringCompact": "Session expiring",
+      "sessionActiveCompact": "Session active"
+    },
+    "forgotPasswordFlow": {
+      "backToLogin": "Back to Login",
+      "checkYourEmailDescription": "If an account with that email exists, we've sent you a link to reset your password. Please check your inbox and spam folder.",
+      "checkYourEmailTitle": "Check Your Email",
+      "emailAddressLabel": "Email Address",
+      "failedToSendResetEmail": "Failed to send reset email",
+      "forgotPasswordDescription": "Enter your email address and we'll send you a link to reset your password.",
+      "forgotPasswordTitle": "Forgot Password?",
+      "genericError": "An error occurred",
+      "sendResetLink": "Send Reset Link",
+      "sending": "Sending..."
+    },
+    "resetPasswordFlow": {
+      "backToLogin": "Back to Login",
+      "confirmPasswordLabel": "Confirm Password",
+      "confirmPasswordPlaceholder": "Confirm new password",
+      "createNewPasswordFor": "Create a new password for",
+      "genericError": "An error occurred",
+      "goToLogin": "Go to Login",
+      "invalidOrExpiredDescription": "This password reset link is invalid or has expired. Please request a new one.",
+      "invalidOrExpiredTitle": "Invalid or Expired Link",
+      "newPasswordLabel": "New Password",
+      "newPasswordPlaceholder": "Enter new password",
+      "passwordMinLength": "Password must be at least 6 characters",
+      "passwordsDoNotMatch": "Passwords do not match",
+      "requestNewLink": "Request New Link",
+      "resetFailed": "Failed to reset password",
+      "resetPasswordButton": "Reset Password",
+      "resetYourPassword": "Reset Your Password",
+      "resetting": "Resetting...",
+      "successDescription": "Your password has been updated. You can now login with your new password.",
+      "successTitle": "Password Reset Successfully",
+      "verifyingLink": "Verifying reset link..."
+    },
+    "twoFactorModal": {
+      "title": "Two-Factor Authentication",
+      "totpDescription": "Enter the 6-digit code from your authenticator app",
+      "backupDescription": "Enter one of your 8-character backup codes",
+      "authenticationCode": "Authentication Code",
+      "totpPlaceholder": "000000",
+      "backupCode": "Backup Code",
+      "backupPlaceholder": "XXXXXXXX",
+      "backupHint": "Backup codes are single-use and will be invalidated after use",
+      "verifying": "Verifying...",
+      "verifyAndSignIn": "Verify & Sign In",
+      "useBackupCode": "Use a backup code instead",
+      "lostAccessHelp": "Lost access to your authenticator? Contact your administrator to reset 2FA."
+    }
+  },
+  "login": {
+    "title": "{{appName}}",
+    "subtitle": "Enterprise Media Platform",
+    "secureAccess": "Secure Access Portal",
+    "systemAccess": "System Access",
+    "enterCredentials": "Enter your credentials to continue",
+    "username": "Username",
+    "password": "Password",
+    "usernamePlaceholder": "Enter your username",
+    "passwordPlaceholder": "Enter your password",
+    "usernameDescription": "Enter your account username",
+    "authenticating": "Authenticating...",
+    "accessSystem": "Access System",
+    "hidePassword": "Hide password",
+    "showPassword": "Show password",
+    "signIn": "Sign In",
+    "rememberMeLabel": "Remember me for 30 days",
+    "rememberMeDescription": "Keep me signed in on this device",
+    "loginSuccess": "Login successful! Redirecting...",
+    "forgotPassword": "Forgot your password?",
+    "noAccountPrompt": "Don't have an account?",
+    "contactAdmin": "Contact your administrator",
+    "loginFailed": "Login failed",
+    "unexpectedError": "An unexpected error occurred",
+    "hero": {
+      "mainLogoAlt": "{{appName}} logo",
+      "mobileLogoAlt": "Application logo",
+      "ultraHd": "Ultra HD",
+      "secure": "Secure",
+      "encrypted": "Encrypted"
+    },
+    "footer": "© 2026 {{appName}} ENTERPRISE • SECURE ACCESS",
+    "trialAccountCta": "Try a trial account",
+    "trialAccountDescription": "Create a temporary account to explore the platform.",
+    "redeemPrompt": "Have a code?",
+    "redeemCta": "Redeem it here",
+    "examples": {
+      "title": "Enhanced Login Forms",
+      "basic": "Basic Login",
+      "withStrength": "With Password Strength",
+      "minimal": "Minimal Login"
+    }
+  },
+  "validation": {
+    "usernameRequired": "Username is required",
+    "usernameTooLong": "Username is too long",
+    "passwordRequired": "Password is required",
+    "passwordMinLength": "Password must be at least 8 characters",
+    "passwordTooLong": "Password is too long"
+  },
+  "formValidation": {
+    "summary": {
+      "completion": "Form Completion",
+      "valid": "All fields are valid. You can submit the form.",
+      "oneError": "There is 1 error that needs to be fixed.",
+      "manyErrors": "There are {{count}} errors that need to be fixed.",
+      "issuesToResolve": "Issues to resolve:",
+      "invalidValue": "Invalid value"
+    },
+    "password": {
+      "title": "Password Strength",
+      "levels": {
+        "strong": "Strong",
+        "good": "Good",
+        "fair": "Fair",
+        "weak": "Weak"
+      },
+      "requirements": {
+        "title": "Requirements",
+        "minLength": "At least {{count}} characters",
+        "uppercase": "Contains uppercase letter",
+        "lowercase": "Contains lowercase letter",
+        "number": "Contains number",
+        "special": "Contains special character"
+      }
+    }
+  },
+  "layout": {
+    "adminDashboard": "Admin Dashboard",
+    "online": "Online"
+  },
+  "breadcrumb": {
+    "admin": "Admin"
+  },
+  "sidebar": {
+    "brand": "{{appName}}",
+    "adminDashboard": "Admin Dashboard",
+    "expand": "Expand sidebar",
+    "collapse": "Collapse sidebar",
+    "overview": "Overview",
+    "gift-codes": "Gift Codes",
+    "giftCodes": "Gift Codes",
+    "content": "Content Management",
+    "media-scanner": "Media Scanner",
+    "epg": "EPG",
+    "music": "Music Library",
+    "resellers": "Resellers",
+    "users": "End Users",
+    "demos": "Demos",
+    "devices": "Devices",
+    "tickets": "Support Tickets",
+    "logs": "Activity Logs",
+    "security": "Security Center",
+    "master-keys": "Master API Keys",
+    "billing": "Billing",
+    "email": "Email",
+    "app-versions": "App Versions",
+    "settings": "Settings",
+    "packages": "Packages",
+    "direct-subscriptions": "Direct Subscriptions",
+    "systemStatus": "System Status",
+    "systemOperational": "All systems operational",
+    "profile": "Profile",
+    "logout": "Logout",
+    "badge": {
+      "new": "NEW"
+    },
+    "description": {
+      "security": "Monitor security incidents and manage bans",
+      "master-keys": "Manage API keys for external applications",
+      "billing": "Revenue overview and offline payments",
+      "packages": "Manage subscription packages for end users",
+      "direct-subscriptions": "View and manage direct user subscriptions"
+    }
+  },
+  "subscription": {
+    "register": {
+      "title": "Create Account",
+      "subtitle": "Fill in your details to get started",
+      "brandTitle": "Start Streaming Today",
+      "brandSubtitle": "Create your account and choose a plan that fits your needs. Start watching premium content in minutes.",
+      "username": "Username",
+      "usernamePlaceholder": "Choose a username",
+      "email": "Email",
+      "emailPlaceholder": "your@email.com",
+      "password": "Password",
+      "passwordPlaceholder": "Create a password",
+      "confirmPassword": "Confirm Password",
+      "confirmPasswordPlaceholder": "Confirm your password",
+      "submit": "Create Account",
+      "creating": "Creating account...",
+      "alreadyHaveAccount": "Already have an account?",
+      "signIn": "Sign in",
+      "disabled": "Registration Disabled",
+      "disabledMessage": "Self-registration is not currently available.",
+      "backToLogin": "Back to Login",
+      "emailUnavailable": "This email is already registered",
+      "passwordsMismatch": "Passwords do not match",
+      "passwordTooShort": "Password must be at least 6 characters",
+      "usernameTooShort": "Username must be at least 3 characters",
+      "verifyEmail": {
+        "title": "Check Your Email",
+        "message": "We've sent a verification link to your email. Please click the link to verify your account.",
+        "spam": "Didn't receive the email? Check your spam folder or try registering again.",
+        "success": "Account created! Please check your email to verify your account."
+      }
+    },
+    "plans": {
+      "badge": "Choose Your Plan",
+      "title": "Find The Perfect Plan",
+      "subtitle": "Choose a subscription that fits your needs. All plans include instant access to premium content.",
+      "noPlans": "No plans available at the moment.",
+      "subscribe": "Subscribe Now",
+      "redirecting": "Redirecting to Checkout...",
+      "devices": "Up to {{count}} device",
+      "devices_plural": "Up to {{count}} devices",
+      "categories": "{{count}} content category",
+      "categories_plural": "{{count}} content categories",
+      "cancelAnytime": "Cancel anytime",
+      "perMonth": "/month",
+      "perYear": "/year",
+      "perWeek": "/week",
+      "daysAccess": "{{count}} days access",
+      "securePayment": "All plans include a secure payment via Stripe",
+      "alreadyHaveAccount": "Already have an account?",
+      "signIn": "Sign in"
+    },
+    "success": {
+      "title": "Subscription Activated!",
+      "message": "Your subscription has been successfully activated. Welcome aboard!",
+      "allSet": "You're all set!",
+      "allSetMessage": "Your content access has been activated. You can start streaming right away.",
+      "manage": "Manage your subscription",
+      "manageMessage": "View your plan details, manage devices, or cancel anytime from your dashboard.",
+      "goToDashboard": "Go to Dashboard",
+      "viewPlans": "View Plans"
+    },
+    "cancel": {
+      "title": "Checkout Canceled",
+      "message": "Your subscription checkout was canceled. No charges were made.",
+      "noWorries": "No worries!",
+      "noWorriesMessage": "You can return to the plans page anytime to choose a subscription that works for you.",
+      "tryAgain": "Try Again",
+      "backToLogin": "Back to Login"
+    },
+    "management": {
+      "title": "Subscription",
+      "managedByReseller": "Managed by your reseller",
+      "managedByResellerMessage": "Your subscription is managed by your reseller. Contact them for changes.",
+      "noSubscription": "No active subscription",
+      "noSubscriptionMessage": "You don't have an active subscription. Choose a plan to get started.",
+      "choosePlan": "Choose a Plan",
+      "currentPlan": "Current Plan",
+      "status": "Status",
+      "periodStart": "Period Start",
+      "periodEnd": "Renews On",
+      "cancelSubscription": "Cancel Subscription",
+      "cancelConfirm": "Are you sure you want to cancel? You'll keep access until the end of your current billing period.",
+      "canceling": "Canceling...",
+      "cancelAtPeriodEnd": "Your subscription will end on {{date}}",
+      "resubscribe": "Resubscribe",
+      "changePlan": "Change Plan"
+    },
+    "admin": {
+      "packages": {
+        "title": "Subscription Packages",
+        "subtitle": "{{count}} packages configured",
+        "create": "Create Package",
+        "edit": "Edit Package",
+        "deactivate": "Deactivate",
+        "deactivateConfirm": "Are you sure you want to deactivate this package?",
+        "name": "Name",
+        "description": "Description",
+        "price": "Price",
+        "priceCents": "Price (cents)",
+        "currency": "Currency",
+        "billingMode": "Billing Mode",
+        "recurring": "Recurring",
+        "oneTime": "One-Time",
+        "interval": "Interval",
+        "month": "Month",
+        "year": "Year",
+        "week": "Week",
+        "durationDays": "Duration (days)",
+        "maxDevices": "Max Devices",
+        "categoryIds": "Category IDs (comma-separated)",
+        "stripePriceId": "Stripe Price ID",
+        "badgeText": "Badge Text",
+        "badgeColor": "Badge Color",
+        "sortOrder": "Sort Order",
+        "status": "Status",
+        "active": "Active",
+        "inactive": "Inactive",
+        "actions": "Actions",
+        "billing": "Billing",
+        "devices": "Devices",
+        "noPackages": "No packages yet. Click \"Create Package\" to get started.",
+        "updated": "Package updated",
+        "created": "Package created",
+        "deactivated": "Package deactivated"
+      },
+      "subscriptions": {
+        "title": "Direct Subscriptions",
+        "subtitle": "End users who subscribed directly via Stripe",
+        "userId": "User ID",
+        "packageId": "Package ID",
+        "status": "Status",
+        "period": "Period",
+        "cancelStatus": "Cancel",
+        "canceling": "Canceling",
+        "created": "Created",
+        "noSubscriptions": "No direct subscriptions yet.",
+        "stats": {
+          "active": "Active",
+          "canceled": "Canceled",
+          "expired": "Expired",
+          "mrr": "MRR",
+          "newThisMonth": "New This Month"
+        },
+        "statusBadge": {
+          "active": "Active",
+          "past_due": "Past Due",
+          "canceled": "Canceled",
+          "expired": "Expired",
+          "pending": "Pending"
+        }
+      }
+    }
+  },
+  "device": {
+    "title": "Device Registration",
+    "description": "Manage your registered devices and add new ones",
+    "devices": "devices",
+    "addDevice": "Add Device",
+    "limitStatus": "Device Limit Status",
+    "atLimit": "At Limit",
+    "available": "Available",
+    "youHaveDevices": "You have {{count}} of {{max}} allowed devices registered.",
+    "toAddRemove": "To add a new device, you must first remove an existing one.",
+    "yourRegisteredDevices": "Your Registered Devices",
+    "table": {
+      "device": "Device",
+      "user": "User",
+      "deviceLimit": "Device Limit",
+      "riskLevel": "Risk Level",
+      "status": "Status",
+      "lastActive": "Last Active",
+      "actions": "Actions"
+    },
+    "risk": {
+      "high": "High Risk",
+      "safe": "Safe"
+    },
+    "remove": "Remove",
+    "removeDeviceConfirmation": "Are you sure you want to permanently remove device \"{{name}}\" from user {{username}}?\\n\\nNote: This will only remove the device. The user can re-register it later.\\nWarning: If you want to prevent this device from connecting again, use \"Remove & Blacklist\" instead.",
+    "removeAndBlacklistAction": "Remove & Blacklist",
+    "removeAndBlacklistTitle": "Remove & Blacklist Device",
+    "removeAndBlacklistDescription": "Are you sure you want to remove device \"{{name}}\" from user {{username}} and add it to the blacklist?\\n\\nWarning: This will immediately disconnect the device and prevent it from connecting again until manually removed from the blacklist.",
+    "blacklistOnly": "Blacklist Only",
+    "blacklistTitle": "Blacklist Device",
+    "blacklistDescription": "Are you sure you want to add device \"{{name}}\" to the blacklist without removing it?\\n\\nNote: This will disconnect the device immediately but keep it in the active devices list until the user tries to reconnect.",
+    "blacklistAction": "Blacklist Device",
+    "removeMultipleTitle": "Remove Multiple Devices",
+    "removeMultipleDescription": "Are you sure you want to remove {{count}} selected devices?",
+    "devicesToBeRemovedLabel": "Devices to be removed:",
+    "moreDevices": "... and {{count}} more devices",
+    "bulkWarning": "This action cannot be undone.",
+    "removeAllSelected": "Remove All Selected",
+    "removeDeviceTitle": "Remove Device",
+    "removeDeviceDescription": "Are you sure you want to remove \"{{name}}\"?\n\nYou will need to register this device again to use it in the future.",
+    "removeDevice": "Remove Device",
+    "noDevices": "No devices registered",
+    "registerFirstDescription": "Register your first device to start using the service.",
+    "registerFirstButton": "Register First Device",
+    "registerNewTitle": "Register New Device",
+    "registerNewDescription": "Add a new device to your account",
+    "label": {
+      "deviceId": "Device ID",
+      "deviceName": "Device Name"
+    },
+    "placeholder": {
+      "id": "Enter unique device identifier",
+      "name": "Enter device name (e.g., Living Room TV)",
+      "searchDevices": "Search devices..."
+    },
+    "removeSelected": "Remove Selected ({{count}})",
+    "noDevicesFoundTitle": "No devices found",
+    "noDevicesFoundFor": "No devices found for \"{{query}}\"",
+    "noDevicesRegistered": "No devices are currently registered in the system.",
+    "deviceIdLabel": "ID: {{id}}",
+    "time": {
+      "justNow": "Just now",
+      "minutesAgo": "{{count}}m ago",
+      "hoursAgo": "{{count}}h ago",
+      "daysAgo": "{{count}}d ago"
+    },
+    "errors": {
+      "loadFailed": "Failed to load device information. Please try again later."
+    },
+    "registering": "Registering...",
+    "registerDevice": "Register Device"
+  },
+  "tvCategories": {
+    "title": "Manage TV Channel Categories",
+    "description": "Keep the default categories and extend them with your own labels. Categories in use cannot be removed.",
+    "inputPlaceholder": "Create a custom category (e.g. Premium Sports)",
+    "addCategory": "Add Category",
+    "refreshing": "Refreshing…",
+    "loading": "Loading categories…",
+    "none": "You have not created any custom categories yet.",
+    "default": "Default",
+    "removeTitle": "Remove category",
+    "removeDescription": "This action cannot be undone. The category \"{{name}}\" will be removed.",
+    "removeCategory": "Remove Category",
+    "editCategory": "Edit category",
+    "inUseTitle": "Category currently in use",
+    "created": "Category created",
+    "updated": "Category updated",
+    "removed": "Category removed",
+    "nameRequired": "Category name is required",
+    "helpText": "Default categories stay pinned at the top. Custom labels help you organize providers or regions however you need.",
+    "protectionNote": "Categories in use are protected to avoid accidental removal.",
+    "tableHeaders": {
+      "category": "Category",
+      "usage": "Usage",
+      "created": "Created",
+      "actions": "Actions"
+    },
+    "categoryCount": "{{count}} categor{{count, plural, one{y} other{ies}}}",
+    "usageLabel": {
+      "channel_one": "{{count}} channel",
+      "channel_other": "{{count}} channels",
+      "notInUse": "Not in use"
+    }
+  },
+  "systemConfiguration": {
+    "title": "System Configuration",
+    "creditTitle": "Credit System Configuration",
+    "creditDescription": "Configure default device limits and credit rates for user creation",
+    "saveCreditConfig": "Save Credit Configuration",
+    "saveTMDBConfig": "Save TMDB Configuration",
+    "testing": "Testing...",
+    "test": "Test",
+    "tmdbKeyValid": "TMDB API key is valid!",
+    "tmdbKeyInvalid": "TMDB API key is invalid: {{message}}",
+    "failedToLoad": "Failed to load configuration: {{message}}",
+    "creditConfigUpdated": "Credit configuration updated successfully!",
+    "tmdbConfigUpdated": "TMDB configuration updated successfully!",
+    "currentConfigTitle": "Current Configuration",
+    "currentConfigDescription": "Summary of current system settings",
+    "defaultDevicesLabel": "Default Devices",
+    "credits3DevicesLabel": "Credits (3 devices)",
+    "credits5DevicesLabel": "Credits (5 devices)",
+    "tmdbApiLabel": "TMDB API",
+    "configured": "Configured",
+    "notSet": "Not Set",
+    "forms": {
+      "defaultDevicesLabel": "Default Devices per User",
+      "defaultDevicesHelp": "Default number of devices for new users",
+      "creditPerExtraDeviceLabel": "Credit per Extra Device",
+      "creditPerExtraDeviceHelp": "Credits charged for each device above default",
+      "credit3DevicesLabel": "Credits for 3-Device User",
+      "credit3DevicesHelp": "Credits deducted when creating a user with 3 devices",
+      "credit5DevicesLabel": "Credits for 5-Device User",
+      "credit5DevicesHelp": "Credits deducted when creating a user with 5 devices",
+      "tmdbTitle": "TMDB API Configuration",
+      "tmdbDescription": "Configure TMDB API integration for automatic content metadata",
+      "tmdbApiKeyLabel": "TMDB API Key",
+      "tmdbApiKeyPlaceholder": "Enter your TMDB API key",
+      "tmdbApiKeyHelp": "Get your API key from TMDB API Settings",
+      "tmdbEnabledLabel": "TMDB integration",
+      "tmdbEnabledDescription": "Toggle TMDB metadata fetching for the control panel.",
+      "tmdbLanguageLabel": "TMDB Language",
+      "tmdbLanguagePlaceholder": "Select TMDB language",
+      "tmdbLanguageHelp": "Language for movie titles, descriptions, and metadata from TMDB",
+      "tmdbPreferredFormatLabel": "Preferred image format",
+      "tmdbPreferredFormatPlaceholder": "Select preferred image format",
+      "tmdbPreferredFormatHelp": "Choose the preferred format for TMDB artwork in offline mode",
+      "tmdbModeLabel": "Metadata source",
+      "tmdbModePlaceholder": "Select metadata source",
+      "tmdbModeOnline": "Online (TMDB API)",
+      "tmdbModeOffline": "Offline (local metadata)",
+      "tmdbModeDescription": "Choose whether to fetch metadata directly from TMDB or from your local metadata cache.",
+      "tmdbMetadataPathLabel": "Metadata folder",
+      "tmdbMetadataPathHelp": "Relative path on the server where offline TMDB metadata and images are stored (default: metadata).",
+      "tmdbOfflineHint": "Offline mode will serve descriptions and artwork from the metadata folder. Make sure the folder is synchronized with up-to-date TMDB exports."
+    }
+  },
+  "profile": {
+    "title": "Profile Settings",
+    "description": "Update your contact details or change your admin password.",
+    "contactInformation": "Contact Information",
+    "emailPlaceholder": "you@example.com",
+    "contactInfoNote": "We use this email for password resets and important notifications.",
+    "saveChanges": "Save Changes",
+    "changePassword": "Change Password",
+    "newPasswordPlaceholder": "Enter new password",
+    "confirmPasswordPlaceholder": "Re-enter new password",
+    "passwordHelp": "Use at least 8 characters. A strong password includes numbers and symbols.",
+    "updatePassword": "Update Password",
+    "updated": "Profile updated",
+    "passwordUpdated": "Password updated",
+    "enterAndConfirmPassword": "Please enter and confirm the new password",
+    "passwordsDoNotMatch": "Passwords do not match",
+    "updateFailed": "Failed to update profile",
+    "passwordTooShort": "Password must be at least 8 characters long",
+    "updatePasswordFailed": "Failed to update password",
+    "currentPasswordLabel": "Current Password",
+    "currentPasswordPlaceholder": "Enter current password",
+    "currentPasswordRequired": "Current password is required",
+    "newPasswordLabel": "New Password",
+    "confirmPasswordLabel": "Confirm Password",
+    "twoFactor": {
+      "title": "Two-Factor Authentication",
+      "description": "Add an extra layer of security to your account",
+      "enabled": "Two-factor authentication is enabled",
+      "disabled": "Two-factor authentication is disabled",
+      "enable": "Enable 2FA",
+      "disable": "Disable 2FA",
+      "disableDescription": "Enter a 2FA code or backup code to disable two-factor authentication.",
+      "setupTitle": "Set Up Two-Factor Authentication",
+      "scanQR": "Scan this QR code with your authenticator app (Google Authenticator, Authy, etc.)",
+      "manualEntry": "Or enter this code manually:",
+      "code": "Code",
+      "qrAlt": "2FA QR Code",
+      "verifyCode": "Enter the 6-digit code from your authenticator app to verify:",
+      "verify": "Verify & Enable",
+      "verifying": "Verifying...",
+      "placeholder": "000000",
+      "backupCodes": {
+        "title": "Save Your Backup Codes",
+        "description": "These codes can be used to access your account if you lose your authenticator. Each code can only be used once. Save them in a secure place.",
+        "copy": "Copy All & Close"
+      },
+      "errors": {
+        "setupFailed": "Failed to start 2FA setup",
+        "verifyFailed": "Verification failed",
+        "disableFailed": "Failed to disable 2FA",
+        "invalidCode": "Please enter a valid 6-digit code"
+      },
+      "cancel": "Cancel"
+    }
+  },
+  "creditsPricing": {
+    "savePricingConfig": "Save Pricing Configuration",
+    "updated": "Pricing configuration updated successfully",
+    "tiersSorted": "Tiers sorted and normalized"
+  },
+  "notifications": {
+    "content": {
+      "createFailed": "Failed to create content: {{message}}"
+    },
+    "security": {
+      "errorLoadingBans": "Error loading security bans",
+      "errorUnbanningUser": "Error unbanning user",
+      "errorLoadingStatistics": "Error loading security statistics",
+      "errorCleaningExpiredBans": "Error cleaning up expired bans",
+      "errorLoadingIncidents": "Error loading security incidents"
+    },
+    "ban": {
+      "usernameAndReasonRequired": "Username and reason are required",
+      "invalidDuration": "Invalid duration",
+      "errorCreatingBan": "Error creating ban"
+    },
+    "scan": {
+      "folderCompleted": "Folder scan completed",
+      "error": "Scan failed: {{message}}"
+    },
+    "blacklist": {
+      "errorLoading": "Error loading blacklisted devices",
+      "errorRemoving": "Error removing device from blacklist",
+      "removed": "Device removed from blacklist successfully",
+      "removeFailed": "Failed to remove device from blacklist",
+      "confirmRemove": "Are you sure you want to remove device \"{{device}}\" for user {{user}} from the blacklist?"
+    },
+    "credits": {
+      "updated": "Credits pricing updated successfully",
+      "tiersSorted": "Tiers sorted and normalized"
+    },
+    "securityIncident": {
+      "deleted": "Security incident deleted successfully",
+      "deleteFailed": "Failed to delete security incident"
+    },
+    "provider": {
+      "removed": "Provider removed",
+      "added": "Provider \"{{name}}\" added",
+      "error": "Provider error: {{message}}",
+      "syncCompleted": "Sync completed (created {{created}}, updated {{updated}})"
+    },
+    "edit": {
+      "epgCopied": "EPG Channel ID copied",
+      "streamUrlCopied": "Stream URL copied"
+    },
+    "banUser": {
+      "userUnbanned": "User {{user}} has been unbanned"
+    }
+  },
+  "admin": {
+    "search": {
+      "placeholder": "Search... (Ctrl+K)",
+      "shortcuts": {
+        "navigate": "Navigate",
+        "enterKey": "Enter",
+        "escapeKey": "Esc"
+      },
+      "types": {
+        "user": "User",
+        "reseller": "Reseller",
+        "content": "Content",
+        "music": "Music"
+      }
+    },
+    "security": {
+      "tabs": {
+        "overview": "Security Overview",
+        "incidents": "Security Incidents",
+        "bans": "Security Bans",
+        "blacklistedDevices": "Blacklisted Devices"
+      },
+      "actions": {
+        "cleanupExpiredBans": "Cleanup Expired Bans",
+        "createManualBan": "Create Manual Ban"
+      },
+      "cards": {
+        "totalIncidents": "Total Incidents",
+        "todaysIncidents": "Today's Incidents",
+        "activeBans": "Active Bans",
+        "permanentBans": "Permanent Bans",
+        "blacklistedDevices": "Blacklisted Devices"
+      }
+    },
+    "masterKeys": {
+      "createDialogDescription": "Create a new Master API Key for external applications. This key provides full API access without UI authentication.",
+      "examples": {
+        "appName": "e.g., External Editor App 2024"
+      },
+      "keyNameHelp": "A descriptive name to identify this API key",
+      "securityNoteTitle": "Security Note",
+      "securityNoteDescription": "The generated API key will be shown only once. Make sure to copy and store it securely.",
+      "empty": {
+        "title": "No API Keys Found",
+        "description": "Create your first Master API Key to enable external application integration"
+      },
+      "detailsTitle": "Master API Key Details",
+      "detailsDescription": "View and manage this API key for external application integration",
+      "apiKeyLabel": "API Key",
+      "activeStatus": "Active Status",
+      "regenerateButton": "Regenerate Key",
+      "deleteButton": "Delete Key",
+      "labels": {
+        "created": "Created",
+        "lastUpdated": "Last Updated",
+        "lastUsed": "Last Used"
+      }
+    },
+    "loginHistory": {
+      "title": "Login History",
+      "lastUpdated": "Last updated: {{time}}",
+      "autoRefreshOn": "Auto-refresh: ON",
+      "refreshNow": "Refresh Now",
+      "filters": {
+        "username": "Username",
+        "ipAddress": "IP Address",
+        "startDate": "Start Date",
+        "endDate": "End Date"
+      },
+      "placeholders": {
+        "searchUsername": "Search username...",
+        "ipAddress": "IP address..."
+      },
+      "loading": "Loading login history...",
+      "errors": {
+        "loading": "Error loading login history: {{message}}",
+        "loadingFallback": "Failed to load login history"
+      },
+      "noHistory": "No login attempts found.",
+      "table": {
+        "dateTime": "Date & Time",
+        "user": "User",
+        "status": "Status",
+        "ipAddress": "IP Address",
+        "device": "Device",
+        "userAgent": "User Agent"
+      }
+    },
+    "securityIncidents": {
+      "filterType": "Filter by type",
+      "allTypes": "All types",
+      "bruteForce": "Brute force",
+      "suspiciousActivity": "Suspicious activity",
+      "multipleDevices": "Multiple devices",
+      "tokenManipulation": "Token manipulation",
+      "searchByUsernamePlaceholder": "Search by username...",
+      "itemsPerPage": "Items per page",
+      "title": "Security Incidents ({{total}})",
+      "noneFound": "No incidents found.",
+      "deviceId": "Device ID",
+      "ipAddress": "IP Address",
+      "deleteTitle": "Delete incident",
+      "showingPage": "Page {{page}} of {{totalPages}}",
+      "confirmDelete": "Delete this incident?"
+    },
+    "securityBans": {
+      "searchByUsernamePlaceholder": "Search by username...",
+      "itemsPerPage": "Items per page",
+      "title": "Security Bans ({{total}})",
+      "noneFound": "No bans found.",
+      "level": "Level",
+      "type": "Type",
+      "reason": "Reason",
+      "timeRemaining": "Time remaining"
+    },
+    "blacklistedDevices": {
+      "title": "Blacklisted Devices ({{count}})",
+      "noneTitle": "No blacklisted devices",
+      "noneDescription": "You're all clear. No devices are currently blacklisted.",
+      "removeButton": "Remove from blacklist"
+    },
+    "unban": {
+      "action": "Unban",
+      "confirm": "Unban user {{user}}?",
+      "promptReason": "Enter reason for unbanning"
+    },
+    "dashboard": {
+      "notAuthenticated": "Not authenticated",
+      "accessDenied": "Access denied. Admin role required.",
+      "preparing": "Preparing dashboard..."
+    },
+    "demos": {
+      "title": "Demo Experience",
+      "subtitle": "Monitor demo accounts, adjust creation limits and review access history to keep abuse under control.",
+      "settingsTitle": "Creation guardrails",
+      "settingsDescription": "Limit how many demos can be created per IP and how long offenders stay banned.",
+      "totalUsers": "Active demos",
+      "thresholdLabel": "Threshold (creations / 24h)",
+      "banDurationLabel": "Ban duration (days)",
+      "managementTitle": "Demo monitoring",
+      "managementDescription": "Review live demo accounts or audit the IP trail in a couple of clicks.",
+      "usersTab": "Users",
+      "historyTab": "History",
+      "usersSummary": "{{count}} demo users active",
+      "refreshing": "Refreshing...",
+      "ipLabel": "IP address",
+      "expiresLabel": "Expires",
+      "deviceLabel": "Device",
+      "userAgentLabel": "User agent",
+      "resultLabel": "Result",
+      "successful": "Successful",
+      "failed": "Failed",
+      "historySummary": "Showing {{total}} log entries",
+      "noHistoryResults": "No login attempts for the current filters.",
+      "noUsers": "No demo users at the moment.",
+      "confirmDelete": "Delete this demo user? This action cannot be undone.",
+      "userDeleted": "Demo user deleted",
+      "usernamePlaceholder": "john.doe"
+    },
+    "giftcodes": {
+      "title": "Gift Codes",
+      "description": "Manage one-time or multi-use gift codes to create or extend user subscriptions.",
+      "create": "Create Code",
+      "bulkCreate": "Bulk Create",
+      "export": "Export CSV",
+      "noData": "No gift codes available to export.",
+      "bulkCreated": "Created {{count}} gift codes",
+      "created": "Gift code created",
+      "deletedSelected": "Deleted {{count}} selected gift codes",
+      "generate": "Generate",
+      "deleteSelected": "Delete Selected ({{count}})",
+      "deleteConfirm": "Delete {{count}} selected gift codes? This action cannot be undone.",
+      "table": {
+        "code": "Code",
+        "duration_days": "Duration (days)",
+        "uses": "Uses",
+        "remaining": "Remaining",
+        "expires_at": "Expires At",
+        "created_at": "Created At"
+      },
+      "form": {
+        "codeOptional": "Code (optional)",
+        "durationMonths": "Duration (months)",
+        "uses": "Uses",
+        "prefixOptional": "Prefix (optional)",
+        "count": "Count",
+        "usesPerCode": "Uses per code"
+      }
+    },
+    "billing": {
+      "overview": {
+        "title": "Billing Overview",
+        "description": "Revenue and credit performance at a glance",
+        "metrics": {
+          "onlineRevenue": "Online Revenue",
+          "offlineRevenue": "Offline Revenue",
+          "adjustments": "Adjustments",
+          "totalRevenue": "Total Revenue",
+          "creditsOnline": "Credits (Online)",
+          "creditsOffline": "Credits (Offline)",
+          "creditsAdjustments": "Credits (Adjustments)",
+          "totalCredits": "Total Credits"
+        }
+      },
+      "pricing": {
+        "title": "Credit Pricing",
+        "description": "Base pricing and discount tiers configured in the system",
+        "basePrice": "Base price (USD per credit)",
+        "activeTiers": "Active tiers",
+        "effectiveCurrency": "Effective currency",
+        "tiersNote": "The highest tier where the minimum quantity is met will be applied.",
+        "table": {
+          "minQuantity": "Min quantity (inclusive)",
+          "discountPercent": "Discount percent",
+          "noTiers": "No tiers configured. Base price applies for all quantities.",
+          "discountSuffix": "off"
+        }
+      },
+      "offline": {
+        "title": "Add Offline Payment",
+        "description": "Record manual payments and grant credits instantly",
+        "labels": {
+          "reseller": "Reseller",
+          "amount": "Amount (USD)",
+          "credits": "Credits to grant",
+          "method": "Method",
+          "reference": "Reference",
+          "notes": "Notes"
+        },
+        "placeholders": {
+          "resellerSearch": "Type at least 2 letters…",
+          "amount": "e.g. 100.00",
+          "credits": "e.g. 100",
+          "method": "cash/bank/other",
+          "reference": "invoice number or reference",
+          "notes": "optional notes"
+        },
+        "chargedCurrency": "Charged currency:",
+        "success": "Offline payment recorded and credits granted",
+        "actions": {
+          "saving": "Saving...",
+          "save": "Save Offline Payment"
+        },
+        "errors": {
+          "amountPositive": "Amount (USD) must be greater than 0",
+          "creditsPositive": "Credits must be a positive integer",
+          "resellerPositive": "Reseller ID must be a positive integer",
+          "selectReseller": "Select a reseller from the list"
+        }
+      },
+      "transactions": {
+        "title": "Recent Transactions",
+        "description": "Filter and paginate billing transactions",
+        "filters": {
+          "source": "Source",
+          "status": "Status",
+          "resellerId": "Reseller ID",
+          "reference": "Reference/Username",
+          "perPage": "Per page"
+        },
+        "sources": {
+          "stripe": "Stripe",
+          "offline": "Offline",
+          "adjustment": "Adjustment"
+        },
+        "statuses": {
+          "completed": "Completed",
+          "pending": "Pending",
+          "refunded": "Refunded",
+          "failed": "Failed"
+        },
+        "placeholders": {
+          "resellerId": "e.g. 42",
+          "reference": "Search reference or username"
+        },
+        "table": {
+          "id": "ID",
+          "reseller": "Reseller",
+          "source": "Source",
+          "amount": "Amount",
+          "credits": "Credits",
+          "status": "Status",
+          "reference": "Reference",
+          "createdAt": "Created at"
+        },
+        "total": "Total: {{count}}",
+        "pagination": {
+          "page": "Page {{page}}"
+        },
+        "empty": "No transactions found."
+      },
+      "errors": {
+        "fetchOverview": "Failed to fetch billing overview",
+        "fetchPricing": "Failed to fetch pricing configuration",
+        "fetchTransactions": "Failed to fetch billing transactions",
+        "createOfflinePayment": "Failed to create offline payment"
+      }
+    },
+    "devices": {
+      "errors": {
+        "loadFailed": "Failed to load device management data. Please try again later."
+      },
+      "overview": {
+        "activeUsers": "Active users",
+        "statsDescription": "Detailed breakdown of device usage across users",
+        "usageByUserTitle": "Device Usage by User",
+        "usageByUserDescription": "User device statistics will appear here once devices are registered.",
+        "deviceCount": "{{count}}/{{max}} devices"
+      },
+      "activeList": {
+        "description": "Monitor all active device connections across the system",
+        "searchPlaceholder": "Search devices...",
+        "deviceId": "ID: {{id}}",
+        "actions": {
+          "disconnect": "Disconnect"
+        },
+        "removeDialog": {
+          "title": "Remove Device",
+          "description": "Are you sure you want to permanently remove device \"{{device}}\" from user {{user}}? This action cannot be undone."
+        },
+        "emptyTitle": "No devices found",
+        "noDevicesSearch": "No devices found for \"{{query}}\"",
+        "noDevicesDescription": "No devices are currently registered in the system.",
+        "time": {
+          "justNow": "Just now",
+          "minutesAgo": "{{count}}m ago",
+          "hoursAgo": "{{count}}h ago",
+          "daysAgo": "{{count}}d ago"
+        }
+      },
+      "limits": {
+        "title": "Device Limit Warnings",
+        "subtitle": "Monitor users approaching or exceeding device limits",
+        "summary": {
+          "warningTitle": "Users at Warning",
+          "warningDescription": "80-99% of limit used",
+          "criticalTitle": "Users at Critical",
+          "criticalDescription": "At device limit",
+          "exceededTitle": "Users Exceeded",
+          "exceededDescription": "Over device limit"
+        },
+        "badges": {
+          "safe": "Safe",
+          "warning": "Warning",
+          "critical": "Critical",
+          "exceeded": "Exceeded"
+        },
+        "attention": {
+          "title": "Users Needing Attention"
+        },
+        "table": {
+          "deviceUsage": "Device Usage",
+          "progress": "Progress",
+          "warningLevel": "Warning Level"
+        },
+        "actions": {
+          "increaseLimit": "Increase Limit",
+          "monitor": "Monitor"
+        },
+        "allSafeTitle": "All Users Within Limits",
+        "allSafeDescription": "No users are currently approaching or exceeding their device limits.",
+        "allUsersTitle": "All Users Overview"
+      },
+      "removal": {
+        "bulkRemoveFailed": "Failed to remove {{count}} devices"
+      }
+    },
+    "overview": {
+      "totalUsers": "Total Users",
+      "allSystemUsers": "All users in the system",
+      "contentItems": "Content Items",
+      "moviesTvSeries": "Movies, TV series, and more",
+      "activeResellers": "Active Resellers",
+      "currentlyActive": "Currently active",
+      "systemStatus": "System Status",
+      "allSystemsOperational": "All systems operational",
+      "quickActions": "Quick Actions",
+      "commonTasks": "Jump to the most common administrative tasks",
+      "manageResellers": "Manage Resellers",
+      "manageContent": "Manage Content",
+      "systemConfig": "System Configuration",
+      "viewReports": "View Reports",
+      "systemHealth": "System Health",
+      "systemStatusDescription": "Real-time service status for critical components",
+      "apiServices": "API Services",
+      "operational": "Operational",
+      "database": "Database",
+      "contentDelivery": "Content Delivery"
+    },
+    "content": {
+      "title": "Content Management",
+      "description": "Manage content across all categories with TMDB integration",
+      "confirmDelete": "Are you sure you want to delete this content?",
+      "tmdb": {
+        "searchPlaceholder": "Search on TMDB...",
+        "selectedId": "Selected TMDB ID: {{id}}",
+        "enrichTitle": "Enrich Content with TMDB",
+        "enrichDescription": "Search TMDB to add metadata like poster, description, and more.",
+        "enrichSuccess": "Content enriched successfully from TMDB",
+        "contentTitle": "Content Title",
+        "mediaType": "Media Type",
+        "mediaTypeTvSeries": "TV Series",
+        "mediaTypeMovie": "Movie",
+        "byId": "By TMDB ID",
+        "byName": "By Name / Title",
+        "tmdbId": "TMDB ID",
+        "enrich": "Enrich Content",
+        "selectedResult": "Selected: {{title}} (ID: {{id}})",
+        "confirm": "Fill TMDB metadata for {{category}}? This will try to match items without TMDB IDs.",
+        "success": "TMDB metadata updated: {{updated}} updated, {{skipped}} skipped",
+        "warning": "{{count}} items could not be matched. Check console for details.",
+        "error": "TMDB metadata refresh failed",
+        "defaultCategory": "this category"
+      },
+      "errors": {
+        "load": "Failed to load content: {{message}}"
+      },
+      "empty": {
+        "title": "No content found",
+        "description": "Get started by adding your first {{category}} item."
+      },
+      "categories": {
+        "vod": {
+          "label": "Movies",
+          "description": "Movies and standalone video content"
+        },
+        "tv": {
+          "label": "TV Channels",
+          "description": "Live TV channels and streams"
+        },
+        "series": {
+          "label": "Series",
+          "description": "TV series with seasons and episodes"
+        },
+        "events": {
+          "label": "Events",
+          "description": "Live events and special programming"
+        },
+        "kids": {
+          "label": "Kids",
+          "description": "Children and family content"
+        },
+        "anime": {
+          "label": "Anime",
+          "description": "Anime and manga adaptations"
+        }
+      },
+      "actions": {
+        "addManualMovie": "Add Manual Movie",
+        "addManualSeries": "Add Manual Series",
+        "addManualKids": "Add Manual Kids",
+        "addManualAnime": "Add Manual Anime",
+        "addTvChannel": "Add TV Channel",
+        "addEvent": "Add Event",
+        "addContent": "Add Content",
+        "addFromTmdb": "Add from TMDB",
+        "bulkImport": "Bulk Import",
+        "manageCategories": "Manage Categories",
+        "scanFolders": "Scan Folders",
+        "fillMetadata": "Fill Metadata",
+        "tvProviders": "TV Providers"
+      },
+      "table": {
+        "columns": {
+          "title": "Title",
+          "description": "Description",
+          "type": "Type",
+          "format": "Format",
+          "year": "Year",
+          "status": "Status",
+          "created": "Created",
+          "actions": "Actions"
+        },
+        "values": {
+          "tmdbId": "TMDB: {{id}}",
+          "noDescription": "No description available",
+          "unknown": "Unknown",
+          "event": "Event"
+        }
+      },
+      "pagination": {
+        "range": "Showing {{start}}-{{end}} of {{total}} items",
+        "rowsPerPage": "Rows per page",
+        "rows": "Rows",
+        "updating": "Updating…",
+        "pageOf": "Page {{page}} of {{total}}"
+      }
+    },
+    "tickets": {
+      "errors": {
+        "sendMessage": "Failed to send message",
+        "sendMessageRetry": "Failed to send message. Please try again.",
+        "assign": "Failed to assign ticket",
+        "assignRetry": "Failed to assign ticket. Please try again.",
+        "delete": "Failed to delete ticket",
+        "deleteRetry": "Failed to delete ticket. Please try again.",
+        "updateStatus": "Failed to update ticket status",
+        "updateStatusRetry": "Failed to update ticket status. Please try again.",
+        "create": "Failed to create ticket",
+        "createRetry": "Failed to create ticket. Please try again.",
+        "validation": {
+          "titleDescriptionRequired": "Title and description are required",
+          "resellerRequired": "Please select a reseller"
+        }
+      },
+      "confirm": {
+        "delete": "Are you sure you want to delete this ticket? This action cannot be undone."
+      },
+      "filters": {
+        "status": {
+          "all": "All Status"
+        },
+        "priority": {
+          "all": "All Priority"
+        },
+        "unread": {
+          "all": "All Messages",
+          "unread": "Unread Messages",
+          "read": "Read Messages"
+        }
+      },
+      "actions": {
+        "panelTitle": "Admin Actions",
+        "assigning": "Assigning...",
+        "assignToMe": "Assign to Me",
+        "changeStatus": "Change Status",
+        "internalMessage": "Send as internal message",
+        "scheduleFollowUp": "Schedule Follow-up",
+        "reassignTicket": "Reassign Ticket"
+      },
+      "priority": {
+        "low": "Low",
+        "medium": "Medium",
+        "high": "High",
+        "urgent": "Urgent"
+      },
+      "category": {
+        "technical": "Technical",
+        "billing": "Billing",
+        "account": "Account",
+        "content": "Content",
+        "other": "Other"
+      },
+      "create": {
+        "title": "Create New Ticket",
+        "description": "Create a new support ticket for testing or administrative purposes.",
+        "labels": {
+          "title": "Title",
+          "description": "Description",
+          "reseller": "Reseller",
+          "priority": "Priority",
+          "category": "Category"
+        },
+        "placeholders": {
+          "title": "Enter ticket title",
+          "description": "Enter ticket description",
+          "reseller": "Select a reseller"
+        },
+        "submitting": "Creating...",
+        "submit": "Create Ticket"
+      },
+      "advanced": {
+        "title": "Advanced Filters",
+        "description": "Apply additional filters to narrow down your ticket search.",
+        "labels": {
+          "dateFrom": "Date From",
+          "dateTo": "Date To"
+        },
+        "helper": "Filter tickets by creation date range. Leave fields empty to show all dates.",
+        "clear": "Clear All",
+        "apply": "Apply Filters"
+      },
+      "sort": {
+        "title": "Sort Options",
+        "description": "Choose how to sort your tickets.",
+        "labels": {
+          "sortBy": "Sort By",
+          "direction": "Direction"
+        },
+        "options": {
+          "newestFirst": "Newest First",
+          "oldestFirst": "Oldest First",
+          "priority": "Priority",
+          "status": "Status",
+          "unreadFirst": "Unread First"
+        },
+        "direction": {
+          "descending": "Descending",
+          "ascending": "Ascending"
+        },
+        "reset": "Reset to Default",
+        "apply": "Apply Sort"
+      }
+    },
+    "activityLogs": {
+      "title": "Activity Logs",
+      "subtitle": "Complete system activity and audit trail",
+      "tabs": {
+        "dashboard": "Dashboard",
+        "systemLogs": "System Logs",
+        "loginHistory": "Login History",
+        "viewingHistory": "Viewing History"
+      },
+      "filters": {
+        "actionType": "Action Type",
+        "allActions": "All actions",
+        "startDate": "Start Date",
+        "endDate": "End Date"
+      },
+      "errors": {
+        "loading": "Error loading logs: {{message}}",
+        "loadingFallback": "Failed to load activity logs"
+      },
+      "noLogs": "No activity logs found.",
+      "table": {
+        "date": "Date",
+        "action": "Action",
+        "user": "User",
+        "target": "Target",
+        "description": "Description",
+        "credits": "Credits"
+      },
+      "pagination": {
+        "showing": "Showing {{from}} to {{to}} of {{total}} logs",
+        "pageOf": "Page {{page}} of {{total_pages}}"
+      },
+      "actionTypes": {
+        "USER_CREATED": "User Created",
+        "USER_DELETED": "User Deleted",
+        "RESELLER_CREATED": "Reseller Created",
+        "RESELLER_DELETED": "Reseller Deleted",
+        "CREDIT_USED": "Credit Used",
+        "CREDIT_ASSIGNED": "Credit Assigned",
+        "SYSTEM_INIT": "System Initialized",
+        "LOGIN": "Login",
+        "LOGOUT": "Logout"
+      }
+    },
+    "viewingHistory": {
+      "title": "Viewing History",
+      "lastUpdated": "Last updated: {{time}}",
+      "autoRefreshOn": "Auto-refresh: ON",
+      "refreshNow": "Refresh Now",
+      "filters": {
+        "username": "Username",
+        "contentType": "Content Type",
+        "allTypes": "All types",
+        "ipAddress": "IP Address",
+        "startDate": "Start Date",
+        "endDate": "End Date"
+      },
+      "placeholders": {
+        "searchUsername": "Search username...",
+        "ipAddress": "IP address..."
+      },
+      "loading": "Loading viewing history...",
+      "errors": {
+        "loading": "Error loading viewing history: {{message}}"
+      },
+      "noHistory": "No viewing history found.",
+      "unknown": "Unknown",
+      "table": {
+        "dateTime": "Date & Time",
+        "user": "User",
+        "contentType": "Content Type",
+        "contentTitle": "Content Title",
+        "info": "Info",
+        "ipAddress": "IP Address",
+        "device": "Device"
+      },
+      "pagination": {
+        "showing": "Showing {{from}} to {{to}} of {{total}} viewing sessions",
+        "pageOf": "Page {{page}} of {{total_pages}}"
+      }
+    }
+  },
+  "contentType": {
+    "movie": "Movie",
+    "tvShow": "TV Show",
+    "kids": "Kids",
+    "tvChannel": "TV Channel"
+  },
+  "contentTypeExtended": {
+    "tvChannel": "TV Channel",
+    "tvSeries": "TV Series",
+    "event": "Event",
+    "kidsContent": "Kids Content",
+    "anime": "Anime",
+    "content": "Content"
+  },
+  "providers": {
+    "loading": "Loading providers…",
+    "none": "No providers registered yet."
+  },
+  "scan": {
+    "scanning": "Scanning…",
+    "start": "Start Scan"
+  },
+  "epg": {
+    "title": "EPG Sources",
+    "editSource": "Edit Source",
+    "createSource": "Create Source",
+    "inputPlaceholder": "My XMLTV",
+    "xmltvUrl": "XMLTV URL",
+    "urlPlaceholder": "https://.../guide.xml",
+    "ttl": "TTL (min)",
+    "sources": "Sources",
+    "noSourcesYet": "No sources yet",
+    "fetchChannels": "Fetch channels",
+    "discoveredChannels": "Discovered Channels",
+    "loadingChannels": "Loading channels..."
+  },
+  "tickets": {
+    "loadingConversation": "Loading conversation...",
+    "loadingConversationDescription": "Please wait while we fetch the messages",
+    "noTicketSelected": "No ticket selected",
+    "selectTicketPrompt": "Please select a ticket to view the conversation",
+    "sending": "Sending...",
+    "status": {
+      "open": "Open",
+      "in_progress": "In Progress",
+      "waiting_response": "Waiting Response",
+      "resolved": "Resolved",
+      "closed": "Closed",
+      "on_hold": "On Hold"
+    },
+    "placeholders": {
+      "filterByStatus": "Filter by status",
+      "filterByPriority": "Filter by priority",
+      "filterByReadStatus": "Filter by read status"
+    },
+    "unreadMessages": "Unread Messages",
+    "stats": {
+      "total": "Total"
+    }
+  },
+  "ticketCard": {
+    "justNow": "Just now",
+    "updatedAt": "Updated {{time}}",
+    "newCount": "{{count}} New",
+    "chat": "Chat",
+    "unreadMessageSingle": "{{count}} unread message",
+    "unreadMessagePlural": "{{count}} unread messages",
+    "priority": {
+      "low": "LOW",
+      "medium": "MEDIUM",
+      "high": "HIGH",
+      "urgent": "URGENT"
+    }
+  },
+  "errorHandlingDemo": {
+    "title": "Error Handling & Validation Demo",
+    "subtitle": "Comprehensive demonstration of error handling, validation, and user feedback systems",
+    "tabs": {
+      "notifications": "Notifications",
+      "loading": "Loading States",
+      "operations": "Operations",
+      "connection": "Connection",
+      "boundaries": "Error Boundaries",
+      "skeletons": "Skeletons"
+    },
+    "notifications": {
+      "error": {
+        "title": "Error Notifications",
+        "description": "Test different types of error notifications and toast messages",
+        "buttons": {
+          "generic": "Generic Error",
+          "api": "API Error",
+          "validation": "Validation Error",
+          "network": "Network Error"
+        }
+      },
+      "success": {
+        "title": "Success Notifications",
+        "description": "Test different types of success and informational messages",
+        "buttons": {
+          "basic": "Basic Success",
+          "detailed": "Detailed Success",
+          "info": "Info Message",
+          "warning": "Warning Message"
+        }
+      }
+    },
+    "inline": {
+      "title": "Inline Feedback Messages",
+      "successMessage": "Your changes have been saved successfully.",
+      "viewChanges": "View Changes",
+      "errorMessage": "Failed to save changes. Please try again.",
+      "retry": "Retry",
+      "warningMessage": "Your session will expire in 5 minutes.",
+      "infoMessage": "New features are available. Check out the latest updates!"
+    },
+    "loading": {
+      "spinners": {
+        "title": "Loading Spinners",
+        "sizes": {
+          "small": "Small",
+          "medium": "Medium",
+          "large": "Large",
+          "extraLarge": "Extra Large"
+        },
+        "variants": {
+          "dots": "Dots",
+          "pulse": "Pulse",
+          "bounce": "Bounce"
+        }
+      },
+      "overlay": {
+        "title": "Loading Overlay",
+        "content": "Content that gets overlaid",
+        "toggle": "Toggle Loading Overlay"
+      },
+      "toast": {
+        "title": "Loading with Toast",
+        "trigger": "Trigger Loading Toast"
+      }
+    },
+    "operations": {
+      "async": {
+        "title": "Async Operations",
+        "successOperation": "Success Operation",
+        "failingOperation": "Failing Operation"
+      },
+      "batch": {
+        "title": "Batch Operations",
+        "start": "Start Batch Operation"
+      }
+    },
+    "connection": {
+      "title": "Connection Status",
+      "quality": "Connection Quality",
+      "retryCount": "Retry Count",
+      "testing": "Testing...",
+      "testConnection": "Test Connection"
+    },
+    "boundaries": {
+      "title": "Error Boundaries",
+      "fixError": "Fix Error",
+      "triggerError": "Trigger Error",
+      "noErrorThrown": "No error thrown"
+    },
+    "skeletons": {
+      "title": "Skeleton Loading States",
+      "text": "Text Skeletons",
+      "card": "Card Skeleton"
+    },
+    "messages": {
+      "demoOperationFailed": "Demo operation failed",
+      "operationCompletedSuccessfully": "Operation completed successfully",
+      "asyncOperationCompleted": "Async operation completed!",
+      "processingAsyncOperation": "Processing async operation...",
+      "batchOperationCompleted": "Batch operation completed!",
+      "genericErrorMessage": "This is a generic error message",
+      "genericErrorTitle": "Generic Error",
+      "apiValidationDetails": "The provided data is invalid",
+      "apiDemo": "API Demo",
+      "invalidEmailFormat": "Email format is invalid",
+      "networkConnectionFailed": "Network connection failed",
+      "networkErrorTitle": "Network Error",
+      "unableToConnectServer": "Unable to connect to the server",
+      "userProfileUpdated": "User profile updated successfully",
+      "profileUpdated": "Profile Updated",
+      "viewProfile": "View Profile",
+      "newFeaturesAvailable": "New features are available in the latest update",
+      "sessionExpiresSoon": "Your session will expire in 5 minutes",
+      "processingRequest": "Processing your request...",
+      "loadingCompleted": "Loading completed!",
+      "errorBoundaryTestError": "This is a test error for ErrorBoundary",
+      "operationCompleted": "Operation completed!"
+    }
+  },
+  "banned": {
+    "title": "Account Suspended",
+    "description": "Your reseller account has been suspended",
+    "message1": "Your reseller account has been banned and is no longer active.",
+    "message2": "Please contact the administrator for more information about your account status.",
+    "contactSupport": "If you believe this is an error, please contact support."
+  },
+  "uiBulk": {
+    "contentManagement.title": "Content Management",
+    "contentManagement.subtitle": "Manage content across all categories with TMDB integration",
+    "scanFolders": "Scan Folders",
+    "addManualMovie": "Add Manual Movie",
+    "addFromTMDB": "Add from TMDB",
+    "movies": "Movies",
+    "tvChannels": "TV Channels",
+    "series": "Series",
+    "events": "Events",
+    "kids": "Kids",
+    "anime": "Anime",
+    "moviesDescription": "Movies and standalone video content",
+    "noContentFound": "No content found",
+    "getStartedAddFirstMovies": "Get started by adding your first movies content.",
+    "addManualMovieButton": "Add Manual Movie",
+    "addFromTMDBButton": "Add from TMDB",
+    "adminDashboard": "Admin Dashboard",
+    "resellerManagement.title": "Reseller Management",
+    "resellerManagement.subtitle": "Create and manage resellers with credit system",
+    "resetAllCounters": "Reset All Counters",
+    "resetAllCountersConfirm": "Are you sure you want to reset daily demo counters for all resellers? This will set all counters to 0.",
+    "createReseller": "Create Reseller",
+    "createResellerDescription": "Create a new reseller account with initial credits and demo limits.",
+    "creditsLabel": "Credits",
+    "dailyDemoLimit": "Daily Demo Limit",
+    "reseller": {
+      "form": {
+        "usernamePlaceholder": "Enter username",
+        "passwordPlaceholder": "Enter password",
+        "emailPlaceholder": "Enter email (optional)"
+      }
+    },
+    "searchByUsernameOrEmail": "Search by username or email...",
+    "noResellersYet": "No resellers yet",
+    "createYourFirstReseller": "Create your first reseller to start managing end users.",
+    "endUsers.title": "End Users",
+    "endUsers.subtitle": "Create and manage end users across all resellers",
+    "createEndUser": "Create End User",
+    "filters": "Filters",
+    "searchByUsername": "Search by username...",
+    "searchByEmail": "Search by email...",
+    "searchByReseller": "Search by reseller...",
+    "noEndUsersYet": "No end users yet",
+    "getStartedCreateFirstEndUser": "Get started by creating your first end user.",
+    "deviceManagement.title": "Device Management",
+    "deviceManagement.subtitle": "Monitor and manage device connections across the system",
+    "deviceManagement.overview": "Overview",
+    "deviceManagement.activeDevices": "Active Devices",
+    "deviceManagement.deviceRemoval": "Device Removal",
+    "deviceManagement.warnings": "Warnings",
+    "deviceManagement.totalDevices": "Total Devices",
+    "deviceManagement.registeredDevices": "Registered devices",
+    "deviceManagement.currentlyConnected": "Currently connected",
+    "deviceManagement.usersWithDevices": "Users with Devices",
+    "deviceManagement.limitWarnings": "Limit Warnings",
+    "deviceManagement.deviceStatistics.title": "Device Statistics",
+    "deviceManagement.avgDevicesPerUser": "Avg Devices/User",
+    "deviceManagement.usersAtLimit": "Users at Limit",
+    "deviceManagement.totalCapacity": "Total Capacity",
+    "deviceManagement.utilization": "Utilization",
+    "deviceManagement.deviceUsageByUser.none": "No users with devices",
+    "deviceManagement.usageDistribution": "Usage Distribution",
+    "deviceManagement.byUsageLevel": "By Usage Level",
+    "deviceManagement.lowUsage": "Low Usage (0-49%)",
+    "deviceManagement.systemHealth.title": "System Health",
+    "overview": "Overview",
+    "activeDevices": "Active Devices",
+    "deviceRemoval": "Device Removal",
+    "warnings": "Warnings",
+    "totalDevices": "Total Devices",
+    "registeredDevices": "Registered devices",
+    "currentlyConnected": "Currently connected",
+    "usersWithDevices": "Users with Devices",
+    "limitWarnings": "Limit Warnings",
+    "deviceStatistics.title": "Device Statistics",
+    "avgDevicesPerUser": "Avg Devices/User",
+    "usersAtLimit": "Users at Limit",
+    "totalCapacity": "Total Capacity",
+    "utilization": "Utilization",
+    "deviceUsageByUser.none": "No users with devices",
+    "usageDistribution": "Usage Distribution",
+    "byUsageLevel": "By Usage Level",
+    "lowUsage": "Low Usage (0-49%)",
+    "systemHealth.title": "System Health",
+    "supportTickets.title": "Support Tickets",
+    "supportTickets.subtitle": "Manage customer support tickets and requests",
+    "createTicket": "Create Ticket",
+    "tickets.total": "Total",
+    "tickets.open": "Open",
+    "tickets.inProgress": "In Progress",
+    "tickets.resolved": "Resolved",
+    "tickets.closed": "Closed",
+    "tickets.unreadMessages": "Unread Messages",
+    "searchTicketsPlaceholder": "Search tickets...",
+    "noTicketsFound": "No tickets found matching your criteria",
+    "noTicketsFoundTitle": "No tickets found",
+    "noTicketsDescription": "Try adjusting filters or create a new support ticket to get started.",
+    "ticketsFound": "Showing {{count}} tickets",
+    "advancedFilter": "Advanced Filter",
+    "sortOptions": "Sort Options",
+    "refresh": "Refresh",
+    "createTicketButton": "Create Ticket",
+    "noTicketsMatch": "No tickets found",
+    "clearFilters": "Clear Filters",
+    "createNewTicket": "Create New Ticket",
+    "tools": "Tools",
+    "viewUsers": "View Users",
+    "editReseller": "Edit Reseller",
+    "resetPassword": "Reset Password",
+    "manageCredits": "Manage Credits",
+    "demoSettings": "Demo Settings",
+    "noMatches": "No matching resellers",
+    "tryAdjustingFilters": "Try adjusting filters or search terms"
+  },
+  "reseller": {
+    "failedToLoad": "Failed to load resellers: {{message}}",
+    "activeLabel": "Active",
+    "bannedLabel": "Banned",
+    "editCreditsTitle": "Edit Credits",
+    "editCreditsDescription": "Update credits for {{username}}",
+    "updateCredits": "Update Credits",
+    "editResellerTitle": "Edit Reseller",
+    "editResellerDescription": "Update reseller information for {{username}}",
+    "updateReseller": "Update Reseller",
+    "resetPasswordTitle": "Reset Password",
+    "processingReset": "Processing reset...",
+    "resetPasswordAction": "Reset Password",
+    "ban": "Ban",
+    "unban": "Unban",
+    "banTitle": "Ban Reseller",
+    "banDescription": "Are you sure you want to ban reseller \"{{username}}\"? This will prevent them from accessing their account.",
+    "unbanTitle": "Unban Reseller",
+    "unbanDescription": "Are you sure you want to unban reseller \"{{username}}\"?",
+    "banAction": "Ban",
+    "unbanAction": "Unban"
+  },
+  "redeem": {
+    "badge": "Gift code portal",
+    "title": "Redeem your access",
+    "description": "Use your gift code to unlock a brand new account or extend your existing access in a couple of guided steps.",
+    "step1": {
+      "title": "Step 1 — Verify your gift code",
+      "subtitle": "Validate the code to unlock your demo or account extension.",
+      "cta": "Paste your gift code to begin",
+      "helper": "We automatically validate the code and show you how many days and uses are included."
+    },
+    "step2": {
+      "title": "Step 2 — Complete your request",
+      "subtitle": "Review the code details, choose how to use it and finish the form."
+    },
+    "detail": {
+      "code": "Code",
+      "duration_days": "Duration (days)",
+      "uses_remaining": "Uses remaining",
+      "expires_at": "Expires"
+    },
+    "action": {
+      "title": "How would you like to use this code?",
+      "create": "Create new user",
+      "create_description": "Generate a fresh account with the gifted access period.",
+      "extend": "Extend existing user",
+      "extend_description": "Apply the code to an account you already have to add more time."
+    },
+    "form": {
+      "codeLabel": "Gift code",
+      "codePlaceholder": "XXXX-XXXX-XXXX",
+      "codeHelp": "Codes are case-sensitive and may include letters and numbers.",
+      "username": "Username",
+      "usernamePlaceholder": "Choose a username",
+      "password": "Password",
+      "passwordPlaceholder": "Create a secure password",
+      "emailOptional": "Email (optional)",
+      "emailPlaceholder": "Where we can reach you",
+      "emailHint": "We use this email for account recovery and important notifications only.",
+      "existingUsername": "Existing username",
+      "extendHint": "Make sure you enter it exactly as it appears in your account settings.",
+      "emptyCode": "Enter a code first.",
+      "createMissing": "Username and password are required to create an account.",
+      "extendMissing": "Username is required to extend an existing account.",
+      "categories": "Categories"
+    },
+    "verify": "Verify code",
+    "checking": "Checking...",
+    "validCode": "Code verified successfully.",
+    "invalidCode": "Invalid code.",
+    "success": "Redeemed successfully.",
+    "error": {
+      "generic": "Unexpected error verifying the code.",
+      "submit": "Redeem failed."
+    },
+    "result": {
+      "errorTitle": "Something went wrong",
+      "successTitle": "All set!"
+    },
+    "submitting": "Submitting...",
+    "extend_hint": "Extending an existing user keeps all of your playlists, favourites and devices intact."
+  },
+  "demo": {
+    "badge": "Instant demo access",
+    "signupTitle": "Experience {{appName}} in minutes",
+    "signupSubtitle": "Spin up a temporary account that stays active for {{hours}} hours. Explore the {{appName}} catalogue, test on your devices and invite teammates to try it with you.",
+    "formTitle": "Create your demo credentials",
+    "formSubtitle": "Share the login with your team and explore every feature risk-free.",
+    "durationLabel": "Duration",
+    "durationValue": "{{hours}} hours",
+    "durationExplanation": "Each demo is active for {{hours}} hours and grants full access within the selected content categories.",
+    "clearCategories": "Clear categories",
+    "categoriesLabel": "Accessible categories (optional)",
+    "categoriesAll": "All categories will be available.",
+    "categoriesSelected": "{{count}} categories selected",
+    "noCategories": "No categories available",
+    "categoriesHelp": "Leave empty to grant demo access to all categories.",
+    "restrictedBadge": "Not available",
+    "emailPlaceholder": "We will only contact you for important updates.",
+    "creating": "Creating...",
+    "createButton": "Create demo",
+    "successMessage": "Demo account created. You can now log in.",
+    "successTitle": "Your demo is ready!",
+    "errorTitle": "We could not create your demo",
+    "durationNote": "Demo accounts last {{hours}} hours and grant temporary access to the selected categories.",
+    "failedCreate": "Failed to create demo:",
+    "footerNote": "Demo credentials expire automatically. Ready to dive deeper? Ask our team for extended trials or reseller options."
+  },
+  "metadata": {
+    "title": "{{appName}} - Content Platform",
+    "description": "{{appName}} - Professional IPTV content management and delivery platform"
+  },
+  "accessibility": {
+    "breadcrumb": "Breadcrumb",
+    "selectAll": "Select all",
+    "tabs": "Tabs",
+    "dashboard": "Dashboard",
+    "notifications": "Notifications"
+  },
+  "format": {
+    "m3u8": "M3U8",
+    "drm": "DRM"
+  },
+  "languages": {
+    "english": "English",
+    "spanish": "Spanish",
+    "chinese": "Chinese",
+    "portuguese": "Portuguese",
+    "french": "French",
+    "russian": "Russian",
+    "turkish": "Turkish",
+    "slovak": "Slovak"
+  },
+  "favorites": {
+    "title": "My Favorites",
+    "description": "All your favorite content in one place",
+    "music": "Music",
+    "content": "Content",
+    "allFavorites": "All Favorites",
+    "tracks": "Tracks",
+    "albums": "Albums",
+    "artists": "Artists",
+    "track": "Track",
+    "album": "Album",
+    "artist": "Artist",
+    "noMusicFavorites": "No music favorites yet",
+    "addMusicFavorites": "Start adding your favorite tracks, albums, and artists",
+    "browseMusic": "Browse Music",
+    "contentComingSoon": "Content favorites coming soon",
+    "contentDescription": "Soon you'll be able to favorite movies, series, and more",
+    "add": "Add to favorites",
+    "remove": "Remove from favorites",
+    "added": "Added to favorites",
+    "removed": "Removed from favorites",
+    "inFavorites": "In favorites",
+    "removeFailed": "Failed to remove from favorites",
+    "error": "Error updating favorites"
+  },
+  "history": {
+    "title": "Watch History",
+    "description": "Review everything you've watched recently",
+    "filterByCategory": "Filter by category",
+    "allCategories": "All categories",
+    "items": "items",
+    "clearHistory": "Clear History",
+    "confirmClear": "Are you sure you want to clear all your watch history?",
+    "cleared": "History cleared successfully",
+    "clearFailed": "Failed to clear history",
+    "error": "Error clearing history",
+    "noHistory": "No watch history",
+    "noHistoryDescription": "Start watching content to see it here",
+    "browseContent": "Browse Content",
+    "page": "Page",
+    "of": "of",
+    "categories": {
+      "movie": "Movie",
+      "series": "Series",
+      "live": "Live"
+    }
+  },
+  "search": {
+    "title": "Global Search",
+    "description": "Search across all content categories",
+    "placeholder": "Search movies, series, music, channels...",
+    "filters": "Filters",
+    "category": "Category",
+    "allCategories": "All categories",
+    "movies": "Movies",
+    "series": "Series",
+    "live": "Live TV",
+    "kids": "Kids",
+    "anime": "Anime",
+    "events": "Events",
+    "year": "Year",
+    "allYears": "All years",
+    "sortBy": "Sort by",
+    "relevance": "Relevance",
+    "titleAZ": "Title (A-Z)",
+    "yearDesc": "Year (newest first)",
+    "ratingDesc": "Rating",
+    "clearFilters": "Clear filters",
+    "startSearching": "Start searching",
+    "startSearchingDescription": "Type something in the search field to find content",
+    "noResults": "No results found",
+    "noResultsDescription": "Try different search terms or adjust the filters",
+    "resultsFound": "results found",
+    "virtualizedMode": "Optimized mode"
+  },
+  "music": {
+    "title": "Music Library",
+    "description": "Browse and play your music collection",
+    "favorites": "Favorites",
+    "addToFavorites": "Add to Favorites",
+    "removeFromFavorites": "Remove from Favorites",
+    "favoriteAdded": "Added to favorites",
+    "favoriteRemoved": "Removed from favorites",
+    "player": "Player",
+    "errorGettingStream": "Error getting stream",
+    "goBack": "Go Back",
+    "errors": {
+      "favoriteError": "Error updating favorites",
+      "loadError": "Error loading music",
+      "streamError": "Error streaming music"
+    }
+  },
+  "watch": {
+    "title": "Player",
+    "subtitle": "Video player",
+    "invalidId": "Invalid content ID",
+    "notFound": "Content not found",
+    "noStreamAvailable": "No stream available for this content",
+    "streamError": "Error getting the stream",
+    "backToDashboard": "Back to dashboard",
+    "synopsis": "Synopsis",
+    "playNow": "Play now",
+    "seasons": "Seasons",
+    "seasonShort": "S{{n}}",
+    "episodeLabel": "E{{n}}",
+    "noEpisodes": "No episodes available",
+    "related": "Recommended",
+    "noRelated": "No recommendations available for now",
+    "drmNotice": "This content has DRM configured — may require a compatible player",
+    "goBack": "Go back",
+    "subtitles": "Subtitles",
+    "subtitlesOff": "Off",
+    "downloadSubtitle": "Download",
+    "settings": "Settings",
+    "captionSize": "Caption size",
+    "small": "Small",
+    "medium": "Medium",
+    "large": "Large"
+  },
+  "chat": {
+    "ticket": {
+      "createdBy": "Created by {{username}}",
+      "initialRequest": "Initial Request",
+      "supportRole": "Support",
+      "customerRole": "Customer",
+      "internal": "Internal",
+      "supportTyping": "Support is typing...",
+      "messagePlaceholder": "Type your message...",
+      "sendHint": "Press Enter to send, Shift+Enter for new line"
+    },
+    "admin": {
+      "internalNotes": "Internal Notes",
+      "sendAsInternalNote": "Send as internal note (not visible to customer)",
+      "internalMessagePlaceholder": "Type an internal note...",
+      "adminResponsePlaceholder": "Type your response as admin...",
+      "internalVisibilityHint": "Internal note - only visible to admins"
+    }
+  },
+  "contentList": {
+    "listTitle": "{{type}} List",
+    "library": "Library",
+    "manageAndViewAll": "Manage and view all {{type}}",
+    "searchPlaceholder": "Search content...",
+    "confirmBulkDelete": "Delete {{count}} selected items? This action cannot be undone.",
+    "deleteSelected": "Delete ({{count}})",
+    "created": "Created",
+    "viewEditContent": "View/Edit content",
+    "deleteContentTitle": "Delete Content",
+    "deleteContentDescription": "Are you sure you want to delete \"{{title}}\"? This action cannot be undone.",
+    "deleteContentAction": "Delete Content",
+    "noTypeFound": "No {{type}} found",
+    "noContentMatching": "No content found matching \"{{query}}\". Try a different search term.",
+    "getStartedByAddingFirst": "Get started by adding your first {{type}} to the library.",
+    "addContent": "Add Content",
+    "failedToLoad": "Failed to load content: {{message}}",
+    "bulkDeleteFailed": "Bulk delete failed",
+    "runtimeMinutes": "{{minutes}}min",
+    "channelNumber": "Ch. {{number}}",
+    "live": "Live",
+    "tmdb": "TMDB"
+  },
+  "feedback": {
+    "operation": {
+      "saving": "Saving",
+      "deleting": "Deleting",
+      "uploading": "Uploading",
+      "downloading": "Downloading",
+      "syncing": "Syncing",
+      "processing": "Processing"
+    },
+    "operationStatus": {
+      "loading": "{{operation}}...",
+      "success": "{{operation}} successfully",
+      "error": "Failed to {{operation}}"
+    },
+    "time": {
+      "minutesAgo": "{{count}}m ago",
+      "hoursAgo": "{{count}}h ago",
+      "daysAgo": "{{count}}d ago"
+    },
+    "connection": {
+      "online": "Online",
+      "offline": "Offline",
+      "lastSync": "Last sync"
+    },
+    "form": {
+      "submitting": "Submitting form...",
+      "submissionFailed": "Submission Failed",
+      "readyToSubmit": "Form is ready to submit",
+      "fixErrors": "Please fix the errors above"
+    },
+    "bulk": {
+      "title": "Bulk {{operation}}",
+      "inProgress": "Operation in progress...",
+      "completed": "Operation completed",
+      "total": "Total",
+      "completedCount": "Completed",
+      "failedCount": "Failed",
+      "remaining": "Remaining",
+      "completedWithErrors": "Completed with {{count}} errors",
+      "allProcessed": "All items processed successfully"
+    }
+  },
+  "manualSeries": {
+    "addManual": "Add Manual {{type}}",
+    "dialogDescription": "Create a {{type}} manually with custom seasons and episodes",
+    "stepBasicInfo": "1. Basic Info",
+    "stepSeasonsEpisodes": "2. Seasons & Episodes",
+    "detailsTitle": "{{type}} Details",
+    "detailsDescription": "Enter the basic information for your {{type}}",
+    "titleRequired": "Title *",
+    "titlePlaceholder": "Enter {{type}} title...",
+    "descriptionPlaceholder": "Enter {{type}} description...",
+    "activeType": "Active {{type}}",
+    "nextAddSeasons": "Next: Add Seasons",
+    "validEpisodes": "Valid episodes: {{count}} (only episodes with video URLs will be saved)",
+    "episodeShort": "Ep {{number}}",
+    "videoUrlOptionalPlaceholder": "Video URL (optional)",
+    "createType": "Create {{type}}"
+  },
+  "seriesManagement": {
+    "addSeriesContent": "Add Series Content",
+    "dialogDescription": "Search TMDB for series information or create series structure manually",
+    "seriesStructure": "Series Structure",
+    "searchTvSeries": "Search TV Series",
+    "enterSeriesTitleEllipsis": "Enter series title...",
+    "tmdbSearchFailed": "TMDB search failed. Please try manual entry.",
+    "notAvailable": "N/A",
+    "noSeriesFound": "No series found for \"{{query}}\". Try manual entry instead.",
+    "selectedFromTmdb": "Selected from TMDB",
+    "tmdbId": "TMDB ID: {{id}}",
+    "seasonsCount": "{{count}} Seasons",
+    "seriesInformation": "Series Information",
+    "seriesTitleRequired": "Series Title *",
+    "enterSeriesTitle": "Enter series title",
+    "firstAirDateYear": "First air date year",
+    "seriesDescriptionPlaceholder": "Series description...",
+    "activeSeries": "Active Series",
+    "seasonsAndEpisodes": "Seasons & Episodes",
+    "manageSeasonsAndEpisodes": "Manage seasons and episodes for this series",
+    "addSeason": "Add Season",
+    "seasonTab": "Season {{number}}",
+    "seasonTitle": "Season Title",
+    "seasonTitlePlaceholder": "Season title",
+    "seasonPosterUrl": "Season Poster URL",
+    "seasonPosterPlaceholder": "https://example.com/season-poster.jpg",
+    "seasonDescription": "Season Description",
+    "seasonDescriptionPlaceholder": "Season description...",
+    "episodes": "Episodes",
+    "addEpisode": "Add Episode",
+    "removeSeason": "Remove Season",
+    "createSeries": "Create Series",
+    "defaultSeasonTitle": "Season {{number}}",
+    "defaultEpisodeTitle": "Episode {{number}}",
+    "episodeHeader": "Episode {{number}}: {{title}}",
+    "untitled": "Untitled",
+    "urlSet": "URL Set",
+    "noUrl": "No URL",
+    "episodeTitle": "Episode Title",
+    "episodeTitlePlaceholder": "Episode title",
+    "runtimeMinutes": "Runtime (minutes)",
+    "runtimePlaceholder": "45",
+    "episodeDescription": "Episode Description",
+    "episodeDescriptionPlaceholder": "Episode description...",
+    "videoUrlRequired": "Video URL *",
+    "episodeVideoPlaceholder": "https://example.com/episode.m3u8",
+    "episodePosterUrl": "Episode Poster URL",
+    "episodePosterPlaceholder": "https://example.com/episode-poster.jpg",
+    "removeEpisode": "Remove Episode"
+  },
+  "creditsCheckout": {
+    "cancel": {
+      "title": "Payment Canceled",
+      "description": "The checkout process was canceled. No charges have been applied to your account.",
+      "retryHint": "You can try again at any time. If you encountered an issue during checkout, please verify your payment details or contact support.",
+      "tryAgain": "Try Again",
+      "returnToDashboard": "Return to Dashboard",
+      "contactSupport": "Need help? Contact Support"
+    },
+    "success": {
+      "title": "Payment Successful",
+      "description": "Thank you for your purchase. Your credits are being processed and will be available momentarily.",
+      "processingTimeTitle": "Processing Time",
+      "processingTimeDescription": "Credits are assigned automatically via secure webhook. This usually takes less than 10 seconds.",
+      "backToDashboard": "Back to Dashboard",
+      "viewTransactionHistory": "View Transaction History",
+      "transactionIdPlaceholder": "Transaction ID: Session Completed"
+    }
+  },
+  "products": {
+    "badge": "My products",
+    "title": "Access enabled in your plan",
+    "subtitle": "Explore all content available according to your active products.",
+    "search": "Search content",
+    "devices": "My devices",
+    "list": {
+      "title": "Available products"
+    },
+    "loading": "Getting your enabled products",
+    "empty": {
+      "title": "You don't have products assigned yet",
+      "description": "When your administrator enables categories, they will appear here."
+    },
+    "badgeIncluded": "Included in your plan",
+    "cta": {
+      "explore": "Explore"
+    },
+    "errors": {
+      "loadCategoriesFailed": "Failed to load categories",
+      "loadProfileFailed": "Failed to load profile"
+    }
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "title": "黑名单设备 ({{count}})",
+  "empty": {
+    "title": "无黑名单设备",
+    "description": "一切正常。当前没有设备被列入黑名单。"
+  },
+  "table": {
+    "username": "用户名",
+    "deviceId": "设备 ID",
+    "blacklistedAt": "加入黑名单时间",
+    "actions": "操作"
+  },
+  "actions": {
+    "remove": "从黑名单中移除"
+  },
+  "notifications": {
+    "blacklist": {
+      "errorLoading": "加载黑名单设备时出错",
+      "confirmRemove": "将用户 {{user}} 的设备 \"{{device}}\" 从黑名单中移除？",
+      "removed": "设备已从黑名单中移除",
+      "removeFailed": "从黑名单中移除设备失败"
+    }
+  }
+}

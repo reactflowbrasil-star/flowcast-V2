@@ -1,0 +1,34 @@
+{
+  "activity": {
+    "errorLoadingDashboard": "Échec du chargement du tableau de bord: {{message}}",
+    "errorLoadingDashboardFallback": "Échec du chargement des données d'activité"
+  },
+  "activityDashboard": {
+    "title": "Tableau de Bord d'Activité",
+    "activitySubtitle": "Activité du système et métriques d'engagement",
+    "autoRefreshState": "Rafraîchissement auto : {{state}}",
+    "on": "ON",
+    "off": "OFF",
+    "enable": "Activer",
+    "disable": "Désactiver",
+    "loginsToday": "Connexions aujourd'hui",
+    "activeUsers": "Utilisateurs actifs",
+    "last7Days": "Derniers 7 jours",
+    "contentViews": "Vues de contenu",
+    "deviceDistribution": "Distribution des appareils",
+    "mostViewedContent": "Contenu le plus vu",
+    "noViewingData": "Aucune donnée de vue",
+    "multiDeviceUsers": "Utilisateurs multi-appareils",
+    "noMultiDeviceUsers": "Aucun utilisateur avec plusieurs appareils",
+    "activity24h": "Activité (24h)",
+    "logins": "Connexions",
+    "views": "Vues",
+    "noDeviceData": "Données de distribution d'appareils indisponibles",
+    "devicesLabel": "appareils",
+    "devices": "appareils",
+    "failedLogins": "Échecs de connexion",
+    "today": "Aujourd'hui",
+    "refresh": "Rafraîchir",
+    "tryAgain": "Réessayer"
+  }
+}

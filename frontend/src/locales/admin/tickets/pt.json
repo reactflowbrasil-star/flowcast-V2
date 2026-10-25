@@ -1,0 +1,127 @@
+{
+  "tickets": {
+    "errors": {
+      "sendMessage": "Falha ao enviar mensagem",
+      "sendMessageRetry": "Falha ao enviar mensagem. Por favor, tente novamente.",
+      "assign": "Falha ao atribuir ticket",
+      "assignRetry": "Falha ao atribuir ticket. Por favor, tente novamente.",
+      "delete": "Falha ao excluir ticket",
+      "deleteRetry": "Falha ao excluir ticket. Por favor, tente novamente.",
+      "updateStatus": "Falha ao atualizar status do ticket",
+      "updateStatusRetry": "Falha ao atualizar status do ticket. Por favor, tente novamente.",
+      "create": "Falha ao criar ticket",
+      "createRetry": "Falha ao criar ticket. Por favor, tente novamente.",
+      "validation": {
+        "titleDescriptionRequired": "Título e descrição são obrigatórios",
+        "resellerRequired": "Por favor, selecione um revendedor"
+      }
+    },
+    "confirm": {
+      "delete": "Tem certeza que deseja excluir este ticket? Esta ação não pode ser desfeita."
+    },
+    "filters": {
+      "status": {
+        "all": "Todos os Status"
+      },
+      "priority": {
+        "all": "Todas as Prioridades"
+      },
+      "unread": {
+        "all": "Todas as Mensagens",
+        "unread": "Mensagens Não Lidas",
+        "read": "Mensagens Lidas"
+      }
+    },
+    "placeholders": {
+      "filterByStatus": "Filtrar por status",
+      "filterByPriority": "Filtrar por prioridade",
+      "filterByReadStatus": "Filtrar por status de leitura"
+    },
+    "unreadMessages": "Mensagens Não Lidas",
+    "stats": {
+      "total": "Total"
+    },
+    "actions": {
+      "panelTitle": "Ações de Admin",
+      "assigning": "Atribuindo...",
+      "assignToMe": "Atribuir a Mim",
+      "changeStatus": "Alterar Status",
+      "internalMessage": "Enviar como mensagem interna",
+      "scheduleFollowUp": "Agendar Acompanhamento",
+      "reassignTicket": "Reatribuir Ticket"
+    },
+    "priority": {
+      "low": "Baixa",
+      "medium": "Média",
+      "high": "Alta",
+      "urgent": "Urgente"
+    },
+    "status": {
+      "open": "Aberto",
+      "in_progress": "Em Progresso",
+      "waiting_response": "Aguardando Resposta",
+      "resolved": "Resolvido",
+      "closed": "Fechado"
+    },
+    "category": {
+      "technical": "Técnico",
+      "billing": "Faturamento",
+      "account": "Conta",
+      "content": "Conteúdo",
+      "other": "Outro"
+    },
+    "create": {
+      "title": "Criar Novo Ticket",
+      "description": "Crie um novo ticket de suporte para testes ou fins administrativos.",
+      "labels": {
+        "title": "Título",
+        "description": "Descrição",
+        "reseller": "Revendedor",
+        "priority": "Prioridade",
+        "category": "Categoria"
+      },
+      "placeholders": {
+        "title": "Insira o título do ticket",
+        "description": "Insira a descrição do ticket",
+        "reseller": "Selecione um revendedor"
+      },
+      "submitting": "Criando...",
+      "submit": "Criar Ticket"
+    },
+    "advanced": {
+      "title": "Filtros Avançados",
+      "description": "Aplique filtros adicionais para refinar sua busca de tickets.",
+      "labels": {
+        "dateFrom": "Data De",
+        "dateTo": "Data Até"
+      },
+      "helper": "Filtrar tickets por intervalo de data de criação. Deixe vazio para mostrar todas as datas.",
+      "clear": "Limpar Tudo",
+      "apply": "Aplicar Filtros"
+    },
+    "sort": {
+      "title": "Opções de Ordenação",
+      "description": "Escolha como ordenar seus tickets.",
+      "labels": {
+        "sortBy": "Ordenar Por",
+        "direction": "Direção"
+      },
+      "options": {
+        "newestFirst": "Mais Recentes",
+        "oldestFirst": "Mais Antigos",
+        "priority": "Prioridade",
+        "status": "Estado",
+        "unreadFirst": "Não Lidos Primeiro"
+      },
+      "direction": {
+        "descending": "Decrescente",
+        "ascending": "Crescente"
+      },
+      "reset": "Redefinir Padrão",
+      "apply": "Aplicar Ordenação"
+    },
+    "common": {
+      "cancel": "Cancelar"
+    }
+  }
+}

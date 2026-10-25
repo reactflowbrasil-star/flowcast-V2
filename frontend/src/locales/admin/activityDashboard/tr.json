@@ -1,0 +1,34 @@
+{
+  "activity": {
+    "errorLoadingDashboard": "Panel yüklenemedi: {{message}}",
+    "errorLoadingDashboardFallback": "Etkinlik verileri yüklenemedi"
+  },
+  "activityDashboard": {
+    "title": "Etkinlik Paneli",
+    "activitySubtitle": "Sistem etkinliği ve etkileşim ölçümleri",
+    "autoRefreshState": "Otomatik yenileme: {{state}}",
+    "on": "AÇIK",
+    "off": "KAPALI",
+    "enable": "Etkinleştir",
+    "disable": "Devre Dışı Bırak",
+    "loginsToday": "Bugünkü girişler",
+    "activeUsers": "Aktif kullanıcılar",
+    "last7Days": "Son 7 gün",
+    "contentViews": "İçerik görüntülemeleri",
+    "deviceDistribution": "Cihaz dağılımı",
+    "mostViewedContent": "En çok izlenen içerik",
+    "noViewingData": "Görüntüleme verisi yok",
+    "multiDeviceUsers": "Çok cihazlı kullanıcılar",
+    "noMultiDeviceUsers": "Birden fazla cihazı olan kullanıcı yok",
+    "activity24h": "Etkinlik (24s)",
+    "logins": "Girişler",
+    "views": "Görüntülemeler",
+    "noDeviceData": "Cihaz dağılım verisi mevcut değil",
+    "devicesLabel": "cihazlar",
+    "devices": "cihazlar",
+    "failedLogins": "Başarısız girişler",
+    "today": "Bugün",
+    "refresh": "Yenile",
+    "tryAgain": "Tekrar Dene"
+  }
+}

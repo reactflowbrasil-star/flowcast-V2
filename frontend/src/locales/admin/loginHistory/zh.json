@@ -1,0 +1,45 @@
+{
+  "loginHistory": {
+    "title": "登录历史",
+    "subtitle": "最近的登录和认证事件",
+    "lastUpdated": "最后更新：{{time}}",
+    "autoRefreshOn": "自动刷新 已开启",
+    "autoRefreshOff": "自动刷新 已关闭",
+    "refreshNow": "立即刷新",
+    "filters": {
+      "username": "用户名",
+      "ipAddress": "IP 地址",
+      "startDate": "开始日期 (dd/mm/yyyy)",
+      "endDate": "结束日期 (dd/mm/yyyy)",
+      "result": "结果",
+      "allResults": "所有结果",
+      "perPage": "每页",
+      "placeholderUsername": "搜索用户名…",
+      "placeholderIp": "例如 192.168.0.1"
+    },
+    "table": {
+      "date": "日期",
+      "username": "用户名",
+      "email": "邮箱",
+      "ip": "IP",
+      "device": "设备",
+      "result": "结果",
+      "method": "方法"
+    },
+    "pagination": {
+      "previous": "上一步",
+      "next": "下一步",
+      "showing": "显示 {{from}} 到 {{to}} ，共 {{total}} 条记录",
+      "pageOf": "第 {{page}} / {{total_pages}} 页"
+    },
+    "empty": "未找到登录记录。",
+    "errors": {
+      "failedLoad": "加载登录历史失败",
+      "invalidDateRange": "无效的日期范围"
+    },
+    "common": {
+      "failedLogins": "登录失败",
+      "today": "今天"
+    }
+  }
+}

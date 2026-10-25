@@ -1,0 +1,46 @@
+{
+  "title": "Özel İçerik Yönetimi",
+  "tabs": {
+    "kids": "Çocuk",
+    "anime": "anime",
+    "events": "Etkinlikler",
+    "tv": "TV",
+    "movies": "Filmler",
+    "series": "Diziler"
+  },
+  "kids": {
+    "addContent": "Çocuk İçeriği Ekle",
+    "existingContent": "Mevcut Çocuk İçeriği ({{count}})",
+    "year": "Yıl: {{year}}",
+    "active": "Aktif: {{status}}"
+  },
+  "anime": {
+    "placeholder": "Anime İçerik Yönetimi - Çocuk İçeriğine benzer yapı"
+  },
+  "events": {
+    "placeholder": "Etkinlik Yönetimi - Planlama işlevi ile"
+  },
+  "tvChannels": {
+    "placeholder": "TV Kanal Yönetimi - Canlı kanal yönetimi"
+  },
+  "movies": {
+    "placeholder": "Film Yönetimi - VOD içerik yönetimi"
+  },
+  "seriesTab": {
+    "placeholder": "Dizi Yönetimi - Sezonlar ve bölümler ile"
+  },
+  "form": {
+    "title": "Başlık",
+    "description": "Açıklama",
+    "streamUrl": "Yayın URL",
+    "imageUrl": "Resim URL",
+    "tmdbId": "TMDB ID",
+    "year": "Yıl",
+    "creating": "Oluşturuluyor...",
+    "createContent": "İçerik Oluştur"
+  },
+  "status": {
+    "yes": "Evet",
+    "no": "Hayır"
+  }
+}

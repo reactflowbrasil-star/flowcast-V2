@@ -1,0 +1,24 @@
+{
+  "bulkImportContent": {
+    "title": "Toplu içe aktarım — {{category}} (M3U/M3U8)",
+    "description": "{{category}} öğelerini toplu içe aktarmak için aşağıya bir M3U/M3U8 oynatma listesi yapıştırın. Her giriş yeni bir içerik olarak oluşturulur. Veriler otomatik olarak temizlenir (kopyalar kaldırılır, isimler düzeltilir).",
+    "labels": {
+      "playlist": "Oynatma listesi (M3U/M3U8)"
+    },
+    "buttons": {
+      "cancel": "İptal",
+      "chooseFile": "M3U dosyası seç",
+      "import": "{{category}} içe aktar",
+      "importing": "İçe aktarılıyor..."
+    },
+    "result": "{{total}} öğeden {{success}} tanesi içe aktarıldı.",
+    "resultWithFailed": "{{total}} öğeden {{success}} tanesi içe aktarıldı ({{failed}} başarısız).",
+    "validation": {
+      "pasteM3uContent": "M3U/M3U8 içeriğini yapıştırın",
+      "invalidData": "Geçersiz veri",
+      "importFailed": "Toplu içe aktarım başarısız",
+      "unknownError": "Bilinmeyen hata",
+      "fileReadFailed": "Seçilen dosya okunamadı"
+    }
+  }
+}

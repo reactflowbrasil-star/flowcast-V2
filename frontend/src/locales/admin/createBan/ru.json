@@ -1,0 +1,19 @@
+{
+    "createBan": {
+        "title": "Создать бан",
+        "usernameLabel": "Имя пользователя",
+        "usernamePlaceholder": "Введите имя пользователя для бана",
+        "banTypeLabel": "Тип бана",
+        "temporary": "Временный",
+        "permanent": "Постоянный",
+        "banLevelLabel": "Уровень бана",
+        "level1": "Уровень 1 - Предупреждение",
+        "level2": "Уровень 2 - Ограничение",
+        "level3": "Уровень 3 - Полный бан",
+        "reasonLabel": "Причина",
+        "reasonPlaceholder": "Введите причину бана...",
+        "customDurationLabel": "Произвольная длительность",
+        "customDurationPlaceholder": "Введите длительность в часах",
+        "customDurationNote": "Длительность в часах. Оставьте пустым для значения по умолчанию."
+    }
+}

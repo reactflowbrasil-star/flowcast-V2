@@ -1,0 +1,45 @@
+{
+  "loginHistory": {
+    "title": "Login History",
+    "subtitle": "Recent sign-ins and authentication events",
+    "lastUpdated": "Last updated: {{time}}",
+    "autoRefreshOn": "Auto-refresh is ON",
+    "autoRefreshOff": "Auto-refresh is OFF",
+    "refreshNow": "Refresh now",
+    "filters": {
+      "username": "Username",
+      "ipAddress": "IP address",
+      "startDate": "Start date (dd/mm/yyyy)",
+      "endDate": "End date (dd/mm/yyyy)",
+      "result": "Result",
+      "allResults": "All results",
+      "perPage": "Per page",
+      "placeholderUsername": "Search username…",
+      "placeholderIp": "e.g. 192.168.0.1"
+    },
+    "table": {
+      "date": "Date",
+      "username": "Username",
+      "email": "Email",
+      "ip": "IP",
+      "device": "Device",
+      "result": "Result",
+      "method": "Method"
+    },
+    "pagination": {
+      "previous": "Previous",
+      "next": "Next",
+      "showing": "Showing {{from}} to {{to}} of {{total}} records",
+      "pageOf": "Page {{page}} of {{total_pages}}"
+    },
+    "empty": "No login records found.",
+    "errors": {
+      "failedLoad": "Failed to load login history",
+      "invalidDateRange": "Invalid date range"
+    },
+    "common": {
+      "failedLogins": "Failed logins",
+      "today": "Today"
+    }
+  }
+}

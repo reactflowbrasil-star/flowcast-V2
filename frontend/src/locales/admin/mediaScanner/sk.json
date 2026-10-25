@@ -1,0 +1,110 @@
+{
+  "mediaScanner": {
+    "title": "Skener médií",
+    "subtitle": "Skenovať priečinky servera na automatický import mediálneho obsahu",
+    "categorySelector": {
+      "title": "Vybrať kategóriu obsahu",
+      "description": "Vyberte typ obsahu, ktorý chcete skenovať",
+      "movies": "Filmy",
+      "series": "Seriály",
+      "kids": "Deti",
+      "anime": "Anime",
+      "music": "Hudba"
+    },
+    "folderExplorer": {
+      "title": "Vybrať priečinok na skenovanie",
+      "description": "Prehľadajte a vyberte priečinok servera obsahujúci vaše mediálne súbory",
+      "currentPath": "Aktuálna cesta",
+      "selectFolder": "Vybrať tento priečinok",
+      "goUp": "Hore",
+      "loading": "Načítavanie priečinkov...",
+      "error": "Chyba pri načítaní priečinkov",
+      "noFolders": "Nenašli sa žiadne priečinky",
+      "refresh": "Obnoviť",
+      "selectedFolder": "Vybraný priečinok:"
+    },
+    "scanOptions": {
+      "title": "Možnosti skenovania",
+      "duplicatePolicy": "Politika duplikátov",
+      "duplicatePolicyOptions": {
+        "omit": "Preskočiť duplikáty",
+        "replace": "Nahradi? existuj?ce",
+        "allow": "Povoli? duplik?ty"
+      },
+      "addSubtitles": "Zahrnúť titulky",
+      "addSubtitlesHelp": "Automaticky zistiť a pridať súbory titulkov"
+    },
+    "scanProgress": {
+      "title": "Priebeh skenovania",
+      "status": "Stav",
+      "scanned": "Naskenované súbory",
+      "imported": "Importované súbory",
+      "errors": "Chyby",
+      "currentFile": "Aktuálny súbor",
+      "timeElapsed": "Uplynulý čas",
+      "estimatedRemaining": "Odhadovaný zostávajúci čas",
+      "cancel": "Zrušiť",
+      "cancelConfirm": "Ste si istí, že chcete zrušiť skenovanie? Pokrok sa stratí.",
+      "completed": "Dokončené",
+      "cancelled": "Zrušené",
+      "failed": "Zlyhalo"
+    },
+    "taskControl": {
+      "title": "Ovládanie úloh",
+      "tasks": "úlohy",
+      "path": "Cesta",
+      "started": "Spustené",
+      "duration": "Trvanie",
+      "currentFile": "Aktuálny súbor",
+      "stats": {
+        "movies": "Filmy",
+        "series": "Seriály",
+        "episodes": "Epizódy",
+        "subtitles": "Titulky",
+        "skipped": "Preskočené",
+        "replaced": "Nahradené"
+      },
+      "error": "Chyba",
+      "cancel": "Zrušiť",
+      "delete": "Vymazať",
+      "cancelling": "Ruší sa...",
+      "deleting": "Vymazáva sa...",
+      "idle": "Žiadne bežiace úlohy"
+    },
+    "scanStatus": {
+      "title": "Stav skenovania",
+      "scanId": "ID skenovania",
+      "status": "Stav",
+      "backgroundNote": "Skenovanie beží na serveri. Túto stránku môžete zavrieť a proces bude pokračovať.",
+      "anotherScanNote": "Už prebieha skenovanie. V prípade potreby môžete spustiť ďalšie."
+    },
+    "actions": {
+      "startScan": "Spustiť skenovanie",
+      "selectCategory": "Vybrať kategóriu",
+      "selectFolder": "Vybrať priečinok",
+      "configureScan": "Konfigurovať skenovanie",
+      "delete": "Vymazať",
+      "deleting": "Vymazáva sa..."
+    },
+    "status": {
+      "idle": "Pripravené na skenovanie",
+      "scanning": "Prebieha skenovanie...",
+      "completed": "Skenovanie úspešne dokončené",
+      "cancelled": "Skenovanie bolo zrušené",
+      "failed": "Skenovanie zlyhalo s chybami"
+    },
+    "errors": {
+      "noCategory": "Vyberte kategóriu obsahu",
+      "noFolder": "Vyberte priečinok na skenovanie",
+      "scanFailed": "Nepodarilo sa spustiť skenovanie: {{message}}",
+      "cancelFailed": "Nepodarilo sa zrušiť skenovanie: {{message}}",
+      "loadFolders": "Nepodarilo sa načítať priečinky: {{message}}"
+    },
+    "notifications": {
+      "scanStarted": "Skenovanie médií úspešne spustené",
+      "scanCompleted": "Skenovanie médií dokončené: {{imported}} súborov importovaných",
+      "scanCancelled": "Skenovanie médií bolo zrušené",
+      "scanFailed": "Skenovanie médií zlyhalo: {{message}}"
+    }
+  }
+}

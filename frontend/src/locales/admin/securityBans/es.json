@@ -1,0 +1,38 @@
+{
+  "title": "Bloqueos de seguridad ({{total}})",
+  "noneFound": "No se encontraron bloqueos.",
+  "itemsPerPage": "Ítems por página",
+  "admin": {
+    "securityBans": {
+      "searchByUsernamePlaceholder": "Buscar por usuario...",
+      "itemsPerPage": "Ítems por página",
+      "title": "Bloqueos de seguridad ({{total}})",
+      "noneFound": "No se encontraron bloqueos.",
+      "level": "Nivel",
+      "type": "Tipo",
+      "reason": "Motivo",
+      "timeRemaining": "Tiempo restante"
+    }
+  },
+  "unban": {
+    "action": "Desbloquear",
+    "confirm": "¿Desbloquear al usuario {{user}}?",
+    "promptReason": "Ingresa el motivo del desbloqueo"
+  },
+  "notifications": {
+    "ban": {
+      "userUnbanned": "Usuario {{user}} desbloqueado"
+    },
+    "security": {
+      "errorLoadingBans": "Error cargando bloqueos",
+      "errorUnbanningUser": "Error al desbloquear al usuario"
+    }
+  },
+  "common": {
+    "username": "Usuario",
+    "actions": "Acciones",
+    "previous": "Anterior",
+    "next": "Siguiente",
+    "paginationShowing": "Página {{page}} de {{totalPages}}"
+  }
+}

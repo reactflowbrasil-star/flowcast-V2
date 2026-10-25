@@ -1,0 +1,18 @@
+{
+  "errors": {
+    "loadingSources": "Error al cargar las fuentes EPG",
+    "nameUrlRequired": "El nombre y la URL son obligatorios",
+    "createFailed": "Error al crear la fuente",
+    "updateFailed": "Error al actualizar la fuente",
+    "deleteFailed": "Error al eliminar la fuente",
+    "fetchChannelsFailed": "Error al obtener los canales"
+  },
+  "units": {
+    "minutes": "mín."
+  },
+  "labels": {
+    "timezone": "TZ:"
+  },
+  "confirmDelete": "¿Eliminar la fuente EPG \"{{name}}\"?",
+  "inactive": "(inactivo)"
+}

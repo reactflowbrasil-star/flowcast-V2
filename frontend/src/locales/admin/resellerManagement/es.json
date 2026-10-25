@@ -1,0 +1,66 @@
+{
+  "uiBulk": {
+    "reseller": {
+      "form": {
+        "usernamePlaceholder": "Ingresa el nombre de usuario",
+        "passwordPlaceholder": "Ingresa contraseña numérica (4-10 dígitos)",
+        "emailPlaceholder": "Ingresa el correo"
+      }
+    }
+  },
+  "resellerManagement": {
+    "title": "Gestión de Revendedores",
+    "subtitle": "Crea y gestiona revendedores con sistema de créditos",
+    "createReseller": "Crear revendedor",
+    "createResellerDescription": "Crea una nueva cuenta de revendedor con créditos iniciales y límites de demostración.",
+    "resetAllCounters": "Reiniciar contadores",
+    "resetAllCountersConfirm": "¿Estás seguro que deseas reiniciar los contadores diarios de demostración para todos los revendedores? Esto establecerá todos los contadores en 0.",
+    "searchByUsernameOrEmail": "Buscar por usuario o correo...",
+    "noResellersYet": "Aún no hay revendedores",
+    "createYourFirstReseller": "Crea tu primer revendedor para comenzar a gestionar usuarios finales.",
+    "endUsersTitle": "Usuarios finales",
+    "endUsersSubtitle": "Crear y gestionar usuarios finales para todos los revendedores",
+    "createEndUser": "Crear usuario final",
+    "filters": "Filtros",
+    "searchByUsername": "Buscar por usuario...",
+    "searchByEmail": "Buscar por correo...",
+    "searchByReseller": "Buscar por revendedor...",
+    "noEndUsersYet": "Aún no hay usuarios finales",
+    "viewUsersDialog": {
+      "title": "Usuarios Finales - {{username}}",
+      "description": "Ver todos los usuarios finales creados por este revendedor. Estos usuarios serán transferidos al admin si el revendedor es eliminado.",
+      "totalUsers": "Usuarios Totales",
+      "subtitle": "Usuarios finales creados",
+      "totalDevices": "Dispositivos Totales",
+      "totalDevicesSubtitle": "Dispositivos asignados",
+      "creditCost": "Costo de Créditos",
+      "creditCostSubtitle": "Créditos totales usados",
+      "sectionTitle": "Detalles de Usuario",
+      "empty": "Este revendedor aún no tiene usuarios finales.",
+      "active": "Activo",
+      "inactive": "Inactivo",
+      "devices": "dispositivos",
+      "credits": "créditos",
+      "expires": "Expira",
+      "never": "Nunca",
+      "created": "Creado",
+      "transferNotice": {
+        "title": "Aviso de Transferencia",
+        "description": "Si este revendedor es eliminado, los {{count}} usuario(s) final(es) serán transferidos automáticamente a la cuenta de admin. Los usuarios conservarán su configuración y estado de suscripción actual."
+      }
+    },
+    "resetPasswordDialog": {
+      "confirmContinue": "¿Estás seguro de que quieres continuar?",
+      "copy": "Copiar",
+      "errorTitle": "Error al restablecer la contraseña",
+      "generatedLabel": "Contraseña generada:",
+      "generatedNotSaved": "La contraseña se generó pero no se guardó debido a un error:",
+      "importantLabel": "Importante:",
+      "newPasswordLabel": "Nueva contraseña:",
+      "resetForUser": "Restablecer contraseña para {{username}}",
+      "saveImmediately": "Guarde esta contraseña inmediatamente. No se volverá a mostrar y no se podrá recuperar.",
+      "successForUser": "La contraseña se ha restablecido correctamente para {{username}}.",
+      "tryAgainQuestion": "¿Quieres intentarlo de nuevo?"
+    }
+  }
+}

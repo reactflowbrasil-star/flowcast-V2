@@ -1,0 +1,110 @@
+{
+  "editTVChannel": {
+    "title": "编辑电视频道",
+    "sections": {
+      "basicInfo": "基本信息",
+      "currentEpgMapping": "当前EPG映射",
+      "editEpgMapping": "编辑EPG映射",
+      "streamSettings": "流媒体设置",
+      "artworkStatus": "图片和状态",
+      "livetvHeaders": "直播电视头部配置"
+    },
+    "labels": {
+      "channelName": "频道名称 *",
+      "description": "描述",
+      "channelNumber": "频道编号",
+      "provider": "提供商",
+      "channelCategory": "频道分类",
+      "country": "国家",
+      "epgSource": "EPG来源",
+      "epgChannelId": "EPG频道ID",
+      "timeOffset": "时间偏移",
+      "status": "状态",
+      "epgChannel": "EPG频道",
+      "offsetMin": "偏移（分钟）",
+      "format": "格式",
+      "streamUrl": "流媒体URL *",
+      "drmType": "DRM类型 *",
+      "clearkeyKeys": "ClearKey密钥 *",
+      "licenseServerUrl": "许可证服务器URL *",
+      "licenseRequestHeaders": "许可证请求头部（可选）",
+      "logoUrl": "标志网址",
+      "active": "激活",
+      "originHeader": "Origin头部",
+      "userAgent": "用户代理",
+      "refererHeader": "Referer头部",
+      "customHeadersJson": "自定义头部（JSON）",
+      "httpProxy": "HTTP代理（可选）",
+      "dnsOverHttps": "DNS-over-HTTPS（可选）"
+    },
+    "placeholders": {
+      "channelName": "输入频道名称...",
+      "description": "输入频道描述...",
+      "channelNumber": "例如：1, 2, 3...",
+      "provider": "例如：有线电视, OTT等",
+      "loadingCategories": "加载分类中...",
+      "selectCategory": "选择分类...",
+      "country": "例如：US, MX, ES...",
+      "selectEpgSource": "选择EPG来源...",
+      "filterByNameOrId": "按名称或ID筛选...",
+      "selectChannel": "选择频道...",
+      "selectSourceFirst": "请先选择来源",
+      "selectFormat": "选择格式...",
+      "streamUrl": "https://example.com/stream.m3u8",
+      "selectDrmType": "选择DRM类型...",
+      "clearkeyKeys": "输入十六进制格式的ClearKey密钥对：\nkid_hex:key_hex",
+      "licenseServerUrl": "https://license.example.com/widevine",
+      "licenseRequestHeaders": "{\"X-AxDRM-Message\": \"你的令牌\", \"Authorization\": \"Bearer token\"}",
+      "logoUrl": "https://example.com/logo.png",
+      "originHeader": "https://example.com",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)...",
+      "refererHeader": "https://referer-site.com",
+      "customHeaders": "{\"X-Custom-Header\": \"值\", \"Authorization\": \"Bearer token\"}",
+      "httpProxy": "http://用户:密码@ip:端口",
+      "dohUrl": "https://dns.google/dns-query"
+    },
+    "tooltips": {
+      "copyChannelId": "复制频道ID",
+      "formatHelp": "M3U8（无DRM）或DRM（ClearKey）。如果选择DRM，将启用密钥。",
+      "help": "帮助",
+      "streamUrlHelp": "完整的流媒体URL（m3u8, mpd等）",
+      "copyStreamUrl": "复制流媒体URL"
+    },
+    "hints": {
+      "noEpgSourceAssigned": "未分配EPG来源",
+      "noChannelIdAssigned": "未分配频道ID",
+      "minutes": "分钟",
+      "epgConfigured": "✓ EPG已配置",
+      "epgNotConfigured": "⚠ EPG未配置",
+      "loadingEpgMapping": "加载EPG映射中...",
+      "epgDataNote": "EPG数据不存储在数据库中；仅保存标识符用于按需查询。",
+      "loadingEpgControls": "加载EPG控件中...",
+      "drmTypeHelp": "ClearKey: 本地密钥（十六进制格式）| Widevine/PlayReady: 需要许可证服务器",
+      "clearkeyFormat": "格式：kid_hex:key_hex（每行一个或用逗号分隔）",
+      "widevineLicenseHelp": "Widevine许可证服务器URL（例如来自PallyCon、BuyDRM、Axinom）",
+      "playreadyLicenseHelp": "PlayReady许可证服务器URL",
+      "licenseHeadersHelp": "用于许可证请求的自定义头部JSON对象",
+      "originHeaderHelp": "用于CORS请求的Origin头部（可选）",
+      "userAgentHelp": "用于模拟浏览器/设备的User-Agent头部（可选）",
+      "refererHeaderHelp": "用于请求来源的Referer头部（可选）",
+      "customHeadersHelp": "JSON格式的附加自定义头部（可选）",
+      "httpProxyHelp": "仅用于地理封锁频道。格式：http://用户:密码@ip:端口",
+      "dohUrlHelp": "可选的DoH解析器，用于绕过DNS阻止。必须是http(s) URL。"
+    },
+    "toasts": {
+      "epgChannelIdCopied": "EPG频道ID已复制",
+      "streamUrlCopied": "流媒体URL已复制"
+    },
+    "buttons": {
+      "cancel": "取消",
+      "updating": "更新中...",
+      "updateChannel": "更新频道"
+    },
+    "validation": {
+      "titleRequired": "标题为必填项",
+      "validVideoUrlRequired": "需要有效的视频URL",
+      "proxyUrlFormat": "格式必须为 http://用户:密码@ip:端口",
+      "dohUrlFormat": "格式必须为 http(s)://..."
+    }
+  }
+}

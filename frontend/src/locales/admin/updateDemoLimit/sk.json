@@ -1,0 +1,29 @@
+{
+  "updateDemoLimit": {
+    "validation": {
+      "minLimit": "Limit demo musí byť 0 alebo viac",
+      "maxLimit": "Limit demo nemôže presiahnuť 100"
+    },
+    "title": "Aktualizovať limit demo pre {{username}}",
+    "description": "Nastavte denný limit demo používateľov, ktorých môže tento predajca vytvoriť.",
+    "currentStatus": "Aktuálny stav",
+    "currentLimit": "Aktuálny limit:",
+    "demosPerDay": "demá/deň",
+    "createdToday": "Vytvorené dnes:",
+    "dailyDemoLimit": "Denný limit demo",
+    "enterDailyLimit": "Zadajte denný limit demo",
+    "helpText": "Počet demo používateľov, ktorých môže tento predajca vytvoriť za deň (0-100)",
+    "demoUserInfo": "Informácie o demo používateľovi",
+    "duration": "Trvanie:",
+    "durationValue": "Dočasné od vytvorenia",
+    "access": "Prístup:",
+    "accessValue": "Plné prémiové funkcie",
+    "devices": "Zariadenia:",
+    "devicesValue": "Až 3 súčasné zariadenia",
+    "autoCleanup": "Automatické vymazanie:",
+    "autoCleanupValue": "Účet sa automaticky odstráni po vypršaní",
+    "cancel": "Zrušiť",
+    "updating": "Aktualizuje sa...",
+    "updateDemoLimit": "Aktualizovať limit demo"
+  }
+}

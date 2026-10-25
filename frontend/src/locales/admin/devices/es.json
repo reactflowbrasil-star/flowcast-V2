@@ -1,0 +1,169 @@
+{
+  "activeDevices": "Dispositivos Activos",
+  "devices": {
+    "title": "Registro de Dispositivos",
+    "description": "Gestiona tus dispositivos registrados y agrega nuevos",
+    "devices": "dispositivos",
+    "addDevice": "Agregar dispositivo",
+    "limitStatus": "Estado del límite de dispositivos",
+    "atLimit": "Al límite",
+    "available": "Disponible",
+    "youHaveDevices": "Tienes {{count}} de {{max}} dispositivos permitidos registrados.",
+    "toAddRemove": "Para agregar un nuevo dispositivo, primero debes eliminar uno existente.",
+    "yourRegisteredDevices": "Tus dispositivos registrados",
+    "table": {
+      "device": "Dispositivo",
+      "user": "Usuario",
+      "deviceLimit": "Límite de dispositivo",
+      "riskLevel": "Nivel de riesgo",
+      "status": "Estado",
+      "lastActive": "Última actividad",
+      "actions": "Acciones"
+    },
+    "risk": {
+      "high": "Alto riesgo",
+      "safe": "Seguro"
+    },
+    "remove": "Eliminar",
+    "removeDeviceConfirmation": "¿Estás seguro que deseas eliminar permanentemente el dispositivo \"{{name}}\" del usuario {{username}}?\\n\\nNota: Esto solo eliminará el dispositivo. El usuario puede registrarlo nuevamente más tarde.\\nAdvertencia: Si quieres evitar que este dispositivo se vuelva a conectar, usa \"Eliminar y agregar a la lista negra\".",
+    "removeAndBlacklistAction": "Eliminar y agregar a la lista negra",
+    "removeAndBlacklistTitle": "Eliminar y agregar a la lista negra",
+    "removeAndBlacklistDescription": "¿Estás seguro que deseas eliminar el dispositivo \"{{name}}\" del usuario {{username}} y agregarlo a la lista negra?\\n\\nAdvertencia: Esto desconectará el dispositivo inmediatamente y evitará que se conecte de nuevo hasta que se elimine manualmente de la lista negra.",
+    "blacklistOnly": "Solo lista negra",
+    "blacklistTitle": "Agregar a lista negra",
+    "blacklistDescription": "¿Estás seguro que deseas agregar el dispositivo \"{{name}}\" a la lista negra sin eliminarlo?\\n\\nNota: Esto desconectará el dispositivo inmediatamente pero lo mantendrá en la lista de dispositivos activos hasta que el usuario intente reconectarse.",
+    "blacklistAction": "Agregar a la lista negra",
+    "removeMultipleTitle": "Eliminar varios dispositivos",
+    "removeMultipleDescription": "¿Estás seguro que deseas eliminar {{count}} dispositivos seleccionados?",
+    "devicesToBeRemovedLabel": "Dispositivos a eliminar:",
+    "moreDevices": "... y {{count}} dispositivos más",
+    "bulkWarning": "Esta acción no se puede deshacer.",
+    "removeAllSelected": "Eliminar todos los seleccionados",
+    "removeDeviceTitle": "Eliminar dispositivo",
+    "removeDeviceDescription": "¿Estás seguro que deseas eliminar \"{{name}}\"?\n\nTendrás que registrar este dispositivo nuevamente para usarlo en el futuro.",
+    "removeDevice": "Eliminar dispositivo",
+    "noDevices": "No hay dispositivos registrados",
+    "registerFirstDescription": "Registra tu primer dispositivo para comenzar a usar el servicio.",
+    "registerFirstButton": "Registrar primer dispositivo",
+    "registerNewTitle": "Registrar nuevo dispositivo",
+    "registerNewDescription": "Agregar un nuevo dispositivo a tu cuenta",
+    "label": {
+      "deviceId": "ID del dispositivo",
+      "deviceName": "Nombre del dispositivo"
+    },
+    "placeholder": {
+      "id": "Ingrese identificador único del dispositivo",
+      "name": "Ingrese nombre del dispositivo (ej., TV de la sala)",
+      "searchDevices": "Buscar dispositivos..."
+    },
+    "removeSelected": "Eliminar seleccionados ({{count}})",
+    "noDevicesFoundTitle": "No se encontraron dispositivos",
+    "noDevicesFoundFor": "No se encontraron dispositivos para \"{{query}}\"",
+    "noDevicesRegistered": "Actualmente no hay dispositivos registrados en el sistema.",
+    "deviceIdLabel": "ID: {{id}}",
+    "time": {
+      "justNow": "Recién",
+      "minutesAgo": "Hace {{count}}m",
+      "hoursAgo": "Hace {{count}}h",
+      "daysAgo": "Hace {{count}}d"
+    },
+    "errors": {
+      "loadFailed": "Error al cargar la información del dispositivo. Por favor, inténtelo de nuevo más tarde."
+    },
+    "registering": "Registrando...",
+    "registerDevice": "Registrar dispositivo",
+    "removing": "Eliminando...",
+    "activeList": {
+      "description": "Monitorea todas las conexiones de dispositivos activas en el sistema",
+      "searchPlaceholder": "Buscar dispositivos...",
+      "deviceId": "ID: {{id}}",
+      "time": {
+        "justNow": "Justo ahora",
+        "minutesAgo": "Hace {{count}} min",
+        "hoursAgo": "Hace {{count}} h",
+        "daysAgo": "Hace {{count}} d"
+      },
+      "actions": {
+        "disconnect": "Desconectar"
+      },
+      "removeDialog": {
+        "title": "Eliminar dispositivo",
+        "description": "¿Estás seguro que deseas eliminar permanentemente el dispositivo \"{{device}}\" del usuario {{user}}? Esta acción no se puede deshacer."
+      },
+      "emptyTitle": "No se encontraron dispositivos",
+      "noDevicesSearch": "No se encontraron dispositivos para \"{{query}}\"",
+      "noDevicesDescription": "Actualmente no hay dispositivos registrados en el sistema."
+    },
+    "limits": {
+      "title": "Advertencias de límite de dispositivos",
+      "subtitle": "Monitorea usuarios cercanos o por encima de sus límites de dispositivos",
+      "summary": {
+        "warningTitle": "Advertencias",
+        "warningDescription": "Usuarios al 80–99% de su límite de dispositivos",
+        "criticalTitle": "Crítico",
+        "criticalDescription": "Usuarios en o por encima de su límite de dispositivos",
+        "exceededTitle": "Excedido",
+        "exceededDescription": "Usuarios que exceden su límite de dispositivos"
+      },
+      "attention": {
+        "title": "Usuarios que requieren atención"
+      },
+      "table": {
+        "deviceUsage": "Uso de dispositivos",
+        "progress": "Progreso",
+        "warningLevel": "Nivel de advertencia"
+      },
+      "actions": {
+        "increaseLimit": "Aumentar límite",
+        "monitor": "Monitorear"
+      },
+      "allSafeTitle": "Todos los usuarios dentro de los límites",
+      "allSafeDescription": "No hay usuarios cercanos o por encima de sus límites de dispositivos.",
+      "allUsersTitle": "Todos los usuarios",
+      "badges": {
+        "safe": "Seguro",
+        "warning": "Advertencia",
+        "critical": "Crítico",
+        "exceeded": "Excedido"
+      }
+    },
+    "overview": {
+      "deviceCount": "{{count}}/{{max}} dispositivos"
+    },
+    "activeDevices": "Dispositivos en línea",
+    "deviceRemoval": "Eliminar dispositivo",
+    "warnings": "Advertencias",
+    "totalDevices": "Dispositivos totales",
+    "registeredDevices": "Dispositivos registrados",
+    "currentlyConnected": "Conectados actualmente",
+    "usersWithDevices": "Usuarios con dispositivos",
+    "activeUsers": "Usuarios activos",
+    "limitWarnings": "Advertencias de límite",
+    "deviceStatistics": {
+      "title": "Estadísticas de dispositivos"
+    },
+    "statsDescription": "Desglose detallado del uso de dispositivos por usuario",
+    "avgDevicesPerUser": "Promedio de dispositivos por usuario",
+    "usersAtLimit": "Usuarios al límite",
+    "totalCapacity": "Capacidad total",
+    "utilization": "Utilización",
+    "usageDistribution": "Distribución de uso",
+    "byUsageLevel": "Por nivel de uso",
+    "lowUsage": "Bajo uso",
+    "systemHealth": {
+      "title": "Salud del sistema"
+    },
+    "deviceUsageByUser": {
+      "none": "No hay usuarios con dispositivos"
+    },
+    "usageByUserTitle": "Uso de dispositivos por usuario",
+    "usageByUserDescription": "Las estadísticas aparecerán aquí cuando haya dispositivos registrados.",
+    "overviewTitle": "Resumen",
+    "common": {
+      "active": "Activo",
+      "inactive": "Inactivo",
+      "cancel": "Cancelar",
+      "actions": "Acciones"
+    }
+  }
+}

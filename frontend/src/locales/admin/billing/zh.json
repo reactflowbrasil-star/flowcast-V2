@@ -1,0 +1,114 @@
+{
+  "billing": {
+    "overview": {
+      "title": "结算概览",
+      "description": "收入和积分情况一览",
+      "metrics": {
+        "onlineRevenue": "在线收入",
+        "offlineRevenue": "线下收入",
+        "adjustments": "调整项",
+        "totalRevenue": "总收入",
+        "creditsOnline": "积分 (在线)",
+        "creditsOffline": "积分 (线下)",
+        "creditsAdjustments": "积分 (调整项)",
+        "totalCredits": "总积分"
+      }
+    },
+    "pricing": {
+      "title": "积分定价",
+      "description": "系统中配置的基础价格和优惠层级",
+      "basePrice": "基础价格 (每积分 USD)",
+      "activeTiers": "有效层级",
+      "effectiveCurrency": "生效币种",
+      "tiersNote": "将应用满足最小数量的最高层级。",
+      "table": {
+        "minQuantity": "最小数量 (含)",
+        "discountPercent": "折扣百分比",
+        "noTiers": "未配置层级。所有数量均按基础价格计算。",
+        "discountSuffix": "优惠"
+      }
+    },
+    "offline": {
+      "title": "添加线下支付",
+      "description": "记录手动支付并即时发放积分",
+      "labels": {
+        "reseller": "经销商",
+        "amount": "金额 (USD)",
+        "credits": "发放积分数量",
+        "method": "方式",
+        "reference": "参考号",
+        "notes": "备注"
+      },
+      "placeholders": {
+        "resellerSearch": "输入至少 2 个字母…",
+        "amount": "例如 100.00",
+        "credits": "例如 100",
+        "method": "现金/银行/其他",
+        "reference": "发票号码或参考",
+        "notes": "可选备注"
+      },
+      "chargedCurrency": "计费币种：",
+      "success": "线下支付已记录且积分已发放",
+      "actions": {
+        "saving": "保存中...",
+        "save": "保存线下支付"
+      },
+      "errors": {
+        "amountPositive": "金额 (USD) 必须大于 0",
+        "creditsPositive": "积分必须为正整数",
+        "resellerPositive": "经销商 ID 必须为正整数",
+        "selectReseller": "从列表中选择一名经销商"
+      }
+    },
+    "transactions": {
+      "title": "最近交易",
+      "description": "过滤和分页结算交易",
+      "filters": {
+        "source": "来源",
+        "status": "状态",
+        "resellerId": "经销商 ID",
+        "reference": "参考号/用户名",
+        "perPage": "每页"
+      },
+      "sources": {
+        "stripe": "Stripe",
+        "offline": "线下",
+        "adjustment": "调整项"
+      },
+      "statuses": {
+        "completed": "已完成",
+        "pending": "进行中",
+        "refunded": "已退款",
+        "failed": "失败"
+      },
+      "placeholders": {
+        "resellerId": "例如 42",
+        "reference": "搜索参考号或用户名"
+      },
+      "table": {
+        "id": "ID",
+        "reseller": "经销商",
+        "source": "来源",
+        "amount": "金额",
+        "credits": "积分",
+        "status": "状态",
+        "reference": "参考号",
+        "createdAt": "创建于"
+      },
+      "total": "总计：{{count}}",
+      "pagination": {
+        "page": "第 {{page}} 页"
+      },
+      "empty": "未找到交易。"
+    },
+    "errors": {
+      "fetchOverview": "获取结算概览失败",
+      "fetchPricing": "获取定价配置失败",
+      "fetchTransactions": "获取结算交易失败",
+      "createOfflinePayment": "创建线下支付失败"
+    }
+  },
+  "common": {
+    "refresh": "刷新"
+  }
+}

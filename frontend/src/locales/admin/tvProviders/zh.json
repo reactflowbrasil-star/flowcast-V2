@@ -1,0 +1,56 @@
+{
+  "title": "播放列表提供商",
+  "description": "注册远程M3U播放列表并设置刷新间隔，以便直播电视频道自动保持更新。",
+  "alert": {
+    "title": "TTL自动刷新",
+    "description": "每个提供商在其TTL过期时重新获取。后端保留播放列表条目中声明的ClearKey DRM、标头、代理和DNS-over-HTTPS值。"
+  },
+  "form": {
+    "providerName": "提供商名称 *",
+    "playlistUrl": "播放列表URL *",
+    "refreshInterval": "刷新间隔（分钟）",
+    "enableAutoRefresh": "启用自动刷新",
+    "enableAutoRefreshHint": "禁用以保留播放列表但停止计划刷新。",
+    "adding": "添加中…",
+    "addProvider": "添加提供商"
+  },
+  "table": {
+    "name": "名称",
+    "ttl": "TTL",
+    "status": "状态",
+    "lastFetch": "上次获取",
+    "nextRefresh": "下次刷新",
+    "actions": "操作"
+  },
+  "status": {
+    "enabled": "已启用",
+    "disabled": "已禁用"
+  },
+  "buttons": {
+    "sync": "同步",
+    "delete": "删除",
+    "close": "关闭"
+  },
+  "validation": {
+    "nameRequired": "提供商名称为必填项",
+    "urlInvalid": "需要有效的M3U/M3U8 URL",
+    "ttlMinimum": "TTL至少为1分钟"
+  },
+  "errors": {
+    "loadFailed": "无法加载提供商",
+    "createFailed": "无法创建提供商",
+    "createUnexpected": "创建提供商时发生意外错误",
+    "deleteFailed": "无法删除提供商",
+    "deleteUnexpected": "删除提供商时发生意外错误",
+    "syncFailed": "同步失败",
+    "syncUnexpected": "同步过程中发生意外错误"
+  },
+  "placeholders": {
+    "providerName": "Sensa",
+    "playlistUrl": "https://example.com/playlist.m3u"
+  },
+  "units": {
+    "minutes": "分钟"
+  },
+  "deleteConfirm": "确定要删除提供商 {{name}} 吗？此操作无法撤销。"
+}

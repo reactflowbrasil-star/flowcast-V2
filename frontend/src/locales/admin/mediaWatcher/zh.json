@@ -1,0 +1,56 @@
+{
+  "mediaWatcher": {
+    "creating": "创建中...",
+    "title": "媒体监视器配置",
+    "description": "自动扫描文件夹以发现新内容。类似 \"ls\"：只快速检测新增的文件夹。",
+    "addButton": "添加监视文件夹",
+    "empty": "未配置任何监视文件夹。添加一个开始使用。",
+    "deleteConfirm": "确定要删除此监视文件夹吗？",
+    "form": {
+      "folderPath": "文件夹路径",
+      "folderPathPlaceholder": "/mnt/media/movies",
+      "mediaType": "媒体类型",
+      "checkInterval": "检查间隔（分钟）"
+    },
+    "createDialog": {
+      "title": "添加监视文件夹",
+      "description": "配置一个文件夹以自动扫描新内容"
+    },
+    "editDialog": {
+      "title": "编辑监视文件夹",
+      "description": "更新文件夹配置",
+      "updating": "更新中...",
+      "update": "更新"
+    },
+    "mediaTypes": {
+      "movies": "电影",
+      "series": "剧集",
+      "kids": "少儿",
+      "anime": "日本动画片"
+    },
+    "table": {
+      "status": "状态",
+      "folderPath": "文件夹路径",
+      "type": "类型",
+      "interval": "间隔",
+      "lastCheck": "上次检查",
+      "actions": "操作",
+      "lastCheckNever": "从不",
+      "lastCheckInvalid": "日期无效"
+    },
+    "toasts": {
+      "createSuccess": "监视文件夹创建成功",
+      "createFailed": "创建文件夹失败",
+      "updateSuccess": "监视文件夹更新成功",
+      "updateFailed": "更新文件夹失败",
+      "deleteSuccess": "监视文件夹删除成功",
+      "deleteFailed": "删除文件夹失败",
+      "checkStarted": "已开始检查文件夹",
+      "checkFailed": "检查文件夹失败",
+      "enabled": "文件夹已启用",
+      "disabled": "文件夹已禁用",
+      "toggleFailed": "切换文件夹状态失败",
+      "folderPathRequired": "请输入文件夹路径"
+    }
+  }
+}

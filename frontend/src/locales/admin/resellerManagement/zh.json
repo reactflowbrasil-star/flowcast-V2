@@ -1,0 +1,66 @@
+{
+  "uiBulk": {
+    "reseller": {
+      "form": {
+        "usernamePlaceholder": "输入用户名",
+        "passwordPlaceholder": "输入数字密码（4-10位）",
+        "emailPlaceholder": "输入邮箱"
+      }
+    }
+  },
+  "resellerManagement": {
+    "title": "经销商管理",
+    "subtitle": "使用积分系统创建和管理经销商",
+    "createReseller": "创建经销商",
+    "createResellerDescription": "创建新的经销商账户，包含初始积分和体验限制。",
+    "resetAllCounters": "重置所有计数器",
+    "resetAllCountersConfirm": "确定要重置所有经销商的每日体验计数器吗？这将把所有计数器设置为 0。",
+    "searchByUsernameOrEmail": "按用户名或邮箱搜索...",
+    "noResellersYet": "暂无经销商",
+    "createYourFirstReseller": "创建您的第一个经销商以开始管理终端用户。",
+    "endUsersTitle": "终端用户",
+    "endUsersSubtitle": "创建和管理所有经销商的终端用户",
+    "createEndUser": "创建终端用户",
+    "filters": "筛选器",
+    "searchByUsername": "按用户名搜索...",
+    "searchByEmail": "按邮箱搜索...",
+    "searchByReseller": "按经销商搜索...",
+    "noEndUsersYet": "暂无终端用户",
+    "viewUsersDialog": {
+      "title": "最终用户 - {{username}}",
+      "description": "查看此代理商创建的所有最终用户。如果删除代理商，这些用户将转移给管理员。",
+      "totalUsers": "用户总数",
+      "subtitle": "已创建的最终用户",
+      "totalDevices": "设备总数",
+      "totalDevicesSubtitle": "已分配的设备",
+      "creditCost": "信用成本",
+      "creditCostSubtitle": "使用的总信用点",
+      "sectionTitle": "用户详情",
+      "empty": "此代理商暂无最终用户。",
+      "active": "活跃",
+      "inactive": "非活跃",
+      "devices": "设备",
+      "credits": "信用点",
+      "expires": "到期",
+      "never": "从不",
+      "created": "创建时间",
+      "transferNotice": {
+        "title": "转移通知",
+        "description": "如果删除此代理商，所有 {{count}} 名最终用户将自动转移到管理员账户。用户将保留当前的设置和订阅状态。"
+      }
+    },
+    "resetPasswordDialog": {
+      "confirmContinue": "您确定要继续吗？",
+      "copy": "复制",
+      "errorTitle": "重置密码时出错",
+      "generatedLabel": "生成的密码：",
+      "generatedNotSaved": "密码已生成，但由于错误而未保存：",
+      "importantLabel": "重要的：",
+      "newPasswordLabel": "新密码：",
+      "resetForUser": "重置 {{username}} 的密码",
+      "saveImmediately": "请立即保存该密码。它不会再次显示，也无法恢复。",
+      "successForUser": "{{username}} 的密码已成功重置。",
+      "tryAgainQuestion": "您想再试一次吗？"
+    }
+  }
+}

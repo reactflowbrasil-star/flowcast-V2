@@ -1,0 +1,40 @@
+{
+  "editSeries": {
+    "title": {
+      "editAnime": "Редактировать аниме",
+      "editSeries": "Редактировать серию"
+    },
+    "labels": {
+      "seriesTitle": "Название серии *",
+      "description": "Описание",
+      "year": "Год",
+      "tmdbId": "TMDB ID",
+      "totalSeasons": "Всего сезонов",
+      "posterUrl": "URL-адрес постера",
+      "backdropUrl": "URL-адрес фона",
+      "active": "Активный"
+    },
+    "placeholders": {
+      "seriesTitle": "Введите название серии...",
+      "description": "Введите описание серии...",
+      "year": "2024",
+      "tmdbId": "123456",
+      "totalSeasons": "1",
+      "posterUrl": "https://example.com/poster.jpg",
+      "backdropUrl": "https://example.com/backdrop.jpg"
+    },
+    "episodes": {
+      "title": "Управление эпизодами:",
+      "description": "У сериалов нет прямых URL-адресов видео. Видеоконтент управляется через отдельные эпизоды в сезонах.",
+      "manageButton": "📺 Управление эпизодами"
+    },
+    "buttons": {
+      "cancel": "Отмена",
+      "updating": "Обновление...",
+      "update": "Обновление серии"
+    },
+    "validation": {
+      "titleRequired": "Требуется название"
+    }
+  }
+}

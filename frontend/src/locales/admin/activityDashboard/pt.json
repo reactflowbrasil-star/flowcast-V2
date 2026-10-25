@@ -1,0 +1,34 @@
+{
+  "activity": {
+    "errorLoadingDashboard": "Falha ao carregar painel: {{message}}",
+    "errorLoadingDashboardFallback": "Falha ao carregar dados de atividade"
+  },
+  "activityDashboard": {
+    "title": "Painel de Atividade",
+    "activitySubtitle": "Atividade do sistema e métricas de engajamento",
+    "autoRefreshState": "Atualização auto: {{state}}",
+    "on": "LIGADO",
+    "off": "DESLIGADO",
+    "enable": "Habilitar",
+    "disable": "Desabilitar",
+    "loginsToday": "Logins hoje",
+    "activeUsers": "Usuários ativos",
+    "last7Days": "Últimos 7 dias",
+    "contentViews": "Visualizações",
+    "deviceDistribution": "Distribuição de dispositivos",
+    "mostViewedContent": "Conteúdo mais visto",
+    "noViewingData": "Sem dados de visualização",
+    "multiDeviceUsers": "Usuários multi-dispositivo",
+    "noMultiDeviceUsers": "Nenhum usuário com múltiplos dispositivos",
+    "activity24h": "Atividade (24h)",
+    "logins": "Logins",
+    "views": "Visualizações",
+    "noDeviceData": "Dados de distribuição de dispositivos indisponíveis",
+    "devicesLabel": "dispositivos",
+    "devices": "dispositivos",
+    "failedLogins": "Logins falhos",
+    "today": "Hoje",
+    "refresh": "Atualizar",
+    "tryAgain": "Tentar Novamente"
+  }
+}

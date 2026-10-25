@@ -1,0 +1,190 @@
+{
+  "content": {
+    "title": "内容管理",
+    "description": "通过 TMDB 集成管理所有类别的内容",
+    "confirmDelete": "确定要删除此内容吗？",
+    "confirmDeleteDescription": "此操作无法撤销。",
+    "confirmBulkDelete": "删除已选择的 {{count}} 个项目？",
+    "confirmBulkDeleteDescription": "这将永久删除 {{count}} 个项目。此操作无法撤销。",
+    "tmdb": {
+      "confirm": "要为 {{category}} 填充 TMDB 元数据吗？这将尝试匹配没有 TMDB ID 的项目。",
+      "success": "TMDB 元数据已更新：{{updated}} 个已更新，{{skipped}} 个已跳过",
+      "warning": "{{count}} 个项目无法匹配。详情请查看控制台。",
+      "error": "TMDB 元数据更新失败",
+      "defaultCategory": "此类别",
+      "mediaTypeMovie": "电影",
+      "mediaTypeTvSeries": "电视 / 剧集"
+    },
+    "errors": {
+      "load": "加载内容失败：{{message}}"
+    },
+    "empty": {
+      "title": "未找到内容",
+      "description": "通过添加第一个 {{category}} 条目开始。"
+    },
+    "categories": {
+      "vod": {
+        "label": "电影",
+        "description": "电影及独立视频内容"
+      },
+      "tv": {
+        "label": "电视频道",
+        "description": "直播电视频道和流媒体"
+      },
+      "series": {
+        "label": "剧集",
+        "description": "包含季和集的电视连续剧"
+      },
+      "events": {
+        "label": "事件",
+        "description": "直播活动和特别节目"
+      },
+      "kids": {
+        "label": "儿童",
+        "description": "家庭与少儿友好内容"
+      },
+      "anime": {
+        "label": "动漫",
+        "description": "动漫剧集与电影"
+      }
+    },
+    "actions": {
+      "addManualMovie": "手动添加影片",
+      "addManualSeries": "手动添加剧集",
+      "addTvChannel": "添加电视频道",
+      "addEvent": "添加活动",
+      "addFromTmdb": "从 TMDB 添加",
+      "bulkImport": "批量导入",
+      "importFromM3U8": "从 M3U/M3U8 导入",
+      "manageCategories": "管理类别",
+      "scanFolders": "扫描文件夹",
+      "fillMetadata": "填充元数据",
+      "deleteSelected": "删除所选（{{count}}）",
+      "preview": "预览",
+      "addManualKids": "手动添加少儿",
+      "addManualAnime": "手动添加动漫",
+      "addContent": "添加内容",
+      "tvProviders": "电视提供商"
+    },
+    "pagination": {
+      "range": "{{start}}-{{end}} / 共 {{total}}",
+      "rowsPerPage": "每页行数",
+      "rows": "行",
+      "updating": "更新中...",
+      "pageOf": "第 {{page}} 页 / 共 {{total}} 页"
+    },
+    "preview": {
+      "title": "预览",
+      "error": "无法加载预览。",
+      "unsupported": "您的浏览器不支持视频播放。",
+      "notAvailable": "该内容暂无可用预览。",
+      "playerLabel": "播放器：{{player}}"
+    },
+    "dialogs": {
+      "scanLibraryFolderDescription": "选择要扫描媒体文件的文件夹"
+    },
+    "table": {
+      "columns": {
+        "title": "标题",
+        "description": "描述",
+        "type": "类型",
+        "format": "格式",
+        "year": "年份",
+        "status": "状态",
+        "created": "创建时间",
+        "actions": "操作"
+      },
+      "values": {
+        "tmdbId": "TMDB：{{id}}",
+        "noDescription": "暂无描述",
+        "unknown": "未知",
+        "event": "活动"
+      }
+    },
+    "editDialogs": {
+      "channel": {
+        "title": "编辑电视频道",
+        "basicInfo": "基本信息",
+        "name": "频道名称",
+        "description": "描述",
+        "channelNumber": "频道号",
+        "provider": "提供商",
+        "channelCategory": "频道分类",
+        "country": "国家/地区",
+        "epgMapping": {
+          "currentTitle": "当前 EPG 映射",
+          "editTitle": "编辑 EPG 映射",
+          "source": "EPG 来源",
+          "channel": "EPG 频道",
+          "channelId": "EPG 频道 ID",
+          "timeOffset": "时间偏移 (分)",
+          "status": "状态",
+          "configured": "✓ EPG 已配置",
+          "notConfigured": "⚠ EPG 未配置",
+          "loading": "正在加载 EPG 映射...",
+          "loadingControls": "加载控件中...",
+          "noSource": "未分配来源",
+          "noChannel": "未分配频道",
+          "help": "EPG 数据不存储在数据库中；仅保存标识符用于按需查找。"
+        },
+        "streamSettings": "流设置",
+        "format": "格式",
+        "streamUrl": "流媒体 URL",
+        "drmType": "DRM 类型",
+        "clearkeyKeys": "ClearKey 密钥",
+        "clearkeyHelp": "格式: kid_hex:key_hex (每行一个或逗号分隔)",
+        "licenseServerUrl": "许可证服务器 URL",
+        "licenseHeaders": "许可证请求头 (可选)",
+        "licenseHeadersHelp": "用于许可证请求的 JSON 对象头",
+        "artworkStatus": "图像与状态",
+        "logoUrl": "标志网址",
+        "active": "启用",
+        "liveTvHeaders": {
+          "title": "LiveTV 请求头配置",
+          "origin": "Origin",
+          "userAgent": "用户代理",
+          "referer": "Referer",
+          "custom": "自定义 Headers",
+          "proxy": "HTTP 代理",
+          "doh": "HTTPS 上的 DNS"
+        },
+        "save": "保存更改",
+        "cancel": "取消"
+      },
+      "series": {
+        "title": "编辑电视剧",
+        "titleAnime": "编辑动漫",
+        "name": "剧集标题",
+        "description": "描述",
+        "year": "年份",
+        "tmdbId": "TMDB ID",
+        "totalSeasons": "总季数",
+        "episodesManagement": "剧集管理",
+        "episodesHelp": "电视剧没有直接的视频 URL。视频内容通过各季中的单独剧集进行管理。",
+        "manageEpisodes": "📺 管理剧集",
+        "posterUrl": "海报 URL",
+        "backdropUrl": "背景 URL",
+        "active": "启用",
+        "cancel": "取消",
+        "save": "更新剧集",
+        "updating": "更新中..."
+      },
+      "event": {
+        "title": "编辑活动",
+        "name": "活动名称",
+        "description": "描述",
+        "provider": "提供商",
+        "country": "国家/地区",
+        "format": "格式",
+        "clearkeyKeys": "ClearKey 密钥",
+        "clearkeyHelp": "格式: kid_hex:key_hex (每行一个或逗号分隔)",
+        "streamUrl": "流媒体 URL",
+        "posterUrl": "海报 URL",
+        "active": "启用",
+        "cancel": "取消",
+        "save": "更新活动",
+        "updating": "更新中..."
+      }
+    }
+  }
+}

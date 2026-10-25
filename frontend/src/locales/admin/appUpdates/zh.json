@@ -1,0 +1,150 @@
+{
+    "appUpdates": {
+        "title": "应用更新",
+        "description": "管理和分发TV、Android和iOS应用的更新",
+        "tabs": {
+            "overview": "概览",
+            "create": "创建更新",
+            "history": "更新历史"
+        },
+        "platforms": {
+            "android_tv": "Android TV",
+            "android_mobile": "Android 手机",
+            "ios": "iOS"
+        },
+        "updateType": {
+            "title": "更新类型",
+            "suggested": "建议更新",
+            "mandatory": "强制更新",
+            "suggestedDescription": "用户可以跳过此更新并继续使用应用",
+            "mandatoryDescription": "用户必须更新才能继续使用应用"
+        },
+        "status": {
+            "active": "活动",
+            "inactive": "非活动",
+            "draft": "草稿",
+            "archived": "已归档"
+        },
+        "form": {
+            "version": "版本号",
+            "versionPlaceholder": "例如，2.1.0",
+            "versionCode": "版本代码",
+            "versionCodePlaceholder": "例如，21",
+            "versionCodeHelp": "用于比较的数字构建号（仅限Android）",
+            "platform": "平台",
+            "selectPlatform": "选择平台",
+            "updateType": "更新类型",
+            "downloadUrl": "下载链接",
+            "downloadUrlPlaceholder": "https://example.com/app.apk",
+            "downloadUrlHelp": "APK直接链接或应用商店URL",
+            "storeUrl": "商店链接（可选）",
+            "storeUrlPlaceholder": "https://play.google.com/store/apps/details?id=...",
+            "storeUrlHelp": "Play商店或App Store页面链接",
+            "releaseNotes": "发布说明",
+            "releaseNotesPlaceholder": "此版本的新功能...",
+            "releaseNotesHelp": "描述更改和新功能（支持Markdown）",
+            "minSdkVersion": "最低SDK版本",
+            "minSdkVersionPlaceholder": "例如，21",
+            "fileSize": "文件大小",
+            "fileSizePlaceholder": "例如，45 MB",
+            "publishDate": "发布日期",
+            "status": "状态"
+        },
+        "actions": {
+            "create": "创建更新",
+            "creating": "创建中...",
+            "edit": "编辑",
+            "delete": "删除",
+            "archive": "归档",
+            "activate": "激活",
+            "deactivate": "停用",
+            "duplicate": "复制",
+            "preview": "预览",
+            "save": "保存更改",
+            "saving": "保存中...",
+            "cancel": "取消"
+        },
+        "table": {
+            "version": "版本",
+            "platform": "平台",
+            "type": "类型",
+            "status": "状态",
+            "releaseDate": "发布日期",
+            "downloads": "下载次数",
+            "actions": "操作"
+        },
+        "overview": {
+            "title": "更新概览",
+            "description": "按平台显示当前活动更新",
+            "noActiveUpdates": "无活动更新",
+            "latestVersion": "最新版本",
+            "lastUpdated": "最后更新",
+            "totalDownloads": "总下载量",
+            "activeUsers": "活跃用户",
+            "updateRate": "更新率",
+            "pendingUpdates": "待处理更新"
+        },
+        "stats": {
+            "totalUpdates": "更新总数",
+            "activeUpdates": "活动更新",
+            "mandatoryUpdates": "强制更新",
+            "suggestedUpdates": "建议更新",
+            "totalDownloads": "总下载量",
+            "updateAdoption": "更新采用率"
+        },
+        "confirm": {
+            "delete": "确定要删除此更新吗？此操作无法撤销。",
+            "archive": "确定要归档此更新吗？用户将不再看到它。",
+            "activate": "激活此更新？用户将开始收到更新通知。",
+            "deactivate": "停用此更新？用户将不再收到此版本的通知。"
+        },
+        "empty": {
+            "title": "未找到更新",
+            "description": "创建您的第一个应用更新，开始向用户分发新版本。",
+            "noHistory": "暂无更新历史。",
+            "noUpdatesForPlatform": "{{platform}}没有配置更新"
+        },
+        "success": {
+            "created": "更新创建成功",
+            "updated": "更新保存成功",
+            "deleted": "更新删除成功",
+            "activated": "更新激活成功",
+            "deactivated": "更新停用成功",
+            "archived": "更新归档成功"
+        },
+        "errors": {
+            "loadFailed": "加载更新失败",
+            "createFailed": "创建更新失败",
+            "updateFailed": "保存更新失败",
+            "deleteFailed": "删除更新失败",
+            "versionRequired": "版本号为必填项",
+            "platformRequired": "平台为必填项",
+            "downloadUrlRequired": "非商店更新需要下载链接",
+            "versionExists": "所选平台已存在此版本"
+        },
+        "filters": {
+            "allPlatforms": "所有平台",
+            "allTypes": "所有类型",
+            "allStatuses": "所有状态",
+            "searchPlaceholder": "按版本搜索..."
+        },
+        "preview": {
+            "title": "更新预览",
+            "description": "这是更新对话框向用户显示的方式",
+            "updateAvailable": "有可用更新",
+            "newVersion": "有新版本可用！",
+            "currentVersion": "当前版本：",
+            "newVersionLabel": "新版本：",
+            "whatsNew": "新功能",
+            "downloadNow": "立即下载",
+            "remindLater": "稍后提醒",
+            "mandatoryWarning": "必须更新才能继续使用应用。"
+        },
+        "history": {
+            "title": "更新历史",
+            "description": "查看所有以前的更新及其表现",
+            "downloadTrend": "下载趋势",
+            "adoptionRate": "采用率"
+        }
+    }
+}

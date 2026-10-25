@@ -1,0 +1,30 @@
+{
+  "title": "Gift Codes",
+  "description": "Manage one-time or multi-use gift codes to create or extend user subscriptions.",
+  "create": "Create Code",
+  "bulkCreate": "Bulk Create",
+  "export": "Export CSV",
+  "noData": "No gift codes available to export.",
+  "bulkCreated": "Created {{count}} gift codes",
+  "created": "Gift code created",
+  "deletedSelected": "Deleted {{count}} selected gift codes",
+  "generate": "Generate",
+  "deleteSelected": "Delete Selected ({{count}})",
+  "deleteConfirm": "Delete {{count}} selected gift codes? This action cannot be undone.",
+  "table": {
+    "code": "Code",
+    "duration_days": "Duration (days)",
+    "uses": "Uses",
+    "remaining": "Remaining",
+    "expires_at": "Expires At",
+    "created_at": "Created At"
+  },
+  "form": {
+    "codeOptional": "Code (optional)",
+    "durationMonths": "Duration (months)",
+    "uses": "Uses",
+    "prefixOptional": "Prefix (optional)",
+    "count": "Count",
+    "usesPerCode": "Uses per code"
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "title": "Редактировать событие",
+  "labels": {
+    "eventName": "Название мероприятия *",
+    "description": "Описание",
+    "provider": "Поставщик",
+    "country": "Страна",
+    "format": "Формат",
+    "clearKeyKeys": "Клавиши ClearKey",
+    "streamUrl": "URL-адрес потока *",
+    "posterUrl": "URL-адрес постера",
+    "active": "Активный"
+  },
+  "placeholders": {
+    "eventName": "Введите название мероприятия...",
+    "description": "Введите описание события...",
+    "provider": "например, Поставщик А, Поставщик Б...",
+    "country": "например, США, MX, ES...",
+    "selectFormat": "Выберите формат...",
+    "clearKeyKeys": "Введите пары ClearKey в шестнадцатеричном формате: kid_hex:key_hex.",
+    "streamUrl": "https://example.com/stream.m3u8",
+    "posterUrl": "https://example.com/poster.jpg"
+  },
+  "hints": {
+    "clearKeyFormat": "Формат: kid_hex:key_hex (по одному в строке или через запятую)."
+  },
+  "formats": {
+    "m3u8": "M3U8",
+    "drm": "DRM"
+  },
+  "buttons": {
+    "cancel": "Отмена",
+    "updating": "Обновление...",
+    "updateEvent": "Обновить событие"
+  },
+  "validation": {
+    "titleRequired": "Требуется название",
+    "validVideoUrlRequired": "Укажите действительный URL-адрес видео."
+  },
+  "errors": {
+    "failedToUpdate": "Не удалось обновить событие."
+  }
+}

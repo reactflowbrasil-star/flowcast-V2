@@ -1,0 +1,37 @@
+{
+  "tvCategories": {
+    "title": "管理电视频道分类",
+    "description": "保留默认分类并使用您自己的标签扩展它们。正在使用的分类无法删除。",
+    "inputPlaceholder": "创建自定义分类（例如：高级体育）",
+    "addCategory": "添加分类",
+    "refreshing": "刷新中…",
+    "loading": "加载分类中…",
+    "none": "您尚未创建任何自定义分类。",
+    "default": "默认",
+    "removeTitle": "删除分类",
+    "removeDescription": "此操作无法撤销。分类 \"{{name}}\" 将被删除。",
+    "removeCategory": "删除分类",
+    "editCategory": "编辑分类",
+    "inUseTitle": "分类当前正在使用",
+    "created": "分类已创建",
+    "updated": "分类已更新",
+    "removed": "分类已删除",
+    "nameRequired": "分类名称为必填项",
+    "helpText": "默认分类保持在顶部。自定义标签帮助您根据需要组织提供商或地区。",
+    "protectionNote": "正在使用的分类受到保护，以避免意外删除。",
+    "tableHeaders": {
+      "category": "分类",
+      "usage": "使用情况",
+      "created": "创建时间",
+      "actions": "操作"
+    },
+    "categoryCount": "{{count}} 个分类",
+    "usageLabel": {
+      "channel_one": "{{count}} 个频道",
+      "channel_other": "{{count}} 个频道",
+      "notInUse": "未使用"
+    },
+    "categoryCount_one": "{{count}} 个分类",
+    "categoryCount_other": "{{count}} 个分类"
+  }
+}

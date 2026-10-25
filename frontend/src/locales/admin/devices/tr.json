@@ -1,0 +1,169 @@
+{
+  "activeDevices": "Aktif Cihazlar",
+  "devices": {
+    "title": "Cihaz Yönetimi",
+    "description": "Kayıtlı cihazlarınızı yönetin ve yeni cihazlar ekleyin",
+    "devices": "cihazlar",
+    "addDevice": "Cihaz Ekle",
+    "limitStatus": "Cihaz Limiti Durumu",
+    "atLimit": "Limitte",
+    "available": "Müsait",
+    "youHaveDevices": "İzin verilen {{max}} cihazdan {{count}} tanesine sahipsiniz.",
+    "toAddRemove": "Yeni bir cihaz eklemek için önce mevcut bir cihazı kaldırmalısınız.",
+    "yourRegisteredDevices": "Kayıtlı Cihazlarınız",
+    "table": {
+      "device": "Cihaz",
+      "user": "Kullanıcı",
+      "deviceLimit": "Cihaz Limiti",
+      "riskLevel": "Risk Seviyesi",
+      "status": "Durum",
+      "lastActive": "Son Etkinlik",
+      "actions": "İşlemler"
+    },
+    "risk": {
+      "high": "Yüksek Risk",
+      "safe": "Güvenli"
+    },
+    "remove": "Kaldır",
+    "removeDeviceConfirmation": "{{username}} kullanıcısının \"{{name}}\" cihazını kalıcı olarak kaldırmak istediğinizden emin misiniz?\\n\\nNot: Bu işlem sadece cihazı kaldırır. Kullanıcı daha sonra tekrar kaydedebilir.\\nUyarı: Bu cihazın tekrar bağlanmasını engellemek istiyorsanız, \"Kaldır & Yasakla\" seçeneğini kullanın.",
+    "removeAndBlacklistAction": "Kaldır & Yasakla",
+    "removeAndBlacklistTitle": "Cihazı Kaldır ve Yasakla",
+    "removeAndBlacklistDescription": "{{username}} kullanıcısının \"{{name}}\" cihazını kaldırıp kara listeye eklemek istediğinizden emin misiniz?\\n\\nUyarı: Bu işlem cihazın bağlantısını hemen keser ve kara listeden manuel olarak kaldırılana kadar tekrar bağlanmasını engeller.",
+    "blacklistOnly": "Sadece Yasakla",
+    "blacklistTitle": "Cihazı Yasakla",
+    "blacklistDescription": "\"{{name}}\" cihazını kaldırmadan kara listeye eklemek istediğinizden emin misiniz?\\n\\nNot: Bu işlem cihazın bağlantısını hemen keser ancak kullanıcı tekrar bağlanmayı deneyene kadar aktif cihazlar listesinde tutar.",
+    "blacklistAction": "Cihazı Yasakla",
+    "removeMultipleTitle": "Çoklu Cihaz Kaldır",
+    "removeMultipleDescription": "Seçilen {{count}} cihazı kaldırmak istediğinizden emin misiniz?",
+    "devicesToBeRemovedLabel": "Kaldırılacak cihazlar:",
+    "moreDevices": "... ve {{count}} cihaz daha",
+    "bulkWarning": "Bu işlem geri alınamaz.",
+    "removeAllSelected": "Seçilenleri Kaldır",
+    "removeDeviceTitle": "Cihazı Kaldır",
+    "removeDeviceDescription": "\"{{name}}\" cihazını kaldırmak istediğinizden emin misiniz?\n\nGelecekte kullanmak için bu cihazı tekrar kaydetmeniz gerekecek.",
+    "removeDevice": "Cihazı Kaldır",
+    "noDevices": "Kayıtlı cihaz yok",
+    "registerFirstDescription": "Hizmeti kullanmaya başlamak için ilk cihazınızı kaydedin.",
+    "registerFirstButton": "İlk Cihazı Kaydet",
+    "registerNewTitle": "Yeni Cihaz Kaydet",
+    "registerNewDescription": "Hesabınıza yeni bir cihaz ekleyin",
+    "label": {
+      "deviceId": "Cihaz Kimliği",
+      "deviceName": "Cihaz Adı"
+    },
+    "placeholder": {
+      "id": "Benzersiz cihaz kimliğini girin",
+      "name": "Cihaz adını girin (ör. Oturma Odası TV)",
+      "searchDevices": "Cihaz ara..."
+    },
+    "removeSelected": "Seçilenleri Kaldır ({{count}})",
+    "noDevicesFoundTitle": "Cihaz bulunamadı",
+    "noDevicesFoundFor": "\"{{query}}\" için cihaz bulunamadı",
+    "noDevicesRegistered": "Sistemde şu anda kayıtlı cihaz yok.",
+    "deviceIdLabel": "Kimlik: {{id}}",
+    "time": {
+      "justNow": "Az önce",
+      "minutesAgo": "{{count}}dk önce",
+      "hoursAgo": "{{count}}sa önce",
+      "daysAgo": "{{count}}g önce"
+    },
+    "errors": {
+      "loadFailed": "Cihaz bilgileri yüklenemedi. Lütfen daha sonra tekrar deneyin."
+    },
+    "registering": "Kaydediliyor...",
+    "registerDevice": "Cihaz Kaydet",
+    "activeList": {
+      "description": "Sistemdeki tüm aktif cihaz bağlantılarını izleyin",
+      "searchPlaceholder": "Cihaz ara...",
+      "deviceId": "Kimlik: {{id}}",
+      "time": {
+        "justNow": "Az önce",
+        "minutesAgo": "{{count}}dk önce",
+        "hoursAgo": "{{count}}sa önce",
+        "daysAgo": "{{count}}g önce"
+      },
+      "actions": {
+        "disconnect": "Bağlantıyı Kes"
+      },
+      "removeDialog": {
+        "title": "Cihazı Kaldır",
+        "description": "{{user}} kullanıcısının \"{{device}}\" cihazını kalıcı olarak kaldırmak istediğinizden emin misiniz? Bu işlem geri alınamaz."
+      },
+      "emptyTitle": "Cihaz bulunamadı",
+      "noDevicesSearch": "\"{{query}}\" için cihaz bulunamadı",
+      "noDevicesDescription": "Sistemde şu anda kayıtlı cihaz yok."
+    },
+    "limits": {
+      "title": "Cihaz Limiti Uyarıları",
+      "subtitle": "Cihaz limitlerine yaklaşan veya aşan kullanıcıları izleyin",
+      "summary": {
+        "warningTitle": "Uyarılar",
+        "warningDescription": "Limitin %80–99'undaki kullanıcılar",
+        "criticalTitle": "Kritik",
+        "criticalDescription": "Limitinde veya üzerindeki kullanıcılar",
+        "exceededTitle": "Aşıldı",
+        "exceededDescription": "Limitini aşan kullanıcılar"
+      },
+      "attention": {
+        "title": "İlgi Gerektiren Kullanıcılar"
+      },
+      "table": {
+        "deviceUsage": "Cihaz Kullanımı",
+        "progress": "İlerleme",
+        "warningLevel": "Uyarı Seviyesi"
+      },
+      "actions": {
+        "increaseLimit": "Limiti Artır",
+        "monitor": "İzle"
+      },
+      "allSafeTitle": "Tüm Kullanıcılar Limit Dahilinde",
+      "allSafeDescription": "Limitlerine yakın veya üzerinde kullanıcı yok.",
+      "allUsersTitle": "Tüm Kullanıcılar",
+      "badges": {
+        "safe": "Güvenli",
+        "warning": "Uyarı",
+        "critical": "Kritik",
+        "exceeded": "Aşıldı"
+      }
+    },
+    "overview": {
+      "deviceCount": "{{count}}/{{max}} cihaz"
+    },
+    "activeDevices": "Aktif Cihazlar",
+    "deviceRemoval": "Cihaz Kaldırma",
+    "warnings": "Uyarılar",
+    "totalDevices": "Toplam Cihaz",
+    "registeredDevices": "Kayıtlı cihazlar",
+    "currentlyConnected": "Şu anda bağlı",
+    "usersWithDevices": "Cihazlı Kullanıcılar",
+    "activeUsers": "Aktif kullanıcılar",
+    "limitWarnings": "Limit Uyarıları",
+    "deviceStatistics": {
+      "title": "Cihaz İstatistikleri"
+    },
+    "statsDescription": "Kullanıcılara göre cihaz kullanımının ayrıntılı dökümü",
+    "avgDevicesPerUser": "Ort. Cihaz/Kul.",
+    "usersAtLimit": "Limitli Kull.",
+    "totalCapacity": "Toplam Kapasite",
+    "utilization": "Kullanım",
+    "usageDistribution": "Kullanım Dağılımı",
+    "byUsageLevel": "Kullanım Seviyesine Göre",
+    "lowUsage": "Düşük kullanım",
+    "systemHealth": {
+      "title": "Sistem Sağlığı"
+    },
+    "deviceUsageByUser": {
+      "none": "Cihazı olan kullanıcı yok"
+    },
+    "usageByUserTitle": "Kullanıcıya göre cihaz kullanımı",
+    "usageByUserDescription": "Cihazlar kaydedildiğinde kullanıcı cihaz istatistikleri burada görünecek.",
+    "common": {
+      "active": "Aktif",
+      "inactive": "Pasif",
+      "cancel": "İptal",
+      "actions": "İşlemler"
+    },
+    "removing": "Kaldırılıyor...",
+    "overviewTitle": "Genel Bakış"
+  }
+}

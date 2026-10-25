@@ -1,0 +1,32 @@
+{
+  "title": "Dashboard",
+  "welcome": "Welcome back",
+  "guest": "Guest",
+  "navigation": {
+    "home": "Home",
+    "movies": "Movies",
+    "tv": "Live TV",
+    "series": "TV Shows",
+    "kids": "Kids",
+    "anime": "Anime",
+    "events": "Events",
+    "music": "Music",
+    "content": "Content",
+    "devices": "Devices",
+    "profile": "Profile",
+    "products": "Products"
+  },
+  "sidebar": {
+    "viewProfile": "View and edit your profile",
+    "secureSession": "Secure session",
+    "logout": "Sign out"
+  },
+  "stats": {
+    "activeDevices": "Active Devices",
+    "subscription": "Subscription",
+    "expiresAt": "Expires",
+    "unlimited": "Unlimited",
+    "active": "Active",
+    "expired": "Expired"
+  }
+}

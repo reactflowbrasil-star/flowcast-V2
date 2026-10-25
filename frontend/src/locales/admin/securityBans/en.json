@@ -1,0 +1,38 @@
+{
+  "title": "Security Bans ({{total}})",
+  "noneFound": "No bans found.",
+  "itemsPerPage": "Items per page",
+  "admin": {
+    "securityBans": {
+      "searchByUsernamePlaceholder": "Search by username...",
+      "itemsPerPage": "Items per page",
+      "title": "Security Bans ({{total}})",
+      "noneFound": "No bans found.",
+      "level": "Level",
+      "type": "Type",
+      "reason": "Reason",
+      "timeRemaining": "Time remaining"
+    }
+  },
+  "unban": {
+    "action": "Unban",
+    "confirm": "Unban user {{user}}?",
+    "promptReason": "Enter reason for unbanning"
+  },
+  "notifications": {
+    "ban": {
+      "userUnbanned": "User {{user}} has been unbanned"
+    },
+    "security": {
+      "errorLoadingBans": "Error loading security bans",
+      "errorUnbanningUser": "Error unbanning user"
+    }
+  },
+  "common": {
+    "username": "Username",
+    "actions": "Actions",
+    "previous": "Previous",
+    "next": "Next",
+    "paginationShowing": "Page {{page}} of {{totalPages}}"
+  }
+}

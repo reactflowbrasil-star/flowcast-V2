@@ -1,0 +1,46 @@
+{
+  "viewingHistory": {
+    "title": "História sledovania",
+    "subtitle": "Nedávne udalosti prehrávania a aktivita sledovania",
+    "lastUpdated": "Posledná aktualizácia: {{time}}",
+    "autoRefreshOn": "Autom. obnovenie je ZAPNUTÉ",
+    "autoRefreshOff": "Autom. obnovenie je VYPNUTÉ",
+    "refreshNow": "Obnoviť teraz",
+    "filters": {
+      "username": "Používateľské meno",
+      "contentType": "Typ obsahu",
+      "allTypes": "Všetky typy",
+      "ipAddress": "IP adresa",
+      "startDate": "Dátum od (dd/mm/rrrr)",
+      "endDate": "Dátum do (dd/mm/rrrr)",
+      "perPage": "Na stránku",
+      "search": "Hľadať",
+      "placeholderUsername": "Hľadať používateľa...",
+      "placeholderIp": "napr. 192.168.0.1"
+    },
+    "table": {
+      "date": "Dátum",
+      "username": "Používateľské meno",
+      "content": "Obsah",
+      "type": "Typ",
+      "duration": "Trvanie",
+      "device": "Zariadenie",
+      "ip": "IP"
+    },
+    "pagination": {
+      "previous": "Predchádzajúca",
+      "next": "Nasledujúca",
+      "showing": "Zobrazuje sa {{from}} až {{to}} z {{total}} záznamov",
+      "pageOf": "Stránka {{page}} z {{total_pages}}"
+    },
+    "empty": "Nenašla sa žiadna história sledovania.",
+    "errors": {
+      "failedLoad": "Nepodarilo sa načítať históriu sledovania",
+      "invalidDateRange": "Neplatný rozsah dátumov"
+    },
+    "common": {
+      "views": "Zobrazenia",
+      "today": "Dnes"
+    }
+  }
+}

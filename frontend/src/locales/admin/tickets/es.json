@@ -1,0 +1,127 @@
+{
+  "tickets": {
+    "errors": {
+      "sendMessage": "No se pudo enviar el mensaje",
+      "sendMessageRetry": "No se pudo enviar el mensaje. Inténtalo de nuevo.",
+      "assign": "No se pudo asignar el ticket",
+      "assignRetry": "No se pudo asignar el ticket. Inténtalo de nuevo.",
+      "delete": "No se pudo eliminar el ticket",
+      "deleteRetry": "No se pudo eliminar el ticket. Inténtalo de nuevo.",
+      "updateStatus": "No se pudo actualizar el estado del ticket",
+      "updateStatusRetry": "No se pudo actualizar el estado del ticket. Inténtalo de nuevo.",
+      "create": "No se pudo crear el ticket",
+      "createRetry": "No se pudo crear el ticket. Inténtalo de nuevo.",
+      "validation": {
+        "titleDescriptionRequired": "El título y la descripción son obligatorios",
+        "resellerRequired": "Selecciona un revendedor"
+      }
+    },
+    "confirm": {
+      "delete": "¿Seguro que deseas eliminar este ticket? Esta acción no se puede deshacer."
+    },
+    "filters": {
+      "status": {
+        "all": "Todos los estados"
+      },
+      "priority": {
+        "all": "Toda prioridad"
+      },
+      "unread": {
+        "all": "Todos los mensajes",
+        "unread": "Mensajes no leídos",
+        "read": "Mensajes leídos"
+      }
+    },
+    "placeholders": {
+      "filterByStatus": "Filtrar por estado",
+      "filterByPriority": "Filtrar por prioridad",
+      "filterByReadStatus": "Filtrar por lectura"
+    },
+    "unreadMessages": "Mensajes sin leer",
+    "stats": {
+      "total": "Total"
+    },
+    "actions": {
+      "panelTitle": "Acciones de administrador",
+      "assigning": "Asignando...",
+      "assignToMe": "Asignar a mí",
+      "changeStatus": "Cambiar estado",
+      "internalMessage": "Enviar como mensaje interno",
+      "scheduleFollowUp": "Programar seguimiento",
+      "reassignTicket": "Reasignar ticket"
+    },
+    "priority": {
+      "low": "Baja",
+      "medium": "Media",
+      "high": "Alta",
+      "urgent": "Urgente"
+    },
+    "status": {
+      "open": "Abierto",
+      "in_progress": "En progreso",
+      "waiting_response": "En espera de respuesta",
+      "resolved": "Resuelto",
+      "closed": "Cerrado"
+    },
+    "category": {
+      "technical": "Técnica",
+      "billing": "Facturación",
+      "account": "Cuenta",
+      "content": "Contenido",
+      "other": "Otra"
+    },
+    "create": {
+      "title": "Crear nuevo ticket",
+      "description": "Crea un nuevo ticket de soporte para pruebas o tareas administrativas.",
+      "labels": {
+        "title": "Título",
+        "description": "Descripción",
+        "reseller": "Revendedor",
+        "priority": "Prioridad",
+        "category": "Categoría"
+      },
+      "placeholders": {
+        "title": "Ingresa el título del ticket",
+        "description": "Ingresa la descripción del ticket",
+        "reseller": "Selecciona un revendedor"
+      },
+      "submitting": "Creando...",
+      "submit": "Crear ticket"
+    },
+    "advanced": {
+      "title": "Filtros avanzados",
+      "description": "Aplica filtros adicionales para refinar la búsqueda de tickets.",
+      "labels": {
+        "dateFrom": "Fecha desde",
+        "dateTo": "Fecha hasta"
+      },
+      "helper": "Filtra los tickets por rango de fechas de creación. Deja los campos vacíos para mostrar todas las fechas.",
+      "clear": "Limpiar todo",
+      "apply": "Aplicar filtros"
+    },
+    "sort": {
+      "title": "Opciones de ordenamiento",
+      "description": "Elige cómo ordenar tus tickets.",
+      "labels": {
+        "sortBy": "Ordenar por",
+        "direction": "Dirección"
+      },
+      "options": {
+        "newestFirst": "Más recientes primero",
+        "oldestFirst": "Más antiguos primero",
+        "priority": "Prioridad",
+        "status": "Estado",
+        "unreadFirst": "No leídos primero"
+      },
+      "direction": {
+        "descending": "Descendente",
+        "ascending": "Ascendente"
+      },
+      "reset": "Restablecer valores",
+      "apply": "Aplicar orden"
+    },
+    "common": {
+      "cancel": "Cancelar"
+    }
+  }
+}

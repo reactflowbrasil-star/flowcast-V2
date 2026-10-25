@@ -1,0 +1,19 @@
+{
+    "createBan": {
+        "title": "Ban Oluştur",
+        "usernameLabel": "Kullanıcı Adı",
+        "usernamePlaceholder": "Banlanacak kullanıcı adını girin",
+        "banTypeLabel": "Ban Türü",
+        "temporary": "Geçici",
+        "permanent": "Kalıcı",
+        "banLevelLabel": "Ban Seviyesi",
+        "level1": "Seviye 1 - Uyarı",
+        "level2": "Seviye 2 - Kısıtlı",
+        "level3": "Seviye 3 - Tam Ban",
+        "reasonLabel": "Sebep",
+        "reasonPlaceholder": "Ban sebebini girin...",
+        "customDurationLabel": "Özel Süre",
+        "customDurationPlaceholder": "Süreyi saat olarak girin",
+        "customDurationNote": "Süre saat cinsindendir. Varsayılan için boş bırakın."
+    }
+}

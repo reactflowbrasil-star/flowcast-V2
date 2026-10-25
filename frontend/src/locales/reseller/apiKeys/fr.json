@@ -1,0 +1,125 @@
+{
+  "title": "Clés API",
+  "description": "Gérez les clés API pour un accès programmatique à votre compte revendeur",
+  "createButton": "Créer une clé API",
+  "empty": {
+    "title": "Aucune clé API pour le moment",
+    "description": "Créez votre première clé API pour commencer à utiliser l'API"
+  },
+  "table": {
+    "name": "Nom",
+    "key": "Clé",
+    "permissions": "Autorisations",
+    "lastUsed": "Dernière utilisation",
+    "requests": "Requêtes",
+    "status": "Statut",
+    "actions": "Actes"
+  },
+  "tooltips": {
+    "edit": "Modifier les permissions",
+    "regenerate": "Régénérer la clé",
+    "delete": "Supprimer la clé"
+  },
+  "never": "Jamais",
+  "apiUsage": {
+    "title": "Utilisation de l'API",
+    "description": "Comment utiliser vos clés API",
+    "authHeader": "En-tête d'authentification",
+    "exampleListUsers": "Exemple : Lister les utilisateurs",
+    "exampleCreateUser": "Exemple : Créer un utilisateur",
+    "endpoint": "Point de terminaison (Endpoint)"
+  },
+  "createDialog": {
+    "title": "Créer une nouvelle clé API",
+    "description": "Créez une nouvelle clé API avec des permissions spécifiques pour un accès programmatique.",
+    "keyName": "Nom de la clé",
+    "keyNamePlaceholder": "ex: Mon intégration",
+    "permissions": "Autorisations",
+    "allowedOrigins": "Origines autorisées (CORS)",
+    "allowedOriginsPlaceholder": "* pour toutes, ou domaines séparés par des virgules",
+    "allowedOriginsHelp": "Utilisez * pour autoriser toutes les origines, ou spécifiez des domaines comme https://exemple.com",
+    "rateLimitMinute": "Limite de débit (par minute)",
+    "rateLimitDay": "Limite de débit (par jour)",
+    "cancel": "Annuler",
+    "creating": "Création...",
+    "create": "Créer la clé API"
+  },
+  "secretDialog": {
+    "title": "Clé API créée",
+    "description": "Copiez votre clé secrète maintenant. Vous ne pourrez plus la revoir !",
+    "warning": "C'est la seule fois que vous verrez cette clé. Conservez-la précieusement !",
+    "copied": "J'ai copié ma clé"
+  },
+  "deleteDialog": {
+    "title": "Supprimer la clé API",
+    "description": "Êtes-vous sûr de vouloir supprimer \"{{keyName}}\" ? Cette action est irréversible et toutes les intégrations utilisant cette clé cesseront de fonctionner.",
+    "cancel": "Annuler",
+    "deleting": "Suppression...",
+    "delete": "Supprimer la clé"
+  },
+  "regenerateDialog": {
+    "title": "Régénérer la clé API",
+    "description": "Êtes-vous sûr de vouloir régénérer \"{{keyName}}\" ? La clé actuelle sera immédiatement invalidée et toutes les intégrations devront être mises à jour.",
+    "cancel": "Annuler",
+    "regenerating": "Régénération...",
+    "regenerate": "Régénérer la clé"
+  },
+  "editDialog": {
+    "title": "Modifier la clé API",
+    "description": "Mettez à jour le nom, les permissions et les paramètres de cette clé API.",
+    "keyName": "Nom de la clé",
+    "keyNamePlaceholder": "ex: Mon intégration",
+    "permissions": "Autorisations",
+    "allowedOrigins": "Origens autorisées (CORS)",
+    "allowedOriginsPlaceholder": "* pour toutes, ou domaines séparés par des virgules",
+    "rateLimitMinute": "Limite de débit (par minute)",
+    "rateLimitDay": "Limite de débit (par jour)",
+    "cancel": "Annuler",
+    "saving": "Enregistrement...",
+    "save": "Enregistrer les modifications"
+  },
+  "permissions": {
+    "users:read": {
+      "name": "Lire les utilisateurs",
+      "description": "Lister et afficher vos utilisateurs finaux"
+    },
+    "users:create": {
+      "name": "Créer des utilisateurs",
+      "description": "Créer de nouveaux utilisateurs finaux (déduit des crédits)"
+    },
+    "users:update": {
+      "name": "Modifier les utilisateurs",
+      "description": "Mettre à jour les détails des utilisateurs finaux existants"
+    },
+    "users:extend": {
+      "name": "Prolonger les abonnements",
+      "description": "Prolonger les abonnements des utilisateurs (déduit des crédits)"
+    },
+    "users:delete": {
+      "name": "Supprimer les utilisateurs",
+      "description": "Supprimer les utilisateurs finaux"
+    },
+    "credits:read": {
+      "name": "Lire les crédits",
+      "description": "Afficher le solde de crédits et calculer les coûts"
+    }
+  },
+  "toast": {
+    "created": "Clé API créée avec succès",
+    "deleted": "Clé API supprimée",
+    "regenerated": "Clé API régénérée",
+    "statusUpdated": "Statut de la clé API mis à jour",
+    "updated": "Clé API mise à jour avec succès",
+    "secretCopied": "Clé secrète copiée dans le presse-papiers",
+    "errors": {
+      "create": "Échec de la création de la clé API",
+      "delete": "Échec de la suppression de la clé API",
+      "regenerate": "Échec de la régénération de la clé API",
+      "update": "Échec de la mise à jour de la clé API"
+    }
+  },
+  "validation": {
+    "keyNameRequired": "Veuillez entrer un nom de clé",
+    "permissionRequired": "Veuillez sélectionner au moins une permission"
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "mediaWatcher": {
+    "creating": "Oluşturuluyor...",
+    "title": "Medya izleyici ayarları",
+    "description": "Yeni içerik için klasörleri otomatik olarak tarar. \"ls\" gibi çalışır: yalnızca yeni klasörleri hızlı algılar.",
+    "addButton": "İzlenecek klasör ekle",
+    "empty": "Henüz izlenecek klasör yok. Başlamak için bir tane ekleyin.",
+    "deleteConfirm": "Bu klasörü silmek istediğinize emin misiniz?",
+    "form": {
+      "folderPath": "Klasör yolu",
+      "folderPathPlaceholder": "/mnt/media/movies",
+      "mediaType": "Medya türü",
+      "checkInterval": "Kontrol aralığı (dakika)"
+    },
+    "createDialog": {
+      "title": "Klasör ekle",
+      "description": "Yeni içeriği otomatik taramak için bir klasör ayarlayın"
+    },
+    "editDialog": {
+      "title": "Klasörü düzenle",
+      "description": "Klasör ayarlarını güncelle",
+      "updating": "Güncelleniyor...",
+      "update": "Güncelle"
+    },
+    "mediaTypes": {
+      "movies": "Filmler",
+      "series": "Diziler",
+      "kids": "Çocuk",
+      "anime": "anime"
+    },
+    "table": {
+      "status": "Durum",
+      "folderPath": "Klasör yolu",
+      "type": "Tür",
+      "interval": "Aralık",
+      "lastCheck": "Son kontrol",
+      "actions": "İşlemler",
+      "lastCheckNever": "Hiçbir zaman",
+      "lastCheckInvalid": "Geçersiz tarih"
+    },
+    "toasts": {
+      "createSuccess": "Klasör başarıyla oluşturuldu",
+      "createFailed": "Klasör oluşturulamadı",
+      "updateSuccess": "Klasör başarıyla güncellendi",
+      "updateFailed": "Klasör güncellenemedi",
+      "deleteSuccess": "Klasör başarıyla silindi",
+      "deleteFailed": "Klasör silinemedi",
+      "checkStarted": "Klasör kontrolü başlatıldı",
+      "checkFailed": "Klasör kontrol edilemedi",
+      "enabled": "Klasör etkinleştirildi",
+      "disabled": "Klasör devre dışı bırakıldı",
+      "toggleFailed": "Klasör durumu değiştirilemedi",
+      "folderPathRequired": "Lütfen bir klasör yolu girin"
+    }
+  }
+}

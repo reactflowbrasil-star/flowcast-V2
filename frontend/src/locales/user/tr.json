@@ -1,0 +1,453 @@
+{
+  "user": {
+    "menu": {
+      "home": "Ana Sayfa",
+      "liveTv": "Canlı TV",
+      "movies": "Filmler",
+      "series": "Diziler",
+      "kids": "Çocuk",
+      "anime": "anime",
+      "events": "Etkinlikler",
+      "music": "Müzik",
+      "favorites": "Favoriler",
+      "search": "Arama",
+      "custom": "Menü",
+      "descriptions": {
+        "home": "Ana kontrol paneli",
+        "liveTv": "Canlı kanallar",
+        "movies": "Film kataloğu",
+        "series": "TV dizileri ve şovları",
+        "kids": "Çocuklar için içerik",
+        "anime": "Anime kataloğu",
+        "events": "Özel etkinlikler",
+        "music": "Müzik kütüphanesi",
+        "favorites": "Favorileriniz",
+        "search": "İçerik ara",
+        "profile": "Hesabı yönet",
+        "devices": "Cihazları yönet"
+      }
+    },
+    "languages": {
+      "es": "İspanyolca",
+      "es_native": "İspanyolca",
+      "en": "İngilizce",
+      "en_native": "İngilizce",
+      "zh": "Çince",
+      "zh_native": "中文",
+      "pt": "Portekizce",
+      "pt_native": "Portekizce",
+      "fr": "Fransızca",
+      "fr_native": "Fransızca",
+      "ru": "Rusça",
+      "ru_native": "Rusça",
+      "tr": "Türkçe",
+      "tr_native": "Türkçe",
+      "sk": "Slovakça",
+      "sk_native": "Slovençina"
+    },
+    "badges": {
+      "continue": "Devam Et"
+    },
+    "language": {
+      "placeholder": "Dil Seçin"
+    },
+    "categoryCopy": {
+      "vod": "Planınıza dahil olan isteğe bağlı filmler.",
+      "series": "Maraton yapmaya hazır tam seriler.",
+      "tv": "Canlı kanallar ve 7/24 programlama.",
+      "kids": "Çocuklar için güvenli, seçilmiş içerik.",
+      "events": "Özel etkinlikler ve benzersiz yayınlar.",
+      "anime": "Dublaj ve altyazılı anime kataloğu."
+    },
+    "dashboard": {
+      "welcome": "Tekrar hoş geldiniz",
+      "guest": "Kullanıcı",
+      "greeting": "Merhaba {{name}}",
+      "continueWatching": "İzlemeye devam et",
+      "progressSync": "İlerlemenizi cihazlarınız arasında senkronize ediyoruz.",
+      "noHistory": "Henüz herhangi bir başlık başlatmadınız",
+      "series": "Diziler",
+      "kids": "Çocuk",
+      "anime": "anime",
+      "events": "Etkinlikler",
+      "liveTv": "Canlı TV",
+      "liveChannels": "Kanallar",
+      "liveGuide": "Rehber",
+      "nowPlaying": "Şu an oynatılıyor",
+      "noEpg": "EPG verisi yok",
+      "channel": "Kanal",
+      "searchChannels": "Kanalları ara...",
+      "viewProducts": "Ürünlerim",
+      "manageDevices": "Cihazları yönet",
+      "statusActive": "Hesap aktif",
+      "connectedDevices": "Bağlı cihazlar",
+      "devicesUsage": "Aktif cihazlarınızı istediğiniz zaman yönetebilirsiniz.",
+      "aiStatus": "Öneri motoru",
+      "aiOnline": "Aktif",
+      "aiOffline": "Yapılandırılıyor",
+      "aiSubtitle": "Önerileri birkaç saatte bir güncelliyoruz",
+      "genreSpotlight": "Türe göre keşfet",
+      "genreSpotlightHint": "Koleksiyonları iyileştirmek için sinematik kategoriler seçin.",
+      "noAiRecommendations": "Yakında önerilerinizi kişiselleştireceğiz",
+      "noTmdbData": "Bu koleksiyonları etkinleştirmek için TMDB'yi yapılandırın",
+      "programGuide": "Program rehberi",
+      "profile": "Profil",
+      "secureSession": "Şifrelenmiş ve korumalı oturum",
+      "badgeFeatured": "Öne çıkan",
+      "welcomeTitle": "Kitaplığınız her zaman yanınızda",
+      "welcomeDescription": "Size özel seçilmiş filmleri ve dizileri keşfedin.",
+      "watchNow": "Şimdi izle",
+      "filters": {
+        "movies": "Filmler",
+        "sports": "Spor",
+        "kids": "Çocuk"
+      },
+      "liveStreamError": "Kanal URL'si alınamadı.",
+      "liveLoadError": "Kanal yüklenirken hata oluştu.",
+      "browseGenres": "Türlere Göz At",
+      "popularMovies": "Popüler filmler",
+      "bingeWorthy": "Maratona uygun diziler",
+      "browse": "Kategorilere göz at",
+      "contentLibrary": "İçerik Kitaplığı",
+      "contentSubtitle": "Koleksiyonumuzu keşfedin",
+      "encryptedSession": "Şifrelenmiş Oturum",
+      "liveChannel": "Canlı Kanal",
+      "noContent": "İçerik bulunmuyor",
+      "noContentDescription": "Yönetici film, dizi veya diğer medya içeriklerini eklediğinde içerik burada görünecek."
+    },
+    "live": {
+      "title": "Canlı TV",
+      "toggleChannels": "Kanallar",
+      "toggleGuide": "Rehber",
+      "liveNow": "Şimdi Canlı",
+      "loadingGuide": "Rehber yükleniyor...",
+      "minutesLeft": "{{count}} dk kaldı",
+      "showingChannels": "{{count}} kanal gösteriliyor",
+      "channelsLive": "{{count}} kanal canlı",
+      "upNext": "Sıradaki",
+      "nowPlaying": "Şimdi oynuyor",
+      "loadingStream": "Bağlanıyor...",
+      "streamFailed": "Yayın yüklenemedi",
+      "streamError": "Yayın yükleme hatası",
+      "streamUnavailableTitle": "Yayın kullanılamıyor",
+      "streamUnavailableDescription": "Bu yayın yüklenirken bir hata oluştu.",
+      "selectPrompt": "İzlemeye başlamak için bir kanal seçin",
+      "liveBadge": "CANLI",
+      "unknownChannel": "Bilinmeyen kanal",
+      "providerFallback": "{{appName}} Sağlayıcı",
+      "toastCurrentlyViewing": "Şu an izleniyor: {{title}}",
+      "noProgramInfo": "Program bilgisi yok",
+      "channelGuide": "Kanal rehberi",
+      "noChannelsFound": "Kanal bulunamadı",
+      "categories": {
+        "sports": "Spor",
+        "entertainment": "Eğlence",
+        "news": "Haberler",
+        "movies": "Filmler"
+      },
+      "playbackError": "Oynatma hatası",
+      "epg": {
+        "errors": {
+          "loadFailed": "Program rehberi yüklenemedi"
+        },
+        "loading": "Program rehberi yükleniyor...",
+        "liveProgramming": "Canlı Yayın",
+        "noProgramInfo": "Program bilgisi yok",
+        "previous24h": "Önceki 24s",
+        "next24h": "Sonraki 24s",
+        "liveNow": "Şimdi canlı",
+        "live": "Canlı",
+        "upcoming": "Yakında",
+        "liveBadge": "CANLI",
+        "clickToWatch": "İzlemek için tıklayın",
+        "watchChannel": "Kanalı izle"
+      }
+    },
+    "filters": {
+      "clear": "Filtreyi temizle",
+      "searchChannels": "Kanalları ara...",
+      "searchMovies": "Filmleri ara...",
+      "searchShows": "Dizileri ara...",
+      "searchKids": "Çocuk içeriği ara...",
+      "searchAnime": "Anime ara...",
+      "searchEvents": "Etkinlikleri ara...",
+      "allGenres": "Tüm türler",
+      "allTypes": "Tüm tipler",
+      "allStatus": "Tüm durumlar",
+      "sortTitle": "Başlığa göre sırala",
+      "sortYear": "Yıla göre sırala",
+      "sortRating": "Puana göre sırala"
+    },
+    "kids": {
+      "errorTitle": "Çocuk içeriği yüklenirken hata",
+      "searchPlaceholder": "Çocuk içeriği ara...",
+      "emptyTitle": "Çocuk içeriği bulunamadı",
+      "emptySearchTitle": "Sonuç bulunamadı",
+      "emptySearchDescription": "Farklı arama terimleri deneyin"
+    },
+    "anime": {
+      "errorTitle": "Anime yüklenirken hata",
+      "searchPlaceholder": "Anime ara...",
+      "emptyTitle": "Anime bulunamadı",
+      "emptySearchTitle": "Sonuç bulunamadı",
+      "emptySearchDescription": "Farklı arama terimleri deneyin"
+    },
+    "events": {
+      "errorTitle": "Etkinlikler yüklenirken hata",
+      "searchPlaceholder": "Etkinlikleri ara...",
+      "emptyTitle": "Etkinlik bulunamadı",
+      "emptySearchTitle": "Sonuç bulunamadı",
+      "emptySearchDescription": "Farklı arama terimleri deneyin"
+    },
+    "favorites": {
+      "title": "Favoriler",
+      "description": "Tüm favori içerikleriniz tek yerde",
+      "emptyTitle": "Henüz favoriniz yok",
+      "emptyDescription": "İçerikleri favorilerinize eklemeye başlayın",
+      "emptyMoviesTitle": "Favori filminiz yok",
+      "emptyMoviesDescription": "Filmler bölümünden filmleri favorilere ekleyin",
+      "emptySeriesTitle": "Favori diziniz yok",
+      "emptySeriesDescription": "Diziler bölümünden dizileri favorilere ekleyin",
+      "emptyChannelsTitle": "Favori kanalınız yok",
+      "emptyChannelsDescription": "Canlı TV bölümünden kanalları favorilere ekleyin"
+    },
+    "movies": {
+      "loading": "Filmler yükleniyor...",
+      "emptyTitle": "Film bulunamadı",
+      "emptyDescription": "Aramanızı veya filtrelerinizi ayarlayın"
+    },
+    "shows": {
+      "loading": "Diziler yükleniyor...",
+      "emptyTitle": "Dizi bulunamadı",
+      "emptyDescription": "Aramanızı veya filtrelerinizi ayarlayın",
+      "season": "Sezon",
+      "seasons": "Sezonlar",
+      "status": {
+        "ongoing": "Devam ediyor",
+        "completed": "Tamamlandı",
+        "cancelled": "İptal edildi",
+        "unknown": "Bilinmiyor"
+      }
+    },
+    "pagination": {
+      "pageLabel": "Sayfa",
+      "moviesLabel": "Filmler",
+      "seriesLabel": "Diziler",
+      "kidsLabel": "Çocuk",
+      "animeLabel": "anime"
+    },
+    "profile": {
+      "badge": "Hesabım",
+      "title": "Profil ve güvenlik",
+      "subtitle": "Kişisel verileri, iletişim e-postasını ve kimlik bilgilerini yönetin.",
+      "info": {
+        "title": "Temel bilgiler",
+        "username": "Kullanıcı adı",
+        "role": "Sistemdeki rolü",
+        "createdAt": "Kayıt tarihi",
+        "expiresAt": "Bitiş tarihi",
+        "unknown": "Bilinmiyor",
+        "noExpiry": "Sona erme tarihi yok"
+      },
+      "contact": {
+        "title": "İletişim ve bildirimler",
+        "emailLabel": "İlişkili e-posta",
+        "emailPlaceholder": "Bildirimler için bir e-posta girin",
+        "hint": "Bu e-postayı güvenlik uyarıları ve kurtarma işlemleri için kullanacağız.",
+        "save": "E-postayı güncelle",
+        "saving": "Kaydediliyor..."
+      },
+      "password": {
+        "title": "Şifre değiştir",
+        "current": "Mevcut şifre",
+        "currentPlaceholder": "Mevcut şifrenizi girin",
+        "new": "Yeni şifre",
+        "newPlaceholder": "En az 6 karakter",
+        "save": "Şifreyi güncelle",
+        "saving": "Güncelleniyor...",
+        "success": "Şifre güncellendi",
+        "error": "Şifre güncellenemedi",
+        "hint": "Diğer cihazlardaki aktif oturumlar değiştirildikten sonra kapatılacaktır."
+      },
+      "plan": {
+        "title": "Plan durumu",
+        "devices": "Kullanımdaki cihazlar: {{count}} / {{max}}",
+        "role": "Erişim türü: {{role}}",
+        "expires": "{{date}} tarihine kadar geçerli",
+        "withoutExpiry": "Süresiz plan"
+      },
+      "categories": {
+        "title": "Etkin kategoriler",
+        "empty": "Yöneticiniz henüz hesabınıza içerik atamadı."
+      },
+      "actions": {
+        "title": "Kısayollar",
+        "manageDevices": "Cihazları yönet",
+        "exploreContent": "İçeriği keşfet",
+        "extendMembership": "Üyeliği uzat"
+      },
+      "update": {
+        "success": "Profil güncellendi",
+        "error": "Profil güncellenemedi"
+      },
+      "noDataTitle": "Profiliniz getirilemedi",
+      "noDataDescription": "Sayfayı yenilemeyi deneyin veya sorun devam ederse destekle iletişime geçin.",
+      "status": {
+        "unknown": "Bilinmeyen durum",
+        "banned": "Hesap askıya alındı",
+        "noExpiry": "Sona erme tarihi yok",
+        "expired": "Abonelik süresi doldu",
+        "active": "Abonelik aktif"
+      }
+    },
+    "devices": {
+      "badge": "Cihaz yönetimi",
+      "title": "Bağlı cihazlarınız",
+      "subtitle": "Hangi cihazların erişimi olduğunu kontrol edin ve gerektiğinde yer açın.",
+      "onboarding": {
+        "title": "Bu tarayıcıyı kaydet",
+        "body": "Kontrol paneline devam etmek için bu tarayıcıyı cihaz olarak bağlayın.",
+        "limitTitle": "Cihaz sınırına ulaşıldı",
+        "limitBody": "Bir cihazı kaldırarak yer açın ve bu tarayıcıyı kaydedin.",
+        "cta": "Bu cihazı kaydet",
+        "fill": "Detayları otomatik doldur",
+        "already": "Bu tarayıcı zaten kayıtlı",
+        "quickRegister": "Bu tarayıcıyı şimdi kaydet",
+        "deviceInfo": "Mevcut cihaz",
+        "slots": "{{max}} içinden {{available}} boş slot"
+      },
+      "register": {
+        "title": "Yeni cihaz kaydet",
+        "deviceId": "Cihaz Kimliği",
+        "deviceIdPlaceholder": "Örn. MAC, UUID veya cihaz kodu",
+        "deviceName": "Cihaz adı",
+        "deviceNamePlaceholder": "Örn. Oturma Odası TV, Android Box...",
+        "generate": "Rastgele kimlik oluştur",
+        "cta": "Cihazı kaydet",
+        "working": "Kaydediliyor...",
+        "validation": "Hem kimlik hem de ad sağlamalısınız",
+        "help": "Her cihaz için benzersiz bir tanımlayıcı kullanın. Android uygulamanızla aynı adı kullanmanızı öneririz."
+      },
+      "status": {
+        "title": "Kullanım durumu",
+        "progressLabel": "Doluluk",
+        "tipTitle": "Hızlı ipucu",
+        "tipBody": "Sınıra ulaşırsanız, yeni bir tane eklemeden önce artık kullanmadığınız bir cihazı kaldırın.",
+        "syncTitle": "Anında senkronizasyon",
+        "syncBody": "Değişiklikler Android uygulamasında yeniden başlatma veya oturum yenileme sonrası yansır."
+      },
+      "list": {
+        "title": "Kayıtlı cihazlar",
+        "loading": "Bağlı cihaz listesi alınıyor.",
+        "emptyTitle": "Henüz cihazınız yok",
+        "emptyDescription": "İçerik oynatmaya başlamak için ilk cihazınızı kaydedin.",
+        "lastActive": "Son erişim: {{date}}",
+        "statusActive": "Aktif",
+        "remove": "Cihazı kaldır",
+        "removeSuccess": "Cihaz kaldırıldı",
+        "removeError": "Cihaz kaldırılamadı"
+      }
+    },
+    "products": {
+      "badge": "Ürünlerim",
+      "title": "Planınızda etkin erişim",
+      "subtitle": "Aktif ürünlerinize göre mevcut tüm içeriği keşfedin.",
+      "search": "İçerik ara",
+      "devices": "Cihazlarım",
+      "list": {
+        "title": "Mevcut ürünler"
+      },
+      "empty": {
+        "title": "Henüz atanmış ürününüz yok",
+        "description": "Yöneticiniz kategorileri etkinleştirdiğinde burada görünecekler."
+      },
+      "badgeIncluded": "Planınıza dahil",
+      "cta": {
+        "explore": "Keşfet"
+      }
+    },
+    "watch": {
+      "title": "Oynatıcı",
+      "invalidId": "Geçersiz içerik kimliği",
+      "notFound": "İçerik bulunamadı",
+      "noStreamAvailable": "Bu içerik için akış mevcut değil",
+      "streamError": "Akış alınırken hata",
+      "backToDashboard": "Kontrol paneline dön",
+      "playNow": "Şimdi oyna",
+      "synopsis": "Özet",
+      "seasons": "Sezonlar",
+      "seasonShort": "S{{n}}",
+      "episodeLabel": "B{{n}}",
+      "noEpisodes": "Bölüm bulunmuyor.",
+      "drmNotice": "Bu içerik DRM yapılandırmasına sahip — uyumlu bir oynatıcı gerektirebilir.",
+      "related": "Önerilen",
+      "noRelated": "Şu an için öneri yok",
+      "goBack": "Geri git"
+    },
+    "content": {
+      "browse": {
+        "badge": "Mevcut kütüphane",
+        "title": "İçeriğinizi keşfedin",
+        "subtitle": "Filmler, diziler ve canlı TV tek bir görünümde.",
+        "totalCategories": "{{count}} kategori mevcut",
+        "goToSearch": "Aramaya git",
+        "itemCount": "{{count}} sonuç",
+        "loadingDescription": "Kişiselleştirilmiş kataloğunuz hazırlanıyor.",
+        "emptyTitle": "Bu kategoride henüz içerik yok",
+        "emptyDescription": "Yakında buraya daha fazla başlık ekleyeceğiz.",
+        "noCategoriesTitle": "Kategori atanmadı",
+        "noCategoriesDescription": "Yöneticinizden hesabınız için içerik etkinleştirmesini isteyin.",
+        "watch": "İzle",
+        "noDescription": "Açıklama bekleniyor",
+        "loadMore": "Daha fazla başlık gör",
+        "loadingMore": "Yükleniyor..."
+      },
+      "search": {
+        "title": "İçerik ara",
+        "placeholder": "Filmler, diziler, kanallar...",
+        "emptyTitle": "Başlamak için bir şeyler arayın",
+        "emptyDesc": "İçerik bulmak için bir başlık, kategori veya anahtar kelime yazın.",
+        "loading": "Eşleşmeler aranıyor",
+        "error": "Arama başarısız",
+        "noResults": "Sonuç yok",
+        "tryAgain": "Farklı anahtar kelimeler deneyin veya yazımınızı kontrol edin."
+      }
+    },
+    "common": {
+      "continue": "Devam Et",
+      "all": "Tümü",
+      "loading": "Yükleniyor...",
+      "search": "Ara",
+      "watch": "İzle",
+      "viewAll": "Hepsini gör",
+      "noItems": "Öğe yok",
+      "comeBackSoon": "Yeni içerikleri keşfetmek için yakında tekrar gelin.",
+      "noResults": "Sonuç bulunamadı",
+      "adjustSearch": "Aramanızı veya filtrelerinizi ayarlayın",
+      "tryDifferent": "Farklı arama terimleri deneyin",
+      "reload": "Lütfen sayfayı yenilemeyi deneyin",
+      "verified": "Doğrulandı",
+      "titleCount": "{{count}} başlık",
+      "titleCount_plural": "{{count}} başlık",
+      "seriesCount": "{{count}} dizi",
+      "seriesCount_plural": "{{count}} dizi",
+      "animeCount": "{{count}} anime",
+      "animeCount_plural": "{{count}} anime",
+      "eventCount": "{{count}} etkinlik",
+      "eventCount_plural": "{{count}} etkinlik",
+      "channelCount": "{{count}} kanal",
+      "channelCount_plural": "{{count}} kanal"
+    },
+    "player": {
+      "audioInfo": "Ses bilgisi",
+      "audioTracksTitle": "Ses Kanalları",
+      "audioTracksTitleWithCount": "Ses Kanalları ({{count}})",
+      "noAudioTracks": "Ses kanalı bulunamadı",
+      "noAudioTracksHelpLine1": "Bu videoda ayrı kanallar olmadan entegre ses olabilir,",
+      "noAudioTracksHelpLine2": "veya tarayıcınız AudioTracks API'sini desteklemiyor.",
+      "subtitlesTitle": "Altyazılar",
+      "noSubtitles": "Altyazı yok",
+      "playbackSpeed": "Hız"
+    }
+  }
+}

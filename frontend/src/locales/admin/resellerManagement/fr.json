@@ -1,0 +1,66 @@
+{
+  "uiBulk": {
+    "reseller": {
+      "form": {
+        "usernamePlaceholder": "Entrez le nom d'utilisateur",
+        "passwordPlaceholder": "Entrez le mot de passe numérique (4-10 chiffres)",
+        "emailPlaceholder": "Entrez l'email"
+      }
+    }
+  },
+  "resellerManagement": {
+    "title": "Gestion des Revendeurs",
+    "subtitle": "Créez et gérez les revendeurs avec système de crédit",
+    "createReseller": "Créer un Revendeur",
+    "createResellerDescription": "Créez un nouveau compte revendeur avec des crédits initiaux et des limites de démo.",
+    "resetAllCounters": "Réinitialiser les Compteurs",
+    "resetAllCountersConfirm": "Êtes-vous sûr de vouloir réinitialiser les compteurs de démo quotidiens pour tous les revendeurs ? Cela mettra tous les compteurs à 0.",
+    "searchByUsernameOrEmail": "Rechercher par nom d'utilisateur ou email...",
+    "noResellersYet": "Aucun revendeur pour le moment",
+    "createYourFirstReseller": "Créez votre premier revendeur pour commencer à gérer les utilisateurs finaux.",
+    "endUsersTitle": "Utilisateurs Finaux",
+    "endUsersSubtitle": "Créez et gérez les utilisateurs finaux à travers tous les revendeurs",
+    "createEndUser": "Créer un Utilisateur",
+    "filters": "Filtres",
+    "searchByUsername": "Rechercher par nom d'utilisateur...",
+    "searchByEmail": "Rechercher par email...",
+    "searchByReseller": "Rechercher par revendeur...",
+    "noEndUsersYet": "Aucun utilisateur final pour le moment",
+    "viewUsersDialog": {
+      "title": "Utilisateurs Finaux - {{username}}",
+      "description": "Voir tous les utilisateurs finaux créés par ce revendeur. Ces utilisateurs seront transférés à l'administrateur si le revendeur est supprimé.",
+      "totalUsers": "Total Utilisateurs",
+      "subtitle": "Utilisateurs finaux créés",
+      "totalDevices": "Total Appareils",
+      "totalDevicesSubtitle": "Appareils alloués",
+      "creditCost": "Coût en Crédits",
+      "creditCostSubtitle": "Total crédits utilisés",
+      "sectionTitle": "Détails de l'Utilisateur",
+      "empty": "Ce revendeur n'a pas encore d'utilisateurs finaux.",
+      "active": "Actif",
+      "inactive": "Inactif",
+      "devices": "appareils",
+      "credits": "crédits",
+      "expires": "Expire le",
+      "never": "Jamais",
+      "created": "Créé le",
+      "transferNotice": {
+        "title": "Avis de Transfert",
+        "description": "Si ce revendeur est supprimé, tous les {{count}} utilisateur(s) final(aux) seront automatiquement transférés vers le compte administrateur. Les utilisateurs conserveront leurs paramètres actuels et leur statut d'abonnement."
+      }
+    },
+    "resetPasswordDialog": {
+      "confirmContinue": "Êtes-vous sûr de vouloir continuer ?",
+      "copy": "Copie",
+      "errorTitle": "Erreur lors de la réinitialisation du mot de passe",
+      "generatedLabel": "Mot de passe généré :",
+      "generatedNotSaved": "Le mot de passe a été généré mais n'a pas été enregistré en raison d'une erreur :",
+      "importantLabel": "Important:",
+      "newPasswordLabel": "Nouveau mot de passe :",
+      "resetForUser": "Réinitialiser le mot de passe pour {{username}}",
+      "saveImmediately": "Veuillez enregistrer ce mot de passe immédiatement. Il ne sera plus affiché et ne pourra pas être récupéré.",
+      "successForUser": "Le mot de passe a été réinitialisé avec succès pour {{username}}.",
+      "tryAgainQuestion": "Souhaitez-vous réessayer ?"
+    }
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "title": "Dispositivos en lista negra ({{count}})",
+  "empty": {
+    "title": "No hay dispositivos en la lista negra",
+    "description": "Todo en orden. No hay dispositivos en la lista negra actualmente."
+  },
+  "table": {
+    "username": "Usuario",
+    "deviceId": "ID del dispositivo",
+    "blacklistedAt": "Añadido a la lista negra",
+    "actions": "Acciones"
+  },
+  "actions": {
+    "remove": "Quitar de la lista negra"
+  },
+  "notifications": {
+    "blacklist": {
+      "errorLoading": "Error al cargar los dispositivos en lista negra",
+      "confirmRemove": "¿Quitar el dispositivo \"{{device}}\" del usuario {{user}} de la lista negra?",
+      "removed": "Dispositivo quitado de la lista negra",
+      "removeFailed": "Error al quitar el dispositivo de la lista negra"
+    }
+  }
+}

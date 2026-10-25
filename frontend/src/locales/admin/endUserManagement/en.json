@@ -1,0 +1,123 @@
+{
+  "endUserManagement": {
+    "title": "End Users",
+    "subtitle": "Create and manage end users across the system",
+    "createEndUser": "Create End User",
+    "noEndUsersYet": "No end users yet",
+    "searchByUsername": "Search by username...",
+    "searchByEmail": "Search by email...",
+    "status": {
+      "active": "Active",
+      "banned": "Banned",
+      "inactive": "Inactive"
+    },
+    "actions": {
+      "create": "Create",
+      "edit": "Edit",
+      "resetPassword": "Reset Password",
+      "ban": "Ban",
+      "unban": "Unban",
+      "manageCredits": "Manage Credits",
+      "banUser": "Ban User",
+      "unbanUser": "Unban User",
+      "confirmBan": "Are you sure you want to {{action}} {{username}}?",
+      "banWarning": "This will prevent them from accessing the service.",
+      "deleteUser": "Delete User",
+      "confirmDelete": "Are you sure you want to permanently delete {{username}}? This action cannot be undone."
+    },
+    "labels": {
+      "username": "Username",
+      "email": "Email",
+      "status": "Status",
+      "createdAt": "Created at"
+    },
+    "placeholders": {
+      "searchByUsername": "Search by username..."
+    },
+    "confirmDelete": "Delete this end user? This action cannot be undone.",
+    "noMatches": "No matching users",
+    "editDialog": {
+      "title": "Edit User",
+      "contentCategories": "Content Categories",
+      "maxDevices": "Max Devices",
+      "maxDevicesDesc": "Maximum number of concurrent devices (1-10)",
+      "endLicense": "End License (Optional)",
+      "forcedCategories": "Forced Content Categories",
+      "forcedCategoriesDesc": "Categories this user MUST have access to (overrides defaults)",
+      "password": "Password",
+      "passwordDesc": "Leave blank to keep current password",
+      "save": "Save Changes",
+      "cancel": "Cancel",
+      "updating": "Updating..."
+    },
+    "demoUser": "Demo User",
+    "expiredDemo": "Expired Demo",
+    "demoBadge": "Demo",
+    "directAdminManagement": "Direct Admin Management",
+    "deleteUser": "Delete User",
+    "filters": {
+      "title": "Filters",
+      "username": "Username",
+      "email": "Email",
+      "reseller": "Reseller",
+      "showing": "Showing {{count}} of {{total}} users",
+      "clear": "Clear filters"
+    },
+    "table": {
+      "username": "Username",
+      "email": "Email",
+      "type": "Type",
+      "maxDevices": "Max Devices",
+      "reseller": "Reseller",
+      "status": "Status",
+      "created": "Created",
+      "endLicense": "End License",
+      "actions": "Actions",
+      "premium": "Premium"
+    },
+    "form": {
+      "username": "Username",
+      "password": "Password",
+      "email": "Email",
+      "maxDevices": "Max Devices",
+      "expiryDate": "Expiry Date (Optional)",
+      "expiryDateHelp": "Leave empty for no expiration. User will be automatically deactivated after this date.",
+      "assignReseller": "Assign to Reseller (Optional)",
+      "selectContentCategories": "Content Categories",
+      "selectCategoriesHelp": "Click to select the content categories this user will have access to.",
+      "loadingCategories": "Loading categories...",
+      "noCategories": "No categories available"
+    },
+    "neverLabel": "Never",
+    "expired": "Expired",
+    "timeLeft": "left",
+    "time": {
+      "hoursMinutes": "{{hours}}h {{minutes}}m",
+      "minutes": "{{minutes}}m"
+    },
+    "daysRemaining": "{{count}} days",
+    "errors": {
+      "loadEndUsersFailed": "Failed to load end users",
+      "loadEndUsersFailedWithMessage": "Failed to load end users: {{message}}",
+      "loadResellersFailed": "Failed to load resellers",
+      "createFailed": "Failed to create end user",
+      "updateStatusFailed": "Failed to update user status",
+      "deleteFailed": "Failed to delete user"
+    },
+    "messages": {
+      "noUserSelected": "No user selected",
+      "updateFailed": "Failed to update user",
+      "passwordUpdateFailed": "Failed to update user password"
+    },
+    "validation": {
+      "usernameMin": "Username must be at least {{count}} characters",
+      "passwordMinDigits": "Password must be at least {{count}} digits",
+      "passwordMaxDigits": "Password must be at most {{count}} digits",
+      "passwordDigitsOnly": "Password must contain only digits",
+      "emailInvalid": "Invalid email address",
+      "maxDevicesMin": "Minimum {{count}} device",
+      "maxDevicesMax": "Maximum {{count}} devices allowed",
+      "categoryMin": "Please select at least {{count}} category"
+    }
+  }
+}
