@@ -92,7 +92,7 @@ services:
       DATABASE_URL: "postgres://streamcore:StreamCore_DB_2024_Production!@postgres:5432/streamcore"
 
       # ⚙️ EDIT: URLs (change to your domains for production)
-      PUBLIC_BASE_URL: "http://localhost:3000"
+      PUBLIC_BASE_URL: "https://app.agenciaafrica.com.br"
       CORS_ALLOWED_ORIGINS: "*"
 
       # ⚙️ EDIT: Security - MUST CHANGE IN PRODUCTION!
@@ -180,7 +180,7 @@ services:
         # ⚙️ EDIT: Your app name
         APP_NAME: "StreamCore"
         # ⚙️ EDIT: CRITICAL - Must be set at build time for client-side code
-        NEXT_PUBLIC_API_URL: "http://localhost:3000"
+        NEXT_PUBLIC_API_URL: "https://app.agenciaafrica.com.br"
         # ⚙️ EDIT: API encryption key (must match backend API_ENCRYPTION_KEY)
         # NEXT_PUBLIC_API_ENCRYPTION_KEY: ""
     container_name: streamcore-frontend
@@ -189,7 +189,7 @@ services:
       # API URLs
       INTERNAL_API_URL: "http://backend:3000"
       # ⚙️ EDIT: Change to your backend domain for production
-      NEXT_PUBLIC_API_URL: "http://localhost:3000"
+      NEXT_PUBLIC_API_URL: "https://app.agenciaafrica.com.br"
       NEXT_PUBLIC_APP_NAME: "StreamCore"
       # ⚙️ EDIT: API encryption key (must match backend API_ENCRYPTION_KEY)
       # NEXT_PUBLIC_API_ENCRYPTION_KEY: ""
@@ -271,3 +271,4 @@ volumes:
   nginx-vhost:
   nginx-html:
   acme-state:
+
