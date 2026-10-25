@@ -6,7 +6,9 @@ const { parse } = require('url');
 const next = require('next');
 
 const dev = process.env.NODE_ENV !== 'production';
-const hostname = process.env.HOSTNAME || '0.0.0.0';
+// Bind all container interfaces. Docker sets HOSTNAME to the container ID,
+// which can bind Next to an interface the Coolify proxy does not target.
+const hostname = '0.0.0.0';
 const port = parseInt(process.env.PORT || '5000', 10);
 
 const app = next({ dev, hostname, port });
@@ -37,3 +39,4 @@ app.prepare().then(() => {
         console.log(`> Server timeouts configured: timeout=${server.timeout}ms, requestTimeout=${server.requestTimeout}ms`);
     });
 });
+
