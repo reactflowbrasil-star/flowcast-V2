@@ -2,6 +2,9 @@
 const isStaticExport = process.env.NEXT_STATIC_EXPORT === 'true';
 
 const nextConfig = {
+  // This deployment is served from a Coolify path-prefix route.
+  basePath: '/flowcastv2',
+
   // Configure output only for static export builds to avoid disabling Middleware and API in dev/server
   ...(isStaticExport
     ? {
@@ -111,3 +114,4 @@ const nextConfig = {
 };
 
 module.exports = nextConfig;
+
