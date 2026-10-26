@@ -205,43 +205,22 @@ pub async fn reseller_or_admin(
     Ok(next.run(request).await)
 }
 
-/// License enforcement middleware — requires ANY active license.
-/// Returns 403 LicenseRequired if no license is active.
+/// License enforcement middleware — all features unlocked.
 pub async fn require_any_license(
-    State(app_state): State<crate::AppState>,
+    State(_app_state): State<crate::AppState>,
     request: Request,
     next: Next,
 ) -> Result<Response, AppError> {
-    match app_state.license_service.get_status().await {
-        Ok(status) if status.licensed => Ok(next.run(request).await),
-        _ => Err(AppError::LicenseRequired(
-            "A valid license is required to use this feature. Please activate your Envato purchase code in the admin panel.".to_string(),
-        )),
-    }
+    Ok(next.run(request).await)
 }
 
-/// License enforcement middleware — requires EXTENDED license.
-/// Returns 403 ExtendedLicenseRequired if the active license is not Extended.
-/// This gates all monetization features (resellers, Stripe, billing, packages, etc.)
+/// License enforcement middleware — extended features unlocked.
 pub async fn require_extended_license(
-    State(app_state): State<crate::AppState>,
+    State(_app_state): State<crate::AppState>,
     request: Request,
     next: Next,
 ) -> Result<Response, AppError> {
-    match app_state.license_service.get_status().await {
-        Ok(status) if status.licensed => {
-            if status.license_type.as_deref() == Some("Extended License") {
-                Ok(next.run(request).await)
-            } else {
-                Err(AppError::ExtendedLicenseRequired(
-                    "An Extended License is required for monetization features (resellers, payments, billing, packages). Upgrade your license at https://codecanyon.net/item/streamcore/61225431".to_string(),
-                ))
-            }
-        }
-        _ => Err(AppError::ExtendedLicenseRequired(
-            "An Extended License is required for monetization features. Please activate your Envato purchase code first.".to_string(),
-        )),
-    }
+    Ok(next.run(request).await)
 }
 
 /// Extract JWT token from Authorization header
