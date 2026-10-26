@@ -249,7 +249,12 @@ export default function ContentManagement({ className }: ContentManagementProps)
           } catch {
             // Keep relative stream URLs as supplied by the backend.
           }
-          setPreviewUrl(toProxiedStreamUrl(normalizedStreamUrl));
+          setPreviewUrl(toProxiedStreamUrl(normalizedStreamUrl, {
+            origin: anyData?.origin ?? null,
+            user_agent: anyData?.user_agent ?? null,
+            referer: anyData?.referer ?? null,
+            custom_headers: anyData?.custom_headers ?? null,
+          }, true));
         } else {
           const fallback = t('content.preview.error', {});
           toast.error(fallback);
@@ -297,17 +302,54 @@ export default function ContentManagement({ className }: ContentManagementProps)
     const setup = async () => {
       try {
         if (kind === 'HLS') {
-          // hls.js handles PHP proxy URLs (stream.php?url=...m3u8) that
-          // Shaka cannot play due to text/html Content-Type on sub-requests.
           try {
             const hlsMod: any = await import('hls.js');
             const HlsCtor = hlsMod?.default ?? hlsMod;
             if (HlsCtor?.isSupported?.()) {
-              hlsInstance = new HlsCtor({ enableWorker: true, lowLatencyMode: true });
+              const hlsConfig: any = {
+                enableWorker: true,
+                lowLatencyMode: false,
+                backBufferLength: 60,
+                maxBufferLength: 30,
+                maxMaxBufferLength: 600,
+                maxBufferHole: 0.5,
+                highBufferWatchdogPeriod: 2,
+                nudgeOffset: 0.1,
+                nudgeMaxRetry: 10,
+                manifestLoadingTimeOut: 20000,
+                manifestLoadingMaxRetry: 6,
+                levelLoadingTimeOut: 20000,
+                levelLoadingMaxRetry: 6,
+                fragLoadingTimeOut: 20000,
+                fragLoadingMaxRetry: 10,
+                startLevel: -1,
+                capLevelToPlayerSize: false,
+              };
+              hlsInstance = new HlsCtor(hlsConfig);
               hlsInstance.on(HlsCtor.Events.ERROR, (_e: any, data: any) => {
                 if (!data?.fatal) return;
-                console.error('[Admin preview] hls.js fatal error:', data.details);
-                setPreviewError(`HLS error: ${data.details ?? 'unknown'}`);
+                console.warn('[Admin preview] hls.js fatal error:', data.type, data.details);
+
+                switch (data.type) {
+                  case HlsCtor.ErrorTypes.NETWORK_ERROR:
+                    console.info('[Admin preview] Network error, recovering with startLoad()...');
+                    hlsInstance.startLoad();
+                    break;
+                  case HlsCtor.ErrorTypes.MEDIA_ERROR:
+                    console.info('[Admin preview] Media error, recovering with recoverMediaError()...');
+                    hlsInstance.recoverMediaError();
+                    break;
+                  default:
+                    if (!url.includes('/api/proxy/stream')) {
+                      const proxyUrl = `/api/proxy/stream?url=${encodeURIComponent(url)}`;
+                      console.info('[Admin preview] Unrecoverable error, retrying via proxy:', proxyUrl);
+                      hlsInstance.loadSource(proxyUrl);
+                      hlsInstance.startLoad();
+                    } else {
+                      setPreviewError(`HLS error: ${data.details ?? 'unknown'}`);
+                    }
+                    break;
+                }
               });
               hlsInstance.loadSource(url);
               hlsInstance.attachMedia(video);
