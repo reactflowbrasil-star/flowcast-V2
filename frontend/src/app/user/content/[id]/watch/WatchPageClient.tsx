@@ -270,11 +270,57 @@ export default function WatchPageClient() {
           try { hlsRef.current.destroy(); } catch { }
           hlsRef.current = null;
         }
-        const hls = new Hls({});
+
+        const hlsConfig: any = {
+          enableWorker: true,
+          lowLatencyMode: false,
+          backBufferLength: 90,
+          maxBufferLength: 60,
+          maxMaxBufferLength: 600,
+          maxBufferHole: 0.5,
+          highBufferWatchdogPeriod: 2,
+          nudgeOffset: 0.1,
+          nudgeMaxRetry: 10,
+          manifestLoadingTimeOut: 20000,
+          manifestLoadingMaxRetry: 6,
+          levelLoadingTimeOut: 20000,
+          levelLoadingMaxRetry: 6,
+          fragLoadingTimeOut: 20000,
+          fragLoadingMaxRetry: 10,
+          startLevel: -1,
+          capLevelToPlayerSize: false,
+        };
+
+        const hls = new Hls(hlsConfig);
         hlsRef.current = hls;
+
         hls.on(Hls.Events.ERROR, (_evt: any, data: any) => {
-          console.error('hls.js error', data);
+          console.warn('hls.js error:', data.type, data.details, data.fatal);
+          if (data.fatal) {
+            switch (data.type) {
+              case Hls.ErrorTypes.NETWORK_ERROR:
+                console.log('🔄 HLS network error, attempting hls.startLoad()...');
+                hls.startLoad();
+                break;
+              case Hls.ErrorTypes.MEDIA_ERROR:
+                console.log('🔄 HLS media error, attempting hls.recoverMediaError()...');
+                hls.recoverMediaError();
+                break;
+              default:
+                if (!m3u8Url.includes('/api/proxy/stream')) {
+                  const proxyUrl = `/api/proxy/stream?url=${encodeURIComponent(m3u8Url)}`;
+                  console.log('🔄 HLS unrecoverable error, retrying via stream proxy:', proxyUrl);
+                  hls.loadSource(proxyUrl);
+                  hls.startLoad();
+                } else {
+                  try { hls.destroy(); } catch { }
+                  hlsRef.current = null;
+                }
+                break;
+            }
+          }
         });
+
         if (videoRef.current) {
           hls.attachMedia(videoRef.current);
           hls.loadSource(m3u8Url);
@@ -285,7 +331,7 @@ export default function WatchPageClient() {
         // Native HLS (Safari)
         if (videoRef.current) {
           videoRef.current.src = m3u8Url;
-          setPlayerInitialized(false); // using native element source
+          setPlayerInitialized(false);
         }
         return true;
       }
@@ -711,49 +757,48 @@ export default function WatchPageClient() {
     }
   };
 
-  // Simple native player for MP4/VOD content - more reliable for subtitles
+  // Player initializer for HLS/DASH/Direct streams
   async function ensurePlaybackReady(url: string | null): Promise<void> {
     if (!url || !videoRef.current) return;
 
-    const isVodContent = (() => {
-      const tLower = String((content as any)?.content_type || '').toLowerCase();
-      const catRaw = String(
-        (content as any)?.category?.category_type ??
-        (content as any)?.category?.name ??
-        (content as any)?.category ??
-        ''
-      ).toLowerCase();
-      return tLower === 'movie' || tLower === 'movies' || tLower === 'vod' || catRaw === 'vod';
-    })();
+    // Clean up any existing players first
+    if (shakaRef.current) {
+      try { await shakaRef.current.destroy(); } catch { }
+      shakaRef.current = null;
+    }
+    if (hlsRef.current) {
+      try { hlsRef.current.destroy(); } catch { }
+      hlsRef.current = null;
+    }
 
-    // For VOD/MP4 content, use native player for better subtitle support
-    if (isVodContent || url.toLowerCase().includes('.mp4')) {
-      try {
-        // Clean up any existing players first
-        if (shakaRef.current) {
-          try { await shakaRef.current.destroy(); } catch { }
-          shakaRef.current = null;
+    videoRef.current.crossOrigin = isInternalUrl(url) ? 'use-credentials' : 'anonymous';
+    await new Promise(r => setTimeout(r, 50));
+
+    if (isHlsUrl(url)) {
+      // For HLS streams (m3u8), initialize HLS.js (or Shaka if DRM is present)
+      if (drmType || licenseServerUrl || drmKeys) {
+        await initShakaPlayer(
+          url,
+          drmKeys,
+          drmKeysExo,
+          drmType,
+          licenseServerUrl,
+          drmHeaders
+        );
+      } else {
+        const hlsOk = await initHlsPlayer(url);
+        if (!hlsOk) {
+          await initShakaPlayer(
+            url,
+            drmKeys,
+            drmKeysExo,
+            drmType,
+            licenseServerUrl,
+            drmHeaders
+          );
         }
-        if (hlsRef.current) {
-          try { hlsRef.current.destroy(); } catch { }
-          hlsRef.current = null;
-        }
-
-        // Set crossOrigin based on URL origin:
-        // - Internal URLs: use-credentials (for authentication)
-        // - External URLs: anonymous (to avoid CORS issues with wildcard origins)
-        videoRef.current.crossOrigin = isInternalUrl(url) ? 'use-credentials' : 'anonymous';
-
-        // Small delay to ensure DOM is ready with crossOrigin attribute
-        await new Promise(r => setTimeout(r, 50));
-
-        videoRef.current.src = url;
-        setPlayerInitialized(false); // Use native controls
-      } catch (e) {
-        console.error('🎬 Error setting up native player:', e);
       }
-    } else if (isHlsUrl(url) || isDashUrl(url)) {
-      // Use Shaka only for HLS/DASH streams
+    } else if (isDashUrl(url)) {
       await initShakaPlayer(
         url,
         drmKeys,
@@ -763,12 +808,12 @@ export default function WatchPageClient() {
         drmHeaders
       );
     } else {
-      // Fallback to native
+      // Direct video file (.mp4, .mkv, .webm)
       try {
         videoRef.current.src = url;
         setPlayerInitialized(false);
-      } catch {
-        // ignore
+      } catch (e) {
+        console.error('🎬 Error setting up native video source:', e);
       }
     }
   }

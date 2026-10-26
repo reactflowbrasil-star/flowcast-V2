@@ -26,7 +26,8 @@ export function normalizeStreamHeaders(overrides?: StreamHeaderOverrides | null)
     origin: origin || undefined,
     user_agent: userAgent || undefined,
     referer: referer || undefined,
-    custom_headers: customHeaders || undefined};
+    custom_headers: customHeaders || undefined,
+  };
 }
 
 export function hasStreamHeaderOverrides(headers: NormalizedStreamHeaders): boolean {
@@ -40,8 +41,9 @@ export function appendStreamHeaderParams(params: URLSearchParams, headers: Norma
   if (headers.custom_headers) params.set('custom_headers', headers.custom_headers);
 }
 
-/** Proxies insecure HTTP streams through the app's HTTPS origin. */
-export function toProxiedStreamUrl(input: string, overrides?: StreamHeaderOverrides | null): string {
+/** Proxies insecure HTTP streams or cross-origin streams to prevent Mixed Content & CORS errors. */
+export function toProxiedStreamUrl(input: string, overrides?: StreamHeaderOverrides | null, forceProxy = false): string {
+  if (!input) return input;
   const headers = normalizeStreamHeaders(overrides);
   const shouldProxyForHeaders = hasStreamHeaderOverrides(headers);
 
@@ -54,7 +56,19 @@ export function toProxiedStreamUrl(input: string, overrides?: StreamHeaderOverri
       return `${STREAM_PROXY_ROUTE}?${url.searchParams.toString()}`;
     }
 
-    if (url.protocol !== 'http:' && !shouldProxyForHeaders) return input;
+    const isHttp = url.protocol === 'http:';
+    const isHttpsPage = typeof window !== 'undefined' && window.location.protocol === 'https:';
+
+    // Insecure HTTP stream on HTTPS page MUST be proxied
+    if (isHttp && isHttpsPage) {
+      const params = new URLSearchParams({ url: url.toString() });
+      appendStreamHeaderParams(params, headers);
+      return `${STREAM_PROXY_ROUTE}?${params.toString()}`;
+    }
+
+    if (!isHttp && !shouldProxyForHeaders && !forceProxy) {
+      return input;
+    }
 
     const params = new URLSearchParams({ url: url.toString() });
     appendStreamHeaderParams(params, headers);

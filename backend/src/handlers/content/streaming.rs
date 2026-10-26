@@ -224,10 +224,19 @@ async fn stream_file_response(
         .map_err(|_| AppError::InternalServerError)?;
     let file_size = metadata.len();
 
-    // Determine MIME type
-    let mime_type = mime_guess::from_path(file_path)
-        .first_or_octet_stream()
-        .to_string();
+    // Determine MIME type with explicit HLS extension handling
+    let ext = file_path.extension().and_then(|e| e.to_str()).map(|e| e.to_lowercase()).unwrap_or_default();
+    let mime_type = match ext.as_str() {
+        "m3u8" | "m3u" => "application/x-mpegURL".to_string(),
+        "ts" => "video/mp2t".to_string(),
+        "m4s" => "video/iso.segment".to_string(),
+        "mp4" => "video/mp4".to_string(),
+        "webm" => "video/webm".to_string(),
+        "mkv" => "video/x-matroska".to_string(),
+        _ => mime_guess::from_path(file_path)
+            .first_or_octet_stream()
+            .to_string(),
+    };
 
     // Handle range requests for video streaming (critical for seek functionality)
     let range_header = headers.get(header::RANGE);

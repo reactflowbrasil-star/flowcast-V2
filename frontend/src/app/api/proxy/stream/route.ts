@@ -4,11 +4,8 @@ export const runtime = 'nodejs';
 export const dynamic = 'force-dynamic';
 
 /**
- * Simple streaming proxy for media manifests and segments.
+ * Streaming proxy for media manifests and segments.
  * Accepts absolute http(s) URL via ?url= and streams it with permissive CORS.
- * 
- * IMPORTANT: This API route requires a Node.js server runtime to proxy requests.
- * The 'force-dynamic' export above ensures this route runs at runtime.
  */
 
 export async function OPTIONS(): Promise<Response> {
@@ -17,7 +14,7 @@ export async function OPTIONS(): Promise<Response> {
     headers: {
       'access-control-allow-origin': '*',
       'access-control-allow-methods': 'GET, HEAD, OPTIONS',
-      'access-control-allow-headers': 'Range, Accept, Origin, Referer, User-Agent',
+      'access-control-allow-headers': 'Range, Accept, Origin, Referer, User-Agent, Authorization',
       'access-control-max-age': '86400'
     }
   });
@@ -29,7 +26,6 @@ function passthrough(resp: Response): Headers {
     const v = resp.headers.get(n);
     if (v) out.set(n, v);
   };
-  // Common content headers
   copy('content-type');
   copy('content-length');
   copy('content-range');
@@ -41,7 +37,7 @@ function passthrough(resp: Response): Headers {
   // CORS
   out.set('access-control-allow-origin', '*');
   out.set('access-control-allow-methods', 'GET, HEAD, OPTIONS');
-  out.set('access-control-allow-headers', 'Range, Accept, Origin, Referer, User-Agent');
+  out.set('access-control-allow-headers', 'Range, Accept, Origin, Referer, User-Agent, Authorization');
   out.set('access-control-expose-headers', 'Content-Type, Content-Length, Accept-Ranges, Content-Range, ETag, Cache-Control, Last-Modified');
   return out;
 }
@@ -88,34 +84,29 @@ function buildUpstreamHeaders(req: Request, searchParams: URLSearchParams): Head
   copy('accept');
   copy('accept-language');
 
-  // Priority: query params > request headers (allows channel-specific overrides)
   const originParam = searchParams.get('origin');
   const userAgentParam = searchParams.get('user_agent');
   const refererParam = searchParams.get('referer');
   const customHeadersParam = searchParams.get('custom_headers');
 
-  // Apply Origin (query param or fallback to request header)
   if (originParam) {
     h.set('origin', originParam);
   } else {
     copy('origin');
   }
 
-  // Apply User-Agent (query param or fallback to request header)
   if (userAgentParam) {
     h.set('user-agent', userAgentParam);
   } else {
     copy('user-agent');
   }
 
-  // Apply Referer (query param or fallback to request header)
   if (refererParam) {
     h.set('referer', refererParam);
   } else {
     copy('referer');
   }
 
-  // Apply custom headers from JSON string
   if (customHeadersParam) {
     try {
       const custom = JSON.parse(customHeadersParam);
@@ -131,7 +122,6 @@ function buildUpstreamHeaders(req: Request, searchParams: URLSearchParams): Head
     }
   }
 
-  // Avoid stale caches for live streams
   h.set('cache-control', 'no-cache');
   return h;
 }
@@ -182,25 +172,41 @@ export async function GET(req: Request): Promise<Response> {
       redirect: 'follow'
     });
 
-    const contentType = upstream.headers.get('content-type') || '';
-    const isHls = contentType.includes('application/vnd.apple.mpegurl') ||
+    const contentType = (upstream.headers.get('content-type') || '').toLowerCase();
+    const urlLower = validated.url.toLowerCase();
+    const isHlsExtension = urlLower.includes('.m3u8') || urlLower.includes('.m3u');
+    const isLikelyHlsContent =
+      contentType.includes('application/vnd.apple.mpegurl') ||
       contentType.includes('application/x-mpegurl') ||
-      contentType.includes('audio/mpegurl');
+      contentType.includes('audio/mpegurl') ||
+      contentType.includes('text/plain') ||
+      contentType.includes('application/octet-stream') ||
+      contentType.includes('text/html');
 
-    if (isHls && upstream.ok) {
-      const text = await upstream.text();
+    let text = '';
+    let isHlsContent = false;
+
+    if (upstream.ok) {
+      if (isHlsExtension || isLikelyHlsContent) {
+        text = await upstream.text();
+        const trimmedText = text.trimStart();
+        if (trimmedText.startsWith('#EXTM3U') || isHlsExtension || contentType.includes('mpegurl')) {
+          isHlsContent = true;
+        }
+      }
+    }
+
+    if (isHlsContent && upstream.ok) {
       const baseUrl = new URL(upstream.url || validated.url);
       const headerParams = buildHeaderParams(searchParams);
       const proxyPath = getProxyPath(req);
-      const finalUrlIsHttp = baseUrl.protocol === 'http:';
-      const shouldProxyAll = finalUrlIsHttp || headerParams.toString().length > 0;
 
       const rewritten = text.split('\n').map(line => {
         const trimmed = line.trim();
         if (!trimmed) return line;
 
         if (trimmed.startsWith('#')) {
-          if (!shouldProxyAll || !/\bURI="([^"]+)"/i.test(line)) return line;
+          if (!/\bURI="([^"]+)"/i.test(line)) return line;
           return line.replace(/\bURI="([^"]+)"/gi, (attribute, reference: string) => {
             try {
               const absolute = new URL(reference, baseUrl).toString();
@@ -212,24 +218,30 @@ export async function GET(req: Request): Promise<Response> {
         }
 
         try {
-          // Resolve relative URLs against the manifest URL
+          // Resolve relative or absolute URLs against the manifest URL
           const absolute = new URL(trimmed, baseUrl).toString();
-          const isPlaylist = absolute.includes('.m3u8') || absolute.includes('.m3u');
-
-          if (isPlaylist || shouldProxyAll) {
-            return createProxyUrl(absolute, headerParams, proxyPath);
-          }
-          return absolute;
+          // Always proxy segment URLs through the stream proxy to guarantee CORS and SSL match
+          return createProxyUrl(absolute, headerParams, proxyPath);
         } catch {
           return line;
         }
       }).join('\n');
 
       const headers = passthrough(upstream);
-      headers.delete('content-length'); // Body size changed
+      headers.set('content-type', 'application/x-mpegurl');
+      headers.delete('content-length');
       headers.set('content-length', String(new TextEncoder().encode(rewritten).length));
 
       return new Response(rewritten, {
+        status: upstream.status,
+        statusText: upstream.statusText,
+        headers
+      });
+    }
+
+    if (text) {
+      const headers = passthrough(upstream);
+      return new Response(text, {
         status: upstream.status,
         statusText: upstream.statusText,
         headers

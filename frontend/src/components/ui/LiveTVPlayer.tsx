@@ -255,7 +255,22 @@ export default function LiveTVPlayer({
             console.info('[LiveTVPlayer] HLS branch via hls.js', hasCustomHeaders ? streamHeaders : '');
             const hlsConfig: any = {
               enableWorker: true,
-              lowLatencyMode: true
+              lowLatencyMode: true,
+              backBufferLength: 60,
+              maxBufferLength: 30,
+              maxMaxBufferLength: 600,
+              maxBufferHole: 0.5,
+              highBufferWatchdogPeriod: 2,
+              nudgeOffset: 0.1,
+              nudgeMaxRetry: 10,
+              manifestLoadingTimeOut: 20000,
+              manifestLoadingMaxRetry: 6,
+              levelLoadingTimeOut: 20000,
+              levelLoadingMaxRetry: 6,
+              fragLoadingTimeOut: 20000,
+              fragLoadingMaxRetry: 10,
+              startLevel: -1,
+              capLevelToPlayerSize: false,
             };
             // Inject custom headers into every XHR request hls.js makes
             if (hasCustomHeaders) {
@@ -270,8 +285,34 @@ export default function LiveTVPlayer({
 
             hls.on(HlsCtor.Events.ERROR, (_event: any, data: any) => {
               if (!data?.fatal) return;
-              console.error('[LiveTVPlayer] hls.js fatal error:', data.type, data.details);
-              setErr(`${playbackErrorText} [${String(data.details ?? 'HLS_ERROR')}]`);
+              console.warn('[LiveTVPlayer] hls.js fatal error:', data.type, data.details);
+
+              switch (data.type) {
+                case HlsCtor.ErrorTypes.NETWORK_ERROR:
+                  console.info('[LiveTVPlayer] Network error, trying hls.startLoad()...');
+                  hls.startLoad();
+                  break;
+                case HlsCtor.ErrorTypes.MEDIA_ERROR:
+                  console.info('[LiveTVPlayer] Media error, trying hls.recoverMediaError()...');
+                  hls.recoverMediaError();
+                  break;
+                default:
+                  // Attempt recovery via forced stream proxy
+                  if (!directSrc.includes('/api/proxy/stream') && normalizedSrc) {
+                    const fallbackProxyUrl = toProxiedStreamUrl(normalizedSrc, {
+                      origin: headerOrigin,
+                      userAgent: headerUserAgent,
+                      referer: headerReferer,
+                      customHeaders: typeof headerCustomHeaders === 'string' ? headerCustomHeaders : undefined,
+                    }, true);
+                    console.info('[LiveTVPlayer] Retrying via stream proxy:', fallbackProxyUrl);
+                    hls.loadSource(fallbackProxyUrl);
+                    hls.startLoad();
+                  } else {
+                    setErr(`${playbackErrorText} [${String(data.details ?? 'HLS_ERROR')}]`);
+                  }
+                  break;
+              }
             });
 
             hls.loadSource(directSrc);
