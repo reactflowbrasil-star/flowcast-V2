@@ -14,6 +14,8 @@ export type NormalizedStreamHeaders = {
   custom_headers?: string;
 };
 
+const STREAM_PROXY_ROUTE = `${process.env.NEXT_PUBLIC_BASE_PATH ?? ''}/api/proxy/stream`;
+
 export function normalizeStreamHeaders(overrides?: StreamHeaderOverrides | null): NormalizedStreamHeaders {
   if (!overrides) return {};
   const origin = (overrides.origin ?? '').trim();
@@ -36,4 +38,28 @@ export function appendStreamHeaderParams(params: URLSearchParams, headers: Norma
   if (headers.user_agent) params.set('user_agent', headers.user_agent);
   if (headers.referer) params.set('referer', headers.referer);
   if (headers.custom_headers) params.set('custom_headers', headers.custom_headers);
+}
+
+/** Proxies insecure HTTP streams through the app's HTTPS origin. */
+export function toProxiedStreamUrl(input: string, overrides?: StreamHeaderOverrides | null): string {
+  const headers = normalizeStreamHeaders(overrides);
+  const shouldProxyForHeaders = hasStreamHeaderOverrides(headers);
+
+  try {
+    const base = typeof window !== 'undefined' ? window.location.origin : 'https://localhost';
+    const url = new URL(input, base);
+
+    if (url.pathname.endsWith('/api/proxy/stream')) {
+      appendStreamHeaderParams(url.searchParams, headers);
+      return `${STREAM_PROXY_ROUTE}?${url.searchParams.toString()}`;
+    }
+
+    if (url.protocol !== 'http:' && !shouldProxyForHeaders) return input;
+
+    const params = new URLSearchParams({ url: url.toString() });
+    appendStreamHeaderParams(params, headers);
+    return `${STREAM_PROXY_ROUTE}?${params.toString()}`;
+  } catch {
+    return input;
+  }
 }

@@ -25,7 +25,7 @@ import { FavoriteButton } from '@/components/user/FavoriteButton';
 import { StreamSelector } from '@/components/user/StreamSelector';
 import { getSubtitleLanguageName } from '@/constants/subtitleLanguages';
 import { subtitleCache } from '@/services/subtitleCache';
-import { appendStreamHeaderParams, hasStreamHeaderOverrides, normalizeStreamHeaders, type StreamHeaderOverrides } from '@/lib/streamProxy';
+import { toProxiedStreamUrl, type StreamHeaderOverrides } from '@/lib/streamProxy';
 import { useSubtitleControls } from './useSubtitleControls';
 
 // Helper to determine if a URL is from our own server (same-origin or relative)
@@ -195,55 +195,22 @@ export default function WatchPageClient() {
   function isDashUrl(url: string) { return /\.mpd($|\?)/i.test(url); }
   function isHlsUrl(url: string) { return /\.m3u8($|\?)/i.test(url); }
 
-  // Same-origin and proxy helpers to avoid CSP media-src blocks
-  function isSameOriginUrl(input: string): boolean {
-    try {
-      const base = typeof window !== 'undefined' ? window.location.origin : '';
-      if (!/^https?:/i.test(input)) return true; // relative -> same-origin
-      const u = new URL(input, base);
-      return u.origin === base;
-    } catch {
-      return false;
-    }
-  }
   function toProxiedUrl(input: string, overrides?: StreamHeaderOverrides): string {
-    const headerParams = normalizeStreamHeaders(overrides);
-    const shouldProxy = hasStreamHeaderOverrides(headerParams);
+    // Backend media endpoints are already served through the same-origin API
+    // reverse proxy. Keep their path so authentication cookies remain attached.
     try {
-      // In static export, Next.js API routes don't work
-      // The web-server already proxies /api/* to the backend
-      // So we can use URLs directly if they're from the backend
-      if (/^\/api\/proxy\/stream\?url=/i.test(input)) {
-        const base = typeof window !== 'undefined' ? window.location.origin : '';
-        const u = new URL(input, base);
-        appendStreamHeaderParams(u.searchParams, headerParams);
-        return `${u.pathname}?${u.searchParams.toString()}`;
-      }
-      if (isSameOriginUrl(input)) return input;
-
-      // If the URL is from the backend (contains /api/content/file/ or /api/episodes/file/), use it directly
-      // The web-server will proxy it to the backend
-      if (input.includes('/api/content/file/') || input.includes('/api/episodes/file/')) {
-        // Extract just the path if it's an absolute URL
-        try {
-          const url = new URL(input);
-          return url.pathname; // Returns /api/content/file/123 or /api/episodes/file/123
-        } catch {
-          return input;
-        }
-      }
-
-      // For external URLs, we can't proxy in static export
-      // Return the URL directly and hope CORS allows it
-      if (!shouldProxy) return input;
-
-      const params = new URLSearchParams();
-      params.set('url', input);
-      appendStreamHeaderParams(params, headerParams);
-      return `/api/proxy/stream?${params.toString()}`;
+      const url = new URL(input, window.location.origin);
+      const isBackendMedia = url.pathname.includes('/api/content/file/') ||
+        url.pathname.includes('/api/episodes/file/');
+      const hasOverrides = !!(
+        overrides?.origin || overrides?.userAgent || overrides?.user_agent ||
+        overrides?.referer || overrides?.customHeaders || overrides?.custom_headers
+      );
+      if (isBackendMedia && !hasOverrides) return `${url.pathname}${url.search}${url.hash}`;
     } catch {
-      return input;
+      // Let the shared helper retain its normal fallback for malformed URLs.
     }
+    return toProxiedStreamUrl(input, overrides);
   }
 
   // Special proxy for subtitles that converts SRT to WebVTT

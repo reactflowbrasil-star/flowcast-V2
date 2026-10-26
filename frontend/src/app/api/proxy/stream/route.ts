@@ -65,6 +65,19 @@ function appendHeaderParams(target: URLSearchParams, headers: URLSearchParams): 
   }
 }
 
+function getProxyPath(req: Request): string {
+  const requestPath = new URL(req.url).pathname;
+  const routeSuffix = '/api/proxy/stream';
+  const routeIndex = requestPath.lastIndexOf(routeSuffix);
+  return routeIndex >= 0 ? `${requestPath.slice(0, routeIndex)}${routeSuffix}` : routeSuffix;
+}
+
+function createProxyUrl(url: string, headers: URLSearchParams, proxyPath: string): string {
+  const params = new URLSearchParams({ url });
+  appendHeaderParams(params, headers);
+  return `${proxyPath}?${params.toString()}`;
+}
+
 function buildUpstreamHeaders(req: Request, searchParams: URLSearchParams): Headers {
   const h = new Headers();
   const copy = (n: string) => {
@@ -176,33 +189,37 @@ export async function GET(req: Request): Promise<Response> {
 
     if (isHls && upstream.ok) {
       const text = await upstream.text();
-      const baseUrl = new URL(validated.url);
+      const baseUrl = new URL(upstream.url || validated.url);
       const headerParams = buildHeaderParams(searchParams);
-      const shouldProxyAll = headerParams.toString().length > 0;
+      const proxyPath = getProxyPath(req);
+      const finalUrlIsHttp = baseUrl.protocol === 'http:';
+      const shouldProxyAll = finalUrlIsHttp || headerParams.toString().length > 0;
 
-      // Basic rewrite: find lines that are URLs (not starting with #)
-      // and wrap them in the proxy
       const rewritten = text.split('\n').map(line => {
         const trimmed = line.trim();
-        if (!trimmed || trimmed.startsWith('#')) return line;
+        if (!trimmed) return line;
+
+        if (trimmed.startsWith('#')) {
+          if (!shouldProxyAll || !/\bURI="([^"]+)"/i.test(line)) return line;
+          return line.replace(/\bURI="([^"]+)"/gi, (attribute, reference: string) => {
+            try {
+              const absolute = new URL(reference, baseUrl).toString();
+              return `URI="${createProxyUrl(absolute, headerParams, proxyPath)}"`;
+            } catch {
+              return attribute;
+            }
+          });
+        }
 
         try {
           // Resolve relative URLs against the manifest URL
           const absolute = new URL(trimmed, baseUrl).toString();
-
-          // Hybrid Proxy: Only proxy nested playlists
-          // This saves bandwidth by letting the browser fetch segments directly
           const isPlaylist = absolute.includes('.m3u8') || absolute.includes('.m3u');
 
           if (isPlaylist || shouldProxyAll) {
-            const params = new URLSearchParams();
-            params.set('url', absolute);
-            appendHeaderParams(params, headerParams);
-            return `/api/proxy/stream?${params.toString()}`;
-          } else {
-            // Return absolute direct URL for segments
-            return absolute;
+            return createProxyUrl(absolute, headerParams, proxyPath);
           }
+          return absolute;
         } catch {
           return line;
         }

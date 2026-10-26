@@ -40,6 +40,7 @@ import { inferVideoType, streamKind } from './contentManagement/stream';
 import ContentTable from './contentManagement/ContentTable';
 import ContentFilters from './contentManagement/ContentFilters';
 import { AdminSectionHeader } from './AdminSectionHeader';
+import { toProxiedStreamUrl } from '@/lib/streamProxy';
 
 interface ContentManagementProps {
   className?: string;
@@ -235,20 +236,20 @@ export default function ContentManagement({ className }: ContentManagementProps)
         }
         if (streamUrl) {
           // Normalize backend absolute API URLs to same-origin relative, so CSP with default-src 'self' passes.
+          let normalizedStreamUrl = streamUrl;
           try {
-            if (streamUrl.startsWith('/api/')) {
-              setPreviewUrl(streamUrl);
+            if (normalizedStreamUrl.startsWith('/api/')) {
+              // Keep the existing same-origin API URL.
             } else {
-              const u = new URL(streamUrl);
+              const u = new URL(normalizedStreamUrl);
               if (u.pathname.startsWith('/api/')) {
-                setPreviewUrl(`${u.pathname}${u.search}${u.hash}`);
-              } else {
-                setPreviewUrl(streamUrl);
+                normalizedStreamUrl = `${u.pathname}${u.search}${u.hash}`;
               }
             }
           } catch {
-            setPreviewUrl(streamUrl);
+            // Keep relative stream URLs as supplied by the backend.
           }
+          setPreviewUrl(toProxiedStreamUrl(normalizedStreamUrl));
         } else {
           const fallback = t('content.preview.error', {});
           toast.error(fallback);

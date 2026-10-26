@@ -6,6 +6,7 @@ import { Maximize, Minimize, Pause, Play, Volume2, VolumeX, Settings, Cast } fro
 import { cn } from '@/lib/utils';
 import { useTranslation } from 'react-i18next';
 import { streamKind } from '@/components/admin/contentManagement/stream';
+import { toProxiedStreamUrl } from '@/lib/streamProxy';
 
 type LiveTVPlayerProps = {
   src: string | null | undefined;
@@ -205,8 +206,7 @@ export default function LiveTVPlayer({
       teardown();
       await new Promise(resolve => setTimeout(resolve, 50));
       if (!src) return;
-      const directSrc: string = normalizeStreamUrl(src);
-      const kind = streamKind(directSrc);
+      const normalizedSrc = normalizeStreamUrl(src);
 
       // Build custom headers map from admin-configured stream headers
       // NOTE: Browsers block setting Origin and User-Agent via XHR (forbidden
@@ -229,6 +229,13 @@ export default function LiveTVPlayer({
         } catch { /* ignore invalid JSON */ }
       }
       const hasCustomHeaders = Object.keys(streamHeaders).length > 0;
+      const directSrc = toProxiedStreamUrl(normalizedSrc, {
+        origin: headerOrigin,
+        userAgent: headerUserAgent,
+        referer: headerReferer,
+        customHeaders: typeof headerCustomHeaders === 'string' ? headerCustomHeaders : undefined,
+      });
+      const kind = streamKind(directSrc);
 
       try {
         if (kind === 'HLS') {
