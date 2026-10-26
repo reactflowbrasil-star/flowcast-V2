@@ -3,7 +3,6 @@ plugins {
     id 'org.jetbrains.kotlin.android'
     id 'org.jetbrains.kotlin.plugin.compose'
     id 'com.google.devtools.ksp'
-    id 'kotlin-kapt'
     id 'dagger.hilt.android.plugin'
     id 'kotlin-parcelize'
 }
@@ -185,10 +184,6 @@ android {
         buildConfig true
         resValues true
     }
-
-    kapt {
-        correctErrorTypes true
-    }
     
     packagingOptions {
         jniLibs {
@@ -241,7 +236,7 @@ dependencies {
     // Hilt
     implementation "com.google.dagger:hilt-android:$hilt_version"
     implementation "androidx.hilt:hilt-navigation-compose:$hilt_nav_version"
-    kapt "com.google.dagger:hilt-compiler:$hilt_version"
+    ksp "com.google.dagger:hilt-compiler:$hilt_version"
     
     // Networking
     implementation "com.squareup.retrofit2:retrofit:$retrofit_version"
@@ -306,7 +301,7 @@ dependencies {
     androidTestImplementation 'androidx.compose.ui:ui-test-junit4'
     androidTestImplementation "androidx.navigation:navigation-testing:$navigation_version"
     androidTestImplementation "com.google.dagger:hilt-android-testing:$hilt_version"
-    kaptAndroidTest "com.google.dagger:hilt-android-compiler:$hilt_version"
+    kspAndroidTest "com.google.dagger:hilt-android-compiler:$hilt_version"
     
     debugImplementation 'androidx.compose.ui:ui-tooling'
     debugImplementation 'androidx.compose.ui:ui-test-manifest'
