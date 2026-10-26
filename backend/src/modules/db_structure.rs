@@ -392,6 +392,168 @@ pub async fn ensure_default_tv_channel_categories(pool: &Pool<Postgres>) -> Resu
     Ok(())
 }
 
+const CANAIS_BR: &[(&str, &str)] = &[
+    ("AMC HD", "http://45.185.11.126:8000/play/a06s/index.m3u8"),
+    ("AXN HD", "http://45.185.11.126:8000/play/a0ao/index.m3u8"),
+    ("Adult Swim HD", "http://45.185.11.126:8000/play/a06m/index.m3u8"),
+    ("Animal Planet HD", "http://45.185.11.126:8000/play/a09k/index.m3u8"),
+    ("BIS HD", "http://45.185.11.126:8000/play/a07w/index.m3u8"),
+    ("BM&C HD", "http://45.185.11.126:8000/play/a06i/index.m3u8"),
+    ("Band News HD", "http://45.185.11.126:8000/play/a076/index.m3u8"),
+    ("Band Sports HD", "http://45.185.11.126:8000/play/a05o/index.m3u8"),
+    ("CNN Brasil Money HD", "http://45.185.11.126:8000/play/a0a6/index.m3u8"),
+    ("CNN International HD", "http://45.185.11.126:8000/play/a0ap/index.m3u8"),
+    ("Canal Brasil HD", "http://45.185.11.126:8000/play/a06x/index.m3u8"),
+    ("Canal Sony HD", "http://45.185.11.126:8000/play/a0an/index.m3u8"),
+    ("Canal UOL HD", "http://45.185.11.126:8000/play/a0a4/index.m3u8"),
+    ("Cartoon Network HD", "http://45.185.11.126:8000/play/a087/index.m3u8"),
+    ("Cartoonito HD", "http://45.185.11.126:8000/play/a0ae/index.m3u8"),
+    ("Cinemax HD", "http://45.185.11.126:8000/play/a081/index.m3u8"),
+    ("Claro TV+ 4K", "http://45.185.11.126:8000/play/a06f/index.m3u8"),
+    ("Combate HD", "http://45.185.11.126:8000/play/a073/index.m3u8"),
+    ("DUMDUM HD", "http://45.185.11.126:8000/play/a078/index.m3u8"),
+    ("Disc. Home & Health HD", "http://45.185.11.126:8000/play/a07y/index.m3u8"),
+    ("Discovery Channel HD", "http://45.185.11.126:8000/play/a0ac/index.m3u8"),
+    ("Discovery Kids HD", "http://45.185.11.126:8000/play/a0ad/index.m3u8"),
+    ("Discovery Science HD", "http://45.185.11.126:8000/play/a077/index.m3u8"),
+    ("Discovery Theater HD", "http://45.185.11.126:8000/play/a085/index.m3u8"),
+    ("Discovery Turbo HD", "http://45.185.11.126:8000/play/a07z/index.m3u8"),
+    ("Discovery World HD", "http://45.185.11.126:8000/play/a086/index.m3u8"),
+    ("ESPN 4 HD", "http://45.185.11.126:8000/play/a05m/index.m3u8"),
+    ("ESPN 5 HD", "http://45.185.11.126:8000/play/a05n/index.m3u8"),
+    ("ESPN 6 HD", "http://45.185.11.126:8000/play/a084/index.m3u8"),
+    ("Food Network HD", "http://45.185.11.126:8000/play/a06j/index.m3u8"),
+    ("GE TV HD", "http://45.185.11.126:8000/play/a08v/index.m3u8"),
+    ("GNT HD", "http://45.185.11.126:8000/play/a079/index.m3u8"),
+    ("GloboNews HD", "http://45.185.11.126:8000/play/a08d/index.m3u8"),
+    ("Globoplay Novelas HD", "http://45.185.11.126:8000/play/a06w/index.m3u8"),
+    ("Gloob HD", "http://45.185.11.126:8000/play/a07v/index.m3u8"),
+    ("Gloobinho HD", "http://45.185.11.126:8000/play/a071/index.m3u8"),
+    ("HBO Family HD", "http://45.185.11.126:8000/play/a08q/index.m3u8"),
+    ("HBO HD", "http://45.185.11.126:8000/play/a08n/index.m3u8"),
+    ("HBO MUNDI HD", "http://45.185.11.126:8000/play/a082/index.m3u8"),
+    ("HBO POP HD", "http://45.185.11.126:8000/play/a08s/index.m3u8"),
+    ("HBO Signature HD", "http://45.185.11.126:8000/play/a08r/index.m3u8"),
+    ("HBO XTREME HD", "http://45.185.11.126:8000/play/a083/index.m3u8"),
+    ("HBO+ HD", "http://45.185.11.126:8000/play/a08p/index.m3u8"),
+    ("HBO2 HD", "http://45.185.11.126:8000/play/a08o/index.m3u8"),
+    ("HGTV HD", "http://45.185.11.126:8000/play/a074/index.m3u8"),
+    ("History HD", "http://45.185.11.126:8000/play/a0al/index.m3u8"),
+    ("ID HD", "http://45.185.11.126:8000/play/a089/index.m3u8"),
+    ("JP News HD", "http://45.185.11.126:8000/play/a0a1/index.m3u8"),
+    ("Lifetime HD", "http://45.185.11.126:8000/play/a06l/index.m3u8"),
+    ("Megapix HD", "http://45.185.11.126:8000/play/a057/index.m3u8"),
+    ("Modo Viagem HD", "http://45.185.11.126:8000/play/a07u/index.m3u8"),
+    ("Multishow HD", "http://45.185.11.126:8000/play/a07a/index.m3u8"),
+    ("OFF HD", "http://45.185.11.126:8000/play/a07t/index.m3u8"),
+    ("Paramount+ 4", "http://45.185.11.126:8000/play/a0aq/index.m3u8"),
+    ("Playboy TV HD", "http://45.185.11.126:8000/play/a09n/index.m3u8"),
+    ("Premiere 2 HD", "http://45.185.11.126:8000/play/a06h/index.m3u8"),
+    ("Premiere 3 HD", "http://45.185.11.126:8000/play/a0av/index.m3u8"),
+    ("Premiere 4 HD", "http://45.185.11.126:8000/play/a07b/index.m3u8"),
+    ("Premiere 5 HD", "http://45.185.11.126:8000/play/a07c/index.m3u8"),
+    ("Premiere 6 HD", "http://45.185.11.126:8000/play/a05j/index.m3u8"),
+    ("Premiere 7 HD", "http://45.185.11.126:8000/play/a05k/index.m3u8"),
+    ("Premiere 8 HD", "http://45.185.11.126:8000/play/a05l/index.m3u8"),
+    ("Premiere Clubes HD", "http://45.185.11.126:8000/play/a06g/index.m3u8"),
+    ("Record News HD", "http://45.185.11.126:8000/play/a0a2/index.m3u8"),
+    ("SBT News HD", "http://45.185.11.126:8000/play/a0a7/index.m3u8"),
+    ("Space HD", "http://45.185.11.126:8000/play/a08b/index.m3u8"),
+    ("Studio Universal HD", "http://45.185.11.126:8000/play/a06o/index.m3u8"),
+    ("TIMES EXCLUSIVO CNBC", "http://45.185.11.126:8000/play/a0a5/index.m3u8"),
+    ("TLC HD", "http://45.185.11.126:8000/play/a0aa/index.m3u8"),
+    ("TNT Novelas HD", "http://45.185.11.126:8000/play/a088/index.m3u8"),
+    ("TNT Sports HD", "http://45.185.11.126:8000/play/a0bi/index.m3u8"),
+    ("TNT Series HD", "http://45.185.11.126:8000/play/a08a/index.m3u8"),
+    ("TV Ra Tim Bum HD", "http://45.185.11.126:8000/play/a080/index.m3u8"),
+    ("Telecine Action HD", "http://45.185.11.126:8000/play/a058/index.m3u8"),
+    ("Telecine Cult HD", "http://45.185.11.126:8000/play/a05a/index.m3u8"),
+    ("Telecine Fun HD", "http://45.185.11.126:8000/play/a059/index.m3u8"),
+    ("Telecine Pipoca HD", "http://45.185.11.126:8000/play/a08g/index.m3u8"),
+    ("Telecine Premium HD", "http://45.185.11.126:8000/play/a08e/index.m3u8"),
+    ("Telecine Touch HD", "http://45.185.11.126:8000/play/a08f/index.m3u8"),
+    ("Trace Brasil HD", "http://45.185.11.126:8000/play/a08l/index.m3u8"),
+    ("Travel Food & Drinks HD", "http://45.185.11.126:8000/play/a07x/index.m3u8"),
+    ("USA HD", "http://45.185.11.126:8000/play/a06k/index.m3u8"),
+    ("Universal Premiere HD", "http://45.185.11.126:8000/play/a08m/index.m3u8"),
+    ("Universal Reality HD", "http://45.185.11.126:8000/play/a08c/index.m3u8"),
+    ("Universal TV HD", "http://45.185.11.126:8000/play/a0af/index.m3u8"),
+    ("Warner Channel HD", "http://45.185.11.126:8000/play/a0am/index.m3u8"),
+    ("Woohoo HD", "http://45.185.11.126:8000/play/a075/index.m3u8"),
+    ("Sportv HD", "http://45.185.11.126:8000/play/a05g/index.m3u8"),
+    ("Sportv 2 HD", "http://45.185.11.126:8000/play/a05f/index.m3u8"),
+    ("Sportv 3 HD", "http://45.185.11.126:8000/play/a06v/index.m3u8"),
+];
+
+pub async fn ensure_seed_canais_br(pool: &Pool<Postgres>) -> Result<()> {
+    let category_id: Option<i64> = sqlx::query_scalar(
+        "SELECT id FROM content.categories WHERE category_type = 'TV' ORDER BY id LIMIT 1"
+    )
+    .fetch_optional(pool)
+    .await?;
+
+    let cat_id = match category_id {
+        Some(id) => id,
+        None => return Ok(()),
+    };
+
+    let mut channel_num = 1i64;
+    for (title, url) in CANAIS_BR {
+        let exists: i64 = sqlx::query_scalar(
+            "SELECT COUNT(*) FROM content.media_content WHERE title = $1 AND media_type = 'tv_channel'"
+        )
+        .bind(title)
+        .fetch_one(pool)
+        .await
+        .unwrap_or(0);
+
+        if exists == 0 {
+            let row = sqlx::query_scalar::<_, i64>(
+                r#"
+                INSERT INTO content.media_content (category_id, title, description, stream_url, media_type, active)
+                VALUES ($1, $2, $3, $4, 'tv_channel', true)
+                RETURNING id
+                "#,
+            )
+            .bind(cat_id)
+            .bind(title)
+            .bind(format!("Canal ao vivo {}", title))
+            .bind(url)
+            .fetch_one(pool)
+            .await;
+
+            if let Ok(content_id) = row {
+                let _ = sqlx::query(
+                    r#"
+                    INSERT INTO content.tv_channels (media_content_id, channel_number, is_live, provider, country)
+                    VALUES ($1, $2, true, 'Brasil', 'BR')
+                    ON CONFLICT DO NOTHING
+                    "#,
+                )
+                .bind(content_id)
+                .bind(channel_num)
+                .execute(pool)
+                .await;
+
+                let _ = sqlx::query(
+                    r#"
+                    INSERT INTO content.media_streams (media_content_id, stream_url, stream_type, is_default)
+                    VALUES ($1, $2, 'main', true)
+                    "#,
+                )
+                .bind(content_id)
+                .bind(url)
+                .execute(pool)
+                .await;
+
+                channel_num += 1;
+            }
+        }
+    }
+
+    Ok(())
+}
+
 async fn table_exists(pool: &Pool<Postgres>, table_name: &str) -> Result<bool> {
     // Support schema-qualified names (e.g. "content.media_content") and plain names
     let (schema, tbl) = if let Some(dot_pos) = table_name.find('.') {

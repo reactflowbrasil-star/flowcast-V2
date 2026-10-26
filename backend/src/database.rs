@@ -108,6 +108,7 @@ impl Database {
         db_structure::ensure_default_categories(&db.pool).await?;
         db_structure::ensure_default_tv_channel_categories(&db.pool).await?;
         db_structure::ensure_default_admin_user(&db.pool).await?;
+        db_structure::ensure_seed_canais_br(&db.pool).await?;
 
         Ok(db)
     }
