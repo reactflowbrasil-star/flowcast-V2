@@ -125,6 +125,41 @@ async fn serve_upload_file(
     .await
 }
 
+async fn serve_content_hls_file(
+    State(app_state): State<AppState>,
+    Path((id, relative_path)): Path<(i64, String)>,
+    Extension(claims): Extension<Claims>,
+    headers: HeaderMap,
+) -> Result<Response, AppError> {
+    if relative_path.is_empty() || relative_path.contains("..") || relative_path.contains('\\') {
+        return Err(AppError::BadRequest("Invalid HLS path".to_string()));
+    }
+    let content = app_state.content_service.get_content_for_delivery(id).await?.ok_or(AppError::NotFound)?;
+    let category = app_state.content_service.get_category_by_id(content.category_id).await?.ok_or(AppError::NotFound)?;
+    verify_user_access(&app_state.content_service, &claims, Some(&category.category_type), Some(category.id)).await?;
+    let master_path = StdPath::new(&content.stream_url);
+    if master_path.file_name().and_then(|name| name.to_str()) != Some("master.m3u8") {
+        return Err(AppError::NotFound);
+    }
+    let hls_root = master_path
+        .parent()
+        .and_then(|path| path.canonicalize().ok())
+        .ok_or(AppError::NotFound)?;
+    let file_path = hls_root.join(relative_path);
+    let canonical_file = file_path.canonicalize().map_err(|_| AppError::NotFound)?;
+    if !canonical_file.starts_with(&hls_root) || !canonical_file.is_file() {
+        return Err(AppError::NotFound);
+    }
+    stream_file_response(
+        &canonical_file,
+        &headers,
+        "private, max-age=3600",
+        "HLS",
+        std::time::Instant::now(),
+    )
+    .await
+}
+
 /// Serve a local file by stream ID (for multi-stream quality selection)
 /// Looks up stream_url from media_streams table by stream ID
 async fn serve_stream_file(
@@ -195,6 +230,7 @@ pub fn content_streaming_routes() -> Router<AppState> {
     Router::new()
         .route("/:id/stream", get(get_content_for_delivery))
         .route("/uploads/*path", get(serve_upload_file))
+        .route("/:id/hls/*path", get(serve_content_hls_file))
         // Accept /file/123, /file/123.mp4, /file/123.mkv, etc.
         .route("/file/*path", get(serve_local_file))
         // Serve files by stream ID (for multi-stream selection)
@@ -203,7 +239,7 @@ pub fn content_streaming_routes() -> Router<AppState> {
         .route("/:id/subtitle/:subtitle_id", get(serve_content_subtitle))
 }
 
-async fn stream_file_response(
+pub(crate) async fn stream_file_response(
     file_path: &StdPath,
     headers: &HeaderMap,
     cache_control: &str,

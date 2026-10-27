@@ -729,6 +729,9 @@ pub async fn get_episode_for_delivery_with_tracking(
     if StdPath::new(&response.stream_url).is_absolute()
         && StdPath::new(&response.stream_url).exists()
     {
+        if StdPath::new(&response.stream_url).file_name().and_then(|name| name.to_str()) == Some("master.m3u8") {
+            response.stream_url = format!("{}/api/episodes/{}/hls/master.m3u8", base_trimmed, id);
+        } else {
         // Extract file extension to include in URL (same as movies)
         let extension = StdPath::new(&response.stream_url)
             .extension()
@@ -736,6 +739,7 @@ pub async fn get_episode_for_delivery_with_tracking(
             .unwrap_or("mp4"); // Default to mp4 if no extension
 
         response.stream_url = format!("{}/api/episodes/file/{}.{}", base_trimmed, id, extension);
+        }
         tracing::info!(
             "Local file detected for episode {} - exposing via {}",
             id,
@@ -975,6 +979,37 @@ pub fn episodes_streaming_routes() -> Router<crate::AppState> {
         .route("/subtitle/:id", get(serve_episode_subtitle))
         // Accept /file/123, /file/123.mp4, /file/123.mkv, etc. (same as movies)
         .route("/file/*path", get(serve_local_episode_file))
+        .route("/:id/hls/*path", get(serve_episode_hls_file))
+}
+
+async fn serve_episode_hls_file(
+    State(app_state): State<crate::AppState>,
+    Path((id, relative_path)): Path<(i64, String)>,
+    Extension(claims): Extension<Claims>,
+    headers: HeaderMap,
+) -> Result<Response, AppError> {
+    if relative_path.is_empty() || relative_path.contains("..") || relative_path.contains('\\') {
+        return Err(AppError::BadRequest("Invalid HLS path".to_string()));
+    }
+    let episode = app_state.content_service.get_episode_for_delivery(id).await?.ok_or(AppError::NotFound)?;
+    let (category_id, category_type) = get_episode_category(&app_state.database.pool, id).await?;
+    verify_user_access(&app_state.content_service, &claims, Some(&category_type), Some(category_id)).await?;
+    let master_path = StdPath::new(&episode.stream_url);
+    if master_path.file_name().and_then(|name| name.to_str()) != Some("master.m3u8") {
+        return Err(AppError::NotFound);
+    }
+    let root = master_path.parent().ok_or(AppError::NotFound)?;
+    let root = root.canonicalize().map_err(|_| AppError::NotFound)?;
+    let file_path = root.join(relative_path).canonicalize().map_err(|_| AppError::NotFound)?;
+    if !file_path.starts_with(&root) || !file_path.is_file() { return Err(AppError::NotFound); }
+    crate::handlers::content::streaming::stream_file_response(
+        &file_path,
+        &headers,
+        "private, max-age=3600",
+        "EPISODE-HLS",
+        std::time::Instant::now(),
+    )
+    .await
 }
 
 // Serve local episode files with standard Range support via ServeFile

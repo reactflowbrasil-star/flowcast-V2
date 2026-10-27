@@ -266,7 +266,14 @@ export default function WatchPageClient() {
       if (typeof window === 'undefined') return false;
       const w = window as any;
       if (!w.Hls) {
-        await loadExternalScript('https://cdn.jsdelivr.net/npm/hls.js@1.5.14/dist/hls.min.js');
+        try {
+          await loadExternalScript('https://cdn.jsdelivr.net/npm/hls.js@1.5.14/dist/hls.min.js');
+        } catch {
+          // The package is bundled with Flowcast, so playback still works when
+          // the CDN is unavailable or the device is offline after installation.
+          const hlsModule = await import('hls.js');
+          w.Hls = hlsModule.default;
+        }
       }
       const Hls = (window as any).Hls;
       if (Hls && Hls.isSupported && Hls.isSupported()) {
@@ -278,21 +285,32 @@ export default function WatchPageClient() {
         const hlsConfig: any = {
           enableWorker: true,
           lowLatencyMode: false,
-          backBufferLength: 90,
-          maxBufferLength: 60,
-          maxMaxBufferLength: 600,
+          backBufferLength: 30,
+          maxBufferLength: 90,
+          maxMaxBufferLength: 180,
+          maxBufferSize: 60 * 1000 * 1000,
           maxBufferHole: 0.5,
           highBufferWatchdogPeriod: 2,
           nudgeOffset: 0.1,
           nudgeMaxRetry: 10,
           manifestLoadingTimeOut: 20000,
-          manifestLoadingMaxRetry: 6,
+          manifestLoadingMaxRetry: 10,
+          manifestLoadingRetryDelayMs: 500,
+          manifestLoadingMaxRetryTimeout: 30000,
           levelLoadingTimeOut: 20000,
-          levelLoadingMaxRetry: 6,
+          levelLoadingMaxRetry: 10,
+          levelLoadingRetryDelayMs: 500,
+          levelLoadingMaxRetryTimeout: 30000,
           fragLoadingTimeOut: 20000,
-          fragLoadingMaxRetry: 10,
+          fragLoadingMaxRetry: 12,
+          fragLoadingRetryDelayMs: 500,
+          fragLoadingMaxRetryTimeout: 30000,
+          startFragPrefetch: true,
+          abrEwmaDefaultEstimate: 1500000,
+          abrBandWidthFactor: 0.7,
+          abrBandWidthUpFactor: 0.5,
           startLevel: -1,
-          capLevelToPlayerSize: false,
+          capLevelToPlayerSize: true,
         };
 
         const hls = new Hls(hlsConfig);

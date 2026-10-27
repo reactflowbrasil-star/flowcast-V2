@@ -65,6 +65,11 @@ pub async fn get_content_for_delivery(
     if StdPath::new(&delivery_stream_url).is_absolute()
         && StdPath::new(&delivery_stream_url).exists()
     {
+        if StdPath::new(&delivery_stream_url)
+            .file_name().and_then(|name| name.to_str()) == Some("master.m3u8")
+        {
+            delivery_stream_url = format!("/api/content/{}/hls/master.m3u8", content.id);
+        } else {
         // Detect file extension and add it to URL so browser knows it's a video
         let extension = StdPath::new(&delivery_stream_url)
             .extension()
@@ -72,6 +77,7 @@ pub async fn get_content_for_delivery(
             .unwrap_or("mp4"); // Default to mp4 if no extension
 
         delivery_stream_url = format!("/api/content/file/{}.{}", content.id, extension);
+        }
         tracing::info!(
             "Local file detected for content {} - exposing via {}",
             content.id,
