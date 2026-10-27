@@ -21,7 +21,8 @@ async function checkPlaylistUrl(url: string, signal: AbortSignal): Promise<LinkC
     const proxyPath = `${process.env.NEXT_PUBLIC_BASE_PATH ?? ''}/api/proxy/stream`;
     const params = new URLSearchParams({ url });
     const endpoint = `${proxyPath}?${params.toString()}`;
-    const request = async (method: 'HEAD' | 'GET') => {
+    const isManifest = /\.(m3u8?|mpd)(?:$|[?#])/i.test(url);
+    const request = async (method: 'HEAD' | 'GET', useRange = true) => {
         const controller = new AbortController();
         const onAbort = () => controller.abort();
         signal.addEventListener('abort', onAbort, { once: true });
@@ -31,7 +32,7 @@ async function checkPlaylistUrl(url: string, signal: AbortSignal): Promise<LinkC
                 method,
                 credentials: 'same-origin',
                 signal: controller.signal,
-                headers: method === 'GET' ? { Range: 'bytes=0-0' } : undefined,
+                headers: method === 'GET' && useRange ? { Range: 'bytes=0-0' } : undefined,
                 cache: 'no-store',
             });
         } finally {
@@ -40,7 +41,35 @@ async function checkPlaylistUrl(url: string, signal: AbortSignal): Promise<LinkC
         }
     };
 
+    const inspectManifest = async (response: Response): Promise<LinkCheck> => {
+        if (!response.ok) return { status: 'invalid', message: `HTTP ${response.status}` };
+        const reader = response.body?.getReader();
+        if (!reader) return { status: 'invalid', message: 'Playlist vazia' };
+        const decoder = new TextDecoder();
+        let prefix = '';
+        let bytesRead = 0;
+        try {
+            while (bytesRead < 64 * 1024) {
+                const { done, value } = await reader.read();
+                if (done || !value) break;
+                bytesRead += value.byteLength;
+                prefix += decoder.decode(value, { stream: true });
+                if (prefix.length >= 64 * 1024) break;
+            }
+        } finally {
+            await reader.cancel().catch(() => undefined);
+        }
+        const sample = prefix.trimStart();
+        const valid = /\.mpd(?:$|[?#])/i.test(url)
+            ? /<MPD(?:\s|>)/i.test(sample)
+            : sample.startsWith('#EXTM3U');
+        return valid
+            ? { status: 'valid', message: 'Playlist válida' }
+            : { status: 'invalid', message: 'Resposta não contém uma playlist M3U/M3U8/MPD válida' };
+    };
+
     try {
+        if (isManifest) return await inspectManifest(await request('GET', false));
         let response = await request('HEAD');
         if ([403, 405, 501].includes(response.status)) response = await request('GET');
         if (response.ok) {
