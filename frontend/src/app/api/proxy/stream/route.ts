@@ -65,7 +65,15 @@ function getProxyPath(req: Request): string {
   const requestPath = new URL(req.url).pathname;
   const routeSuffix = '/api/proxy/stream';
   const routeIndex = requestPath.lastIndexOf(routeSuffix);
-  return routeIndex >= 0 ? `${requestPath.slice(0, routeIndex)}${routeSuffix}` : routeSuffix;
+  if (routeIndex >= 0 && routeIndex > 0) {
+    return `${requestPath.slice(0, routeIndex)}${routeSuffix}`;
+  }
+
+  // Next.js strips basePath from the URL visible to route handlers. Re-add it
+  // when rewriting manifest references so nested playlists and media segments
+  // continue to pass through this proxy under the app's public path.
+  const basePath = (process.env.NEXT_PUBLIC_BASE_PATH || '').replace(/\/$/, '');
+  return `${basePath}${routeSuffix}`;
 }
 
 function createProxyUrl(url: string, headers: URLSearchParams, proxyPath: string): string {
