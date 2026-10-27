@@ -6,9 +6,10 @@ import Image from 'next/image';
 import { useRouter } from 'next/navigation';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
-import { User, Mail, Lock, Loader2, Eye, EyeOff, ArrowRight, CheckCircle2, XCircle } from 'lucide-react';
+import { User, Mail, Lock, Loader2, Eye, EyeOff, ArrowRight, CheckCircle2, XCircle, Sparkles, Check } from 'lucide-react';
 import packagesService from '@/services/packages';
 import { authService } from '@/services';
+import { VIEWER_GENRES } from '@/lib/viewerProfiles';
 
 function RegisterForm() {
     const router = useRouter();
@@ -24,6 +25,7 @@ function RegisterForm() {
     const [emailAvailable, setEmailAvailable] = useState<boolean | null>(null);
     const [checkingEmail, setCheckingEmail] = useState(false);
     const [registrationEnabled, setRegistrationEnabled] = useState<boolean | null>(null);
+    const [favoriteGenres, setFavoriteGenres] = useState<string[]>([]);
 
     useEffect(() => {
         const checkRegistration = async () => {
@@ -84,6 +86,11 @@ function RegisterForm() {
         try {
             const result = await packagesService.register({ username, email, password });
             if (result.data) {
+                if (favoriteGenres.length > 0) {
+                    try {
+                        localStorage.setItem(`flowcast-pending-genres:${email.trim().toLowerCase()}`, JSON.stringify(favoriteGenres));
+                    } catch { /* preferences can be selected later from the profile manager */ }
+                }
                 if (result.data.requires_verification) {
                     setRequiresVerification(true);
                     setSuccess('Account created! Please check your email to verify your account.');
@@ -292,6 +299,31 @@ function RegisterForm() {
                                 />
                             </div>
                         </div>
+
+                        <section className="space-y-3 rounded-2xl border border-white/10 bg-white/[0.035] p-4">
+                            <div className="flex items-center gap-2">
+                                <Sparkles className="h-4 w-4 text-cyan-300" />
+                                <div>
+                                    <h3 className="text-sm font-semibold text-white">O que você gosta de assistir?</h3>
+                                    <p className="text-xs text-gray-400">Vamos usar suas escolhas para recomendar títulos no início.</p>
+                                </div>
+                            </div>
+                            <div className="flex flex-wrap gap-2">
+                                {VIEWER_GENRES.map(({ id, label }) => {
+                                    const selected = favoriteGenres.includes(id);
+                                    return (
+                                        <button
+                                            key={id}
+                                            type="button"
+                                            onClick={() => setFavoriteGenres((current) => selected ? current.filter((genre) => genre !== id) : [...current, id])}
+                                            className={`rounded-full border px-3 py-1.5 text-xs transition duration-200 hover:scale-[1.03] ${selected ? 'border-cyan-400/60 bg-cyan-400/15 text-cyan-100' : 'border-white/10 bg-white/5 text-slate-300 hover:bg-white/10'}`}
+                                        >
+                                            {selected && <Check className="mr-1 inline h-3 w-3" />}{label}
+                                        </button>
+                                    );
+                                })}
+                            </div>
+                        </section>
 
                         {/* Error */}
                         {error && (

@@ -2,6 +2,14 @@ import { apiService } from './api';
 import type { ApiResult, UserProfile, ChangePasswordRequestPayload } from '@/types';
 
 class UserProfileService {
+  async getSentinelActivity(): Promise<ApiResult<{
+    sentinel: { status: string; risk_level: 'normal' | 'review' | 'elevated'; unique_ips_30d: number };
+    ips: Array<{ ip_address: string; login_count: number }>;
+    sessions: Array<{ ip_address?: string; device?: string; user_agent?: string; last_seen?: string; distinct_devices?: number }>;
+  }>> {
+    return apiService.get('/api/user/sentinel/activity');
+  }
+
   async getProfile(): Promise<ApiResult<UserProfile>> {
     return apiService.get<UserProfile>('/api/user/profile');
   }

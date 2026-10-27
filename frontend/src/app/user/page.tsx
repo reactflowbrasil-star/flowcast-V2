@@ -2,7 +2,7 @@
 /* eslint-disable @typescript-eslint/no-unused-vars */
 import React, { useEffect, useMemo, useState } from 'react';
 import { useTranslation } from 'react-i18next';
-import { useQuery } from '@tanstack/react-query';
+import { useQuery, useQueryClient } from '@tanstack/react-query';
 import {
   Play,
   Sparkles,
@@ -24,6 +24,9 @@ import { CATEGORY_ICONS } from '@/constants/categoryIcons';
 import { ROUTES } from '@/constants/app';
 import { changeLanguageWithPreload } from '@/lib/i18n';
 import Link from 'next/link';
+import { favoritesService, type FavoriteContent } from '@/services/favorites';
+import ViewerProfilesControl from '@/components/user/ViewerProfilesControl';
+import type { ViewerProfile } from '@/lib/viewerProfiles';
 
 import type {
   Content,
@@ -62,6 +65,7 @@ const mapListToItems = (list: any[], mediaType: string): DiscoveryMediaItem[] =>
       media_type: mediaType,
       content_id: contentId,
       year,
+      genres: (Array.isArray(c.genres) ? c.genres : typeof c.genre === 'string' ? c.genre.split(',') : []).map((genre: any) => typeof genre === 'string' ? genre.trim() : genre?.name).filter(Boolean),
       badges: [],
       // For series progress or specific logic
       progress: c.progress_percent
@@ -85,14 +89,22 @@ const sortByLatestAdded = <T extends Record<string, any>>(items: T[]): T[] => {
 export default function UserDashboard() {
   const { t, i18n } = useTranslation();
   const { user } = useAuth();
+  const queryClient = useQueryClient();
   const [heroBg, setHeroBg] = useState<string>('');
   const [selectedLanguage, setSelectedLanguage] = useState<string>(i18n.language || 'en');
+  const [activeViewerProfile, setActiveViewerProfile] = useState<ViewerProfile | null>(null);
 
   useBannedRedirect();
 
   useEffect(() => {
     setSelectedLanguage(i18n.language || 'en');
   }, [i18n.language]);
+
+  useEffect(() => {
+    const refresh = () => queryClient.invalidateQueries({ queryKey: ['user-dashboard', 'favorite-recommendations', user?.id] });
+    window.addEventListener('flowcast:favorites-updated', refresh);
+    return () => window.removeEventListener('flowcast:favorites-updated', refresh);
+  }, [queryClient, user?.id]);
 
   const handleLanguageChange = async (languageCode: string) => {
     setSelectedLanguage(languageCode);
@@ -200,6 +212,58 @@ export default function UserDashboard() {
     }
   });
   const animeItems = useMemo(() => mapListToItems(animeContent, 'anime'), [animeContent]);
+
+  const { data: favoriteRecommendations = [] } = useQuery({
+    queryKey: ['user-dashboard', 'favorite-recommendations', user?.id, activeViewerProfile?.id, activeViewerProfile?.favorite_genres],
+    enabled: !!user?.id,
+    staleTime: 30_000,
+    refetchOnWindowFocus: true,
+    queryFn: async () => {
+      const favorites = await favoritesService.getFavorites();
+      const likedIds = new Set([...favorites.movies, ...favorites.series].map(String));
+      if (favorites.data?.movies?.length || favorites.data?.series?.length) {
+        const likedContent: FavoriteContent[] = [...favorites.data.movies, ...favorites.data.series];
+        const genreCounts = new Map<string, number>();
+        const normalize = (value: string) => value.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase().trim();
+        for (const seed of likedContent) {
+          for (const genre of (seed.genre ?? '').split(',')) {
+            const normalized = normalize(genre);
+            if (normalized) genreCounts.set(normalized, (genreCounts.get(normalized) ?? 0) + 1);
+          }
+        }
+        const preferences = new Set((activeViewerProfile?.favorite_genres ?? []).map(normalize));
+        const candidates = [...moviesItems, ...seriesItems, ...kidsItems, ...animeItems]
+          .filter((item) => item.content_id && !likedIds.has(String(item.content_id)))
+          .map((item) => {
+            const candidateGenres = item.genres ?? [];
+            const score = candidateGenres.reduce((sum, genre) => {
+              const candidateGenre = normalize(genre);
+              const relatedLikedGenres = [...genreCounts].reduce((count, [likedGenre, weight]) => {
+                const sameGenre = candidateGenre === likedGenre || candidateGenre.startsWith(likedGenre) || likedGenre.startsWith(candidateGenre);
+                return count + (sameGenre ? weight * 2 : 0);
+              }, 0);
+              const profilePreference = [...preferences].some((preference) => candidateGenre.includes(preference) || preference.includes(candidateGenre)) ? 3 : 0;
+              return sum + relatedLikedGenres + profilePreference;
+            }, 0);
+            return { item, score };
+          })
+          .filter(({ score }) => score > 0)
+          .sort((a, b) => b.score - a.score)
+          .map(({ item }) => item)
+          .slice(0, 24);
+        return candidates;
+      }
+      const normalize = (value: string) => value.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase().trim();
+      const profileGenres = new Set((activeViewerProfile?.favorite_genres ?? []).map(normalize));
+      const candidates = [...moviesItems, ...seriesItems, ...kidsItems, ...animeItems]
+        .filter((item) => item.content_id && !likedIds.has(String(item.content_id)))
+        .map((item) => ({ item, score: (item.genres ?? []).reduce((sum, genre) => sum + (profileGenres.has(normalize(genre)) ? 3 : 0), 0) }))
+        .filter(({ score }) => score > 0)
+        .sort((a, b) => b.score - a.score)
+        .map(({ item }) => item);
+      return candidates.slice(0, 24);
+    },
+  });
 
   // 6. Live TV (Simplified Fetch for "On Air" rail)
   // In a real app, we'd fetch "trending" or "most watched" channels.
@@ -317,6 +381,7 @@ export default function UserDashboard() {
             <Activity className="mr-1 h-3 w-3" />
             {t('common.active')}
           </Badge>
+          <ViewerProfilesControl onActiveProfileChange={setActiveViewerProfile} />
         </div>
 
         {/* Hero Section */}
@@ -337,6 +402,14 @@ export default function UserDashboard() {
           )}
 
           {/* 1. Continue Watching (Priority) */}
+          {favoriteRecommendations.length > 0 && (
+            <ContentRail
+              title="Semelhantes ao que você curtiu"
+              subtitle={activeViewerProfile?.favorite_genres.length ? `Sugestões para ${activeViewerProfile.name}` : 'Atualizado quando você marca um título como gostei'}
+              items={favoriteRecommendations}
+              icon={<Sparkles className="h-5 w-5 text-cyan-300" />}
+            />
+          )}
           <ContentRail
             title={t('user.dashboard.continueWatching')}
             subtitle={t('user.dashboard.progressSync')}

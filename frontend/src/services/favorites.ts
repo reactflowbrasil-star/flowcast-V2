@@ -10,6 +10,21 @@ export interface FavoritesData {
   music_tracks: string[];
   music_albums: string[];
   music_artists: string[];
+  data?: {
+    movies: FavoriteContent[];
+    series: FavoriteContent[];
+  };
+}
+
+export interface FavoriteContent {
+  id: number;
+  title: string;
+  genre?: string | null;
+  content_type?: string | null;
+  poster_url?: string | null;
+  image_url?: string | null;
+  backdrop_url?: string | null;
+  year?: number | null;
 }
 
 interface BackendResponse<T> {
@@ -39,7 +54,7 @@ class FavoritesService {
    */
   async getFavorites(): Promise<FavoritesData> {
     try {
-      const response = await apiService.get<BackendResponse<FavoritesData>>(this.baseUrl);
+      const response = await apiService.get<BackendResponse<FavoritesData> | FavoritesData>(this.baseUrl);
       return this.unwrap(response, 'Error fetching favorites', () => this.createEmptyFavorites());
     } catch (error) {
       console.error('Error fetching favorites:', error);
@@ -137,7 +152,7 @@ class FavoritesService {
   }
 
   private unwrap<T>(
-    response: ApiResult<BackendResponse<T>>,
+    response: ApiResult<BackendResponse<T> | T>,
     errorMessage: string,
     fallback?: () => T
   ): T {
@@ -146,18 +161,16 @@ class FavoritesService {
     }
 
     const payload = response.data;
-    if (!payload?.success) {
-      throw new Error(payload?.error ?? errorMessage);
-    }
-
-    if (payload.data === undefined || payload.data === null) {
-      if (fallback) {
-        return fallback();
+    if (!payload) return fallback ? fallback() : (() => { throw new Error(errorMessage); })();
+    if ('success' in payload) {
+      if (!payload.success) throw new Error(payload.error ?? errorMessage);
+      if (payload.data === undefined || payload.data === null) {
+        if (fallback) return fallback();
+        throw new Error(errorMessage);
       }
-      throw new Error(errorMessage);
+      return payload.data;
     }
-
-    return payload.data;
+    return payload as T;
   }
 
   private createEmptyFavorites(): FavoritesData {

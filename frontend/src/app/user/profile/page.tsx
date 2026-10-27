@@ -82,6 +82,18 @@ function ProfilePageInner() {
     }
   });
 
+  const { data: sentinelActivity } = useQuery({
+    queryKey: ['user-sentinel-activity', user?.id],
+    enabled: !!user?.id,
+    staleTime: 60_000,
+    refetchOnWindowFocus: true,
+    queryFn: async () => {
+      const result = await userProfileService.getSentinelActivity();
+      if (!result.success || !result.data) throw new Error('Não foi possível carregar a atividade de segurança.');
+      return result.data;
+    },
+  });
+
   useEffect(() => {
     if (profileData?.email) {
       setEmailDraft(profileData.email);
@@ -605,6 +617,33 @@ function ProfilePageInner() {
 
                 {/* Right column */}
                 <div className="space-y-6">
+                  {/* Plan state */}
+                  <Card className="rounded-lg border-cyan-900/60 bg-slate-900/60 transition-all duration-300 hover:border-cyan-700/60">
+                    <CardHeader>
+                      <CardTitle className="flex items-center gap-3 text-sm text-white">
+                        <ShieldCheck className="h-4 w-4 text-cyan-300" />Sentinela de segurança
+                      </CardTitle>
+                    </CardHeader>
+                    <CardContent className="space-y-3 text-xs text-slate-400">
+                      <div className="flex items-center justify-between gap-2">
+                        <span>IPs distintos nos últimos 30 dias</span>
+                        <Badge variant="outline" className={cn('border-cyan-500/30', sentinelActivity?.sentinel.risk_level === 'elevated' ? 'bg-rose-500/10 text-rose-200' : sentinelActivity?.sentinel.risk_level === 'review' ? 'bg-amber-500/10 text-amber-200' : 'bg-emerald-500/10 text-emerald-200')}>
+                          {sentinelActivity?.sentinel.unique_ips_30d ?? '—'} · {sentinelActivity?.sentinel.risk_level === 'elevated' ? 'revisar' : sentinelActivity?.sentinel.risk_level === 'review' ? 'atenção' : 'normal'}
+                        </Badge>
+                      </div>
+                      <p>Alterações de IP são monitoradas. Redes móveis podem trocar de endereço sem indicar invasão.</p>
+                      <div className="max-h-40 space-y-2 overflow-y-auto">
+                        {(sentinelActivity?.sessions ?? []).slice(0, 5).map((session, index) => (
+                          <div key={`${session.ip_address}-${session.last_seen}-${index}`} className="rounded-md border border-slate-800 bg-slate-950/60 p-2">
+                            <p className="font-medium text-slate-200">{session.device || session.user_agent || 'Dispositivo registrado'}</p>
+                          <p>{session.ip_address || 'IP não informado'} · {session.last_seen ? new Date(session.last_seen).toLocaleString(i18n.language || undefined) : 'horário indisponível'} · {session.distinct_devices ?? 1} dispositivo(s)</p>
+                          </div>
+                        ))}
+                        {(!sentinelActivity || sentinelActivity.sessions.length === 0) && <p>Nenhuma atividade recente disponível.</p>}
+                      </div>
+                    </CardContent>
+                  </Card>
+
                   {/* Plan state */}
                   <Card className="rounded-lg border-slate-900 bg-slate-900/60">
                     <CardHeader>

@@ -246,6 +246,73 @@ async fn get_user_devices(
     Ok(Json(json!({"devices": devices})))
 }
 
+/// Sentinel security overview based on recent successful login telemetry.
+async fn get_sentinel_activity(
+    Extension(claims): Extension<Claims>,
+    State(app_state): State<AppState>,
+) -> Result<Json<Value>, (StatusCode, Json<Value>)> {
+    let user_id = claims.sub.parse::<i64>().map_err(|_| (
+        StatusCode::BAD_REQUEST,
+        Json(json!({"error": "Invalid user ID"})),
+    ))?;
+    let rows = sqlx::query(
+        r#"
+        SELECT ip_address, MAX(device_info) AS device_info, MAX(user_agent) AS user_agent,
+               MAX(login_timestamp) AS last_seen,
+               COUNT(DISTINCT COALESCE(device_info, user_agent, 'unknown')) AS distinct_devices,
+               COUNT(*) AS login_count
+        FROM activity.user_login_history
+        WHERE user_id = $1 AND success = true
+          AND login_timestamp >= NOW() - INTERVAL '30 days'
+        GROUP BY ip_address
+        ORDER BY last_seen DESC
+        LIMIT 100
+        "#,
+    )
+    .bind(user_id)
+    .fetch_all(&app_state.database.pool)
+    .await
+    .map_err(|error| {
+        tracing::error!(user_id, "Sentinel login activity query failed: {error}");
+        (StatusCode::INTERNAL_SERVER_ERROR, Json(json!({"error": "Could not load security activity"})))
+    })?;
+
+    let mut ip_counts = std::collections::HashMap::<String, usize>::new();
+    let mut devices_by_ip = std::collections::HashMap::<String, i64>::new();
+    let mut sessions = Vec::with_capacity(rows.len());
+    for row in rows {
+        let ip: Option<String> = row.try_get("ip_address").unwrap_or(None);
+        let device: Option<String> = row.try_get("device_info").unwrap_or(None);
+        let agent: Option<String> = row.try_get("user_agent").unwrap_or(None);
+        let last_seen: Option<chrono::DateTime<chrono::Utc>> = row.try_get("last_seen").unwrap_or(None);
+        let distinct_devices: i64 = row.try_get("distinct_devices").unwrap_or(1);
+        let login_count: i64 = row.try_get("login_count").unwrap_or(1);
+        if let Some(value) = ip.as_ref().filter(|value| !value.is_empty()) {
+            ip_counts.insert(value.clone(), login_count.max(0) as usize);
+            devices_by_ip.insert(value.clone(), distinct_devices);
+        }
+        sessions.push(json!({
+            "ip_address": ip,
+            "device": device,
+            "user_agent": agent,
+            "last_seen": last_seen.map(|value| value.to_rfc3339()),
+            "distinct_devices": distinct_devices,
+        }));
+    }
+    let unique_ips = ip_counts.len();
+    let concurrent_device_risk = devices_by_ip.values().any(|count| *count >= 4);
+    let risk_level = if unique_ips >= 5 || concurrent_device_risk { "elevated" } else if unique_ips >= 3 { "review" } else { "normal" };
+    let mut ip_summary: Vec<_> = ip_counts.into_iter().map(|(ip, count)| json!({"ip_address": ip, "login_count": count})).collect();
+    ip_summary.sort_by(|a, b| b["login_count"].as_u64().cmp(&a["login_count"].as_u64()));
+
+    Ok(Json(json!({
+        "sentinel": {"status": "active", "risk_level": risk_level, "unique_ips_30d": unique_ips},
+        "ips": ip_summary,
+        "sessions": sessions,
+        "policy": "IP changes are monitored; shared and mobile networks can change addresses legitimately."
+    })))
+}
+
 /// Get device status for the authenticated user (Android app endpoint)
 pub async fn get_device_status(
     State(app_state): State<AppState>,
@@ -376,6 +443,7 @@ pub fn routes() -> Router<AppState> {
         .route("/profile", axum::routing::put(update_profile))
         .route("/profile/password", axum::routing::put(change_password))
         .route("/devices", axum::routing::get(get_user_devices))
+        .route("/sentinel/activity", axum::routing::get(get_sentinel_activity))
         .route("/device-status", axum::routing::get(get_device_status))
         .route("/subscriptions", axum::routing::get(get_user_subscriptions))
         .route(

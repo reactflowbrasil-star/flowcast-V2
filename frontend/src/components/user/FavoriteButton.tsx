@@ -82,6 +82,7 @@ export function FavoriteButton({
       }
 
       // Notify parent component
+      window.dispatchEvent(new CustomEvent('flowcast:favorites-updated'));
       onToggle?.(newState);
     } catch (error) {
       console.error('Error toggling favorite:', error);

@@ -33,6 +33,7 @@ pub mod upload;
 pub mod user_activity;
 pub mod user_history;
 pub mod user_profile;
+pub mod viewer_profiles;
 
 pub use auth::*;
 // Re-export only the specific admin/reseller symbols used by lib.rs to avoid ambiguous glob warnings

@@ -86,6 +86,7 @@ pub async fn create_all_tables(pool: &Pool<Postgres>) -> Result<()> {
     create_user_devices_table(pool).await?;
     create_user_subscriptions_table(pool).await?;
     create_user_favorites_table(pool).await?;
+    create_viewer_profiles_table(pool).await?;
     create_blacklisted_tokens_table(pool).await?;
     create_rate_limits_table(pool).await?;
 
@@ -198,6 +199,7 @@ pub async fn ensure_database_schema(pool: &Pool<Postgres>) -> Result<SchemaState
     ensure_table!(pool, "auth.user_devices", create_user_devices_table);
     ensure_table!(pool, "billing.user_subscriptions", create_user_subscriptions_table);
     ensure_table!(pool, "activity.user_favorites", create_user_favorites_table);
+    ensure_table!(pool, "auth.viewer_profiles", create_viewer_profiles_table);
     ensure_table!(pool, "activity.blacklisted_tokens", create_blacklisted_tokens_table);
     ensure_table!(pool, "activity.rate_limits", create_rate_limits_table);
 
@@ -1083,6 +1085,38 @@ async fn create_user_favorites_table(pool: &Pool<Postgres>) -> Result<()> {
     Ok(())
 }
 
+/// Account-owned viewer profiles, with independent genre preferences and artwork.
+async fn create_viewer_profiles_table(pool: &Pool<Postgres>) -> Result<()> {
+    sqlx::query(
+        r#"
+        CREATE TABLE IF NOT EXISTS auth.viewer_profiles (
+            id BIGSERIAL PRIMARY KEY,
+            user_id BIGINT NOT NULL REFERENCES auth.users(id) ON DELETE CASCADE,
+            name VARCHAR(80) NOT NULL,
+            avatar TEXT NOT NULL DEFAULT '🍿',
+            cover TEXT NOT NULL DEFAULT 'violet',
+            favorite_genres TEXT[] NOT NULL DEFAULT '{}',
+            is_kids BOOLEAN NOT NULL DEFAULT FALSE,
+            created_at TIMESTAMPTZ NOT NULL DEFAULT NOW(),
+            updated_at TIMESTAMPTZ NOT NULL DEFAULT NOW()
+        )
+        "#,
+    )
+    .execute(pool)
+    .await?;
+    sqlx::query(
+        "CREATE UNIQUE INDEX IF NOT EXISTS idx_viewer_profiles_user_name ON auth.viewer_profiles (user_id, LOWER(name))",
+    )
+    .execute(pool)
+    .await?;
+    sqlx::query(
+        "CREATE INDEX IF NOT EXISTS idx_viewer_profiles_user_id ON auth.viewer_profiles (user_id, id)",
+    )
+    .execute(pool)
+    .await?;
+    Ok(())
+}
+
 /// Create blacklisted_tokens table - Token blacklisting
 async fn create_blacklisted_tokens_table(pool: &Pool<Postgres>) -> Result<()> {
     sqlx::query(
@@ -1151,7 +1185,7 @@ async fn create_activity_logs_table(pool: &Pool<Postgres>) -> Result<()> {
 async fn create_user_login_history_table(pool: &Pool<Postgres>) -> Result<()> {
     sqlx::query(
         r#"
-        CREATE TABLE activity.user_login_history (
+        CREATE TABLE IF NOT EXISTS activity.user_login_history (
             id BIGSERIAL PRIMARY KEY,
             user_id BIGINT NOT NULL,
             username TEXT NOT NULL,
@@ -1167,15 +1201,15 @@ async fn create_user_login_history_table(pool: &Pool<Postgres>) -> Result<()> {
     .await?;
 
     // Create indexes for performance
-    sqlx::query("CREATE INDEX idx_user_login_history_user_id ON activity.user_login_history(user_id)")
+    sqlx::query("CREATE INDEX IF NOT EXISTS idx_user_login_history_user_id ON activity.user_login_history(user_id)")
         .execute(pool)
         .await?;
     sqlx::query(
-        "CREATE INDEX idx_user_login_history_timestamp ON activity.user_login_history(login_timestamp)"
+        "CREATE INDEX IF NOT EXISTS idx_user_login_history_timestamp ON activity.user_login_history(login_timestamp)"
         )
     .execute(pool)
     .await?;
-    sqlx::query("CREATE INDEX idx_user_login_history_ip ON activity.user_login_history(ip_address)")
+    sqlx::query("CREATE INDEX IF NOT EXISTS idx_user_login_history_ip ON activity.user_login_history(ip_address)")
         .execute(pool)
         .await?;
 
@@ -1704,6 +1738,10 @@ pub async fn run_runtime_migrations(pool: &Pool<Postgres>) -> Result<()> {
 
     // Direct subscription system: add user columns for subscription_source, email verification
     add_direct_subscription_user_columns(pool).await?;
+
+    // Viewer profile and Sentinel read-path schema are idempotent for existing deployments.
+    create_viewer_profiles_table(pool).await?;
+    create_user_login_history_table(pool).await?;
 
     ensure_performance_indexes(pool).await?;
 

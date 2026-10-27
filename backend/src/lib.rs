@@ -1024,7 +1024,10 @@ pub async fn create_app(database: Database, config: Config) -> anyhow::Result<Ro
         .merge(device_routes)
         .nest(
             "/api/user",
-            handlers::user_profile::routes().layer(Extension(app_state.database.pool.clone())),
+            Router::new()
+                .merge(handlers::user_profile::routes())
+                .merge(handlers::viewer_profiles::routes())
+                .layer(Extension(app_state.database.pool.clone())),
         )
         // User watch progress routes
         .route(
