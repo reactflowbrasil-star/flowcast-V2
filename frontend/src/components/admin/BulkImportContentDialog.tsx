@@ -1,6 +1,6 @@
 'use client';
 
-import { useRef, useState, type ChangeEvent } from 'react';
+import { useEffect, useMemo, useRef, useState, type ChangeEvent } from 'react';
 import { useMutation } from '@tanstack/react-query';
 import { z } from 'zod';
 import { Button } from '@/components/ui/button';
@@ -8,11 +8,60 @@ import { Label } from '@/components/ui/label';
 import { Textarea } from '@/components/ui/textarea';
 import { Dialog, DialogContent, DialogDescription, DialogFooter, DialogHeader, DialogTitle } from '@/components/ui/dialog';
 import { Alert, AlertDescription } from '@/components/ui/alert';
-import { AlertCircle, Upload, CheckCircle2 } from 'lucide-react';
+import { AlertCircle, Upload, CheckCircle2, CircleX, LoaderCircle, CircleCheck } from 'lucide-react';
 import { contentService } from '@/services';
 import { useTranslation } from 'react-i18next';
 import { extractErrorMessage } from '@/lib/error-message';
 import useLoadNamespace from '@/hooks/useLoadNamespace';
+import { buildM3uPlaylist, parseM3uPlaylist } from '@/lib/m3uPlaylist';
+
+type LinkCheck = { status: 'checking' | 'valid' | 'invalid'; message?: string };
+
+async function checkPlaylistUrl(url: string, signal: AbortSignal): Promise<LinkCheck> {
+    const proxyPath = `${process.env.NEXT_PUBLIC_BASE_PATH ?? ''}/api/proxy/stream`;
+    const params = new URLSearchParams({ url });
+    const endpoint = `${proxyPath}?${params.toString()}`;
+    const request = async (method: 'HEAD' | 'GET') => {
+        const controller = new AbortController();
+        const onAbort = () => controller.abort();
+        signal.addEventListener('abort', onAbort, { once: true });
+        const timeout = window.setTimeout(() => controller.abort(), 9000);
+        try {
+            return await fetch(endpoint, {
+                method,
+                credentials: 'same-origin',
+                signal: controller.signal,
+                headers: method === 'GET' ? { Range: 'bytes=0-0' } : undefined,
+                cache: 'no-store',
+            });
+        } finally {
+            window.clearTimeout(timeout);
+            signal.removeEventListener('abort', onAbort);
+        }
+    };
+
+    try {
+        let response = await request('HEAD');
+        if ([403, 405, 501].includes(response.status)) response = await request('GET');
+        if (response.ok) {
+            if (response.body) await response.body.cancel().catch(() => undefined);
+            return { status: 'valid', message: `HTTP ${response.status}` };
+        }
+        return { status: 'invalid', message: `HTTP ${response.status}` };
+    } catch (error) {
+        if (signal.aborted) return { status: 'invalid', message: 'Verificação cancelada' };
+        try {
+            const response = await request('GET');
+            if (response.ok) {
+                if (response.body) await response.body.cancel().catch(() => undefined);
+                return { status: 'valid', message: `HTTP ${response.status}` };
+            }
+            return { status: 'invalid', message: `HTTP ${response.status}` };
+        } catch {
+            return { status: 'invalid', message: error instanceof Error && error.name === 'AbortError' ? 'Tempo esgotado' : 'Link inacessível' };
+        }
+    }
+}
 
 interface Props {
     open: boolean;
@@ -30,7 +79,54 @@ export default function BulkImportContentDialog({ open, onOpenChange, onSuccess,
     const [text, setText] = useState('');
     const [error, setError] = useState<string | null>(null);
     const [importResult, setImportResult] = useState<{ total: number; success: number; failed: number } | null>(null);
+    const [linkChecks, setLinkChecks] = useState<Record<number, LinkCheck>>({});
+    const [isValidatingLinks, setIsValidatingLinks] = useState(false);
     const fileInputRef = useRef<HTMLInputElement | null>(null);
+    const validationAbortRef = useRef<AbortController | null>(null);
+    const parsedPlaylist = useMemo(() => parseM3uPlaylist(text), [text]);
+    const validEntries = parsedPlaylist.entries.filter(entry => linkChecks[entry.index]?.status === 'valid');
+    const invalidEntries = parsedPlaylist.entries.filter(entry => linkChecks[entry.index]?.status === 'invalid');
+    const verificationFinished = parsedPlaylist.entries.length > 0 &&
+        !isValidatingLinks && parsedPlaylist.entries.every(entry => linkChecks[entry.index]?.status === 'valid' || linkChecks[entry.index]?.status === 'invalid');
+
+    useEffect(() => {
+        validationAbortRef.current?.abort();
+        setLinkChecks({});
+        if (!open || parsedPlaylist.entries.length === 0) {
+            setIsValidatingLinks(false);
+            return;
+        }
+
+        const controller = new AbortController();
+        validationAbortRef.current = controller;
+        let cancelled = false;
+        setIsValidatingLinks(true);
+        const initial: Record<number, LinkCheck> = {};
+        parsedPlaylist.entries.forEach(entry => { initial[entry.index] = { status: 'checking' }; });
+        setLinkChecks(initial);
+
+        const timer = window.setTimeout(async () => {
+            let cursor = 0;
+            const workers = Array.from({ length: Math.min(6, parsedPlaylist.entries.length) }, async () => {
+                while (!controller.signal.aborted) {
+                    const index = cursor++;
+                    const entry = parsedPlaylist.entries[index];
+                    if (!entry) return;
+                    const result = await checkPlaylistUrl(entry.url, controller.signal);
+                    if (cancelled || controller.signal.aborted) return;
+                    setLinkChecks(previous => ({ ...previous, [entry.index]: result }));
+                }
+            });
+            await Promise.all(workers);
+            if (!cancelled) setIsValidatingLinks(false);
+        }, 450);
+
+        return () => {
+            cancelled = true;
+            window.clearTimeout(timer);
+            controller.abort();
+        };
+    }, [open, parsedPlaylist]);
 
     const schema = z.object({
         text: z.string().min(1, t('bulkImportContent.validation.pasteM3uContent')),
@@ -45,8 +141,15 @@ export default function BulkImportContentDialog({ open, onOpenChange, onSuccess,
                 const first = parsed.error.issues?.[0]?.message;
                 throw new Error(first || t('bulkImportContent.validation.invalidData'));
             }
+            const currentPlaylist = parseM3uPlaylist(parsed.data.text);
+            const currentValidEntries = currentPlaylist.entries.filter(entry => linkChecks[entry.index]?.status === 'valid');
+            const checkedCount = currentPlaylist.entries.filter(entry => linkChecks[entry.index]?.status === 'valid' || linkChecks[entry.index]?.status === 'invalid').length;
+            if (checkedCount !== currentPlaylist.entries.length || currentValidEntries.length === 0) {
+                throw new Error(t('bulkImportContent.linkCheck.waitForCheck', { defaultValue: 'Wait for link checks to finish and keep at least one valid link to import.' }));
+            }
+            const verifiedText = buildM3uPlaylist(currentPlaylist.header, currentValidEntries);
             const res = await contentService.bulkImportContent({
-                text: parsed.data.text,
+                text: verifiedText,
                 category_type: contentType,
             });
             if (!res.success) {
@@ -91,6 +194,9 @@ export default function BulkImportContentDialog({ open, onOpenChange, onSuccess,
             setText('');
             setError(null);
             setImportResult(null);
+            validationAbortRef.current?.abort();
+            setLinkChecks({});
+            setIsValidatingLinks(false);
         }
         onOpenChange(openState);
     };
@@ -152,13 +258,53 @@ export default function BulkImportContentDialog({ open, onOpenChange, onSuccess,
                             placeholder={`#EXTM3U\n\n#EXTINF:-1 tvg-name="Title" tvg-logo="https://image.example.com/poster.jpg" group-title="${categoryLabel}",Title\nhttps://example.com/stream.m3u8\n\n#EXTINF:-1 tvg-name="Another Title" tvg-logo="https://image.example.com/poster2.jpg" group-title="${categoryLabel}",Another Title\nhttps://example.com/stream2.m3u8`}
                         />
                     </div>
+                    {text.trim() && (
+                        <div className="grid gap-3 rounded-md border p-3 text-sm" aria-live="polite">
+                            <div className="flex flex-wrap items-center gap-x-4 gap-y-2">
+                                <span>{t('bulkImportContent.linkCheck.found', { count: parsedPlaylist.entries.length, defaultValue: '{{count}} links found' })}</span>
+                                <span className="inline-flex items-center gap-1 text-emerald-600"><CircleCheck className="h-4 w-4" />{t('bulkImportContent.linkCheck.valid', { count: validEntries.length, defaultValue: '{{count}} valid' })}</span>
+                                <span className="inline-flex items-center gap-1 text-destructive"><CircleX className="h-4 w-4" />{t('bulkImportContent.linkCheck.invalid', { count: invalidEntries.length, defaultValue: '{{count}} invalid' })}</span>
+                                {(isValidatingLinks || !verificationFinished) && parsedPlaylist.entries.length > 0 && (
+                                    <span className="inline-flex items-center gap-1 text-muted-foreground"><LoaderCircle className="h-4 w-4 animate-spin" />{t('bulkImportContent.linkCheck.checking', { checked: validEntries.length + invalidEntries.length, total: parsedPlaylist.entries.length, defaultValue: 'Checking {{checked}}/{{total}}…' })}</span>
+                                )}
+                            </div>
+                            {parsedPlaylist.entries.length === 0 && <p className="text-destructive">{t('bulkImportContent.linkCheck.noLinks', { defaultValue: 'No valid HTTP/HTTPS links were found in the playlist.' })}</p>}
+                            {invalidEntries.length > 0 && (
+                                <details className="rounded border border-destructive/30 p-2">
+                                    <summary className="cursor-pointer text-destructive">{t('bulkImportContent.linkCheck.invalidList', { count: invalidEntries.length, defaultValue: 'Links that will not be imported ({{count}})' })}</summary>
+                                    <ul className="mt-2 max-h-32 space-y-1 overflow-auto text-xs">
+                                        {invalidEntries.map(entry => (
+                                            <li key={entry.index} className="break-all">
+                                                <span className="font-medium">{entry.title}</span> — {linkChecks[entry.index]?.message}: {entry.url}
+                                            </li>
+                                        ))}
+                                    </ul>
+                                </details>
+                            )}
+                            {verificationFinished && validEntries.length > 0 && (
+                                <details className="rounded border border-emerald-500/30 p-2">
+                                    <summary className="cursor-pointer text-emerald-700 dark:text-emerald-400">{t('bulkImportContent.linkCheck.validList', { count: validEntries.length, defaultValue: 'Valid links for import ({{count}})' })}</summary>
+                                    <ul className="mt-2 max-h-32 space-y-1 overflow-auto text-xs">
+                                        {validEntries.map(entry => (
+                                            <li key={entry.index} className="break-all">
+                                                <span className="font-medium">{entry.title}</span> — {entry.url}
+                                            </li>
+                                        ))}
+                                    </ul>
+                                </details>
+                            )}
+                            {verificationFinished && validEntries.length > 0 && (
+                                <p className="text-emerald-700 dark:text-emerald-400">{t('bulkImportContent.linkCheck.importOnlyValid', { count: validEntries.length, defaultValue: 'Only the {{count}} valid links will be imported.' })}</p>
+                            )}
+                        </div>
+                    )}
                 </div>
 
                 <DialogFooter>
                     <Button variant="outline" onClick={() => handleClose(false)} disabled={mutation.isPending}>
                         {t('bulkImportContent.buttons.cancel')}
                     </Button>
-                    <Button onClick={() => mutation.mutate()} disabled={mutation.isPending || !text.trim()}>
+                    <Button onClick={() => mutation.mutate()} disabled={mutation.isPending || !text.trim() || !verificationFinished || validEntries.length === 0}>
                         <Upload className="h-4 w-4 mr-2" />
                         {mutation.isPending
                             ? t('bulkImportContent.buttons.importing')

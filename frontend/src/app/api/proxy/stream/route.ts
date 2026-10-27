@@ -173,7 +173,7 @@ export async function GET(req: Request): Promise<Response> {
     });
 
     const contentType = (upstream.headers.get('content-type') || '').toLowerCase();
-    const urlLower = validated.url.toLowerCase();
+    const urlLower = validated.url.toString().toLowerCase();
     const isHlsExtension = urlLower.includes('.m3u8') || urlLower.includes('.m3u');
     const isLikelyHlsContent =
       contentType.includes('application/vnd.apple.mpegurl') ||

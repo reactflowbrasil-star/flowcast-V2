@@ -13,6 +13,17 @@
     },
     "result": "Importados {{success}} de {{total}} itens.",
     "resultWithFailed": "Importados {{success}} de {{total}} itens ({{failed}} falharam).",
+    "linkCheck": {
+      "found": "{{count}} links encontrados",
+      "valid": "{{count}} válidos",
+      "invalid": "{{count}} inválidos",
+      "checking": "Verificando {{checked}}/{{total}}…",
+      "noLinks": "Nenhum link HTTP/HTTPS válido foi encontrado na playlist.",
+      "validList": "Links válidos para importação ({{count}})",
+      "invalidList": "Links que não serão importados ({{count}})",
+      "importOnlyValid": "A importação enviará apenas os {{count}} links válidos.",
+      "waitForCheck": "Aguarde a verificação e mantenha ao menos um link válido para importar."
+    },
     "validation": {
       "pasteM3uContent": "Cole o conteúdo M3U/M3U8",
       "invalidData": "Dados inválidos",
