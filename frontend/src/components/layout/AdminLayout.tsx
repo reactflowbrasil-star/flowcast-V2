@@ -1,6 +1,7 @@
 'use client';
 
 import { ReactNode } from 'react';
+import Image from 'next/image';
 import { useTranslation } from 'react-i18next';
 import useLoadNamespace from '@/hooks/useLoadNamespace';
 import AdminSidebar from './AdminSidebar';
@@ -34,7 +35,17 @@ export default function AdminLayout({ children, breadcrumbs }: AdminLayoutProps)
         <header className="sticky top-0 z-40 border-b border-border/80 bg-background/85 px-4 py-4 shadow-sm backdrop-blur-xl transition-all duration-300 md:px-6">
           <div className="mb-4 flex flex-col gap-3 md:flex-row md:items-center md:justify-between">
             <div>
-              <h1 className="text-2xl font-semibold tracking-tight">{APP_CONFIG.NAME}</h1>
+              <div className="flex items-center gap-3">
+                <Image
+                  src={`${process.env.NEXT_PUBLIC_BASE_PATH || ''}/flowcast-logo.png`}
+                  alt={APP_CONFIG.NAME}
+                  width={132}
+                  height={44}
+                  className="h-8 w-auto object-contain"
+                  priority
+                />
+                <h1 className="text-2xl font-semibold tracking-tight">{APP_CONFIG.NAME}</h1>
+              </div>
               <p className="text-sm text-muted-foreground">{t('layout.adminDashboard')}</p>
             </div>
 

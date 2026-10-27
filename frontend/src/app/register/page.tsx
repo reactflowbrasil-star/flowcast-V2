@@ -172,7 +172,7 @@ function RegisterForm() {
 
                 <div className="relative z-10 p-12 max-w-lg mx-auto text-center space-y-8">
                     <div className="relative w-[250px] h-24 mx-auto">
-                        <Image src="/login-logo.png" alt="Logo" fill className="object-contain drop-shadow-[0_0_25px_rgba(255,255,255,0.2)]" priority />
+                        <Image src={`${process.env.NEXT_PUBLIC_BASE_PATH || ''}/flowcast-logo.png`} alt="Flowcast" fill className="object-contain drop-shadow-[0_0_25px_rgba(255,255,255,0.2)]" priority />
                     </div>
                     <h2 className="text-3xl font-bold bg-gradient-to-r from-white to-gray-400 bg-clip-text text-transparent">
                         Start Streaming Today
@@ -191,7 +191,7 @@ function RegisterForm() {
                 <div className="w-full max-w-[440px] space-y-8 relative z-10">
                     {/* Mobile Logo */}
                     <div className="lg:hidden flex flex-col items-center mb-6">
-                        <Image src="/login-logo.png" alt="Logo" width={180} height={64} className="mb-4 drop-shadow-lg" />
+                        <Image src={`${process.env.NEXT_PUBLIC_BASE_PATH || ''}/flowcast-logo.png`} alt="Flowcast" width={180} height={64} className="mb-4 drop-shadow-lg" />
                     </div>
 
                     <div className="space-y-2 text-center lg:text-left">

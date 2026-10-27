@@ -112,7 +112,14 @@ export default function BulkImportContentDialog({ open, onOpenChange, onSuccess,
     const [isValidatingLinks, setIsValidatingLinks] = useState(false);
     const fileInputRef = useRef<HTMLInputElement | null>(null);
     const validationAbortRef = useRef<AbortController | null>(null);
-    const parsedPlaylist = useMemo(() => parseM3uPlaylist(text), [text]);
+    const defaultTitleKind = contentType === 'series'
+        ? 'Série'
+        : contentType === 'kids'
+            ? 'Infantil'
+            : contentType === 'anime'
+                ? 'Anime'
+                : 'Filme';
+    const parsedPlaylist = useMemo(() => parseM3uPlaylist(text, defaultTitleKind), [text, defaultTitleKind]);
     const validEntries = parsedPlaylist.entries.filter(entry => linkChecks[entry.index]?.status === 'valid');
     const invalidEntries = parsedPlaylist.entries.filter(entry => linkChecks[entry.index]?.status === 'invalid');
     const verificationFinished = parsedPlaylist.entries.length > 0 &&
@@ -170,7 +177,7 @@ export default function BulkImportContentDialog({ open, onOpenChange, onSuccess,
                 const first = parsed.error.issues?.[0]?.message;
                 throw new Error(first || t('bulkImportContent.validation.invalidData'));
             }
-            const currentPlaylist = parseM3uPlaylist(parsed.data.text);
+            const currentPlaylist = parseM3uPlaylist(parsed.data.text, defaultTitleKind);
             const currentValidEntries = currentPlaylist.entries.filter(entry => linkChecks[entry.index]?.status === 'valid');
             const checkedCount = currentPlaylist.entries.filter(entry => linkChecks[entry.index]?.status === 'valid' || linkChecks[entry.index]?.status === 'invalid').length;
             if (checkedCount !== currentPlaylist.entries.length || currentValidEntries.length === 0) {
@@ -279,6 +286,11 @@ export default function BulkImportContentDialog({ open, onOpenChange, onSuccess,
                                 </Button>
                             </div>
                         </div>
+                        <p className="text-xs text-muted-foreground">
+                            {t('bulkImportContent.linkCheck.xtreamHint', {
+                                defaultValue: 'Cole uma playlist M3U/M3U8 ou links HTTP/HTTPS, um por linha. Links Xtream como http://host:porta/usuario/senha/52284 são reconhecidos e recebem o ID como título automaticamente.',
+                            })}
+                        </p>
                         <Textarea
                             rows={12}
                             value={text}

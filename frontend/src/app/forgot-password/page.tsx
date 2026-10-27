@@ -75,7 +75,7 @@ export default function ForgotPasswordPage() {
               <div className="absolute inset-0 bg-gradient-to-r from-cyan-400 to-purple-600 rounded-2xl blur-xl opacity-75 animate-pulse"></div>
               <div className="relative bg-slate-800/80 backdrop-blur-md p-4 rounded-2xl">
                 <Image
-                  src="/logo.png"
+                  src={`${process.env.NEXT_PUBLIC_BASE_PATH || ''}/flowcast-logo.png`}
                   alt={t('common.title')}
                   width={48}
                   height={48}

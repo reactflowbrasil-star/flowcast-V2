@@ -261,7 +261,7 @@ function LoginForm() {
               <div className="relative w-[250px] h-24">
                 <div className="absolute inset-0 bg-gradient-to-r from-cyan-500 to-purple-600 rounded-full blur-3xl opacity-30 animate-pulse"></div>
                 <Image
-                  src="/login-logo.png"
+                  src={`${process.env.NEXT_PUBLIC_BASE_PATH || ''}/flowcast-logo.png`}
                   alt={t('login.hero.mainLogoAlt')}
                   fill
                   className="object-contain drop-shadow-[0_0_25px_rgba(255,255,255,0.2)]"
@@ -314,7 +314,7 @@ function LoginForm() {
         <div className="w-full max-w-[440px] space-y-10 relative z-10">
           {/* Mobile Logo */}
           <div className="lg:hidden flex flex-col items-center mb-8">
-            <Image src="/login-logo.png" alt={t('login.hero.mobileLogoAlt')} width={180} height={64} className="mb-4 drop-shadow-lg" />
+            <Image src={`${process.env.NEXT_PUBLIC_BASE_PATH || ''}/flowcast-logo.png`} alt={t('login.hero.mobileLogoAlt')} width={180} height={64} className="mb-4 drop-shadow-lg" />
           </div>
 
           <div className="space-y-2 text-center lg:text-left">

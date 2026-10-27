@@ -1,11 +1,11 @@
 
 
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import "./globals.css";
 import { Providers } from "@/components/providers";
 import ConsoleSilencer from "@/components/ConsoleSilencer";
 import ThemeProvider from "@/components/ThemeProvider";
-import i18n from "@/lib/i18n";
+import PWARegistration from "@/components/PWARegistration";
 import localFont from 'next/font/local';
 
 const outfit = localFont({
@@ -15,19 +15,28 @@ const outfit = localFont({
 });
 
 export const metadata: Metadata = {
-  title: i18n.t('metadata.title'),
-  description: i18n.t('metadata.description'),
+  title: 'Flowcast | Filmes, séries e TV',
+  description: 'Assista a filmes, séries e canais no Flowcast.',
   manifest: '/manifest.json',
   icons: {
     icon: [
-      { url: '/favicon-16x16.png', sizes: '16x16', type: 'image/png' },
-      { url: '/favicon-32x32.png', sizes: '32x32', type: 'image/png' },
-      { url: '/favicon.ico', sizes: '32x32' },
+      { url: '/flowcast-icon-192.png', sizes: '192x192', type: 'image/png' },
     ],
     apple: [
-      { url: '/apple-touch-icon.png', sizes: '180x180', type: 'image/png' },
+      { url: '/flowcast-apple-touch-icon.png', sizes: '180x180', type: 'image/png' },
     ]
-  }
+  },
+  appleWebApp: {
+    capable: true,
+    title: 'Flowcast',
+    statusBarStyle: 'black-translucent',
+  },
+};
+
+export const viewport: Viewport = {
+  width: 'device-width',
+  initialScale: 1,
+  themeColor: '#080a11',
 };
 
 export default function RootLayout({
@@ -41,6 +50,7 @@ export default function RootLayout({
         <ConsoleSilencer />
         {/* Apply stored/system theme & custom palettes */}
         <ThemeProvider />
+        <PWARegistration />
         <Providers>{children}</Providers>
       </body>
     </html>

@@ -29,7 +29,7 @@
      case UserRole.RESELLER:
        return '/reseller';
      case UserRole.END_USER:
-       return '/user';
+       return '/';
      default:
        return '/';
    }

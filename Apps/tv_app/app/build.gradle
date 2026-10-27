@@ -15,7 +15,7 @@ if (localPropertiesFile.exists()) {
 }
 
 // Branding Name
-def brandingName = localProperties.getProperty('branding.name') ?: "StreamCore"
+def brandingName = localProperties.getProperty('branding.name') ?: "Flowcast"
 
 // Application ID is fixed for this app to avoid mismatched launch package errors.
 def appApplicationId = "com.streamcore.tv"

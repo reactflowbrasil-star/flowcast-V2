@@ -14,8 +14,34 @@ const isHttpUrl = (value: string): boolean => {
   }
 };
 
+/** Give standalone links a useful title without ever exposing URL credentials. */
+function inferStreamTitle(value: string, defaultKind: string): string {
+  try {
+    const url = new URL(value);
+    const segments = url.pathname.split('/').filter(Boolean);
+    const last = segments[segments.length - 1] ?? '';
+    const xtreamId = last.match(/^(\d+)(?:\.[a-z0-9]+)?$/i)?.[1];
+    if (xtreamId && segments.length >= 3) {
+      const lowerPath = url.pathname.toLowerCase();
+      const kind = /\/movie\//.test(lowerPath)
+        ? 'Filme'
+        : /\/series\//.test(lowerPath)
+          ? 'Episódio'
+          : /\/live\//.test(lowerPath)
+            ? 'Canal'
+            : defaultKind;
+      return `${kind} ${xtreamId}`;
+    }
+
+    const filename = decodeURIComponent(last).replace(/\.[a-z0-9]{2,5}$/i, '').trim();
+    return filename || `${defaultKind} ${segments.length + 1}`;
+  } catch {
+    return defaultKind;
+  }
+}
+
 /** Parse M3U records while keeping each item's metadata for filtered re-import. */
-export function parseM3uPlaylist(text: string): { header: string[]; entries: M3uEntry[] } {
+export function parseM3uPlaylist(text: string, defaultKind = 'Conteúdo'): { header: string[]; entries: M3uEntry[] } {
   const lines = text.replace(/^\uFEFF/, '').split(/\r?\n/);
   const header: string[] = [];
   const entries: M3uEntry[] = [];
@@ -49,11 +75,13 @@ export function parseM3uPlaylist(text: string): { header: string[]; entries: M3u
     }
 
     sawEntry = true;
+    const inferredTitle = title || inferStreamTitle(line, defaultKind);
+    const metadataLines = pending.length > 0 ? pending : [`#EXTINF:-1,${inferredTitle}`];
     entries.push({
       index: entries.length,
-      title: title || line,
+      title: inferredTitle,
       url: line,
-      lines: [...pending, rawLine],
+      lines: [...metadataLines, rawLine],
     });
     pending = [];
     title = '';

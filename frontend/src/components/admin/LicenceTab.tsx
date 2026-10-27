@@ -161,7 +161,7 @@ export default function LicenceTab() {
                 <p className="text-sm text-muted-foreground mb-4">
                     {isLicensed
                         ? 'Enter a new purchase code to upgrade from Regular to Extended, or to replace the current license.'
-                        : 'Enter your Envato purchase code to activate StreamCore and unlock all features.'
+                        : 'Enter your Envato purchase code to activate Flowcast and unlock all features.'
                     }
                 </p>
 

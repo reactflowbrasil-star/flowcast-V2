@@ -1,6 +1,7 @@
 'use client';
 
 import Link from 'next/link';
+import Image from 'next/image';
 import { useMemo, memo } from 'react';
 import { usePathname } from 'next/navigation';
 import { useTranslation } from 'react-i18next';
@@ -139,9 +140,14 @@ const ModernUserSidebar = memo(function ModernUserSidebar() {
         <div className="w-9 h-9 shrink-0 flex items-center justify-center rounded-xl bg-gradient-to-br from-blue-600 to-indigo-600 shadow-lg shadow-blue-600/20">
           <span className="text-lg font-black text-white">{APP_NAME.charAt(0)}</span>
         </div>
-        <h1 className="text-xl font-bold text-white tracking-wider ml-4 opacity-0 group-hover/sidebar:opacity-100 transition-opacity duration-300 whitespace-nowrap">
-          {APP_NAME}
-        </h1>
+        <Image
+          src={`${process.env.NEXT_PUBLIC_BASE_PATH || ''}/flowcast-logo.png`}
+          alt={APP_NAME}
+          width={160}
+          height={54}
+          className="ml-4 h-auto w-36 object-contain opacity-0 group-hover/sidebar:opacity-100 transition-opacity duration-300"
+          priority
+        />
       </div>
 
       {/* Main Navigation */}

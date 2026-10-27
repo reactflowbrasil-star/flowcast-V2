@@ -14,7 +14,8 @@ const PROTECTED_ROUTES = {
   [ROUTES.RESELLER.CUSTOMERS]: ['admin', 'reseller'],
   [ROUTES.RESELLER.CONTENT]: ['admin', 'reseller'],
   [ROUTES.RESELLER.ANALYTICS]: ['admin', 'reseller'],
-  [ROUTES.USER.BASE]: ['admin', 'reseller', 'end_user'],
+  // Keep the legacy /user alias protected while the primary catalog lives at /.
+  '/user': ['admin', 'reseller', 'end_user'],
   [ROUTES.USER.CONTENT]: ['admin', 'reseller', 'end_user'],
   [ROUTES.USER.DEVICES]: ['admin', 'reseller', 'end_user'],
   [ROUTES.USER.PROFILE]: ['admin', 'reseller', 'end_user']
@@ -172,7 +173,9 @@ export function proxy(request: NextRequest) {
   // Handle root path redirect for authenticated users
   if (pathname === ROUTES.HOME && token) {
     const user = getUserFromToken(token);
-    if (user) {
+    // End users now watch directly at the root catalog. Keep the admin and
+    // reseller dashboards routed to their separate areas.
+    if (user && user.role !== 'end_user') {
       const defaultRoute = getDefaultRouteForRole(user.role);
       return NextResponse.redirect(new URL(defaultRoute, request.url));
     }

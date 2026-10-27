@@ -1,6 +1,6 @@
 'use client';
 
-import { useRef, useState, type ChangeEvent } from 'react';
+import { useMemo, useRef, useState, type ChangeEvent } from 'react';
 import { useMutation } from '@tanstack/react-query';
 import { z } from 'zod';
 import { Button } from '@/components/ui/button';
@@ -14,6 +14,7 @@ import { contentService } from '@/services';
 import { useTranslation } from 'react-i18next';
 import useLoadNamespace from '@/hooks/useLoadNamespace';
 import { extractErrorMessage } from '@/lib/error-message';
+import { buildM3uPlaylist, parseM3uPlaylist } from '@/lib/m3uPlaylist';
 
 type FormData = {
   text: string;
@@ -36,6 +37,12 @@ export default function BulkImportTVChannelsDialog({ open, onOpenChange, onSucce
   const [form, setForm] = useState<FormData>({ text: '', provider: '', description: '', format: 'DRM', country: '', start_channel_number: undefined });
   const [error, setError] = useState<string | null>(null);
   const fileInputRef = useRef<HTMLInputElement | null>(null);
+  const parsedPlaylist = useMemo(() => parseM3uPlaylist(form.text, 'Canal'), [form.text]);
+  const updatePlaylistText = (text: string) => {
+    const hasDrmMetadata = /(?:KODIPROP|license_type|license_key)/i.test(text);
+    const format: FormData['format'] = hasDrmMetadata ? 'DRM' : 'M3U8';
+    setForm((current) => ({ ...current, text, format }));
+  };
   // Store result if you need to show a summary in the future
 
   const schema = z.object({
@@ -59,8 +66,12 @@ export default function BulkImportTVChannelsDialog({ open, onOpenChange, onSucce
         const first = (parsed.error as z.ZodError<FormData>)?.issues?.[0]?.message;
         throw new Error(first || t('bulkImportTVChannels.validation.invalidData'));
       }
+      const playlist = parseM3uPlaylist(parsed.data.text, 'Canal');
+      if (playlist.entries.length === 0) {
+        throw new Error(t('bulkImportTVChannels.validation.pasteM3uContent'));
+      }
       const payload = {
-        text: parsed.data.text,
+        text: buildM3uPlaylist(playlist.header, playlist.entries),
         provider: parsed.data.provider || undefined,
         description: parsed.data.description || undefined,
         format: parsed.data.format || undefined,
@@ -93,7 +104,7 @@ export default function BulkImportTVChannelsDialog({ open, onOpenChange, onSucce
     try {
       const fileText = await file.text();
       setError(null);
-      setForm((f) => ({ ...f, text: fileText }));
+      updatePlaylistText(fileText);
     } catch {
       setError(t('bulkImportTVChannels.validation.fileReadFailed'));
     } finally {
@@ -183,12 +194,25 @@ export default function BulkImportTVChannelsDialog({ open, onOpenChange, onSucce
                 </Button>
               </div>
             </div>
+            <p className="text-xs text-muted-foreground">
+              {t('bulkImportTVChannels.linkRecognitionHint', {
+                defaultValue: 'Cole uma playlist M3U ou links HTTP/HTTPS, um por linha. Links Xtream como host:porta/usuario/senha/ID são reconhecidos automaticamente.',
+              })}
+            </p>
+            {form.text.trim() && (
+              <p className="text-xs text-muted-foreground" aria-live="polite">
+                {t('bulkImportTVChannels.recognizedLinks', {
+                  count: parsedPlaylist.entries.length,
+                  defaultValue: '{{count}} links de canais reconhecidos',
+                })}
+              </p>
+            )}
             <Textarea
               rows={12}
               value={form.text}
-              onChange={(e) => setForm((f) => ({ ...f, text: e.target.value }))}
+              onChange={(e) => updatePlaylistText(e.target.value)}
               className="h-64 max-h-[60vh] overflow-y-auto resize-y"
-              placeholder={`#EXTM3U\n\n#EXTINF:-1 tvg-name="STARZ COMEDY" tvg-logo="https://...",STARZ COMEDY\n#KODIPROP:inputstream.adaptive.license_type=clearkey\n#KODIPROP:inputstream.adaptive.license_key=KID:KEY o {"kid":"key"}\nhttps://.../cenc.mpd`}
+              placeholder={`#EXTM3U\n\n#EXTINF:-1 tvg-name="STARZ COMEDY" tvg-logo="https://...",STARZ COMEDY\n#KODIPROP:inputstream.adaptive.license_type=clearkey\n#KODIPROP:inputstream.adaptive.license_key=KID:KEY o {"kid":"key"}\nhttps://.../cenc.mpd\n\nhttp://tv.minhalista.me:80/hermanobessa/hfz2c6hfz/52284`}
             />
           </div>
         </div>

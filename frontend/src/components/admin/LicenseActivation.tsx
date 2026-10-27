@@ -56,7 +56,7 @@ export default function LicenseActivation({ onActivated }: { onActivated: () => 
                     <div className="inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-gradient-to-br from-blue-500 to-purple-600 shadow-lg shadow-blue-500/20 mb-4">
                         <Shield className="w-8 h-8 text-white" />
                     </div>
-                    <h1 className="text-2xl font-bold text-white">StreamCore License</h1>
+                    <h1 className="text-2xl font-bold text-white">Flowcast License</h1>
                     <p className="text-slate-400 mt-2 text-sm">
                         Enter your Envato purchase code to activate
                     </p>

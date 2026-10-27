@@ -2,7 +2,7 @@
 # BRANDING CONFIGURATION
 # ===========================================
 # App name displayed throughout the application
-# Default: StreamCore
+# Default: Flowcast
 # branding.name=Your App Name
 
 # Android applicationId used when installing/running the app.

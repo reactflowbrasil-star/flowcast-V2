@@ -161,13 +161,13 @@ function ResetPasswordForm() {
           <div className="flex justify-center mb-8">
             <div className="relative">
               <div className="absolute inset-0 bg-gradient-to-r from-cyan-400 to-purple-600 rounded-2xl blur-xl opacity-75 animate-pulse"></div>
-              <div className="relative bg-slate-800/80 backdrop-blur-md p-4 rounded-2xl">
+              <div className="relative flex h-20 w-52 items-center justify-center bg-slate-800/80 backdrop-blur-md p-3 rounded-2xl">
                 <Image
-                  src="/logo.png"
-                  alt={t('common.title')}
-                  width={48}
-                  height={48}
-                  className="object-contain"
+                  src={`${process.env.NEXT_PUBLIC_BASE_PATH || ''}/flowcast-logo.png`}
+                  alt="Flowcast"
+                  width={192}
+                  height={64}
+                  className="h-auto w-full object-contain"
                   priority
                 />
               </div>

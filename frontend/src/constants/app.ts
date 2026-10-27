@@ -1,7 +1,7 @@
 // Application constants
 
 // Centralized app name - change via NEXT_PUBLIC_APP_NAME env variable
-export const APP_NAME = process.env.NEXT_PUBLIC_APP_NAME || 'LifeRoute';
+export const APP_NAME = 'Flowcast';
 
 export const APP_CONFIG = {
   NAME: APP_NAME,
@@ -32,8 +32,8 @@ export const ROUTES = {
 
   // End user routes
   USER: {
-    BASE: '/user',
-    DASHBOARD: '/user',
+    BASE: '/',
+    DASHBOARD: '/',
     CONTENT: '/user/content',
     DEVICES: '/user/devices',
     PROFILE: '/user/profile',
