@@ -35,6 +35,7 @@ export default function PlansPage() {
     const [packages, setPackages] = useState<PublicPackage[]>([]);
     const [loading, setLoading] = useState(true);
     const [subscribingId, setSubscribingId] = useState<number | null>(null);
+    const [canceling, setCanceling] = useState(false);
     const [error, setError] = useState('');
     const [currentSub, setCurrentSub] = useState<SubscriptionStatus | null>(null);
     const [hasToken, setHasToken] = useState(false);
@@ -102,6 +103,31 @@ export default function PlansPage() {
             setError('Failed to start checkout');
         } finally {
             setSubscribingId(null);
+        }
+    };
+
+    const handleCancelSubscription = async () => {
+        if (!window.confirm('Deseja realmente programar o cancelamento da assinatura ao fim do período atual?')) return;
+        setCanceling(true);
+        setError('');
+        try {
+            const result = await packagesService.cancelSubscription();
+            if (result.success && result.data) {
+                setCurrentSub((current) => current?.subscription ? {
+                    ...current,
+                    subscription: {
+                        ...current.subscription,
+                        cancel_at_period_end: result.data.cancel_at_period_end ?? true,
+                        current_period_end: result.data.current_period_end ?? current.subscription.current_period_end,
+                    },
+                } : current);
+            } else {
+                setError(result.error?.error || 'Não foi possível cancelar a assinatura. Tente novamente.');
+            }
+        } catch {
+            setError('Não foi possível cancelar a assinatura. Tente novamente.');
+        } finally {
+            setCanceling(false);
         }
     };
 
@@ -259,7 +285,7 @@ export default function PlansPage() {
                                         {isCurrent ? (
                                             <div className="w-full h-12 rounded-xl font-semibold bg-emerald-500/20 border border-emerald-500/30 flex items-center justify-center gap-2 text-emerald-400">
                                                 <ShieldCheck className="h-4 w-4" />
-                                                <span>Active Plan</span>
+                                                <span>{currentSub?.subscription?.cancel_at_period_end ? 'Cancelamento programado' : 'Plano ativo'}</span>
                                             </div>
                                         ) : (
                                             <Button
@@ -282,6 +308,18 @@ export default function PlansPage() {
                                                         <ArrowRight className="h-4 w-4 group-hover:translate-x-1 transition-transform" />
                                                     </div>
                                                 )}
+                                            </Button>
+                                        )}
+                                        {isCurrent && currentSub?.subscription && !currentSub.subscription.cancel_at_period_end && (
+                                            <Button
+                                                type="button"
+                                                variant="ghost"
+                                                className="mt-2 w-full text-sm text-gray-400 hover:text-red-300"
+                                                disabled={canceling}
+                                                onClick={handleCancelSubscription}
+                                            >
+                                                {canceling ? <Loader2 className="mr-2 h-4 w-4 animate-spin" /> : null}
+                                                Cancelar ao fim do período
                                             </Button>
                                         )}
                                     </div>

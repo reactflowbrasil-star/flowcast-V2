@@ -9,6 +9,37 @@ export const DEFAULT_PLAYER_ENGINE: PlayerEngine = 'auto';
 let cachedEngine: PlayerEngine = DEFAULT_PLAYER_ENGINE;
 let cacheExpiresAt = 0;
 let pendingRequest: Promise<PlayerEngine> | null = null;
+const PLAYER_ENGINE_UPDATED_EVENT = 'flowcast:player-engine-updated';
+
+export function notifyPlayerEngineUpdated(engine: PlayerEngine): void {
+  cachedEngine = engine;
+  cacheExpiresAt = Date.now() + 15_000;
+  if (typeof window !== 'undefined') {
+    window.dispatchEvent(new CustomEvent<PlayerEngine>(PLAYER_ENGINE_UPDATED_EVENT, { detail: engine }));
+    try { window.localStorage.setItem('flowcast-player-engine-updated', JSON.stringify({ engine, at: Date.now() })); } catch { /* storage may be unavailable */ }
+  }
+}
+
+export function subscribeToPlayerEngineUpdates(listener: (engine: PlayerEngine) => void): () => void {
+  if (typeof window === 'undefined') return () => undefined;
+  const onLocalUpdate = (event: Event) => {
+    const engine = (event as CustomEvent<unknown>).detail;
+    if (isPlayerEngine(engine)) listener(engine);
+  };
+  const onStorage = (event: StorageEvent) => {
+    if (event.key !== 'flowcast-player-engine-updated' || !event.newValue) return;
+    try {
+      const value = JSON.parse(event.newValue)?.engine;
+      if (isPlayerEngine(value)) listener(value);
+    } catch { /* ignore malformed storage events */ }
+  };
+  window.addEventListener(PLAYER_ENGINE_UPDATED_EVENT, onLocalUpdate);
+  window.addEventListener('storage', onStorage);
+  return () => {
+    window.removeEventListener(PLAYER_ENGINE_UPDATED_EVENT, onLocalUpdate);
+    window.removeEventListener('storage', onStorage);
+  };
+}
 
 function isPlayerEngine(value: unknown): value is PlayerEngine {
   return typeof value === 'string' && PLAYER_ENGINES.includes(value as PlayerEngine);

@@ -13,6 +13,17 @@ use crate::models::subscription_plan::*;
 use crate::services::subscription;
 use crate::AppState;
 
+fn resolve_checkout_url(configured: &str, base_url: &str, fallback: &str) -> String {
+    let target = configured.trim();
+    if target.is_empty() {
+        return fallback.to_string();
+    }
+    if target.starts_with("https://") || target.starts_with("http://") {
+        return target.to_string();
+    }
+    format!("{}{}", base_url.trim_end_matches('/'), if target.starts_with('/') { target.to_string() } else { format!("/{target}") })
+}
+
 // ─── Public Endpoints (no auth) ───
 
 /// GET /api/public/packages — List active packages
@@ -252,6 +263,10 @@ pub async fn create_checkout(
         ));
     }
 
+    let base_url = crate::config::get_dynamic_config_value(
+        &app_state.database.pool, "public_base_url", &app_state.config.public_base_url,
+    ).await;
+
     // Regular License: block checkout for paid packages at runtime
     if package.price_cents > 0 {
         let is_extended = app_state.license_service.get_status().await
@@ -310,9 +325,8 @@ pub async fn create_checkout(
             "✅ Free package activated (no Stripe)"
         );
 
-        let base_url = &app_state.config.public_base_url;
         return Ok(Json(CheckoutResponse {
-            url: format!("{}/subscription/success?session_id={}", base_url, free_session_id),
+            url: format!("{}/subscription/success?session_id={}", base_url.trim_end_matches('/'), free_session_id),
             session_id: free_session_id,
         }));
     }
@@ -330,7 +344,22 @@ pub async fn create_checkout(
     let stripe_secret = crate::config::get_dynamic_config_value(
         &app_state.database.pool, "stripe_secret_key", &app_state.config.stripe_secret_key,
     ).await;
-    let base_url = &app_state.config.public_base_url;
+    // These optional DB overrides are set in the admin panel. The environment
+    // defaults (/credits/*) belong to reseller credit purchases, so keep the
+    // subscription-specific routes when no admin override exists.
+    let configured_success_url = crate::config::get_dynamic_config_value(
+        &app_state.database.pool, "stripe_success_url", "",
+    ).await;
+    let configured_cancel_url = crate::config::get_dynamic_config_value(
+        &app_state.database.pool, "stripe_cancel_url", "",
+    ).await;
+    let default_success_url = format!(
+        "{}/subscription/success?session_id={{CHECKOUT_SESSION_ID}}",
+        base_url.trim_end_matches('/')
+    );
+    let default_cancel_url = format!("{}/subscription/cancel", base_url.trim_end_matches('/'));
+    let success_url = resolve_checkout_url(&configured_success_url, &base_url, &default_success_url);
+    let cancel_url = resolve_checkout_url(&configured_cancel_url, &base_url, &default_cancel_url);
 
     let mode = if package.billing_mode == "recurring" {
         "subscription"
@@ -343,11 +372,11 @@ pub async fn create_checkout(
         ("mode".to_string(), mode.to_string()),
         (
             "success_url".to_string(),
-            format!("{}/subscription/success?session_id={{CHECKOUT_SESSION_ID}}", base_url),
+            success_url,
         ),
         (
             "cancel_url".to_string(),
-            format!("{}/subscription/cancel", base_url),
+            cancel_url,
         ),
         ("metadata[user_id]".to_string(), user_id.to_string()),
         (

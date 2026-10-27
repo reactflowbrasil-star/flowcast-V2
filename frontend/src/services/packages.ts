@@ -134,7 +134,7 @@ const subscribe = async (packageId: number): Promise<ApiResult<{ url: string; se
     return apiService.post('/api/user/subscribe', { package_id: packageId });
 };
 
-const cancelSubscription = async (): Promise<ApiResult<{ message: string }>> => {
+const cancelSubscription = async (): Promise<ApiResult<{ message: string; cancel_at_period_end?: boolean; current_period_end?: string | null }>> => {
     return apiService.post('/api/user/subscription/cancel');
 };
 

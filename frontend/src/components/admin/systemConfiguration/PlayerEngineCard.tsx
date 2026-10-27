@@ -8,7 +8,7 @@ import { Label } from '@/components/ui/label';
 import { Video, Save } from 'lucide-react';
 import { toast } from 'sonner';
 import { apiService } from '@/services/api';
-import { DEFAULT_PLAYER_ENGINE, PLAYER_ENGINES, type PlayerEngine } from '@/lib/playerEngine';
+import { DEFAULT_PLAYER_ENGINE, notifyPlayerEngineUpdated, PLAYER_ENGINES, type PlayerEngine } from '@/lib/playerEngine';
 
 type Props = { t: (key: string, options?: any) => string };
 
@@ -42,6 +42,7 @@ export default function PlayerEngineCard({ t }: Props) {
       return;
     }
     setSavedEngine(engine);
+    notifyPlayerEngineUpdated(engine);
     toast.success(t('systemConfiguration.playerSaved'));
   };
 
