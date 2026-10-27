@@ -7,6 +7,8 @@ import { cn } from '@/lib/utils';
 import { useTranslation } from 'react-i18next';
 import { streamKind } from '@/components/admin/contentManagement/stream';
 import { toProxiedStreamUrl } from '@/lib/streamProxy';
+import { loadVideoJs } from '@/lib/playerEngine';
+import { usePlayerEngine } from '@/hooks/usePlayerEngine';
 
 type LiveTVPlayerProps = {
   src: string | null | undefined;
@@ -42,6 +44,7 @@ export default function LiveTVPlayer({
   referer: headerReferer,
   customHeaders: headerCustomHeaders }: LiveTVPlayerProps) {
   const { t } = useTranslation();
+  const playerEngine = usePlayerEngine();
   const containerRef = useRef<HTMLDivElement>(null);
   const videoRef = useRef<HTMLVideoElement>(null);
   const [isPlaying, setIsPlaying] = useState<boolean>(!!autoPlay);
@@ -54,6 +57,7 @@ export default function LiveTVPlayer({
 
   const hlsRef = useRef<any>(null);
   const shakaPlayerRef = useRef<any>(null);
+  const videoJsRef = useRef<any>(null);
   const playerTitle = title ?? t('user.live.title');
   const playbackErrorText = t('user.live.playbackError', {
     defaultValue: t('user.live.streamFailed')
@@ -241,7 +245,60 @@ export default function LiveTVPlayer({
         if (kind === 'HLS') {
           // Safari/iOS: native HLS
           const canNative = !!video?.canPlayType('application/vnd.apple.mpegurl');
-          if (canNative && video) {
+          if (playerEngine === 'videojs' && video) {
+            const videojs = await loadVideoJs();
+            if (cancelled) return;
+            const player = videojs(video, {
+              autoplay: false,
+              controls: false,
+              responsive: true,
+              fluid: false,
+              html5: { vhs: { overrideNative: true } },
+            });
+            videoJsRef.current = player;
+            player.src({ src: directSrc, type: 'application/x-mpegURL' });
+            player.on('error', () => {
+              const detail = player.error?.();
+              setErr(`${playbackErrorText}${detail?.code ? ` (${detail.code})` : ''}`);
+            });
+            if (autoPlay) {
+              player.ready(() => {
+                player.muted(true);
+                player.play().then(() => setIsPlaying(true)).catch(() => setIsPlaying(false));
+              });
+            }
+            return;
+          }
+          if (playerEngine === 'native' && video) {
+            if (!canNative) {
+              setErr('Este navegador não oferece HLS nativo. Selecione Automático, HLS.js, Shaka ou Video.js nas configurações.');
+              return;
+            }
+            await playNative(video, directSrc);
+            return;
+          }
+          if (playerEngine === 'shaka' && video) {
+            await loadExternalScript('shaka-player-lib', `${process.env.NEXT_PUBLIC_BASE_PATH ?? ''}/vendor/shaka-player.compiled.min.js`);
+            const ShakaCtor = (window as any).shaka;
+            if (cancelled) return;
+            if (!ShakaCtor) throw new Error('Shaka Player não carregou.');
+            const player = new ShakaCtor.Player();
+            await player.attach(video);
+            shakaPlayerRef.current = player;
+            player.addEventListener('error', (ev: any) => {
+              const detail = ev?.detail || ev;
+              setErr(`${playbackErrorText}${detail?.code ? ` (${detail.code})` : ''}`);
+            });
+            if (hasCustomHeaders) {
+              player.getNetworkingEngine()?.registerRequestFilter((_type: any, request: any) => {
+                for (const [key, value] of Object.entries(streamHeaders)) request.headers[key] = value;
+              });
+            }
+            await player.load(directSrc);
+            if (autoPlay) await video.play().then(() => setIsPlaying(true)).catch(() => setIsPlaying(false));
+            return;
+          }
+          if (canNative && video && playerEngine === 'auto') {
             console.info('[LiveTVPlayer] HLS native playback (Safari/iOS)');
             await playNative(video, directSrc);
             return;
@@ -339,12 +396,13 @@ export default function LiveTVPlayer({
           }
 
           // Last resort: try native
-          if (video) { await playNative(video, directSrc); return; }
+          if (video && canNative) { await playNative(video, directSrc); return; }
+          if (video) setErr('Este player não é compatível com HLS neste navegador. Troque o player nas configurações.');
         }
 
         if (kind === 'DASH') {
           console.info('[LiveTVPlayer] DASH branch via Shaka Player');
-          await loadExternalScript('shaka-player-lib', '/vendor/shaka-player.compiled.min.js');
+          await loadExternalScript('shaka-player-lib', `${process.env.NEXT_PUBLIC_BASE_PATH ?? ''}/vendor/shaka-player.compiled.min.js`);
           const ShakaCtor = (window as any).shaka;
           if (cancelled) return;
 
@@ -404,7 +462,7 @@ export default function LiveTVPlayer({
               }
             }
 
-            await player.load(directSrc, undefined, 'application/dash+xml');
+            await player.load(directSrc, undefined, kind === 'DASH' ? 'application/dash+xml' : undefined);
 
             if (autoPlay && video) {
               video.muted = true;
@@ -448,7 +506,8 @@ export default function LiveTVPlayer({
     drmKeys,
     drmKeysExo,
     licenseServerUrl,
-    drmType
+    drmType,
+    playerEngine
   ]);
 
   useEffect(() => {
@@ -494,6 +553,10 @@ export default function LiveTVPlayer({
       if (shakaPlayerRef.current) {
         try { shakaPlayerRef.current.destroy(); } catch { }
         shakaPlayerRef.current = null;
+      }
+      if (videoJsRef.current) {
+        try { videoJsRef.current.dispose(); } catch { }
+        videoJsRef.current = null;
       }
       if (v) {
         v.removeAttribute('src');

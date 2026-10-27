@@ -159,6 +159,7 @@ impl ValidationUtils {
             | "tmdb_mode"
             | "tmdb_metadata_path"
             | "tmdb_preferred_format"
+            | "player_engine"
             | "demo_creation_threshold"
             | "demo_ban_duration_days"
             | "demo_duration_hours"
@@ -199,6 +200,13 @@ impl ValidationUtils {
     /// Validate configuration value based on key
     pub fn validate_config_value(key: &str, value: &str) -> Result<(), AppError> {
         match key {
+            "player_engine" => {
+                if !matches!(value, "auto" | "hlsjs" | "shaka" | "videojs" | "native") {
+                    return Err(AppError::BadRequest(
+                        "Player engine must be one of auto, hlsjs, shaka, videojs, or native".to_string(),
+                    ));
+                }
+            }
             "default_connections" => {
                 let connections = value.parse::<i32>().map_err(|_| {
                     AppError::BadRequest("Default connections must be a valid integer".to_string())
@@ -475,7 +483,16 @@ mod tests {
         assert!(ValidationUtils::validate_config_key("tmdb_mode").is_ok());
         assert!(ValidationUtils::validate_config_key("tmdb_metadata_path").is_ok());
         assert!(ValidationUtils::validate_config_key("tmdb_preferred_format").is_ok());
+        assert!(ValidationUtils::validate_config_key("player_engine").is_ok());
         assert!(ValidationUtils::validate_config_key("invalid_key").is_err());
+    }
+
+    #[test]
+    fn test_validate_player_engine() {
+        for engine in ["auto", "hlsjs", "shaka", "videojs", "native"] {
+            assert!(ValidationUtils::validate_config_value("player_engine", engine).is_ok());
+        }
+        assert!(ValidationUtils::validate_config_value("player_engine", "unknown").is_err());
     }
 
     #[test]

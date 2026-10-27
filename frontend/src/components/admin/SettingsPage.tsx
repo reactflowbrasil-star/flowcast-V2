@@ -14,6 +14,7 @@ const CreditsPricingConfig = lazy(() => import('@/components/admin/CreditsPricin
 const PaymentSettings = lazy(() => import('@/components/admin/PaymentSettings'));
 const LicenceTab = lazy(() => import('@/components/admin/LicenceTab'));
 const VersionTab = lazy(() => import('@/components/admin/VersionTab'));
+const PlayerEngineCard = lazy(() => import('@/components/admin/systemConfiguration/PlayerEngineCard'));
 
 function TabLoading() {
     return (
@@ -78,6 +79,9 @@ export default function SettingsPage({ className }: SettingsPageProps) {
                 <TabsContent value="general">
                     <Suspense fallback={<TabLoading />}>
                         <SystemConfiguration visibleSections={['content-display', 'login-backdrops', 'public-endpoints', 'config-summary']} />
+                        <div className="mt-6">
+                            <PlayerEngineCard t={t} />
+                        </div>
                     </Suspense>
                 </TabsContent>
 

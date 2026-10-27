@@ -41,6 +41,8 @@ import ContentTable from './contentManagement/ContentTable';
 import ContentFilters from './contentManagement/ContentFilters';
 import { AdminSectionHeader } from './AdminSectionHeader';
 import { toProxiedStreamUrl } from '@/lib/streamProxy';
+import { loadVideoJs } from '@/lib/playerEngine';
+import { usePlayerEngine } from '@/hooks/usePlayerEngine';
 
 interface ContentManagementProps {
   className?: string;
@@ -49,6 +51,7 @@ interface ContentManagementProps {
 export default function ContentManagement({ className }: ContentManagementProps) {
   const nsLoading = useLoadNamespace('admin/content');
   const { t, i18n } = useTranslation(['admin/content', 'admin', 'translation']);
+  const playerEngine = usePlayerEngine();
   const [selectedCategory, setSelectedCategory] = useState<ContentType>(ContentType.VOD);
   const [selectedContent, setSelectedContent] = useState<Content | null>(null);
   const [isCreateDialogOpen, setIsCreateDialogOpen] = useState(false);
@@ -278,8 +281,10 @@ export default function ContentManagement({ className }: ContentManagementProps)
 
   useEffect(() => {
     // Initialize adaptive/dash playback when URL changes
+    let cancelled = false;
     let hlsInstance: any = null;
     let shakaPlayer: any = null;
+    let videoJsPlayer: any = null;
     const video = videoRef.current;
     if (!isPreviewOpen || !previewUrl || !video) return;
 
@@ -287,6 +292,7 @@ export default function ContentManagement({ className }: ContentManagementProps)
     const kind = streamKind(url);
 
     const cleanup = () => {
+      cancelled = true;
       try {
         if (hlsInstance) {
           hlsInstance.destroy();
@@ -296,12 +302,38 @@ export default function ContentManagement({ className }: ContentManagementProps)
           shakaPlayer.destroy();
           shakaPlayer = null;
         }
+        if (videoJsPlayer) {
+          videoJsPlayer.dispose();
+          videoJsPlayer = null;
+        }
       } catch { }
     };
 
     const setup = async () => {
       try {
-        if (kind === 'HLS') {
+        if (kind === 'HLS' && playerEngine === 'native') {
+          video.src = url;
+          return;
+        }
+
+        if (kind === 'HLS' && playerEngine === 'videojs') {
+          const videojs = await loadVideoJs();
+          if (cancelled) return;
+          videoJsPlayer = videojs(video, {
+            autoplay: true,
+            controls: true,
+            responsive: true,
+            html5: { vhs: { overrideNative: true } },
+          });
+          videoJsPlayer.src({ src: url, type: 'application/x-mpegURL' });
+          videoJsPlayer.on('error', () => {
+            const detail = videoJsPlayer.error?.();
+            setPreviewError(`Video.js error: ${detail?.message || detail?.code || 'unknown'}`);
+          });
+          return;
+        }
+
+        if (kind === 'HLS' && playerEngine !== 'shaka') {
           try {
             const hlsMod: any = await import('hls.js');
             const HlsCtor = hlsMod?.default ?? hlsMod;
@@ -341,7 +373,7 @@ export default function ContentManagement({ className }: ContentManagementProps)
                     break;
                   default:
                     if (!url.includes('/api/proxy/stream')) {
-                      const proxyUrl = `/api/proxy/stream?url=${encodeURIComponent(url)}`;
+                      const proxyUrl = toProxiedStreamUrl(url, null, true);
                       console.info('[Admin preview] Unrecoverable error, retrying via proxy:', proxyUrl);
                       hlsInstance.loadSource(proxyUrl);
                       hlsInstance.startLoad();
@@ -362,8 +394,8 @@ export default function ContentManagement({ className }: ContentManagementProps)
           return;
         }
 
-        if (kind === 'DASH') {
-          await loadExternalScript('shaka-player-lib', '/vendor/shaka-player.compiled.min.js');
+        if (kind === 'DASH' || kind === 'HLS') {
+          await loadExternalScript('shaka-player-lib', `${process.env.NEXT_PUBLIC_BASE_PATH ?? ''}/vendor/shaka-player.compiled.min.js`);
           const shaka = (window as any).shaka;
           if (!shaka) {
             setPreviewError(t('content.preview.error', {}));
@@ -420,7 +452,7 @@ export default function ContentManagement({ className }: ContentManagementProps)
 
           shakaPlayer.configure({ drm: drmConfig });
           console.log('▶️ Admin preview: Loading DASH stream with Shaka:', url);
-          await shakaPlayer.load(url, undefined, 'application/dash+xml');
+          await shakaPlayer.load(url);
           return;
         }
 
@@ -435,7 +467,7 @@ export default function ContentManagement({ className }: ContentManagementProps)
 
     setup();
     return cleanup;
-  }, [isPreviewOpen, previewUrl, previewDrmKeys, previewLicenseServerUrl, previewDrmType]);
+  }, [isPreviewOpen, previewUrl, previewDrmKeys, previewLicenseServerUrl, previewDrmType, playerEngine]);
 
   // Restore preview media state (volume/position/player) when opening
   useEffect(() => {
@@ -1141,7 +1173,9 @@ export default function ContentManagement({ className }: ContentManagementProps)
                     </a>
                     <div className="ml-auto inline-flex items-center gap-1">
                       <span className="mr-1 text-muted-foreground">
-                        {t('content.preview.playerLabel', { player: 'Shaka' })}
+                        {t('content.preview.playerLabel', {
+                          player: ({ auto: 'Automático', hlsjs: 'HLS.js', shaka: 'Shaka Player', videojs: 'Video.js', native: 'HTML5 nativo' } as const)[playerEngine]
+                        })}
                       </span>
                     </div>
                   </div>

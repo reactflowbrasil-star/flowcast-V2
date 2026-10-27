@@ -40,8 +40,8 @@ const nextConfig = {
             key: 'Content-Security-Policy',
             value:
               process.env.NODE_ENV === 'development'
-                ? "default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' http://localhost:* http://127.0.0.1:* https: chrome-extension:*; style-src 'self' 'unsafe-inline'; img-src * data: blob:; connect-src 'self' http://localhost:* http://127.0.0.1:* ws://localhost:* ws://127.0.0.1:* https: http:; media-src 'self' blob: data: http://localhost:* http://127.0.0.1:* https://localhost:* https://127.0.0.1:*; font-src 'self' data:; object-src 'none'; base-uri 'self'; form-action 'self'; frame-ancestors 'none';"
-                : "default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' 'wasm-unsafe-eval' https:; style-src 'self' 'unsafe-inline'; img-src * data: blob:; connect-src 'self' https: http: ws: wss:; media-src 'self' https: http: data: blob:; font-src 'self' data:; object-src 'none'; base-uri 'self'; form-action 'self'; frame-ancestors 'none'; worker-src 'self' blob:;",
+                ? "default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' http://localhost:* http://127.0.0.1:* https: chrome-extension:*; style-src 'self' 'unsafe-inline' https://vjs.zencdn.net; img-src * data: blob:; connect-src 'self' http://localhost:* http://127.0.0.1:* ws://localhost:* ws://127.0.0.1:* https: http:; media-src 'self' blob: data: http://localhost:* http://127.0.0.1:* https://localhost:* https://127.0.0.1:*; font-src 'self' data: https://vjs.zencdn.net; object-src 'none'; base-uri 'self'; form-action 'self'; frame-ancestors 'none';"
+                : "default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' 'wasm-unsafe-eval' https:; style-src 'self' 'unsafe-inline' https://vjs.zencdn.net; img-src * data: blob:; connect-src 'self' https: http: ws: wss:; media-src 'self' https: http: data: blob:; font-src 'self' data: https://vjs.zencdn.net; object-src 'none'; base-uri 'self'; form-action 'self'; frame-ancestors 'none'; worker-src 'self' blob:;",
           },
           {
             key: 'X-Frame-Options',

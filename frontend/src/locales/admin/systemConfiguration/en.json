@@ -1,6 +1,21 @@
 {
   "systemConfiguration": {
     "title": "System Configuration",
+    "playerTitle": "Default video player",
+    "playerDescription": "Choose the playback engine used for videos and live channels for all users.",
+    "playerSelectLabel": "Playback engine",
+    "playerHelp": "Automatic selects a compatible engine. If a player stays loading, try another and save.",
+    "playerSave": "Save player",
+    "playerSaving": "Saving...",
+    "playerSaved": "Default player updated.",
+    "playerSaveFailed": "Could not save the default player.",
+    "playerOptions": {
+      "auto": "Automatic (recommended)",
+      "hlsjs": "HLS.js",
+      "shaka": "Shaka Player",
+      "videojs": "Video.js",
+      "native": "Native HTML5"
+    },
     "publicEndpointsTitle": "Public endpoints",
     "publicEndpointsDescription": "Toggle whether demo and redeem endpoints are accessible without authentication.",
     "contentDisplayTitle": "Content Display",

@@ -1,6 +1,21 @@
 {
   "systemConfiguration": {
     "title": "Configuração do Sistema",
+    "playerTitle": "Player de vídeo padrão",
+    "playerDescription": "Escolha o mecanismo usado para reproduzir vídeos e canais para todos os usuários.",
+    "playerSelectLabel": "Mecanismo de reprodução",
+    "playerHelp": "Automático escolhe o mecanismo compatível. Se um player ficar carregando, teste outro e salve.",
+    "playerSave": "Salvar player",
+    "playerSaving": "Salvando...",
+    "playerSaved": "Player padrão atualizado.",
+    "playerSaveFailed": "Não foi possível salvar o player padrão.",
+    "playerOptions": {
+      "auto": "Automático (recomendado)",
+      "hlsjs": "HLS.js",
+      "shaka": "Shaka Player",
+      "videojs": "Video.js",
+      "native": "HTML5 nativo"
+    },
     "publicEndpointsTitle": "Endpoints públicos",
     "publicEndpointsDescription": "Alterne se os endpoints de demonstração e resgate são acessíveis sem autenticação.",
     "contentDisplayTitle": "Exibição de Conteúdo",

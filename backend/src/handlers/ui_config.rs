@@ -8,6 +8,7 @@ pub struct UiConfigResponse {
     pub login_series_backdrops: Vec<String>,
     pub login_movies_backdrops: Vec<String>,
     pub allow_direct_registration: bool,
+    pub player_engine: String,
 }
 
 fn parse_backdrops_list(value: Option<String>) -> Vec<String> {
@@ -50,10 +51,20 @@ pub async fn get_ui_config(
         .map(|v| v == "true")
         .unwrap_or(false);
 
+    let player_engine = app_state
+        .database
+        .get_config("player_engine")
+        .await
+        .ok()
+        .flatten()
+        .filter(|value| matches!(value.as_str(), "auto" | "hlsjs" | "shaka" | "videojs" | "native"))
+        .unwrap_or_else(|| "auto".to_string());
+
     Ok(Json(UiConfigResponse {
         login_series_backdrops,
         login_movies_backdrops,
         allow_direct_registration,
+        player_engine,
     }))
 }
 

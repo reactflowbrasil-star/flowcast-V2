@@ -27,6 +27,8 @@ import { getSubtitleLanguageName } from '@/constants/subtitleLanguages';
 import { subtitleCache } from '@/services/subtitleCache';
 import { toProxiedStreamUrl, type StreamHeaderOverrides } from '@/lib/streamProxy';
 import { useSubtitleControls } from './useSubtitleControls';
+import { usePlayerEngine } from '@/hooks/usePlayerEngine';
+import { loadVideoJs } from '@/lib/playerEngine';
 
 // Helper to determine if a URL is from our own server (same-origin or relative)
 // External URLs should not include credentials to avoid CORS issues
@@ -47,6 +49,7 @@ const isInternalUrl = (url: string): boolean => {
 };
 export default function WatchPageClient() {
   const { t } = useTranslation();
+  const playerEngine = usePlayerEngine();
   const params = useParams() as { id?: string };
   const router = useRouter();
   const pathname = usePathname();
@@ -86,6 +89,7 @@ export default function WatchPageClient() {
   // Player integration state
   const shakaRef = useRef<any | null>(null);
   const hlsRef = useRef<any | null>(null);
+  const videoJsRef = useRef<any | null>(null);
   const [playerInitialized, setPlayerInitialized] = useState(false);
   const [isPlaying, setIsPlaying] = useState(false);
   const [showPlayer, setShowPlayer] = useState(false);
@@ -518,6 +522,10 @@ export default function WatchPageClient() {
         try { hlsRef.current.destroy(); } catch { }
         hlsRef.current = null;
       }
+      if (videoJsRef.current) {
+        try { videoJsRef.current.dispose(); } catch { }
+        videoJsRef.current = null;
+      }
       // Clean up video element
       if (videoRef.current) {
         try {
@@ -771,12 +779,43 @@ export default function WatchPageClient() {
       hlsRef.current = null;
     }
 
+    if (videoJsRef.current) {
+      try { videoJsRef.current.dispose(); } catch { }
+      videoJsRef.current = null;
+    }
+
     videoRef.current.crossOrigin = isInternalUrl(url) ? 'use-credentials' : 'anonymous';
     await new Promise(r => setTimeout(r, 50));
 
-    if (isHlsUrl(url)) {
+    const hasDrm = !!(drmType || licenseServerUrl || drmKeys);
+
+    if (!hasDrm && playerEngine === 'native' && !isDashUrl(url)) {
+      videoRef.current.src = url;
+      setPlayerInitialized(false);
+    } else if (!hasDrm && playerEngine === 'videojs' && !isDashUrl(url)) {
+      try {
+        const videojs = await loadVideoJs();
+        const video = videoRef.current;
+        if (!video) return;
+        const player = videojs(video, {
+          autoplay: false,
+          controls: false,
+          responsive: true,
+          html5: { vhs: { overrideNative: true } },
+        });
+        videoJsRef.current = player;
+        player.src(isHlsUrl(url) ? { src: url, type: 'application/x-mpegURL' } : { src: url });
+        player.on('error', () => {
+          const detail = player.error?.();
+          setError(`Video.js: ${detail?.message || detail?.code || t('watch.streamError')}`);
+        });
+        setPlayerInitialized(true);
+      } catch (e) {
+        setError(`Video.js: ${String(e)}`);
+      }
+    } else if (isHlsUrl(url)) {
       // For HLS streams (m3u8), initialize HLS.js (or Shaka if DRM is present)
-      if (drmType || licenseServerUrl || drmKeys) {
+      if (hasDrm || playerEngine === 'shaka') {
         await initShakaPlayer(
           url,
           drmKeys,
