@@ -84,6 +84,7 @@ export const ModernVideoPlayer = React.forwardRef<HTMLVideoElement, ModernVideoP
 
   useEffect(() => {
     // Wait for component to mount with crossOrigin attribute before setting src
+    if (src) setIsBuffering(true);
     const timer = setTimeout(() => {
       if (src && videoRef.current) {
         // Set crossOrigin based on URL origin:
@@ -261,7 +262,7 @@ export const ModernVideoPlayer = React.forwardRef<HTMLVideoElement, ModernVideoP
       setVolume(video.volume);
       setIsMuted(video.muted);
     };
-    const handleWaiting = () => setIsBuffering(true);
+    const handleLoading = () => setIsBuffering(true);
     const handleCanPlay = () => setIsBuffering(false);
 
     video.addEventListener('timeupdate', handleTimeUpdate);
@@ -269,8 +270,11 @@ export const ModernVideoPlayer = React.forwardRef<HTMLVideoElement, ModernVideoP
     video.addEventListener('play', handlePlay);
     video.addEventListener('pause', handlePause);
     video.addEventListener('volumechange', handleVolumeChange);
-    video.addEventListener('waiting', handleWaiting);
+    video.addEventListener('loadstart', handleLoading);
+    video.addEventListener('waiting', handleLoading);
+    video.addEventListener('stalled', handleLoading);
     video.addEventListener('canplay', handleCanPlay);
+    video.addEventListener('playing', handleCanPlay);
 
     return () => {
       video.removeEventListener('timeupdate', handleTimeUpdate);
@@ -278,8 +282,11 @@ export const ModernVideoPlayer = React.forwardRef<HTMLVideoElement, ModernVideoP
       video.removeEventListener('play', handlePlay);
       video.removeEventListener('pause', handlePause);
       video.removeEventListener('volumechange', handleVolumeChange);
-      video.removeEventListener('waiting', handleWaiting);
+      video.removeEventListener('loadstart', handleLoading);
+      video.removeEventListener('waiting', handleLoading);
+      video.removeEventListener('stalled', handleLoading);
       video.removeEventListener('canplay', handleCanPlay);
+      video.removeEventListener('playing', handleCanPlay);
     };
   }, []);
 
@@ -410,10 +417,18 @@ export const ModernVideoPlayer = React.forwardRef<HTMLVideoElement, ModernVideoP
         ))}
       </video>
 
+      {/* Subtle Flowcast watermark, kept visible while the video plays. */}
+      <img
+        src={`${process.env.NEXT_PUBLIC_BASE_PATH || ''}/flowcast-logo.png`}
+        alt="Flowcast"
+        className="pointer-events-none absolute left-3 top-3 z-20 w-24 opacity-55 drop-shadow-md sm:left-5 sm:top-5 sm:w-32"
+      />
+
       {/* Loading Spinner */}
       {isBuffering && (
-        <div className="absolute inset-0 flex items-center justify-center">
-          <div className="w-12 h-12 border-4 border-white/30 border-t-white rounded-full animate-spin" />
+        <div className="absolute inset-0 z-10 flex flex-col items-center justify-center gap-4 bg-black/35">
+          <img src={`${process.env.NEXT_PUBLIC_BASE_PATH || ''}/flowcast-logo.png`} alt="Flowcast" className="w-40 max-w-[55vw] animate-pulse opacity-80" />
+          <div className="h-7 w-7 animate-spin rounded-full border-[3px] border-white/25 border-t-white/90" />
         </div>
       )}
 

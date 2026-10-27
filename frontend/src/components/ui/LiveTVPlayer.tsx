@@ -52,6 +52,7 @@ export default function LiveTVPlayer({
   const [volume, setVolume] = useState<number>(0.8);
   const [isFullscreen, setIsFullscreen] = useState<boolean>(false);
   const [showControls, setShowControls] = useState<boolean>(false);
+  const [isLoading, setIsLoading] = useState<boolean>(!!src);
   const [err, setErr] = useState<string | null>(null);
   const controlTimeoutRef = useRef<NodeJS.Timeout | null>(null);
 
@@ -199,11 +200,13 @@ export default function LiveTVPlayer({
   useEffect(() => {
     const video = videoRef.current;
     if (!video || !src) {
+      setIsLoading(false);
       teardown();
       return;
     }
 
     let cancelled = false;
+    setIsLoading(true);
     setErr(null);
 
     async function setup() {
@@ -522,6 +525,8 @@ export default function LiveTVPlayer({
     const onPlay = () => setIsPlaying(true);
     const onPause = () => setIsPlaying(false);
     const onError = () => setErr(playbackErrorText);
+    const onLoading = () => setIsLoading(true);
+    const onReady = () => setIsLoading(false);
     const onFsChange = () => {
       const el = document.fullscreenElement || (document as any).webkitFullscreenElement;
       setIsFullscreen(!!el);
@@ -530,6 +535,11 @@ export default function LiveTVPlayer({
     video.addEventListener('play', onPlay);
     video.addEventListener('pause', onPause);
     video.addEventListener('error', onError);
+    video.addEventListener('loadstart', onLoading);
+    video.addEventListener('waiting', onLoading);
+    video.addEventListener('stalled', onLoading);
+    video.addEventListener('canplay', onReady);
+    video.addEventListener('playing', onReady);
     document.addEventListener('fullscreenchange', onFsChange);
     document.addEventListener('webkitfullscreenchange', onFsChange as any);
 
@@ -537,6 +547,11 @@ export default function LiveTVPlayer({
       video.removeEventListener('play', onPlay);
       video.removeEventListener('pause', onPause);
       video.removeEventListener('error', onError);
+      video.removeEventListener('loadstart', onLoading);
+      video.removeEventListener('waiting', onLoading);
+      video.removeEventListener('stalled', onLoading);
+      video.removeEventListener('canplay', onReady);
+      video.removeEventListener('playing', onReady);
       document.removeEventListener('fullscreenchange', onFsChange);
       document.removeEventListener('webkitfullscreenchange', onFsChange as any);
     };
@@ -603,11 +618,17 @@ export default function LiveTVPlayer({
     const cont = containerRef.current;
     if (!cont) return;
     if (!isFullscreen) {
-      if (cont.requestFullscreen) await cont.requestFullscreen();
-      else if ((cont as any).webkitRequestFullscreen) await (cont as any).webkitRequestFullscreen();
+      const request = cont.requestFullscreen
+        ? cont.requestFullscreen({ navigationUI: 'hide' })
+        : (cont as any).webkitRequestFullscreen?.();
+      if (request) {
+        await request;
+        try { await (screen as any).orientation?.lock?.('landscape'); } catch { }
+      }
     } else {
       if (document.exitFullscreen) await document.exitFullscreen();
       else if ((document as any).webkitExitFullscreen) await (document as any).webkitExitFullscreen();
+      try { (screen as any).orientation?.unlock?.(); } catch { }
     }
   };
 
@@ -638,6 +659,19 @@ export default function LiveTVPlayer({
         playsInline
         controls={false}
       />
+
+      <img
+        src={`${process.env.NEXT_PUBLIC_BASE_PATH || ''}/flowcast-logo.png`}
+        alt="Flowcast"
+        className="pointer-events-none absolute left-3 top-3 z-20 w-24 opacity-55 drop-shadow-md sm:left-5 sm:top-5 sm:w-32"
+      />
+
+      {isLoading && !err ? (
+        <div className="absolute inset-0 z-10 flex flex-col items-center justify-center gap-4 bg-black/35">
+          <img src={`${process.env.NEXT_PUBLIC_BASE_PATH || ''}/flowcast-logo.png`} alt="Flowcast" className="w-40 max-w-[55vw] animate-pulse opacity-80" />
+          <div className="h-7 w-7 animate-spin rounded-full border-[3px] border-white/25 border-t-white/90" />
+        </div>
+      ) : null}
 
       <div className={cn(
         "absolute inset-x-0 top-0 bg-gradient-to-b from-black/80 via-black/40 to-transparent p-6 transition-opacity duration-300 pointer-events-none",

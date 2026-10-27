@@ -92,11 +92,38 @@ export default function WatchPageClient() {
   const videoJsRef = useRef<any | null>(null);
   const [playerInitialized, setPlayerInitialized] = useState(false);
   const [isPlaying, setIsPlaying] = useState(false);
+  const [isImmersive, setIsImmersive] = useState(false);
+  const [playbackStarting, setPlaybackStarting] = useState(false);
   const [showPlayer, setShowPlayer] = useState(false);
   const [playerOpen, setPlayerOpen] = useState(false);
   const [searchTerm, setSearchTerm] = useState('');
   const playerRootRef = useRef<HTMLDivElement | null>(null);
   const scriptPromisesRef = useRef<Map<string, Promise<void>>>(new Map());
+
+  function requestImmersivePlayback() {
+    setIsImmersive(true);
+    if (typeof document === 'undefined') return;
+
+    // Call synchronously from the Play tap so browsers still have the user
+    // activation needed for fullscreen and landscape orientation lock.
+    const fullscreenRequest = document.documentElement.requestFullscreen?.({ navigationUI: 'hide' });
+    void fullscreenRequest?.then(async () => {
+      const orientation = (screen as any).orientation;
+      if (typeof orientation?.lock === 'function') {
+        try { await orientation.lock('landscape'); } catch { /* Device/browser does not support locking orientation. */ }
+      }
+    }).catch(() => {
+      // Keep the edge-to-edge player layout when the browser denies fullscreen.
+    });
+  }
+
+  function exitImmersivePlayback() {
+    try { (screen as any).orientation?.unlock?.(); } catch { }
+    if (typeof document !== 'undefined' && document.fullscreenElement) {
+      void document.exitFullscreen().catch(() => { });
+    }
+    setIsImmersive(false);
+  }
 
   // Enhanced player UI state
   const [showSubsPanel, setShowSubsPanel] = useState(false);
@@ -877,7 +904,8 @@ export default function WatchPageClient() {
 
   // Enter fullscreen and start playback
   async function startPlaybackFullscreen(): Promise<void> {
-    // Kept for reference; using modal playback now
+    requestImmersivePlayback();
+    setPlaybackStarting(true);
     let url = streamUrl;
     if (!url) {
       url = await fetchStream();
@@ -888,10 +916,13 @@ export default function WatchPageClient() {
       await v?.play();
       setIsPlaying(true);
     } catch { }
+    setPlaybackStarting(false);
   }
 
   // Open modal (90vw) and start playback
   async function startPlaybackModal(): Promise<void> {
+    requestImmersivePlayback();
+    setPlaybackStarting(true);
     setCurrentEpisodeId(null); // Clear episode ID for movie playback
     setPendingEpisodeId(null);
 
@@ -902,6 +933,7 @@ export default function WatchPageClient() {
         setAvailableStreams(streamsRes.data);
         setSelectedStreamId(streamsRes.data.find(s => s.is_default)?.id ?? streamsRes.data[0].id);
         setShowStreamSelector(true);
+        setPlaybackStarting(false);
         return; // Wait for user selection
       }
     } catch {
@@ -914,6 +946,7 @@ export default function WatchPageClient() {
 
   // Play content directly with the default stream (no selector)
   async function playContentDirectly(overrideStream?: StreamPublicInfo): Promise<void> {
+    setPlaybackStarting(true);
     setCurrentEpisodeId(null);
     let url = streamUrl;
 
@@ -941,15 +974,19 @@ export default function WatchPageClient() {
     // open modal first so the video element exists
     setPlayerOpen(true);
     await new Promise((r) => setTimeout(r, 50));
-    await ensurePlaybackReady(url);
-    const v = videoRef.current;
-    if (v) {
-      try {
-        await v.play();
-        setIsPlaying(true);
-      } catch {
-        // autoplay may be blocked; user can press play manually
+    try {
+      await ensurePlaybackReady(url);
+      const v = videoRef.current;
+      if (v) {
+        try {
+          await v.play();
+          setIsPlaying(true);
+        } catch {
+          // autoplay may be blocked; user can press play manually
+        }
       }
+    } finally {
+      setPlaybackStarting(false);
     }
   }
 
@@ -984,6 +1021,9 @@ export default function WatchPageClient() {
     const onFsChange = () => {
       const fsActive = !!document.fullscreenElement;
       if (!fsActive) {
+        setIsImmersive(false);
+        setPlayerOpen(false);
+        try { (screen as any).orientation?.unlock?.(); } catch { }
         setIsPlaying(false);
         setShowPlayer(false);
         const v = videoRef.current;
@@ -1266,6 +1306,8 @@ export default function WatchPageClient() {
   }, [episodeIdFromUrl, autoPlayTriggered, content, episodesBySeason]);
 
   async function startPlaybackModalEpisode(episodeId: number): Promise<void> {
+    requestImmersivePlayback();
+    setPlaybackStarting(true);
     setError(null);
     setCurrentEpisodeId(episodeId);
 
@@ -1278,6 +1320,7 @@ export default function WatchPageClient() {
           setSelectedStreamId(streamsRes.data.find(s => s.is_default)?.id ?? streamsRes.data[0].id);
           setPendingEpisodeId(episodeId);
           setShowStreamSelector(true);
+          setPlaybackStarting(false);
           return; // Wait for user selection
         }
 
@@ -1296,6 +1339,7 @@ export default function WatchPageClient() {
 
   // Play episode directly with the default stream or a selected stream
   async function playEpisodeDirectly(episodeId: number, overrideStream?: StreamPublicInfo): Promise<void> {
+    setPlaybackStarting(true);
     setCurrentEpisodeId(episodeId);
     let url: string | null = null;
     let episodeSubtitles: SubtitleTrackResponse[] = [];
@@ -1332,6 +1376,7 @@ export default function WatchPageClient() {
           setDrmHeaders(res.data.drm_headers ?? null);
         } else {
           setError(t('watch.streamError'));
+          setPlaybackStarting(false);
           return;
         }
       }
@@ -1354,21 +1399,26 @@ export default function WatchPageClient() {
       }
     } catch (e) {
       setError(String(e));
+      setPlaybackStarting(false);
       return;
     }
 
     // Open modal, prepare player and play
     setPlayerOpen(true);
     await new Promise((r) => setTimeout(r, 50));
-    await ensurePlaybackReady(url);
-    const v = videoRef.current;
-    if (v) {
-      try {
-        await v.play();
-        setIsPlaying(true);
-      } catch {
-        // autoplay may be blocked
+    try {
+      await ensurePlaybackReady(url);
+      const v = videoRef.current;
+      if (v) {
+        try {
+          await v.play();
+          setIsPlaying(true);
+        } catch {
+          // autoplay may be blocked
+        }
       }
+    } finally {
+      setPlaybackStarting(false);
     }
   }
 
@@ -1782,6 +1832,8 @@ export default function WatchPageClient() {
           onOpenChange={(open) => {
             setPlayerOpen(open);
             if (!open) {
+              setPlaybackStarting(false);
+              exitImmersivePlayback();
               try { videoRef.current?.pause(); } catch { }
               setIsPlaying(false);
               try { hlsRef.current?.destroy(); } catch { }
@@ -1793,14 +1845,17 @@ export default function WatchPageClient() {
             }
           }}
         >
-          <DialogContent className="p-0 bg-black border-slate-800 max-w-[90vw] w-[90vw] sm:max-w-[90vw]">
+          <DialogContent className={cn(
+            "p-0 bg-black border-slate-800 max-w-[90vw] w-[90vw] sm:max-w-[90vw]",
+            isImmersive && "fixed inset-0 left-0 top-0 z-[100] h-[100dvh] w-screen max-w-none translate-x-0 translate-y-0 rounded-none border-0"
+          )}>
             <DialogTitle className="sr-only">
               {content?.title ?? t('watch.title')}
             </DialogTitle>
             <div
               ref={playerRootRef}
-              className="relative w-full"
-              style={{ width: '90vw' }}
+              className={cn("relative w-full", isImmersive && "flex h-full items-center justify-center")}
+              style={{ width: isImmersive ? '100vw' : '90vw' }}
             >
               <ModernVideoPlayer
                 ref={videoRef}
@@ -1822,11 +1877,17 @@ export default function WatchPageClient() {
                   setPlaybackRate(rate);
                   setSpeed(rate);
                 }}
-                className="w-full aspect-video"
+                className={cn("w-full aspect-video", isImmersive && "h-full w-full aspect-auto")}
               />
             </div>
           </DialogContent>
         </Dialog>
+
+        {playbackStarting && (
+          <div className="fixed inset-0 z-[110] flex items-center justify-center bg-black" role="status" aria-label="Iniciando reprodução">
+            <img src={`${process.env.NEXT_PUBLIC_BASE_PATH || ''}/flowcast-logo.png`} alt="Flowcast" className="w-44 max-w-[55vw] animate-pulse opacity-75" />
+          </div>
+        )}
 
         {/* Stream Quality Selector Overlay */}
         {showStreamSelector && availableStreams.length > 1 && (
