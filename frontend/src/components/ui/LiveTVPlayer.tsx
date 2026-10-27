@@ -173,14 +173,20 @@ export default function LiveTVPlayer({
 
   const loadExternalScript = async (id: string, scriptSrc: string) => {
     return new Promise<void>((resolve, reject) => {
-      if (document.getElementById(id)) {
+      const existing = document.getElementById(id) as HTMLScriptElement | null;
+      if (existing?.dataset.loaded === 'true') {
         resolve();
+        return;
+      }
+      if (existing) {
+        existing.addEventListener('load', () => resolve(), { once: true });
+        existing.addEventListener('error', () => reject(new Error(`Failed to load ${scriptSrc}`)), { once: true });
         return;
       }
       const s = document.createElement('script');
       s.src = scriptSrc;
       s.async = true;
-      s.onload = () => resolve();
+      s.onload = () => { s.dataset.loaded = 'true'; resolve(); };
       s.onerror = (e) => reject(e);
       s.id = id;
       document.body.appendChild(s);
@@ -190,7 +196,8 @@ export default function LiveTVPlayer({
   async function loadHlsCtor(): Promise<any | null> {
     try {
       const mod: any = await import('hls.js');
-      return mod?.default ?? mod;
+      const HlsCtor = mod?.default ?? mod;
+      return HlsCtor?.default ?? HlsCtor;
     } catch {
       return null;
     }
@@ -524,9 +531,13 @@ export default function LiveTVPlayer({
 
     const onPlay = () => setIsPlaying(true);
     const onPause = () => setIsPlaying(false);
-    const onError = () => setErr(playbackErrorText);
     const onLoading = () => setIsLoading(true);
     const onReady = () => setIsLoading(false);
+    const onPlaybackError = () => {
+      setIsLoading(false);
+      const mediaError = video.error;
+      setErr(mediaError ? `${playbackErrorText} (${mediaError.code})` : playbackErrorText);
+    };
     const onFsChange = () => {
       const el = document.fullscreenElement || (document as any).webkitFullscreenElement;
       setIsFullscreen(!!el);
@@ -534,7 +545,7 @@ export default function LiveTVPlayer({
 
     video.addEventListener('play', onPlay);
     video.addEventListener('pause', onPause);
-    video.addEventListener('error', onError);
+    video.addEventListener('error', onPlaybackError);
     video.addEventListener('loadstart', onLoading);
     video.addEventListener('waiting', onLoading);
     video.addEventListener('stalled', onLoading);
@@ -546,7 +557,7 @@ export default function LiveTVPlayer({
     return () => {
       video.removeEventListener('play', onPlay);
       video.removeEventListener('pause', onPause);
-      video.removeEventListener('error', onError);
+      video.removeEventListener('error', onPlaybackError);
       video.removeEventListener('loadstart', onLoading);
       video.removeEventListener('waiting', onLoading);
       video.removeEventListener('stalled', onLoading);

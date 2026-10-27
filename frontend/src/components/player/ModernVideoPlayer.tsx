@@ -264,6 +264,10 @@ export const ModernVideoPlayer = React.forwardRef<HTMLVideoElement, ModernVideoP
     };
     const handleLoading = () => setIsBuffering(true);
     const handleCanPlay = () => setIsBuffering(false);
+    const handleError = () => {
+      setIsBuffering(false);
+      setMountedSrc('');
+    };
 
     video.addEventListener('timeupdate', handleTimeUpdate);
     video.addEventListener('durationchange', handleDurationChange);
@@ -275,6 +279,7 @@ export const ModernVideoPlayer = React.forwardRef<HTMLVideoElement, ModernVideoP
     video.addEventListener('stalled', handleLoading);
     video.addEventListener('canplay', handleCanPlay);
     video.addEventListener('playing', handleCanPlay);
+    video.addEventListener('error', handleError);
 
     return () => {
       video.removeEventListener('timeupdate', handleTimeUpdate);
@@ -287,6 +292,7 @@ export const ModernVideoPlayer = React.forwardRef<HTMLVideoElement, ModernVideoP
       video.removeEventListener('stalled', handleLoading);
       video.removeEventListener('canplay', handleCanPlay);
       video.removeEventListener('playing', handleCanPlay);
+      video.removeEventListener('error', handleError);
     };
   }, []);
 
@@ -405,6 +411,7 @@ export const ModernVideoPlayer = React.forwardRef<HTMLVideoElement, ModernVideoP
         playsInline
         crossOrigin={isInternalUrl(mountedSrc) ? 'use-credentials' : 'anonymous'}
         onClick={togglePlay}
+        onError={() => setIsBuffering(false)}
       >
         {subtitles.map((sub, index) => (
           <track

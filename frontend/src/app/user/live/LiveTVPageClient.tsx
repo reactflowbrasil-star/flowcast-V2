@@ -61,6 +61,7 @@ export default function LiveTVPage() {
   const [headerUserAgent, setHeaderUserAgent] = useState<string | null>(null);
   const [headerReferer, setHeaderReferer] = useState<string | null>(null);
   const [headerCustomHeaders, setHeaderCustomHeaders] = useState<string | null>(null);
+  const [streamAttempt, setStreamAttempt] = useState(0);
   const [searchTerm, setSearchTerm] = useState<string>('');
   const [selectedCategory, setSelectedCategory] = useState<string>('all');
 
@@ -127,11 +128,9 @@ export default function LiveTVPage() {
       window.scrollTo({ top: 0, behavior: 'smooth' });
     }
 
-    await new Promise(resolve => setTimeout(resolve, 100));
-
     try {
       const streamRes = await contentService.getStreamUrl(channel.id);
-      if (streamRes.success && streamRes.data) {
+      if (streamRes.success && streamRes.data?.stream_url) {
         setStreamUrl(streamRes.data.stream_url);
         setDrmKeys(streamRes.data.drm_keys || null);
         setDrmKeysExo(streamRes.data.drm_keys_exo || null);
@@ -142,7 +141,7 @@ export default function LiveTVPage() {
         setHeaderReferer(streamRes.data.referer || null);
         setHeaderCustomHeaders(streamRes.data.custom_headers || null);
       } else {
-        setError(t('user.live.streamFailed'));
+        setError(streamRes.error?.error || streamRes.error?.message || t('user.live.streamFailed'));
       }
     } catch (err) {
       console.error('Error loading stream:', err);
@@ -292,16 +291,18 @@ export default function LiveTVPage() {
               <div className="grid gap-6 lg:grid-cols-[1fr_380px] xl:grid-cols-[1fr_420px]">
                 {/* Left Column: Player */}
                 <div className="flex flex-col gap-6">
-                  <div className="relative rounded-3xl overflow-hidden border border-white/10 bg-[#0A0A0A] shadow-[0_0_50px_-20px_rgba(0,0,0,0.5)] group">
+                  <div key={`${selectedChannelId ?? 'none'}-${streamAttempt}`} className="relative rounded-3xl overflow-hidden border border-white/10 bg-[#0A0A0A] shadow-[0_0_50px_-20px_rgba(0,0,0,0.5)] group">
                     <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-0 group-hover:opacity-40 transition-opacity duration-500 pointer-events-none z-10" />
                     {streamUrl ? (
                       <LiveTVPlayer
+                        key={`${selectedChannelId ?? 'none'}-${streamAttempt}-${streamUrl}`}
                         src={streamUrl}
                         drmKeys={drmKeys}
                         drmKeysExo={drmKeysExo}
                         licenseServerUrl={licenseServerUrl}
                         drmType={drmType}
                         title={displayChannel?.title || t('user.menu.liveTv')}
+                        poster={displayChannel?.backdrop_url || displayChannel?.image_url || undefined}
                         autoPlay
                         aspectClassName="aspect-video lg:aspect-[21/9]"
                         className="bg-black shadow-inner shadow-black/50"
@@ -328,11 +329,9 @@ export default function LiveTVPage() {
                               <Signal className="h-8 w-8 text-red-500" />
                             </div>
                             <h3 className="text-lg font-semibold text-white">{t('user.live.streamUnavailableTitle')}</h3>
-                            <p className="text-sm text-slate-400">
-                              {t('user.live.streamUnavailableDescription')}
-                            </p>
+                            <p className="text-sm text-slate-400">{error}</p>
                             <Button
-                              onClick={() => displayChannel && void handleChannelSelect(displayChannel)}
+                              onClick={() => { setStreamAttempt((attempt) => attempt + 1); displayChannel && void handleChannelSelect(displayChannel); }}
                               variant="outline"
                               className="mt-2 border-red-500/30 text-red-400 hover:bg-red-500/10 hover:text-red-300"
                             >

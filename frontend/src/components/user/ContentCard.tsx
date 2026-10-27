@@ -2,6 +2,7 @@
 
 import React, { useState } from 'react';
 import Link from 'next/link';
+import { useRouter } from 'next/navigation';
 import { useTranslation } from 'react-i18next';
 import { Play, Plus, Info, Star } from 'lucide-react';
 import { cn } from '@/lib/utils';
@@ -60,6 +61,7 @@ export function ContentCard({
   className 
 }: ContentCardProps) {
   const { t } = useTranslation();
+  const router = useRouter();
   const [isHovered, setIsHovered] = useState(false);
 
   // Resolve images
@@ -74,6 +76,12 @@ export function ContentCard({
   
   const rating = typeof item.rating === 'number' && item.rating > 0 ? item.rating : null;
   const progressPct = Math.min(100, Math.max(0, Math.round(((item.progress ?? 0) as number) * 100)));
+
+  const playContent = (event: React.MouseEvent<HTMLButtonElement>) => {
+    event.preventDefault();
+    event.stopPropagation();
+    router.push(href);
+  };
 
   return (
     <Link 
@@ -108,6 +116,15 @@ export function ContentCard({
           "absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent transition-opacity duration-300",
           isHovered ? 'opacity-100' : 'opacity-60'
         )} />
+
+        <button
+          type="button"
+          onClick={playContent}
+          aria-label={`Assistir ${item.title}`}
+          className="absolute left-1/2 top-1/2 z-10 flex h-14 w-14 -translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-full border border-white/50 bg-black/55 text-white shadow-2xl backdrop-blur-sm transition duration-200 hover:scale-110 hover:bg-white hover:text-black focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white sm:h-16 sm:w-16"
+        >
+          <Play className="ml-1 h-7 w-7 fill-current sm:h-8 sm:w-8" />
+        </button>
 
         {/* Content - Normally hidden or minimal, revealed on hover */}
         <div className="absolute inset-0 p-4 flex flex-col justify-end">

@@ -1860,7 +1860,7 @@ export default function WatchPageClient() {
               <ModernVideoPlayer
                 ref={videoRef}
                 src={!playerInitialized ? (streamUrl ? streamUrl : '') : ''}
-                poster={content?.poster_url ?? content?.image_url ?? ''}
+                poster={content?.backdrop_url ?? content?.poster_url ?? content?.image_url ?? ''}
                 subtitles={subtitles.map(s => ({
                   ...s,
                   url: toProxiedSubtitleUrl(s.url)
